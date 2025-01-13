@@ -1,0 +1,26 @@
+type salesforce.big_object2__b {
+  salesforce.Number num2_big_object__c {
+    apiName = "big_object2__b.num2_big_object__c"
+    externalId = false
+    label = "num2 big object"
+    precision = 18
+    _required = true
+    scale = 0
+    unique = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Text text2_big_object__c {
+    apiName = "big_object2__b.text2_big_object__c"
+    description = "desc"
+    externalId = false
+    label = "text2 big object"
+    length = 32
+    unique = false
+    createable = true
+    updateable = false
+    caseSensitive = false
+    queryable = true
+  }
+}

@@ -1,0 +1,12 @@
+salesforce.Index big_object2__b_index2_big_object {
+  fullName = "big_object2__b.index2_big_object"
+  fields = {
+    name = "num2_big_object__c"
+    sortDirection = "ASC"
+  }
+  label = "index2 big object"
+  _parent = [
+    salesforce.big_object2__b,
+  ]
+  _alias = "index2 big object"
+}

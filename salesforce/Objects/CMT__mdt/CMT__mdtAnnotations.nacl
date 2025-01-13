@@ -1,0 +1,19 @@
+type salesforce.CMT__mdt {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    string pluralLabel {
+    }
+    hidden_string keyPrefix {
+    }
+  }
+  apiName = "CMT__mdt"
+  metadataType = "CustomMetadata"
+  label = "CMT"
+  pluralLabel = "CMTs"
+  _alias = "CMT"
+}

@@ -1,0 +1,9 @@
+salesforce.Queue my_queue3 {
+  fullName = "my_queue3"
+  doesSendEmailToMembers = false
+  name = "my_queue3"
+  queueSobject = {
+    sobjectType = "Customer"
+  }
+  _alias = "my_queue3"
+}

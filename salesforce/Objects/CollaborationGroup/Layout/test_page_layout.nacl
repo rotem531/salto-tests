@@ -1,0 +1,50 @@
+salesforce.Layout CollaborationGroup_test_page_layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.CollaborationGroup.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.CollaborationGroup.field.CollaborationType
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Name",
+      "CollaborationType",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "CollaborationGroup-test page layout"
+  _parent = [
+    salesforce.CollaborationGroup,
+  ]
+  _alias = "CollaborationGroup-test page layout"
+}
