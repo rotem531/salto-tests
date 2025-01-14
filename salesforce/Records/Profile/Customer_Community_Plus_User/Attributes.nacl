@@ -1,0 +1,516 @@
+salesforce.Profile Customer_Community_Plus_User@s {
+  custom = false
+  tabVisibilities = [
+    {
+      tab = "standard-Account"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AlternativePaymentMethod"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ApiAnomalyEventStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AppointmentCategory"
+      visibility = "DefaultOff"
+    },
+    {
+      tab = "standard-AppointmentInvitation"
+      visibility = "DefaultOff"
+    },
+    {
+      tab = "standard-Asset"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AssetAction"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AssetActionSource"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AssetStatePeriod"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AsyncOperationTracker"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AuthorizationForm"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AuthorizationFormConsent"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AuthorizationFormDataUse"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-AuthorizationFormText"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-BusinessBrand"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-BuyerGroup"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CalculationMatrix"
+      visibility = "Hidden"
+    },
+    {
+      tab = "standard-CalculationProcedure"
+      visibility = "Hidden"
+    },
+    {
+      tab = "standard-Campaign"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CardPaymentMethod"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Case"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ChangeRequest"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CollaborationGroup"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CommSubscription"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CommSubscriptionChannelType"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CommSubscriptionConsent"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CommSubscriptionTiming"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ConsumptionSchedule"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Contact"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ContactPointConsent"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ContactPointTypeConsent"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ContactRequest"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Contract"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ContractLineItem"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Coupon"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CredentialStuffingEventStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-CreditMemo"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Customer"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DandBCompany"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DataMaskCustomValueLibrary"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DataUseLegalBasis"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DataUsePurpose"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DeliveryEstimationSetup"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DigitalWallet"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-DuplicateRecordSet"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-EngagementChannelType"
+      visibility = "DefaultOff"
+    },
+    {
+      tab = "standard-Entitlement"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Event"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ExpressionSet"
+      visibility = "Hidden"
+    },
+    {
+      tab = "standard-FinanceBalanceSnapshot"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-FinanceTransaction"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-FlowOrchestrationInstance"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-FlowOrchestrationWorkItem"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-FulfillmentOrder"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-GuestUserAnomalyEventStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Idea"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Image"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Incident"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Individual"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-InventoryItemReservation"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-InventoryReservation"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Invoice"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-InvoiceLine"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Lead"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-LegalEntity"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Location"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-LocationGroup"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-LocationShippingCarrierMethod"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Macro"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-MessagingEndUser"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-MessagingSession"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-OperatingHours"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Opportunity"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Order"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PartyConsent"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Payment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PaymentAuthAdjustment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PaymentAuthorization"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PaymentGateway"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PaymentLineInvoice"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Pricebook2"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PricebookEntry"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PrivacyRTBFRequest"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Problem"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ProcessException"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Product2"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ProductCatalog"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ProductCategory"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Promotion"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PromotionMarketSegment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-PromotionSegment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-QuickText"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Recommendation"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Refund"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-RefundLinePayment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ReportAnomalyEventStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ResourceAbsence"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ReturnOrder"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-RevenueAsyncOperation"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-RevenueTransactionErrorLog"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Scorecard"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Seller"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ServiceAppointment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ServiceContract"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ServiceResource"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ServiceTerritory"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-SessionHijackingEventStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Shift"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Shipment"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ShippingCarrier"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-ShippingCarrierMethod"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-SocialPersona"
+      visibility = "DefaultOff"
+    },
+    {
+      tab = "standard-Solution"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-StreamingChannel"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Task"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-UserProvisioningRequest"
+      visibility = "Hidden"
+    },
+    {
+      tab = "standard-VoiceCall"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-Waitlist"
+      visibility = "DefaultOff"
+    },
+    {
+      tab = "standard-WebCart"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WebStore"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WebStoreInventorySource"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkOrder"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkPlan"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkPlanTemplate"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkStepTemplate"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkType"
+      visibility = "DefaultOn"
+    },
+    {
+      tab = "standard-WorkTypeGroup"
+      visibility = "DefaultOn"
+    },
+  ]
+  userLicense = "Customer Community Plus"
+  fullName = "Customer Community Plus User"
+  _alias = "Customer Community Plus User"
+}

@@ -1,0 +1,12 @@
+salesforce.Profile Cross_Org_Data_Proxy_User@s {
+  flowAccesses = {
+    numFlow = {
+      enabled = false
+      flow = "numFlow"
+    }
+    test_flow = {
+      enabled = false
+      flow = "test_flow"
+    }
+  }
+}

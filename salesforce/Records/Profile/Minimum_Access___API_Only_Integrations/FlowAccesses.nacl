@@ -1,0 +1,12 @@
+salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
+  flowAccesses = {
+    numFlow = {
+      enabled = false
+      flow = "numFlow"
+    }
+    test_flow = {
+      enabled = false
+      flow = "test_flow"
+    }
+  }
+}
