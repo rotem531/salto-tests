@@ -40,9 +40,9 @@ salesforce {
         {
           metadataType = "DocumentFolder"
         },
-        {
-          metadataType = "Profile"
-        },
+        // {
+        //   metadataType = "Profile"
+        // },
         {
           metadataType = "PermissionSet"
         },
@@ -118,6 +118,7 @@ salesforce {
         "sbaa__Approver__c",
         "sbaa__EmailTemplate__c",
         "sbaa__TrackedField__c",
+        ".*big.*",
       ]
       excludeObjects = [
         "SBQQ__ContractedPrice__c",
@@ -138,6 +139,7 @@ salesforce {
         "SBQQ__ProcessInputValue__c",
         "SBQQ__RecordJob__c",
         "SBQQ__TimingLog__c",
+        ".*__b",
       ]
       allowReferenceTo = [
         "Product2",

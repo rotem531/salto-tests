@@ -16,6 +16,10 @@ salesforce.Layout tst_vsb__c_tst_vsb_Layout@uuubus {
               behavior = "Required"
               field = salesforce.tst_vsb__c.field.Name
             },
+            {
+              behavior = "Edit"
+              field = salesforce.tst_vsb__c.field.num_num__c
+            },
           ]
         },
         {

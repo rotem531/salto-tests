@@ -1,4 +1,4 @@
-type salesforce.test_big_object__b {
+type salesforce.aaa_big_object_test__b {
   annotations {
     serviceid apiName {
     }
@@ -91,10 +91,10 @@ type salesforce.test_big_object__b {
     string visibility {
     }
   }
-  apiName = "test_big_object__b"
+  apiName = "aaa_big_object_test__b"
   metadataType = "CustomObject"
-  label = "test big object"
-  pluralLabel = "test big objects"
-  deploymentStatus = "InDevelopment"
-  _alias = "test big object"
+  label = "aaa big object test"
+  pluralLabel = "aaa big object tests"
+  deploymentStatus = "Deployed"
+  _alias = "aaa big object test"
 }

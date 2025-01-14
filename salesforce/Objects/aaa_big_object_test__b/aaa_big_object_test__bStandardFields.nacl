@@ -1,12 +1,12 @@
-type salesforce.big_object2__b {
+type salesforce.aaa_big_object_test__b {
   serviceid Id {
-    apiName = "big_object2__b.Id"
+    apiName = "aaa_big_object_test__b.Id"
     label = "ID"
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
-    apiName = "big_object2__b.CreatedById"
+    apiName = "aaa_big_object_test__b.CreatedById"
     relationshipName = "CreatedBy"
     label = "Created By ID"
     createable = false
@@ -15,7 +15,7 @@ type salesforce.big_object2__b {
     _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
-    apiName = "big_object2__b.CreatedDate"
+    apiName = "aaa_big_object_test__b.CreatedDate"
     label = "Created Date"
     createable = false
     updateable = false
@@ -23,7 +23,7 @@ type salesforce.big_object2__b {
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
-    apiName = "big_object2__b.SystemModstamp"
+    apiName = "aaa_big_object_test__b.SystemModstamp"
     label = "System Modstamp"
     createable = false
     updateable = false

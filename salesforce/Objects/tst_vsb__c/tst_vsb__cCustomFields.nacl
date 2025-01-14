@@ -1,0 +1,14 @@
+type salesforce.tst_vsb__c {
+  salesforce.Number num_num__c {
+    apiName = "tst_vsb__c.num_num__c"
+    externalId = false
+    label = "num num"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}
