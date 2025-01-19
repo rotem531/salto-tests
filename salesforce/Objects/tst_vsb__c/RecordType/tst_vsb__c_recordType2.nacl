@@ -6,4 +6,35 @@ salesforce.RecordType tst_vsb__c_recordType2 {
     salesforce.tst_vsb__c,
   ]
   _alias = "recordType2"
+  picklistValues = [
+    {
+      picklist = salesforce.tst_vsb__c.field.test_picklist_field__c
+      values = [
+        {
+          fullName = "a"
+          default = false
+        },
+        {
+          fullName = "b"
+          default = false
+        },
+        {
+          fullName = "c"
+          default = false
+        },
+        {
+          fullName = "d"
+          default = false
+        },
+        {
+          fullName = "e"
+          default = false
+        },
+        {
+          fullName = "f"
+          default = false
+        },
+      ]
+    },
+  ]
 }

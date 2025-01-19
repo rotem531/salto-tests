@@ -1,436 +1,436 @@
 salesforce.Profile Custom_3A_Marketing_Profile@pss {
   custom = true
-  tabVisibilities = [
-    {
-      tab = "standard-Account"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-AlternativePaymentMethod"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-AppointmentCategory"
-      visibility = "DefaultOff"
-    },
-    {
-      tab = "standard-AppointmentInvitation"
-      visibility = "DefaultOff"
-    },
-    {
-      tab = "standard-Asset"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-AssetAction"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-AssetActionSource"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-AssetStatePeriod"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-AuthorizationForm"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-AuthorizationFormConsent"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-AuthorizationFormDataUse"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-AuthorizationFormText"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-BusinessBrand"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-BuyerGroup"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-CalculationMatrix"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-CalculationProcedure"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Campaign"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-CardPaymentMethod"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Case"
-      visibility = "DefaultOff"
-    },
-    {
-      tab = "standard-ChangeRequest"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-CollaborationGroup"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-CommSubscription"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-CommSubscriptionChannelType"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-CommSubscriptionConsent"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-CommSubscriptionTiming"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ConsumptionSchedule"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-Contact"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ContactPointConsent"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ContactPointTypeConsent"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ContactRequest"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Contract"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ContractLineItem"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Coupon"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-CreditMemo"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Customer"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-DandBCompany"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-DataMaskCustomValueLibrary"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-DataUseLegalBasis"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-DataUsePurpose"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-DeliveryEstimationSetup"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-DigitalWallet"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-DuplicateRecordSet"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-EngagementChannelType"
-      visibility = "DefaultOff"
-    },
-    {
-      tab = "standard-Entitlement"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Event"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ExpressionSet"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-FinanceBalanceSnapshot"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-FinanceTransaction"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-FlowOrchestrationInstance"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-FlowOrchestrationWorkItem"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-FulfillmentOrder"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Idea"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Image"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Incident"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-Individual"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-InventoryItemReservation"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-InventoryReservation"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Invoice"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Lead"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-LegalEntity"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Location"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-LocationGroup"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-LocationShippingCarrierMethod"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Macro"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-OperatingHours"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Opportunity"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-Order"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-PartyConsent"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Payment"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-PaymentAuthAdjustment"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-PaymentAuthorization"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-PaymentGateway"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-PaymentLineInvoice"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Pricebook2"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Problem"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ProcessException"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Product2"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-ProductCatalog"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ProductCategory"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Promotion"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-PromotionSegment"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Recommendation"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Refund"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-RefundLinePayment"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ReturnOrder"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Scorecard"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Seller"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ServiceAppointment"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ServiceContract"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ServiceResource"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ServiceTerritory"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Shift"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ShippingCarrier"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-ShippingCarrierMethod"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Solution"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-StreamingChannel"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Task"
-      visibility = "DefaultOn"
-    },
-    {
-      tab = "standard-UserProvisioningRequest"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-Waitlist"
-      visibility = "DefaultOff"
-    },
-    {
-      tab = "standard-WebStore"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WebStoreInventorySource"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkOrder"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkPlan"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkPlanTemplate"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkStepTemplate"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkType"
-      visibility = "Hidden"
-    },
-    {
-      tab = "standard-WorkTypeGroup"
-      visibility = "Hidden"
-    },
-  ]
   userLicense = "Salesforce"
   fullName = "Custom%3A Marketing Profile"
   _alias = "Custom%3A Marketing Profile"
+  tabVisibilities = {
+    standard_Account@b = {
+      tab = "standard-Account"
+      visibility = "DefaultOn"
+    }
+    standard_AlternativePaymentMethod@b = {
+      tab = "standard-AlternativePaymentMethod"
+      visibility = "Hidden"
+    }
+    standard_AppointmentCategory@b = {
+      tab = "standard-AppointmentCategory"
+      visibility = "DefaultOff"
+    }
+    standard_AppointmentInvitation@b = {
+      tab = "standard-AppointmentInvitation"
+      visibility = "DefaultOff"
+    }
+    standard_Asset@b = {
+      tab = "standard-Asset"
+      visibility = "Hidden"
+    }
+    standard_AssetAction@b = {
+      tab = "standard-AssetAction"
+      visibility = "Hidden"
+    }
+    standard_AssetActionSource@b = {
+      tab = "standard-AssetActionSource"
+      visibility = "Hidden"
+    }
+    standard_AssetStatePeriod@b = {
+      tab = "standard-AssetStatePeriod"
+      visibility = "Hidden"
+    }
+    standard_AuthorizationForm@b = {
+      tab = "standard-AuthorizationForm"
+      visibility = "DefaultOn"
+    }
+    standard_AuthorizationFormConsent@b = {
+      tab = "standard-AuthorizationFormConsent"
+      visibility = "DefaultOn"
+    }
+    standard_AuthorizationFormDataUse@b = {
+      tab = "standard-AuthorizationFormDataUse"
+      visibility = "DefaultOn"
+    }
+    standard_AuthorizationFormText@b = {
+      tab = "standard-AuthorizationFormText"
+      visibility = "DefaultOn"
+    }
+    standard_BusinessBrand@b = {
+      tab = "standard-BusinessBrand"
+      visibility = "Hidden"
+    }
+    standard_BuyerGroup@b = {
+      tab = "standard-BuyerGroup"
+      visibility = "DefaultOn"
+    }
+    standard_CalculationMatrix@b = {
+      tab = "standard-CalculationMatrix"
+      visibility = "Hidden"
+    }
+    standard_CalculationProcedure@b = {
+      tab = "standard-CalculationProcedure"
+      visibility = "Hidden"
+    }
+    standard_Campaign@b = {
+      tab = "standard-Campaign"
+      visibility = "DefaultOn"
+    }
+    standard_CardPaymentMethod@b = {
+      tab = "standard-CardPaymentMethod"
+      visibility = "Hidden"
+    }
+    standard_Case@b = {
+      tab = "standard-Case"
+      visibility = "DefaultOff"
+    }
+    standard_ChangeRequest@b = {
+      tab = "standard-ChangeRequest"
+      visibility = "DefaultOn"
+    }
+    standard_CollaborationGroup@b = {
+      tab = "standard-CollaborationGroup"
+      visibility = "DefaultOn"
+    }
+    standard_CommSubscription@b = {
+      tab = "standard-CommSubscription"
+      visibility = "Hidden"
+    }
+    standard_CommSubscriptionChannelType@b = {
+      tab = "standard-CommSubscriptionChannelType"
+      visibility = "Hidden"
+    }
+    standard_CommSubscriptionConsent@b = {
+      tab = "standard-CommSubscriptionConsent"
+      visibility = "Hidden"
+    }
+    standard_CommSubscriptionTiming@b = {
+      tab = "standard-CommSubscriptionTiming"
+      visibility = "Hidden"
+    }
+    standard_ConsumptionSchedule@b = {
+      tab = "standard-ConsumptionSchedule"
+      visibility = "DefaultOn"
+    }
+    standard_Contact@b = {
+      tab = "standard-Contact"
+      visibility = "DefaultOn"
+    }
+    standard_ContactPointConsent@b = {
+      tab = "standard-ContactPointConsent"
+      visibility = "Hidden"
+    }
+    standard_ContactPointTypeConsent@b = {
+      tab = "standard-ContactPointTypeConsent"
+      visibility = "DefaultOn"
+    }
+    standard_ContactRequest@b = {
+      tab = "standard-ContactRequest"
+      visibility = "Hidden"
+    }
+    standard_Contract@b = {
+      tab = "standard-Contract"
+      visibility = "DefaultOn"
+    }
+    standard_ContractLineItem@b = {
+      tab = "standard-ContractLineItem"
+      visibility = "Hidden"
+    }
+    standard_Coupon@b = {
+      tab = "standard-Coupon"
+      visibility = "Hidden"
+    }
+    standard_CreditMemo@b = {
+      tab = "standard-CreditMemo"
+      visibility = "Hidden"
+    }
+    standard_Customer@b = {
+      tab = "standard-Customer"
+      visibility = "Hidden"
+    }
+    standard_DandBCompany@b = {
+      tab = "standard-DandBCompany"
+      visibility = "Hidden"
+    }
+    standard_DataMaskCustomValueLibrary@b = {
+      tab = "standard-DataMaskCustomValueLibrary"
+      visibility = "DefaultOn"
+    }
+    standard_DataUseLegalBasis@b = {
+      tab = "standard-DataUseLegalBasis"
+      visibility = "DefaultOn"
+    }
+    standard_DataUsePurpose@b = {
+      tab = "standard-DataUsePurpose"
+      visibility = "DefaultOn"
+    }
+    standard_DeliveryEstimationSetup@b = {
+      tab = "standard-DeliveryEstimationSetup"
+      visibility = "Hidden"
+    }
+    standard_DigitalWallet@b = {
+      tab = "standard-DigitalWallet"
+      visibility = "Hidden"
+    }
+    standard_DuplicateRecordSet@b = {
+      tab = "standard-DuplicateRecordSet"
+      visibility = "DefaultOn"
+    }
+    standard_EngagementChannelType@b = {
+      tab = "standard-EngagementChannelType"
+      visibility = "DefaultOff"
+    }
+    standard_Entitlement@b = {
+      tab = "standard-Entitlement"
+      visibility = "Hidden"
+    }
+    standard_Event@b = {
+      tab = "standard-Event"
+      visibility = "DefaultOn"
+    }
+    standard_ExpressionSet@b = {
+      tab = "standard-ExpressionSet"
+      visibility = "DefaultOn"
+    }
+    standard_FinanceBalanceSnapshot@b = {
+      tab = "standard-FinanceBalanceSnapshot"
+      visibility = "Hidden"
+    }
+    standard_FinanceTransaction@b = {
+      tab = "standard-FinanceTransaction"
+      visibility = "Hidden"
+    }
+    standard_FlowOrchestrationInstance@b = {
+      tab = "standard-FlowOrchestrationInstance"
+      visibility = "DefaultOn"
+    }
+    standard_FlowOrchestrationWorkItem@b = {
+      tab = "standard-FlowOrchestrationWorkItem"
+      visibility = "DefaultOn"
+    }
+    standard_FulfillmentOrder@b = {
+      tab = "standard-FulfillmentOrder"
+      visibility = "Hidden"
+    }
+    standard_Idea@b = {
+      tab = "standard-Idea"
+      visibility = "Hidden"
+    }
+    standard_Image@b = {
+      tab = "standard-Image"
+      visibility = "Hidden"
+    }
+    standard_Incident@b = {
+      tab = "standard-Incident"
+      visibility = "DefaultOn"
+    }
+    standard_Individual@b = {
+      tab = "standard-Individual"
+      visibility = "Hidden"
+    }
+    standard_InventoryItemReservation@b = {
+      tab = "standard-InventoryItemReservation"
+      visibility = "Hidden"
+    }
+    standard_InventoryReservation@b = {
+      tab = "standard-InventoryReservation"
+      visibility = "Hidden"
+    }
+    standard_Invoice@b = {
+      tab = "standard-Invoice"
+      visibility = "Hidden"
+    }
+    standard_Lead@b = {
+      tab = "standard-Lead"
+      visibility = "DefaultOn"
+    }
+    standard_LegalEntity@b = {
+      tab = "standard-LegalEntity"
+      visibility = "Hidden"
+    }
+    standard_Location@b = {
+      tab = "standard-Location"
+      visibility = "DefaultOn"
+    }
+    standard_LocationGroup@b = {
+      tab = "standard-LocationGroup"
+      visibility = "Hidden"
+    }
+    standard_LocationShippingCarrierMethod@b = {
+      tab = "standard-LocationShippingCarrierMethod"
+      visibility = "Hidden"
+    }
+    standard_Macro@b = {
+      tab = "standard-Macro"
+      visibility = "Hidden"
+    }
+    standard_OperatingHours@b = {
+      tab = "standard-OperatingHours"
+      visibility = "Hidden"
+    }
+    standard_Opportunity@b = {
+      tab = "standard-Opportunity"
+      visibility = "DefaultOn"
+    }
+    standard_Order@b = {
+      tab = "standard-Order"
+      visibility = "Hidden"
+    }
+    standard_PartyConsent@b = {
+      tab = "standard-PartyConsent"
+      visibility = "Hidden"
+    }
+    standard_Payment@b = {
+      tab = "standard-Payment"
+      visibility = "Hidden"
+    }
+    standard_PaymentAuthAdjustment@b = {
+      tab = "standard-PaymentAuthAdjustment"
+      visibility = "Hidden"
+    }
+    standard_PaymentAuthorization@b = {
+      tab = "standard-PaymentAuthorization"
+      visibility = "Hidden"
+    }
+    standard_PaymentGateway@b = {
+      tab = "standard-PaymentGateway"
+      visibility = "Hidden"
+    }
+    standard_PaymentLineInvoice@b = {
+      tab = "standard-PaymentLineInvoice"
+      visibility = "Hidden"
+    }
+    standard_Pricebook2@b = {
+      tab = "standard-Pricebook2"
+      visibility = "Hidden"
+    }
+    standard_Problem@b = {
+      tab = "standard-Problem"
+      visibility = "DefaultOn"
+    }
+    standard_ProcessException@b = {
+      tab = "standard-ProcessException"
+      visibility = "Hidden"
+    }
+    standard_Product2@b = {
+      tab = "standard-Product2"
+      visibility = "DefaultOn"
+    }
+    standard_ProductCatalog@b = {
+      tab = "standard-ProductCatalog"
+      visibility = "Hidden"
+    }
+    standard_ProductCategory@b = {
+      tab = "standard-ProductCategory"
+      visibility = "Hidden"
+    }
+    standard_Promotion@b = {
+      tab = "standard-Promotion"
+      visibility = "DefaultOn"
+    }
+    standard_PromotionSegment@b = {
+      tab = "standard-PromotionSegment"
+      visibility = "Hidden"
+    }
+    standard_Recommendation@b = {
+      tab = "standard-Recommendation"
+      visibility = "Hidden"
+    }
+    standard_Refund@b = {
+      tab = "standard-Refund"
+      visibility = "Hidden"
+    }
+    standard_RefundLinePayment@b = {
+      tab = "standard-RefundLinePayment"
+      visibility = "Hidden"
+    }
+    standard_ReturnOrder@b = {
+      tab = "standard-ReturnOrder"
+      visibility = "Hidden"
+    }
+    standard_Scorecard@b = {
+      tab = "standard-Scorecard"
+      visibility = "Hidden"
+    }
+    standard_Seller@b = {
+      tab = "standard-Seller"
+      visibility = "Hidden"
+    }
+    standard_ServiceAppointment@b = {
+      tab = "standard-ServiceAppointment"
+      visibility = "Hidden"
+    }
+    standard_ServiceContract@b = {
+      tab = "standard-ServiceContract"
+      visibility = "Hidden"
+    }
+    standard_ServiceResource@b = {
+      tab = "standard-ServiceResource"
+      visibility = "Hidden"
+    }
+    standard_ServiceTerritory@b = {
+      tab = "standard-ServiceTerritory"
+      visibility = "Hidden"
+    }
+    standard_Shift@b = {
+      tab = "standard-Shift"
+      visibility = "Hidden"
+    }
+    standard_ShippingCarrier@b = {
+      tab = "standard-ShippingCarrier"
+      visibility = "Hidden"
+    }
+    standard_ShippingCarrierMethod@b = {
+      tab = "standard-ShippingCarrierMethod"
+      visibility = "Hidden"
+    }
+    standard_Solution@b = {
+      tab = "standard-Solution"
+      visibility = "DefaultOn"
+    }
+    standard_StreamingChannel@b = {
+      tab = "standard-StreamingChannel"
+      visibility = "Hidden"
+    }
+    standard_Task@b = {
+      tab = "standard-Task"
+      visibility = "DefaultOn"
+    }
+    standard_UserProvisioningRequest@b = {
+      tab = "standard-UserProvisioningRequest"
+      visibility = "Hidden"
+    }
+    standard_Waitlist@b = {
+      tab = "standard-Waitlist"
+      visibility = "DefaultOff"
+    }
+    standard_WebStore@b = {
+      tab = "standard-WebStore"
+      visibility = "Hidden"
+    }
+    standard_WebStoreInventorySource@b = {
+      tab = "standard-WebStoreInventorySource"
+      visibility = "Hidden"
+    }
+    standard_WorkOrder@b = {
+      tab = "standard-WorkOrder"
+      visibility = "Hidden"
+    }
+    standard_WorkPlan@b = {
+      tab = "standard-WorkPlan"
+      visibility = "Hidden"
+    }
+    standard_WorkPlanTemplate@b = {
+      tab = "standard-WorkPlanTemplate"
+      visibility = "Hidden"
+    }
+    standard_WorkStepTemplate@b = {
+      tab = "standard-WorkStepTemplate"
+      visibility = "Hidden"
+    }
+    standard_WorkType@b = {
+      tab = "standard-WorkType"
+      visibility = "Hidden"
+    }
+    standard_WorkTypeGroup@b = {
+      tab = "standard-WorkTypeGroup"
+      visibility = "Hidden"
+    }
+  }
 }

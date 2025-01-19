@@ -20,6 +20,10 @@ salesforce.Layout tst_vsb__c_tst_vsb_Layout@uuubus {
               behavior = "Edit"
               field = salesforce.tst_vsb__c.field.num_num__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.tst_vsb__c.field.test_picklist_field__c
+            },
           ]
         },
         {

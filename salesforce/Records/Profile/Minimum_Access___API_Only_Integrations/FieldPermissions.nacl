@@ -1,23 +1,25 @@
 salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
   fieldPermissions = {
-    Entitlement = {
-      AssetId = "ReadWrite"
-      BusinessHoursId = "ReadWrite"
-      CasesPerEntitlement = "ReadWrite"
-      ContractLineItemId = "ReadWrite"
-      EndDate = "ReadWrite"
-      IsPerIncident = "ReadWrite"
-      LocationId = "ReadWrite"
-      RemainingCases = "ReadWrite"
-      RemainingWorkOrders = "ReadWrite"
-      ServiceContractId = "ReadWrite"
-      SlaProcessId = "ReadWrite"
-      StartDate = "ReadWrite"
-      Status = "ReadWrite"
-      StatusIndicator = "ReadWrite"
-      SvcApptBookingWindowsId = "ReadWrite"
-      Type = "ReadWrite"
-      WorkOrdersPerEntitlement = "ReadWrite"
+    PromotionQualifier = {
+      ExternalQualifier = "NoAccess"
+    }
+    CalculationMatrixColumn = {
+      ApiName = "NoAccess"
+      ColumnType = "NoAccess"
+      DataType = "NoAccess"
+      DisplaySequence = "NoAccess"
+      IsWildcardColumn = "NoAccess"
+      Namespace = "NoAccess"
+      RangeValues = "NoAccess"
+      WildcardColumnValue = "NoAccess"
+    }
+    Event = {
+      Description = "NoAccess"
+      IsAllDayEvent = "NoAccess"
+      Location = "NoAccess"
+      Type = "NoAccess"
+      WhatId = "NoAccess"
+      WhoId = "NoAccess"
     }
     AuthorizationForm = {
       DefaultAuthFormTextId = "NoAccess"
@@ -26,104 +28,8 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       IsSignatureRequired = "NoAccess"
       RevisionNumber = "NoAccess"
     }
-    BusinessBrand = {
-      OrgId = "NoAccess"
-      ParentId = "NoAccess"
-    }
     ChangeRequestRelatedItem = {
       Comment = "ReadWrite"
-    }
-    CalculationProcedureVariable = {
-      ApiName = "NoAccess"
-      CalculationMatrixName = "NoAccess"
-      DataType = "NoAccess"
-      DefaultValue = "NoAccess"
-      DisplayName = "NoAccess"
-      IsEditable = "NoAccess"
-      IsUserDefined = "NoAccess"
-      Namespace = "NoAccess"
-      Precision = "NoAccess"
-      UiDisplayOrder = "NoAccess"
-    }
-    ServiceResource = {
-      AccountId = "NoAccess"
-      Description = "NoAccess"
-      IsActive = "NoAccess"
-      LocationId = "NoAccess"
-    }
-    ServiceResourceSkill = {
-      EffectiveEndDate = "NoAccess"
-      SkillLevel = "NoAccess"
-    }
-    TimeSlot = {
-      MaxAppointments = "NoAccess"
-      WorkTypeGroupId = "NoAccess"
-    }
-    MessagingSession = {
-      CaseId = "NoAccess"
-      EndUserLanguage = "ReadWrite"
-      LeadId = "NoAccess"
-      OpportunityId = "NoAccess"
-    }
-    Product2 = {
-      Description = "NoAccess"
-      DisplayUrl = "NoAccess"
-      ExternalDataSourceId = "NoAccess"
-      ExternalId = "NoAccess"
-      Family = "NoAccess"
-      ProductCode = "NoAccess"
-      QuantityUnitOfMeasure = "NoAccess"
-      SellerId = "NoAccess"
-      SourceProductId = "NoAccess"
-      StockKeepingUnit = "NoAccess"
-    }
-    Opportunity = {
-      AccountId = "NoAccess"
-      Amount = "NoAccess"
-      CampaignId = "ReadWrite"
-      ContractId = "NoAccess"
-      CurrentGenerators__c = "NoAccess"
-      DeliveryInstallationStatus__c = "NoAccess"
-      Description = "NoAccess"
-      ExpectedRevenue = "NoAccess"
-      IsPrivate = "NoAccess"
-      LeadSource = "NoAccess"
-      MainCompetitors__c = "NoAccess"
-      NextStep = "NoAccess"
-      OrderNumber__c = "NoAccess"
-      Probability = "NoAccess"
-      TotalOpportunityQuantity = "NoAccess"
-      TrackingNumber__c = "NoAccess"
-      Type = "NoAccess"
-    }
-    ChangeRequest = {
-      BusinessJustification = "ReadWrite"
-      BusinessReason = "ReadWrite"
-      Category = "ReadWrite"
-      ChangeType = "ReadWrite"
-      Description = "ReadWrite"
-      EstimatedEndTime = "ReadWrite"
-      EstimatedStartTime = "ReadWrite"
-      FinalReviewDateTime = "ReadWrite"
-      FinalReviewNotes = "ReadWrite"
-      RelatedIssueAutonumberMaster = "ReadWrite"
-      RelatedItemAutonumberMaster = "ReadWrite"
-      RemediationPlan = "ReadWrite"
-      ReviewerId = "ReadWrite"
-      RiskImpactAnalysis = "ReadWrite"
-    }
-    CalculationMatrixVersion = {
-      ApiName = "NoAccess"
-      EndDateTime = "NoAccess"
-      GroupKey = "NoAccess"
-      GroupKeyValue = "NoAccess"
-      IsEnabled = "NoAccess"
-      MatrixType = "NoAccess"
-      Namespace = "NoAccess"
-      Rank = "NoAccess"
-      StartDateTime = "NoAccess"
-      SubGroupKey = "NoAccess"
-      SubGroupKeyValue = "NoAccess"
     }
     Problem = {
       Category = "ReadWrite"
@@ -137,332 +43,51 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       RootCauseSummary = "ReadWrite"
       SubCategory = "ReadWrite"
     }
-    ServiceAppointment = {
-      AccountId = "NoAccess"
-      ActualDuration = "NoAccess"
-      ActualEndTime = "NoAccess"
-      ActualStartTime = "NoAccess"
-      AdditionalInformation = "NoAccess"
+    Lead = {
       Address = "NoAccess"
-      AppointmentInvitationId = "ReadWrite"
-      AppointmentType = "NoAccess"
-      ApptBookingInfoUrl = "ReadWrite"
-      ArrivalWindowEndTime = "NoAccess"
-      ArrivalWindowStartTime = "NoAccess"
-      CancellationReason = "NoAccess"
-      Comments = "NoAccess"
-      ContactId = "NoAccess"
+      AnnualRevenue = "NoAccess"
+      CleanStatus = "NoAccess"
+      CompanyDunsNumber = "NoAccess"
+      CurrentGenerators__c = "NoAccess"
+      DandbCompanyId = "NoAccess"
       Description = "NoAccess"
+      DoNotCall = "NoAccess"
       Email = "NoAccess"
-      IsAnonymousBooking = "ReadWrite"
-      IsOffsiteAppointment = "ReadWrite"
+      Fax = "NoAccess"
+      GenderIdentity = "NoAccess"
+      HasOptedOutOfEmail = "NoAccess"
+      HasOptedOutOfFax = "NoAccess"
+      Industry = "NoAccess"
+      Jigsaw = "NoAccess"
+      LastTransferDate = "NoAccess"
+      LeadSource = "NoAccess"
+      MobilePhone = "NoAccess"
+      NumberOfEmployees = "NoAccess"
+      NumberofLocations__c = "NoAccess"
       Phone = "NoAccess"
-      SchedEndTime = "NoAccess"
-      SchedStartTime = "NoAccess"
-      ServiceNote = "NoAccess"
-      ServiceTerritoryId = "NoAccess"
-      StatusCategory = "NoAccess"
-      Subject = "NoAccess"
-      WorkTypeId = "NoAccess"
+      Primary__c = "NoAccess"
+      ProductInterest__c = "NoAccess"
+      Pronouns = "NoAccess"
+      Rating = "NoAccess"
+      SICCode__c = "NoAccess"
+      Title = "NoAccess"
+      Website = "NoAccess"
     }
-    Shift = {
-      BackgroundColor = "NoAccess"
-      Label = "NoAccess"
-      ServiceResourceId = "NoAccess"
-      ServiceTerritoryId = "NoAccess"
-      WorkTypeGroupId = "NoAccess"
-      WorkTypeId = "NoAccess"
-    }
-    Incident = {
-      BusinessHoursId = "ReadWrite"
-      Category = "ReadWrite"
-      Description = "ReadWrite"
-      DetectedDateTime = "ReadWrite"
-      EndDateTime = "ReadWrite"
-      EntitlementId = "ReadWrite"
-      IsClosed = "ReadWrite"
-      IsMajorIncident = "ReadWrite"
-      IsStopped = "ReadWrite"
-      MilestoneStatus = "ReadWrite"
-      ParentIncidentId = "ReadWrite"
-      PriorityOverrideReason = "ReadWrite"
-      RelatedItemAutonumberMaster = "ReadWrite"
-      ReportedMethod = "ReadWrite"
-      ResolutionDateTime = "ReadWrite"
-      ResolutionSummary = "ReadWrite"
-      ResolvedById = "ReadWrite"
-      SlaExitDate = "ReadWrite"
-      SlaStartDate = "ReadWrite"
-      StartDateTime = "ReadWrite"
-      StopStartDate = "ReadWrite"
-      SubCategory = "ReadWrite"
-      Type = "ReadWrite"
-    }
-    ShipmentItem = {
-      FulfillmentOrderLineItemId = "NoAccess"
-      ReturnOrderLineItemId = "NoAccess"
-    }
-    Solution = {
-      IsPublished = "NoAccess"
-      IsPublishedInPublicKb = "NoAccess"
-      SolutionNote = "NoAccess"
-    }
-    CalculationMatrixColumn = {
-      ApiName = "NoAccess"
-      ColumnType = "NoAccess"
-      DataType = "NoAccess"
-      DisplaySequence = "NoAccess"
-      IsWildcardColumn = "NoAccess"
-      Namespace = "NoAccess"
-      RangeValues = "NoAccess"
-      WildcardColumnValue = "NoAccess"
-    }
-    AssignedResource = {
-      EventId = "NoAccess"
-      IsRequiredResource = "NoAccess"
-      Role = "NoAccess"
-    }
-    ContactPointPhone = {
-      ActiveFromDate = "NoAccess"
-      AreaCode = "NoAccess"
-      BestTimeToContactEndTime = "NoAccess"
-      BestTimeToContactStartTime = "NoAccess"
-      BestTimeToContactTimezone = "NoAccess"
-      ExtensionNumber = "NoAccess"
-      FormattedInternationalPhoneNumber = "NoAccess"
-      FormattedNationalPhoneNumber = "NoAccess"
-      IsBusinessPhone = "NoAccess"
-      IsFaxCapable = "NoAccess"
-      IsPersonalPhone = "NoAccess"
-      IsPrimary = "NoAccess"
-      IsSmsCapable = "NoAccess"
-      ParentId = "NoAccess"
-      PhoneType = "NoAccess"
-      PreferenceRank = "ReadWrite"
-      UsageType = "ReadWrite"
-    }
-    CalculationProcedureVersion = {
-      Constants = "NoAccess"
-      Description = "NoAccess"
-      EndDateTime = "NoAccess"
-      IsEnabled = "NoAccess"
-      IsLoopingEnabled = "NoAccess"
-      LastSimulatedVariablesInput = "NoAccess"
-      LoopEnd = "NoAccess"
-      LoopIncrement = "NoAccess"
-      LoopStart = "NoAccess"
-      Rank = "NoAccess"
-      StartDateTime = "NoAccess"
-      VersionNumber = "NoAccess"
-    }
-    WorkStep = {
-      ActionDefinition = "ReadWrite"
-      ActionType = "ReadWrite"
-      Description = "ReadWrite"
-      EndTime = "ReadWrite"
-      PausedFlowInterviewId = "ReadWrite"
-      StartTime = "ReadWrite"
-      WorkOrderLineItemId = "ReadWrite"
-      WorkPlanExecutionOrder = "ReadWrite"
-    }
-    ProblemRelatedItem = {
-      Comment = "ReadWrite"
-    }
-    Seller = {
+    ContactPointAddress = {
       ActiveFromDate = "NoAccess"
       ActiveToDate = "NoAccess"
-      SalesAmount = "NoAccess"
-      SellerTier = "NoAccess"
-      SellerType = "NoAccess"
-    }
-    WorkPlanTemplateEntry = {
-      ExecutionOrder = "ReadWrite"
-    }
-    Case = {
-      AccountId = "NoAccess"
-      AssetId = "NoAccess"
-      BusinessHoursId = "NoAccess"
-      ClosedDate = "NoAccess"
-      ClosedOnCreate = "NoAccess"
-      ContactId = "NoAccess"
-      Description = "NoAccess"
-      EngineeringReqNumber__c = "NoAccess"
-      EntitlementId = "NoAccess"
-      IsClosedOnCreate = "NoAccess"
-      IsEscalated = "ReadOnly"
-      IsStopped = "NoAccess"
-      MilestoneStatus = "NoAccess"
-      MilestoneStatusIcon = "NoAccess"
-      Origin = "NoAccess"
-      ParentId = "NoAccess"
-      PotentialLiability__c = "NoAccess"
-      Priority = "NoAccess"
-      ProductId = "NoAccess"
-      Product__c = "NoAccess"
-      Reason = "NoAccess"
-      SLAViolation__c = "NoAccess"
-      ServiceContractId = "NoAccess"
-      SlaExitDate = "NoAccess"
-      SlaStartDate = "NoAccess"
-      SourceId = "NoAccess"
-      StopStartDate = "NoAccess"
-      Subject = "NoAccess"
-      SuppliedCompany = "NoAccess"
-      SuppliedEmail = "NoAccess"
-      SuppliedName = "NoAccess"
-      SuppliedPhone = "NoAccess"
-      Type = "NoAccess"
-    }
-    ContactPointEmail = {
-      ActiveFromDate = "NoAccess"
-      ActiveToDate = "NoAccess"
-      BestTimeToContactEndTime = "NoAccess"
-      BestTimeToContactStartTime = "NoAccess"
-      BestTimeToContactTimezone = "NoAccess"
-      EmailDomain = "NoAccess"
-      EmailLatestBounceDateTime = "NoAccess"
-      EmailLatestBounceReasonText = "NoAccess"
-      EmailMailBox = "NoAccess"
-      IsPrimary = "NoAccess"
-      ParentId = "NoAccess"
-      PreferenceRank = "ReadWrite"
-      UsageType = "ReadWrite"
-    }
-    DataUsePurpose = {
-      Description = "NoAccess"
-      IsMaintainablePerContactPoint = "NoAccess"
-      IsMaintainablePerParty = "NoAccess"
-      IsMaintainablePerType = "NoAccess"
-      LegalBasisId = "NoAccess"
-    }
-    Promotion = {
-      AreQualItemsExclFromDiscounts = "NoAccess"
-      DiscountOrder = "NoAccess"
-      DiscountRestriction = "NoAccess"
-      DisplayName = "NoAccess"
-      EndDateTime = "NoAccess"
-      ExclusivityType = "NoAccess"
-      IsAutomatic = "NoAccess"
-      IsCommercePromotion = "NoAccess"
-      IsQualCriteriaNotRequiredPerApplication = "NoAccess"
-      IsTiered = "NoAccess"
-      MaximumUsageCount = "NoAccess"
-      PriorityNumber = "NoAccess"
-      QualifierCriteria = "NoAccess"
-      StartDateTime = "NoAccess"
-      TargetCriteria = "NoAccess"
-      TermsAndConditions = "NoAccess"
-    }
-    PartyConsent = {
-      DoubleConsentCaptureDate = "NoAccess"
-      EffectiveFrom = "NoAccess"
-      EffectiveTo = "NoAccess"
-    }
-    Location = {
-      CloseDate = "ReadWrite"
-      ConstructionEndDate = "ReadWrite"
-      ConstructionStartDate = "ReadWrite"
-      DefaultPickupTime = "ReadWrite"
-      DefaultProcessingTime = "ReadWrite"
-      DefaultProcessingTimeUnit = "ReadWrite"
-      Description = "ReadWrite"
-      DrivingDirections = "ReadWrite"
-      FulfillingBusinessHoursId = "ReadWrite"
-      Location = "ReadWrite"
-      LocationLevel = "ReadWrite"
-      OpenDate = "ReadWrite"
-      ParentLocationId = "ReadWrite"
-      PossessionDate = "ReadWrite"
-      RemodelEndDate = "ReadWrite"
-      RemodelStartDate = "ReadWrite"
-      TimeZone = "ReadWrite"
-      VisitorAddressId = "ReadWrite"
-    }
-    Task = {
-      ActivityDate = "NoAccess"
-      Description = "NoAccess"
-      Type = "NoAccess"
-      WhatId = "NoAccess"
-      WhoId = "NoAccess"
-    }
-    ContactPointConsent = {
-      ContactPointTypeConsentId = "NoAccess"
-      DataUsePurposeId = "NoAccess"
-      DoubleConsentCaptureDate = "NoAccess"
-      EffectiveFrom = "NoAccess"
-      EffectiveTo = "NoAccess"
-      EngagementChannelTypeId = "NoAccess"
-    }
-    ServiceTerritory = {
       Address = "NoAccess"
-      Description = "NoAccess"
-      IsActive = "NoAccess"
-      SelfCheckInUrl = "NoAccess"
-      ServiceAppointmentLimitType = "NoAccess"
-      TopLevelTerritoryId = "NoAccess"
-      TypicalInTerritoryTravelTime = "NoAccess"
-    }
-    CommSubscriptionTiming = {
-      Offset = "NoAccess"
-      PreferredTimeEnd = "NoAccess"
-      PreferredTimeStart = "NoAccess"
-      PreferredTimeZone = "NoAccess"
-    }
-    ServiceAppointmentAttendee = {
-      HasAttended = "NoAccess"
-      Status = "NoAccess"
-    }
-    AppointmentInvitation = {
-      AppointmentTopicId = "NoAccess"
-      AppointmentType = "ReadWrite"
-      BookingEndDate = "NoAccess"
-      BookingStartDate = "NoAccess"
-      InvitationUrl = "NoAccess"
-      IsActive = "NoAccess"
-      ServiceTerritoryId = "NoAccess"
-      UrlExpiryDate = "NoAccess"
-    }
-    ReturnOrderLineItem = {
-      AssetId = "NoAccess"
-      Description = "NoAccess"
-      DestinationLocationId = "NoAccess"
-      OrderItemId = "NoAccess"
-      ProcessingPlan = "NoAccess"
-      QuantityUnitOfMeasure = "NoAccess"
-      ReasonForReturn = "NoAccess"
-      RepaymentMethod = "NoAccess"
-      SourceLocationId = "NoAccess"
-    }
-    ContractLineItem = {
-      AssetId = "ReadWrite"
-      Description = "ReadWrite"
-      Discount = "ReadWrite"
-      EndDate = "ReadWrite"
-      ListPrice = "ReadWrite"
-      LocationId = "ReadWrite"
-      ParentContractLineItemId = "ReadWrite"
-      RootContractLineItemId = "ReadWrite"
-      StartDate = "ReadWrite"
-      Status = "ReadWrite"
-      StatusIndicator = "ReadWrite"
-      Subtotal = "ReadWrite"
-      TotalPrice = "ReadWrite"
-    }
-    WorkStepTemplate = {
-      ActionDefinition = "ReadWrite"
-      ActionType = "ReadWrite"
-      Description = "ReadWrite"
-      IsActive = "ReadWrite"
-    }
-    RevenueTransactionErrorLog = {
-      Category = "NoAccess"
-      ErrorCode = "NoAccess"
-      RelatedRecord2Id = "NoAccess"
-      RelatedRecordId = "NoAccess"
-      RequestIdentifier = "ReadWrite"
-    }
-    CommSubscriptionConsent = {
-      EffectiveToDate = "NoAccess"
+      AddressType = "NoAccess"
+      BestTimeToContactEndTime = "NoAccess"
+      BestTimeToContactStartTime = "NoAccess"
+      BestTimeToContactTimezone = "NoAccess"
+      ContactPointPhoneId = "NoAccess"
+      IsDefault = "NoAccess"
+      IsPrimary = "NoAccess"
+      IsThirdPartyAddress = "ReadWrite"
+      ParentId = "NoAccess"
+      PreferenceRank = "NoAccess"
+      UsageType = "NoAccess"
     }
     WorkOrder = {
       AccountId = "ReadWrite"
@@ -504,62 +129,6 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       TotalPrice = "ReadWrite"
       WorkTypeId = "ReadWrite"
     }
-    Contract = {
-      ActivatedById = "NoAccess"
-      ActivatedDate = "NoAccess"
-      BillingAddress = "NoAccess"
-      CompanySignedDate = "NoAccess"
-      CompanySignedId = "NoAccess"
-      ContractTerm = "NoAccess"
-      CustomerSignedDate = "NoAccess"
-      CustomerSignedId = "NoAccess"
-      CustomerSignedTitle = "NoAccess"
-      Description = "NoAccess"
-      EndDate = "NoAccess"
-      Name = "NoAccess"
-      OwnerExpirationNotice = "NoAccess"
-      Pricebook2Id = "NoAccess"
-      ShippingAddress = "NoAccess"
-      SpecialTerms = "NoAccess"
-      StartDate = "NoAccess"
-    }
-    MessagingEndUser = {
-      AccountId = "NoAccess"
-      ContactId = "NoAccess"
-      HasInitialResponseSent = "NoAccess"
-      IsOptedOut = "NoAccess"
-      LeadId = "NoAccess"
-    }
-    SkillRequirement = {
-      SkillLevel = "NoAccess"
-    }
-    WorkOrderLineItem = {
-      Address = "ReadWrite"
-      AssetId = "ReadWrite"
-      Description = "ReadWrite"
-      Discount = "ReadWrite"
-      EndDate = "ReadWrite"
-      IsClosed = "ReadWrite"
-      ListPrice = "ReadWrite"
-      LocationId = "ReadWrite"
-      OrderId = "ReadWrite"
-      ParentWorkOrderLineItemId = "ReadWrite"
-      PricebookEntryId = "ReadWrite"
-      Priority = "ReadWrite"
-      Product2Id = "ReadWrite"
-      Quantity = "ReadWrite"
-      RootWorkOrderLineItemId = "ReadWrite"
-      ServiceAppointmentCount = "ReadWrite"
-      ServiceTerritoryId = "ReadWrite"
-      StartDate = "ReadWrite"
-      Status = "ReadWrite"
-      StatusCategory = "ReadWrite"
-      Subject = "ReadWrite"
-      Subtotal = "ReadWrite"
-      TotalPrice = "ReadWrite"
-      UnitPrice = "ReadWrite"
-      WorkTypeId = "ReadWrite"
-    }
     OpportunityLineItem = {
       Description = "NoAccess"
       Discount = "NoAccess"
@@ -569,12 +138,135 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       Subtotal = "NoAccess"
       TotalPrice = "NoAccess"
     }
-    CalculationProcedureStep = {
-      Namespace = "NoAccess"
+    ContactPointConsent = {
+      ContactPointTypeConsentId = "NoAccess"
+      DataUsePurposeId = "NoAccess"
+      DoubleConsentCaptureDate = "NoAccess"
+      EffectiveFrom = "NoAccess"
+      EffectiveTo = "NoAccess"
+      EngagementChannelTypeId = "NoAccess"
     }
-    Waitlist = {
-      Link = "NoAccess"
-      ShouldAllowSelfCheckIn = "NoAccess"
+    Promotion = {
+      AreQualItemsExclFromDiscounts = "NoAccess"
+      DiscountOrder = "NoAccess"
+      DiscountRestriction = "NoAccess"
+      DisplayName = "NoAccess"
+      EndDateTime = "NoAccess"
+      ExclusivityType = "NoAccess"
+      IsAutomatic = "NoAccess"
+      IsCommercePromotion = "NoAccess"
+      IsQualCriteriaNotRequiredPerApplication = "NoAccess"
+      IsTiered = "NoAccess"
+      MaximumUsageCount = "NoAccess"
+      PriorityNumber = "NoAccess"
+      QualifierCriteria = "NoAccess"
+      StartDateTime = "NoAccess"
+      TargetCriteria = "NoAccess"
+      TermsAndConditions = "NoAccess"
+    }
+    CalculationMatrixVersion = {
+      ApiName = "NoAccess"
+      EndDateTime = "NoAccess"
+      GroupKey = "NoAccess"
+      GroupKeyValue = "NoAccess"
+      IsEnabled = "NoAccess"
+      MatrixType = "NoAccess"
+      Namespace = "NoAccess"
+      Rank = "NoAccess"
+      StartDateTime = "NoAccess"
+      SubGroupKey = "NoAccess"
+      SubGroupKeyValue = "NoAccess"
+    }
+    MessagingSession = {
+      CaseId = "NoAccess"
+      EndUserLanguage = "ReadWrite"
+      LeadId = "NoAccess"
+      OpportunityId = "NoAccess"
+    }
+    AppointmentInvitation = {
+      AppointmentTopicId = "NoAccess"
+      AppointmentType = "ReadWrite"
+      BookingEndDate = "NoAccess"
+      BookingStartDate = "NoAccess"
+      InvitationUrl = "NoAccess"
+      IsActive = "NoAccess"
+      ServiceTerritoryId = "NoAccess"
+      UrlExpiryDate = "NoAccess"
+    }
+    ReturnOrderLineItem = {
+      AssetId = "NoAccess"
+      Description = "NoAccess"
+      DestinationLocationId = "NoAccess"
+      OrderItemId = "NoAccess"
+      ProcessingPlan = "NoAccess"
+      QuantityUnitOfMeasure = "NoAccess"
+      ReasonForReturn = "NoAccess"
+      RepaymentMethod = "NoAccess"
+      SourceLocationId = "NoAccess"
+    }
+    ContractLineItem = {
+      AssetId = "ReadWrite"
+      Description = "ReadWrite"
+      Discount = "ReadWrite"
+      EndDate = "ReadWrite"
+      ListPrice = "ReadWrite"
+      LocationId = "ReadWrite"
+      ParentContractLineItemId = "ReadWrite"
+      RootContractLineItemId = "ReadWrite"
+      StartDate = "ReadWrite"
+      Status = "ReadWrite"
+      StatusIndicator = "ReadWrite"
+      Subtotal = "ReadWrite"
+      TotalPrice = "ReadWrite"
+    }
+    CalculationProcedureVariable = {
+      ApiName = "NoAccess"
+      CalculationMatrixName = "NoAccess"
+      DataType = "NoAccess"
+      DefaultValue = "NoAccess"
+      DisplayName = "NoAccess"
+      IsEditable = "NoAccess"
+      IsUserDefined = "NoAccess"
+      Namespace = "NoAccess"
+      Precision = "NoAccess"
+      UiDisplayOrder = "NoAccess"
+    }
+    CalculationProcedure = {
+      Description = "NoAccess"
+      InputVariablesMetadata = "NoAccess"
+      MigrationStatus = "NoAccess"
+      OutputVariablesMetadata = "NoAccess"
+    }
+    ContactPointTypeConsent = {
+      DataUsePurposeId = "NoAccess"
+      DoubleConsentCaptureDate = "NoAccess"
+      EffectiveFrom = "NoAccess"
+      EffectiveTo = "NoAccess"
+      EngagementChannelTypeId = "NoAccess"
+    }
+    SkillRequirement = {
+      SkillLevel = "NoAccess"
+    }
+    LegalEntity = {
+      CompanyName = "NoAccess"
+      Description = "NoAccess"
+      LegalEntityAddress = "NoAccess"
+      Status = "NoAccess"
+    }
+    Idea = {
+      Attachment = "NoAccess"
+      Status = "NoAccess"
+    }
+    Shift = {
+      BackgroundColor = "NoAccess"
+      Label = "NoAccess"
+      ServiceResourceId = "NoAccess"
+      ServiceTerritoryId = "NoAccess"
+      WorkTypeGroupId = "NoAccess"
+      WorkTypeId = "NoAccess"
+    }
+    WorkPlanTemplateEntry = {
+      ExecutionOrder = "ReadWrite"
     }
     Asset = {
       AccountId = "NoAccess"
@@ -613,52 +305,159 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       UsageEndDate = "NoAccess"
       Uuid = "NoAccess"
     }
-    Order = {
-      ActivatedById = "NoAccess"
-      ActivatedDate = "NoAccess"
-      BillToContactId = "NoAccess"
-      BillingAddress = "NoAccess"
-      CompanyAuthorizedById = "NoAccess"
-      CompanyAuthorizedDate = "NoAccess"
-      ContractEndDate = "NoAccess"
-      ContractName = "NoAccess"
-      CustomerAuthorizedById = "NoAccess"
-      CustomerAuthorizedDate = "NoAccess"
+    ServiceTerritory = {
+      Address = "NoAccess"
       Description = "NoAccess"
-      Name = "NoAccess"
-      OpportunityId = "NoAccess"
-      OrderReferenceNumber = "NoAccess"
-      PoDate = "NoAccess"
-      PoNumber = "NoAccess"
-      ShipToContactId = "NoAccess"
-      ShippingAddress = "NoAccess"
-      TotalAmount = "NoAccess"
-      Type = "NoAccess"
+      IsActive = "NoAccess"
+      SelfCheckInUrl = "NoAccess"
+      ServiceAppointmentLimitType = "NoAccess"
+      TopLevelTerritoryId = "NoAccess"
+      TypicalInTerritoryTravelTime = "NoAccess"
     }
-    LegalEntity = {
-      CompanyName = "NoAccess"
-      Description = "NoAccess"
-      LegalEntityAddress = "NoAccess"
+    ServiceAppointmentAttendee = {
+      HasAttended = "NoAccess"
       Status = "NoAccess"
     }
-    WorkPlan = {
+    IncidentRelatedItem = {
+      Comment = "ReadWrite"
+    }
+    ShipmentItem = {
+      FulfillmentOrderLineItemId = "NoAccess"
+      ReturnOrderLineItemId = "NoAccess"
+    }
+    ChangeRequest = {
+      BusinessJustification = "ReadWrite"
+      BusinessReason = "ReadWrite"
+      Category = "ReadWrite"
+      ChangeType = "ReadWrite"
       Description = "ReadWrite"
-      WorkOrderLineItemId = "ReadWrite"
-      WorkPlanTemplateId = "ReadWrite"
+      EstimatedEndTime = "ReadWrite"
+      EstimatedStartTime = "ReadWrite"
+      FinalReviewDateTime = "ReadWrite"
+      FinalReviewNotes = "ReadWrite"
+      RelatedIssueAutonumberMaster = "ReadWrite"
+      RelatedItemAutonumberMaster = "ReadWrite"
+      RemediationPlan = "ReadWrite"
+      ReviewerId = "ReadWrite"
+      RiskImpactAnalysis = "ReadWrite"
     }
-    aaa_big_object_test__b = {
-      n__c = "ReadWrite"
+    CalcProcStepRelationship = {
+      CalcProcVersionId = "NoAccess"
+      Description = "NoAccess"
+      Label = "NoAccess"
+      Namespace = "NoAccess"
+      Priority = "NoAccess"
+      RelationshipType = "NoAccess"
     }
-    ContactPointTypeConsent = {
-      DataUsePurposeId = "NoAccess"
+    CommSubscriptionTiming = {
+      Offset = "NoAccess"
+      PreferredTimeEnd = "NoAccess"
+      PreferredTimeStart = "NoAccess"
+      PreferredTimeZone = "NoAccess"
+    }
+    ContactPointPhone = {
+      ActiveFromDate = "NoAccess"
+      AreaCode = "NoAccess"
+      BestTimeToContactEndTime = "NoAccess"
+      BestTimeToContactStartTime = "NoAccess"
+      BestTimeToContactTimezone = "NoAccess"
+      ExtensionNumber = "NoAccess"
+      FormattedInternationalPhoneNumber = "NoAccess"
+      FormattedNationalPhoneNumber = "NoAccess"
+      IsBusinessPhone = "NoAccess"
+      IsFaxCapable = "NoAccess"
+      IsPersonalPhone = "NoAccess"
+      IsPrimary = "NoAccess"
+      IsSmsCapable = "NoAccess"
+      ParentId = "NoAccess"
+      PhoneType = "NoAccess"
+      PreferenceRank = "ReadWrite"
+      UsageType = "ReadWrite"
+    }
+    tst_vsb__c = {
+      num_num__c = "ReadWrite"
+      test_picklist_field__c = "ReadWrite"
+    }
+    PartyConsent = {
       DoubleConsentCaptureDate = "NoAccess"
       EffectiveFrom = "NoAccess"
       EffectiveTo = "NoAccess"
-      EngagementChannelTypeId = "NoAccess"
     }
-    Customer = {
-      CustomerStatusType = "NoAccess"
-      TotalLifeTimeValue = "NoAccess"
+    SocialPersona = {
+      SourceApp = "NoAccess"
+    }
+    DataUsePurpose = {
+      Description = "NoAccess"
+      IsMaintainablePerContactPoint = "NoAccess"
+      IsMaintainablePerParty = "NoAccess"
+      IsMaintainablePerType = "NoAccess"
+      LegalBasisId = "NoAccess"
+    }
+    Entitlement = {
+      AssetId = "ReadWrite"
+      BusinessHoursId = "ReadWrite"
+      CasesPerEntitlement = "ReadWrite"
+      ContractLineItemId = "ReadWrite"
+      EndDate = "ReadWrite"
+      IsPerIncident = "ReadWrite"
+      LocationId = "ReadWrite"
+      RemainingCases = "ReadWrite"
+      RemainingWorkOrders = "ReadWrite"
+      ServiceContractId = "ReadWrite"
+      SlaProcessId = "ReadWrite"
+      StartDate = "ReadWrite"
+      Status = "ReadWrite"
+      StatusIndicator = "ReadWrite"
+      SvcApptBookingWindowsId = "ReadWrite"
+      Type = "ReadWrite"
+      WorkOrdersPerEntitlement = "ReadWrite"
+    }
+    CommSubscriptionConsent = {
+      EffectiveToDate = "NoAccess"
+    }
+    Opportunity = {
+      AccountId = "NoAccess"
+      Amount = "NoAccess"
+      CampaignId = "ReadWrite"
+      ContractId = "NoAccess"
+      CurrentGenerators__c = "NoAccess"
+      DeliveryInstallationStatus__c = "NoAccess"
+      Description = "NoAccess"
+      ExpectedRevenue = "NoAccess"
+      IsPrivate = "NoAccess"
+      LeadSource = "NoAccess"
+      MainCompetitors__c = "NoAccess"
+      NextStep = "NoAccess"
+      OrderNumber__c = "NoAccess"
+      Probability = "NoAccess"
+      TotalOpportunityQuantity = "NoAccess"
+      TrackingNumber__c = "NoAccess"
+      Type = "NoAccess"
+    }
+    FulfillmentOrder = {
+      FulfilledFromLocationId = "NoAccess"
+      FulfilledToAddress = "NoAccess"
+      FulfilledToEmailAddress = "NoAccess"
+      FulfilledToPhone = "NoAccess"
+      TotalProductAmount = "NoAccess"
+    }
+    aab_big_object__b = {
+      sdvs__c = "ReadWrite"
+    }
+    MessagingEndUser = {
+      AccountId = "NoAccess"
+      ContactId = "NoAccess"
+      HasInitialResponseSent = "NoAccess"
+      IsOptedOut = "NoAccess"
+      LeadId = "NoAccess"
+    }
+    Waitlist = {
+      Link = "NoAccess"
+      ShouldAllowSelfCheckIn = "NoAccess"
+    }
+    ShiftWorkTopic = {
+      AttendeeLimit = "ReadWrite"
+      ServiceAppointmentLimit = "ReadWrite"
     }
     ServiceContract = {
       AccountId = "ReadWrite"
@@ -684,35 +483,60 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       Term = "ReadWrite"
       TotalPrice = "ReadWrite"
     }
-    ResourceAbsence = {
-      Address = "NoAccess"
-      Description = "NoAccess"
+    WorkStep = {
+      ActionDefinition = "ReadWrite"
+      ActionType = "ReadWrite"
+      Description = "ReadWrite"
+      EndTime = "ReadWrite"
+      PausedFlowInterviewId = "ReadWrite"
+      StartTime = "ReadWrite"
+      WorkOrderLineItemId = "ReadWrite"
+      WorkPlanExecutionOrder = "ReadWrite"
     }
-    IncidentRelatedItem = {
-      Comment = "ReadWrite"
-    }
-    tst_vsb__c = {
-      num_num__c = "ReadWrite"
-    }
-    Idea = {
-      Attachment = "NoAccess"
-      Status = "NoAccess"
-    }
-    ContactPointAddress = {
-      ActiveFromDate = "NoAccess"
-      ActiveToDate = "NoAccess"
-      Address = "NoAccess"
-      AddressType = "NoAccess"
-      BestTimeToContactEndTime = "NoAccess"
-      BestTimeToContactStartTime = "NoAccess"
-      BestTimeToContactTimezone = "NoAccess"
-      ContactPointPhoneId = "NoAccess"
+    CommSubscription = {
+      CommunicationSubscriptionCode = "NoAccess"
+      DataUsePurposeId = "NoAccess"
       IsDefault = "NoAccess"
-      IsPrimary = "NoAccess"
-      IsThirdPartyAddress = "ReadWrite"
+    }
+    Incident = {
+      BusinessHoursId = "ReadWrite"
+      Category = "ReadWrite"
+      Description = "ReadWrite"
+      DetectedDateTime = "ReadWrite"
+      EndDateTime = "ReadWrite"
+      EntitlementId = "ReadWrite"
+      IsClosed = "ReadWrite"
+      IsMajorIncident = "ReadWrite"
+      IsStopped = "ReadWrite"
+      MilestoneStatus = "ReadWrite"
+      ParentIncidentId = "ReadWrite"
+      PriorityOverrideReason = "ReadWrite"
+      RelatedItemAutonumberMaster = "ReadWrite"
+      ReportedMethod = "ReadWrite"
+      ResolutionDateTime = "ReadWrite"
+      ResolutionSummary = "ReadWrite"
+      ResolvedById = "ReadWrite"
+      SlaExitDate = "ReadWrite"
+      SlaStartDate = "ReadWrite"
+      StartDateTime = "ReadWrite"
+      StopStartDate = "ReadWrite"
+      SubCategory = "ReadWrite"
+      Type = "ReadWrite"
+    }
+    AssignedResource = {
+      EventId = "NoAccess"
+      IsRequiredResource = "NoAccess"
+      Role = "NoAccess"
+    }
+    AssetRelationship = {
+      RelationshipType = "ReadWrite"
+    }
+    CalculationProcedureStep = {
+      Namespace = "NoAccess"
+    }
+    BusinessBrand = {
+      OrgId = "NoAccess"
       ParentId = "NoAccess"
-      PreferenceRank = "NoAccess"
-      UsageType = "NoAccess"
     }
     Shipment = {
       ActualDeliveryDate = "NoAccess"
@@ -728,68 +552,82 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       TrackingNumber = "NoAccess"
       TrackingUrl = "NoAccess"
     }
-    AuthorizationFormConsent = {
-      DocumentVersionId = "NoAccess"
-      Status = "NoAccess"
-    }
-    Event = {
+    Product2 = {
       Description = "NoAccess"
-      IsAllDayEvent = "NoAccess"
-      Location = "NoAccess"
-      Type = "NoAccess"
-      WhatId = "NoAccess"
-      WhoId = "NoAccess"
+      DisplayUrl = "NoAccess"
+      ExternalDataSourceId = "NoAccess"
+      ExternalId = "NoAccess"
+      Family = "NoAccess"
+      ProductCode = "NoAccess"
+      QuantityUnitOfMeasure = "NoAccess"
+      SellerId = "NoAccess"
+      SourceProductId = "NoAccess"
+      StockKeepingUnit = "NoAccess"
+    }
+    AuthorizationFormText = {
+      ContentDocumentId = "NoAccess"
+      DetailAuthorizationFormText = "NoAccess"
+      FullAuthorizationFormUrl = "NoAccess"
+      Locale = "NoAccess"
+      SummaryAuthFormText = "NoAccess"
+    }
+    Solution = {
+      IsPublished = "NoAccess"
+      IsPublishedInPublicKb = "NoAccess"
+      SolutionNote = "NoAccess"
     }
     CalculationMatrixRow = {
       Namespace = "NoAccess"
     }
-    CalcProcStepRelationship = {
-      CalcProcVersionId = "NoAccess"
+    Customer = {
+      CustomerStatusType = "NoAccess"
+      TotalLifeTimeValue = "NoAccess"
+    }
+    ServiceResourceSkill = {
+      EffectiveEndDate = "NoAccess"
+      SkillLevel = "NoAccess"
+    }
+    AppointmentInvitee = {
+      IsRequiredResource = "NoAccess"
+      ParticipantServiceResourceId = "NoAccess"
+    }
+    TimeSlot = {
+      MaxAppointments = "NoAccess"
+      WorkTypeGroupId = "NoAccess"
+    }
+    CalculationMatrix = {
       Description = "NoAccess"
-      Label = "NoAccess"
+      GroupKey = "NoAccess"
+      MigrationStatus = "NoAccess"
       Namespace = "NoAccess"
-      Priority = "NoAccess"
-      RelationshipType = "NoAccess"
+      SubGroupKey = "NoAccess"
+      UniqueName = "NoAccess"
+    }
+    ConsumptionRate = {
+      Description = "NoAccess"
+      UpperBound = "NoAccess"
     }
     PromotionTarget = {
       ExternalTarget = "NoAccess"
       IsMinItemCountRequired = "NoAccess"
+    }
+    Task = {
+      ActivityDate = "NoAccess"
+      Description = "NoAccess"
+      Type = "NoAccess"
+      WhatId = "NoAccess"
+      WhoId = "NoAccess"
+    }
+    WorkPlan = {
+      Description = "ReadWrite"
+      WorkOrderLineItemId = "ReadWrite"
+      WorkPlanTemplateId = "ReadWrite"
     }
     ConsumptionSchedule = {
       Description = "NoAccess"
       IsActive = "NoAccess"
       MatchingAttribute = "NoAccess"
       UnitOfMeasure = "NoAccess"
-    }
-    Lead = {
-      Address = "NoAccess"
-      AnnualRevenue = "NoAccess"
-      CleanStatus = "NoAccess"
-      CompanyDunsNumber = "NoAccess"
-      CurrentGenerators__c = "NoAccess"
-      DandbCompanyId = "NoAccess"
-      Description = "NoAccess"
-      DoNotCall = "NoAccess"
-      Email = "NoAccess"
-      Fax = "NoAccess"
-      GenderIdentity = "NoAccess"
-      HasOptedOutOfEmail = "NoAccess"
-      HasOptedOutOfFax = "NoAccess"
-      Industry = "NoAccess"
-      Jigsaw = "NoAccess"
-      LastTransferDate = "NoAccess"
-      LeadSource = "NoAccess"
-      MobilePhone = "NoAccess"
-      NumberOfEmployees = "NoAccess"
-      NumberofLocations__c = "NoAccess"
-      Phone = "NoAccess"
-      Primary__c = "NoAccess"
-      ProductInterest__c = "NoAccess"
-      Pronouns = "NoAccess"
-      Rating = "NoAccess"
-      SICCode__c = "NoAccess"
-      Title = "NoAccess"
-      Website = "NoAccess"
     }
     WorkType = {
       BlockTimeAfterAppointment = "NoAccess"
@@ -803,26 +641,39 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       TimeframeEnd = "NoAccess"
       TimeframeStart = "NoAccess"
     }
-    AssetRelationship = {
-      RelationshipType = "ReadWrite"
-    }
-    CalculationMatrix = {
+    Contract = {
+      ActivatedById = "NoAccess"
+      ActivatedDate = "NoAccess"
+      BillingAddress = "NoAccess"
+      CompanySignedDate = "NoAccess"
+      CompanySignedId = "NoAccess"
+      ContractTerm = "NoAccess"
+      CustomerSignedDate = "NoAccess"
+      CustomerSignedId = "NoAccess"
+      CustomerSignedTitle = "NoAccess"
       Description = "NoAccess"
-      GroupKey = "NoAccess"
-      MigrationStatus = "NoAccess"
-      Namespace = "NoAccess"
-      SubGroupKey = "NoAccess"
-      UniqueName = "NoAccess"
+      EndDate = "NoAccess"
+      Name = "NoAccess"
+      OwnerExpirationNotice = "NoAccess"
+      Pricebook2Id = "NoAccess"
+      ShippingAddress = "NoAccess"
+      SpecialTerms = "NoAccess"
+      StartDate = "NoAccess"
+    }
+    WorkPlanTemplate = {
+      Description = "ReadWrite"
+      IsActive = "ReadWrite"
+      RelativeExecutionOrder = "ReadWrite"
+    }
+    WorkStepTemplate = {
+      ActionDefinition = "ReadWrite"
+      ActionType = "ReadWrite"
+      Description = "ReadWrite"
+      IsActive = "ReadWrite"
     }
     WorkTypeGroup = {
       AdditionalInformation = "NoAccess"
       IsActive = "NoAccess"
-    }
-    ServiceTerritoryMember = {
-      Address = "NoAccess"
-      EffectiveEndDate = "NoAccess"
-      OperatingHoursId = "NoAccess"
-      Role = "NoAccess"
     }
     Campaign = {
       ActualCost = "NoAccess"
@@ -858,39 +709,66 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       Status = "NoAccess"
       Type = "NoAccess"
     }
-    ShiftWorkTopic = {
-      AttendeeLimit = "ReadWrite"
-      ServiceAppointmentLimit = "ReadWrite"
+    Individual = {
+      BirthDate = "NoAccess"
+      CanStorePiiElsewhere = "NoAccess"
+      ChildrenCount = "NoAccess"
+      ConsumerCreditScore = "NoAccess"
+      ConsumerCreditScoreProviderName = "NoAccess"
+      ConvictionsCount = "NoAccess"
+      DeathDate = "NoAccess"
+      HasOptedOutGeoTracking = "NoAccess"
+      HasOptedOutProcessing = "NoAccess"
+      HasOptedOutProfiling = "NoAccess"
+      HasOptedOutSolicit = "NoAccess"
+      HasOptedOutTracking = "NoAccess"
+      IndividualsAge = "NoAccess"
+      InfluencerRating = "NoAccess"
+      IsHomeOwner = "NoAccess"
+      MasterRecordId = "NoAccess"
+      MilitaryService = "NoAccess"
+      Occupation = "NoAccess"
+      SendIndividualData = "NoAccess"
+      ShouldForget = "NoAccess"
+      Website = "NoAccess"
     }
-    AuthorizationFormText = {
-      ContentDocumentId = "NoAccess"
-      DetailAuthorizationFormText = "NoAccess"
-      FullAuthorizationFormUrl = "NoAccess"
-      Locale = "NoAccess"
-      SummaryAuthFormText = "NoAccess"
+    Seller = {
+      ActiveFromDate = "NoAccess"
+      ActiveToDate = "NoAccess"
+      SalesAmount = "NoAccess"
+      SellerTier = "NoAccess"
+      SellerType = "NoAccess"
     }
-    DataUseLegalBasis = {
+    ServiceResource = {
+      AccountId = "NoAccess"
       Description = "NoAccess"
-      Source = "NoAccess"
+      IsActive = "NoAccess"
+      LocationId = "NoAccess"
     }
-    SocialPersona = {
-      SourceApp = "NoAccess"
-    }
-    WorkPlanTemplate = {
-      Description = "ReadWrite"
-      IsActive = "ReadWrite"
-      RelativeExecutionOrder = "ReadWrite"
-    }
-    OrderItem = {
+    Order = {
+      ActivatedById = "NoAccess"
+      ActivatedDate = "NoAccess"
+      BillToContactId = "NoAccess"
+      BillingAddress = "NoAccess"
+      CompanyAuthorizedById = "NoAccess"
+      CompanyAuthorizedDate = "NoAccess"
+      ContractEndDate = "NoAccess"
+      ContractName = "NoAccess"
+      CustomerAuthorizedById = "NoAccess"
+      CustomerAuthorizedDate = "NoAccess"
       Description = "NoAccess"
-      EndDate = "NoAccess"
-      ListPrice = "NoAccess"
-      ProductCode = "NoAccess"
-      ServiceDate = "NoAccess"
-      SubscriptionTerm = "NoAccess"
+      Name = "NoAccess"
+      OpportunityId = "NoAccess"
+      OrderReferenceNumber = "NoAccess"
+      PoDate = "NoAccess"
+      PoNumber = "NoAccess"
+      ShipToContactId = "NoAccess"
+      ShippingAddress = "NoAccess"
+      TotalAmount = "NoAccess"
+      Type = "NoAccess"
     }
-    aab_big_object__b = {
-      sdvs__c = "ReadWrite"
+    WebStoreInventorySource = {
+      IsEnabled = "NoAccess"
     }
     Contact = {
       AccountId = "NoAccess"
@@ -923,25 +801,105 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       test_pickList__c = "ReadWrite"
       test_text__c = "NoAccess"
     }
-    CalculationProcedure = {
+    Location = {
+      CloseDate = "ReadWrite"
+      ConstructionEndDate = "ReadWrite"
+      ConstructionStartDate = "ReadWrite"
+      DefaultPickupTime = "ReadWrite"
+      DefaultProcessingTime = "ReadWrite"
+      DefaultProcessingTimeUnit = "ReadWrite"
+      Description = "ReadWrite"
+      DrivingDirections = "ReadWrite"
+      FulfillingBusinessHoursId = "ReadWrite"
+      Location = "ReadWrite"
+      LocationLevel = "ReadWrite"
+      OpenDate = "ReadWrite"
+      ParentLocationId = "ReadWrite"
+      PossessionDate = "ReadWrite"
+      RemodelEndDate = "ReadWrite"
+      RemodelStartDate = "ReadWrite"
+      TimeZone = "ReadWrite"
+      VisitorAddressId = "ReadWrite"
+    }
+    ContactPointEmail = {
+      ActiveFromDate = "NoAccess"
+      ActiveToDate = "NoAccess"
+      BestTimeToContactEndTime = "NoAccess"
+      BestTimeToContactStartTime = "NoAccess"
+      BestTimeToContactTimezone = "NoAccess"
+      EmailDomain = "NoAccess"
+      EmailLatestBounceDateTime = "NoAccess"
+      EmailLatestBounceReasonText = "NoAccess"
+      EmailMailBox = "NoAccess"
+      IsPrimary = "NoAccess"
+      ParentId = "NoAccess"
+      PreferenceRank = "ReadWrite"
+      UsageType = "ReadWrite"
+    }
+    CalculationProcedureVersion = {
+      Constants = "NoAccess"
       Description = "NoAccess"
-      InputVariablesMetadata = "NoAccess"
-      MigrationStatus = "NoAccess"
-      OutputVariablesMetadata = "NoAccess"
-    }
-    WebStoreInventorySource = {
+      EndDateTime = "NoAccess"
       IsEnabled = "NoAccess"
+      IsLoopingEnabled = "NoAccess"
+      LastSimulatedVariablesInput = "NoAccess"
+      LoopEnd = "NoAccess"
+      LoopIncrement = "NoAccess"
+      LoopStart = "NoAccess"
+      Rank = "NoAccess"
+      StartDateTime = "NoAccess"
+      VersionNumber = "NoAccess"
     }
-    FulfillmentOrder = {
-      FulfilledFromLocationId = "NoAccess"
-      FulfilledToAddress = "NoAccess"
-      FulfilledToEmailAddress = "NoAccess"
-      FulfilledToPhone = "NoAccess"
-      TotalProductAmount = "NoAccess"
+    ServiceTerritoryMember = {
+      Address = "NoAccess"
+      EffectiveEndDate = "NoAccess"
+      OperatingHoursId = "NoAccess"
+      Role = "NoAccess"
     }
-    AppointmentInvitee = {
-      IsRequiredResource = "NoAccess"
-      ParticipantServiceResourceId = "NoAccess"
+    aaa_big_object_test__b = {
+      n__c = "ReadWrite"
+    }
+    WorkOrderLineItem = {
+      Address = "ReadWrite"
+      AssetId = "ReadWrite"
+      Description = "ReadWrite"
+      Discount = "ReadWrite"
+      EndDate = "ReadWrite"
+      IsClosed = "ReadWrite"
+      ListPrice = "ReadWrite"
+      LocationId = "ReadWrite"
+      OrderId = "ReadWrite"
+      ParentWorkOrderLineItemId = "ReadWrite"
+      PricebookEntryId = "ReadWrite"
+      Priority = "ReadWrite"
+      Product2Id = "ReadWrite"
+      Quantity = "ReadWrite"
+      RootWorkOrderLineItemId = "ReadWrite"
+      ServiceAppointmentCount = "ReadWrite"
+      ServiceTerritoryId = "ReadWrite"
+      StartDate = "ReadWrite"
+      Status = "ReadWrite"
+      StatusCategory = "ReadWrite"
+      Subject = "ReadWrite"
+      Subtotal = "ReadWrite"
+      TotalPrice = "ReadWrite"
+      UnitPrice = "ReadWrite"
+      WorkTypeId = "ReadWrite"
+    }
+    ProblemRelatedItem = {
+      Comment = "ReadWrite"
+    }
+    OrderItem = {
+      Description = "NoAccess"
+      EndDate = "NoAccess"
+      ListPrice = "NoAccess"
+      ProductCode = "NoAccess"
+      ServiceDate = "NoAccess"
+      SubscriptionTerm = "NoAccess"
+    }
+    ResourceAbsence = {
+      Address = "NoAccess"
+      Description = "NoAccess"
     }
     ReturnOrder = {
       AccountId = "NoAccess"
@@ -956,29 +914,6 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       ShipmentType = "NoAccess"
       SourceLocationId = "NoAccess"
       Status = "NoAccess"
-    }
-    Individual = {
-      BirthDate = "NoAccess"
-      CanStorePiiElsewhere = "NoAccess"
-      ChildrenCount = "NoAccess"
-      ConsumerCreditScore = "NoAccess"
-      ConsumerCreditScoreProviderName = "NoAccess"
-      ConvictionsCount = "NoAccess"
-      DeathDate = "NoAccess"
-      HasOptedOutGeoTracking = "NoAccess"
-      HasOptedOutProcessing = "NoAccess"
-      HasOptedOutProfiling = "NoAccess"
-      HasOptedOutSolicit = "NoAccess"
-      HasOptedOutTracking = "NoAccess"
-      IndividualsAge = "NoAccess"
-      InfluencerRating = "NoAccess"
-      IsHomeOwner = "NoAccess"
-      MasterRecordId = "NoAccess"
-      MilitaryService = "NoAccess"
-      Occupation = "NoAccess"
-      SendIndividualData = "NoAccess"
-      ShouldForget = "NoAccess"
-      Website = "NoAccess"
     }
     Account = {
       AccountNumber = "NoAccess"
@@ -1018,17 +953,83 @@ salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
       YearStarted = "NoAccess"
       test_text__c = "ReadWrite"
     }
-    CommSubscription = {
-      CommunicationSubscriptionCode = "NoAccess"
-      DataUsePurposeId = "NoAccess"
-      IsDefault = "NoAccess"
-    }
-    ConsumptionRate = {
+    ServiceAppointment = {
+      AccountId = "NoAccess"
+      ActualDuration = "NoAccess"
+      ActualEndTime = "NoAccess"
+      ActualStartTime = "NoAccess"
+      AdditionalInformation = "NoAccess"
+      Address = "NoAccess"
+      AppointmentInvitationId = "ReadWrite"
+      AppointmentType = "NoAccess"
+      ApptBookingInfoUrl = "ReadWrite"
+      ArrivalWindowEndTime = "NoAccess"
+      ArrivalWindowStartTime = "NoAccess"
+      CancellationReason = "NoAccess"
+      Comments = "NoAccess"
+      ContactId = "NoAccess"
       Description = "NoAccess"
-      UpperBound = "NoAccess"
+      Email = "NoAccess"
+      IsAnonymousBooking = "ReadWrite"
+      IsOffsiteAppointment = "ReadWrite"
+      Phone = "NoAccess"
+      SchedEndTime = "NoAccess"
+      SchedStartTime = "NoAccess"
+      ServiceNote = "NoAccess"
+      ServiceTerritoryId = "NoAccess"
+      StatusCategory = "NoAccess"
+      Subject = "NoAccess"
+      WorkTypeId = "NoAccess"
     }
-    PromotionQualifier = {
-      ExternalQualifier = "NoAccess"
+    Case = {
+      AccountId = "NoAccess"
+      AssetId = "NoAccess"
+      BusinessHoursId = "NoAccess"
+      ClosedDate = "NoAccess"
+      ClosedOnCreate = "NoAccess"
+      ContactId = "NoAccess"
+      Description = "NoAccess"
+      EngineeringReqNumber__c = "NoAccess"
+      EntitlementId = "NoAccess"
+      IsClosedOnCreate = "NoAccess"
+      IsEscalated = "ReadOnly"
+      IsStopped = "NoAccess"
+      MilestoneStatus = "NoAccess"
+      MilestoneStatusIcon = "NoAccess"
+      Origin = "NoAccess"
+      ParentId = "NoAccess"
+      PotentialLiability__c = "NoAccess"
+      Priority = "NoAccess"
+      ProductId = "NoAccess"
+      Product__c = "NoAccess"
+      Reason = "NoAccess"
+      SLAViolation__c = "NoAccess"
+      ServiceContractId = "NoAccess"
+      SlaExitDate = "NoAccess"
+      SlaStartDate = "NoAccess"
+      SourceId = "NoAccess"
+      StopStartDate = "NoAccess"
+      Subject = "NoAccess"
+      SuppliedCompany = "NoAccess"
+      SuppliedEmail = "NoAccess"
+      SuppliedName = "NoAccess"
+      SuppliedPhone = "NoAccess"
+      Type = "NoAccess"
+    }
+    RevenueTransactionErrorLog = {
+      Category = "NoAccess"
+      ErrorCode = "NoAccess"
+      RelatedRecord2Id = "NoAccess"
+      RelatedRecordId = "NoAccess"
+      RequestIdentifier = "ReadWrite"
+    }
+    AuthorizationFormConsent = {
+      DocumentVersionId = "NoAccess"
+      Status = "NoAccess"
+    }
+    DataUseLegalBasis = {
+      Description = "NoAccess"
+      Source = "NoAccess"
     }
   }
 }
