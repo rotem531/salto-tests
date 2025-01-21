@@ -18,7 +18,7 @@ salesforce.Layout CMT2__mdt_CMT2_Layout@uubs {
             },
             {
               behavior = "Edit"
-              field = "field1__c"
+              field = salesforce.CMT2__mdt.field.field1__c
             },
           ]
         },
@@ -80,4 +80,7 @@ salesforce.Layout CMT2__mdt_CMT2_Layout@uubs {
   showSubmitAndAttachButton = false
   fullName = "CMT2__mdt-CMT2 Layout"
   _alias = "CMT2__mdt-CMT2 Layout"
+  _parent = [
+    salesforce.CMT2__mdt,
+  ]
 }

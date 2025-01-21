@@ -1,0 +1,86 @@
+type salesforce.test_cmt__mdt {
+  salesforce.Text aaaa__c {
+    apiName = "test_cmt__mdt.aaaa__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "aaaa"
+    length = 32
+    unique = false
+  }
+  salesforce.Text aaaab__c {
+    apiName = "test_cmt__mdt.aaaab__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "aaaab"
+    length = 32
+    unique = false
+  }
+  salesforce.Text aaatext__c {
+    apiName = "test_cmt__mdt.aaatext__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "aaatext"
+    length = 32
+    unique = false
+  }
+  salesforce.Email email_test__c {
+    apiName = "test_cmt__mdt.email_test__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "email test"
+    unique = false
+  }
+  salesforce.Number gdgdg__c {
+    apiName = "test_cmt__mdt.gdgdg__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "gdgdg"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Number hfh__c {
+    apiName = "test_cmt__mdt.hfh__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "hfh"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Number numi__c {
+    apiName = "test_cmt__mdt.numi__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "numi"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Number test_number__c {
+    apiName = "test_cmt__mdt.test_number__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "test number"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Text test_text__c {
+    apiName = "test_cmt__mdt.test_text__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "test text"
+    length = 32
+    unique = false
+  }
+  salesforce.Number wegf__c {
+    apiName = "test_cmt__mdt.wegf__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "wegf"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+}
