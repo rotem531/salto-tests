@@ -2,10 +2,6 @@ salesforce.RecordType tst_vsb__c_recordType1 {
   fullName = "tst_vsb__c.recordType1"
   active = true
   label = "recordType1"
-  _parent = [
-    salesforce.tst_vsb__c,
-  ]
-  _alias = "recordType1"
   picklistValues = [
     {
       picklist = salesforce.tst_vsb__c.field.test_picklist_field__c
@@ -37,4 +33,8 @@ salesforce.RecordType tst_vsb__c_recordType1 {
       ]
     },
   ]
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _alias = "recordType1"
 }

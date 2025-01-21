@@ -18,7 +18,7 @@ salesforce.Layout test_cmt__mdt_firth_of_fifth@uuubss {
             },
             {
               behavior = "Required"
-              field = salesforce.test_cmt__mdt.field.test_number__c
+              field = "test_number__c"
             },
             {
               behavior = "Edit"
@@ -26,7 +26,7 @@ salesforce.Layout test_cmt__mdt_firth_of_fifth@uuubss {
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.test_text__c
+              field = "test_text__c"
             },
             {
               behavior = "Edit"
@@ -34,35 +34,35 @@ salesforce.Layout test_cmt__mdt_firth_of_fifth@uuubss {
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.numi__c
+              field = "numi__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.aaaa__c
+              field = "aaaa__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.aaaab__c
+              field = "aaaab__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.aaatext__c
+              field = "aaatext__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.email_test__c
+              field = "email_test__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.gdgdg__c
+              field = "gdgdg__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.hfh__c
+              field = "hfh__c"
             },
             {
               behavior = "Edit"
-              field = salesforce.test_cmt__mdt.field.wegf__c
+              field = "wegf__c"
             },
           ]
         },
@@ -91,8 +91,5 @@ salesforce.Layout test_cmt__mdt_firth_of_fifth@uuubss {
     summaryLayoutStyle = "Default"
   }
   fullName = "test_cmt__mdt-firth of fifth"
-  _parent = [
-    salesforce.test_cmt__mdt,
-  ]
   _alias = "test_cmt__mdt-firth of fifth"
 }
