@@ -1,13 +1,13 @@
 salesforce.EventSettings {
-  fullName = "Event"
-  bypassMeteringBlock = "false"
+  bypassMeteringBlock = false
   enableDeleteMonitoringData = false
   enableDynamicStreamingChannel = false
   enableEventLogGeneration = false
-  enableLightningLoggerEvents = "false"
+  enableLightningLoggerEvents = false
   enableLoginForensics = false
   enableStreamingApi = true
   enableTransactionSecurityPolicies = false
   eventLogRetentionDuration = 0
+  fullName = "Event"
   _alias = "Event"
 }

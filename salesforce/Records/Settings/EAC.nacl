@@ -1,14 +1,14 @@
 salesforce.EACSettings {
-  fullName = "EAC"
-  autoPopulateGoogleMeetLinks = "false"
-  dSThresholdNotification = "false"
-  enableActivityAnalyticsPref = "false"
+  autoPopulateGoogleMeetLinks = false
+  dSThresholdNotification = false
+  enableActivityAnalyticsPref = false
   enableEACForEveryonePref = false
   enableInboxActivitySharing = false
   enableInsightsInTimeline = true
   enableInsightsInTimelineEacStd = false
   provisionProductivityFeatures = false
-  s2XSvcAccEmail = "false"
-  syncInternalEvents = "true"
+  s2XSvcAccEmail = false
+  syncInternalEvents = true
+  fullName = "EAC"
   _alias = "EAC"
 }

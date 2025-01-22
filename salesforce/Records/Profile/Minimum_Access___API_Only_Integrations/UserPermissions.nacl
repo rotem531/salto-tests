@@ -1,0 +1,16 @@
+salesforce.Profile Minimum_Access___API_Only_Integrations@ssbsss {
+  userPermissions = {
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ApiUserOnly = {
+      enabled = true
+      name = "ApiUserOnly"
+    }
+    ChatterInternalUser = {
+      enabled = true
+      name = "ChatterInternalUser"
+    }
+  }
+}

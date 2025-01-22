@@ -1,5 +1,4 @@
 salesforce.CaseSettings {
-  fullName = "Case"
   caseAssignNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseAssignmentNotification@zcd
   caseCreateNotificationTemplate = salesforce.EmailTemplate.instance.unfiled_public_SupportCaseCreatedPhoneInquiries@zcd
   caseFeedItemSettings = {
@@ -8,7 +7,7 @@ salesforce.CaseSettings {
     feedItemType = "EmailMessageEvent"
   }
   caseFeedReadUnreadLtng = false
-  caseMergeInLightning = "false"
+  caseMergeInLightning = false
   closeCaseThroughStatusChange = false
   defaultCaseFeedLayoutOn = true
   defaultCaseOwner = "sf-dev2@sf.sf"
@@ -18,16 +17,16 @@ salesforce.CaseSettings {
     enableEmailToCase = false
   }
   enableCaseFeed = true
-  enableCaseSwarming = "false"
+  enableCaseSwarming = false
   enableCollapseEmailThread = true
   enableEarlyEscalationRuleTriggers = false
   enableEscalateQfiToCaseInternal = false
-  enableMultiLangSolnSrchCSS = "false"
-  enableMultiLangSolnSrchPKB = "false"
-  enableMultiLangSolution = "false"
-  enableSolutionCategory = "false"
-  enableSolutionInlineCategory = "true"
-  enableSolutionShortSummary = "true"
+  enableMultiLangSolnSrchCSS = false
+  enableMultiLangSolnSrchPKB = false
+  enableMultiLangSolution = false
+  enableSolutionCategory = false
+  enableSolutionInlineCategory = true
+  enableSolutionShortSummary = true
   enableSuggestedSolutions = true
   escalateCaseBefore = false
   notifyContactOnCaseComment = false
@@ -43,5 +42,6 @@ salesforce.CaseSettings {
     defaultResponseTemplate = "unfiled$public/SupportCaseCreatedWebInquiries"
     enableWebToCase = true
   }
+  fullName = "Case"
   _alias = "Case"
 }

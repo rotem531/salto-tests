@@ -1,5 +1,4 @@
 salesforce.ApexSettings {
-  fullName = "Apex"
   enableAggregateCodeCoverageOnly = false
   enableApexAccessRightsPref = false
   enableApexApprovalLockUnlock = false
@@ -12,8 +11,9 @@ salesforce.ApexSettings {
   enableGaplessTestAutoNum = true
   enableMngdCtrlActionAccessPref = false
   enableNonCertifiedApexMdCrud = false
-  enableRestrictCommunityExecAnon = "false"
+  enableRestrictCommunityExecAnon = false
   enableSecureNoArgConstructorPref = false
-  enableTestSetupSkipTestResults = "false"
+  enableTestSetupSkipTestResults = false
+  fullName = "Apex"
   _alias = "Apex"
 }

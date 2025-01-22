@@ -1,5 +1,4 @@
 salesforce.OpportunitySettings {
-  fullName = "Opportunity"
   autoActivateNewReminders = true
   customizableProductSchedulesEnabled = false
   doesEnforceStandardOpportunitySaveLogic = true
@@ -7,13 +6,14 @@ salesforce.OpportunitySettings {
   enableOpportunityFieldHistoryTracking = false
   enableOpportunityInsightsInMobile = false
   enableOpportunityTeam = false
-  enableServiceCaseInsights = "false"
+  enableServiceCaseInsights = false
   enableUpdateReminders = true
-  oppAmountDealMotionEnabled = "true"
-  oppCloseDateDealMotionEnabled = "true"
+  oppAmountDealMotionEnabled = true
+  oppCloseDateDealMotionEnabled = true
   promptToAddProducts = false
-  pushCountEnabled = "true"
-  simpleOppCreateFromContact = "false"
-  simpleOppCreateFromEvent = "false"
+  pushCountEnabled = true
+  simpleOppCreateFromContact = false
+  simpleOppCreateFromEvent = false
+  fullName = "Opportunity"
   _alias = "Opportunity"
 }

@@ -1,0 +1,8 @@
+salesforce.Profile aclone {
+  classAccesses = {
+    test = {
+      apexClass = "test"
+      enabled = false
+    }
+  }
+}

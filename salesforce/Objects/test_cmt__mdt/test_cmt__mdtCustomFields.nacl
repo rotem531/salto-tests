@@ -23,6 +23,30 @@ type salesforce.test_cmt__mdt {
     length = 32
     unique = false
   }
+  salesforce.Number cv_c__c {
+    apiName = "test_cmt__mdt.cv_c__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "cv c"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Checkbox dfb__c {
+    apiName = "test_cmt__mdt.dfb__c"
+    defaultValue = false
+    fieldManageability = "DeveloperControlled"
+    label = "dfb"
+  }
+  salesforce.Number dfg__c {
+    apiName = "test_cmt__mdt.dfg__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "dfg"
+    precision = 18
+    scale = 0
+    unique = false
+  }
   salesforce.Email email_test__c {
     apiName = "test_cmt__mdt.email_test__c"
     externalId = false
@@ -30,11 +54,28 @@ type salesforce.test_cmt__mdt {
     label = "email test"
     unique = false
   }
+  salesforce.Text fgbfb__c {
+    apiName = "test_cmt__mdt.fgbfb__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "fgbfb"
+    length = 5
+    unique = false
+  }
   salesforce.Number gdgdg__c {
     apiName = "test_cmt__mdt.gdgdg__c"
     externalId = false
     fieldManageability = "DeveloperControlled"
     label = "gdgdg"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Number gr_ee__c {
+    apiName = "test_cmt__mdt.gr_ee__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "gr ee"
     precision = 18
     scale = 0
     unique = false
@@ -72,6 +113,22 @@ type salesforce.test_cmt__mdt {
     fieldManageability = "DeveloperControlled"
     label = "test text"
     length = 32
+    unique = false
+  }
+  salesforce.Number tyj_tj__c {
+    apiName = "test_cmt__mdt.tyj_tj__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "tyj tj"
+    precision = 18
+    scale = 0
+    unique = false
+  }
+  salesforce.Email vbb__c {
+    apiName = "test_cmt__mdt.vbb__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "vbb"
     unique = false
   }
   salesforce.Number wegf__c {

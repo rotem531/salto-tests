@@ -1,5 +1,4 @@
 salesforce.ActivitiesSettings {
-  fullName = "Activities"
   allowUsersToRelateMultipleContactsToTasksAndEvents = false
   autoRelateEventAttendees = false
   enableActivityReminders = true
@@ -25,5 +24,6 @@ salesforce.ActivitiesSettings {
   showEventDetailsMultiUserCalendar = false
   showHomePageHoverLinksForEvents = true
   showMyTasksHoverLinks = true
+  fullName = "Activities"
   _alias = "Activities"
 }

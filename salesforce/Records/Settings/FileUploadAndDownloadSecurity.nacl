@@ -1,5 +1,4 @@
 salesforce.FileUploadAndDownloadSecuritySettings {
-  fullName = "FileUploadAndDownloadSecurity"
   dispositions = [
     {
       behavior = "HYBRID"
@@ -133,5 +132,6 @@ salesforce.FileUploadAndDownloadSecuritySettings {
     },
   ]
   noHtmlUploadAsAttachment = false
+  fullName = "FileUploadAndDownloadSecurity"
   _alias = "FileUploadAndDownloadSecurity"
 }

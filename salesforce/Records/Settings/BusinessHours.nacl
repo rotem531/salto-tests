@@ -1,5 +1,4 @@
 salesforce.BusinessHoursSettings {
-  fullName = "BusinessHours"
   businessHours = {
     Default = {
       active = true
@@ -22,5 +21,6 @@ salesforce.BusinessHoursSettings {
       wednesdayStartTime = "00:00:00.000Z"
     }
   }
+  fullName = "BusinessHours"
   _alias = "BusinessHours"
 }

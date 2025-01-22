@@ -1,15 +1,14 @@
 salesforce.SearchSettings {
-  fullName = "Search"
   documentContentSearchEnabled = true
   enableAdvancedSearchInAlohaSidebar = false
-  enableEinsteinSearchAssistantDialog = "true"
-  enableEinsteinSearchEs4kPilot = "false"
-  enableEinsteinSearchNLSFilters = "false"
-  enableEinsteinSearchNaturalLanguage = "true"
+  enableEinsteinSearchAssistantDialog = true
+  enableEinsteinSearchEs4kPilot = false
+  enableEinsteinSearchNLSFilters = false
+  enableEinsteinSearchNaturalLanguage = true
   enableEinsteinSearchPersonalization = true
   enablePersonalTagging = false
   enablePublicTagging = false
-  enableQuerySuggestionPigOn = "false"
+  enableQuerySuggestionPigOn = false
   enableSalesforceGeneratedSynonyms = true
   enableSetupSearch = true
   enableSuggestArticlesLinksOnly = false
@@ -528,5 +527,6 @@ salesforce.SearchSettings {
   sidebarLimitToItemsIOwnCheckboxEnabled = true
   singleSearchResultShortcutEnabled = true
   spellCorrectKnowledgeSearchEnabled = false
+  fullName = "Search"
   _alias = "Search"
 }

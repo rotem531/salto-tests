@@ -1,5 +1,4 @@
 salesforce.EntitlementSettings {
-  fullName = "Entitlement"
   assetLookupLimitedToActiveEntitlementsOnAccount = false
   assetLookupLimitedToActiveEntitlementsOnContact = false
   assetLookupLimitedToSameAccount = false
@@ -13,5 +12,6 @@ salesforce.EntitlementSettings {
   entitlementLookupLimitedToSameAsset = false
   entitlementLookupLimitedToSameContact = false
   ignoreMilestoneBusinessHours = false
+  fullName = "Entitlement"
   _alias = "Entitlement"
 }

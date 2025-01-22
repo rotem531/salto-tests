@@ -1,5 +1,4 @@
 salesforce.ContentSettings {
-  fullName = "Content"
   enableCMSC2CConnections = true
   enableChatterFileLink = true
   enableContent = true
@@ -11,16 +10,17 @@ salesforce.ContentSettings {
   enableContentSupportMultiLanguage = false
   enableContentWorkspaceAccess = true
   enableDeleteFileInContentPacks = false
-  enableFileIngestToDataCloud = "false"
+  enableFileIngestToDataCloud = false
   enableFileShareSetByRecord = false
   enableFilesUsrShareNetRestricted = false
   enableJPGPreviews = false
-  enableLWCFileUpload = "false"
+  enableLWCFileUpload = false
   enableLibraryManagedFiles = false
   enableSiteGuestUserToUploadFiles = false
   enableUploadFilesOnAttachments = false
-  setValidContentTypeForAtchDocDownload = "false"
+  setValidContentTypeForAtchDocDownload = false
   skipContentAssetTriggers = false
   skipContentAssetTriggersOnDeploy = true
+  fullName = "Content"
   _alias = "Content"
 }

@@ -1,0 +1,13 @@
+salesforce.Profile Identity_User@s {
+  objectPermissions = {
+    UserExternalCredential = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "UserExternalCredential"
+      viewAllRecords = false
+    }
+  }
+}

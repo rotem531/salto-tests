@@ -1,5 +1,4 @@
 salesforce.SharingSettings {
-  fullName = "Sharing"
   deferGroupMembership = false
   deferSharingRules = false
   enableAssetSharing = true
@@ -13,5 +12,6 @@ salesforce.SharingSettings {
   enableRestrictAccessLookupRecords = false
   enableSecureGuestAccess = false
   enableStandardReportVisibility = true
+  fullName = "Sharing"
   _alias = "Sharing"
 }

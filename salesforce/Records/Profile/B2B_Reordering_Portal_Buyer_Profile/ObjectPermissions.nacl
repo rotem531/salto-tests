@@ -1,0 +1,22 @@
+salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account"
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contact"
+      viewAllRecords = false
+    }
+  }
+}

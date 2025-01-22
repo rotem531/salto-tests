@@ -1,5 +1,4 @@
 salesforce.ForecastingSettings {
-  fullName = "Forecasting"
   defaultToPersonalCurrency = false
   enableForecasts = false
   forecastingCategoryMappings = [
@@ -165,6 +164,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "CORE.USERS.ALIAS"
           label = "Opportunity Owner Alias"
         },
@@ -291,6 +298,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
           "CORE.USERS.LAST_NAME",
@@ -376,6 +385,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -504,6 +521,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -589,6 +608,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -721,6 +748,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -809,6 +838,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -935,6 +972,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1020,6 +1059,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -1152,6 +1199,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1240,6 +1289,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -1366,6 +1423,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1451,6 +1510,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -1583,6 +1650,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1671,6 +1740,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -1797,6 +1874,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -1882,6 +1961,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -2014,6 +2101,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -2102,6 +2191,14 @@ salesforce.ForecastingSettings {
           label = "Owner Full Name"
         },
         {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
+        },
+        {
           field = "OPPORTUNITY.AMOUNT"
           label = "Amount"
         },
@@ -2228,6 +2325,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -2313,6 +2412,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -2445,6 +2552,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -2531,6 +2640,14 @@ salesforce.ForecastingSettings {
         {
           field = "FULL_NAME"
           label = "Owner Full Name"
+        },
+        {
+          field = "CONTRACT.CONTRACT_NUMBER"
+          label = "Contract Number"
+        },
+        {
+          field = "CONTRACT.NAME"
+          label = "Contract Name"
         },
         {
           field = "OPPORTUNITY.AMOUNT"
@@ -2659,6 +2776,8 @@ salesforce.ForecastingSettings {
       }
       opportunityListFieldsUnselectedSettings = {
         field = [
+          "CONTRACT.CONTRACT_NUMBER",
+          "CONTRACT.NAME",
           "OPPORTUNITY.AMOUNT",
           "CORE.USERS.ALIAS",
           "CORE.USERS.FIRST_NAME",
@@ -2704,5 +2823,6 @@ salesforce.ForecastingSettings {
   globalQuotasSettings = {
     showQuotas = false
   }
+  fullName = "Forecasting"
   _alias = "Forecasting"
 }

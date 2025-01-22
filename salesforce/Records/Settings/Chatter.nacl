@@ -1,5 +1,4 @@
 salesforce.ChatterSettings {
-  fullName = "Chatter"
   allowChatterGroupArchiving = true
   allowRecordsInChatterGroup = true
   enableCaseFeedRelativeTimestamps = true
@@ -14,5 +13,6 @@ salesforce.ChatterSettings {
   enableRichLinkPreviewsInFeed = true
   enableTodayRecsInFeed = true
   unlistedGroupsEnabled = false
+  fullName = "Chatter"
   _alias = "Chatter"
 }

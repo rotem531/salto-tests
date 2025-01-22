@@ -2,7 +2,7 @@ salesforce.ProfileSessionSetting null_profileSessionSetting1737028409286 {
   fullName = "null_profileSessionSetting1737028409286"
   externalCommunityUserIdentityVerif = false
   forceLogout = false
-  profile = "aaclone"
+  profile = salesforce.Profile.instance.aaclone
   sessionPersistence = false
   sessionTimeout = 0
   sessionTimeoutWarning = false

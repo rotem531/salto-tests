@@ -1,0 +1,12 @@
+salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
+  flowAccesses = {
+    numFlow = {
+      enabled = false
+      flow = "numFlow"
+    }
+    test_flow = {
+      enabled = false
+      flow = "test_flow"
+    }
+  }
+}

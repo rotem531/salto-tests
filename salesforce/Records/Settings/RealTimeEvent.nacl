@@ -1,5 +1,4 @@
 salesforce.RealTimeEventSettings {
-  fullName = "RealTimeEvent"
   realTimeEvents = [
     {
       entityName = "ApiEvent"
@@ -142,5 +141,6 @@ salesforce.RealTimeEventSettings {
       isEnabled = false
     },
   ]
+  fullName = "RealTimeEvent"
   _alias = "RealTimeEvent"
 }
