@@ -1,0 +1,84 @@
+salesforce.Profile Analytics_Cloud_Security_User@s {
+  userPermissions = {
+    AddDirectMessageMembers = {
+      enabled = true
+      name = "AddDirectMessageMembers"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ApiUserOnly = {
+      enabled = true
+      name = "ApiUserOnly"
+    }
+    CampaignInfluence2 = {
+      enabled = true
+      name = "CampaignInfluence2"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    InsightsAppAdmin = {
+      enabled = true
+      name = "InsightsAppAdmin"
+    }
+    InsightsAppUser = {
+      enabled = true
+      name = "InsightsAppUser"
+    }
+    PasswordNeverExpires = {
+      enabled = true
+      name = "PasswordNeverExpires"
+    }
+    RemoveDirectMessageMembers = {
+      enabled = true
+      name = "RemoveDirectMessageMembers"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewAllProfiles = {
+      enabled = true
+      name = "ViewAllProfiles"
+    }
+    ViewAllUsers = {
+      enabled = true
+      name = "ViewAllUsers"
+    }
+    ViewDataLeakageEvents = {
+      enabled = true
+      name = "ViewDataLeakageEvents"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
+    ViewEventLogFiles = {
+      enabled = true
+      name = "ViewEventLogFiles"
+    }
+    ViewPlatformEvents = {
+      enabled = true
+      name = "ViewPlatformEvents"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+}

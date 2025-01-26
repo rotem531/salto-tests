@@ -1,0 +1,25 @@
+type salesforce.aab_big_object__b {
+  salesforce.Text dfg_f__c {
+    apiName = "aab_big_object__b.dfg_f__c"
+    externalId = false
+    label = "dfg f"
+    length = 44
+    _required = true
+    unique = false
+    createable = true
+    updateable = false
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Text sdvs__c {
+    apiName = "aab_big_object__b.sdvs__c"
+    externalId = false
+    label = "sdvs"
+    length = 33
+    unique = false
+    createable = true
+    updateable = false
+    caseSensitive = false
+    queryable = true
+  }
+}

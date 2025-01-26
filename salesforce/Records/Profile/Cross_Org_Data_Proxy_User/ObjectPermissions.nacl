@@ -1,0 +1,184 @@
+salesforce.Profile Cross_Org_Data_Proxy_User@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account"
+      viewAllRecords = false
+    }
+    AuthorizationForm = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationForm"
+      viewAllRecords = false
+    }
+    AuthorizationFormConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormConsent"
+      viewAllRecords = false
+    }
+    AuthorizationFormDataUse = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormDataUse"
+      viewAllRecords = false
+    }
+    AuthorizationFormText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "AuthorizationFormText"
+      viewAllRecords = false
+    }
+    CommSubscription = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "CommSubscription"
+      viewAllRecords = false
+    }
+    CommSubscriptionChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "CommSubscriptionChannelType"
+      viewAllRecords = false
+    }
+    CommSubscriptionConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "CommSubscriptionConsent"
+      viewAllRecords = false
+    }
+    CommSubscriptionTiming = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "CommSubscriptionTiming"
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contact"
+      viewAllRecords = false
+    }
+    ContactPointConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointConsent"
+      viewAllRecords = false
+    }
+    ContactPointEmail = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointEmail"
+      viewAllRecords = false
+    }
+    ContactPointPhone = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointPhone"
+      viewAllRecords = false
+    }
+    ContactPointTypeConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ContactPointTypeConsent"
+      viewAllRecords = false
+    }
+    DataUseLegalBasis = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "DataUseLegalBasis"
+      viewAllRecords = false
+    }
+    DataUsePurpose = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "DataUsePurpose"
+      viewAllRecords = false
+    }
+    EngagementChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "EngagementChannelType"
+      viewAllRecords = false
+    }
+    Individual = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Individual"
+      viewAllRecords = false
+    }
+    PartyConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "PartyConsent"
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "SocialPersona"
+      viewAllRecords = false
+    }
+  }
+}

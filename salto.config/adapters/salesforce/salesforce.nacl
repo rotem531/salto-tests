@@ -5,7 +5,7 @@ salesforce {
         {
           metadataType = ".*"
           namespace = ""
-          name = ".*__mdt"
+          name = ".*"
         },
         // {
         //   metadataType = ".*"
@@ -40,9 +40,9 @@ salesforce {
         {
           metadataType = "DocumentFolder"
         },
-        {
-          metadataType = "Profile"
-        },
+        // {
+        //   metadataType = "Profile"
+        // },
         {
           metadataType = "PermissionSet"
         },

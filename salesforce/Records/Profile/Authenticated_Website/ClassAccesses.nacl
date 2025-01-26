@@ -1,0 +1,8 @@
+salesforce.Profile Authenticated_Website@s {
+  classAccesses = {
+    test = {
+      apexClass = "test"
+      enabled = false
+    }
+  }
+}

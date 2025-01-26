@@ -1,0 +1,93 @@
+type salesforce.Contact {
+  salesforce.Text Languages__c {
+    apiName = "Contact.Languages__c"
+    externalId = false
+    label = "Languages"
+    length = 100
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Picklist Level__c {
+    apiName = "Contact.Level__c"
+    label = "Level"
+    valueSet = [
+      {
+        fullName = "Secondary"
+        default = false
+        label = "Secondary"
+      },
+      {
+        fullName = "Tertiary"
+        default = false
+        label = "Tertiary"
+      },
+      {
+        fullName = "Primary"
+        default = false
+        label = "Primary"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number test_num__c {
+    apiName = "Contact.test_num__c"
+    defaultValueFormula = "32"
+    externalId = false
+    label = "test_num"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist test_pickList__c {
+    apiName = "Contact.test_pickList__c"
+    label = "test_pickList"
+    valueSet = [
+      {
+        fullName = "a"
+        default = true
+        label = "a"
+      },
+      {
+        fullName = "b"
+        default = false
+        label = "b"
+      },
+      {
+        fullName = "c"
+        default = false
+        label = "c"
+      },
+      {
+        fullName = "d"
+        default = false
+        label = "d"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text test_text__c {
+    apiName = "Contact.test_text__c"
+    externalId = false
+    label = "test_text"
+    length = 35
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+}
