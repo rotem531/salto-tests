@@ -5,6 +5,10 @@ salesforce.WorkflowRule tst_vsb__c_test_workflow@uuuvs {
       name = salesforce.WorkflowFieldUpdate.instance.tst_vsb__c_action_field_update@uuuvuu
       type = "FieldUpdate"
     },
+    {
+      name = salesforce.WorkflowFieldUpdate.instance.tst_vsb__c_test_namee@uuuvu
+      type = "FieldUpdate"
+    },
   ]
   active = true
   criteriaItems = [
@@ -12,6 +16,11 @@ salesforce.WorkflowRule tst_vsb__c_test_workflow@uuuvs {
       field = salesforce.tst_vsb__c.field.num_num__c
       operation = "equals"
       value = "8"
+    },
+    {
+      field = salesforce.tst_vsb__c.field.Name
+      operation = "notEqual"
+      value = "PAPAYA"
     },
   ]
   triggerType = "onCreateOrTriggeringUpdate"
