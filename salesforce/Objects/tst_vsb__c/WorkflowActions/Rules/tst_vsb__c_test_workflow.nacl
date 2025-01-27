@@ -6,6 +6,10 @@ salesforce.WorkflowRule tst_vsb__c_test_workflow@uuuvs {
       type = "FieldUpdate"
     },
     {
+      name = salesforce.WorkflowFieldUpdate.instance.tst_vsb__c_another_field@uuuvu
+      type = "FieldUpdate"
+    },
+    {
       name = salesforce.WorkflowFieldUpdate.instance.tst_vsb__c_test_namee@uuuvu
       type = "FieldUpdate"
     },
