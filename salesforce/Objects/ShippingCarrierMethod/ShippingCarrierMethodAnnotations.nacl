@@ -58,6 +58,7 @@ type salesforce.ShippingCarrierMethod {
   apiName = "ShippingCarrierMethod"
   metadataType = "CustomObject"
   label = "Shipping Carrier Method"
+  description = "ShippingCarrierMethod"
   actionOverrides = [
     {
       actionName = "CancelEdit"

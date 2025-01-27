@@ -58,6 +58,7 @@ type salesforce.DataUseLegalBasis {
   apiName = "DataUseLegalBasis"
   metadataType = "CustomObject"
   label = "Data Use Legal Basis"
+  description = "DataUseLegalBasis"
   actionOverrides = [
     {
       actionName = "CancelEdit"

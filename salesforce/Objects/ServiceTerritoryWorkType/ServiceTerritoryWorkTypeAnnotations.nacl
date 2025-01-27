@@ -58,6 +58,7 @@ type salesforce.ServiceTerritoryWorkType {
   apiName = "ServiceTerritoryWorkType"
   metadataType = "CustomObject"
   label = "Service Territory Work Type"
+  description = "ServiceTerritoryWorkType"
   actionOverrides = [
     {
       actionName = "CancelEdit"

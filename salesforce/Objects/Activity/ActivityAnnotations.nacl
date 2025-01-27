@@ -58,6 +58,7 @@ type salesforce.Activity {
   apiName = "Activity"
   metadataType = "CustomObject"
   label = "Activity"
+  description = "Activity"
   actionOverrides = [
     {
       actionName = "CancelEdit"

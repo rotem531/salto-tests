@@ -58,6 +58,7 @@ type salesforce.CalcMatrixColumnRange {
   apiName = "CalcMatrixColumnRange"
   metadataType = "CustomObject"
   label = "Decision Matrix Column Range"
+  description = "CalcMatrixColumnRange"
   actionOverrides = [
     {
       actionName = "CancelEdit"

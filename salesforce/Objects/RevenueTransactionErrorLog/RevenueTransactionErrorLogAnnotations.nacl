@@ -58,6 +58,7 @@ type salesforce.RevenueTransactionErrorLog {
   apiName = "RevenueTransactionErrorLog"
   metadataType = "CustomObject"
   label = "Revenue Transaction Error Log"
+  description = "RevenueTransactionErrorLog"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.RevenueAsyncOperation {
   apiName = "RevenueAsyncOperation"
   metadataType = "CustomObject"
   label = "Revenue Async Operation"
+  description = "RevenueAsyncOperation"
   actionOverrides = [
     {
       actionName = "CancelEdit"

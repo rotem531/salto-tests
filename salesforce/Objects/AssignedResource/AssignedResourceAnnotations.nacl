@@ -58,6 +58,7 @@ type salesforce.AssignedResource {
   apiName = "AssignedResource"
   metadataType = "CustomObject"
   label = "Assigned Resource"
+  description = "AssignedResource"
   actionOverrides = [
     {
       actionName = "CancelEdit"

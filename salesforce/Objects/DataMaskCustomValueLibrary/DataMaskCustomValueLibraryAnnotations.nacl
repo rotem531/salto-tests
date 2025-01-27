@@ -58,6 +58,7 @@ type salesforce.DataMaskCustomValueLibrary {
   apiName = "DataMaskCustomValueLibrary"
   metadataType = "CustomObject"
   label = "Custom Library"
+  description = "DataMaskCustomValueLibrary"
   actionOverrides = [
     {
       actionName = "CancelEdit"

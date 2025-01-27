@@ -58,6 +58,7 @@ type salesforce.CalculationProcedureVariable {
   apiName = "CalculationProcedureVariable"
   metadataType = "CustomObject"
   label = "Calculation Procedure Variable"
+  description = "CalculationProcedureVariable"
   actionOverrides = [
     {
       actionName = "CancelEdit"

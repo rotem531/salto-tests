@@ -58,6 +58,7 @@ type salesforce.CalculationProcedureVersion {
   apiName = "CalculationProcedureVersion"
   metadataType = "CustomObject"
   label = "Calculation Procedure Version"
+  description = "CalculationProcedureVersion"
   actionOverrides = [
     {
       actionName = "CancelEdit"

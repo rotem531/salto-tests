@@ -58,6 +58,7 @@ type salesforce.PartyConsent {
   apiName = "PartyConsent"
   metadataType = "CustomObject"
   label = "Party Consent"
+  description = "PartyConsent"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.CalculationMatrix {
   apiName = "CalculationMatrix"
   metadataType = "CustomObject"
   label = "Decision Matrix"
+  description = "CalculationMatrix"
   actionOverrides = [
     {
       actionName = "CancelEdit"

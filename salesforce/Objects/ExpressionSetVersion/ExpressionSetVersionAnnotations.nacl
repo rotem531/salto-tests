@@ -58,6 +58,7 @@ type salesforce.ExpressionSetVersion {
   apiName = "ExpressionSetVersion"
   metadataType = "CustomObject"
   label = "Expression Set Version"
+  description = "ExpressionSetVersion"
   actionOverrides = [
     {
       actionName = "CancelEdit"

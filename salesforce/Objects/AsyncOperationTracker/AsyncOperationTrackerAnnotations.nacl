@@ -58,6 +58,7 @@ type salesforce.AsyncOperationTracker {
   apiName = "AsyncOperationTracker"
   metadataType = "CustomObject"
   label = "Async Operation Tracker"
+  description = "AsyncOperationTracker"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.WorkOrderLineItem {
   apiName = "WorkOrderLineItem"
   metadataType = "CustomObject"
   label = "Work Order Line Item"
+  description = "WorkOrderLineItem"
   actionOverrides = [
     {
       actionName = "CancelEdit"

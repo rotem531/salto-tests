@@ -58,6 +58,7 @@ type salesforce.Invoice {
   apiName = "Invoice"
   metadataType = "CustomObject"
   label = "Invoice"
+  description = "Invoice"
   actionOverrides = [
     {
       actionName = "CancelEdit"

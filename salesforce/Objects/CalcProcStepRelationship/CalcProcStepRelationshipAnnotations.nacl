@@ -58,6 +58,7 @@ type salesforce.CalcProcStepRelationship {
   apiName = "CalcProcStepRelationship"
   metadataType = "CustomObject"
   label = "Expression Set Step Relationship"
+  description = "CalcProcStepRelationship"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -58,6 +58,7 @@ type salesforce.CalculationMatrixVersion {
   apiName = "CalculationMatrixVersion"
   metadataType = "CustomObject"
   label = "Decision Matrix Version"
+  description = "CalculationMatrixVersion"
   actionOverrides = [
     {
       actionName = "ActivateDMVersion"
