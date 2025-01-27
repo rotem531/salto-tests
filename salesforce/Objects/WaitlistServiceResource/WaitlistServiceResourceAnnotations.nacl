@@ -6,13 +6,13 @@ type salesforce.WaitlistServiceResource {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.WaitlistServiceResource {
   apiName = "WaitlistServiceResource"
   metadataType = "CustomObject"
   label = "Waitlist Service Resource"
+  description = "WaitlistServiceResource"
   actionOverrides = [
     {
       actionName = "CancelEdit"

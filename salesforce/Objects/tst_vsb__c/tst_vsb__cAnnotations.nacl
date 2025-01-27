@@ -6,6 +6,8 @@ type salesforce.tst_vsb__c {
     }
     string label {
     }
+    string description {
+    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -13,8 +15,6 @@ type salesforce.tst_vsb__c {
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -94,6 +94,7 @@ type salesforce.tst_vsb__c {
   apiName = "tst_vsb__c"
   metadataType = "CustomObject"
   label = "tst_vsb"
+  description = "tst_vsb__c"
   pluralLabel = "tst_vsbs"
   actionOverrides = [
     {

@@ -6,13 +6,13 @@ type salesforce.ServiceTerritory {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.ServiceTerritory {
   apiName = "ServiceTerritory"
   metadataType = "CustomObject"
   label = "Service Territory"
+  description = "ServiceTerritory"
   actionOverrides = [
     {
       actionName = "CancelEdit"

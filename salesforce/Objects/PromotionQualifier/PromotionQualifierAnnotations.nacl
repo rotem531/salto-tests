@@ -6,13 +6,13 @@ type salesforce.PromotionQualifier {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.PromotionQualifier {
   apiName = "PromotionQualifier"
   metadataType = "CustomObject"
   label = "Promotion Qualifier"
+  description = "PromotionQualifier"
   actionOverrides = [
     {
       actionName = "CancelEdit"

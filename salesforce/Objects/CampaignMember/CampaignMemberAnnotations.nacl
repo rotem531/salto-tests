@@ -6,13 +6,13 @@ type salesforce.CampaignMember {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.CampaignMember {
   apiName = "CampaignMember"
   metadataType = "CustomObject"
   label = "Campaign Member"
+  description = "CampaignMember"
   actionOverrides = [
     {
       actionName = "AddCampaign"

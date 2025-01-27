@@ -6,13 +6,13 @@ type salesforce.ChangeRequestRelatedItem {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.ChangeRequestRelatedItem {
   apiName = "ChangeRequestRelatedItem"
   metadataType = "CustomObject"
   label = "Change Request Related Item"
+  description = "ChangeRequestRelatedItem"
   actionOverrides = [
     {
       actionName = "CancelEdit"

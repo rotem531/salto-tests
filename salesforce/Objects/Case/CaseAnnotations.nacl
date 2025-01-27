@@ -6,13 +6,13 @@ type salesforce.Case {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.Case {
   apiName = "Case"
   metadataType = "CustomObject"
   label = "Case"
+  description = "Case"
   actionOverrides = [
     {
       actionName = "Accept"

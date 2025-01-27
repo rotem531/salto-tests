@@ -6,13 +6,13 @@ type salesforce.Contract {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.Contract {
   apiName = "Contract"
   metadataType = "CustomObject"
   label = "Contract"
+  description = "Contract"
   actionOverrides = [
     {
       actionName = "Activate"

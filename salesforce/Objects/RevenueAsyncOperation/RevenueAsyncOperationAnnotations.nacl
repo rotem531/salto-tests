@@ -6,13 +6,13 @@ type salesforce.RevenueAsyncOperation {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.RevenueAsyncOperation {
   apiName = "RevenueAsyncOperation"
   metadataType = "CustomObject"
   label = "Revenue Async Operation"
+  description = "RevenueAsyncOperation"
   actionOverrides = [
     {
       actionName = "CancelEdit"

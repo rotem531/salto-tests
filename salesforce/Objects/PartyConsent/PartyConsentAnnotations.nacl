@@ -6,13 +6,13 @@ type salesforce.PartyConsent {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.PartyConsent {
   apiName = "PartyConsent"
   metadataType = "CustomObject"
   label = "Party Consent"
+  description = "PartyConsent"
   actionOverrides = [
     {
       actionName = "CancelEdit"

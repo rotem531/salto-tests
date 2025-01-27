@@ -6,13 +6,13 @@ type salesforce.GuestUserAnomalyEventStore {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.GuestUserAnomalyEventStore {
   apiName = "GuestUserAnomalyEventStore"
   metadataType = "CustomObject"
   label = "Guest User Anomaly Event Store"
+  description = "GuestUserAnomalyEventStore"
   actionOverrides = [
     {
       actionName = "CancelEdit"

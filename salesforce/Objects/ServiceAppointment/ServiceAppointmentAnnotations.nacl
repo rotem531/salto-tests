@@ -6,13 +6,13 @@ type salesforce.ServiceAppointment {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.ServiceAppointment {
   apiName = "ServiceAppointment"
   metadataType = "CustomObject"
   label = "Service Appointment"
+  description = "ServiceAppointment"
   actionOverrides = [
     {
       actionName = "CancelEdit"

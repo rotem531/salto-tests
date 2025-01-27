@@ -6,13 +6,13 @@ type salesforce.ShiftEngagementChannel {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.ShiftEngagementChannel {
   apiName = "ShiftEngagementChannel"
   metadataType = "CustomObject"
   label = "Shift Engagement Channel"
+  description = "ShiftEngagementChannel"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -6,13 +6,13 @@ type salesforce.MessagingSession {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.MessagingSession {
   apiName = "MessagingSession"
   metadataType = "CustomObject"
   label = "Messaging Session"
+  description = "MessagingSession"
   actionOverrides = [
     {
       actionName = "CancelEdit"

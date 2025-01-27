@@ -6,13 +6,13 @@ type salesforce.Idea {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.Idea {
   apiName = "Idea"
   metadataType = "CustomObject"
   label = "Idea"
+  description = "Idea"
   actionOverrides = [
     {
       actionName = "CancelEdit"

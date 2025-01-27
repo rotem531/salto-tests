@@ -6,6 +6,8 @@ type salesforce.CMT__mdt {
     }
     string label {
     }
+    string description {
+    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -14,6 +16,7 @@ type salesforce.CMT__mdt {
   apiName = "CMT__mdt"
   metadataType = "CustomMetadata"
   label = "CMT"
+  description = "CMT__mdt"
   pluralLabel = "CMTs"
   _alias = "CMT"
 }

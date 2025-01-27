@@ -6,13 +6,13 @@ type salesforce.UserProvisioningRequest {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.UserProvisioningRequest {
   apiName = "UserProvisioningRequest"
   metadataType = "CustomObject"
   label = "User Provisioning Request"
+  description = "UserProvisioningRequest"
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "Private"
