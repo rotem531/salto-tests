@@ -1,0 +1,14 @@
+salesforce.WorkflowFieldUpdate tst_vsb__c_action_field_update@uuuvuu {
+  fullName = "tst_vsb__c.action_field_update"
+  field = salesforce.tst_vsb__c.field.num_num__c
+  formula = "num_num__c  +  ABS(4578)"
+  name = "action field update"
+  notifyAssignee = false
+  operation = "Formula"
+  protected = false
+  reevaluateOnChange = true
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _alias = "tst_vsb__c.action_field_update"
+}

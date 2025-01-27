@@ -6,13 +6,13 @@ type salesforce.MacroInstruction {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.MacroInstruction {
   apiName = "MacroInstruction"
   metadataType = "CustomObject"
   label = "Macro Instruction"
-  description = "MacroInstruction"
+  description = ""
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Macro Instruction"

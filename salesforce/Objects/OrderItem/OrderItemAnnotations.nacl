@@ -6,13 +6,13 @@ type salesforce.OrderItem {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.OrderItem {
   apiName = "OrderItem"
   metadataType = "CustomObject"
   label = "Order Product"
-  description = "OrderItem"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddProduct"

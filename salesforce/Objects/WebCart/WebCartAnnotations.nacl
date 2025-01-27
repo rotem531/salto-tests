@@ -6,13 +6,13 @@ type salesforce.WebCart {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.WebCart {
   apiName = "WebCart"
   metadataType = "CustomObject"
   label = "Cart"
-  description = "WebCart"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

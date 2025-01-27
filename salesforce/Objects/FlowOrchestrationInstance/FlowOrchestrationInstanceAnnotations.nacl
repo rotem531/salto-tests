@@ -6,13 +6,13 @@ type salesforce.FlowOrchestrationInstance {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.FlowOrchestrationInstance {
   apiName = "FlowOrchestrationInstance"
   metadataType = "CustomObject"
   label = "Orchestration Run"
-  description = "FlowOrchestrationInstance"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

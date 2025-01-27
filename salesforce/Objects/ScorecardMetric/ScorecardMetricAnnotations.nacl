@@ -6,13 +6,13 @@ type salesforce.ScorecardMetric {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.ScorecardMetric {
   apiName = "ScorecardMetric"
   metadataType = "CustomObject"
   label = "Scorecard Metric"
-  description = "ScorecardMetric"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

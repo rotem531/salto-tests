@@ -6,13 +6,13 @@ type salesforce.TopicAssignment {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.TopicAssignment {
   apiName = "TopicAssignment"
   metadataType = "CustomObject"
   label = "Topic Assignment"
-  description = "TopicAssignment"
+  description = ""
   enableFeeds = false
   _alias = "Topic Assignment"
 }

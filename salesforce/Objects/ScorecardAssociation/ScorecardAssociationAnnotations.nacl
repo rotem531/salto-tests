@@ -6,13 +6,13 @@ type salesforce.ScorecardAssociation {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.ScorecardAssociation {
   apiName = "ScorecardAssociation"
   metadataType = "CustomObject"
   label = "Scorecard Association"
-  description = "ScorecardAssociation"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -6,13 +6,13 @@ type salesforce.PaymentAuthAdjustment {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.PaymentAuthAdjustment {
   apiName = "PaymentAuthAdjustment"
   metadataType = "CustomObject"
   label = "Payment Authorization Adjustment"
-  description = "PaymentAuthAdjustment"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

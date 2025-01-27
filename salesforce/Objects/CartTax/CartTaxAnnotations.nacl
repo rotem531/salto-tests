@@ -6,13 +6,13 @@ type salesforce.CartTax {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.CartTax {
   apiName = "CartTax"
   metadataType = "CustomObject"
   label = "Cart Tax"
-  description = "CartTax"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

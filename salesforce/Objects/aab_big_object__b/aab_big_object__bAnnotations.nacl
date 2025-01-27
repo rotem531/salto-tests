@@ -6,6 +6,8 @@ type salesforce.aab_big_object__b {
     }
     string label {
     }
+    string description {
+    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -13,8 +15,6 @@ type salesforce.aab_big_object__b {
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -94,7 +94,7 @@ type salesforce.aab_big_object__b {
   apiName = "aab_big_object__b"
   metadataType = "CustomObject"
   label = "aab big object"
-  description = "aab_big_object__b"
+  description = ""
   pluralLabel = "d"
   deploymentStatus = "InDevelopment"
   _alias = "aab big object"

@@ -6,13 +6,13 @@ type salesforce.Waitlist {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.Waitlist {
   apiName = "Waitlist"
   metadataType = "CustomObject"
   label = "Waitlist"
-  description = "Waitlist"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

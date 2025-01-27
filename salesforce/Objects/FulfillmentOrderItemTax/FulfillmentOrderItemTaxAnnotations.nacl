@@ -6,13 +6,13 @@ type salesforce.FulfillmentOrderItemTax {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.FulfillmentOrderItemTax {
   apiName = "FulfillmentOrderItemTax"
   metadataType = "CustomObject"
   label = "Fulfillment Order Item Tax"
-  description = "FulfillmentOrderItemTax"
+  description = ""
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "ControlledByParent"

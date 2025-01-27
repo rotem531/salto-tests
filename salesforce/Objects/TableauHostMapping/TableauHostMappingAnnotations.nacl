@@ -6,13 +6,13 @@ type salesforce.TableauHostMapping {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.TableauHostMapping {
   apiName = "TableauHostMapping"
   metadataType = "CustomObject"
   label = "Tableau Host Mapping"
-  description = "TableauHostMapping"
+  description = ""
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "Tableau Host Mapping"

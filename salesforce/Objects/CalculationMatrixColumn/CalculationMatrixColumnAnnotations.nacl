@@ -6,13 +6,13 @@ type salesforce.CalculationMatrixColumn {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.CalculationMatrixColumn {
   apiName = "CalculationMatrixColumn"
   metadataType = "CustomObject"
   label = "Decision Matrix Column"
-  description = "CalculationMatrixColumn"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

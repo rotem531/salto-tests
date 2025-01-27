@@ -6,13 +6,13 @@ type salesforce.QuickText {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.QuickText {
   apiName = "QuickText"
   metadataType = "CustomObject"
   label = "Quick Text"
-  description = "QuickText"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

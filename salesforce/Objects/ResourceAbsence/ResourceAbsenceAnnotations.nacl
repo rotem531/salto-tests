@@ -6,13 +6,13 @@ type salesforce.ResourceAbsence {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,7 @@ type salesforce.ResourceAbsence {
   apiName = "ResourceAbsence"
   metadataType = "CustomObject"
   label = "Resource Absence"
-  description = "ResourceAbsence"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"
