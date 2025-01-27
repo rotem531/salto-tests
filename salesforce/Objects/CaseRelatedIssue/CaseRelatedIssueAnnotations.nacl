@@ -6,13 +6,13 @@ type salesforce.CaseRelatedIssue {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.CaseRelatedIssue {
   apiName = "CaseRelatedIssue"
   metadataType = "CustomObject"
   label = "Case Related Issue"
-  description = "CaseRelatedIssue"
   actionOverrides = [
     {
       actionName = "CancelEdit"

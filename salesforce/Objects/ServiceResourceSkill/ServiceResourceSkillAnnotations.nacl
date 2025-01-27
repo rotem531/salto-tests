@@ -6,13 +6,13 @@ type salesforce.ServiceResourceSkill {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.ServiceResourceSkill {
   apiName = "ServiceResourceSkill"
   metadataType = "CustomObject"
   label = "Service Resource Skill"
-  description = "ServiceResourceSkill"
   actionOverrides = [
     {
       actionName = "CancelEdit"

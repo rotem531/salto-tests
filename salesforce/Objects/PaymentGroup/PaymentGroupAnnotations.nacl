@@ -6,13 +6,13 @@ type salesforce.PaymentGroup {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.PaymentGroup {
   apiName = "PaymentGroup"
   metadataType = "CustomObject"
   label = "Payment Group"
-  description = "PaymentGroup"
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "ReadWrite"

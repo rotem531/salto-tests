@@ -6,13 +6,13 @@ type salesforce.WebCartAdjustmentGroup {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.WebCartAdjustmentGroup {
   apiName = "WebCartAdjustmentGroup"
   metadataType = "CustomObject"
   label = "Cart Adjustment Group"
-  description = "WebCartAdjustmentGroup"
   compactLayoutAssignment = "SYSTEM"
   enableFeeds = false
   externalSharingModel = "ControlledByParent"

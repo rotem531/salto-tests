@@ -6,13 +6,13 @@ type salesforce.AccountContactRole {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.AccountContactRole {
   apiName = "AccountContactRole"
   metadataType = "CustomObject"
   label = "Account Contact Role"
-  description = "AccountContactRole"
   enableFeeds = false
   externalSharingModel = "ControlledByParent"
   _alias = "Account Contact Role"

@@ -6,13 +6,13 @@ type salesforce.SkillRequirement {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.SkillRequirement {
   apiName = "SkillRequirement"
   metadataType = "CustomObject"
   label = "Skill Requirement"
-  description = "SkillRequirement"
   actionOverrides = [
     {
       actionName = "CancelEdit"

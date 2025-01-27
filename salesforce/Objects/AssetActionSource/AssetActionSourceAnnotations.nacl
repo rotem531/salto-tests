@@ -6,13 +6,13 @@ type salesforce.AssetActionSource {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.AssetActionSource {
   apiName = "AssetActionSource"
   metadataType = "CustomObject"
   label = "Asset Action Source"
-  description = "AssetActionSource"
   actionOverrides = [
     {
       actionName = "CancelEdit"

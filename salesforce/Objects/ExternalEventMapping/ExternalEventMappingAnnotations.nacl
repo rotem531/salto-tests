@@ -6,13 +6,13 @@ type salesforce.ExternalEventMapping {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.ExternalEventMapping {
   apiName = "ExternalEventMapping"
   metadataType = "CustomObject"
   label = "External Event Mapping"
-  description = "ExternalEventMapping"
   enableFeeds = false
   externalSharingModel = "Private"
   _alias = "External Event Mapping"

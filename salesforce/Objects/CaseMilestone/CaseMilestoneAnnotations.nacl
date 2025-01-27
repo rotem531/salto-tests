@@ -6,13 +6,13 @@ type salesforce.CaseMilestone {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.CaseMilestone {
   apiName = "CaseMilestone"
   metadataType = "CustomObject"
   label = "Case Milestone"
-  description = "CaseMilestone"
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -1,4 +1,4 @@
-salesforce.Layout desc_cmt__mdt_desc__cmt_Layout@uuubsss {
+salesforce.Layout CMT2__mdt_CMT2_Layout@uubs {
   layoutSections = [
     {
       customLabel = false
@@ -15,6 +15,10 @@ salesforce.Layout desc_cmt__mdt_desc__cmt_Layout@uuubsss {
             {
               behavior = "Required"
               field = "DeveloperName"
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.CMT2__mdt.field.field1__c
             },
           ]
         },
@@ -74,6 +78,9 @@ salesforce.Layout desc_cmt__mdt_desc__cmt_Layout@uuubsss {
   showInteractionLogPanel = false
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false
-  fullName = "desc_cmt__mdt-desc  cmt Layout"
-  _alias = "desc_cmt__mdt-desc  cmt Layout"
+  fullName = "CMT2__mdt-CMT2 Layout"
+  _parent = [
+    salesforce.CMT2__mdt,
+  ]
+  _alias = "CMT2__mdt-CMT2 Layout"
 }

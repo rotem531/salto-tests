@@ -6,13 +6,13 @@ type salesforce.Product2 {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.Product2 {
   apiName = "Product2"
   metadataType = "CustomObject"
   label = "Product"
-  description = "Product2"
   actionOverrides = [
     {
       actionName = "Add"
