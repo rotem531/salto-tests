@@ -18,11 +18,11 @@ salesforce.Layout CMT__mdt_CMT_Layout@uubs {
             },
             {
               behavior = "Edit"
-              field = "existing_field__c"
+              field = salesforce.CMT__mdt.field.existing_field__c
             },
             {
               behavior = "Edit"
-              field = "CMT_num__c"
+              field = salesforce.CMT__mdt.field.CMT_num__c
             },
           ]
         },
@@ -83,5 +83,8 @@ salesforce.Layout CMT__mdt_CMT_Layout@uubs {
   showRunAssignmentRulesCheckbox = false
   showSubmitAndAttachButton = false
   fullName = "CMT__mdt-CMT Layout"
+  _parent = [
+    salesforce.CMT__mdt,
+  ]
   _alias = "CMT__mdt-CMT Layout"
 }

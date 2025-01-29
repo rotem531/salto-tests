@@ -6,13 +6,13 @@ type salesforce.ReportAnomalyEventStore {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.ReportAnomalyEventStore {
   apiName = "ReportAnomalyEventStore"
   metadataType = "CustomObject"
   label = "Report Anomaly Event Store"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -6,8 +6,6 @@ type salesforce.aaaa__b {
     }
     string label {
     }
-    string description {
-    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -15,6 +13,8 @@ type salesforce.aaaa__b {
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -94,7 +94,6 @@ type salesforce.aaaa__b {
   apiName = "aaaa__b"
   metadataType = "CustomObject"
   label = "aaaa"
-  description = ""
   pluralLabel = "aaaas"
   deploymentStatus = "InDevelopment"
   _alias = "aaaa"

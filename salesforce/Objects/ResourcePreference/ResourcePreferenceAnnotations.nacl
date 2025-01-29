@@ -6,13 +6,13 @@ type salesforce.ResourcePreference {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.ResourcePreference {
   apiName = "ResourcePreference"
   metadataType = "CustomObject"
   label = "Resource Preference"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

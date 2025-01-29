@@ -6,13 +6,13 @@ type salesforce.Macro {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.Macro {
   apiName = "Macro"
   metadataType = "CustomObject"
   label = "Macro"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

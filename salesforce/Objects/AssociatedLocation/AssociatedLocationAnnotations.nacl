@@ -6,13 +6,13 @@ type salesforce.AssociatedLocation {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.AssociatedLocation {
   apiName = "AssociatedLocation"
   metadataType = "CustomObject"
   label = "Associated Location"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

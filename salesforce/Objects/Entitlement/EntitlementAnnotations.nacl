@@ -6,13 +6,13 @@ type salesforce.Entitlement {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.Entitlement {
   apiName = "Entitlement"
   metadataType = "CustomObject"
   label = "Entitlement"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

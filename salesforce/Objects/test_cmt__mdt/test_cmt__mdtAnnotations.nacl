@@ -6,8 +6,6 @@ type salesforce.test_cmt__mdt {
     }
     string label {
     }
-    string description {
-    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -16,7 +14,6 @@ type salesforce.test_cmt__mdt {
   apiName = "test_cmt__mdt"
   metadataType = "CustomMetadata"
   label = "test cmt"
-  description = "descrip"
   pluralLabel = "test cmts"
   _alias = "test cmt"
 }

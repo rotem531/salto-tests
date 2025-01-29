@@ -1,4 +1,19 @@
 type salesforce.tst_vsb__c {
+  salesforce.Unknown formula_field__c {
+    apiName = "tst_vsb__c.formula_field__c"
+    externalId = false
+    formula = "num_num__c  + 8"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "formula field"
+    precision = "18"
+    scale = "2"
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
   salesforce.Number num_num__c {
     apiName = "tst_vsb__c.num_num__c"
     externalId = false
