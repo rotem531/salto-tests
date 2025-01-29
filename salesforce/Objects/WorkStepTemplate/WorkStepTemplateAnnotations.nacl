@@ -6,13 +6,13 @@ type salesforce.WorkStepTemplate {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.WorkStepTemplate {
   apiName = "WorkStepTemplate"
   metadataType = "CustomObject"
   label = "Work Step Template"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

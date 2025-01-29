@@ -6,13 +6,13 @@ type salesforce.AppointmentTopicTimeSlot {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.AppointmentTopicTimeSlot {
   apiName = "AppointmentTopicTimeSlot"
   metadataType = "CustomObject"
   label = "Appointment Topic Time Slot"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

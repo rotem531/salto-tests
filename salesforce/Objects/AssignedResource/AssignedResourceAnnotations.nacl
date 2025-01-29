@@ -6,13 +6,13 @@ type salesforce.AssignedResource {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.AssignedResource {
   apiName = "AssignedResource"
   metadataType = "CustomObject"
   label = "Assigned Resource"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

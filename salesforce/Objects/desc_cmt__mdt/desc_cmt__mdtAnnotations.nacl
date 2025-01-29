@@ -6,6 +6,8 @@ type salesforce.desc_cmt__mdt {
     }
     string label {
     }
+    string description {
+    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -14,6 +16,7 @@ type salesforce.desc_cmt__mdt {
   apiName = "desc_cmt__mdt"
   metadataType = "CustomMetadata"
   label = "desc  cmt"
+  description = "changed"
   pluralLabel = "desc cmts"
   _alias = "desc  cmt"
 }

@@ -6,13 +6,13 @@ type salesforce.OpportunityLineItem {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.OpportunityLineItem {
   apiName = "OpportunityLineItem"
   metadataType = "CustomObject"
   label = "Opportunity Product"
+  description = ""
   actionOverrides = [
     {
       actionName = "AddProduct"
