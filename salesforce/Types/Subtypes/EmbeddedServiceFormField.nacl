@@ -1,0 +1,62 @@
+type salesforce.EmbeddedServiceFormField {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string choiceList {
+    foreignKeyDomain = [
+      salesforce.ChoiceList,
+    ]
+  }
+  number displayOrder {
+  }
+  salesforce.EmbeddedServiceCustomLabel embeddedServiceCustomLabels {
+  }
+  string formField {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "_Email",
+        "_ExternalInteractionId",
+        "_ExternalInteractionName",
+        "_ExternalInteractionType",
+        "_FirstName",
+        "_Group",
+        "_Intent",
+        "_LastName",
+        "_Subject",
+      ]
+    }
+    foreignKeyDomain = [
+      "MessagingChannelParameter",
+    ]
+  }
+  string formFieldType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Checkbox",
+        "ChoiceList",
+        "Email",
+        "Number",
+        "Phone",
+        "Text",
+      ]
+    }
+  }
+  boolean isHidden {
+  }
+  boolean isRequired {
+  }
+  metadataType = "EmbeddedServiceFormField"
+}

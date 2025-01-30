@@ -1,0 +1,262 @@
+type salesforce.EventRelayConfig {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string destinationResourceName {
+  }
+  string eventChannel {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AccountChangeEvent",
+        "AccountCleanInfoChangeEvent",
+        "AccountContactRoleChangeEvent",
+        "ActivityEngagementVirtualChannel",
+        "AssetChangeEvent",
+        "AssetRelationshipChangeEvent",
+        "AssetTechnicalAttributesCDCEventChannel",
+        "AssignedResourceChangeEvent",
+        "AssignmentDelta",
+        "AssociatedLocationChangeEvent",
+        "AuthorizationFormChangeEvent",
+        "AuthorizationFormConsentChangeEvent",
+        "AuthorizationFormDataUseChangeEvent",
+        "AuthorizationFormTextChangeEvent",
+        "BriefcaseAssignmentChangeEvent",
+        "BriefcaseDefinitionChangeEvent",
+        "BusinessBrandChangeEvent",
+        "CalendarViewChangeEvent",
+        "CampaignChangeEvent",
+        "CampaignMemberChangeEvent",
+        "CampaignMemberStatusChangeEvent",
+        "CartDeliveryGroupChangeEvent",
+        "CartItemChangeEvent",
+        "CartItemPriceAdjustmentChangeEvent",
+        "CartRelatedItemChangeEvent",
+        "CartTaxChangeEvent",
+        "CartValidationOutputChangeEvent",
+        "CaseChangeEvent",
+        "CaseHistory2ChangeEvent",
+        "CaseRelatedIssueChangeEvent",
+        "ChangeDataCaptureDiffeoStandard",
+        "ChangeDataStandardSales",
+        "ChangeEvents",
+        "ChangeRequestChangeEvent",
+        "ChangeRequestRelatedIssueChangeEvent",
+        "ChangeRequestRelatedItemChangeEvent",
+        "CollaborationGroupRecordChangeEvent",
+        "CommSubscriptionChangeEvent",
+        "CommSubscriptionChannelTypeChangeEvent",
+        "CommSubscriptionConsentChangeEvent",
+        "CommSubscriptionTimingChangeEvent",
+        "CommerceChangeEvents",
+        "CommerceSearchIncrementalIndex",
+        "CommonEventSubscriptionChangeEvent",
+        "ConferenceNumberChangeEvent",
+        "ConsentCDCChannel",
+        "ConsentCDCStandardChannel",
+        "ContactChangeEvent",
+        "ContactCleanInfoChangeEvent",
+        "ContactPointAddressChangeEvent",
+        "ContactPointConsentChangeEvent",
+        "ContactPointEmailChangeEvent",
+        "ContactPointPhoneChangeEvent",
+        "ContactPointTypeConsentChangeEvent",
+        "ContentDocumentChangeEvent",
+        "ContentDocumentLinkChangeEvent",
+        "ContentFolderChangeEvent",
+        "ContentVersionChangeEvent",
+        "ContractChangeEvent",
+        "ContractLineItemChangeEvent",
+        "ConversationIntelligenceVirtualChannel",
+        "CouponChangeEvent",
+        "CreChangeEvents",
+        "DataCloudEntities",
+        "DataUseLegalBasisChangeEvent",
+        "DataUsePurposeChangeEvent",
+        "EinsteinDiscoveryWBChannel",
+        "EinsteinPlatformStandardChannel",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
+        "EngagementChannelTypeChangeEvent",
+        "EntitlementChangeEvent",
+        "EventBusRelayChangeEventChannel",
+        "EventChangeEvent",
+        "EventRelationChangeEvent",
+        "EventRelayConfigChangeEvent",
+        "ExternalEventChangeEvent",
+        "FTestStandardChannel",
+        "FTestStandardInternalChannel",
+        "FinanceBalanceSnapshotChangeEvent",
+        "FinanceTransactionChangeEvent",
+        "FlowBuilderChangeData",
+        "FlowOrchestrationVersionChangeEvent",
+        "FlowRecordChangeEvent",
+        "FlowRecordChangeListenerChannel",
+        "FlowRecordElementChangeEvent",
+        "FlowRecordVersionChangeEvent",
+        "FtestStandardEventChannel",
+        "FtestStandardMonitoringChannel",
+        "FulfillmentOrderChangeEvent",
+        "FulfillmentOrderItemTaxChangeEvent",
+        "FulfillmentOrderLineItemChangeEvent",
+        "GlobalIdentityStandard",
+        "HighVolumePriming",
+        "IncidentChangeEvent",
+        "IncidentRelatedItemChangeEvent",
+        "IndividualChangeEvent",
+        "IsotopeStandardChangeEvents",
+        "LeadChangeEvent",
+        "LearningItemProgress",
+        "ListEmailChangeEvent",
+        "ListEmailSentResultChangeEvent",
+        "LocationChangeEvent",
+        "LocationGroupAssignmentChangeEvent",
+        "LocationGroupChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
+        "ManagedContentChangeEvent",
+        "ManagedContentVariantChangeEvent",
+        "ManagedEventSubscriptionChangeEvent",
+        "Merchandising",
+        "MessagingEndUserChangeEvent",
+        "MessagingSessionChangeEvent",
+        "OperatingHoursChangeEvent",
+        "OperatingHoursHolidayChangeEvent",
+        "OpportunityChangeEvent",
+        "OpportunityContactRoleChangeEvent",
+        "OpportunityLineItemChangeEvent",
+        "OrderChangeEvent",
+        "OrderItemChangeEvent",
+        "PardotSyncStdChannel",
+        "PartyConsentChangeEvent",
+        "PendingOrderSummaryChangeEvent",
+        "Pricebook2ChangeEvent",
+        "PricebookEntryChangeEvent",
+        "ProblemChangeEvent",
+        "ProblemIncidentChangeEvent",
+        "ProblemRelatedItemChangeEvent",
+        "ProcessExceptionChangeEvent",
+        "ProcessInstanceChangeEvent",
+        "ProcessInstanceStepChangeEvent",
+        "Product2ChangeEvent",
+        "ProductAttributeChangeEvent",
+        "ProductCatalogChangeEvent",
+        "ProductCategoryChangeEvent",
+        "ProductCategoryProductChangeEvent",
+        "PromotionChangeEvent",
+        "PromotionMarketSegmentChangeEvent",
+        "QuickTextChangeEvent",
+        "QuickTextUsageChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
+        "ResourceAbsenceChangeEvent",
+        "ResourcePreferenceChangeEvent",
+        "ReturnOrderChangeEvent",
+        "ReturnOrderItemAdjustmentChangeEvent",
+        "ReturnOrderItemTaxChangeEvent",
+        "ReturnOrderLineItemChangeEvent",
+        "SchedulingEntitiesModifiedAttributesChannel",
+        "ServiceAppointmentChangeEvent",
+        "ServiceContractChangeEvent",
+        "ServiceResourceChangeEvent",
+        "ServiceResourceSkillChangeEvent",
+        "ServiceTerritoryChangeEvent",
+        "ServiceTerritoryMemberChangeEvent",
+        "ShiftChangeEvent",
+        "ShipmentChangeEvent",
+        "SkillChangeEvent",
+        "SkillRequirementChangeEvent",
+        "SlackAlertsEventChannel",
+        "TaskChangeEvent",
+        "TaskRelationChangeEvent",
+        "TimeSlotChangeEvent",
+        "TodayGoalChangeEvent",
+        "UserAppInfoChangeEvent",
+        "UserChangeEvent",
+        "UserEmailPreferredPersonChangeEvent",
+        "VideoCall",
+        "VoiceCallChangeEvent",
+        "VoiceCallRecordingChangeEvent",
+        "WaveAutoInstallRequestChangeEvent",
+        "WebCartAdjustmentBasisChangeEvent",
+        "WebCartAdjustmentGroupChangeEvent",
+        "WebCartChangeEvent",
+        "WebStoreBuyerGroupChangeEvent",
+        "WebStoreCatalogChangeEvent",
+        "WebStoreChangeEvent",
+        "WorkOrderChangeEvent",
+        "WorkOrderLineItemChangeEvent",
+        "WorkPlanChangeEvent",
+        "WorkPlanTemplateChangeEvent",
+        "WorkPlanTemplateEntryChangeEvent",
+        "WorkPlansCDCEventChannel",
+        "WorkStepChangeEvent",
+        "WorkStepTemplateChangeEvent",
+        "WorkTypeChangeEvent",
+        "tst_vsb__ChangeEvent",
+      ]
+    }
+    foreignKeyDomain = [
+      "CustomObject",
+      salesforce.PlatformEventChannel,
+    ]
+  }
+  string label {
+  }
+  string relayOption {
+  }
+  string state {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DELETE",
+        "PAUSE",
+        "RUN",
+        "STOP",
+      ]
+    }
+  }
+  string usageType {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AMAZON_EVENTBRIDGE",
+        "INTERNAL_MANAGED_SUBSCRIPTIONS",
+        "INTERNAL_REPLICATION",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "eventRelay"
+  dirName = "eventRelays"
+  metadataType = "EventRelayConfig"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

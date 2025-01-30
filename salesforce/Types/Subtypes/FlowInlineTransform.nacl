@@ -1,0 +1,34 @@
+type salesforce.FlowInlineTransform {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  salesforce.FlowMetadataValue processMetadataValues {
+  }
+  string apexClass {
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+      "ExternalServiceObjectType",
+    ]
+  }
+  boolean isCollection {
+  }
+  string objectType {
+    foreignKeyDomain = [
+      "CustomObject",
+    ]
+  }
+  salesforce.FlowTransformValue transformValues {
+  }
+  metadataType = "FlowInlineTransform"
+}

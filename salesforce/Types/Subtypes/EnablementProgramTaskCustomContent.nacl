@@ -1,0 +1,26 @@
+type salesforce.EnablementProgramTaskCustomContent {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string content {
+  }
+  metadataType = "EnablementProgramTaskCustomContent"
+  _important_values = [
+    {
+      value = "content"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

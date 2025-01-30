@@ -1,0 +1,50 @@
+type salesforce.PublicKeyCertificate {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string description {
+  }
+  boolean isActive {
+  }
+  string jsonWebKey {
+  }
+  string masterLabel {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "PublicKeyCertificate"
+  dirName = "PublicKeyCertificate"
+  metadataType = "PublicKeyCertificate"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

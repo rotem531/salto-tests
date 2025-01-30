@@ -1,0 +1,42 @@
+settings salesforce.ProductDiscoverySettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string prodDiscBrowseContextDefOrgValue {
+  }
+  string prodDiscPricingEnabledOrgValue {
+  }
+  string prodDiscProcedureOrgValue {
+  }
+  string prodDiscQualEnabledOrgValue {
+  }
+  string prodDiscQualificationOrgValue {
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "settings"
+  dirName = "settings"
+  metadataType = "ProductDiscoverySettings"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

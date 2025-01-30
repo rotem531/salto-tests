@@ -316,6 +316,9 @@ type salesforce.Account {
     ]
   }
   _alias = "Account"
+  topicsForObjects = {
+    enableTopics = true
+  }
   feedHistoryTrackedFields = {
     Name = salesforce.Account.field.Name
     OwnerId = salesforce.Account.field.OwnerId

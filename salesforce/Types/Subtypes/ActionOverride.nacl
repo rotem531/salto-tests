@@ -19,10 +19,10 @@ type salesforce.ActionOverride {
   }
   string content {
     foreignKeyDomain = [
-      "ApexPage",
-      "AuraDefinitionBundle",
-      "FlexiPage",
-      "Scontrol",
+      salesforce.ApexPage,
+      salesforce.AuraDefinitionBundle,
+      salesforce.LightningPage,
+      salesforce.Scontrol,
     ]
   }
   string formFactor {

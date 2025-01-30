@@ -1,0 +1,45 @@
+type salesforce.ConvIntelligenceSignalSubRule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string operandValue {
+  }
+  string operator {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Equals",
+        "GreaterThan",
+        "In",
+        "LessThan",
+        "NotEquals",
+      ]
+    }
+  }
+  number order {
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AgentSentiment",
+        "Category",
+        "CustomerSentiment",
+        "Intent",
+        "Keyword",
+      ]
+    }
+  }
+  metadataType = "ConvIntelligenceSignalSubRule"
+}

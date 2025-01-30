@@ -1,0 +1,31 @@
+type salesforce.EmbeddedServiceForm {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string displayContext {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Conversation",
+        "None",
+        "Session",
+      ]
+    }
+  }
+  salesforce.EmbeddedServiceFormField embeddedServiceFormFields {
+  }
+  boolean isActive {
+  }
+  metadataType = "EmbeddedServiceForm"
+}

@@ -1,0 +1,28 @@
+type salesforce.AuthProvParamFwdAllowlist {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string description {
+  }
+  string param {
+  }
+  metadataType = "AuthProvParamFwdAllowlist"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

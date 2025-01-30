@@ -6,9 +6,9 @@ salesforce {
     metadata = {
       include = [
         {
-          metadataType = "CustomObject"
+          metadataType = ".*"
           namespace = ""
-          name = "Account"
+          name = ".*"
         },
         // {
         //   metadataType = ".*"

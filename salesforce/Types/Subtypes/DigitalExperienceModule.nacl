@@ -1,0 +1,39 @@
+type salesforce.DigitalExperienceModule {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string fullyQualifiedName {
+  }
+  string status {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "DISABLED",
+        "ENABLED",
+        "ERROR",
+        "INVALID",
+        "NOT_INSTALLED",
+        "STANDBY",
+      ]
+    }
+  }
+  metadataType = "DigitalExperienceModule"
+  _important_values = [
+    {
+      value = "status"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

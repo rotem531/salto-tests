@@ -1,0 +1,11 @@
+salesforce.ValidationRule Opportunity_opur_validation_close_date {
+  fullName = "Opportunity.opur_validation_close_date"
+  active = true
+  errorConditionFormula = "CloseDate  <  TODAY()"
+  errorDisplayField = salesforce.Opportunity.field.CloseDate
+  errorMessage = "what"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity.opur_validation_close_date"
+}

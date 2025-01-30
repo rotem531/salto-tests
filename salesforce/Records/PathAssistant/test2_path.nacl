@@ -1,0 +1,28 @@
+salesforce.PathAssistant test2_path {
+  fullName = "test2_path"
+  active = false
+  entityName = "Incident"
+  fieldName = "Status"
+  masterLabel = "test2 path"
+  pathAssistantSteps = [
+    {
+      fieldNames = [
+        "CreatedDate",
+        "Description",
+        "DetectedDateTime",
+      ]
+      picklistValueName = "Completed"
+    },
+    {
+      fieldNames = [
+        "CreatedDate",
+        "Description",
+        "DetectedDateTime",
+        "EndDateTime",
+      ]
+      picklistValueName = "New"
+    },
+  ]
+  recordTypeName = "__MASTER__"
+  _alias = "test2_path"
+}
