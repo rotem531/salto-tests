@@ -6,13 +6,13 @@ type salesforce.AlternativePaymentMethod {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.AlternativePaymentMethod {
   apiName = "AlternativePaymentMethod"
   metadataType = "CustomObject"
   label = "Alternative Payment Method"
-  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

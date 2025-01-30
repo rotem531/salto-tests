@@ -6,8 +6,6 @@ type salesforce.another_big__b {
     }
     string label {
     }
-    string description {
-    }
     string pluralLabel {
     }
     hidden_string keyPrefix {
@@ -15,6 +13,8 @@ type salesforce.another_big__b {
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -94,7 +94,6 @@ type salesforce.another_big__b {
   apiName = "another_big__b"
   metadataType = "CustomObject"
   label = "another big"
-  description = ""
   pluralLabel = "another bigs"
   deploymentStatus = "InDevelopment"
   _alias = "another big"

@@ -6,13 +6,13 @@ type salesforce.CollaborationGroup {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.CollaborationGroup {
   apiName = "CollaborationGroup"
   metadataType = "CustomObject"
   label = "Group"
-  description = ""
   actionOverrides = [
     {
       actionName = "AddMembersAction"

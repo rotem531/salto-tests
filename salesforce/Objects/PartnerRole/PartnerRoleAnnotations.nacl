@@ -6,13 +6,13 @@ type salesforce.PartnerRole {
     }
     string label {
     }
-    string description {
-    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
+    }
+    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,7 +58,6 @@ type salesforce.PartnerRole {
   apiName = "PartnerRole"
   metadataType = "CustomObject"
   label = "Partner Role Value"
-  description = ""
   enableFeeds = false
   _alias = "Partner Role Value"
 }
