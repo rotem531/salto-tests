@@ -16,7 +16,6 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.LeadSource
   }
   salesforce.Currency AnnualRevenue {
     apiName = "Account.AnnualRevenue"
@@ -83,7 +82,6 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.Industry
   }
   salesforce.Text Jigsaw {
     apiName = "Account.Jigsaw"
@@ -160,7 +158,6 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.AccountOwnership
   }
   salesforce.Hierarchy ParentId {
     apiName = "Account.ParentId"
@@ -184,7 +181,6 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.AccountRating
   }
   salesforce.Address ShippingAddress {
     apiName = "Account.ShippingAddress"
@@ -255,7 +251,6 @@ type salesforce.Account {
     createable = true
     updateable = true
     queryable = true
-    valueSetName = salesforce.StandardValueSet.instance.AccountType
   }
   salesforce.Url Website {
     apiName = "Account.Website"

@@ -1,11 +1,14 @@
 salesforce {
   fetch = {
+    optionalFeatures={
+      hideTypesFolder=false
+    }
     metadata = {
       include = [
         {
-          metadataType = ".*"
+          metadataType = "CustomObject"
           namespace = ""
-          name = ".*"
+          name = "Account"
         },
         // {
         //   metadataType = ".*"
