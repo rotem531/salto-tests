@@ -6,13 +6,13 @@ type salesforce.DataUsePurpose {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.DataUsePurpose {
   apiName = "DataUsePurpose"
   metadataType = "CustomObject"
   label = "Data Use Purpose"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -6,13 +6,13 @@ type salesforce.PromotionMarketSegment {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.PromotionMarketSegment {
   apiName = "PromotionMarketSegment"
   metadataType = "CustomObject"
   label = "Promotion Market Segment"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

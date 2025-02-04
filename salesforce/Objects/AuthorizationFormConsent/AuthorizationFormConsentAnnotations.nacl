@@ -6,13 +6,13 @@ type salesforce.AuthorizationFormConsent {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.AuthorizationFormConsent {
   apiName = "AuthorizationFormConsent"
   metadataType = "CustomObject"
   label = "Authorization Form Consent"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

@@ -17,7 +17,7 @@ type salesforce.ValidationRule {
   }
   string description {
   }
-  salesforce.FormulaCheckbox errorConditionFormula {
+  string errorConditionFormula {
   }
   string errorDisplayField {
   }

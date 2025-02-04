@@ -6,13 +6,13 @@ type salesforce.DeliveryEstimationSetup {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.DeliveryEstimationSetup {
   apiName = "DeliveryEstimationSetup"
   metadataType = "CustomObject"
   label = "Delivery Estimation Setup"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"

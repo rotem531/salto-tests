@@ -6,13 +6,13 @@ type salesforce.Incident {
     }
     string label {
     }
+    string description {
+    }
     hidden_string keyPrefix {
     }
     salesforce.ActionOverride actionOverrides {
     }
     string compactLayoutAssignment {
-    }
-    string description {
     }
     boolean enableDataTranslation {
     }
@@ -58,6 +58,7 @@ type salesforce.Incident {
   apiName = "Incident"
   metadataType = "CustomObject"
   label = "Incident"
+  description = ""
   actionOverrides = [
     {
       actionName = "CancelEdit"
