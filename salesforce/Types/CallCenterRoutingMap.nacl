@@ -32,7 +32,7 @@ type salesforce.CallCenterRoutingMap {
     foreignKeyDomain = [
       salesforce.Queue,
       salesforce.Skill,
-      salesforce.User,
+      "User",
     ]
   }
   string internalId {

@@ -17,7 +17,7 @@ type salesforce.ApprovalSubmitter {
     foreignKeyDomain = [
       salesforce.Queue,
       salesforce.Role,
-      salesforce.User,
+      "User",
     ]
   }
   string type {

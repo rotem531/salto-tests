@@ -15,8 +15,6 @@ type salesforce.NotificationTypeConfig {
   }
   serviceid fullName {
   }
-  "List<salesforce.NotificationTypeSettings>" notificationTypeSettings {
-  }
   string internalId {
     _hidden_value = true
     localOnly = true
@@ -31,4 +29,6 @@ type salesforce.NotificationTypeConfig {
       indexed = false
     },
   ]
+  salesforce.NotificationTypeSettings notificationTypeSettings {
+  }
 }

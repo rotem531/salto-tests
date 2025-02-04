@@ -45,8 +45,6 @@ type salesforce.DuplicateRule {
   }
   string masterLabel {
   }
-  "List<string>" operationsOnInsert {
-  }
   string operationsOnUpdate {
   }
   string securityOption {
@@ -84,4 +82,6 @@ type salesforce.DuplicateRule {
       indexed = false
     },
   ]
+  string operationsOnInsert {
+  }
 }

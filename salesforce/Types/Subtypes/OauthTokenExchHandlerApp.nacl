@@ -15,7 +15,7 @@ type salesforce.OauthTokenExchHandlerApp {
   }
   string apexExecutionUser {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string connectedApp {

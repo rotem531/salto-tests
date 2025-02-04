@@ -15,7 +15,7 @@ type salesforce.EntitlementTemplate {
   }
   string businessHours {
     foreignKeyDomain = [
-      salesforce.BusinessHoursEntry,
+      "BusinessHoursEntry",
     ]
   }
   number casesPerEntitlement {

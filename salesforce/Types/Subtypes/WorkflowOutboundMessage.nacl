@@ -27,7 +27,7 @@ type salesforce.WorkflowOutboundMessage {
   }
   string integrationUser {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string name {

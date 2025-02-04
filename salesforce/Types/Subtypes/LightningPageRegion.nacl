@@ -22,8 +22,6 @@ type salesforce.LightningPageRegion {
       ]
     }
   }
-  "List<salesforce.ItemInstance>" itemInstances {
-  }
   string mode {
     _restriction = {
       enforce_value = false
@@ -72,4 +70,6 @@ type salesforce.LightningPageRegion {
       indexed = false
     },
   ]
+  salesforce.ItemInstance itemInstances {
+  }
 }

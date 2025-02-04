@@ -19,7 +19,7 @@ type salesforce.EntitlementProcess {
   }
   string businessHours {
     foreignKeyDomain = [
-      salesforce.BusinessHoursEntry,
+      "BusinessHoursEntry",
     ]
   }
   string description {

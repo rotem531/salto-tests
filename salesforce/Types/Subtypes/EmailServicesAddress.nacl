@@ -23,7 +23,7 @@ type salesforce.EmailServicesAddress {
   }
   string runAsUser {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   metadataType = "EmailServicesAddress"

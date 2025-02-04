@@ -17,7 +17,7 @@ type salesforce.LightningOnboardingConfig {
   }
   string collaborationGroup {
     foreignKeyDomain = [
-      salesforce.CollaborationGroup,
+      "CollaborationGroup",
     ]
   }
   string customQuestion {

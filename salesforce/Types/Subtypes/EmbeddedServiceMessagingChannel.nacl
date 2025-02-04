@@ -15,7 +15,7 @@ type salesforce.EmbeddedServiceMessagingChannel {
   }
   string businessHours {
     foreignKeyDomain = [
-      salesforce.BusinessHoursEntry,
+      "BusinessHoursEntry",
     ]
   }
   boolean isEnabled {

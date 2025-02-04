@@ -27,7 +27,7 @@ type salesforce.WorkflowFieldUpdate {
     foreignKeyDomain = [
       salesforce.Queue,
       salesforce.RecordType,
-      salesforce.User,
+      "User",
     ]
   }
   string name {

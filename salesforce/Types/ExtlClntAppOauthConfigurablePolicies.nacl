@@ -32,7 +32,7 @@ type salesforce.ExtlClntAppOauthConfigurablePolicies {
   }
   string executeHandlerAs {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string externalClientApplication {

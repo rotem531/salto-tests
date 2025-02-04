@@ -17,7 +17,7 @@ type salesforce.ApexEmailNotification {
   }
   string user {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   metadataType = "ApexEmailNotification"

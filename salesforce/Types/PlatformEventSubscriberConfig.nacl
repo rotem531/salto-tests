@@ -41,7 +41,7 @@ type salesforce.PlatformEventSubscriberConfig {
   }
   string user {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string internalId {

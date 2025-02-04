@@ -1,4 +1,4 @@
-type salesforce.EscalationRule {
+type salesforce.FlowDefinition {
   annotations {
     serviceid metadataType {
     }
@@ -13,15 +13,21 @@ type salesforce.EscalationRule {
     string dirName {
     }
   }
-  boolean active {
-  }
   serviceid fullName {
+  }
+  number activeVersionNumber {
+  }
+  string description {
+  }
+  string masterLabel {
   }
   string internalId {
     _hidden_value = true
     localOnly = true
   }
-  metadataType = "EscalationRule"
+  suffix = "flowDefinition"
+  dirName = "flowDefinitions"
+  metadataType = "FlowDefinition"
   _important_values = [
     {
       value = "fullName"
@@ -29,11 +35,14 @@ type salesforce.EscalationRule {
       indexed = false
     },
     {
-      value = "active"
+      value = "masterLabel"
       highlighted = true
-      indexed = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
     },
   ]
-  salesforce.RuleEntry ruleEntry {
-  }
 }

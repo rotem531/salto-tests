@@ -20,7 +20,7 @@ type salesforce.MyDomainDiscoverableLogin {
   }
   string executeApexHandlerAs {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   serviceid fullName {

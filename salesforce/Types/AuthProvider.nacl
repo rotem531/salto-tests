@@ -41,7 +41,7 @@ type salesforce.AuthProvider {
   }
   string executionUser {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string friendlyName {

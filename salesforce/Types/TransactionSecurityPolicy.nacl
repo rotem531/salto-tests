@@ -64,7 +64,7 @@ type salesforce.TransactionSecurityPolicy {
   }
   string executionUser {
     foreignKeyDomain = [
-      salesforce.User,
+      "User",
     ]
   }
   string flow {

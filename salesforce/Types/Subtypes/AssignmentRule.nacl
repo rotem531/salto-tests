@@ -17,8 +17,6 @@ type salesforce.AssignmentRule {
   }
   serviceid fullName {
   }
-  "List<salesforce.RuleEntry>" ruleEntry {
-  }
   string internalId {
     _hidden_value = true
     localOnly = true
@@ -36,4 +34,6 @@ type salesforce.AssignmentRule {
       indexed = true
     },
   ]
+  salesforce.RuleEntry ruleEntry {
+  }
 }
