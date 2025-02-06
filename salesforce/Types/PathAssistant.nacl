@@ -23,6 +23,8 @@ type salesforce.PathAssistant {
   }
   string masterLabel {
   }
+  salesforce.PathAssistantStep pathAssistantSteps {
+  }
   string recordTypeName {
   }
   string internalId {
@@ -49,6 +51,4 @@ type salesforce.PathAssistant {
       indexed = true
     },
   ]
-  salesforce.PathAssistantStep pathAssistantSteps {
-  }
 }

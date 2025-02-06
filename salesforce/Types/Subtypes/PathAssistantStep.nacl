@@ -13,11 +13,11 @@ type salesforce.PathAssistantStep {
     string dirName {
     }
   }
+  string fieldNames {
+  }
   string info {
   }
   string picklistValueName {
   }
   metadataType = "PathAssistantStep"
-  string fieldNames {
-  }
 }

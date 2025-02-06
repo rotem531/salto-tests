@@ -17,6 +17,8 @@ type salesforce.EscalationRule {
   }
   serviceid fullName {
   }
+  salesforce.RuleEntry ruleEntry {
+  }
   string internalId {
     _hidden_value = true
     localOnly = true
@@ -34,6 +36,4 @@ type salesforce.EscalationRule {
       indexed = true
     },
   ]
-  salesforce.RuleEntry ruleEntry {
-  }
 }

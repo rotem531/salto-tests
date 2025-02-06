@@ -27,6 +27,8 @@ type salesforce.FeedLayout {
       ]
     }
   }
+  salesforce.FeedLayoutFilter feedFilters {
+  }
   boolean fullWidthFeed {
   }
   boolean hideSidebar {
@@ -35,11 +37,9 @@ type salesforce.FeedLayout {
   }
   salesforce.FeedLayoutComponent leftComponents {
   }
+  salesforce.FeedLayoutComponent rightComponents {
+  }
   boolean useInlineFiltersInConsole {
   }
   metadataType = "FeedLayout"
-  salesforce.FeedLayoutFilter feedFilters {
-  }
-  salesforce.FeedLayoutComponent rightComponents {
-  }
 }
