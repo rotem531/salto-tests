@@ -7,10 +7,5 @@ salesforce.ValidationRule Opportunity_opur_validation_close_date {
   _parent = [
     salesforce.Opportunity,
   ]
-  _generated_dependencies = [
-    {
-      reference = salesforce.Opportunity.field.CloseDate
-    },
-  ]
   _alias = "Opportunity.opur_validation_close_date"
 }

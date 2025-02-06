@@ -10,10 +10,5 @@ salesforce.WorkflowFieldUpdate tst_vsb__c_action_field_update@uuuvuu {
   _parent = [
     salesforce.tst_vsb__c,
   ]
-  _generated_dependencies = [
-    {
-      reference = salesforce.tst_vsb__c.field.num_num__c
-    },
-  ]
   _alias = "tst_vsb__c.action_field_update"
 }

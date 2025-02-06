@@ -7,10 +7,5 @@ salesforce.ValidationRule tst_vsb__c_vladiation_rule {
   _parent = [
     salesforce.tst_vsb__c,
   ]
-  _generated_dependencies = [
-    {
-      reference = salesforce.tst_vsb__c.field.num_num__c
-    },
-  ]
   _alias = "tst_vsb__c.vladiation_rule"
 }
