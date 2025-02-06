@@ -1,0 +1,85 @@
+salesforce.Flow formula_flow {
+  fullName = "formula_flow"
+  apiVersion = 62
+  collectionProcessors = {
+    name = "collection_Processor_test"
+    elementSubtype = "FilterCollectionProcessor"
+    label = "collection Processor test"
+    assignNextValueToReference = "currentItem_collection_Processor_test"
+    collectionProcessorType = "FilterCollectionProcessor"
+    collectionReference = "anotherResource"
+    conditionLogic = "formula_evaluates_to_true"
+    formula = "LEN({!$Profile.Name}) > 0"
+  }
+  environments = "Default"
+  interviewLabel = "formula flow {!$Flow.CurrentDateTime}"
+  label = "formula flow"
+  processMetadataValues = [
+    {
+      name = "BuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+    {
+      name = "CanvasMode"
+      value = {
+        stringValue = "AUTO_LAYOUT_CANVAS"
+      }
+    },
+    {
+      name = "OriginBuilderType"
+      value = {
+        stringValue = "LightningFlowBuilder"
+      }
+    },
+  ]
+  processType = "AutoLaunchedFlow"
+  start = {
+    connector = {
+      targetReference = "collection_Processor_test"
+    }
+    object = salesforce.tst_vsb__c
+    recordTriggerType = "Create"
+    triggerType = "RecordAfterSave"
+  }
+  status = "Draft"
+  variables = [
+    {
+      name = "anotherResource"
+      dataType = "SObject"
+      isCollection = true
+      isInput = true
+      isOutput = true
+      objectType = salesforce.tst_vsb__c
+    },
+    {
+      name = "currentItem_collection_Processor_test"
+      dataType = "SObject"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      objectType = salesforce.tst_vsb__c
+    },
+    {
+      name = "resourceflow"
+      dataType = "SObject"
+      isCollection = false
+      isInput = false
+      isOutput = false
+      objectType = salesforce.tst_vsb__c
+    },
+    {
+      name = "resourceforflow"
+      dataType = "SObject"
+      isCollection = false
+      isInput = true
+      isOutput = true
+      objectType = salesforce.tst_vsb__c
+    },
+  ]
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _alias = "formula flow"
+}

@@ -1,14 +1,14 @@
 salesforce {
   fetch = {
-    optionalFeatures={
-      hideTypesFolder=false
-    }
+    // optionalFeatures={
+    //   hideTypesFolder=false
+    // }
     metadata = {
       include = [
         {
           metadataType = ".*"
           namespace = ""
-          name = "tst_vsb__c.*"
+          name = ".*"
         },
         // {
         //   metadataType = ".*"

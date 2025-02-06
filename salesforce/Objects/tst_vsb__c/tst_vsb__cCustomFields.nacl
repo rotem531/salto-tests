@@ -35,7 +35,7 @@ type salesforce.tst_vsb__c {
     apiName = "tst_vsb__c.test_picklist_field__c"
     label = "test picklist field"
     trackTrending = false
-    valueSetName = "test_picklist_value_set"
+    valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     createable = true
     updateable = true
