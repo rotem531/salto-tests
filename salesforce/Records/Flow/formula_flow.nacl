@@ -9,7 +9,7 @@ salesforce.Flow formula_flow {
     collectionProcessorType = "FilterCollectionProcessor"
     collectionReference = "anotherResource"
     conditionLogic = "formula_evaluates_to_true"
-    formula = "LEN({!$Profile.Name}) > 0"
+    formula = "{!currentItem_collection_Processor_test.IsDeleted}"
   }
   environments = "Default"
   interviewLabel = "formula flow {!$Flow.CurrentDateTime}"

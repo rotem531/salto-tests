@@ -234,7 +234,7 @@ salesforce.EscalationRules Case {
         {
           businessHoursSource = "Case"
           escalationStartTime = "CaseCreation"
-          formula = "LEN( SuppliedEmail ) > 2"
+          formula = "IsClosed =  IsClosedOnCreate"
         },
       ]
     },
