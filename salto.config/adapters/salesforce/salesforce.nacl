@@ -1,0 +1,137 @@
+salesforce {
+  fetch = {
+    metadata = {
+      include = [
+        {
+          metadataType = ".*"
+          namespace = ""
+          name = ".*"
+        },
+      ]
+      exclude = [
+        {
+          metadataType = "Report"
+        },
+        {
+          metadataType = "ReportType"
+        },
+        {
+          metadataType = "ReportFolder"
+        },
+        {
+          metadataType = "Dashboard"
+        },
+        {
+          metadataType = "DashboardFolder"
+        },
+        {
+          metadataType = "Document"
+        },
+        {
+          metadataType = "DocumentFolder"
+        },
+        {
+          metadataType = "SiteDotCom"
+        },
+        {
+          metadataType = "EmailTemplate"
+          name = "Marketo_?Email_?Templates/.*"
+        },
+        {
+          metadataType = "ContentAsset"
+        },
+        {
+          metadataType = "CustomObjectTranslation"
+        },
+        {
+          metadataType = "AnalyticSnapshot"
+        },
+        {
+          metadataType = "WaveDashboard"
+        },
+        {
+          metadataType = "WaveDataflow"
+        },
+        {
+          metadataType = "StandardValueSet"
+          name = "^(AddressCountryCode)|(AddressStateCode)$"
+          namespace = ""
+        },
+        {
+          metadataType = "Layout"
+          name = "CollaborationGroup-Group Layout"
+        },
+        {
+          metadataType = "Layout"
+          name = "CaseInteraction-Case Feed Layout"
+        },
+        {
+          metadataType = "EclairGeoData"
+        },
+        {
+          metadataType = "OmniUiCard|OmniDataTransform|OmniIntegrationProcedure|OmniInteractionAccessConfig|OmniInteractionConfig|OmniScript"
+        },
+        {
+          metadataType = "DiscoveryAIModel"
+        },
+        {
+          metadataType = "Translations"
+        },
+        {
+          metadataType = "ManagedEventSubscription"
+        },
+        {
+          metadataType = "Profile"
+        },
+        {
+          metadataType = "PermissionSet"
+        },
+        {
+          metadataType = "MutingPermissionSet"
+        },
+        {
+          metadataType = "PermissionSetGroup"
+        },
+        {
+          metadataType = "DigitalExperienceBundle"
+          name = "site/test_domain1"
+        },
+        {
+          metadataType = "DigitalExperienceBundle"
+          name = "site/ESW_test_embedded_17392685865031"
+        },
+        {
+          metadataType = "DigitalExperienceBundle"
+          name = "site/ESW_test_embedded_17392680606471"
+        },
+        {
+          metadataType = "DigitalExperienceBundle"
+          name = "site/ESW_test_embedded_17392684517171"
+        },
+        {
+          metadataType = "DigitalExperienceBundle"
+          name = "enablement/sfdcEnablement_EnablementWorkspace"
+        },
+        {
+          metadataType = "DigitalExperienceConfig"
+          name = "ESW_test_embedded_17392685865031"
+        },
+        {
+          metadataType = "DigitalExperienceConfig"
+          name = "ESW_test_embedded_17392680606471"
+        },
+        {
+          metadataType = "DigitalExperienceConfig"
+          name = "test_domain1"
+        },
+        {
+          metadataType = "DigitalExperienceConfig"
+          name = "ESW_test_embedded_17392684517171"
+        },
+      ]
+    }
+    fetchAllCustomSettings = false
+    maxInstancesPerType = 5000
+  }
+  maxItemsInRetrieveRequest = 2500
+}

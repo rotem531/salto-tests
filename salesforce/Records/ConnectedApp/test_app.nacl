@@ -1,0 +1,14 @@
+salesforce.ConnectedApp test_app {
+  fullName = "test_app"
+  canvasConfig = {
+    accessMethod = "Post"
+    canvasUrl = "https://salto-dd-dev-ed.develop.my.site.com"
+    locations = [
+      "Visualforce",
+    ]
+    samlInitiationMethod = "None"
+  }
+  contactEmail = "dev1@sf.sf"
+  label = "test app"
+  _alias = "test app"
+}

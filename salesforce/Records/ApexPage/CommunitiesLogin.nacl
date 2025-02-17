@@ -1,0 +1,22 @@
+salesforce.ApexPage CommunitiesLogin {
+  apiVersion = 63
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default experiences login page"
+  label = "CommunitiesLogin"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = salesforce.InstalledPackage.instance.sf_com_apps
+    },
+  ]
+  fullName = "CommunitiesLogin"
+  content = file("salesforce/Records/ApexPage/CommunitiesLogin.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CommunitiesLoginController
+    },
+  ]
+  _alias = "CommunitiesLogin"
+}
