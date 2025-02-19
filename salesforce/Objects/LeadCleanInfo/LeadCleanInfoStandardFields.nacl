@@ -1,8 +1,8 @@
 type salesforce.LeadCleanInfo {
   salesforce.Picklist Industry {
     apiName = "LeadCleanInfo.Industry"
-    restricted = false
     label = "Industry"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -17,8 +17,8 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "LeadCleanInfo.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -26,13 +26,13 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Text Name {
     apiName = "LeadCleanInfo.Name"
-    length = 255
-    _required = true
     label = "Lead Clean Info Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -45,8 +45,8 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Lookup CreatedById {
     apiName = "LeadCleanInfo.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "LeadCleanInfo.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -79,9 +79,9 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Lookup LeadId {
     apiName = "LeadCleanInfo.LeadId"
-    relationshipName = "Lead"
-    _required = true
     label = "Lead ID"
+    _required = true
+    relationshipName = "Lead"
     createable = false
     updateable = false
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.DateTime LastMatchedDate {
     apiName = "LeadCleanInfo.LastMatchedDate"
-    _required = true
     label = "Last Matched Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -106,8 +106,8 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Lookup LastStatusChangedById {
     apiName = "LeadCleanInfo.LastStatusChangedById"
-    relationshipName = "LastStatusChangedBy"
     label = "User ID"
+    relationshipName = "LastStatusChangedBy"
     createable = false
     updateable = false
     queryable = true
@@ -115,40 +115,40 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Checkbox IsInactive {
     apiName = "LeadCleanInfo.IsInactive"
-    defaultValue = false
     label = "Contact Status in Salesforce"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text FirstName {
     apiName = "LeadCleanInfo.FirstName"
-    length = 255
     label = "First Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LastName {
     apiName = "LeadCleanInfo.LastName"
-    length = 255
     label = "Last Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "LeadCleanInfo.Email"
     label = "Email"
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -170,62 +170,62 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Text Title {
     apiName = "LeadCleanInfo.Title"
-    length = 128
     label = "Title"
-    createable = false
-    updateable = false
+    length = 128
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency AnnualRevenue {
     apiName = "LeadCleanInfo.AnnualRevenue"
     label = "Annual Revenue"
-    createable = false
-    updateable = false
     scale = 0
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfEmployees {
     apiName = "LeadCleanInfo.NumberOfEmployees"
     label = "Number of Employees"
+    scale = 0
     precision = 8
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text CompanyName {
     apiName = "LeadCleanInfo.CompanyName"
-    length = 255
     label = "Company Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text CompanyDunsNumber {
     apiName = "LeadCleanInfo.CompanyDunsNumber"
-    length = 9
     label = "Company D-U-N-S Number"
-    createable = false
-    updateable = false
+    length = 9
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ContactStatusDataDotCom {
     apiName = "LeadCleanInfo.ContactStatusDataDotCom"
-    restricted = true
     label = "Contact Status per Data.com"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -470,23 +470,23 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Text DandBCompanyDunsNumber {
     apiName = "LeadCleanInfo.DandBCompanyDunsNumber"
-    length = 9
     label = "D&B Company D-U-N-S Number"
-    createable = false
-    updateable = false
+    length = 9
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text DataDotComCompanyId {
     apiName = "LeadCleanInfo.DataDotComCompanyId"
-    length = 20
     label = "Data.com Company ID"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -562,12 +562,12 @@ type salesforce.LeadCleanInfo {
   }
   salesforce.Text DataDotComId {
     apiName = "LeadCleanInfo.DataDotComId"
-    length = 20
     label = "Data.com ID"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

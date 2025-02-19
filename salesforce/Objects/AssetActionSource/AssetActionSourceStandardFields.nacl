@@ -2,28 +2,28 @@ type salesforce.AssetActionSource {
   salesforce.Currency ActualTax {
     apiName = "AssetActionSource.ActualTax"
     label = "Actual Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency AdjustmentAmount {
     apiName = "AssetActionSource.AdjustmentAmount"
     label = "Adjustment Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail AssetActionId {
     apiName = "AssetActionSource.AssetActionId"
-    relationshipName = "AssetAction"
-    _required = true
     label = "Asset Action ID"
+    _required = true
+    relationshipName = "AssetAction"
     createable = false
     updateable = false
     queryable = true
@@ -40,60 +40,60 @@ type salesforce.AssetActionSource {
   salesforce.Currency EstimatedTax {
     apiName = "AssetActionSource.EstimatedTax"
     label = "Estimated Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text ExternalReference {
     apiName = "AssetActionSource.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text ExternalReferenceDataSource {
     apiName = "AssetActionSource.ExternalReferenceDataSource"
-    length = 255
     label = "External Reference Data Source"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency ProductAmount {
     apiName = "AssetActionSource.ProductAmount"
     label = "Product Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "AssetActionSource.Quantity"
     label = "Quantity"
-    precision = 14
     scale = 2
+    precision = 14
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ReferenceEntityItemId {
     apiName = "AssetActionSource.ReferenceEntityItemId"
-    relationshipName = "ReferenceEntityItem"
     label = "Reference Entity Item ID"
+    relationshipName = "ReferenceEntityItem"
     createable = false
     updateable = false
     queryable = true
@@ -131,8 +131,8 @@ type salesforce.AssetActionSource {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssetActionSource.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -156,8 +156,8 @@ type salesforce.AssetActionSource {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssetActionSource.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -173,8 +173,8 @@ type salesforce.AssetActionSource {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssetActionSource.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

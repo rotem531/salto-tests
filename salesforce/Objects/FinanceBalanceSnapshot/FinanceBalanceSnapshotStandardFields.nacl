@@ -2,8 +2,8 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Lookup AccountId {
     apiName = "FinanceBalanceSnapshot.AccountId"
     inlineHelpText = "Parent account of the reference entity"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = false
     updateable = false
     queryable = true
@@ -13,10 +13,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.AdjustmentAmount"
     inlineHelpText = "The adjustment contributing to the transaction's subtotal"
     label = "Adjustment Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -24,10 +24,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.Balance"
     inlineHelpText = "Final balance of the snapshot's reference entity. Inherited from the finance transaction's resulting balance if the finance transaction's reference entity is a credit memo, debit memo, invoice, payment, or refund."
     label = "Balance"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -35,10 +35,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.BaseCurrencyAmount"
     inlineHelpText = "Define this value based on any currency conversion needed for the total amount with tax."
     label = "Base Currency Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -46,10 +46,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.BaseCurrencyBalance"
     inlineHelpText = "Define this value based on any currency conversion needed for the resulting balance."
     label = "Base Currency Balance"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -66,23 +66,23 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.BaseCurrencyFxRate"
     inlineHelpText = "Rate of exchange according to the Base Currency FX Date. Define this value to use later when you calculate currency conversions."
     label = "Base Currency FX Rate"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text BaseCurrencyIsoCode {
     apiName = "FinanceBalanceSnapshot.BaseCurrencyIsoCode"
     inlineHelpText = "Currency of the country defined for this account. Define this value to use later when you calculate currency conversions."
-    length = 3
     label = "Base Currency ISO Code"
-    createable = false
-    updateable = false
+    length = 3
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -90,10 +90,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.ChargeAmount"
     inlineHelpText = "The charge contributing to the transaction's subtotal"
     label = "Charge Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -109,8 +109,8 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.DateTime EffectiveDate {
     apiName = "FinanceBalanceSnapshot.EffectiveDate"
     inlineHelpText = "The date when the financial transaction takes effect"
-    _required = true
     label = "Effective Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -118,8 +118,8 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Picklist EventType {
     apiName = "FinanceBalanceSnapshot.EventType"
-    restricted = false
     label = "Event Type"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -128,18 +128,18 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Text FinanceSystemIntegrationMode {
     apiName = "FinanceBalanceSnapshot.FinanceSystemIntegrationMode"
     inlineHelpText = "The type of the external financial system used to recognize the finance transaction."
-    length = 255
     label = "Finance System Integration Mode"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Picklist FinanceSystemIntegrationStatus {
     apiName = "FinanceBalanceSnapshot.FinanceSystemIntegrationStatus"
-    restricted = true
     label = "Finance System Integration Status"
+    restricted = true
     createable = false
     updateable = true
     queryable = true
@@ -147,29 +147,29 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Text FinanceSystemName {
     apiName = "FinanceBalanceSnapshot.FinanceSystemName"
     inlineHelpText = "The name of the external financial system used to recognize the finance transaction."
-    length = 255
     label = "Finance System Name"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Text FinanceSystemTransactionNumber {
     apiName = "FinanceBalanceSnapshot.FinanceSystemTransactionNumber"
-    length = 255
     label = "Finance System Transaction Number"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Lookup FinanceTransactionId {
     apiName = "FinanceBalanceSnapshot.FinanceTransactionId"
     inlineHelpText = "Parent finance transaction for the snapshot. The snapshot's fields inherit the transaction's values only if the finance transaction's reference entity type is an invoice, payment, credit memo, debit memo, or refund."
-    relationshipName = "FinanceTransaction"
     label = "Finance Transaction ID"
+    relationshipName = "FinanceTransaction"
     createable = false
     updateable = false
     queryable = true
@@ -179,18 +179,18 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.ImpactAmount"
     inlineHelpText = "The finance transaction's impact on the customer's finances"
     label = "Impact Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LegalEntityId {
     apiName = "FinanceBalanceSnapshot.LegalEntityId"
     inlineHelpText = "Legal entity associated with the finance transaction. This is an optional lookup that you can add to associate the finance transaction to GL rules for external ledger processing."
-    relationshipName = "LegalEntity"
     label = "Legal Entity ID"
+    relationshipName = "LegalEntity"
     createable = false
     updateable = false
     queryable = true
@@ -199,31 +199,31 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Text OriginalEventType {
     apiName = "FinanceBalanceSnapshot.OriginalEventType"
     inlineHelpText = "The finance transaction's event type when the finance transaction was created."
-    length = 255
     label = "Original Event Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalReferenceEntityType {
     apiName = "FinanceBalanceSnapshot.OriginalReferenceEntityType"
     inlineHelpText = "The finance transaction's reference entity type when the finance transaction was created."
-    length = 255
     label = "Original Reference Entity Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "FinanceBalanceSnapshot.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = true
     queryable = true
@@ -232,8 +232,8 @@ type salesforce.FinanceBalanceSnapshot {
   salesforce.Lookup ReferenceEntityId {
     apiName = "FinanceBalanceSnapshot.ReferenceEntityId"
     inlineHelpText = "The financial object that was created or updated as a result of a customer action"
-    relationshipName = "ReferenceEntity"
     label = "ReferenceEntity ID"
+    relationshipName = "ReferenceEntity"
     createable = false
     updateable = false
     queryable = true
@@ -241,8 +241,8 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Picklist ReferenceEntityType {
     apiName = "FinanceBalanceSnapshot.ReferenceEntityType"
-    restricted = false
     label = "Reference Entity Type"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -252,10 +252,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.Subtotal"
     inlineHelpText = "Total of the charge amount and adjustment. Doesn't include the tax amount."
     label = "Subtotal"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -263,10 +263,10 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.TaxAmount"
     inlineHelpText = "The total amount of tax for the change made to your reference entity as a result of the event action"
     label = "Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -274,18 +274,18 @@ type salesforce.FinanceBalanceSnapshot {
     apiName = "FinanceBalanceSnapshot.TotalAmountWithTax"
     inlineHelpText = "The subtotal plus the tax amount"
     label = "Total Amount With Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.DateTime TransactionDate {
     apiName = "FinanceBalanceSnapshot.TransactionDate"
     inlineHelpText = "The date when the finance transaction occurred"
-    _required = true
     label = "Transaction Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -299,8 +299,8 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FinanceBalanceSnapshot.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -324,8 +324,8 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Lookup CreatedById {
     apiName = "FinanceBalanceSnapshot.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -341,8 +341,8 @@ type salesforce.FinanceBalanceSnapshot {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FinanceBalanceSnapshot.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

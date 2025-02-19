@@ -1,8 +1,8 @@
 type salesforce.CaseContactRole {
   salesforce.Picklist Role {
     apiName = "CaseContactRole.Role"
-    restricted = false
     label = "Role"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -16,18 +16,18 @@ type salesforce.CaseContactRole {
   }
   salesforce.Lookup CasesId {
     apiName = "CaseContactRole.CasesId"
-    relationshipName = "Cases"
-    _required = true
     label = "Case ID"
+    _required = true
+    relationshipName = "Cases"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "CaseContactRole.ContactId"
-    relationshipName = "Contact"
-    _required = true
     label = "Contact ID"
+    _required = true
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
@@ -42,8 +42,8 @@ type salesforce.CaseContactRole {
   }
   salesforce.Lookup CreatedById {
     apiName = "CaseContactRole.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.CaseContactRole {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CaseContactRole.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.CaseContactRole {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CaseContactRole.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

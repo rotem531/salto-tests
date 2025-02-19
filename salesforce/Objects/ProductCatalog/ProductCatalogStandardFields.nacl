@@ -1,19 +1,19 @@
 type salesforce.ProductCatalog {
   salesforce.Text Name {
     apiName = "ProductCatalog.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ProductCatalog.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -27,8 +27,8 @@ type salesforce.ProductCatalog {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductCatalog.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.ProductCatalog {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductCatalog.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.ProductCatalog {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductCatalog.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

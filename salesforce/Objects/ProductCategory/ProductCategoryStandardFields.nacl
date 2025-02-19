@@ -1,9 +1,9 @@
 type salesforce.ProductCategory {
   salesforce.MasterDetail CatalogId {
     apiName = "ProductCategory.CatalogId"
-    relationshipName = "Catalog"
-    _required = true
     label = "Catalog ID"
+    _required = true
+    relationshipName = "Catalog"
     createable = true
     updateable = false
     queryable = true
@@ -17,27 +17,27 @@ type salesforce.ProductCategory {
   }
   salesforce.Checkbox IsNavigational {
     apiName = "ProductCategory.IsNavigational"
-    defaultValue = false
     label = "Show In Menu"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ProductCategory.Name"
-    length = 200
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 200
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Hierarchy ParentCategoryId {
     apiName = "ProductCategory.ParentCategoryId"
-    relationshipName = "ParentCategory"
     label = "Category ID"
+    relationshipName = "ParentCategory"
     createable = true
     updateable = true
     queryable = true
@@ -45,11 +45,11 @@ type salesforce.ProductCategory {
   salesforce.Number SortOrder {
     apiName = "ProductCategory.SortOrder"
     label = "Sort Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -60,8 +60,8 @@ type salesforce.ProductCategory {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductCategory.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.ProductCategory {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductCategory.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.ProductCategory {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductCategory.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

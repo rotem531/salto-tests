@@ -1,8 +1,8 @@
 type salesforce.ApprovalSubmission {
   salesforce.Html Comments {
     apiName = "ApprovalSubmission.Comments"
-    length = 32000
     label = "Comments"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -14,8 +14,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup FlowOrchestrationInstanceId {
     apiName = "ApprovalSubmission.FlowOrchestrationInstanceId"
-    relationshipName = "FlowOrchestrationInstance"
     label = "Orchestration Run ID"
+    relationshipName = "FlowOrchestrationInstance"
     createable = false
     updateable = false
     queryable = true
@@ -23,8 +23,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup OwnerId {
     apiName = "ApprovalSubmission.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "ApprovalSubmission.RelatedRecordId"
-    relationshipName = "RelatedRecord"
     label = "Related Record ID"
+    relationshipName = "RelatedRecord"
     createable = false
     updateable = false
     queryable = true
@@ -41,20 +41,20 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Text RelatedRecordObjectName {
     apiName = "ApprovalSubmission.RelatedRecordObjectName"
-    length = 255
     label = "Related Record Object Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "ApprovalSubmission.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup SubmittedById {
     apiName = "ApprovalSubmission.SubmittedById"
-    relationshipName = "SubmittedBy"
     label = "User ID"
+    relationshipName = "SubmittedBy"
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ApprovalSubmission.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -102,8 +102,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup CreatedById {
     apiName = "ApprovalSubmission.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -119,8 +119,8 @@ type salesforce.ApprovalSubmission {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ApprovalSubmission.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

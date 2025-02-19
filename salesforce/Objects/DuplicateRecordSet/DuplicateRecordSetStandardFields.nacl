@@ -1,8 +1,8 @@
 type salesforce.DuplicateRecordSet {
   salesforce.Lookup DuplicateRuleId {
     apiName = "DuplicateRecordSet.DuplicateRuleId"
-    relationshipName = "DuplicateRule"
     label = "Duplicate Rule ID"
+    relationshipName = "DuplicateRule"
     createable = true
     updateable = true
     queryable = true
@@ -24,8 +24,8 @@ type salesforce.DuplicateRecordSet {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DuplicateRecordSet.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.DuplicateRecordSet {
   }
   salesforce.Lookup CreatedById {
     apiName = "DuplicateRecordSet.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,8 +66,8 @@ type salesforce.DuplicateRecordSet {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DuplicateRecordSet.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

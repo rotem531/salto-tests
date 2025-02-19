@@ -7,8 +7,8 @@ type salesforce.ExpressionFilterCriteria {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExpressionFilterCriteria.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.ExpressionFilterCriteria {
   }
   salesforce.Lookup CreatedById {
     apiName = "ExpressionFilterCriteria.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.ExpressionFilterCriteria {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExpressionFilterCriteria.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,28 +66,28 @@ type salesforce.ExpressionFilterCriteria {
   }
   salesforce.Text FilterTarget {
     apiName = "ExpressionFilterCriteria.FilterTarget"
-    length = 255
     label = "Filter Target"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text FilterTargetValue {
     apiName = "ExpressionFilterCriteria.FilterTargetValue"
-    length = 255
     label = "Context"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Operation {
     apiName = "ExpressionFilterCriteria.Operation"
-    _required = true
     label = "Operation"
+    _required = true
     createable = true
     updateable = true
     queryable = true
@@ -95,18 +95,18 @@ type salesforce.ExpressionFilterCriteria {
   salesforce.Number SortOrder {
     apiName = "ExpressionFilterCriteria.SortOrder"
     label = "Sort Order"
+    scale = 0
     precision = 8
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup ExpressionFilterId {
     apiName = "ExpressionFilterCriteria.ExpressionFilterId"
-    relationshipName = "ExpressionFilter"
-    _required = true
     label = "ExpressionFilter ID"
+    _required = true
+    relationshipName = "ExpressionFilter"
     createable = true
     updateable = false
     queryable = true

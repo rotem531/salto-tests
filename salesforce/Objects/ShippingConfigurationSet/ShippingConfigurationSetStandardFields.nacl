@@ -7,8 +7,8 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Lookup OwnerId {
     apiName = "ShippingConfigurationSet.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ShippingConfigurationSet.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -25,13 +25,13 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Text Name {
     apiName = "ShippingConfigurationSet.Name"
-    length = 255
-    _required = true
     label = "Shipping Profile Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -44,8 +44,8 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Lookup CreatedById {
     apiName = "ShippingConfigurationSet.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ShippingConfigurationSet.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -78,16 +78,16 @@ type salesforce.ShippingConfigurationSet {
   }
   salesforce.Lookup TargetRecordId {
     apiName = "ShippingConfigurationSet.TargetRecordId"
-    relationshipName = "TargetRecord"
     label = "Store ID"
+    relationshipName = "TargetRecord"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsDefault {
     apiName = "ShippingConfigurationSet.IsDefault"
-    defaultValue = false
     label = "Is Default"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -95,17 +95,17 @@ type salesforce.ShippingConfigurationSet {
   salesforce.Number ProcessTime {
     apiName = "ShippingConfigurationSet.ProcessTime"
     label = "Order Processing Time"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist ProcessTimeUnit {
     apiName = "ShippingConfigurationSet.ProcessTimeUnit"
-    restricted = true
     label = "Unit of Order Processing Time"
+    restricted = true
     createable = true
     updateable = true
     queryable = true

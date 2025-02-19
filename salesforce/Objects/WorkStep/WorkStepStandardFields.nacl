@@ -2,16 +2,16 @@ type salesforce.WorkStep {
   salesforce.Picklist ActionDefinition {
     apiName = "WorkStep.ActionDefinition"
     inlineHelpText = "Find and select the associated global action, quick action, screen flow, or mobile flow."
-    restricted = true
     label = "Action Definition"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist ActionType {
     apiName = "WorkStep.ActionType"
-    restricted = true
     label = "Action Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -19,8 +19,8 @@ type salesforce.WorkStep {
   }
   salesforce.LongTextArea Description {
     apiName = "WorkStep.Description"
-    length = 500
     label = "Description"
+    length = 500
     createable = true
     updateable = true
     queryable = true
@@ -35,29 +35,29 @@ type salesforce.WorkStep {
   salesforce.Number ExecutionOrder {
     apiName = "WorkStep.ExecutionOrder"
     label = "Execution Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "WorkStep.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ParentRecordId {
     apiName = "WorkStep.ParentRecordId"
-    relationshipName = "ParentRecord"
-    _required = true
     label = "Parent Record ID"
+    _required = true
+    relationshipName = "ParentRecord"
     createable = false
     updateable = false
     queryable = true
@@ -65,19 +65,19 @@ type salesforce.WorkStep {
   }
   salesforce.Text ParentRecordType {
     apiName = "WorkStep.ParentRecordType"
-    length = 50
     label = "Parent Record Type"
-    createable = false
-    updateable = false
+    length = 50
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup PausedFlowInterviewId {
     apiName = "WorkStep.PausedFlowInterviewId"
-    relationshipName = "PausedFlowInterview"
     label = "Paused Flow Interview ID"
+    relationshipName = "PausedFlowInterview"
     createable = true
     updateable = true
     queryable = true
@@ -91,16 +91,16 @@ type salesforce.WorkStep {
   }
   salesforce.Picklist Status {
     apiName = "WorkStep.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StatusCategory {
     apiName = "WorkStep.StatusCategory"
-    restricted = true
     label = "Status Category"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -108,8 +108,8 @@ type salesforce.WorkStep {
   }
   salesforce.Lookup WorkOrderId {
     apiName = "WorkStep.WorkOrderId"
-    relationshipName = "WorkOrder"
     label = "Work Order ID"
+    relationshipName = "WorkOrder"
     createable = false
     updateable = false
     queryable = true
@@ -117,8 +117,8 @@ type salesforce.WorkStep {
   }
   salesforce.Lookup WorkOrderLineItemId {
     apiName = "WorkStep.WorkOrderLineItemId"
-    relationshipName = "WorkOrderLineItem"
     label = "Work Order Line Item ID"
+    relationshipName = "WorkOrderLineItem"
     createable = false
     updateable = false
     queryable = true
@@ -127,19 +127,19 @@ type salesforce.WorkStep {
   salesforce.Number WorkPlanExecutionOrder {
     apiName = "WorkStep.WorkPlanExecutionOrder"
     label = "Work Plan Execution Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail WorkPlanId {
     apiName = "WorkStep.WorkPlanId"
-    relationshipName = "WorkPlan"
-    _required = true
     label = "Work Plan ID"
+    _required = true
+    relationshipName = "WorkPlan"
     createable = true
     updateable = false
     queryable = true
@@ -152,8 +152,8 @@ type salesforce.WorkStep {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkStep.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -169,8 +169,8 @@ type salesforce.WorkStep {
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkStep.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -186,8 +186,8 @@ type salesforce.WorkStep {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkStep.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

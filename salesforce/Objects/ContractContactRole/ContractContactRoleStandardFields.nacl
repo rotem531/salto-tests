@@ -1,8 +1,8 @@
 type salesforce.ContractContactRole {
   salesforce.Picklist Role {
     apiName = "ContractContactRole.Role"
-    restricted = false
     label = "Role"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -16,26 +16,26 @@ type salesforce.ContractContactRole {
   }
   salesforce.Lookup ContractId {
     apiName = "ContractContactRole.ContractId"
-    relationshipName = "Contract"
-    _required = true
     label = "Contract ID"
+    _required = true
+    relationshipName = "Contract"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "ContractContactRole.ContactId"
-    relationshipName = "Contact"
-    _required = true
     label = "Contact ID"
+    _required = true
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsPrimary {
     apiName = "ContractContactRole.IsPrimary"
-    defaultValue = false
     label = "Primary"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.ContractContactRole {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContractContactRole.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ContractContactRole {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContractContactRole.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.ContractContactRole {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContractContactRole.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

@@ -1,8 +1,8 @@
 type salesforce.Incident {
   salesforce.Lookup BusinessHoursId {
     apiName = "Incident.BusinessHoursId"
-    relationshipName = "BusinessHours"
     label = "Business Hours ID"
+    relationshipName = "BusinessHours"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.Incident {
   }
   salesforce.LongTextArea Description {
     apiName = "Incident.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -38,17 +38,17 @@ type salesforce.Incident {
   }
   salesforce.Lookup EntitlementId {
     apiName = "Incident.EntitlementId"
-    relationshipName = "Entitlement"
     label = "Entitlement ID"
+    relationshipName = "Entitlement"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Impact {
     apiName = "Incident.Impact"
-    restricted = false
-    _required = true
     label = "Impact"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -56,8 +56,8 @@ type salesforce.Incident {
   }
   salesforce.Checkbox IsClosed {
     apiName = "Incident.IsClosed"
-    defaultValue = false
     label = "Incident Closed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -65,35 +65,35 @@ type salesforce.Incident {
   }
   salesforce.Checkbox IsMajorIncident {
     apiName = "Incident.IsMajorIncident"
-    defaultValue = false
     label = "Major Incident"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsStopped {
     apiName = "Incident.IsStopped"
-    defaultValue = false
     label = "Incident Paused"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text MilestoneStatus {
     apiName = "Incident.MilestoneStatus"
-    length = 30
     label = "Milestone Status"
-    createable = false
-    updateable = false
+    length = 30
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Incident.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -101,29 +101,29 @@ type salesforce.Incident {
   }
   salesforce.Hierarchy ParentIncidentId {
     apiName = "Incident.ParentIncidentId"
-    relationshipName = "ParentIncident"
     label = "Parent Incident ID"
+    relationshipName = "ParentIncident"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Priority {
     apiName = "Incident.Priority"
-    restricted = false
-    _required = true
     label = "Priority"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text PriorityOverrideReason {
     apiName = "Incident.PriorityOverrideReason"
-    length = 255
     label = "Priority Override Reason"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist ReportedMethod {
@@ -142,16 +142,16 @@ type salesforce.Incident {
   }
   salesforce.LongTextArea ResolutionSummary {
     apiName = "Incident.ResolutionSummary"
-    length = 32000
     label = "Resolution Summary"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ResolvedById {
     apiName = "Incident.ResolvedById"
-    relationshipName = "ResolvedBy"
     label = "User ID"
+    relationshipName = "ResolvedBy"
     createable = true
     updateable = true
     queryable = true
@@ -180,17 +180,17 @@ type salesforce.Incident {
   }
   salesforce.Picklist Status {
     apiName = "Incident.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StatusCode {
     apiName = "Incident.StatusCode"
-    restricted = true
     label = "Status Code"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -213,13 +213,13 @@ type salesforce.Incident {
   }
   salesforce.Text Subject {
     apiName = "Incident.Subject"
-    length = 255
-    _required = true
     label = "Subject"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
@@ -231,9 +231,9 @@ type salesforce.Incident {
   }
   salesforce.Picklist Urgency {
     apiName = "Incident.Urgency"
-    restricted = false
-    _required = true
     label = "Urgency"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -247,8 +247,8 @@ type salesforce.Incident {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Incident.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -272,8 +272,8 @@ type salesforce.Incident {
   }
   salesforce.Lookup CreatedById {
     apiName = "Incident.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -289,8 +289,8 @@ type salesforce.Incident {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Incident.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

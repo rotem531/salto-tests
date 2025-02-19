@@ -1,16 +1,16 @@
 type salesforce.MessagingEndUser {
   salesforce.Lookup AccountId {
     apiName = "MessagingEndUser.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup AuthenticatedEndUserId {
     apiName = "MessagingEndUser.AuthenticatedEndUserId"
-    relationshipName = "AuthenticatedEndUser"
     label = "User ID"
+    relationshipName = "AuthenticatedEndUser"
     createable = false
     updateable = false
     queryable = true
@@ -18,24 +18,24 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Lookup ContactId {
     apiName = "MessagingEndUser.ContactId"
-    relationshipName = "Contact"
     label = "Contact ID"
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasInitialResponseSent {
     apiName = "MessagingEndUser.HasInitialResponseSent"
-    defaultValue = false
     label = "Has Initial Response Been Sent"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsFullyOptedIn {
     apiName = "MessagingEndUser.IsFullyOptedIn"
-    defaultValue = false
     label = "Opted In"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -47,74 +47,74 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Lookup LeadId {
     apiName = "MessagingEndUser.LeadId"
-    relationshipName = "Lead"
     label = "Lead ID"
+    relationshipName = "Lead"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Locale {
     apiName = "MessagingEndUser.Locale"
-    length = 20
     label = "Locale"
-    createable = true
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Picklist MessageType {
     apiName = "MessagingEndUser.MessageType"
-    restricted = true
-    _required = true
     label = "Message Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup MessagingChannelId {
     apiName = "MessagingEndUser.MessagingChannelId"
-    relationshipName = "MessagingChannel"
-    _required = true
     label = "Messaging Channel ID"
+    _required = true
+    relationshipName = "MessagingChannel"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist MessagingConsentStatus {
     apiName = "MessagingEndUser.MessagingConsentStatus"
-    restricted = true
     label = "Messaging Consent Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text MessagingPlatformKey {
     apiName = "MessagingEndUser.MessagingPlatformKey"
-    length = 255
-    _required = true
     label = "Messaging Platform Key"
-    createable = true
-    updateable = false
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "MessagingEndUser.Name"
-    length = 255
-    _required = true
     label = "Messaging User Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "MessagingEndUser.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -135,8 +135,8 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "MessagingEndUser.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -152,8 +152,8 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Lookup CreatedById {
     apiName = "MessagingEndUser.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -169,8 +169,8 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "MessagingEndUser.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -186,12 +186,12 @@ type salesforce.MessagingEndUser {
   }
   salesforce.Text IsoCountryCode {
     apiName = "MessagingEndUser.IsoCountryCode"
-    length = 2
     label = "ISO Country Code"
-    createable = true
-    updateable = false
+    length = 2
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
 }

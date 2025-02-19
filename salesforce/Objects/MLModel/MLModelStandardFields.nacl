@@ -7,8 +7,8 @@ type salesforce.MLModel {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "MLModel.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.MLModel {
   }
   salesforce.Lookup CreatedById {
     apiName = "MLModel.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.MLModel {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "MLModel.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,8 +66,8 @@ type salesforce.MLModel {
   }
   salesforce.Lookup PredictionDefinitionId {
     apiName = "MLModel.PredictionDefinitionId"
-    relationshipName = "PredictionDefinition"
     label = "ML Prediction Definition ID"
+    relationshipName = "PredictionDefinition"
     createable = false
     updateable = false
     queryable = true
@@ -75,8 +75,8 @@ type salesforce.MLModel {
   }
   salesforce.Picklist ApprovalStatus {
     apiName = "MLModel.ApprovalStatus"
-    restricted = true
     label = "Approval Status"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -84,9 +84,9 @@ type salesforce.MLModel {
   }
   salesforce.Picklist ScoringStatus {
     apiName = "MLModel.ScoringStatus"
-    restricted = true
-    _required = true
     label = "Scoring Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.MLModel {
   }
   salesforce.Picklist ModelType {
     apiName = "MLModel.ModelType"
-    restricted = true
     label = "Model Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -119,19 +119,19 @@ type salesforce.MLModel {
   }
   salesforce.Text Dataset {
     apiName = "MLModel.Dataset"
-    length = 80
     label = "Dataset Id"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup RecommendationDefinitionId {
     apiName = "MLModel.RecommendationDefinitionId"
-    relationshipName = "RecommendationDefinition"
     label = "ML Recommendation Definition ID"
+    relationshipName = "RecommendationDefinition"
     createable = false
     updateable = false
     queryable = true

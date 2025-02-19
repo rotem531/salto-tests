@@ -7,8 +7,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Lookup OwnerId {
     apiName = "QuickTextUsage.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = false
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "QuickTextUsage.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -25,13 +25,13 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Text Name {
     apiName = "QuickTextUsage.Name"
-    length = 255
-    _required = true
     label = "Quick Text Usage Name"
-    createable = false
-    updateable = false
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -45,8 +45,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Lookup CreatedById {
     apiName = "QuickTextUsage.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "QuickTextUsage.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -79,9 +79,9 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Lookup QuickTextId {
     apiName = "QuickTextUsage.QuickTextId"
-    relationshipName = "QuickText"
-    _required = true
     label = "Quick Text ID"
+    _required = true
+    relationshipName = "QuickText"
     createable = false
     updateable = false
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Picklist Channel {
     apiName = "QuickTextUsage.Channel"
-    restricted = true
     label = "Channel"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -98,8 +98,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Picklist LaunchSource {
     apiName = "QuickTextUsage.LaunchSource"
-    restricted = true
     label = "Launch Source"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Lookup UserId {
     apiName = "QuickTextUsage.UserId"
-    relationshipName = "User"
     label = "User ID"
+    relationshipName = "User"
     createable = false
     updateable = false
     queryable = true
@@ -124,8 +124,8 @@ type salesforce.QuickTextUsage {
   }
   salesforce.Picklist AppContext {
     apiName = "QuickTextUsage.AppContext"
-    restricted = true
     label = "App Context"
+    restricted = true
     createable = false
     updateable = false
     queryable = true

@@ -2,22 +2,22 @@ type salesforce.OrderItem {
   salesforce.Number AvailableQuantity {
     apiName = "OrderItem.AvailableQuantity"
     label = "Available Quantity"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Description {
     apiName = "OrderItem.Description"
-    length = 255
     label = "Line Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Date EndDate {
@@ -30,33 +30,33 @@ type salesforce.OrderItem {
   salesforce.Currency ListPrice {
     apiName = "OrderItem.ListPrice"
     label = "List Price"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Lookup OrderId {
     apiName = "OrderItem.OrderId"
-    relationshipName = "Order"
-    _required = true
     label = "Order ID"
+    _required = true
+    relationshipName = "Order"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup OriginalOrderItemId {
     apiName = "OrderItem.OriginalOrderItemId"
-    relationshipName = "OriginalOrderItem"
     label = "Original Order Item ID"
+    relationshipName = "OriginalOrderItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "OrderItem.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = true
     updateable = false
     queryable = true
@@ -67,13 +67,13 @@ type salesforce.OrderItem {
   }
   salesforce.Number Quantity {
     apiName = "OrderItem.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 18
+    _required = true
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Unknown ReferencePrice {
@@ -94,20 +94,20 @@ type salesforce.OrderItem {
   salesforce.Currency TotalPrice {
     apiName = "OrderItem.TotalPrice"
     label = "Total Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency UnitPrice {
     apiName = "OrderItem.UnitPrice"
     label = "Unit Price"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -118,8 +118,8 @@ type salesforce.OrderItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrderItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -127,9 +127,9 @@ type salesforce.OrderItem {
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "OrderItem.PricebookEntryId"
-    relationshipName = "PricebookEntry"
-    _required = true
     label = "Price Book Entry ID"
+    _required = true
+    relationshipName = "PricebookEntry"
     createable = true
     updateable = false
     queryable = true
@@ -144,8 +144,8 @@ type salesforce.OrderItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "OrderItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -161,8 +161,8 @@ type salesforce.OrderItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrderItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

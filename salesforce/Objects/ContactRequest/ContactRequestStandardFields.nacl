@@ -1,16 +1,16 @@
 type salesforce.ContactRequest {
   salesforce.Checkbox IsCallback {
     apiName = "ContactRequest.IsCallback"
-    defaultValue = false
     label = "Is Callback"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContactRequest.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -18,9 +18,9 @@ type salesforce.ContactRequest {
   }
   salesforce.Picklist PreferredChannel {
     apiName = "ContactRequest.PreferredChannel"
-    restricted = false
-    _required = true
     label = "Preferred Channel"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -34,41 +34,41 @@ type salesforce.ContactRequest {
   }
   salesforce.LongTextArea RequestDescription {
     apiName = "ContactRequest.RequestDescription"
-    length = 32000
     label = "Request Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RequestReason {
     apiName = "ContactRequest.RequestReason"
-    restricted = false
     label = "Request Reason"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "ContactRequest.Status"
-    restricted = false
-    _required = true
     label = "Request Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WhatId {
     apiName = "ContactRequest.WhatId"
-    relationshipName = "What"
     label = "Related To ID"
+    relationshipName = "What"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WhoId {
     apiName = "ContactRequest.WhoId"
-    relationshipName = "Who"
     label = "Requestor ID"
+    relationshipName = "Who"
     createable = true
     updateable = true
     queryable = true
@@ -81,8 +81,8 @@ type salesforce.ContactRequest {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactRequest.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -106,8 +106,8 @@ type salesforce.ContactRequest {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactRequest.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -123,8 +123,8 @@ type salesforce.ContactRequest {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactRequest.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

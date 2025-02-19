@@ -1,18 +1,18 @@
 type salesforce.ScorecardAssociation {
   salesforce.MasterDetail ScorecardId {
     apiName = "ScorecardAssociation.ScorecardId"
-    relationshipName = "Scorecard"
-    _required = true
     label = "Scorecard ID"
+    _required = true
+    relationshipName = "Scorecard"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup TargetEntityId {
     apiName = "ScorecardAssociation.TargetEntityId"
-    relationshipName = "TargetEntity"
-    _required = true
     label = "Target Entity ID"
+    _required = true
+    relationshipName = "TargetEntity"
     createable = true
     updateable = true
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.ScorecardAssociation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ScorecardAssociation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.ScorecardAssociation {
   }
   salesforce.Lookup CreatedById {
     apiName = "ScorecardAssociation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ScorecardAssociation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ScorecardAssociation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

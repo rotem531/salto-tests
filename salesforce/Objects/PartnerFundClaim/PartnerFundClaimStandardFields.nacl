@@ -1,8 +1,8 @@
 type salesforce.PartnerFundClaim {
   salesforce.Lookup AllocationId {
     apiName = "PartnerFundClaim.AllocationId"
-    relationshipName = "Allocation"
     label = "Partner Fund Allocation ID"
+    relationshipName = "Allocation"
     createable = false
     updateable = false
     queryable = true
@@ -10,18 +10,18 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Currency Amount {
     apiName = "PartnerFundClaim.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup BudgetId {
     apiName = "PartnerFundClaim.BudgetId"
-    relationshipName = "Budget"
     label = "Partner Marketing Budget ID"
+    relationshipName = "Budget"
     createable = false
     updateable = false
     queryable = true
@@ -29,8 +29,8 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Lookup ChannelPartnerId {
     apiName = "PartnerFundClaim.ChannelPartnerId"
-    relationshipName = "ChannelPartner"
     label = "Channel Partner ID"
+    relationshipName = "ChannelPartner"
     createable = false
     updateable = false
     queryable = true
@@ -45,8 +45,8 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Lookup OwnerId {
     apiName = "PartnerFundClaim.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -54,30 +54,30 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Lookup RequestId {
     apiName = "PartnerFundClaim.RequestId"
-    relationshipName = "Request"
-    _required = true
     label = "Partner Fund Request ID"
+    _required = true
+    relationshipName = "Request"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "PartnerFundClaim.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Title {
     apiName = "PartnerFundClaim.Title"
-    length = 255
-    _required = true
     label = "Partner Fund Claim Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -88,8 +88,8 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PartnerFundClaim.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Lookup CreatedById {
     apiName = "PartnerFundClaim.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -122,8 +122,8 @@ type salesforce.PartnerFundClaim {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PartnerFundClaim.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

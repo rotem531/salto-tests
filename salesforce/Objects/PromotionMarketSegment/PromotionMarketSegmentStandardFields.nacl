@@ -1,17 +1,17 @@
 type salesforce.PromotionMarketSegment {
   salesforce.MasterDetail PromotionId {
     apiName = "PromotionMarketSegment.PromotionId"
-    relationshipName = "Promotion"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "Promotion"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup PromotionSegmentId {
     apiName = "PromotionMarketSegment.PromotionSegmentId"
-    relationshipName = "PromotionSegment"
     label = "Promotion Segment ID"
+    relationshipName = "PromotionSegment"
     createable = true
     updateable = true
     queryable = true
@@ -24,8 +24,8 @@ type salesforce.PromotionMarketSegment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionMarketSegment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.PromotionMarketSegment {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionMarketSegment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,8 +66,8 @@ type salesforce.PromotionMarketSegment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionMarketSegment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

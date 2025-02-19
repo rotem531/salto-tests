@@ -2,37 +2,37 @@ type salesforce.ConsumptionSchedule {
   salesforce.Number BillingTerm {
     apiName = "ConsumptionSchedule.BillingTerm"
     inlineHelpText = "Number of billing units that this consumption schedule applies to. For example, if the selected Billing Term Unit is Month, enter 12 to apply the consumption schedules for 12 months. Apply consumption schedules to as many as 20 quarters, 60 months, or 5 years."
-    _required = true
     label = "Billing Term"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist BillingTermUnit {
     apiName = "ConsumptionSchedule.BillingTermUnit"
     inlineHelpText = "The unit used with the billing term to determine the billing frequency."
-    restricted = true
-    _required = true
     label = "Billing Term Unit"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionSchedule.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "ConsumptionSchedule.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -40,23 +40,23 @@ type salesforce.ConsumptionSchedule {
   salesforce.Text MatchingAttribute {
     apiName = "ConsumptionSchedule.MatchingAttribute"
     inlineHelpText = "Usage is matched with a consumption schedule if the records share the same Matching Attribute value."
-    length = 255
     label = "Matching Attribute"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ConsumptionSchedule.Name"
-    length = 255
-    _required = true
     label = "Consumption Schedule Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Summary NumberOfRates {
@@ -71,9 +71,9 @@ type salesforce.ConsumptionSchedule {
   salesforce.Picklist RatingMethod {
     apiName = "ConsumptionSchedule.RatingMethod"
     inlineHelpText = "Choose a specific use case to rate usage against this schedule. This is a controlling picklist for the Type field."
-    restricted = true
-    _required = true
     label = "Rating Method"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -81,9 +81,9 @@ type salesforce.ConsumptionSchedule {
   salesforce.Picklist Type {
     apiName = "ConsumptionSchedule.Type"
     inlineHelpText = "Range: The schedule prices only using the tier that applies to the usage quantity. Slab: Usage within a given bound receives pricing equal to its tier's value."
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -104,8 +104,8 @@ type salesforce.ConsumptionSchedule {
   }
   salesforce.Lookup OwnerId {
     apiName = "ConsumptionSchedule.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -113,8 +113,8 @@ type salesforce.ConsumptionSchedule {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ConsumptionSchedule.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -130,8 +130,8 @@ type salesforce.ConsumptionSchedule {
   }
   salesforce.Lookup CreatedById {
     apiName = "ConsumptionSchedule.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -147,8 +147,8 @@ type salesforce.ConsumptionSchedule {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ConsumptionSchedule.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

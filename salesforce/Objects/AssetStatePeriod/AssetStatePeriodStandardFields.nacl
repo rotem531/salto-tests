@@ -1,20 +1,20 @@
 type salesforce.AssetStatePeriod {
   salesforce.Currency Amount {
     apiName = "AssetStatePeriod.Amount"
-    _required = true
     label = "Amount"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail AssetId {
     apiName = "AssetStatePeriod.AssetId"
-    relationshipName = "Asset"
-    _required = true
     label = "Asset ID"
+    _required = true
+    relationshipName = "Asset"
     createable = false
     updateable = false
     queryable = true
@@ -30,31 +30,31 @@ type salesforce.AssetStatePeriod {
   }
   salesforce.Currency Mrr {
     apiName = "AssetStatePeriod.Mrr"
-    _required = true
     label = "Monthly Recurring Revenue"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "AssetStatePeriod.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 14
+    _required = true
     scale = 2
+    precision = 14
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.DateTime StartDate {
     apiName = "AssetStatePeriod.StartDate"
-    _required = true
     label = "Start Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.AssetStatePeriod {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssetStatePeriod.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +93,8 @@ type salesforce.AssetStatePeriod {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssetStatePeriod.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.AssetStatePeriod {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssetStatePeriod.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

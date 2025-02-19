@@ -1,19 +1,19 @@
 type salesforce.Coupon {
   salesforce.Text CouponCode {
     apiName = "Coupon.CouponCode"
-    length = 255
-    _required = true
     label = "Coupon Code"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "Coupon.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
@@ -27,9 +27,9 @@ type salesforce.Coupon {
   }
   salesforce.Lookup PromotionId {
     apiName = "Coupon.PromotionId"
-    relationshipName = "Promotion"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "Promotion"
     createable = true
     updateable = false
     queryable = true
@@ -38,22 +38,22 @@ type salesforce.Coupon {
     apiName = "Coupon.RedemptionLimitAllBuyers"
     inlineHelpText = "Number of times this coupon can be used in total."
     label = "Redemption Limit All Buyers"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number RedemptionLimitPerBuyer {
     apiName = "Coupon.RedemptionLimitPerBuyer"
     inlineHelpText = "Number of times this coupon can be used per customer."
     label = "Redemption Limit Per Buyer"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.DateTime StartDateTime {
@@ -65,9 +65,9 @@ type salesforce.Coupon {
   }
   salesforce.Picklist Status {
     apiName = "Coupon.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -80,8 +80,8 @@ type salesforce.Coupon {
   }
   salesforce.Lookup OwnerId {
     apiName = "Coupon.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.Coupon {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Coupon.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -114,8 +114,8 @@ type salesforce.Coupon {
   }
   salesforce.Lookup CreatedById {
     apiName = "Coupon.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -131,8 +131,8 @@ type salesforce.Coupon {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Coupon.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -6,9 +6,9 @@ type salesforce.aaa_big_object_test__b {
     label = "n"
     length = 8
     unique = false
+    caseSensitive = false
     createable = true
     updateable = false
-    caseSensitive = false
     queryable = true
   }
   salesforce.Number num_val_big_object__c {

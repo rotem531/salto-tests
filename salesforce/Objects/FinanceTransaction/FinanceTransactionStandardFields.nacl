@@ -2,8 +2,8 @@ type salesforce.FinanceTransaction {
   salesforce.Lookup AccountId {
     apiName = "FinanceTransaction.AccountId"
     inlineHelpText = "Parent account of the reference entity"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = false
     queryable = true
@@ -12,30 +12,30 @@ type salesforce.FinanceTransaction {
     apiName = "FinanceTransaction.AdjustmentAmount"
     inlineHelpText = "The adjustment contributing to the transaction's subtotal"
     label = "Adjustment Amount"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Currency BaseCurrencyAmount {
     apiName = "FinanceTransaction.BaseCurrencyAmount"
     inlineHelpText = "Define this value based on any currency conversion needed for the total amount with tax."
     label = "Base Currency Amount"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Currency BaseCurrencyBalance {
     apiName = "FinanceTransaction.BaseCurrencyBalance"
     inlineHelpText = "Define this value based on any currency conversion needed for the resulting balance."
     label = "Base Currency Balance"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Date BaseCurrencyFxDate {
@@ -50,40 +50,40 @@ type salesforce.FinanceTransaction {
     apiName = "FinanceTransaction.BaseCurrencyFxRate"
     inlineHelpText = "Rate of exchange according to the Base Currency FX Date. Define this value to use later when you calculate currency conversions."
     label = "Base Currency FX Rate"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = false
-    unique = false
     queryable = true
   }
   salesforce.Text BaseCurrencyIsoCode {
     apiName = "FinanceTransaction.BaseCurrencyIsoCode"
     inlineHelpText = "Currency of the country defined for this account. Define this value to use later when you calculate currency conversions."
-    length = 3
     label = "Base Currency ISO Code"
-    createable = true
-    updateable = false
+    length = 3
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Currency ChargeAmount {
     apiName = "FinanceTransaction.ChargeAmount"
     inlineHelpText = "The charge contributing to the transaction's subtotal"
     label = "Charge Amount"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Picklist CreationMode {
     apiName = "FinanceTransaction.CreationMode"
     inlineHelpText = "The process used to create the finance transactions"
-    restricted = true
-    _required = true
     label = "Creation Mode"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -92,8 +92,8 @@ type salesforce.FinanceTransaction {
   salesforce.Lookup DestinationEntityId {
     apiName = "FinanceTransaction.DestinationEntityId"
     inlineHelpText = "Target entity for reference entities that have made allocations"
-    relationshipName = "DestinationEntity"
     label = "DestinationEntity ID"
+    relationshipName = "DestinationEntity"
     createable = true
     updateable = false
     queryable = true
@@ -109,8 +109,8 @@ type salesforce.FinanceTransaction {
   salesforce.DateTime EffectiveDate {
     apiName = "FinanceTransaction.EffectiveDate"
     inlineHelpText = "The date when the financial transaction takes effect"
-    _required = true
     label = "Effective Date"
+    _required = true
     createable = true
     updateable = false
     queryable = true
@@ -118,16 +118,16 @@ type salesforce.FinanceTransaction {
   salesforce.Picklist EventAction {
     apiName = "FinanceTransaction.EventAction"
     inlineHelpText = "The financial action that caused the finance transaction"
-    restricted = false
     label = "Event Action"
+    restricted = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist EventType {
     apiName = "FinanceTransaction.EventType"
-    restricted = false
     label = "Event Type"
+    restricted = false
     createable = true
     updateable = false
     queryable = true
@@ -135,18 +135,18 @@ type salesforce.FinanceTransaction {
   salesforce.Text FinanceSystemIntegrationMode {
     apiName = "FinanceTransaction.FinanceSystemIntegrationMode"
     inlineHelpText = "The type of the external financial system used to recognize the finance transaction."
-    length = 255
     label = "Finance System Integration Mode"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist FinanceSystemIntegrationStatus {
     apiName = "FinanceTransaction.FinanceSystemIntegrationStatus"
-    restricted = true
     label = "Finance System Integration Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -154,39 +154,39 @@ type salesforce.FinanceTransaction {
   salesforce.Text FinanceSystemName {
     apiName = "FinanceTransaction.FinanceSystemName"
     inlineHelpText = "The name of the external financial system used to recognize the finance transaction."
-    length = 255
     label = "Finance System Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text FinanceSystemTransactionNumber {
     apiName = "FinanceTransaction.FinanceSystemTransactionNumber"
-    length = 255
     label = "Finance System Transaction Number"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency ImpactAmount {
     apiName = "FinanceTransaction.ImpactAmount"
     inlineHelpText = "The finance transaction's impact on the customer's finances"
     label = "Impact Amount"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Lookup LegalEntityId {
     apiName = "FinanceTransaction.LegalEntityId"
     inlineHelpText = "Legal entity associated with the finance transaction. This is an optional lookup that you can add to associate the finance transaction to GL rules for external ledger processing."
-    relationshipName = "LegalEntity"
     label = "Legal Entity ID"
+    relationshipName = "LegalEntity"
     createable = true
     updateable = false
     queryable = true
@@ -194,175 +194,175 @@ type salesforce.FinanceTransaction {
   salesforce.Text OriginalCreditGlAccountName {
     apiName = "FinanceTransaction.OriginalCreditGlAccountName"
     inlineHelpText = "The finance transaction's credit GL account name when the finance transaction was created."
-    length = 255
     label = "Original Credit GL Account Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalCreditGlAccountNumber {
     apiName = "FinanceTransaction.OriginalCreditGlAccountNumber"
     inlineHelpText = "The finance transaction's credit GL account number when the finance transaction was created."
-    length = 255
     label = "Original Credit GL Account Number"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalDebitGlAccountName {
     apiName = "FinanceTransaction.OriginalDebitGlAccountName"
     inlineHelpText = "The finance transaction's debit GL account name when the finance transaction was created."
-    length = 255
     label = "Original Debit GL Account Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalDebitGlAccountNumber {
     apiName = "FinanceTransaction.OriginalDebitGlAccountNumber"
     inlineHelpText = "The finance transaction's debit GL account number when the finance transaction was created."
-    length = 255
     label = "Original Debit GL Account Number"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalEventAction {
     apiName = "FinanceTransaction.OriginalEventAction"
     inlineHelpText = "The finance transaction's event action when the finance transaction was created."
-    length = 255
     label = "Original Event Action"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalEventType {
     apiName = "FinanceTransaction.OriginalEventType"
     inlineHelpText = "The finance transaction's event type when the finance transaction was created."
-    length = 255
     label = "Original Event Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalFinanceBookName {
     apiName = "FinanceTransaction.OriginalFinanceBookName"
     inlineHelpText = "The finance transaction's finance book name when the finance transaction was created."
-    length = 255
     label = "Original Finance Book Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalFinancePeriodEndDate {
     apiName = "FinanceTransaction.OriginalFinancePeriodEndDate"
     inlineHelpText = "The finance transaction's finance period end date when the finance transaction was created."
-    length = 255
     label = "Original Finance Period End Date"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalFinancePeriodName {
     apiName = "FinanceTransaction.OriginalFinancePeriodName"
     inlineHelpText = "The finance transaction's finance period name when the finance transaction was created."
-    length = 255
     label = "Original Finance Period Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalFinancePeriodStartDate {
     apiName = "FinanceTransaction.OriginalFinancePeriodStartDate"
     inlineHelpText = "The finance transaction's finance period start date when the finance transaction was created."
-    length = 255
     label = "Original Finance Period Start Date"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalFinancePeriodStatus {
     apiName = "FinanceTransaction.OriginalFinancePeriodStatus"
     inlineHelpText = "The finance transaction's finance period status when the finance transaction was created."
-    length = 255
     label = "Original Finance Period Status"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalGlRuleName {
     apiName = "FinanceTransaction.OriginalGlRuleName"
     inlineHelpText = "The finance transaction's GL rule name when the finance transaction was created."
-    length = 255
     label = "Original GL Rule Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalGlTreatmentName {
     apiName = "FinanceTransaction.OriginalGlTreatmentName"
     inlineHelpText = "The finance transaction's GL treatment name when the finance transaction was created."
-    length = 255
     label = "Original GL Treatment Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text OriginalReferenceEntityType {
     apiName = "FinanceTransaction.OriginalReferenceEntityType"
     inlineHelpText = "The finance transaction's reference entity type when the finance transaction was created."
-    length = 255
     label = "Original Reference Entity Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "FinanceTransaction.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -371,8 +371,8 @@ type salesforce.FinanceTransaction {
   salesforce.Lookup ParentReferenceEntityId {
     apiName = "FinanceTransaction.ParentReferenceEntityId"
     inlineHelpText = "The parent object of the reference entity"
-    relationshipName = "ParentReferenceEntity"
     label = "ParentReferenceEntity ID"
+    relationshipName = "ParentReferenceEntity"
     createable = true
     updateable = false
     queryable = true
@@ -380,16 +380,16 @@ type salesforce.FinanceTransaction {
   salesforce.Lookup ReferenceEntityId {
     apiName = "FinanceTransaction.ReferenceEntityId"
     inlineHelpText = "The financial object that was created or updated as a result of a customer action"
-    relationshipName = "ReferenceEntity"
     label = "ReferenceEntity ID"
+    relationshipName = "ReferenceEntity"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist ReferenceEntityType {
     apiName = "FinanceTransaction.ReferenceEntityType"
-    restricted = false
     label = "Reference Entity Type"
+    restricted = false
     createable = true
     updateable = false
     queryable = true
@@ -398,17 +398,17 @@ type salesforce.FinanceTransaction {
     apiName = "FinanceTransaction.ResultingBalance"
     inlineHelpText = "The balance of your reference entity as a result of the event action"
     label = "Resulting Balance"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Lookup SourceEntityId {
     apiName = "FinanceTransaction.SourceEntityId"
     inlineHelpText = "Source entity for reference entities that have made allocations"
-    relationshipName = "SourceEntity"
     label = "SourceEntity ID"
+    relationshipName = "SourceEntity"
     createable = true
     updateable = false
     queryable = true
@@ -417,38 +417,38 @@ type salesforce.FinanceTransaction {
     apiName = "FinanceTransaction.Subtotal"
     inlineHelpText = "Total of the charge amount and adjustment. Doesn't include the tax amount."
     label = "Subtotal"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Currency TaxAmount {
     apiName = "FinanceTransaction.TaxAmount"
     inlineHelpText = "The total amount of tax for the change made to your reference entity as a result of the event action"
     label = "Tax Amount"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Currency TotalAmountWithTax {
     apiName = "FinanceTransaction.TotalAmountWithTax"
     inlineHelpText = "The subtotal plus the tax amount"
-    _required = true
     label = "Total Amount With Tax"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.DateTime TransactionDate {
     apiName = "FinanceTransaction.TransactionDate"
     inlineHelpText = "The date when the finance transaction occurred"
-    _required = true
     label = "Transaction Date"
+    _required = true
     createable = true
     updateable = false
     queryable = true
@@ -461,8 +461,8 @@ type salesforce.FinanceTransaction {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FinanceTransaction.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -486,8 +486,8 @@ type salesforce.FinanceTransaction {
   }
   salesforce.Lookup CreatedById {
     apiName = "FinanceTransaction.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -503,8 +503,8 @@ type salesforce.FinanceTransaction {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FinanceTransaction.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,19 +1,19 @@
 type salesforce.PrivacyRTBFRequest {
   salesforce.Text JobRecord {
     apiName = "PrivacyRTBFRequest.JobRecord"
-    length = 255
-    _required = true
     label = "Job Record"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "PrivacyRTBFRequest.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -21,16 +21,16 @@ type salesforce.PrivacyRTBFRequest {
   }
   salesforce.Lookup PolicyNameId {
     apiName = "PrivacyRTBFRequest.PolicyNameId"
-    relationshipName = "PolicyName"
     label = "Privacy Policy Definition ID"
+    relationshipName = "PolicyName"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "PrivacyRTBFRequest.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -43,8 +43,8 @@ type salesforce.PrivacyRTBFRequest {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PrivacyRTBFRequest.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.PrivacyRTBFRequest {
   }
   salesforce.Lookup CreatedById {
     apiName = "PrivacyRTBFRequest.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.PrivacyRTBFRequest {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PrivacyRTBFRequest.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -102,12 +102,12 @@ type salesforce.PrivacyRTBFRequest {
   }
   salesforce.Text Description {
     apiName = "PrivacyRTBFRequest.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
 }

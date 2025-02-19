@@ -7,8 +7,8 @@ type salesforce.aaaa__b {
   }
   salesforce.Lookup CreatedById {
     apiName = "aaaa__b.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true

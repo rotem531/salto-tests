@@ -1,35 +1,35 @@
 type salesforce.PromotionLineItemRule {
   salesforce.Lookup AssociatedReferenceId {
     apiName = "PromotionLineItemRule.AssociatedReferenceId"
-    relationshipName = "AssociatedReference"
-    _required = true
     label = "Associated Reference ID"
+    _required = true
+    relationshipName = "AssociatedReference"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist AssociatedType {
     apiName = "PromotionLineItemRule.AssociatedType"
-    restricted = true
-    _required = true
     label = "Associated Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist OperatorType {
     apiName = "PromotionLineItemRule.OperatorType"
-    restricted = true
-    _required = true
     label = "Operator Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "PromotionLineItemRule.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -37,29 +37,29 @@ type salesforce.PromotionLineItemRule {
   }
   salesforce.Picklist Type {
     apiName = "PromotionLineItemRule.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup TypeReferenceId {
     apiName = "PromotionLineItemRule.TypeReferenceId"
-    relationshipName = "TypeReference"
     label = "Type Reference ID"
+    relationshipName = "TypeReference"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text TypeValue {
     apiName = "PromotionLineItemRule.TypeValue"
-    length = 255
     label = "Type Value"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -70,8 +70,8 @@ type salesforce.PromotionLineItemRule {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionLineItemRule.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.PromotionLineItemRule {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionLineItemRule.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -112,8 +112,8 @@ type salesforce.PromotionLineItemRule {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionLineItemRule.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,53 +1,53 @@
 type salesforce.BatchJobPartFailedRecord {
   salesforce.Lookup BatchJobId {
     apiName = "BatchJobPartFailedRecord.BatchJobId"
-    relationshipName = "BatchJob"
     label = "Run ID"
+    relationshipName = "BatchJob"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail BatchJobPartId {
     apiName = "BatchJobPartFailedRecord.BatchJobPartId"
-    relationshipName = "BatchJobPart"
-    _required = true
     label = "Batch Job Part ID"
+    _required = true
+    relationshipName = "BatchJobPart"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text ErrorDescription {
     apiName = "BatchJobPartFailedRecord.ErrorDescription"
-    length = 1333
     label = "Error"
-    createable = true
-    updateable = true
+    length = 1333
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Record {
     apiName = "BatchJobPartFailedRecord.Record"
-    length = 100
     label = "Record"
-    createable = true
-    updateable = true
+    length = 100
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ResubmittedBatchJobId {
     apiName = "BatchJobPartFailedRecord.ResubmittedBatchJobId"
-    relationshipName = "ResubmittedBatchJob"
     label = "Run ID"
+    relationshipName = "ResubmittedBatchJob"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "BatchJobPartFailedRecord.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.BatchJobPartFailedRecord {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "BatchJobPartFailedRecord.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -69,13 +69,13 @@ type salesforce.BatchJobPartFailedRecord {
   }
   salesforce.Text Name {
     apiName = "BatchJobPartFailedRecord.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -88,8 +88,8 @@ type salesforce.BatchJobPartFailedRecord {
   }
   salesforce.Lookup CreatedById {
     apiName = "BatchJobPartFailedRecord.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.BatchJobPartFailedRecord {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "BatchJobPartFailedRecord.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

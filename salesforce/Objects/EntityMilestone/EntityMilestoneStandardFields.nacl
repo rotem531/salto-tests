@@ -1,8 +1,8 @@
 type salesforce.EntityMilestone {
   salesforce.Lookup BusinessHoursId {
     apiName = "EntityMilestone.BusinessHoursId"
-    relationshipName = "BusinessHours"
     label = "Business Hours ID"
+    relationshipName = "BusinessHours"
     createable = false
     updateable = false
     queryable = true
@@ -18,40 +18,40 @@ type salesforce.EntityMilestone {
   salesforce.Number ElapsedTimeInDays {
     apiName = "EntityMilestone.ElapsedTimeInDays"
     label = "Elapsed Time (Days)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number ElapsedTimeInHrs {
     apiName = "EntityMilestone.ElapsedTimeInHrs"
     label = "Elapsed Time (Hours)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number ElapsedTimeInMins {
     apiName = "EntityMilestone.ElapsedTimeInMins"
     label = "Elapsed Time (Mins)"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsCompleted {
     apiName = "EntityMilestone.IsCompleted"
-    defaultValue = false
     label = "Completed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Checkbox IsViolated {
     apiName = "EntityMilestone.IsViolated"
-    defaultValue = false
     label = "Violation"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -72,9 +72,9 @@ type salesforce.EntityMilestone {
   }
   salesforce.Lookup ParentEntityId {
     apiName = "EntityMilestone.ParentEntityId"
-    relationshipName = "ParentEntity"
-    _required = true
     label = " ID"
+    _required = true
+    relationshipName = "ParentEntity"
     createable = false
     updateable = false
     queryable = true
@@ -82,8 +82,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Lookup SlaProcessId {
     apiName = "EntityMilestone.SlaProcessId"
-    relationshipName = "SlaProcess"
     label = "Entitlement Process ID"
+    relationshipName = "SlaProcess"
     createable = false
     updateable = false
     queryable = true
@@ -107,99 +107,99 @@ type salesforce.EntityMilestone {
   salesforce.Number TargetResponseInDays {
     apiName = "EntityMilestone.TargetResponseInDays"
     label = "Target Response (Days)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number TargetResponseInHrs {
     apiName = "EntityMilestone.TargetResponseInHrs"
     label = "Target Response (Hours)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number TargetResponseInMins {
     apiName = "EntityMilestone.TargetResponseInMins"
     label = "Target Response (Mins)"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number TimeRemainingInDays {
     apiName = "EntityMilestone.TimeRemainingInDays"
     label = "Time Remaining (Days)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TimeRemainingInHrs {
     apiName = "EntityMilestone.TimeRemainingInHrs"
-    length = 10
     label = "Time Remaining (Hour:Min)"
-    createable = false
-    updateable = false
+    length = 10
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TimeRemainingInMins {
     apiName = "EntityMilestone.TimeRemainingInMins"
-    length = 10
     label = "Time Remaining (Min:Sec)"
-    createable = false
-    updateable = false
+    length = 10
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number TimeSinceTargetInDays {
     apiName = "EntityMilestone.TimeSinceTargetInDays"
     label = "Time Since Target (Days)"
-    precision = 6
     scale = 2
+    precision = 6
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TimeSinceTargetInHrs {
     apiName = "EntityMilestone.TimeSinceTargetInHrs"
-    length = 10
     label = "Time Since Target (Hour:Min)"
-    createable = false
-    updateable = false
+    length = 10
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TimeSinceTargetInMins {
     apiName = "EntityMilestone.TimeSinceTargetInMins"
-    length = 10
     label = "Time Since Target (Min:Sec)"
-    createable = false
-    updateable = false
+    length = 10
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -211,8 +211,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "EntityMilestone.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -220,13 +220,13 @@ type salesforce.EntityMilestone {
   }
   salesforce.Text Name {
     apiName = "EntityMilestone.Name"
-    length = 255
-    _required = true
     label = "Object Milestone Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -239,8 +239,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Lookup CreatedById {
     apiName = "EntityMilestone.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -256,8 +256,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "EntityMilestone.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -273,8 +273,8 @@ type salesforce.EntityMilestone {
   }
   salesforce.Lookup MilestoneTypeId {
     apiName = "EntityMilestone.MilestoneTypeId"
-    relationshipName = "MilestoneType"
     label = "Milestone Type ID"
+    relationshipName = "MilestoneType"
     createable = false
     updateable = false
     queryable = true

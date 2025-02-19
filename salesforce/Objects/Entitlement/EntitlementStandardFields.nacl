@@ -1,25 +1,25 @@
 type salesforce.Entitlement {
   salesforce.MasterDetail AccountId {
     apiName = "Entitlement.AccountId"
-    relationshipName = "Account"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup AssetId {
     apiName = "Entitlement.AssetId"
-    relationshipName = "Asset"
     label = "Asset ID"
+    relationshipName = "Asset"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup BusinessHoursId {
     apiName = "Entitlement.BusinessHoursId"
-    relationshipName = "BusinessHours"
     label = "Business Hours ID"
+    relationshipName = "BusinessHours"
     createable = true
     updateable = true
     queryable = true
@@ -27,17 +27,17 @@ type salesforce.Entitlement {
   salesforce.Number CasesPerEntitlement {
     apiName = "Entitlement.CasesPerEntitlement"
     label = "Cases Per Entitlement"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup ContractLineItemId {
     apiName = "Entitlement.ContractLineItemId"
-    relationshipName = "ContractLineItem"
     label = "Contract Line Item ID"
+    relationshipName = "ContractLineItem"
     createable = true
     updateable = true
     queryable = true
@@ -51,63 +51,63 @@ type salesforce.Entitlement {
   }
   salesforce.Checkbox IsPerIncident {
     apiName = "Entitlement.IsPerIncident"
-    defaultValue = false
     label = "Per Incident"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup LocationId {
     apiName = "Entitlement.LocationId"
-    relationshipName = "Location"
     label = "Location ID"
+    relationshipName = "Location"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Entitlement.Name"
-    length = 255
-    _required = true
     label = "Entitlement Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number RemainingCases {
     apiName = "Entitlement.RemainingCases"
     label = "Remaining Cases"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number RemainingWorkOrders {
     apiName = "Entitlement.RemainingWorkOrders"
     label = "Remaining Work Orders"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup ServiceContractId {
     apiName = "Entitlement.ServiceContractId"
-    relationshipName = "ServiceContract"
     label = "Service Contract ID"
+    relationshipName = "ServiceContract"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup SlaProcessId {
     apiName = "Entitlement.SlaProcessId"
-    relationshipName = "SlaProcess"
     label = "Entitlement Process ID"
+    relationshipName = "SlaProcess"
     createable = true
     updateable = true
     queryable = true
@@ -121,8 +121,8 @@ type salesforce.Entitlement {
   }
   salesforce.Picklist Status {
     apiName = "Entitlement.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -134,16 +134,16 @@ type salesforce.Entitlement {
   }
   salesforce.Lookup SvcApptBookingWindowsId {
     apiName = "Entitlement.SvcApptBookingWindowsId"
-    relationshipName = "SvcApptBookingWindows"
     label = "Operating Hour ID"
+    relationshipName = "SvcApptBookingWindows"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "Entitlement.Type"
-    restricted = false
     label = "Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -152,11 +152,11 @@ type salesforce.Entitlement {
   salesforce.Number WorkOrdersPerEntitlement {
     apiName = "Entitlement.WorkOrdersPerEntitlement"
     label = "Work Orders Per Entitlement"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -167,8 +167,8 @@ type salesforce.Entitlement {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Entitlement.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -184,8 +184,8 @@ type salesforce.Entitlement {
   }
   salesforce.Lookup CreatedById {
     apiName = "Entitlement.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -201,8 +201,8 @@ type salesforce.Entitlement {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Entitlement.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

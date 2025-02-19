@@ -1,39 +1,39 @@
 type salesforce.ExpressionSet {
   salesforce.Text ApiName {
     apiName = "ExpressionSet.ApiName"
-    length = 80
     label = "API Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = true
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "ExpressionSet.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ExpressionSet.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ExpressionSet.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -41,9 +41,9 @@ type salesforce.ExpressionSet {
   }
   salesforce.Picklist UsageType {
     apiName = "ExpressionSet.UsageType"
-    restricted = true
-    _required = true
     label = "Usage Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -56,8 +56,8 @@ type salesforce.ExpressionSet {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExpressionSet.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -73,8 +73,8 @@ type salesforce.ExpressionSet {
   }
   salesforce.Lookup CreatedById {
     apiName = "ExpressionSet.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -90,8 +90,8 @@ type salesforce.ExpressionSet {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExpressionSet.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -107,25 +107,25 @@ type salesforce.ExpressionSet {
   }
   salesforce.Lookup ExpressionSetDefinitionId {
     apiName = "ExpressionSet.ExpressionSetDefinitionId"
-    relationshipName = "ExpressionSetDefinition"
-    _required = true
     label = "ExpressionSetDefinition ID"
+    _required = true
+    relationshipName = "ExpressionSetDefinition"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist InterfaceSourceType {
     apiName = "ExpressionSet.InterfaceSourceType"
-    restricted = true
     label = "Interface Source Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist ExecutionScale {
     apiName = "ExpressionSet.ExecutionScale"
-    restricted = true
     label = "Execution Scale"
+    restricted = true
     createable = false
     updateable = false
     queryable = true

@@ -2,9 +2,9 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.Lookup CommunicationSubscriptionId {
     apiName = "CommSubscriptionChannelType.CommunicationSubscriptionId"
     inlineHelpText = "The communication subscription record associated with the communication subscription channel type."
-    relationshipName = "CommunicationSubscription"
-    _required = true
     label = "Communication Subscription ID"
+    _required = true
+    relationshipName = "CommunicationSubscription"
     createable = true
     updateable = true
     queryable = true
@@ -12,44 +12,44 @@ type salesforce.CommSubscriptionChannelType {
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "CommSubscriptionChannelType.EngagementChannelTypeId"
     inlineHelpText = "The engagement channel type record associated with the communication subscription channel type."
-    relationshipName = "EngagementChannelType"
-    _required = true
     label = "Engagement Channel Type ID"
+    _required = true
+    relationshipName = "EngagementChannelType"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup MessagingChannelId {
     apiName = "CommSubscriptionChannelType.MessagingChannelId"
-    relationshipName = "MessagingChannel"
     label = "Messaging Channel ID"
+    relationshipName = "MessagingChannel"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup MessagingChannelUsageId {
     apiName = "CommSubscriptionChannelType.MessagingChannelUsageId"
-    relationshipName = "MessagingChannelUsage"
     label = "Messaging Channel Usage ID"
+    relationshipName = "MessagingChannelUsage"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CommSubscriptionChannelType.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "CommSubscriptionChannelType.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -63,8 +63,8 @@ type salesforce.CommSubscriptionChannelType {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CommSubscriptionChannelType.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -80,8 +80,8 @@ type salesforce.CommSubscriptionChannelType {
   }
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionChannelType.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -97,8 +97,8 @@ type salesforce.CommSubscriptionChannelType {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionChannelType.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -114,8 +114,8 @@ type salesforce.CommSubscriptionChannelType {
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "CommSubscriptionChannelType.DataUsePurposeId"
-    relationshipName = "DataUsePurpose"
     label = "Communication Subscription ID"
+    relationshipName = "DataUsePurpose"
     createable = false
     updateable = false
     queryable = true

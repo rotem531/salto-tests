@@ -1,38 +1,38 @@
 type salesforce.PricebookEntry {
   salesforce.Checkbox IsActive {
     apiName = "PricebookEntry.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "PricebookEntry.Pricebook2Id"
-    relationshipName = "Pricebook2"
-    _required = true
     label = "Price Book ID"
+    _required = true
+    relationshipName = "Pricebook2"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "PricebookEntry.Product2Id"
-    relationshipName = "Product2"
-    _required = true
     label = "Product ID"
+    _required = true
+    relationshipName = "Product2"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text ProductCode {
     apiName = "PricebookEntry.ProductCode"
-    length = 255
     label = "Product Code"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -42,18 +42,18 @@ type salesforce.PricebookEntry {
   }
   salesforce.Currency UnitPrice {
     apiName = "PricebookEntry.UnitPrice"
-    _required = true
     label = "List Price"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox UseStandardPrice {
     apiName = "PricebookEntry.UseStandardPrice"
-    defaultValue = false
     label = "Use Standard Price"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -66,12 +66,12 @@ type salesforce.PricebookEntry {
   }
   salesforce.Text Name {
     apiName = "PricebookEntry.Name"
-    length = 255
     label = "Product Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -85,8 +85,8 @@ type salesforce.PricebookEntry {
   }
   salesforce.Lookup CreatedById {
     apiName = "PricebookEntry.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -102,8 +102,8 @@ type salesforce.PricebookEntry {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PricebookEntry.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -119,8 +119,8 @@ type salesforce.PricebookEntry {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PricebookEntry.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -128,8 +128,8 @@ type salesforce.PricebookEntry {
   }
   salesforce.Checkbox IsArchived {
     apiName = "PricebookEntry.IsArchived"
-    defaultValue = false
     label = "Archived"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

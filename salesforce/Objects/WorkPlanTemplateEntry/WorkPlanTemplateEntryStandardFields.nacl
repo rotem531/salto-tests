@@ -2,27 +2,27 @@ type salesforce.WorkPlanTemplateEntry {
   salesforce.Number ExecutionOrder {
     apiName = "WorkPlanTemplateEntry.ExecutionOrder"
     label = "Execution Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.MasterDetail WorkPlanTemplateId {
     apiName = "WorkPlanTemplateEntry.WorkPlanTemplateId"
-    relationshipName = "WorkPlanTemplate"
-    _required = true
     label = "Work Plan Template ID"
+    _required = true
+    relationshipName = "WorkPlanTemplate"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup WorkStepTemplateId {
     apiName = "WorkPlanTemplateEntry.WorkStepTemplateId"
-    relationshipName = "WorkStepTemplate"
-    _required = true
     label = "Work Step Template ID"
+    _required = true
+    relationshipName = "WorkStepTemplate"
     createable = true
     updateable = true
     queryable = true
@@ -35,8 +35,8 @@ type salesforce.WorkPlanTemplateEntry {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkPlanTemplateEntry.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.WorkPlanTemplateEntry {
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkPlanTemplateEntry.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.WorkPlanTemplateEntry {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkPlanTemplateEntry.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

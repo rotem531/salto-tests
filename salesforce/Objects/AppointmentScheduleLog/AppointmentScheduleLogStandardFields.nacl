@@ -7,8 +7,8 @@ type salesforce.AppointmentScheduleLog {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AppointmentScheduleLog.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.AppointmentScheduleLog {
   }
   salesforce.Lookup CreatedById {
     apiName = "AppointmentScheduleLog.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.AppointmentScheduleLog {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AppointmentScheduleLog.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,17 +66,17 @@ type salesforce.AppointmentScheduleLog {
   }
   salesforce.Lookup AppointmentScheduleAggrId {
     apiName = "AppointmentScheduleLog.AppointmentScheduleAggrId"
-    relationshipName = "AppointmentScheduleAggr"
-    _required = true
     label = "Appointment Schedule Aggregate ID"
+    _required = true
+    relationshipName = "AppointmentScheduleAggr"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "AppointmentScheduleLog.ServiceResourceId"
-    relationshipName = "ServiceResource"
     label = "Resource ID"
+    relationshipName = "ServiceResource"
     createable = true
     updateable = true
     queryable = true
@@ -90,8 +90,8 @@ type salesforce.AppointmentScheduleLog {
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "AppointmentScheduleLog.RelatedRecordId"
-    relationshipName = "RelatedRecord"
     label = "Related Record ID"
+    relationshipName = "RelatedRecord"
     createable = true
     updateable = true
     queryable = true
@@ -99,26 +99,26 @@ type salesforce.AppointmentScheduleLog {
   salesforce.Number ResourceUtilization {
     apiName = "AppointmentScheduleLog.ResourceUtilization"
     label = "Resource Utilization"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Checkbox IsUsedForResourceUtilization {
     apiName = "AppointmentScheduleLog.IsUsedForResourceUtilization"
-    defaultValue = false
     label = "Used for Resource Utilization"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist UsageType {
     apiName = "AppointmentScheduleLog.UsageType"
-    restricted = true
-    _required = true
     label = "Usage Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true

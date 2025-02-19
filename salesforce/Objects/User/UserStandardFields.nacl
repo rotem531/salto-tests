@@ -1,8 +1,8 @@
 type salesforce.User {
   salesforce.LongTextArea AboutMe {
     apiName = "User.AboutMe"
-    length = 1000
     label = "About Me"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
@@ -17,13 +17,13 @@ type salesforce.User {
   }
   salesforce.Text Alias {
     apiName = "User.Alias"
-    length = 8
-    _required = true
     label = "Alias"
-    createable = true
-    updateable = true
+    _required = true
+    length = 8
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup CallCenterId {
@@ -35,38 +35,38 @@ type salesforce.User {
   }
   salesforce.Text CommunityNickname {
     apiName = "User.CommunityNickname"
-    length = 40
-    _required = true
     label = "Nickname"
-    createable = true
-    updateable = true
+    _required = true
+    length = 40
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text CompanyName {
     apiName = "User.CompanyName"
-    length = 80
     label = "Company Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "User.ContactId"
-    relationshipName = "Contact"
     label = "Contact ID"
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist DefaultGroupNotificationFrequency {
     apiName = "User.DefaultGroupNotificationFrequency"
-    restricted = true
-    _required = true
     label = "Default Notification Frequency when Joining Groups"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -80,65 +80,65 @@ type salesforce.User {
   }
   salesforce.Text Department {
     apiName = "User.Department"
-    length = 80
     label = "Department"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist DigestFrequency {
     apiName = "User.DigestFrequency"
-    restricted = true
-    _required = true
     label = "Chatter Email Highlights Frequency"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Division {
     apiName = "User.Division"
-    length = 80
     label = "Division"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Email Email {
     apiName = "User.Email"
-    _required = true
     label = "Email"
+    _required = true
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Picklist EmailEncodingKey {
     apiName = "User.EmailEncodingKey"
-    restricted = true
-    _required = true
     label = "Email Encoding"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text EmployeeNumber {
     apiName = "User.EmployeeNumber"
-    length = 20
     label = "Employee Number"
-    createable = true
-    updateable = true
+    length = 20
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist EndDay {
     apiName = "User.EndDay"
-    restricted = true
     label = "End of Day"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -159,34 +159,34 @@ type salesforce.User {
   }
   salesforce.Text FederationIdentifier {
     apiName = "User.FederationIdentifier"
-    length = 512
     label = "SAML Federation ID"
-    createable = true
-    updateable = true
+    length = 512
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox ForecastEnabled {
     apiName = "User.ForecastEnabled"
-    defaultValue = false
     label = "Allow Forecasting"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup IndividualId {
     apiName = "User.IndividualId"
-    relationshipName = "Individual"
     label = "Individual ID"
+    relationshipName = "Individual"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "User.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -198,35 +198,35 @@ type salesforce.User {
   salesforce.Number JigsawImportLimitOverride {
     apiName = "User.JigsawImportLimitOverride"
     label = "Data.com Monthly Addition Limit"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist LanguageLocaleKey {
     apiName = "User.LanguageLocaleKey"
-    restricted = true
-    _required = true
     label = "Language"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist LocaleSidKey {
     apiName = "User.LocaleSidKey"
-    restricted = true
-    _required = true
     label = "Locale"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Hierarchy ManagerId {
     apiName = "User.ManagerId"
-    relationshipName = "Manager"
     label = "Manager ID"
+    relationshipName = "Manager"
     createable = true
     updateable = true
     queryable = true
@@ -240,8 +240,8 @@ type salesforce.User {
   }
   salesforce.Name2 Name {
     apiName = "User.Name"
-    _required = true
     label = "Full Name"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -256,33 +256,33 @@ type salesforce.User {
   }
   salesforce.Picklist PortalRole {
     apiName = "User.PortalRole"
-    restricted = true
     label = "Portal Role Level"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ProfileId {
     apiName = "User.ProfileId"
-    relationshipName = "Profile"
-    _required = true
     label = "Profile ID"
+    _required = true
+    relationshipName = "Profile"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox ReceivesAdminInfoEmails {
     apiName = "User.ReceivesAdminInfoEmails"
-    defaultValue = false
     label = "Admin Info Emails"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox ReceivesInfoEmails {
     apiName = "User.ReceivesInfoEmails"
-    defaultValue = false
     label = "Info Emails"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -290,88 +290,88 @@ type salesforce.User {
   salesforce.Email SenderEmail {
     apiName = "User.SenderEmail"
     label = "Email Sender Address"
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Text SenderName {
     apiName = "User.SenderName"
-    length = 80
     label = "Email Sender Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea Signature {
     apiName = "User.Signature"
-    length = 1333
     label = "Email Signature"
+    length = 1333
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StartDay {
     apiName = "User.StartDay"
-    restricted = true
     label = "Start of Day"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text StayInTouchNote {
     apiName = "User.StayInTouchNote"
-    length = 512
     label = "Stay-in-Touch Email Note"
-    createable = true
-    updateable = true
+    length = 512
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea StayInTouchSignature {
     apiName = "User.StayInTouchSignature"
-    length = 512
     label = "Stay-in-Touch Email Signature"
+    length = 512
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text StayInTouchSubject {
     apiName = "User.StayInTouchSubject"
-    length = 80
     label = "Stay-in-Touch Email Subject"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist TimeZoneSidKey {
     apiName = "User.TimeZoneSidKey"
-    restricted = true
-    _required = true
     label = "Time Zone"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Title {
     apiName = "User.Title"
-    length = 80
     label = "Title"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup UserRoleId {
     apiName = "User.UserRoleId"
-    relationshipName = "UserRole"
     label = "Role ID"
+    relationshipName = "UserRole"
     createable = true
     updateable = true
     queryable = true
@@ -382,13 +382,13 @@ type salesforce.User {
   }
   salesforce.Text Username {
     apiName = "User.Username"
-    length = 80
-    _required = true
     label = "Username"
-    createable = true
-    updateable = true
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup WorkspaceId {
@@ -424,19 +424,19 @@ type salesforce.User {
   }
   salesforce.Text BadgeText {
     apiName = "User.BadgeText"
-    length = 80
     label = "User Photo badge text overlay"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist UserType {
     apiName = "User.UserType"
-    restricted = true
     label = "User Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -468,8 +468,8 @@ type salesforce.User {
   }
   salesforce.Lookup CreatedById {
     apiName = "User.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -485,8 +485,8 @@ type salesforce.User {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "User.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -511,11 +511,11 @@ type salesforce.User {
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
     label = "Failed Login Attempts"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -1252,8 +1252,8 @@ type salesforce.User {
   }
   salesforce.Checkbox IsPartner {
     apiName = "User.IsPartner"
-    defaultValue = false
     label = "Is Partner"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -1261,8 +1261,8 @@ type salesforce.User {
   }
   salesforce.Lookup AccountId {
     apiName = "User.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = false
     updateable = false
     queryable = true
@@ -1270,8 +1270,8 @@ type salesforce.User {
   }
   salesforce.Checkbox IsPortalEnabled {
     apiName = "User.IsPortalEnabled"
-    defaultValue = false
     label = "Is Portal Enabled"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
@@ -1294,8 +1294,8 @@ type salesforce.User {
   }
   salesforce.Checkbox IsExtIndicatorVisible {
     apiName = "User.IsExtIndicatorVisible"
-    defaultValue = false
     label = "Show external indicator"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -1303,12 +1303,12 @@ type salesforce.User {
   }
   salesforce.Text OutOfOfficeMessage {
     apiName = "User.OutOfOfficeMessage"
-    length = 40
     label = "Out of office message"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -1346,8 +1346,8 @@ type salesforce.User {
   }
   salesforce.Checkbox IsProfilePhotoActive {
     apiName = "User.IsProfilePhotoActive"
-    defaultValue = false
     label = "Has Profile Photo"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

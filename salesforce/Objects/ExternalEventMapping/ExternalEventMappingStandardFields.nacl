@@ -7,8 +7,8 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Lookup OwnerId {
     apiName = "ExternalEventMapping.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExternalEventMapping.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -41,8 +41,8 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Lookup CreatedById {
     apiName = "ExternalEventMapping.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExternalEventMapping.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -75,18 +75,18 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Text ExternalId {
     apiName = "ExternalEventMapping.ExternalId"
-    length = 255
     label = "External Id"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup EventId {
     apiName = "ExternalEventMapping.EventId"
-    relationshipName = "Event"
     label = "Activity ID"
+    relationshipName = "Event"
     createable = true
     updateable = true
     queryable = true
@@ -107,8 +107,8 @@ type salesforce.ExternalEventMapping {
   }
   salesforce.Checkbox IsRecurring {
     apiName = "ExternalEventMapping.IsRecurring"
-    defaultValue = false
     label = "Is Recurring"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true

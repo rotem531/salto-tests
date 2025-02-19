@@ -1,8 +1,8 @@
 type salesforce.AccountCleanInfo {
   salesforce.Picklist Industry {
     apiName = "AccountCleanInfo.Industry"
-    restricted = false
     label = "Industry"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -11,8 +11,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Picklist Ownership {
     apiName = "AccountCleanInfo.Ownership"
-    restricted = false
     label = "Ownership"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -27,8 +27,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AccountCleanInfo.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -36,13 +36,13 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Text Name {
     apiName = "AccountCleanInfo.Name"
-    length = 255
-    _required = true
     label = "Account Clean Info Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -55,8 +55,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Lookup CreatedById {
     apiName = "AccountCleanInfo.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -72,8 +72,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AccountCleanInfo.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -89,9 +89,9 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Lookup AccountId {
     apiName = "AccountCleanInfo.AccountId"
-    relationshipName = "Account"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Account"
     createable = false
     updateable = false
     queryable = true
@@ -99,8 +99,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.DateTime LastMatchedDate {
     apiName = "AccountCleanInfo.LastMatchedDate"
-    _required = true
     label = "Last Matched Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -116,8 +116,8 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Lookup LastStatusChangedById {
     apiName = "AccountCleanInfo.LastStatusChangedById"
-    relationshipName = "LastStatusChangedBy"
     label = "User ID"
+    relationshipName = "LastStatusChangedBy"
     createable = false
     updateable = false
     queryable = true
@@ -125,20 +125,20 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Checkbox IsInactive {
     apiName = "AccountCleanInfo.IsInactive"
-    defaultValue = false
     label = "Company Status in Salesforce"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text CompanyName {
     apiName = "AccountCleanInfo.CompanyName"
-    length = 255
     label = "Company Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -168,99 +168,99 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Text TickerSymbol {
     apiName = "AccountCleanInfo.TickerSymbol"
-    length = 20
     label = "Ticker Symbol"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency AnnualRevenue {
     apiName = "AccountCleanInfo.AnnualRevenue"
     label = "Annual Revenue"
-    createable = false
-    updateable = false
     scale = 0
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfEmployees {
     apiName = "AccountCleanInfo.NumberOfEmployees"
     label = "Number of Employees"
+    scale = 0
     precision = 8
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text DunsNumber {
     apiName = "AccountCleanInfo.DunsNumber"
-    length = 9
     label = "D-U-N-S Number"
-    createable = false
-    updateable = false
+    length = 9
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Sic {
     apiName = "AccountCleanInfo.Sic"
-    length = 20
     label = "SIC Code"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text SicDescription {
     apiName = "AccountCleanInfo.SicDescription"
-    length = 80
     label = "SIC Description"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text NaicsCode {
     apiName = "AccountCleanInfo.NaicsCode"
-    length = 8
     label = "NAICS Code"
-    createable = false
-    updateable = false
+    length = 8
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text NaicsDescription {
     apiName = "AccountCleanInfo.NaicsDescription"
-    length = 120
     label = "NAICS Description"
-    createable = false
-    updateable = false
+    length = 120
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text YearStarted {
     apiName = "AccountCleanInfo.YearStarted"
-    length = 12
     label = "Year Started"
-    createable = false
-    updateable = false
+    length = 12
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -274,19 +274,19 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Text AccountSite {
     apiName = "AccountCleanInfo.AccountSite"
-    length = 80
     label = "Account Site"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "AccountCleanInfo.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -294,52 +294,52 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Text Tradestyle {
     apiName = "AccountCleanInfo.Tradestyle"
-    length = 255
     label = "Tradestyle"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text DandBCompanyDunsNumber {
     apiName = "AccountCleanInfo.DandBCompanyDunsNumber"
-    length = 9
     label = "D&B Company D-U-N-S Number"
-    createable = false
-    updateable = false
+    length = 9
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text DunsRightMatchGrade {
     apiName = "AccountCleanInfo.DunsRightMatchGrade"
-    length = 255
     label = "DUNSRight™ Match Grade"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number DunsRightMatchConfidence {
     apiName = "AccountCleanInfo.DunsRightMatchConfidence"
     label = "DUNSRight™ Match Confidence"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist CompanyStatusDataDotCom {
     apiName = "AccountCleanInfo.CompanyStatusDataDotCom"
-    restricted = true
     label = "Company Status per Data.com"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -844,12 +844,12 @@ type salesforce.AccountCleanInfo {
   }
   salesforce.Text DataDotComId {
     apiName = "AccountCleanInfo.DataDotComId"
-    length = 20
     label = "Data.com ID"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

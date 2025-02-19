@@ -7,8 +7,8 @@ type salesforce.MacroInstruction {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "MacroInstruction.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.MacroInstruction {
   }
   salesforce.Lookup CreatedById {
     apiName = "MacroInstruction.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.MacroInstruction {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "MacroInstruction.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,57 +66,57 @@ type salesforce.MacroInstruction {
   }
   salesforce.Lookup MacroId {
     apiName = "MacroInstruction.MacroId"
-    relationshipName = "Macro"
-    _required = true
     label = "Macro ID"
+    _required = true
+    relationshipName = "Macro"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Operation {
     apiName = "MacroInstruction.Operation"
-    restricted = true
-    _required = true
     label = "Operation"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Target {
     apiName = "MacroInstruction.Target"
-    restricted = true
     label = "Target"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Value {
     apiName = "MacroInstruction.Value"
-    length = 4000
     label = "Value"
+    length = 4000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text ValueRecord {
     apiName = "MacroInstruction.ValueRecord"
-    length = 15
     label = "Value Record ID"
-    createable = true
-    updateable = true
+    length = 15
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number SortOrder {
     apiName = "MacroInstruction.SortOrder"
-    _required = true
     label = "Sort Order"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
 }

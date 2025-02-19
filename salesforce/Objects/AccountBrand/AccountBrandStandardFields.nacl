@@ -1,54 +1,54 @@
 type salesforce.AccountBrand {
   salesforce.Lookup AccountId {
     apiName = "AccountBrand.AccountId"
-    relationshipName = "Account"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text CompanyName {
     apiName = "AccountBrand.CompanyName"
-    length = 255
     label = "Company Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Email Email {
     apiName = "AccountBrand.Email"
     label = "Email"
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup LogoId {
     apiName = "AccountBrand.LogoId"
-    relationshipName = "Logo"
     label = "Asset File ID"
+    relationshipName = "Logo"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "AccountBrand.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "AccountBrand.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.AccountBrand {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AccountBrand.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +93,8 @@ type salesforce.AccountBrand {
   }
   salesforce.Lookup CreatedById {
     apiName = "AccountBrand.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.AccountBrand {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AccountBrand.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

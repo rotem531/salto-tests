@@ -1,18 +1,18 @@
 type salesforce.PromotionSegmentBuyerGroup {
   salesforce.Lookup BuyerGroupId {
     apiName = "PromotionSegmentBuyerGroup.BuyerGroupId"
-    relationshipName = "BuyerGroup"
-    _required = true
     label = "Buyer Group ID"
+    _required = true
+    relationshipName = "BuyerGroup"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail PromotionSegmentId {
     apiName = "PromotionSegmentBuyerGroup.PromotionSegmentId"
-    relationshipName = "PromotionSegment"
-    _required = true
     label = "Promotion Segment ID"
+    _required = true
+    relationshipName = "PromotionSegment"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.PromotionSegmentBuyerGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionSegmentBuyerGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.PromotionSegmentBuyerGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionSegmentBuyerGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.PromotionSegmentBuyerGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionSegmentBuyerGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

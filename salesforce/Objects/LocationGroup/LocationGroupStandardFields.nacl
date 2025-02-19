@@ -1,45 +1,45 @@
 type salesforce.LocationGroup {
   salesforce.LongTextArea Description {
     apiName = "LocationGroup.Description"
-    length = 2000
     label = "Description"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text ExternalReference {
     apiName = "LocationGroup.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox IsEnabled {
     apiName = "LocationGroup.IsEnabled"
-    defaultValue = false
     label = "Enabled"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text LocationGroupName {
     apiName = "LocationGroup.LocationGroupName"
-    length = 255
-    _required = true
     label = "Location Group Number"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "LocationGroup.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -47,8 +47,8 @@ type salesforce.LocationGroup {
   }
   salesforce.Checkbox ShouldSyncWithOci {
     apiName = "LocationGroup.ShouldSyncWithOci"
-    defaultValue = false
     label = "Sync with OCI"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.LocationGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "LocationGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.LocationGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "LocationGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.LocationGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "LocationGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

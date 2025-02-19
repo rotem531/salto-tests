@@ -1,16 +1,16 @@
 type salesforce.ContactPointConsent {
   salesforce.Lookup BusinessBrandId {
     apiName = "ContactPointConsent.BusinessBrandId"
-    relationshipName = "BusinessBrand"
     label = "Business Brand ID"
+    relationshipName = "BusinessBrand"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist CaptureContactPointType {
     apiName = "ContactPointConsent.CaptureContactPointType"
-    restricted = true
     label = "Capture Contact Point Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -24,27 +24,27 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Text CaptureSource {
     apiName = "ContactPointConsent.CaptureSource"
-    length = 255
     label = "Capture Source"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ContactPointId {
     apiName = "ContactPointConsent.ContactPointId"
-    relationshipName = "ContactPoint"
-    _required = true
     label = "Contact Point ID"
+    _required = true
+    relationshipName = "ContactPoint"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "ContactPointConsent.DataUsePurposeId"
-    relationshipName = "DataUsePurpose"
     label = "Data Use Purpose ID"
+    relationshipName = "DataUsePurpose"
     createable = true
     updateable = true
     queryable = true
@@ -76,19 +76,19 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Text Name {
     apiName = "ContactPointConsent.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContactPointConsent.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -96,17 +96,17 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Lookup PartyRoleId {
     apiName = "ContactPointConsent.PartyRoleId"
-    relationshipName = "PartyRole"
     label = "Party Role ID"
+    relationshipName = "PartyRole"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "ContactPointConsent.PrivacyConsentStatus"
-    restricted = true
-    _required = true
     label = "Privacy Consent Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -119,8 +119,8 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactPointConsent.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -136,8 +136,8 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactPointConsent.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -153,8 +153,8 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointConsent.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -170,8 +170,8 @@ type salesforce.ContactPointConsent {
   }
   salesforce.Lookup PartyId {
     apiName = "ContactPointConsent.PartyId"
-    relationshipName = "Party"
     label = "Individual ID"
+    relationshipName = "Party"
     createable = false
     updateable = false
     queryable = true

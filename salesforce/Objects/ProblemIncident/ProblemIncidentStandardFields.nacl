@@ -1,9 +1,9 @@
 type salesforce.ProblemIncident {
   salesforce.MasterDetail IssueId {
     apiName = "ProblemIncident.IssueId"
-    relationshipName = "Issue"
-    _required = true
     label = "Issue ID"
+    _required = true
+    relationshipName = "Issue"
     createable = true
     updateable = false
     queryable = true
@@ -18,9 +18,9 @@ type salesforce.ProblemIncident {
   }
   salesforce.Picklist RelatedEntityType {
     apiName = "ProblemIncident.RelatedEntityType"
-    restricted = true
-    _required = true
     label = "Related Issue Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -28,18 +28,18 @@ type salesforce.ProblemIncident {
   }
   salesforce.Lookup RelatedIssueId {
     apiName = "ProblemIncident.RelatedIssueId"
-    relationshipName = "RelatedIssue"
-    _required = true
     label = "Related Issue ID"
+    _required = true
+    relationshipName = "RelatedIssue"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist RelationshipType {
     apiName = "ProblemIncident.RelationshipType"
-    restricted = false
-    _required = true
     label = "Relationship Type"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.ProblemIncident {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProblemIncident.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.ProblemIncident {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProblemIncident.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -86,8 +86,8 @@ type salesforce.ProblemIncident {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProblemIncident.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

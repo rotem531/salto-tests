@@ -1,29 +1,29 @@
 type salesforce.BusinessBrand {
   salesforce.Text Name {
     apiName = "BusinessBrand.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text OrgId {
     apiName = "BusinessBrand.OrgId"
-    length = 255
     label = "Org Id"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "BusinessBrand.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -31,8 +31,8 @@ type salesforce.BusinessBrand {
   }
   salesforce.Lookup ParentId {
     apiName = "BusinessBrand.ParentId"
-    relationshipName = "Parent"
     label = "Business Brand ID"
+    relationshipName = "Parent"
     createable = true
     updateable = true
     queryable = true
@@ -45,8 +45,8 @@ type salesforce.BusinessBrand {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "BusinessBrand.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.BusinessBrand {
   }
   salesforce.Lookup CreatedById {
     apiName = "BusinessBrand.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -79,8 +79,8 @@ type salesforce.BusinessBrand {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "BusinessBrand.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

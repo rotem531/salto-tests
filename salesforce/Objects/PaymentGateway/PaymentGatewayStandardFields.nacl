@@ -1,54 +1,54 @@
 type salesforce.PaymentGateway {
   salesforce.LongTextArea Comments {
     apiName = "PaymentGateway.Comments"
-    length = 1000
     label = "Comments"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text ExternalReference {
     apiName = "PaymentGateway.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = true
-    updateable = true
+    length = 255
     unique = true
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup MerchantCredentialId {
     apiName = "PaymentGateway.MerchantCredentialId"
-    relationshipName = "MerchantCredential"
     label = "Named Credential ID"
+    relationshipName = "MerchantCredential"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text PaymentGatewayName {
     apiName = "PaymentGateway.PaymentGatewayName"
-    length = 255
-    _required = true
     label = "Payment Gateway Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup PaymentGatewayProviderId {
     apiName = "PaymentGateway.PaymentGatewayProviderId"
-    relationshipName = "PaymentGatewayProvider"
     label = "Payment Gateway Provider ID"
+    relationshipName = "PaymentGatewayProvider"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "PaymentGateway.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.PaymentGateway {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PaymentGateway.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.PaymentGateway {
   }
   salesforce.Lookup CreatedById {
     apiName = "PaymentGateway.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.PaymentGateway {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PaymentGateway.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -112,12 +112,12 @@ type salesforce.PaymentGateway {
   }
   salesforce.Text DefaultTapToPayLocation {
     apiName = "PaymentGateway.DefaultTapToPayLocation"
-    length = 40
     label = "Tap To Pay Location"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

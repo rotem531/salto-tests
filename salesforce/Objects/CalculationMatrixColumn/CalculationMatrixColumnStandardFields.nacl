@@ -1,35 +1,35 @@
 type salesforce.CalculationMatrixColumn {
   salesforce.Text ApiName {
     apiName = "CalculationMatrixColumn.ApiName"
-    length = 80
     label = "API Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.MasterDetail CalculationMatrixId {
     apiName = "CalculationMatrixColumn.CalculationMatrixId"
-    relationshipName = "CalculationMatrix"
-    _required = true
     label = "Decision Matrix ID"
+    _required = true
+    relationshipName = "CalculationMatrix"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist ColumnType {
     apiName = "CalculationMatrixColumn.ColumnType"
-    restricted = true
     label = "Column Type"
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist DataType {
     apiName = "CalculationMatrixColumn.DataType"
-    restricted = true
     label = "Data Type"
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -37,58 +37,58 @@ type salesforce.CalculationMatrixColumn {
   salesforce.Number DisplaySequence {
     apiName = "CalculationMatrixColumn.DisplaySequence"
     label = "Display Sequence"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Checkbox IsWildcardColumn {
     apiName = "CalculationMatrixColumn.IsWildcardColumn"
-    defaultValue = false
     label = "Wildcard Column"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CalculationMatrixColumn.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Namespace {
     apiName = "CalculationMatrixColumn.Namespace"
-    length = 255
     label = "Namespace"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea RangeValues {
     apiName = "CalculationMatrixColumn.RangeValues"
-    length = 32768
     label = "Range Values"
+    length = 32768
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text WildcardColumnValue {
     apiName = "CalculationMatrixColumn.WildcardColumnValue"
-    length = 255
     label = "Wildcard Column Value"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -99,8 +99,8 @@ type salesforce.CalculationMatrixColumn {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CalculationMatrixColumn.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -116,8 +116,8 @@ type salesforce.CalculationMatrixColumn {
   }
   salesforce.Lookup CreatedById {
     apiName = "CalculationMatrixColumn.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -133,8 +133,8 @@ type salesforce.CalculationMatrixColumn {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CalculationMatrixColumn.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

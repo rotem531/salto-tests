@@ -7,8 +7,8 @@ type salesforce.UserPrioritizedRecord {
   }
   salesforce.Lookup OwnerId {
     apiName = "UserPrioritizedRecord.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.UserPrioritizedRecord {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "UserPrioritizedRecord.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.UserPrioritizedRecord {
   }
   salesforce.Lookup CreatedById {
     apiName = "UserPrioritizedRecord.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.UserPrioritizedRecord {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "UserPrioritizedRecord.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,22 +67,22 @@ type salesforce.UserPrioritizedRecord {
   }
   salesforce.Lookup TargetId {
     apiName = "UserPrioritizedRecord.TargetId"
-    relationshipName = "Target"
-    _required = true
     label = "Target ID"
+    _required = true
+    relationshipName = "Target"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text TargetKeyPrefix {
     apiName = "UserPrioritizedRecord.TargetKeyPrefix"
-    length = 3
-    _required = true
     label = "Target Key Prefix"
-    createable = false
-    updateable = false
+    _required = true
+    length = 3
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

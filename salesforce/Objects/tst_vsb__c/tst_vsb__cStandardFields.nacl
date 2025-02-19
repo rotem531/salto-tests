@@ -7,8 +7,8 @@ type salesforce.tst_vsb__c {
   }
   salesforce.Lookup OwnerId {
     apiName = "tst_vsb__c.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.tst_vsb__c {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "tst_vsb__c.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -25,18 +25,18 @@ type salesforce.tst_vsb__c {
   }
   salesforce.Text Name {
     apiName = "tst_vsb__c.Name"
-    length = 80
     label = "tst_vsb Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup RecordTypeId {
     apiName = "tst_vsb__c.RecordTypeId"
-    relationshipName = "RecordType"
     label = "Record Type ID"
+    relationshipName = "RecordType"
     createable = true
     updateable = true
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.tst_vsb__c {
   }
   salesforce.Lookup CreatedById {
     apiName = "tst_vsb__c.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.tst_vsb__c {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "tst_vsb__c.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

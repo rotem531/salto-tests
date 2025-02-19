@@ -1,39 +1,39 @@
 type salesforce.FlowOrchestrationWorkItem {
   salesforce.Lookup AssigneeId {
     apiName = "FlowOrchestrationWorkItem.AssigneeId"
-    relationshipName = "Assignee"
-    _required = true
     label = "Assignee ID"
+    _required = true
+    relationshipName = "Assignee"
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "FlowOrchestrationWorkItem.Description"
-    length = 255
     label = "Description"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Label {
     apiName = "FlowOrchestrationWorkItem.Label"
-    length = 80
     label = "Step"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "FlowOrchestrationWorkItem.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = true
     queryable = true
@@ -41,8 +41,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "FlowOrchestrationWorkItem.RelatedRecordId"
-    relationshipName = "RelatedRecord"
     label = "Context Record ID"
+    relationshipName = "RelatedRecord"
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Picklist ScreenFlow {
     apiName = "FlowOrchestrationWorkItem.ScreenFlow"
-    restricted = true
     label = "Screen Flow ID"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -59,9 +59,9 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Picklist Status {
     apiName = "FlowOrchestrationWorkItem.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Lookup StepInstanceId {
     apiName = "FlowOrchestrationWorkItem.StepInstanceId"
-    relationshipName = "StepInstance"
     label = "Orchestration Step Run ID"
+    relationshipName = "StepInstance"
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FlowOrchestrationWorkItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -109,8 +109,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "FlowOrchestrationWorkItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -126,8 +126,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FlowOrchestrationWorkItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -143,8 +143,8 @@ type salesforce.FlowOrchestrationWorkItem {
   }
   salesforce.LongTextArea ScreenFlowInputs {
     apiName = "FlowOrchestrationWorkItem.ScreenFlowInputs"
-    length = 32768
     label = "Screen Flow Inputs"
+    length = 32768
     createable = false
     updateable = false
     queryable = true

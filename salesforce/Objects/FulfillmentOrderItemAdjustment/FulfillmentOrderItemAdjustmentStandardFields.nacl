@@ -1,78 +1,78 @@
 type salesforce.FulfillmentOrderItemAdjustment {
   salesforce.Currency Amount {
     apiName = "FulfillmentOrderItemAdjustment.Amount"
-    _required = true
     label = "Adjustment"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Text CampaignName {
     apiName = "FulfillmentOrderItemAdjustment.CampaignName"
-    length = 255
     label = "Campaign Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text CouponName {
     apiName = "FulfillmentOrderItemAdjustment.CouponName"
-    length = 255
     label = "Coupon Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "FulfillmentOrderItemAdjustment.Description"
-    length = 2000
     label = "Description"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail FulfillmentOrderLineItemId {
     apiName = "FulfillmentOrderItemAdjustment.FulfillmentOrderLineItemId"
-    relationshipName = "FulfillmentOrderLineItem"
-    _required = true
     label = "Fulfillment Order Product ID"
+    _required = true
+    relationshipName = "FulfillmentOrderLineItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text PromotionName {
     apiName = "FulfillmentOrderItemAdjustment.PromotionName"
-    length = 255
     label = "Promotion Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency TotalAmtWithTax {
     apiName = "FulfillmentOrderItemAdjustment.TotalAmtWithTax"
     label = "Adjustment with Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTaxAmount {
     apiName = "FulfillmentOrderItemAdjustment.TotalTaxAmount"
     label = "Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -84,8 +84,8 @@ type salesforce.FulfillmentOrderItemAdjustment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FulfillmentOrderItemAdjustment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -109,8 +109,8 @@ type salesforce.FulfillmentOrderItemAdjustment {
   }
   salesforce.Lookup CreatedById {
     apiName = "FulfillmentOrderItemAdjustment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -126,8 +126,8 @@ type salesforce.FulfillmentOrderItemAdjustment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FulfillmentOrderItemAdjustment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -143,9 +143,9 @@ type salesforce.FulfillmentOrderItemAdjustment {
   }
   salesforce.Lookup FulfillmentOrderId {
     apiName = "FulfillmentOrderItemAdjustment.FulfillmentOrderId"
-    relationshipName = "FulfillmentOrder"
-    _required = true
     label = "Fulfillment Order ID"
+    _required = true
+    relationshipName = "FulfillmentOrder"
     createable = true
     updateable = false
     queryable = true

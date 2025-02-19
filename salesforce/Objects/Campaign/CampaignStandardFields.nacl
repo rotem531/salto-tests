@@ -2,41 +2,41 @@ type salesforce.Campaign {
   salesforce.Currency ActualCost {
     apiName = "Campaign.ActualCost"
     label = "Actual Cost in Campaign"
-    createable = true
-    updateable = true
     scale = 0
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency AmountAllOpportunities {
     apiName = "Campaign.AmountAllOpportunities"
-    _required = true
     label = "Value Opportunities in Campaign"
-    createable = false
-    updateable = false
+    _required = true
     scale = 0
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency AmountWonOpportunities {
     apiName = "Campaign.AmountWonOpportunities"
-    _required = true
     label = "Value Won Opportunities in Campaign"
-    createable = false
-    updateable = false
+    _required = true
     scale = 0
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency BudgetedCost {
     apiName = "Campaign.BudgetedCost"
     label = "Budgeted Cost in Campaign"
-    createable = true
-    updateable = true
     scale = 0
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup CampaignImageId {
@@ -48,16 +48,16 @@ type salesforce.Campaign {
   }
   salesforce.Lookup CampaignMemberRecordTypeId {
     apiName = "Campaign.CampaignMemberRecordTypeId"
-    relationshipName = "CampaignMemberRecordType"
     label = "Record Type ID"
+    relationshipName = "CampaignMemberRecordType"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "Campaign.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -72,19 +72,19 @@ type salesforce.Campaign {
   salesforce.Percent ExpectedResponse {
     apiName = "Campaign.ExpectedResponse"
     label = "Expected Response (%)"
-    createable = true
-    updateable = true
     scale = 2
     precision = 10
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency ExpectedRevenue {
     apiName = "Campaign.ExpectedRevenue"
     label = "Expected Revenue in Campaign"
-    createable = true
-    updateable = true
     scale = 0
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Unknown HierarchyActualCost {
@@ -137,109 +137,109 @@ type salesforce.Campaign {
   }
   salesforce.Checkbox IsActive {
     apiName = "Campaign.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Campaign.Name"
-    length = 80
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number NumberOfContacts {
     apiName = "Campaign.NumberOfContacts"
-    _required = true
     label = "Contacts in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfConvertedLeads {
     apiName = "Campaign.NumberOfConvertedLeads"
-    _required = true
     label = "Converted Leads in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfLeads {
     apiName = "Campaign.NumberOfLeads"
-    _required = true
     label = "Leads in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfOpportunities {
     apiName = "Campaign.NumberOfOpportunities"
-    _required = true
     label = "Opportunities in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfResponses {
     apiName = "Campaign.NumberOfResponses"
-    _required = true
     label = "Responses in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberOfWonOpportunities {
     apiName = "Campaign.NumberOfWonOpportunities"
-    _required = true
     label = "Won Opportunities in Campaign"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NumberSent {
     apiName = "Campaign.NumberSent"
     label = "Num Sent in Campaign"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Campaign.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -247,8 +247,8 @@ type salesforce.Campaign {
   }
   salesforce.Lookup ParentId {
     apiName = "Campaign.ParentId"
-    relationshipName = "Parent"
     label = "Parent Campaign ID"
+    relationshipName = "Parent"
     createable = true
     updateable = true
     queryable = true
@@ -262,8 +262,8 @@ type salesforce.Campaign {
   }
   salesforce.Picklist Status {
     apiName = "Campaign.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -271,8 +271,8 @@ type salesforce.Campaign {
   }
   salesforce.Picklist Type {
     apiName = "Campaign.Type"
-    restricted = false
     label = "Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -286,8 +286,8 @@ type salesforce.Campaign {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Campaign.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -303,8 +303,8 @@ type salesforce.Campaign {
   }
   salesforce.Lookup CreatedById {
     apiName = "Campaign.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -320,8 +320,8 @@ type salesforce.Campaign {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Campaign.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

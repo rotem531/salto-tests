@@ -7,8 +7,8 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "StandardShippingRate.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -16,13 +16,13 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Text Name {
     apiName = "StandardShippingRate.Name"
-    length = 255
-    _required = true
     label = "Standard Shipping Rate Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -35,8 +35,8 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Lookup CreatedById {
     apiName = "StandardShippingRate.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "StandardShippingRate.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -69,9 +69,9 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Lookup ShippingZoneId {
     apiName = "StandardShippingRate.ShippingZoneId"
-    relationshipName = "ShippingZone"
-    _required = true
     label = "Shipping Zone ID"
+    _required = true
+    relationshipName = "ShippingZone"
     createable = true
     updateable = false
     queryable = true
@@ -79,16 +79,16 @@ type salesforce.StandardShippingRate {
   salesforce.Currency Price {
     apiName = "StandardShippingRate.Price"
     label = "Price"
-    createable = true
-    updateable = true
     scale = 0
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist ConditionFactor {
     apiName = "StandardShippingRate.ConditionFactor"
-    restricted = true
     label = "Condition Factor"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -96,55 +96,55 @@ type salesforce.StandardShippingRate {
   salesforce.Number ConditionRangeMin {
     apiName = "StandardShippingRate.ConditionRangeMin"
     label = "Condition Range Min"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Number ConditionRangeMax {
     apiName = "StandardShippingRate.ConditionRangeMax"
     label = "Condition Range Max"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Number TransitTimeMin {
     apiName = "StandardShippingRate.TransitTimeMin"
     label = "Minimum Transit Time"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number TransitTimeMax {
     apiName = "StandardShippingRate.TransitTimeMax"
     label = "Maximum Transit Time"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist TransitTimeUnit {
     apiName = "StandardShippingRate.TransitTimeUnit"
-    restricted = true
     label = "Unit of Transit Time"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ShippingCarrierMethodId {
     apiName = "StandardShippingRate.ShippingCarrierMethodId"
-    relationshipName = "ShippingCarrierMethod"
     label = "Shipping Carrier Method ID"
+    relationshipName = "ShippingCarrierMethod"
     createable = false
     updateable = false
     queryable = true
@@ -152,8 +152,8 @@ type salesforce.StandardShippingRate {
   }
   salesforce.Picklist WeightUnit {
     apiName = "StandardShippingRate.WeightUnit"
-    restricted = true
     label = "Unit of Weight"
+    restricted = true
     createable = true
     updateable = true
     queryable = true

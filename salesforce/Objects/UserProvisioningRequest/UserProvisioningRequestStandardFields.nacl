@@ -1,52 +1,52 @@
 type salesforce.UserProvisioningRequest {
   salesforce.Text AppName {
     apiName = "UserProvisioningRequest.AppName"
-    length = 150
     label = "App Name"
-    createable = true
-    updateable = true
+    length = 150
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist ApprovalStatus {
     apiName = "UserProvisioningRequest.ApprovalStatus"
-    restricted = true
-    _required = true
     label = "Approval Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ConnectedAppId {
     apiName = "UserProvisioningRequest.ConnectedAppId"
-    relationshipName = "ConnectedApp"
     label = "Connected App ID"
+    relationshipName = "ConnectedApp"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ManagerId {
     apiName = "UserProvisioningRequest.ManagerId"
-    relationshipName = "Manager"
     label = "User ID"
+    relationshipName = "Manager"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Operation {
     apiName = "UserProvisioningRequest.Operation"
-    restricted = true
-    _required = true
     label = "Operation"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "UserProvisioningRequest.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -54,8 +54,8 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Lookup ParentId {
     apiName = "UserProvisioningRequest.ParentId"
-    relationshipName = "Parent"
     label = "UserProvisioningRequest ID"
+    relationshipName = "Parent"
     createable = true
     updateable = true
     queryable = true
@@ -63,34 +63,34 @@ type salesforce.UserProvisioningRequest {
   salesforce.Number RetryCount {
     apiName = "UserProvisioningRequest.RetryCount"
     label = "Retry Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup SalesforceUserId {
     apiName = "UserProvisioningRequest.SalesforceUserId"
-    relationshipName = "SalesforceUser"
     label = "User ID"
+    relationshipName = "SalesforceUser"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist State {
     apiName = "UserProvisioningRequest.State"
-    restricted = true
-    _required = true
     label = "State"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup UserProvAccountId {
     apiName = "UserProvisioningRequest.UserProvAccountId"
-    relationshipName = "UserProvAccount"
     label = "User Provisioning Account ID"
+    relationshipName = "UserProvAccount"
     createable = true
     updateable = true
     queryable = true
@@ -103,8 +103,8 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "UserProvisioningRequest.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -128,8 +128,8 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Lookup CreatedById {
     apiName = "UserProvisioningRequest.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -145,8 +145,8 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "UserProvisioningRequest.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -162,12 +162,12 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Text ExternalUserId {
     apiName = "UserProvisioningRequest.ExternalUserId"
-    length = 150
     label = "External User Id"
-    createable = true
-    updateable = true
+    length = 150
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime ScheduleDate {
@@ -179,8 +179,8 @@ type salesforce.UserProvisioningRequest {
   }
   salesforce.Lookup UserProvConfigId {
     apiName = "UserProvisioningRequest.UserProvConfigId"
-    relationshipName = "UserProvConfig"
     label = "UserProvisioningConfig ID"
+    relationshipName = "UserProvConfig"
     createable = true
     updateable = true
     queryable = true

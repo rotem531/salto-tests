@@ -1,18 +1,18 @@
 type salesforce.ResourcePreference {
   salesforce.Picklist PreferenceType {
     apiName = "ResourcePreference.PreferenceType"
-    restricted = true
-    _required = true
     label = "Preference Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail RelatedRecordId {
     apiName = "ResourcePreference.RelatedRecordId"
-    relationshipName = "RelatedRecord"
-    _required = true
     label = "Related Record ID"
+    _required = true
+    relationshipName = "RelatedRecord"
     createable = true
     updateable = false
     queryable = true
@@ -27,9 +27,9 @@ type salesforce.ResourcePreference {
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "ResourcePreference.ServiceResourceId"
-    relationshipName = "ServiceResource"
-    _required = true
     label = "Resource ID"
+    _required = true
+    relationshipName = "ServiceResource"
     createable = true
     updateable = true
     queryable = true
@@ -42,8 +42,8 @@ type salesforce.ResourcePreference {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ResourcePreference.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.ResourcePreference {
   }
   salesforce.Lookup CreatedById {
     apiName = "ResourcePreference.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.ResourcePreference {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ResourcePreference.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

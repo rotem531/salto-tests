@@ -1,8 +1,8 @@
 type salesforce.ShiftWorkTopic {
   salesforce.Checkbox AreAllTopicsSupported {
     apiName = "ShiftWorkTopic.AreAllTopicsSupported"
-    defaultValue = false
     label = "All Topics Supported"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -10,54 +10,54 @@ type salesforce.ShiftWorkTopic {
   salesforce.Number AttendeeLimit {
     apiName = "ShiftWorkTopic.AttendeeLimit"
     label = "Attendee Limit"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number MaxAppointments {
     apiName = "ShiftWorkTopic.MaxAppointments"
     label = "Maximum Concurrent Appointments"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number ServiceAppointmentLimit {
     apiName = "ShiftWorkTopic.ServiceAppointmentLimit"
     label = "Maximum Appointment Capacity"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.MasterDetail ShiftId {
     apiName = "ShiftWorkTopic.ShiftId"
-    relationshipName = "Shift"
-    _required = true
     label = "Shift ID"
+    _required = true
+    relationshipName = "Shift"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup WorkTypeGroupId {
     apiName = "ShiftWorkTopic.WorkTypeGroupId"
-    relationshipName = "WorkTypeGroup"
     label = "Work Type Group ID"
+    relationshipName = "WorkTypeGroup"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WorkTypeId {
     apiName = "ShiftWorkTopic.WorkTypeId"
-    relationshipName = "WorkType"
     label = "Work Type ID"
+    relationshipName = "WorkType"
     createable = true
     updateable = true
     queryable = true
@@ -70,8 +70,8 @@ type salesforce.ShiftWorkTopic {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ShiftWorkTopic.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.ShiftWorkTopic {
   }
   salesforce.Lookup CreatedById {
     apiName = "ShiftWorkTopic.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -112,8 +112,8 @@ type salesforce.ShiftWorkTopic {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ShiftWorkTopic.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

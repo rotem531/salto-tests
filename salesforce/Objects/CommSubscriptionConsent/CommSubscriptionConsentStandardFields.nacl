@@ -1,8 +1,8 @@
 type salesforce.CommSubscriptionConsent {
   salesforce.Lookup BusinessBrandId {
     apiName = "CommSubscriptionConsent.BusinessBrandId"
-    relationshipName = "BusinessBrand"
     label = "Business Brand ID"
+    relationshipName = "BusinessBrand"
     createable = true
     updateable = true
     queryable = true
@@ -10,9 +10,9 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup CommSubscriptionChannelTypeId {
     apiName = "CommSubscriptionConsent.CommSubscriptionChannelTypeId"
     inlineHelpText = "The communication subscription channel type record associated with the communication subscription consent."
-    relationshipName = "CommSubscriptionChannelType"
-    _required = true
     label = "Communication Subscription Channel Type ID"
+    _required = true
+    relationshipName = "CommSubscriptionChannelType"
     createable = true
     updateable = true
     queryable = true
@@ -28,19 +28,19 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Text ConsentCapturedSource {
     apiName = "CommSubscriptionConsent.ConsentCapturedSource"
     inlineHelpText = "Source through which consent was captured. For example, user@example.com or www.example.com."
-    length = 255
     label = "Consent Captured Source"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ConsentGiverId {
     apiName = "CommSubscriptionConsent.ConsentGiverId"
     inlineHelpText = "The person consenting to the communication subscription."
-    relationshipName = "ConsentGiver"
     label = "Consent Giver ID"
+    relationshipName = "ConsentGiver"
     createable = true
     updateable = true
     queryable = true
@@ -48,17 +48,17 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Lookup ContactPointId {
     apiName = "CommSubscriptionConsent.ContactPointId"
     inlineHelpText = "The contact point record associated with the communication subscription consent."
-    relationshipName = "ContactPoint"
-    _required = true
     label = "Contact Point ID"
+    _required = true
+    relationshipName = "ContactPoint"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "CommSubscriptionConsent.DataUsePurposeId"
-    relationshipName = "DataUsePurpose"
     label = "Data Use Purpose ID"
+    relationshipName = "DataUsePurpose"
     createable = true
     updateable = true
     queryable = true
@@ -66,8 +66,8 @@ type salesforce.CommSubscriptionConsent {
   salesforce.Date EffectiveFromDate {
     apiName = "CommSubscriptionConsent.EffectiveFromDate"
     inlineHelpText = "Date when consent starts."
-    _required = true
     label = "Effective From"
+    _required = true
     createable = true
     updateable = true
     queryable = true
@@ -79,27 +79,27 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "CommSubscriptionConsent.EngagementChannelTypeId"
-    relationshipName = "EngagementChannelType"
     label = "Engagement Channel Type ID"
+    relationshipName = "EngagementChannelType"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CommSubscriptionConsent.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "CommSubscriptionConsent.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -107,8 +107,8 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Lookup PartyId {
     apiName = "CommSubscriptionConsent.PartyId"
-    relationshipName = "Party"
     label = "Individual ID"
+    relationshipName = "Party"
     createable = false
     updateable = false
     queryable = true
@@ -116,17 +116,17 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Lookup PartyRoleId {
     apiName = "CommSubscriptionConsent.PartyRoleId"
-    relationshipName = "PartyRole"
     label = "Party Role ID"
+    relationshipName = "PartyRole"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "CommSubscriptionConsent.PrivacyConsentStatus"
-    restricted = true
-    _required = true
     label = "Privacy Consent Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -139,8 +139,8 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CommSubscriptionConsent.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -156,8 +156,8 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionConsent.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -173,8 +173,8 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionConsent.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -190,12 +190,12 @@ type salesforce.CommSubscriptionConsent {
   }
   salesforce.Text ContactPointValue {
     apiName = "CommSubscriptionConsent.ContactPointValue"
-    length = 40
     label = "Communication Subscription Consent Compliance Snapshot"
-    createable = true
-    updateable = true
+    length = 40
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
 }

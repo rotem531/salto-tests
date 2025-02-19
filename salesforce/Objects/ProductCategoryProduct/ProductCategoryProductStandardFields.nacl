@@ -1,26 +1,26 @@
 type salesforce.ProductCategoryProduct {
   salesforce.Checkbox IsPrimaryCategory {
     apiName = "ProductCategoryProduct.IsPrimaryCategory"
-    defaultValue = false
     label = "Is Primary Category"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail ProductCategoryId {
     apiName = "ProductCategoryProduct.ProductCategoryId"
-    relationshipName = "ProductCategory"
-    _required = true
     label = "Category ID"
+    _required = true
+    relationshipName = "ProductCategory"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ProductId {
     apiName = "ProductCategoryProduct.ProductId"
-    relationshipName = "Product"
-    _required = true
     label = "Product ID"
+    _required = true
+    relationshipName = "Product"
     createable = true
     updateable = true
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.ProductCategoryProduct {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductCategoryProduct.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.ProductCategoryProduct {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductCategoryProduct.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -75,8 +75,8 @@ type salesforce.ProductCategoryProduct {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductCategoryProduct.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -92,9 +92,9 @@ type salesforce.ProductCategoryProduct {
   }
   salesforce.Lookup CatalogId {
     apiName = "ProductCategoryProduct.CatalogId"
-    relationshipName = "Catalog"
-    _required = true
     label = "Catalog ID"
+    _required = true
+    relationshipName = "Catalog"
     createable = false
     updateable = false
     queryable = true
@@ -102,13 +102,13 @@ type salesforce.ProductCategoryProduct {
   }
   salesforce.Text ProductToCategory {
     apiName = "ProductCategoryProduct.ProductToCategory"
-    length = 30
-    _required = true
     label = "Product/Category Concatenation"
-    createable = false
-    updateable = false
+    _required = true
+    length = 30
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

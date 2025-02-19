@@ -1,25 +1,25 @@
 type salesforce.ProblemRelatedItem {
   salesforce.Lookup AssetId {
     apiName = "ProblemRelatedItem.AssetId"
-    relationshipName = "Asset"
-    _required = true
     label = "Asset ID"
+    _required = true
+    relationshipName = "Asset"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Comment {
     apiName = "ProblemRelatedItem.Comment"
-    length = 32000
     label = "Comment"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist ImpactLevel {
     apiName = "ProblemRelatedItem.ImpactLevel"
-    restricted = false
     label = "Impact Level"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -27,9 +27,9 @@ type salesforce.ProblemRelatedItem {
   }
   salesforce.Picklist ImpactType {
     apiName = "ProblemRelatedItem.ImpactType"
-    restricted = false
-    _required = true
     label = "Impact Type"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -44,9 +44,9 @@ type salesforce.ProblemRelatedItem {
   }
   salesforce.MasterDetail ProblemId {
     apiName = "ProblemRelatedItem.ProblemId"
-    relationshipName = "Problem"
-    _required = true
     label = "Problem ID"
+    _required = true
+    relationshipName = "Problem"
     createable = true
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.ProblemRelatedItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProblemRelatedItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.ProblemRelatedItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProblemRelatedItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +93,8 @@ type salesforce.ProblemRelatedItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProblemRelatedItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

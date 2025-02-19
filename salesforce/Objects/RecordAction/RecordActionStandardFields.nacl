@@ -1,84 +1,84 @@
 type salesforce.RecordAction {
   salesforce.Picklist ActionDefinition {
     apiName = "RecordAction.ActionDefinition"
-    restricted = true
     label = "Action Definition"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist ActionType {
     apiName = "RecordAction.ActionType"
-    restricted = true
     label = "Action Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist FlowDefinition {
     apiName = "RecordAction.FlowDefinition"
-    restricted = true
     label = "Interaction Definition ID"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup FlowInterviewId {
     apiName = "RecordAction.FlowInterviewId"
-    relationshipName = "FlowInterview"
     label = "FlowInterview ID"
+    relationshipName = "FlowInterview"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsMandatory {
     apiName = "RecordAction.IsMandatory"
-    defaultValue = false
     label = "Is Mandatory"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsUiRemoveHidden {
     apiName = "RecordAction.IsUiRemoveHidden"
-    defaultValue = false
     label = "Hide Remove Action in UI"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Number Order {
     apiName = "RecordAction.Order"
-    _required = true
     label = "Order"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist Pinned {
     apiName = "RecordAction.Pinned"
-    restricted = true
     label = "Pinned"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup RecordId {
     apiName = "RecordAction.RecordId"
-    relationshipName = "Record"
-    _required = true
     label = "Parent Record ID"
+    _required = true
+    relationshipName = "Record"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "RecordAction.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -91,8 +91,8 @@ type salesforce.RecordAction {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "RecordAction.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -108,8 +108,8 @@ type salesforce.RecordAction {
   }
   salesforce.Lookup CreatedById {
     apiName = "RecordAction.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -125,8 +125,8 @@ type salesforce.RecordAction {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "RecordAction.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

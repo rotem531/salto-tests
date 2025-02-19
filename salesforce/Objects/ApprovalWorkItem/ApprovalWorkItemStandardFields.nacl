@@ -1,20 +1,20 @@
 type salesforce.ApprovalWorkItem {
   salesforce.Text ApprovalConditionName {
     apiName = "ApprovalWorkItem.ApprovalConditionName"
-    length = 255
     label = "Approval Condition Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail ApprovalSubmissionId {
     apiName = "ApprovalWorkItem.ApprovalSubmissionId"
-    relationshipName = "ApprovalSubmission"
-    _required = true
     label = "Approval Submission ID"
+    _required = true
+    relationshipName = "ApprovalSubmission"
     createable = false
     updateable = false
     queryable = true
@@ -22,8 +22,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Lookup AssignedToId {
     apiName = "ApprovalWorkItem.AssignedToId"
-    relationshipName = "AssignedTo"
     label = "Assigned To ID"
+    relationshipName = "AssignedTo"
     createable = false
     updateable = false
     queryable = true
@@ -31,8 +31,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Html Comments {
     apiName = "ApprovalWorkItem.Comments"
-    length = 32000
     label = "Comments"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -40,8 +40,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Lookup FlowOrchestrationWorkItemId {
     apiName = "ApprovalWorkItem.FlowOrchestrationWorkItemId"
-    relationshipName = "FlowOrchestrationWorkItem"
     label = "Orchestration Work Item ID"
+    relationshipName = "FlowOrchestrationWorkItem"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Lookup RelatedRecordId {
     apiName = "ApprovalWorkItem.RelatedRecordId"
-    relationshipName = "RelatedRecord"
     label = "Related Record ID"
+    relationshipName = "RelatedRecord"
     createable = false
     updateable = false
     queryable = true
@@ -58,19 +58,19 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Text RelatedRecordObjectName {
     apiName = "ApprovalWorkItem.RelatedRecordObjectName"
-    length = 255
     label = "Related Record Object Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ReviewedById {
     apiName = "ApprovalWorkItem.ReviewedById"
-    relationshipName = "ReviewedBy"
     label = "User ID"
+    relationshipName = "ReviewedBy"
     createable = false
     updateable = false
     queryable = true
@@ -86,9 +86,9 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Picklist Status {
     apiName = "ApprovalWorkItem.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -102,8 +102,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ApprovalWorkItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "ApprovalWorkItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -144,8 +144,8 @@ type salesforce.ApprovalWorkItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ApprovalWorkItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

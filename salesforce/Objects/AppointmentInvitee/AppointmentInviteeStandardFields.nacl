@@ -1,25 +1,25 @@
 type salesforce.AppointmentInvitee {
   salesforce.MasterDetail AppointmentInvitationId {
     apiName = "AppointmentInvitee.AppointmentInvitationId"
-    relationshipName = "AppointmentInvitation"
-    _required = true
     label = "Appointment Invitation ID"
+    _required = true
+    relationshipName = "AppointmentInvitation"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsRequiredResource {
     apiName = "AppointmentInvitee.IsRequiredResource"
-    defaultValue = false
     label = "Required Resource"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ParticipantServiceResourceId {
     apiName = "AppointmentInvitee.ParticipantServiceResourceId"
-    relationshipName = "ParticipantServiceResource"
     label = "Resource ID"
+    relationshipName = "ParticipantServiceResource"
     createable = true
     updateable = true
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.AppointmentInvitee {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AppointmentInvitee.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -57,8 +57,8 @@ type salesforce.AppointmentInvitee {
   }
   salesforce.Lookup CreatedById {
     apiName = "AppointmentInvitee.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -74,8 +74,8 @@ type salesforce.AppointmentInvitee {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AppointmentInvitee.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

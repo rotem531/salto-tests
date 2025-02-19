@@ -1,26 +1,26 @@
 type salesforce.FulfillmentOrderItemTax {
   salesforce.Currency Amount {
     apiName = "FulfillmentOrderItemTax.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "FulfillmentOrderItemTax.Description"
-    length = 2000
     label = "Description"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup FulfillmentOrderItemAdjustId {
     apiName = "FulfillmentOrderItemTax.FulfillmentOrderItemAdjustId"
-    relationshipName = "FulfillmentOrderItemAdjust"
     label = "Fulfillment Order Item Adjustment ID"
+    relationshipName = "FulfillmentOrderItemAdjust"
     createable = true
     updateable = false
     queryable = true
@@ -28,25 +28,25 @@ type salesforce.FulfillmentOrderItemTax {
   salesforce.Percent Rate {
     apiName = "FulfillmentOrderItemTax.Rate"
     label = "Rate"
-    createable = true
-    updateable = true
     scale = 2
     precision = 5
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Date TaxEffectiveDate {
     apiName = "FulfillmentOrderItemTax.TaxEffectiveDate"
-    _required = true
     label = "Tax Effective Date"
+    _required = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "FulfillmentOrderItemTax.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.FulfillmentOrderItemTax {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FulfillmentOrderItemTax.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.FulfillmentOrderItemTax {
   }
   salesforce.Lookup CreatedById {
     apiName = "FulfillmentOrderItemTax.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -101,8 +101,8 @@ type salesforce.FulfillmentOrderItemTax {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FulfillmentOrderItemTax.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -118,18 +118,18 @@ type salesforce.FulfillmentOrderItemTax {
   }
   salesforce.Lookup FulfillmentOrderLineItemId {
     apiName = "FulfillmentOrderItemTax.FulfillmentOrderLineItemId"
-    relationshipName = "FulfillmentOrderLineItem"
-    _required = true
     label = "Fulfillment Order Product ID"
+    _required = true
+    relationshipName = "FulfillmentOrderLineItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup FulfillmentOrderId {
     apiName = "FulfillmentOrderItemTax.FulfillmentOrderId"
-    relationshipName = "FulfillmentOrder"
-    _required = true
     label = "Fulfillment Order ID"
+    _required = true
+    relationshipName = "FulfillmentOrder"
     createable = true
     updateable = false
     queryable = true

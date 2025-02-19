@@ -7,8 +7,8 @@ type salesforce.PromptError {
   }
   salesforce.Lookup OwnerId {
     apiName = "PromptError.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.PromptError {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromptError.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -25,13 +25,13 @@ type salesforce.PromptError {
   }
   salesforce.Text Name {
     apiName = "PromptError.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -44,8 +44,8 @@ type salesforce.PromptError {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromptError.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.PromptError {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromptError.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -78,18 +78,18 @@ type salesforce.PromptError {
   }
   salesforce.Lookup PromptActionId {
     apiName = "PromptError.PromptActionId"
-    relationshipName = "PromptAction"
-    _required = true
     label = "Prompt Action ID"
+    _required = true
+    relationshipName = "PromptAction"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "PromptError.Type"
-    restricted = true
-    _required = true
     label = "Error Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -97,17 +97,17 @@ type salesforce.PromptError {
   salesforce.Number StepNumber {
     apiName = "PromptError.StepNumber"
     label = "Error Step Number"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Checkbox IsError {
     apiName = "PromptError.IsError"
-    defaultValue = false
     label = "Is Error"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true

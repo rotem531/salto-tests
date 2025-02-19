@@ -1,8 +1,8 @@
 type salesforce.WorkOrder {
   salesforce.Lookup AccountId {
     apiName = "WorkOrder.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
@@ -17,40 +17,40 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup AssetId {
     apiName = "WorkOrder.AssetId"
-    relationshipName = "Asset"
     label = "Asset ID"
+    relationshipName = "Asset"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup BusinessHoursId {
     apiName = "WorkOrder.BusinessHoursId"
-    relationshipName = "BusinessHours"
     label = "Business Hours ID"
+    relationshipName = "BusinessHours"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup CaseId {
     apiName = "WorkOrder.CaseId"
-    relationshipName = "Case"
     label = "Case ID"
+    relationshipName = "Case"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "WorkOrder.ContactId"
-    relationshipName = "Contact"
     label = "Contact ID"
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "WorkOrder.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -58,27 +58,27 @@ type salesforce.WorkOrder {
   salesforce.Percent Discount {
     apiName = "WorkOrder.Discount"
     label = "Discount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 5
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number Duration {
     apiName = "WorkOrder.Duration"
     label = "Duration"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Picklist DurationType {
     apiName = "WorkOrder.DurationType"
-    restricted = true
     label = "Duration Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -92,8 +92,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup EntitlementId {
     apiName = "WorkOrder.EntitlementId"
-    relationshipName = "Entitlement"
     label = "Entitlement ID"
+    relationshipName = "Entitlement"
     createable = true
     updateable = true
     queryable = true
@@ -101,17 +101,17 @@ type salesforce.WorkOrder {
   salesforce.Currency GrandTotal {
     apiName = "WorkOrder.GrandTotal"
     label = "Grand Total"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsClosed {
     apiName = "WorkOrder.IsClosed"
-    defaultValue = false
     label = "Is Closed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -119,8 +119,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Checkbox IsStopped {
     apiName = "WorkOrder.IsStopped"
-    defaultValue = false
     label = "Stopped"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -136,20 +136,20 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup LocationId {
     apiName = "WorkOrder.LocationId"
-    relationshipName = "Location"
     label = "Location ID"
+    relationshipName = "Location"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text MilestoneStatus {
     apiName = "WorkOrder.MilestoneStatus"
-    length = 30
     label = "Milestone Status"
-    createable = false
-    updateable = false
+    length = 30
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -159,8 +159,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup OwnerId {
     apiName = "WorkOrder.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -168,24 +168,24 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup ParentWorkOrderId {
     apiName = "WorkOrder.ParentWorkOrderId"
-    relationshipName = "ParentWorkOrder"
     label = "Parent Work Order ID"
+    relationshipName = "ParentWorkOrder"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "WorkOrder.Pricebook2Id"
-    relationshipName = "Pricebook2"
     label = "Price Book ID"
+    relationshipName = "Pricebook2"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Priority {
     apiName = "WorkOrder.Priority"
-    restricted = false
     label = "Priority"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -193,8 +193,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup RootWorkOrderId {
     apiName = "WorkOrder.RootWorkOrderId"
-    relationshipName = "RootWorkOrder"
     label = "Root Work Order ID"
+    relationshipName = "RootWorkOrder"
     createable = false
     updateable = false
     queryable = true
@@ -203,26 +203,26 @@ type salesforce.WorkOrder {
   salesforce.Number ServiceAppointmentCount {
     apiName = "WorkOrder.ServiceAppointmentCount"
     label = "Service Appointment Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ServiceContractId {
     apiName = "WorkOrder.ServiceContractId"
-    relationshipName = "ServiceContract"
     label = "Service Contract ID"
+    relationshipName = "ServiceContract"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "WorkOrder.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
     label = "Territory ID"
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = true
     queryable = true
@@ -251,8 +251,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Picklist Status {
     apiName = "WorkOrder.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -260,8 +260,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Picklist StatusCategory {
     apiName = "WorkOrder.StatusCategory"
-    restricted = true
     label = "Status Category"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -277,12 +277,12 @@ type salesforce.WorkOrder {
   }
   salesforce.Text Subject {
     apiName = "WorkOrder.Subject"
-    length = 255
     label = "Subject"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Summary Subtotal {
@@ -296,10 +296,10 @@ type salesforce.WorkOrder {
   salesforce.Currency Tax {
     apiName = "WorkOrder.Tax"
     label = "Tax"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Summary TotalPrice {
@@ -312,8 +312,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup WorkTypeId {
     apiName = "WorkOrder.WorkTypeId"
-    relationshipName = "WorkType"
     label = "Work Type ID"
+    relationshipName = "WorkType"
     createable = true
     updateable = true
     queryable = true
@@ -326,8 +326,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkOrder.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -351,8 +351,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkOrder.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -368,8 +368,8 @@ type salesforce.WorkOrder {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkOrder.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -386,11 +386,11 @@ type salesforce.WorkOrder {
   salesforce.Number DurationInMinutes {
     apiName = "WorkOrder.DurationInMinutes"
     label = "Duration in Minutes"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }

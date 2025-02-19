@@ -1,28 +1,28 @@
 type salesforce.DelegatedAccount {
   salesforce.Lookup ManagedById {
     apiName = "DelegatedAccount.ManagedById"
-    relationshipName = "ManagedBy"
-    _required = true
     label = "User ID"
+    _required = true
+    relationshipName = "ManagedBy"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "DelegatedAccount.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "DelegatedAccount.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -30,9 +30,9 @@ type salesforce.DelegatedAccount {
   }
   salesforce.Lookup TargetId {
     apiName = "DelegatedAccount.TargetId"
-    relationshipName = "Target"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Target"
     createable = true
     updateable = true
     queryable = true
@@ -45,8 +45,8 @@ type salesforce.DelegatedAccount {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DelegatedAccount.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.DelegatedAccount {
   }
   salesforce.Lookup CreatedById {
     apiName = "DelegatedAccount.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -79,8 +79,8 @@ type salesforce.DelegatedAccount {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DelegatedAccount.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -103,8 +103,8 @@ type salesforce.DelegatedAccount {
   }
   salesforce.Lookup ParentId {
     apiName = "DelegatedAccount.ParentId"
-    relationshipName = "Parent"
     label = "Account ID"
+    relationshipName = "Parent"
     createable = false
     updateable = false
     queryable = true

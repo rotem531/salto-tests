@@ -8,17 +8,17 @@ type salesforce.Problem {
   }
   salesforce.LongTextArea Description {
     apiName = "Problem.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Impact {
     apiName = "Problem.Impact"
-    restricted = false
-    _required = true
     label = "Impact"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -26,8 +26,8 @@ type salesforce.Problem {
   }
   salesforce.Lookup OwnerId {
     apiName = "Problem.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -35,29 +35,29 @@ type salesforce.Problem {
   }
   salesforce.Hierarchy ParentProblemId {
     apiName = "Problem.ParentProblemId"
-    relationshipName = "ParentProblem"
     label = "Parent Problem ID"
+    relationshipName = "ParentProblem"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Priority {
     apiName = "Problem.Priority"
-    restricted = false
-    _required = true
     label = "Priority"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text PriorityOverrideReason {
     apiName = "Problem.PriorityOverrideReason"
-    length = 255
     label = "Priority Override Reason"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime ResolutionDateTime {
@@ -69,41 +69,41 @@ type salesforce.Problem {
   }
   salesforce.LongTextArea ResolutionSummary {
     apiName = "Problem.ResolutionSummary"
-    length = 32000
     label = "Resolution Summary"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ResolvedById {
     apiName = "Problem.ResolvedById"
-    relationshipName = "ResolvedBy"
     label = "User ID"
+    relationshipName = "ResolvedBy"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea RootCauseSummary {
     apiName = "Problem.RootCauseSummary"
-    length = 32000
     label = "Root Cause Summary"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "Problem.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StatusCode {
     apiName = "Problem.StatusCode"
-    restricted = true
     label = "Status Code"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -118,20 +118,20 @@ type salesforce.Problem {
   }
   salesforce.Text Subject {
     apiName = "Problem.Subject"
-    length = 255
-    _required = true
     label = "Subject"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Urgency {
     apiName = "Problem.Urgency"
-    restricted = false
-    _required = true
     label = "Urgency"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -145,8 +145,8 @@ type salesforce.Problem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Problem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -170,8 +170,8 @@ type salesforce.Problem {
   }
   salesforce.Lookup CreatedById {
     apiName = "Problem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -187,8 +187,8 @@ type salesforce.Problem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Problem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

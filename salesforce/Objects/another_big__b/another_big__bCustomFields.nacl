@@ -6,9 +6,9 @@ type salesforce.another_big__b {
     length = 90
     _required = true
     unique = false
+    caseSensitive = false
     createable = true
     updateable = false
-    caseSensitive = false
     queryable = true
   }
 }

@@ -1,71 +1,71 @@
 type salesforce.WebCartAdjustmentGroup {
   salesforce.Lookup AdjustmentBasisReferenceId {
     apiName = "WebCartAdjustmentGroup.AdjustmentBasisReferenceId"
-    relationshipName = "AdjustmentBasisReference"
     label = "Coupon ID"
+    relationshipName = "AdjustmentBasisReference"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentSource {
     apiName = "WebCartAdjustmentGroup.AdjustmentSource"
-    restricted = true
-    _required = true
     label = "Adjustment Source"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentTargetType {
     apiName = "WebCartAdjustmentGroup.AdjustmentTargetType"
-    restricted = true
-    _required = true
     label = "Target Type for the Adjustment"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentType {
     apiName = "WebCartAdjustmentGroup.AdjustmentType"
-    restricted = true
-    _required = true
     label = "Adjustment Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Number AdjustmentValue {
     apiName = "WebCartAdjustmentGroup.AdjustmentValue"
-    _required = true
     label = "Adjustment Value"
-    precision = 18
+    _required = true
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.MasterDetail CartId {
     apiName = "WebCartAdjustmentGroup.CartId"
-    relationshipName = "Cart"
-    _required = true
     label = "Cart ID"
+    _required = true
+    relationshipName = "Cart"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "WebCartAdjustmentGroup.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup PriceAdjustmentCauseId {
     apiName = "WebCartAdjustmentGroup.PriceAdjustmentCauseId"
-    relationshipName = "PriceAdjustmentCause"
     label = "Promotion ID"
+    relationshipName = "PriceAdjustmentCause"
     createable = true
     updateable = true
     queryable = true
@@ -73,38 +73,38 @@ type salesforce.WebCartAdjustmentGroup {
   salesforce.Number Priority {
     apiName = "WebCartAdjustmentGroup.Priority"
     label = "Priority Order for Adjustments"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Currency TaxAmount {
     apiName = "WebCartAdjustmentGroup.TaxAmount"
     label = "Tax Amount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency TotalAmount {
     apiName = "WebCartAdjustmentGroup.TotalAmount"
     label = "Total Adjustment Amount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency TotalAmountWithTax {
     apiName = "WebCartAdjustmentGroup.TotalAmountWithTax"
     label = "Total Adjustment Amount With Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -116,8 +116,8 @@ type salesforce.WebCartAdjustmentGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebCartAdjustmentGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -125,13 +125,13 @@ type salesforce.WebCartAdjustmentGroup {
   }
   salesforce.Text Name {
     apiName = "WebCartAdjustmentGroup.Name"
-    length = 255
-    _required = true
     label = "Cart Adjustment Group Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -144,8 +144,8 @@ type salesforce.WebCartAdjustmentGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebCartAdjustmentGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -161,8 +161,8 @@ type salesforce.WebCartAdjustmentGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebCartAdjustmentGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

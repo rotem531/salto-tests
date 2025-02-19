@@ -1,40 +1,40 @@
 type salesforce.ReturnOrder {
   salesforce.Lookup AccountId {
     apiName = "ReturnOrder.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup CaseId {
     apiName = "ReturnOrder.CaseId"
-    relationshipName = "Case"
     label = "Case ID"
+    relationshipName = "Case"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "ReturnOrder.ContactId"
-    relationshipName = "Contact"
     label = "Contact ID"
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ReturnOrder.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup DestinationLocationId {
     apiName = "ReturnOrder.DestinationLocationId"
-    relationshipName = "DestinationLocation"
     label = "Destination Location ID"
+    relationshipName = "DestinationLocation"
     createable = true
     updateable = true
     queryable = true
@@ -63,8 +63,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Picklist LifeCycleType {
     apiName = "ReturnOrder.LifeCycleType"
-    restricted = true
     label = "Life Cycle Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -72,16 +72,16 @@ type salesforce.ReturnOrder {
   }
   salesforce.Lookup OrderId {
     apiName = "ReturnOrder.OrderId"
-    relationshipName = "Order"
     label = "Order ID"
+    relationshipName = "Order"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ReturnOrder.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Lookup ReturnedById {
     apiName = "ReturnOrder.ReturnedById"
-    relationshipName = "ReturnedBy"
     label = "Returned By ID"
+    relationshipName = "ReturnedBy"
     createable = true
     updateable = true
     queryable = true
@@ -105,32 +105,32 @@ type salesforce.ReturnOrder {
   }
   salesforce.Picklist ShipmentType {
     apiName = "ReturnOrder.ShipmentType"
-    restricted = false
     label = "Shipment Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup SourceLocationId {
     apiName = "ReturnOrder.SourceLocationId"
-    relationshipName = "SourceLocation"
     label = "Source Location ID"
+    relationshipName = "SourceLocation"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "ReturnOrder.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StatusCategory {
     apiName = "ReturnOrder.StatusCategory"
-    restricted = true
     label = "Status Category"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -138,8 +138,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Picklist TaxLocaleType {
     apiName = "ReturnOrder.TaxLocaleType"
-    restricted = true
     label = "Tax Locale Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -265,8 +265,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ReturnOrder.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -290,8 +290,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Lookup CreatedById {
     apiName = "ReturnOrder.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -307,8 +307,8 @@ type salesforce.ReturnOrder {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ReturnOrder.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

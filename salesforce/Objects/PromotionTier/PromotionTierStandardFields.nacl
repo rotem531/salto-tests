@@ -1,20 +1,20 @@
 type salesforce.PromotionTier {
   salesforce.Text Name {
     apiName = "PromotionTier.Name"
-    length = 255
-    _required = true
     label = "Promotion Tier Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.MasterDetail PromotionId {
     apiName = "PromotionTier.PromotionId"
-    relationshipName = "Promotion"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "Promotion"
     createable = true
     updateable = false
     queryable = true
@@ -22,11 +22,11 @@ type salesforce.PromotionTier {
   salesforce.Number Rank {
     apiName = "PromotionTier.Rank"
     label = "Rank"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -37,8 +37,8 @@ type salesforce.PromotionTier {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionTier.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -54,8 +54,8 @@ type salesforce.PromotionTier {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionTier.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -71,8 +71,8 @@ type salesforce.PromotionTier {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionTier.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

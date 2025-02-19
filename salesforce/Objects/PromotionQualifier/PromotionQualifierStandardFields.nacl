@@ -2,20 +2,20 @@ type salesforce.PromotionQualifier {
   salesforce.Currency MinimumAmount {
     apiName = "PromotionQualifier.MinimumAmount"
     label = "Minimum Amount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number MinimumQuantity {
     apiName = "PromotionQualifier.MinimumQuantity"
     label = "Minimum Quantity"
-    precision = 18
     scale = 4
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.AutoNumber Name {
@@ -28,76 +28,76 @@ type salesforce.PromotionQualifier {
   }
   salesforce.MasterDetail PromotionId {
     apiName = "PromotionQualifier.PromotionId"
-    relationshipName = "Promotion"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "Promotion"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup PromotionTierId {
     apiName = "PromotionQualifier.PromotionTierId"
-    relationshipName = "PromotionTier"
     label = "Promotion Tier ID"
+    relationshipName = "PromotionTier"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup QualifierId {
     apiName = "PromotionQualifier.QualifierId"
-    relationshipName = "Qualifier"
     label = "Qualifier ID"
+    relationshipName = "Qualifier"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist QualifierOperator {
     apiName = "PromotionQualifier.QualifierOperator"
-    restricted = true
-    _required = true
     label = "Qualifier Operator"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text QualifierProductCategoryName {
     apiName = "PromotionQualifier.QualifierProductCategoryName"
-    length = 200
     label = "Qualifier Category Name"
-    createable = false
-    updateable = false
+    length = 200
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text QualifierProductName {
     apiName = "PromotionQualifier.QualifierProductName"
-    length = 255
     label = "Qualifier Product Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text QualifierProductSku {
     apiName = "PromotionQualifier.QualifierProductSku"
-    length = 180
     label = "Qualifier Product SKU"
-    createable = false
-    updateable = false
+    length = 180
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist QualifierType {
     apiName = "PromotionQualifier.QualifierType"
-    restricted = true
-    _required = true
     label = "Qualifier Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.PromotionQualifier {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionQualifier.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.PromotionQualifier {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionQualifier.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -144,8 +144,8 @@ type salesforce.PromotionQualifier {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionQualifier.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -161,9 +161,9 @@ type salesforce.PromotionQualifier {
   }
   salesforce.Picklist QualifierRuleCriteriaType {
     apiName = "PromotionQualifier.QualifierRuleCriteriaType"
-    restricted = true
-    _required = true
     label = "Qualifier Rule Criteria Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true

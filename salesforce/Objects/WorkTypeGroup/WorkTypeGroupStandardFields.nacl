@@ -8,44 +8,44 @@ type salesforce.WorkTypeGroup {
   }
   salesforce.LongTextArea Description {
     apiName = "WorkTypeGroup.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist GroupType {
     apiName = "WorkTypeGroup.GroupType"
-    restricted = true
-    _required = true
     label = "Group Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "WorkTypeGroup.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "WorkTypeGroup.Name"
-    length = 255
-    _required = true
     label = "Work Type Group Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "WorkTypeGroup.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.WorkTypeGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkTypeGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.WorkTypeGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkTypeGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +93,8 @@ type salesforce.WorkTypeGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkTypeGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

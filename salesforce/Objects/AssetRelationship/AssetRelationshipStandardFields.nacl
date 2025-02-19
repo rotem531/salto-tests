@@ -1,9 +1,9 @@
 type salesforce.AssetRelationship {
   salesforce.MasterDetail AssetId {
     apiName = "AssetRelationship.AssetId"
-    relationshipName = "Asset"
-    _required = true
     label = "Asset ID"
+    _required = true
+    relationshipName = "Asset"
     createable = true
     updateable = false
     queryable = true
@@ -17,17 +17,17 @@ type salesforce.AssetRelationship {
   }
   salesforce.Lookup RelatedAssetId {
     apiName = "AssetRelationship.RelatedAssetId"
-    relationshipName = "RelatedAsset"
-    _required = true
     label = "Asset ID"
+    _required = true
+    relationshipName = "RelatedAsset"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RelationshipType {
     apiName = "AssetRelationship.RelationshipType"
-    restricted = false
     label = "Relationship Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -47,8 +47,8 @@ type salesforce.AssetRelationship {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssetRelationship.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -72,8 +72,8 @@ type salesforce.AssetRelationship {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssetRelationship.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.AssetRelationship {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssetRelationship.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

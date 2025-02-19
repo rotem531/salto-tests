@@ -1,37 +1,37 @@
 type salesforce.AppointmentCategory {
   salesforce.Checkbox IsDropIn {
     apiName = "AppointmentCategory.IsDropIn"
-    defaultValue = false
     label = "Drop In"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsGroup {
     apiName = "AppointmentCategory.IsGroup"
-    defaultValue = false
     label = "Group"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsScheduled {
     apiName = "AppointmentCategory.IsScheduled"
-    defaultValue = false
     label = "Regular"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "AppointmentCategory.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -42,8 +42,8 @@ type salesforce.AppointmentCategory {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AppointmentCategory.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.AppointmentCategory {
   }
   salesforce.Lookup CreatedById {
     apiName = "AppointmentCategory.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.AppointmentCategory {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AppointmentCategory.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

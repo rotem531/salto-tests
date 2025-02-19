@@ -1,21 +1,21 @@
 type salesforce.BatchJob {
   salesforce.Lookup BatchJobDefinitionId {
     apiName = "BatchJob.BatchJobDefinitionId"
-    relationshipName = "BatchJobDefinition"
     label = "Batch Job Definition ID"
+    relationshipName = "BatchJobDefinition"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text BatchJobDefinitionName {
     apiName = "BatchJob.BatchJobDefinitionName"
-    length = 80
-    _required = true
     label = "Batch Job Definition Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime EndTime {
@@ -27,65 +27,65 @@ type salesforce.BatchJob {
   }
   salesforce.Text ErrorDescription {
     apiName = "BatchJob.ErrorDescription"
-    length = 1333
     label = "Error Description"
-    createable = true
-    updateable = true
+    length = 1333
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text ExternalReference {
     apiName = "BatchJob.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox IsDebugOn {
     apiName = "BatchJob.IsDebugOn"
-    defaultValue = false
     label = "Is Debug On"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsDebugRecipeDeleted {
     apiName = "BatchJob.IsDebugRecipeDeleted"
-    defaultValue = false
     label = "Is Debug Recipe Deleted"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text ProcessGroup {
     apiName = "BatchJob.ProcessGroup"
-    length = 80
-    _required = true
     label = "Group"
-    createable = true
-    updateable = true
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number RetryCount {
     apiName = "BatchJob.RetryCount"
     label = "Retry Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.LongTextArea RuntimeParameter {
     apiName = "BatchJob.RuntimeParameter"
-    length = 100000
     label = "Runtime Parameter"
+    length = 100000
     createable = true
     updateable = true
     queryable = true
@@ -99,18 +99,18 @@ type salesforce.BatchJob {
   }
   salesforce.Picklist Status {
     apiName = "BatchJob.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "BatchJob.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -123,8 +123,8 @@ type salesforce.BatchJob {
   }
   salesforce.Lookup OwnerId {
     apiName = "BatchJob.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -132,8 +132,8 @@ type salesforce.BatchJob {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "BatchJob.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -141,13 +141,13 @@ type salesforce.BatchJob {
   }
   salesforce.Text Name {
     apiName = "BatchJob.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -160,8 +160,8 @@ type salesforce.BatchJob {
   }
   salesforce.Lookup CreatedById {
     apiName = "BatchJob.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -177,8 +177,8 @@ type salesforce.BatchJob {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "BatchJob.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

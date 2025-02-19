@@ -5,9 +5,9 @@ type salesforce.Lead {
     label = "Current Generator(s)"
     length = 100
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
   salesforce.Number NumberofLocations__c {
@@ -87,9 +87,9 @@ type salesforce.Lead {
     label = "SIC Code"
     length = 15
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
 }

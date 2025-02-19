@@ -7,8 +7,8 @@ type salesforce.OrgDeleteRequest {
   }
   salesforce.Lookup OwnerId {
     apiName = "OrgDeleteRequest.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = false
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.OrgDeleteRequest {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrgDeleteRequest.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -41,8 +41,8 @@ type salesforce.OrgDeleteRequest {
   }
   salesforce.Lookup CreatedById {
     apiName = "OrgDeleteRequest.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.OrgDeleteRequest {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrgDeleteRequest.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -75,9 +75,9 @@ type salesforce.OrgDeleteRequest {
   }
   salesforce.Picklist RequestType {
     apiName = "OrgDeleteRequest.RequestType"
-    restricted = true
-    _required = true
     label = "Request Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true

@@ -1,21 +1,21 @@
 type salesforce.FlowOrchestrationStageInstance {
   salesforce.Text Label {
     apiName = "FlowOrchestrationStageInstance.Label"
-    length = 80
-    _required = true
     label = "Label"
-    createable = false
-    updateable = false
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OrchestrationInstanceId {
     apiName = "FlowOrchestrationStageInstance.OrchestrationInstanceId"
-    relationshipName = "OrchestrationInstance"
-    _required = true
     label = "Orchestration Run ID"
+    _required = true
+    relationshipName = "OrchestrationInstance"
     createable = false
     updateable = false
     queryable = true
@@ -23,9 +23,9 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Picklist Status {
     apiName = "FlowOrchestrationStageInstance.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -39,8 +39,8 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Lookup OwnerId {
     apiName = "FlowOrchestrationStageInstance.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = true
     queryable = true
@@ -48,8 +48,8 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FlowOrchestrationStageInstance.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -57,13 +57,13 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Text Name {
     apiName = "FlowOrchestrationStageInstance.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = false
-    updateable = false
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -77,8 +77,8 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Lookup CreatedById {
     apiName = "FlowOrchestrationStageInstance.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FlowOrchestrationStageInstance.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -111,13 +111,13 @@ type salesforce.FlowOrchestrationStageInstance {
   }
   salesforce.Number Position {
     apiName = "FlowOrchestrationStageInstance.Position"
-    _required = true
     label = "Position"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }

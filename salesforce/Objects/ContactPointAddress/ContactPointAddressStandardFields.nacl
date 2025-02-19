@@ -23,8 +23,8 @@ type salesforce.ContactPointAddress {
   }
   salesforce.Picklist AddressType {
     apiName = "ContactPointAddress.AddressType"
-    restricted = false
     label = "Address Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -45,59 +45,59 @@ type salesforce.ContactPointAddress {
   }
   salesforce.Picklist BestTimeToContactTimezone {
     apiName = "ContactPointAddress.BestTimeToContactTimezone"
-    restricted = true
     label = "Best time to contact time zone"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ContactPointPhoneId {
     apiName = "ContactPointAddress.ContactPointPhoneId"
-    relationshipName = "ContactPointPhone"
     label = "Contact Point Phone ID"
+    relationshipName = "ContactPointPhone"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsDefault {
     apiName = "ContactPointAddress.IsDefault"
-    defaultValue = false
     label = "Is Default Address"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsPrimary {
     apiName = "ContactPointAddress.IsPrimary"
-    defaultValue = false
     label = "Is Primary"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsThirdPartyAddress {
     apiName = "ContactPointAddress.IsThirdPartyAddress"
-    defaultValue = false
     label = "Is Third-Party Address"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ContactPointAddress.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContactPointAddress.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.ContactPointAddress {
   }
   salesforce.MasterDetail ParentId {
     apiName = "ContactPointAddress.ParentId"
-    relationshipName = "Parent"
     label = "Parent ID"
+    relationshipName = "Parent"
     createable = true
     updateable = true
     queryable = true
@@ -114,17 +114,17 @@ type salesforce.ContactPointAddress {
   salesforce.Number PreferenceRank {
     apiName = "ContactPointAddress.PreferenceRank"
     label = "Preference Rank"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist UsageType {
     apiName = "ContactPointAddress.UsageType"
-    restricted = false
     label = "Usage Type"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.ContactPointAddress {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactPointAddress.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +154,8 @@ type salesforce.ContactPointAddress {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactPointAddress.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -171,8 +171,8 @@ type salesforce.ContactPointAddress {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointAddress.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

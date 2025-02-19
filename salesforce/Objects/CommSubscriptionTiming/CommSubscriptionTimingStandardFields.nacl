@@ -2,9 +2,9 @@ type salesforce.CommSubscriptionTiming {
   salesforce.MasterDetail CommSubscriptionConsentId {
     apiName = "CommSubscriptionTiming.CommSubscriptionConsentId"
     inlineHelpText = "The communication subscription consent record associated with the communication subscription timing."
-    relationshipName = "CommSubscriptionConsent"
-    _required = true
     label = "Communication Subscription Consent ID"
+    _required = true
+    relationshipName = "CommSubscriptionConsent"
     createable = true
     updateable = false
     queryable = true
@@ -32,9 +32,9 @@ type salesforce.CommSubscriptionTiming {
   salesforce.Picklist Unit {
     apiName = "CommSubscriptionTiming.Unit"
     inlineHelpText = "The unit of time that works with Offset to determine the communication timing."
-    restricted = true
-    _required = true
     label = "Unit"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -47,8 +47,8 @@ type salesforce.CommSubscriptionTiming {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CommSubscriptionTiming.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -72,8 +72,8 @@ type salesforce.CommSubscriptionTiming {
   }
   salesforce.Lookup CreatedById {
     apiName = "CommSubscriptionTiming.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.CommSubscriptionTiming {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CommSubscriptionTiming.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

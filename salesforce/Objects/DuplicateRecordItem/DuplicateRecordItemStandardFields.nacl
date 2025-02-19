@@ -1,18 +1,18 @@
 type salesforce.DuplicateRecordItem {
   salesforce.MasterDetail DuplicateRecordSetId {
     apiName = "DuplicateRecordItem.DuplicateRecordSetId"
-    relationshipName = "DuplicateRecordSet"
-    _required = true
     label = "Duplicate Record Set ID"
+    _required = true
+    relationshipName = "DuplicateRecordSet"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup RecordId {
     apiName = "DuplicateRecordItem.RecordId"
-    relationshipName = "Record"
-    _required = true
     label = "Record ID"
+    _required = true
+    relationshipName = "Record"
     createable = true
     updateable = true
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.DuplicateRecordItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DuplicateRecordItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.DuplicateRecordItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "DuplicateRecordItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.DuplicateRecordItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DuplicateRecordItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

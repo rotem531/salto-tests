@@ -1,12 +1,12 @@
 type salesforce.PaymentLineInvoice {
   salesforce.Currency Amount {
     apiName = "PaymentLineInvoice.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.DateTime AppliedDate {
@@ -18,24 +18,24 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.Lookup AssociatedAccountId {
     apiName = "PaymentLineInvoice.AssociatedAccountId"
-    relationshipName = "AssociatedAccount"
     label = "Account ID"
+    relationshipName = "AssociatedAccount"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup AssociatedPaymentLineId {
     apiName = "PaymentLineInvoice.AssociatedPaymentLineId"
-    relationshipName = "AssociatedPaymentLine"
     label = "Payment Line Invoice ID"
+    relationshipName = "AssociatedPaymentLine"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Comments {
     apiName = "PaymentLineInvoice.Comments"
-    length = 1000
     label = "Comments"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
@@ -64,9 +64,9 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.Picklist HasBeenUnapplied {
     apiName = "PaymentLineInvoice.HasBeenUnapplied"
-    restricted = true
-    _required = true
     label = "Has Been Unapplied"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -81,9 +81,9 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.MasterDetail InvoiceId {
     apiName = "PaymentLineInvoice.InvoiceId"
-    relationshipName = "Invoice"
-    _required = true
     label = "Invoice ID"
+    _required = true
+    relationshipName = "Invoice"
     createable = true
     updateable = false
     queryable = true
@@ -91,27 +91,27 @@ type salesforce.PaymentLineInvoice {
   salesforce.Currency PaymentBalance {
     apiName = "PaymentLineInvoice.PaymentBalance"
     label = "Payment Balance"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup PaymentId {
     apiName = "PaymentLineInvoice.PaymentId"
-    relationshipName = "Payment"
-    _required = true
     label = "Payment ID"
+    _required = true
+    relationshipName = "Payment"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "PaymentLineInvoice.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -131,8 +131,8 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PaymentLineInvoice.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -156,8 +156,8 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.Lookup CreatedById {
     apiName = "PaymentLineInvoice.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -173,8 +173,8 @@ type salesforce.PaymentLineInvoice {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PaymentLineInvoice.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

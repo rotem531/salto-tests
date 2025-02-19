@@ -1,36 +1,36 @@
 type salesforce.ReturnOrderItemAdjustment {
   salesforce.Currency Amount {
     apiName = "ReturnOrderItemAdjustment.Amount"
-    _required = true
     label = "Adjustment"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ReturnOrderItemAdjustment.Description"
-    length = 1175
     label = "Description"
+    length = 1175
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ReturnOrderId {
     apiName = "ReturnOrderItemAdjustment.ReturnOrderId"
-    relationshipName = "ReturnOrder"
-    _required = true
     label = "Return Order ID"
+    _required = true
+    relationshipName = "ReturnOrder"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail ReturnOrderLineItemId {
     apiName = "ReturnOrderItemAdjustment.ReturnOrderLineItemId"
-    relationshipName = "ReturnOrderLineItem"
-    _required = true
     label = "Return Order Line Item ID"
+    _required = true
+    relationshipName = "ReturnOrderLineItem"
     createable = true
     updateable = false
     queryable = true
@@ -38,20 +38,20 @@ type salesforce.ReturnOrderItemAdjustment {
   salesforce.Currency TotalAmtWithTax {
     apiName = "ReturnOrderItemAdjustment.TotalAmtWithTax"
     label = "Adjustment with Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTaxAmount {
     apiName = "ReturnOrderItemAdjustment.TotalTaxAmount"
     label = "Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -63,8 +63,8 @@ type salesforce.ReturnOrderItemAdjustment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ReturnOrderItemAdjustment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -88,8 +88,8 @@ type salesforce.ReturnOrderItemAdjustment {
   }
   salesforce.Lookup CreatedById {
     apiName = "ReturnOrderItemAdjustment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.ReturnOrderItemAdjustment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ReturnOrderItemAdjustment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

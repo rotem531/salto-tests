@@ -1,9 +1,9 @@
 type salesforce.CalculationMatrixRow {
   salesforce.MasterDetail CalculationMatrixVersionId {
     apiName = "CalculationMatrixRow.CalculationMatrixVersionId"
-    relationshipName = "CalculationMatrixVersion"
-    _required = true
     label = "Decision Matrix Version ID"
+    _required = true
+    relationshipName = "CalculationMatrixVersion"
     createable = true
     updateable = true
     queryable = true
@@ -17,37 +17,37 @@ type salesforce.CalculationMatrixRow {
   }
   salesforce.LongTextArea InputData {
     apiName = "CalculationMatrixRow.InputData"
-    length = 131072
     label = "Input Data"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CalculationMatrixRow.Name"
-    length = 255
-    _required = true
     label = "HashKey"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Namespace {
     apiName = "CalculationMatrixRow.Namespace"
-    length = 255
     label = "Namespace"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea OutputData {
     apiName = "CalculationMatrixRow.OutputData"
-    length = 131072
     label = "Output Data"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.CalculationMatrixRow {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CalculationMatrixRow.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.CalculationMatrixRow {
   }
   salesforce.Lookup CreatedById {
     apiName = "CalculationMatrixRow.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -101,8 +101,8 @@ type salesforce.CalculationMatrixRow {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CalculationMatrixRow.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -118,8 +118,8 @@ type salesforce.CalculationMatrixRow {
   }
   salesforce.Checkbox IsVersionEnabled {
     apiName = "CalculationMatrixRow.IsVersionEnabled"
-    defaultValue = false
     label = "Version Enabled"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

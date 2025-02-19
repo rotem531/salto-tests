@@ -1,87 +1,87 @@
 type salesforce.CartItemPriceAdjustment {
   salesforce.Picklist AdjustmentAmountScope {
     apiName = "CartItemPriceAdjustment.AdjustmentAmountScope"
-    restricted = true
     label = "Adjustment Amount Scope"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup AdjustmentBasisReferenceId {
     apiName = "CartItemPriceAdjustment.AdjustmentBasisReferenceId"
-    relationshipName = "AdjustmentBasisReference"
     label = "Coupon ID"
+    relationshipName = "AdjustmentBasisReference"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentSource {
     apiName = "CartItemPriceAdjustment.AdjustmentSource"
-    restricted = true
-    _required = true
     label = "Adjustment Source"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentTargetType {
     apiName = "CartItemPriceAdjustment.AdjustmentTargetType"
-    restricted = true
-    _required = true
     label = "Target Type for the Adjustment"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentType {
     apiName = "CartItemPriceAdjustment.AdjustmentType"
-    restricted = true
-    _required = true
     label = "Adjustment Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Number AdjustmentValue {
     apiName = "CartItemPriceAdjustment.AdjustmentValue"
-    _required = true
     label = "Adjustment Value"
-    precision = 18
+    _required = true
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup CartId {
     apiName = "CartItemPriceAdjustment.CartId"
-    relationshipName = "Cart"
     label = "Cart ID"
+    relationshipName = "Cart"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail CartItemId {
     apiName = "CartItemPriceAdjustment.CartItemId"
-    relationshipName = "CartItem"
-    _required = true
     label = "Cart Item ID"
+    _required = true
+    relationshipName = "CartItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "CartItemPriceAdjustment.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup PriceAdjustmentCauseId {
     apiName = "CartItemPriceAdjustment.PriceAdjustmentCauseId"
-    relationshipName = "PriceAdjustmentCause"
     label = "Promotion ID"
+    relationshipName = "PriceAdjustmentCause"
     createable = true
     updateable = true
     queryable = true
@@ -89,57 +89,57 @@ type salesforce.CartItemPriceAdjustment {
   salesforce.Number Priority {
     apiName = "CartItemPriceAdjustment.Priority"
     label = "Priority Order for Adjustments"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Currency TotalAmount {
     apiName = "CartItemPriceAdjustment.TotalAmount"
-    _required = true
     label = "Total Amount"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency TotalGrossAmount {
     apiName = "CartItemPriceAdjustment.TotalGrossAmount"
     label = "Total Gross Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalNetAmount {
     apiName = "CartItemPriceAdjustment.TotalNetAmount"
     label = "Total Net Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTax {
     apiName = "CartItemPriceAdjustment.TotalTax"
     label = "Total Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup WebCartAdjustmentGroupId {
     apiName = "CartItemPriceAdjustment.WebCartAdjustmentGroupId"
-    relationshipName = "WebCartAdjustmentGroup"
     label = "Cart Adjustment Group ID"
+    relationshipName = "WebCartAdjustmentGroup"
     createable = true
     updateable = true
     queryable = true
@@ -152,8 +152,8 @@ type salesforce.CartItemPriceAdjustment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CartItemPriceAdjustment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -161,13 +161,13 @@ type salesforce.CartItemPriceAdjustment {
   }
   salesforce.Text Name {
     apiName = "CartItemPriceAdjustment.Name"
-    length = 255
-    _required = true
     label = "Cart Item Price Adjustment Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -180,8 +180,8 @@ type salesforce.CartItemPriceAdjustment {
   }
   salesforce.Lookup CreatedById {
     apiName = "CartItemPriceAdjustment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -197,8 +197,8 @@ type salesforce.CartItemPriceAdjustment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CartItemPriceAdjustment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

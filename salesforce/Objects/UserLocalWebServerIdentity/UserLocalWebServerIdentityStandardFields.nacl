@@ -7,8 +7,8 @@ type salesforce.UserLocalWebServerIdentity {
   }
   salesforce.Lookup OwnerId {
     apiName = "UserLocalWebServerIdentity.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.UserLocalWebServerIdentity {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "UserLocalWebServerIdentity.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.UserLocalWebServerIdentity {
   }
   salesforce.Lookup CreatedById {
     apiName = "UserLocalWebServerIdentity.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.UserLocalWebServerIdentity {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "UserLocalWebServerIdentity.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,12 +67,12 @@ type salesforce.UserLocalWebServerIdentity {
   }
   salesforce.Text LocalWebServerIdentityToken {
     apiName = "UserLocalWebServerIdentity.LocalWebServerIdentityToken"
-    length = 255
     label = "Local Web Server Identity Token"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
 }

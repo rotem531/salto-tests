@@ -1,16 +1,16 @@
 type salesforce.Waitlist {
   salesforce.LongTextArea Description {
     apiName = "Waitlist.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "Waitlist.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -21,20 +21,20 @@ type salesforce.Waitlist {
   }
   salesforce.Text Name {
     apiName = "Waitlist.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "Waitlist.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
-    _required = true
     label = "Territory ID"
+    _required = true
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = false
     queryable = true
@@ -51,8 +51,8 @@ type salesforce.Waitlist {
   }
   salesforce.Lookup OwnerId {
     apiName = "Waitlist.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.Waitlist {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Waitlist.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.Waitlist {
   }
   salesforce.Lookup CreatedById {
     apiName = "Waitlist.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.Waitlist {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Waitlist.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

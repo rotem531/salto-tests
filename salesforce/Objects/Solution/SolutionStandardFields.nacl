@@ -1,44 +1,44 @@
 type salesforce.Solution {
   salesforce.Checkbox IsPublished {
     apiName = "Solution.IsPublished"
-    defaultValue = false
     label = "Public"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsPublishedInPublicKb {
     apiName = "Solution.IsPublishedInPublicKb"
-    defaultValue = false
     label = "Visible in Public Knowledge Base"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text SolutionName {
     apiName = "Solution.SolutionName"
-    length = 255
-    _required = true
     label = "Title"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Html SolutionNote {
     apiName = "Solution.SolutionNote"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "Solution.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.Solution {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Solution.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.Solution {
   }
   salesforce.Checkbox IsReviewed {
     apiName = "Solution.IsReviewed"
-    defaultValue = false
     label = "Reviewed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.Solution {
   }
   salesforce.Lookup OwnerId {
     apiName = "Solution.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.Solution {
   }
   salesforce.Lookup CreatedById {
     apiName = "Solution.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -112,8 +112,8 @@ type salesforce.Solution {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Solution.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -129,20 +129,20 @@ type salesforce.Solution {
   }
   salesforce.Number TimesUsed {
     apiName = "Solution.TimesUsed"
-    _required = true
     label = "Num Related Cases"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsHtml {
     apiName = "Solution.IsHtml"
-    defaultValue = false
     label = "Is Html"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

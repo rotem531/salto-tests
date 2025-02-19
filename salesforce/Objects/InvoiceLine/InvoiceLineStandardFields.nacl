@@ -2,58 +2,58 @@ type salesforce.InvoiceLine {
   salesforce.Currency AdjustmentAmount {
     apiName = "InvoiceLine.AdjustmentAmount"
     label = "Adjustment Amount"
-    createable = false
-    updateable = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Currency AdjustmentAmountWithTax {
     apiName = "InvoiceLine.AdjustmentAmountWithTax"
     label = "Adjustment Amount with Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency AdjustmentTaxAmount {
     apiName = "InvoiceLine.AdjustmentTaxAmount"
     label = "Adjustment Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency ChargeAmount {
     apiName = "InvoiceLine.ChargeAmount"
     label = "Charge Amount"
-    createable = false
-    updateable = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Currency ChargeAmountWithTax {
     apiName = "InvoiceLine.ChargeAmountWithTax"
     label = "Charge Amount with Tax"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency ChargeTaxAmount {
     apiName = "InvoiceLine.ChargeTaxAmount"
     label = "Charge Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -75,19 +75,19 @@ type salesforce.InvoiceLine {
   }
   salesforce.Text Description {
     apiName = "InvoiceLine.Description"
-    length = 255
     label = "Description"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.MasterDetail InvoiceId {
     apiName = "InvoiceLine.InvoiceId"
-    relationshipName = "Invoice"
-    _required = true
     label = "Invoice ID"
+    _required = true
+    relationshipName = "Invoice"
     createable = false
     updateable = false
     queryable = true
@@ -95,28 +95,28 @@ type salesforce.InvoiceLine {
   }
   salesforce.Date InvoiceLineEndDate {
     apiName = "InvoiceLine.InvoiceLineEndDate"
-    _required = true
     label = "Invoice Line End Date"
+    _required = true
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Date InvoiceLineStartDate {
     apiName = "InvoiceLine.InvoiceLineStartDate"
-    _required = true
     label = "Invoice Line Start Date"
+    _required = true
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text InvoiceStatus {
     apiName = "InvoiceLine.InvoiceStatus"
-    length = 50
     label = "Status"
-    createable = false
-    updateable = false
+    length = 50
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -130,19 +130,19 @@ type salesforce.InvoiceLine {
   }
   salesforce.Text Name {
     apiName = "InvoiceLine.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "InvoiceLine.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = false
     updateable = true
     queryable = true
@@ -150,33 +150,33 @@ type salesforce.InvoiceLine {
   salesforce.Number Quantity {
     apiName = "InvoiceLine.Quantity"
     label = "Quantity"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = false
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup ReferenceEntityItemId {
     apiName = "InvoiceLine.ReferenceEntityItemId"
-    relationshipName = "ReferenceEntityItem"
     label = "ReferenceEntityItem ID"
+    relationshipName = "ReferenceEntityItem"
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Picklist ReferenceEntityItemTypeCode {
     apiName = "InvoiceLine.ReferenceEntityItemTypeCode"
-    restricted = true
     label = "Reference Entity Item Type Code"
+    restricted = true
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Lookup RelatedLineId {
     apiName = "InvoiceLine.RelatedLineId"
-    relationshipName = "RelatedLine"
     label = "Invoice Line ID"
+    relationshipName = "RelatedLine"
     createable = false
     updateable = true
     queryable = true
@@ -184,20 +184,20 @@ type salesforce.InvoiceLine {
   salesforce.Currency TaxAmount {
     apiName = "InvoiceLine.TaxAmount"
     label = "Tax Amount"
-    createable = false
-    updateable = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Text TaxCode {
     apiName = "InvoiceLine.TaxCode"
-    length = 255
     label = "Tax Code"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Date TaxEffectiveDate {
@@ -209,28 +209,28 @@ type salesforce.InvoiceLine {
   }
   salesforce.Text TaxName {
     apiName = "InvoiceLine.TaxName"
-    length = 255
     label = "Tax Name"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Percent TaxRate {
     apiName = "InvoiceLine.TaxRate"
     label = "Tax Rate"
-    createable = false
-    updateable = true
     scale = 2
     precision = 5
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "InvoiceLine.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -239,10 +239,10 @@ type salesforce.InvoiceLine {
   salesforce.Currency UnitPrice {
     apiName = "InvoiceLine.UnitPrice"
     label = "Unit Price"
-    createable = false
-    updateable = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -253,8 +253,8 @@ type salesforce.InvoiceLine {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "InvoiceLine.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -270,8 +270,8 @@ type salesforce.InvoiceLine {
   }
   salesforce.Lookup CreatedById {
     apiName = "InvoiceLine.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -287,8 +287,8 @@ type salesforce.InvoiceLine {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "InvoiceLine.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -304,24 +304,24 @@ type salesforce.InvoiceLine {
   }
   salesforce.Lookup GroupReferenceEntityItemId {
     apiName = "InvoiceLine.GroupReferenceEntityItemId"
-    relationshipName = "GroupReferenceEntityItem"
     label = "GroupReferenceEntityItem ID"
+    relationshipName = "GroupReferenceEntityItem"
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Picklist ReferenceEntityItemType {
     apiName = "InvoiceLine.ReferenceEntityItemType"
-    restricted = true
     label = "Reference Entity Item Type"
+    restricted = true
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Picklist TaxProcessingStatus {
     apiName = "InvoiceLine.TaxProcessingStatus"
-    restricted = true
     label = "Tax Processing Status"
+    restricted = true
     createable = false
     updateable = true
     queryable = true

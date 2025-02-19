@@ -8,8 +8,8 @@ type salesforce.Individual {
   }
   salesforce.Checkbox CanStorePiiElsewhere {
     apiName = "Individual.CanStorePiiElsewhere"
-    defaultValue = false
     label = "OK to Store PII Data Elsewhere"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -17,41 +17,41 @@ type salesforce.Individual {
   salesforce.Number ChildrenCount {
     apiName = "Individual.ChildrenCount"
     label = "Number of Children"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number ConsumerCreditScore {
     apiName = "Individual.ConsumerCreditScore"
     label = "Consumer Credit Score"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text ConsumerCreditScoreProviderName {
     apiName = "Individual.ConsumerCreditScoreProviderName"
-    length = 255
     label = "Consumer Credit Score Provider Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number ConvictionsCount {
     apiName = "Individual.ConvictionsCount"
     label = "Conviction Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Date DeathDate {
@@ -63,48 +63,48 @@ type salesforce.Individual {
   }
   salesforce.Checkbox HasOptedOutGeoTracking {
     apiName = "Individual.HasOptedOutGeoTracking"
-    defaultValue = false
     label = "Block Geolocation Tracking"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasOptedOutProcessing {
     apiName = "Individual.HasOptedOutProcessing"
-    defaultValue = false
     label = "Don't Process"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasOptedOutProfiling {
     apiName = "Individual.HasOptedOutProfiling"
-    defaultValue = false
     label = "Don't Profile"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasOptedOutSolicit {
     apiName = "Individual.HasOptedOutSolicit"
-    defaultValue = false
     label = "Don't Market"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasOptedOutTracking {
     apiName = "Individual.HasOptedOutTracking"
-    defaultValue = false
     label = "Don't Track"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist IndividualsAge {
     apiName = "Individual.IndividualsAge"
-    restricted = false
     label = "Individual's Age"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -112,33 +112,33 @@ type salesforce.Individual {
   salesforce.Number InfluencerRating {
     apiName = "Individual.InfluencerRating"
     label = "Influencer Rating"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Checkbox IsHomeOwner {
     apiName = "Individual.IsHomeOwner"
-    defaultValue = false
     label = "Is Homeowner"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist MilitaryService {
     apiName = "Individual.MilitaryService"
-    restricted = false
     label = "Military Service"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Name Name {
     apiName = "Individual.Name"
-    _required = true
     label = "Name"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -146,18 +146,18 @@ type salesforce.Individual {
   }
   salesforce.Text Occupation {
     apiName = "Individual.Occupation"
-    length = 150
     label = "Occupation"
-    createable = true
-    updateable = true
+    length = 150
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Individual.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -165,16 +165,16 @@ type salesforce.Individual {
   }
   salesforce.Checkbox SendIndividualData {
     apiName = "Individual.SendIndividualData"
-    defaultValue = false
     label = "Export Individual's Data"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox ShouldForget {
     apiName = "Individual.ShouldForget"
-    defaultValue = false
     label = "Forget this Individual"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -194,8 +194,8 @@ type salesforce.Individual {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Individual.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -203,8 +203,8 @@ type salesforce.Individual {
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Individual.MasterRecordId"
-    relationshipName = "MasterRecord"
     label = "Master Record ID"
+    relationshipName = "MasterRecord"
     createable = false
     updateable = false
     queryable = true
@@ -220,8 +220,8 @@ type salesforce.Individual {
   }
   salesforce.Lookup CreatedById {
     apiName = "Individual.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -237,8 +237,8 @@ type salesforce.Individual {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Individual.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

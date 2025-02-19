@@ -1,18 +1,18 @@
 type salesforce.ServiceTerritoryWorkType {
   salesforce.MasterDetail ServiceTerritoryId {
     apiName = "ServiceTerritoryWorkType.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
-    _required = true
     label = "Territory ID"
+    _required = true
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail WorkTypeId {
     apiName = "ServiceTerritoryWorkType.WorkTypeId"
-    relationshipName = "WorkType"
-    _required = true
     label = "Work Type ID"
+    _required = true
+    relationshipName = "WorkType"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.ServiceTerritoryWorkType {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ServiceTerritoryWorkType.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.ServiceTerritoryWorkType {
   }
   salesforce.Lookup CreatedById {
     apiName = "ServiceTerritoryWorkType.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ServiceTerritoryWorkType {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ServiceTerritoryWorkType.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

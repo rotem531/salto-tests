@@ -19,8 +19,8 @@ type salesforce.Event {
   }
   salesforce.LongTextArea Description {
     apiName = "Event.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -28,11 +28,11 @@ type salesforce.Event {
   salesforce.Number DurationInMinutes {
     apiName = "Event.DurationInMinutes"
     label = "Duration"
+    scale = 0
     precision = 8
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Unknown Email {
@@ -48,32 +48,32 @@ type salesforce.Event {
   }
   salesforce.Picklist EventSubtype {
     apiName = "Event.EventSubtype"
-    restricted = true
     label = "Event Subtype"
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsAllDayEvent {
     apiName = "Event.IsAllDayEvent"
-    defaultValue = false
     label = "All-Day Event"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsPrivate {
     apiName = "Event.IsPrivate"
-    defaultValue = false
     label = "Private"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsRecurrence2 {
     apiName = "Event.IsRecurrence2"
-    defaultValue = false
     label = "Repeat"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -81,8 +81,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsReminderSet {
     apiName = "Event.IsReminderSet"
-    defaultValue = false
     label = "Reminder Set"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -93,18 +93,18 @@ type salesforce.Event {
   }
   salesforce.Text Location {
     apiName = "Event.Location"
-    length = 255
     label = "Location"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Event.OwnerId"
-    relationshipName = "Owner"
     label = "Assigned To ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -116,8 +116,8 @@ type salesforce.Event {
   }
   salesforce.Lookup ServiceAppointmentId {
     apiName = "Event.ServiceAppointmentId"
-    relationshipName = "ServiceAppointment"
     label = "Service Appointment ID"
+    relationshipName = "ServiceAppointment"
     createable = false
     updateable = false
     queryable = true
@@ -125,8 +125,8 @@ type salesforce.Event {
   }
   salesforce.Picklist ShowAs {
     apiName = "Event.ShowAs"
-    restricted = true
     label = "Show Time As"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -140,8 +140,8 @@ type salesforce.Event {
   }
   salesforce.Picklist Subject {
     apiName = "Event.Subject"
-    restricted = false
     label = "Subject"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -153,16 +153,16 @@ type salesforce.Event {
   }
   salesforce.Lookup WhatId {
     apiName = "Event.WhatId"
-    relationshipName = "What"
     label = "Related To ID"
+    relationshipName = "What"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WhoId {
     apiName = "Event.WhoId"
-    relationshipName = "Who"
     label = "Name ID"
+    relationshipName = "Who"
     createable = true
     updateable = true
     queryable = true
@@ -183,8 +183,8 @@ type salesforce.Event {
   }
   salesforce.Lookup AccountId {
     apiName = "Event.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = false
     updateable = false
     queryable = true
@@ -192,8 +192,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Event.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -201,8 +201,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsChild {
     apiName = "Event.IsChild"
-    defaultValue = false
     label = "Is Child"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -210,8 +210,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsGroupEvent {
     apiName = "Event.IsGroupEvent"
-    defaultValue = false
     label = "Is Group Event"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -219,8 +219,8 @@ type salesforce.Event {
   }
   salesforce.Picklist GroupEventType {
     apiName = "Event.GroupEventType"
-    restricted = true
     label = "Group Event Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -236,8 +236,8 @@ type salesforce.Event {
   }
   salesforce.Lookup CreatedById {
     apiName = "Event.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -253,8 +253,8 @@ type salesforce.Event {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Event.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -270,8 +270,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsArchived {
     apiName = "Event.IsArchived"
-    defaultValue = false
     label = "Archived"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -287,8 +287,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsRecurrence {
     apiName = "Event.IsRecurrence"
-    defaultValue = false
     label = "Create Recurring Series of Events"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
@@ -309,16 +309,16 @@ type salesforce.Event {
   }
   salesforce.Picklist RecurrenceTimeZoneSidKey {
     apiName = "Event.RecurrenceTimeZoneSidKey"
-    restricted = true
     label = "Recurrence Time Zone"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RecurrenceType {
     apiName = "Event.RecurrenceType"
-    restricted = true
     label = "Recurrence Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -326,45 +326,45 @@ type salesforce.Event {
   salesforce.Number RecurrenceInterval {
     apiName = "Event.RecurrenceInterval"
     label = "Recurrence Interval"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number RecurrenceDayOfWeekMask {
     apiName = "Event.RecurrenceDayOfWeekMask"
     label = "Recurrence Day of Week Mask"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number RecurrenceDayOfMonth {
     apiName = "Event.RecurrenceDayOfMonth"
     label = "Recurrence Day of Month"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist RecurrenceInstance {
     apiName = "Event.RecurrenceInstance"
-    restricted = true
     label = "Recurrence Instance"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RecurrenceMonthOfYear {
     apiName = "Event.RecurrenceMonthOfYear"
-    restricted = true
     label = "Recurrence Month of Year"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -378,8 +378,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsRecurrence2Exclusion {
     apiName = "Event.IsRecurrence2Exclusion"
-    defaultValue = false
     label = "Historical Event, Not Following Recurrence"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -387,16 +387,16 @@ type salesforce.Event {
   }
   salesforce.LongTextArea Recurrence2PatternText {
     apiName = "Event.Recurrence2PatternText"
-    length = 512
     label = "Recurrence Pattern"
+    length = 512
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Recurrence2PatternVersion {
     apiName = "Event.Recurrence2PatternVersion"
-    restricted = true
     label = "Pattern Version"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -404,8 +404,8 @@ type salesforce.Event {
   }
   salesforce.Checkbox IsRecurrence2Exception {
     apiName = "Event.IsRecurrence2Exception"
-    defaultValue = false
     label = "Is Exception"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -421,12 +421,12 @@ type salesforce.Event {
   }
   salesforce.Text Recurrence2PatternTimeZone {
     apiName = "Event.Recurrence2PatternTimeZone"
-    length = 255
     label = "Recurrence Pattern Time Zone Reference"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

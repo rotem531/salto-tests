@@ -1,29 +1,29 @@
 type salesforce.DataUseLegalBasis {
   salesforce.Text Description {
     apiName = "DataUseLegalBasis.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "DataUseLegalBasis.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "DataUseLegalBasis.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -31,12 +31,12 @@ type salesforce.DataUseLegalBasis {
   }
   salesforce.Text Source {
     apiName = "DataUseLegalBasis.Source"
-    length = 255
     label = "Source"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -47,8 +47,8 @@ type salesforce.DataUseLegalBasis {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DataUseLegalBasis.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -64,8 +64,8 @@ type salesforce.DataUseLegalBasis {
   }
   salesforce.Lookup CreatedById {
     apiName = "DataUseLegalBasis.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -81,8 +81,8 @@ type salesforce.DataUseLegalBasis {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DataUseLegalBasis.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

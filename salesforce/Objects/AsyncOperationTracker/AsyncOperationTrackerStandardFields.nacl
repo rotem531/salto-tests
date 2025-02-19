@@ -7,8 +7,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Lookup OwnerId {
     apiName = "AsyncOperationTracker.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = false
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AsyncOperationTracker.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -41,8 +41,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Lookup CreatedById {
     apiName = "AsyncOperationTracker.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AsyncOperationTracker.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -75,9 +75,9 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Picklist Status {
     apiName = "AsyncOperationTracker.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -85,9 +85,9 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Picklist JobType {
     apiName = "AsyncOperationTracker.JobType"
-    restricted = true
-    _required = true
     label = "Job Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Lookup ParentOperationId {
     apiName = "AsyncOperationTracker.ParentOperationId"
-    relationshipName = "ParentOperation"
     label = "Revenue Async Operation ID"
+    relationshipName = "ParentOperation"
     createable = false
     updateable = false
     queryable = true
@@ -136,8 +136,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Lookup ReferenceEntityId {
     apiName = "AsyncOperationTracker.ReferenceEntityId"
-    relationshipName = "ReferenceEntity"
     label = "Reference Entity ID"
+    relationshipName = "ReferenceEntity"
     createable = false
     updateable = false
     queryable = true
@@ -146,51 +146,51 @@ type salesforce.AsyncOperationTracker {
   salesforce.Number TotalJobItems {
     apiName = "AsyncOperationTracker.TotalJobItems"
     label = "Total Job Items"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number SuccessfulJobItems {
     apiName = "AsyncOperationTracker.SuccessfulJobItems"
     label = "Successful Job Items"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number FailedJobItems {
     apiName = "AsyncOperationTracker.FailedJobItems"
     label = "Failed Job Items"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text CorrelationIdentifier {
     apiName = "AsyncOperationTracker.CorrelationIdentifier"
-    length = 80
     label = "Correlation Identifier"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea Response {
     apiName = "AsyncOperationTracker.Response"
-    length = 131072
     label = "Response"
+    length = 131072
     createable = false
     updateable = false
     queryable = true
@@ -198,8 +198,8 @@ type salesforce.AsyncOperationTracker {
   }
   salesforce.Picklist StepName {
     apiName = "AsyncOperationTracker.StepName"
-    restricted = true
     label = "Step Name"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -208,11 +208,11 @@ type salesforce.AsyncOperationTracker {
   salesforce.Number SequenceNumber {
     apiName = "AsyncOperationTracker.SequenceNumber"
     label = "Sequence Number"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }

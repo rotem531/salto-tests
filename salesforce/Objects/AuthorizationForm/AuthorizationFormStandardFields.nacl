@@ -1,8 +1,8 @@
 type salesforce.AuthorizationForm {
   salesforce.Lookup DefaultAuthFormTextId {
     apiName = "AuthorizationForm.DefaultAuthFormTextId"
-    relationshipName = "DefaultAuthFormText"
     label = "Default Authorization Form Text ID"
+    relationshipName = "DefaultAuthFormText"
     createable = true
     updateable = true
     queryable = true
@@ -23,27 +23,27 @@ type salesforce.AuthorizationForm {
   }
   salesforce.Checkbox IsSignatureRequired {
     apiName = "AuthorizationForm.IsSignatureRequired"
-    defaultValue = false
     label = "Is Signature Required"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "AuthorizationForm.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "AuthorizationForm.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -51,12 +51,12 @@ type salesforce.AuthorizationForm {
   }
   salesforce.Text RevisionNumber {
     apiName = "AuthorizationForm.RevisionNumber"
-    length = 10
     label = "Revision Number"
-    createable = true
-    updateable = true
+    length = 10
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -67,8 +67,8 @@ type salesforce.AuthorizationForm {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AuthorizationForm.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.AuthorizationForm {
   }
   salesforce.Lookup CreatedById {
     apiName = "AuthorizationForm.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -101,8 +101,8 @@ type salesforce.AuthorizationForm {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AuthorizationForm.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

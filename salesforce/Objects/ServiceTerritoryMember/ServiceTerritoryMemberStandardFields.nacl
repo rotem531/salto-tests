@@ -16,16 +16,16 @@ type salesforce.ServiceTerritoryMember {
   }
   salesforce.DateTime EffectiveStartDate {
     apiName = "ServiceTerritoryMember.EffectiveStartDate"
-    _required = true
     label = "Start Date"
+    _required = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "ServiceTerritoryMember.OperatingHoursId"
-    relationshipName = "OperatingHours"
     label = "Operating Hour ID"
+    relationshipName = "OperatingHours"
     createable = true
     updateable = true
     queryable = true
@@ -39,26 +39,26 @@ type salesforce.ServiceTerritoryMember {
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "ServiceTerritoryMember.ServiceResourceId"
-    relationshipName = "ServiceResource"
-    _required = true
     label = "Resource ID"
+    _required = true
+    relationshipName = "ServiceResource"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail ServiceTerritoryId {
     apiName = "ServiceTerritoryMember.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
-    _required = true
     label = "Territory ID"
+    _required = true
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist TerritoryType {
     apiName = "ServiceTerritoryMember.TerritoryType"
-    restricted = true
     label = "Territory Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -71,8 +71,8 @@ type salesforce.ServiceTerritoryMember {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ServiceTerritoryMember.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -96,8 +96,8 @@ type salesforce.ServiceTerritoryMember {
   }
   salesforce.Lookup CreatedById {
     apiName = "ServiceTerritoryMember.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -113,8 +113,8 @@ type salesforce.ServiceTerritoryMember {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ServiceTerritoryMember.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

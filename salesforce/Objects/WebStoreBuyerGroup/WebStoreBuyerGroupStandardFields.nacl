@@ -1,18 +1,18 @@
 type salesforce.WebStoreBuyerGroup {
   salesforce.Lookup BuyerGroupId {
     apiName = "WebStoreBuyerGroup.BuyerGroupId"
-    relationshipName = "BuyerGroup"
-    _required = true
     label = "Buyer Group ID"
+    _required = true
+    relationshipName = "BuyerGroup"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail WebStoreId {
     apiName = "WebStoreBuyerGroup.WebStoreId"
-    relationshipName = "WebStore"
-    _required = true
     label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.WebStoreBuyerGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebStoreBuyerGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.WebStoreBuyerGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebStoreBuyerGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.WebStoreBuyerGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebStoreBuyerGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

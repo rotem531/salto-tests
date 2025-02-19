@@ -2,24 +2,24 @@ type salesforce.WebStore {
   salesforce.Picklist DefaultLanguage {
     apiName = "WebStore.DefaultLanguage"
     inlineHelpText = "The language to use when translated content isn't available. This value is configured during store creation. If you change the default language later, you must also change the default language in Experience Builder for any associated community."
-    restricted = true
     label = "Default Language"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "WebStore.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea ExternalReference {
     apiName = "WebStore.ExternalReference"
-    length = 32000
     label = "External Reference ID"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -29,28 +29,28 @@ type salesforce.WebStore {
     apiName = "WebStore.MaxValuesPerFacet"
     inlineHelpText = "Set the maximum number of values to show per filter. Enter a value from 1 to 100."
     label = "Maximum Values per Filter"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "WebStore.Name"
-    length = 255
-    _required = true
     label = "Store Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist OrderActivationStatus {
     apiName = "WebStore.OrderActivationStatus"
-    restricted = true
     label = "Order Activation Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.WebStore {
   }
   salesforce.Picklist OrderLifeCycleType {
     apiName = "WebStore.OrderLifeCycleType"
-    restricted = true
     label = "Order Life Cycle Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -68,18 +68,18 @@ type salesforce.WebStore {
     apiName = "WebStore.PaginationSize"
     inlineHelpText = "Set the maximum number of results to show per page. Enter a value from 1 to 100."
     label = "Results per Page"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist PricingStrategy {
     apiName = "WebStore.PricingStrategy"
     inlineHelpText = "Select the price to show to buyers: either the best price or the prices from the highest priority price book."
-    restricted = true
     label = "Pricing Strategy"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -87,8 +87,8 @@ type salesforce.WebStore {
   salesforce.Picklist ProductGrouping {
     apiName = "WebStore.ProductGrouping"
     inlineHelpText = "Choose how product variations and parent products display in search results."
-    restricted = true
     label = "Variation Display"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -96,8 +96,8 @@ type salesforce.WebStore {
   salesforce.Lookup SortByPricebookId {
     apiName = "WebStore.SortByPricebookId"
     inlineHelpText = "Select a price book to use when sorting search results by price."
-    relationshipName = "SortByPricebook"
     label = "Price Book ID"
+    relationshipName = "SortByPricebook"
     createable = true
     updateable = true
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.WebStore {
   salesforce.Lookup StrikethroughPricebookId {
     apiName = "WebStore.StrikethroughPricebookId"
     inlineHelpText = "Displays a price book with a product’s original list price and the buyer’s discounted price."
-    relationshipName = "StrikethroughPricebook"
     label = "Price Book ID"
+    relationshipName = "StrikethroughPricebook"
     createable = true
     updateable = true
     queryable = true
@@ -114,8 +114,8 @@ type salesforce.WebStore {
   salesforce.LongTextArea SupportedLanguages {
     apiName = "WebStore.SupportedLanguages"
     inlineHelpText = "The languages to make available to buyers. Language options come from Translation Workbench."
-    length = 2000
     label = "Supported Languages"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
@@ -128,8 +128,8 @@ type salesforce.WebStore {
   }
   salesforce.Lookup OwnerId {
     apiName = "WebStore.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.WebStore {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebStore.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +154,8 @@ type salesforce.WebStore {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebStore.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -171,8 +171,8 @@ type salesforce.WebStore {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebStore.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -188,9 +188,9 @@ type salesforce.WebStore {
   }
   salesforce.Picklist Type {
     apiName = "WebStore.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -296,11 +296,11 @@ type salesforce.WebStore {
   salesforce.Number CheckoutTimeToLive {
     apiName = "WebStore.CheckoutTimeToLive"
     label = "Checkout Time To Live"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.DateTime CheckoutValidAfterDate {
@@ -312,8 +312,8 @@ type salesforce.WebStore {
   }
   salesforce.Lookup LocationId {
     apiName = "WebStore.LocationId"
-    relationshipName = "Location"
     label = "Location ID"
+    relationshipName = "Location"
     createable = false
     updateable = false
     queryable = true
@@ -322,18 +322,18 @@ type salesforce.WebStore {
   salesforce.Number GuestCartTimeToLive {
     apiName = "WebStore.GuestCartTimeToLive"
     label = "Guest Cart Time To Live"
+    scale = 0
     precision = 9
+    unique = false
     inlineHelpText = "Set the Time To Live value in minutes for guest carts. Enter a value from 1 to 10800."
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist DefaultTaxLocaleType {
     apiName = "WebStore.DefaultTaxLocaleType"
-    restricted = true
     label = "Tax Type"
+    restricted = true
     inlineHelpText = "Choose Net if the product price doesn’t include tax. Choose Gross if the product price includes tax. Changing the tax type will effect any existing carts. We recommend clearing these carts to avoid any discrepancies."
     createable = true
     updateable = true

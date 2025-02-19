@@ -1,16 +1,16 @@
 type salesforce.ChannelProgramMember {
   salesforce.Lookup LevelId {
     apiName = "ChannelProgramMember.LevelId"
-    relationshipName = "Level"
     label = "Channel Program Level ID"
+    relationshipName = "Level"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ChannelProgramMember.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -18,18 +18,18 @@ type salesforce.ChannelProgramMember {
   }
   salesforce.Lookup PartnerId {
     apiName = "ChannelProgramMember.PartnerId"
-    relationshipName = "Partner"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Partner"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail ProgramId {
     apiName = "ChannelProgramMember.ProgramId"
-    relationshipName = "Program"
-    _required = true
     label = "Channel Program ID"
+    _required = true
+    relationshipName = "Program"
     createable = true
     updateable = false
     queryable = true
@@ -42,8 +42,8 @@ type salesforce.ChannelProgramMember {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ChannelProgramMember.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ChannelProgramMember {
   }
   salesforce.Lookup CreatedById {
     apiName = "ChannelProgramMember.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.ChannelProgramMember {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ChannelProgramMember.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

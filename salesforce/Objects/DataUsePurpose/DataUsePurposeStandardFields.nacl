@@ -1,45 +1,45 @@
 type salesforce.DataUsePurpose {
   salesforce.Checkbox CanDataSubjectOptOut {
     apiName = "DataUsePurpose.CanDataSubjectOptOut"
-    defaultValue = false
     label = "Can Data Subject Opt Out"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "DataUsePurpose.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup LegalBasisId {
     apiName = "DataUsePurpose.LegalBasisId"
-    relationshipName = "LegalBasis"
     label = "Legal Basis ID"
+    relationshipName = "LegalBasis"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "DataUsePurpose.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "DataUsePurpose.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -53,8 +53,8 @@ type salesforce.DataUsePurpose {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DataUsePurpose.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -70,8 +70,8 @@ type salesforce.DataUsePurpose {
   }
   salesforce.Lookup CreatedById {
     apiName = "DataUsePurpose.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -87,8 +87,8 @@ type salesforce.DataUsePurpose {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DataUsePurpose.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

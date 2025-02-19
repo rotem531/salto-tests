@@ -1,8 +1,8 @@
 type salesforce.AssetAction {
   salesforce.DateTime ActionDate {
     apiName = "AssetAction.ActionDate"
-    _required = true
     label = "Action Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -26,20 +26,20 @@ type salesforce.AssetAction {
   }
   salesforce.Currency Amount {
     apiName = "AssetAction.Amount"
-    _required = true
     label = "Amount"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail AssetId {
     apiName = "AssetAction.AssetId"
-    relationshipName = "Asset"
-    _required = true
     label = "Asset ID"
+    _required = true
+    relationshipName = "Asset"
     createable = false
     updateable = false
     queryable = true
@@ -51,9 +51,9 @@ type salesforce.AssetAction {
   }
   salesforce.Picklist CategoryEnum {
     apiName = "AssetAction.CategoryEnum"
-    restricted = true
-    _required = true
     label = "Business Category"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -69,12 +69,12 @@ type salesforce.AssetAction {
   }
   salesforce.Currency MrrChange {
     apiName = "AssetAction.MrrChange"
-    _required = true
     label = "Change in Monthly Recurring Revenue"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -88,13 +88,13 @@ type salesforce.AssetAction {
   }
   salesforce.Number QuantityChange {
     apiName = "AssetAction.QuantityChange"
-    _required = true
     label = "Change in Quantity"
-    precision = 14
+    _required = true
     scale = 2
+    precision = 14
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -117,119 +117,119 @@ type salesforce.AssetAction {
   salesforce.Currency TotalCancellationsAmount {
     apiName = "AssetAction.TotalCancellationsAmount"
     label = "Total Cancellations Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalCrossSellsAmount {
     apiName = "AssetAction.TotalCrossSellsAmount"
     label = "Total Cross-Sells Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalDownsellsAmount {
     apiName = "AssetAction.TotalDownsellsAmount"
     label = "Total Downsells Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalInitialSaleAmount {
     apiName = "AssetAction.TotalInitialSaleAmount"
     label = "Total Initial Sale Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalMrr {
     apiName = "AssetAction.TotalMrr"
     label = "Total Monthly Recurring Revenue"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalOtherAmount {
     apiName = "AssetAction.TotalOtherAmount"
     label = "Total Other Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number TotalQuantity {
     apiName = "AssetAction.TotalQuantity"
     label = "Total Quantity"
-    precision = 14
     scale = 2
+    precision = 14
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalRenewalsAmount {
     apiName = "AssetAction.TotalRenewalsAmount"
     label = "Total Renewals Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTermsAndConditionsAmount {
     apiName = "AssetAction.TotalTermsAndConditionsAmount"
     label = "Total Terms And Conditions Changes Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTransfersAmount {
     apiName = "AssetAction.TotalTransfersAmount"
     label = "Total Transfers Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalUpsellsAmount {
     apiName = "AssetAction.TotalUpsellsAmount"
     label = "Total Upsells Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Type {
     apiName = "AssetAction.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -243,8 +243,8 @@ type salesforce.AssetAction {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssetAction.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -268,8 +268,8 @@ type salesforce.AssetAction {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssetAction.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -285,8 +285,8 @@ type salesforce.AssetAction {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssetAction.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

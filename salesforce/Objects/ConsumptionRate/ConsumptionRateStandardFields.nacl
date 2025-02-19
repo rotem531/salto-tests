@@ -2,17 +2,17 @@ type salesforce.ConsumptionRate {
   salesforce.MasterDetail ConsumptionScheduleId {
     apiName = "ConsumptionRate.ConsumptionScheduleId"
     inlineHelpText = "This rate is a part of of this schedule."
-    relationshipName = "ConsumptionSchedule"
-    _required = true
     label = "Consumption Schedule ID"
+    _required = true
+    relationshipName = "ConsumptionSchedule"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ConsumptionRate.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -20,13 +20,13 @@ type salesforce.ConsumptionRate {
   salesforce.Number LowerBound {
     apiName = "ConsumptionRate.LowerBound"
     inlineHelpText = "The lowest quantity of usage for this consumption rate."
-    _required = true
     label = "Lower Bound"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.AutoNumber Name {
@@ -40,20 +40,20 @@ type salesforce.ConsumptionRate {
   salesforce.Currency Price {
     apiName = "ConsumptionRate.Price"
     inlineHelpText = "The price for usage that falls within this consumption rate's bounds."
-    _required = true
     label = "Price"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 13
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist PricingMethod {
     apiName = "ConsumptionRate.PricingMethod"
     inlineHelpText = "Choose whether the usage is priced per unit or quantity or as a flat fee"
-    restricted = true
-    _required = true
     label = "Pricing Method"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -61,24 +61,24 @@ type salesforce.ConsumptionRate {
   salesforce.Number ProcessingOrder {
     apiName = "ConsumptionRate.ProcessingOrder"
     inlineHelpText = "The order for processing the usage rate across multiple rates. Consumption Rates are evaluated beginning with the lowest processing order."
-    _required = true
     label = "Processing Order"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number UpperBound {
     apiName = "ConsumptionRate.UpperBound"
     inlineHelpText = "The highest quantity of usage for this consumption rate."
     label = "Upper Bound"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -89,8 +89,8 @@ type salesforce.ConsumptionRate {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ConsumptionRate.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -106,8 +106,8 @@ type salesforce.ConsumptionRate {
   }
   salesforce.Lookup CreatedById {
     apiName = "ConsumptionRate.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -123,8 +123,8 @@ type salesforce.ConsumptionRate {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ConsumptionRate.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

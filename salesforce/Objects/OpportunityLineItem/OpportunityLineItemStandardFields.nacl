@@ -1,12 +1,12 @@
 type salesforce.OpportunityLineItem {
   salesforce.Text Description {
     apiName = "OpportunityLineItem.Description"
-    length = 255
     label = "Line Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Unknown Discount {
@@ -16,61 +16,61 @@ type salesforce.OpportunityLineItem {
   salesforce.Currency ListPrice {
     apiName = "OpportunityLineItem.ListPrice"
     label = "List Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "OpportunityLineItem.Name"
-    length = 376
     label = "Opportunity Product Name"
-    createable = false
-    updateable = false
+    length = 376
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityLineItem.OpportunityId"
-    relationshipName = "Opportunity"
-    _required = true
     label = "Opportunity ID"
+    _required = true
+    relationshipName = "Opportunity"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "OpportunityLineItem.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text ProductCode {
     apiName = "OpportunityLineItem.ProductCode"
-    length = 255
     label = "Product Code"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number Quantity {
     apiName = "OpportunityLineItem.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 12
+    _required = true
     scale = 2
+    precision = 12
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Date ServiceDate {
@@ -87,19 +87,19 @@ type salesforce.OpportunityLineItem {
   salesforce.Currency TotalPrice {
     apiName = "OpportunityLineItem.TotalPrice"
     label = "Total Price"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency UnitPrice {
     apiName = "OpportunityLineItem.UnitPrice"
     label = "Sales Price"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -111,17 +111,17 @@ type salesforce.OpportunityLineItem {
   salesforce.Number SortOrder {
     apiName = "OpportunityLineItem.SortOrder"
     label = "Sort Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "OpportunityLineItem.PricebookEntryId"
-    relationshipName = "PricebookEntry"
     label = "Price Book Entry ID"
+    relationshipName = "PricebookEntry"
     createable = true
     updateable = false
     queryable = true
@@ -136,8 +136,8 @@ type salesforce.OpportunityLineItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "OpportunityLineItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -153,8 +153,8 @@ type salesforce.OpportunityLineItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityLineItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -170,8 +170,8 @@ type salesforce.OpportunityLineItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityLineItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

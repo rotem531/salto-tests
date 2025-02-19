@@ -1,9 +1,9 @@
 type salesforce.ApprovalSubmissionDetail {
   salesforce.Picklist ActionChannelName {
     apiName = "ApprovalSubmissionDetail.ActionChannelName"
-    restricted = true
-    _required = true
     label = "Action Channel Name"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -11,20 +11,20 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Text ActionContext {
     apiName = "ApprovalSubmissionDetail.ActionContext"
-    length = 255
     label = "Action Context"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ActionName {
     apiName = "ApprovalSubmissionDetail.ActionName"
-    restricted = true
-    _required = true
     label = "Action Name"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Lookup ActionPerformedById {
     apiName = "ApprovalSubmissionDetail.ActionPerformedById"
-    relationshipName = "ActionPerformedBy"
     label = "User ID"
+    relationshipName = "ActionPerformedBy"
     createable = false
     updateable = false
     queryable = true
@@ -41,9 +41,9 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Picklist ActionPerformerRole {
     apiName = "ApprovalSubmissionDetail.ActionPerformerRole"
-    restricted = true
-    _required = true
     label = "Action Performer Role"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -51,9 +51,9 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.MasterDetail ApprovalSubmissionId {
     apiName = "ApprovalSubmissionDetail.ApprovalSubmissionId"
-    relationshipName = "ApprovalSubmission"
-    _required = true
     label = "Approval Submission ID"
+    _required = true
+    relationshipName = "ApprovalSubmission"
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Lookup ApprovalWorkItemId {
     apiName = "ApprovalSubmissionDetail.ApprovalWorkItemId"
-    relationshipName = "ApprovalWorkItem"
     label = "Approval Work Item ID"
+    relationshipName = "ApprovalWorkItem"
     createable = false
     updateable = false
     queryable = true
@@ -70,8 +70,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Html Comments {
     apiName = "ApprovalSubmissionDetail.Comments"
-    length = 32000
     label = "Comments"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ApprovalSubmissionDetail.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -110,8 +110,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Lookup CreatedById {
     apiName = "ApprovalSubmissionDetail.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -127,8 +127,8 @@ type salesforce.ApprovalSubmissionDetail {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ApprovalSubmissionDetail.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

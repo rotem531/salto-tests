@@ -1,12 +1,12 @@
 type salesforce.AppointmentTopicTimeSlot {
   salesforce.Text AppointmentTopicTimeSlotKey {
     apiName = "AppointmentTopicTimeSlot.AppointmentTopicTimeSlotKey"
-    length = 255
     label = "Appointment Topic Time Slot Key"
-    createable = true
-    updateable = true
+    length = 255
     unique = true
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.AutoNumber Name {
@@ -19,8 +19,8 @@ type salesforce.AppointmentTopicTimeSlot {
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "AppointmentTopicTimeSlot.OperatingHoursId"
-    relationshipName = "OperatingHours"
     label = "Operating Hour ID"
+    relationshipName = "OperatingHours"
     createable = false
     updateable = false
     queryable = true
@@ -28,25 +28,25 @@ type salesforce.AppointmentTopicTimeSlot {
   }
   salesforce.Lookup TimeSlotId {
     apiName = "AppointmentTopicTimeSlot.TimeSlotId"
-    relationshipName = "TimeSlot"
-    _required = true
     label = "Time Slot ID"
+    _required = true
+    relationshipName = "TimeSlot"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WorkTypeGroupId {
     apiName = "AppointmentTopicTimeSlot.WorkTypeGroupId"
-    relationshipName = "WorkTypeGroup"
     label = "Work Type Group ID"
+    relationshipName = "WorkTypeGroup"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WorkTypeId {
     apiName = "AppointmentTopicTimeSlot.WorkTypeId"
-    relationshipName = "WorkType"
     label = "Work Type ID"
+    relationshipName = "WorkType"
     createable = true
     updateable = true
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.AppointmentTopicTimeSlot {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AppointmentTopicTimeSlot.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.AppointmentTopicTimeSlot {
   }
   salesforce.Lookup CreatedById {
     apiName = "AppointmentTopicTimeSlot.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -93,8 +93,8 @@ type salesforce.AppointmentTopicTimeSlot {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AppointmentTopicTimeSlot.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

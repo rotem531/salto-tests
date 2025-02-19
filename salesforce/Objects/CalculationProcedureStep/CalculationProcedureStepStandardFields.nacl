@@ -1,168 +1,168 @@
 type salesforce.CalculationProcedureStep {
   salesforce.Lookup CalculationMatrixId {
     apiName = "CalculationProcedureStep.CalculationMatrixId"
-    relationshipName = "CalculationMatrix"
     label = "Decision Matrix ID"
+    relationshipName = "CalculationMatrix"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail CalculationProcedureVersionId {
     apiName = "CalculationProcedureStep.CalculationProcedureVersionId"
-    relationshipName = "CalculationProcedureVersion"
-    _required = true
     label = "Calculation Procedure Version ID"
+    _required = true
+    relationshipName = "CalculationProcedureVersion"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea ConditionsConvertedText {
     apiName = "CalculationProcedureStep.ConditionsConvertedText"
-    length = 131072
     label = "Conditions Converted Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea ConditionsExpressionText {
     apiName = "CalculationProcedureStep.ConditionsExpressionText"
-    length = 131072
     label = "Conditions Expression Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea ConditionsUiFormattedText {
     apiName = "CalculationProcedureStep.ConditionsUiFormattedText"
-    length = 131072
     label = "Conditions UI Formatted Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup DecisionTableId {
     apiName = "CalculationProcedureStep.DecisionTableId"
-    relationshipName = "DecisionTable"
     label = "Decision Table ID"
+    relationshipName = "DecisionTable"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "CalculationProcedureStep.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea FormulaConvertedText {
     apiName = "CalculationProcedureStep.FormulaConvertedText"
-    length = 131072
     label = "Formula Converted Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea FormulaExpressionText {
     apiName = "CalculationProcedureStep.FormulaExpressionText"
-    length = 131072
     label = "Formula Expression Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea FormulaUiFormattedText {
     apiName = "CalculationProcedureStep.FormulaUiFormattedText"
-    length = 131072
     label = "Formula UI Formatted Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea InputVariablesFormatText {
     apiName = "CalculationProcedureStep.InputVariablesFormatText"
-    length = 131072
     label = "Input Variables Format Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsConditionalStep {
     apiName = "CalculationProcedureStep.IsConditionalStep"
-    defaultValue = false
     label = "Conditional Step"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsResultIncluded {
     apiName = "CalculationProcedureStep.IsResultIncluded"
-    defaultValue = false
     label = "Result Included"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CalculationProcedureStep.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Namespace {
     apiName = "CalculationProcedureStep.Namespace"
-    length = 255
     label = "Namespace"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea OutputVariablesFormatText {
     apiName = "CalculationProcedureStep.OutputVariablesFormatText"
-    length = 131072
     label = "Output Variables Format Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea OutputVariablesMappingText {
     apiName = "CalculationProcedureStep.OutputVariablesMappingText"
-    length = 131072
     label = "Output Variables Mapping Text"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ReferenceProcedureId {
     apiName = "CalculationProcedureStep.ReferenceProcedureId"
-    relationshipName = "ReferenceProcedure"
     label = "Calculation Procedure ID"
+    relationshipName = "ReferenceProcedure"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea ReturnMessageValueSet {
     apiName = "CalculationProcedureStep.ReturnMessageValueSet"
-    length = 131072
     label = "Return Message Value Set"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Stage {
     apiName = "CalculationProcedureStep.Stage"
-    restricted = true
     label = "Stage"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -170,17 +170,17 @@ type salesforce.CalculationProcedureStep {
   salesforce.Number StageStepSequence {
     apiName = "CalculationProcedureStep.StageStepSequence"
     label = "Stage Step Sequence"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist StepType {
     apiName = "CalculationProcedureStep.StepType"
-    restricted = true
     label = "Step Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -193,8 +193,8 @@ type salesforce.CalculationProcedureStep {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CalculationProcedureStep.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -210,8 +210,8 @@ type salesforce.CalculationProcedureStep {
   }
   salesforce.Lookup CreatedById {
     apiName = "CalculationProcedureStep.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -227,8 +227,8 @@ type salesforce.CalculationProcedureStep {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CalculationProcedureStep.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -244,23 +244,23 @@ type salesforce.CalculationProcedureStep {
   }
   salesforce.Text CalculationProcedure {
     apiName = "CalculationProcedureStep.CalculationProcedure"
-    length = 255
     label = "Expression Set"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text CalculationMatrixType {
     apiName = "CalculationProcedureStep.CalculationMatrixType"
-    length = 255
     label = "Decision Matrix Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

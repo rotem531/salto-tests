@@ -1,16 +1,16 @@
 type salesforce.ContractLineItem {
   salesforce.Lookup AssetId {
     apiName = "ContractLineItem.AssetId"
-    relationshipName = "Asset"
     label = "Asset ID"
+    relationshipName = "Asset"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ContractLineItem.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -18,10 +18,10 @@ type salesforce.ContractLineItem {
   salesforce.Percent Discount {
     apiName = "ContractLineItem.Discount"
     label = "Discount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 5
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Date EndDate {
@@ -34,42 +34,42 @@ type salesforce.ContractLineItem {
   salesforce.Currency ListPrice {
     apiName = "ContractLineItem.ListPrice"
     label = "List Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LocationId {
     apiName = "ContractLineItem.LocationId"
-    relationshipName = "Location"
     label = "Location ID"
+    relationshipName = "Location"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ParentContractLineItemId {
     apiName = "ContractLineItem.ParentContractLineItemId"
-    relationshipName = "ParentContractLineItem"
     label = "Contract Line Item ID"
+    relationshipName = "ParentContractLineItem"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "ContractLineItem.PricebookEntryId"
-    relationshipName = "PricebookEntry"
-    _required = true
     label = "Price Book Entry ID"
+    _required = true
+    relationshipName = "PricebookEntry"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "ContractLineItem.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = false
     updateable = false
     queryable = true
@@ -77,19 +77,19 @@ type salesforce.ContractLineItem {
   }
   salesforce.Number Quantity {
     apiName = "ContractLineItem.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 12
+    _required = true
     scale = 2
+    precision = 12
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup RootContractLineItemId {
     apiName = "ContractLineItem.RootContractLineItemId"
-    relationshipName = "RootContractLineItem"
     label = "Contract Line Item ID"
+    relationshipName = "RootContractLineItem"
     createable = false
     updateable = false
     queryable = true
@@ -97,9 +97,9 @@ type salesforce.ContractLineItem {
   }
   salesforce.MasterDetail ServiceContractId {
     apiName = "ContractLineItem.ServiceContractId"
-    relationshipName = "ServiceContract"
-    _required = true
     label = "Service Contract ID"
+    _required = true
+    relationshipName = "ServiceContract"
     createable = true
     updateable = false
     queryable = true
@@ -113,8 +113,8 @@ type salesforce.ContractLineItem {
   }
   salesforce.Picklist Status {
     apiName = "ContractLineItem.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -127,31 +127,31 @@ type salesforce.ContractLineItem {
   salesforce.Currency Subtotal {
     apiName = "ContractLineItem.Subtotal"
     label = "Subtotal "
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalPrice {
     apiName = "ContractLineItem.TotalPrice"
     label = "Total Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency UnitPrice {
     apiName = "ContractLineItem.UnitPrice"
-    _required = true
     label = "Sales Price"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -162,8 +162,8 @@ type salesforce.ContractLineItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContractLineItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -187,8 +187,8 @@ type salesforce.ContractLineItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContractLineItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -204,8 +204,8 @@ type salesforce.ContractLineItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContractLineItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

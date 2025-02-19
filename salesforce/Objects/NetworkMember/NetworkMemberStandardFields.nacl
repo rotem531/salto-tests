@@ -23,8 +23,8 @@ type salesforce.NetworkMember {
   }
   salesforce.Lookup CreatedById {
     apiName = "NetworkMember.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -32,9 +32,9 @@ type salesforce.NetworkMember {
   }
   salesforce.Lookup NetworkId {
     apiName = "NetworkMember.NetworkId"
-    relationshipName = "Network"
-    _required = true
     label = "Network ID"
+    _required = true
+    relationshipName = "Network"
     createable = false
     updateable = false
     queryable = true
@@ -42,9 +42,9 @@ type salesforce.NetworkMember {
   }
   salesforce.Lookup MemberId {
     apiName = "NetworkMember.MemberId"
-    relationshipName = "Member"
-    _required = true
     label = "User ID"
+    _required = true
+    relationshipName = "Member"
     createable = false
     updateable = false
     queryable = true
@@ -52,18 +52,18 @@ type salesforce.NetworkMember {
   }
   salesforce.Picklist DigestFrequency {
     apiName = "NetworkMember.DigestFrequency"
-    restricted = true
-    _required = true
     label = "Chatter Email Highlights Frequency"
+    _required = true
+    restricted = true
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Picklist DefaultGroupNotificationFrequency {
     apiName = "NetworkMember.DefaultGroupNotificationFrequency"
-    restricted = true
-    _required = true
     label = "Default Notification Frequency when Joining Groups"
+    _required = true
+    restricted = true
     createable = false
     updateable = true
     queryable = true
@@ -196,13 +196,13 @@ type salesforce.NetworkMember {
   }
   salesforce.Number ReputationPoints {
     apiName = "NetworkMember.ReputationPoints"
-    _required = true
     label = "Reputation Points"
-    precision = 15
+    _required = true
     scale = 0
+    precision = 15
+    unique = false
     createable = false
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Date LastChatterActivityDate {

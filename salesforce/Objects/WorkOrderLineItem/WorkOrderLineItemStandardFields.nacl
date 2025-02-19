@@ -9,16 +9,16 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Lookup AssetId {
     apiName = "WorkOrderLineItem.AssetId"
-    relationshipName = "Asset"
     label = "Asset ID"
+    relationshipName = "Asset"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "WorkOrderLineItem.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -26,26 +26,26 @@ type salesforce.WorkOrderLineItem {
   salesforce.Percent Discount {
     apiName = "WorkOrderLineItem.Discount"
     label = "Discount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 5
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number Duration {
     apiName = "WorkOrderLineItem.Duration"
     label = "Duration"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Picklist DurationType {
     apiName = "WorkOrderLineItem.DurationType"
-    restricted = true
     label = "Duration Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Checkbox IsClosed {
     apiName = "WorkOrderLineItem.IsClosed"
-    defaultValue = false
     label = "Is Closed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -69,49 +69,49 @@ type salesforce.WorkOrderLineItem {
   salesforce.Currency ListPrice {
     apiName = "WorkOrderLineItem.ListPrice"
     label = "List Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LocationId {
     apiName = "WorkOrderLineItem.LocationId"
-    relationshipName = "Location"
     label = "Location ID"
+    relationshipName = "Location"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OrderId {
     apiName = "WorkOrderLineItem.OrderId"
-    relationshipName = "Order"
     label = "Order ID"
+    relationshipName = "Order"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ParentWorkOrderLineItemId {
     apiName = "WorkOrderLineItem.ParentWorkOrderLineItemId"
-    relationshipName = "ParentWorkOrderLineItem"
     label = "Parent Work Order Line Item ID"
+    relationshipName = "ParentWorkOrderLineItem"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup PricebookEntryId {
     apiName = "WorkOrderLineItem.PricebookEntryId"
-    relationshipName = "PricebookEntry"
     label = "Product ID"
+    relationshipName = "PricebookEntry"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Priority {
     apiName = "WorkOrderLineItem.Priority"
-    restricted = false
     label = "Priority"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -120,17 +120,17 @@ type salesforce.WorkOrderLineItem {
   salesforce.Number Quantity {
     apiName = "WorkOrderLineItem.Quantity"
     label = "Quantity"
-    precision = 12
     scale = 2
+    precision = 12
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup RootWorkOrderLineItemId {
     apiName = "WorkOrderLineItem.RootWorkOrderLineItemId"
-    relationshipName = "RootWorkOrderLineItem"
     label = "Root Work Order Line Item ID"
+    relationshipName = "RootWorkOrderLineItem"
     createable = false
     updateable = false
     queryable = true
@@ -139,18 +139,18 @@ type salesforce.WorkOrderLineItem {
   salesforce.Number ServiceAppointmentCount {
     apiName = "WorkOrderLineItem.ServiceAppointmentCount"
     label = "Service Appointment Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "WorkOrderLineItem.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
     label = "Territory ID"
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = true
     queryable = true
@@ -164,8 +164,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Picklist Status {
     apiName = "WorkOrderLineItem.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -173,8 +173,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Picklist StatusCategory {
     apiName = "WorkOrderLineItem.StatusCategory"
-    restricted = true
     label = "Status Category"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -182,56 +182,56 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Text Subject {
     apiName = "WorkOrderLineItem.Subject"
-    length = 255
     label = "Subject"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency Subtotal {
     apiName = "WorkOrderLineItem.Subtotal"
     label = "Subtotal"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalPrice {
     apiName = "WorkOrderLineItem.TotalPrice"
     label = "Total Price"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency UnitPrice {
     apiName = "WorkOrderLineItem.UnitPrice"
     label = "Unit Price"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.MasterDetail WorkOrderId {
     apiName = "WorkOrderLineItem.WorkOrderId"
-    relationshipName = "WorkOrder"
-    _required = true
     label = "Work Order ID"
+    _required = true
+    relationshipName = "WorkOrder"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup WorkTypeId {
     apiName = "WorkOrderLineItem.WorkTypeId"
-    relationshipName = "WorkType"
     label = "Work Type ID"
+    relationshipName = "WorkType"
     createable = true
     updateable = true
     queryable = true
@@ -244,8 +244,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkOrderLineItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -269,8 +269,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkOrderLineItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -286,8 +286,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkOrderLineItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -303,8 +303,8 @@ type salesforce.WorkOrderLineItem {
   }
   salesforce.Lookup Product2Id {
     apiName = "WorkOrderLineItem.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = true
     updateable = true
     queryable = true
@@ -312,11 +312,11 @@ type salesforce.WorkOrderLineItem {
   salesforce.Number DurationInMinutes {
     apiName = "WorkOrderLineItem.DurationInMinutes"
     label = "Duration in Minutes"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }

@@ -1,8 +1,8 @@
 type salesforce.ServiceAppointmentAttendee {
   salesforce.Lookup AttendeeId {
     apiName = "ServiceAppointmentAttendee.AttendeeId"
-    relationshipName = "Attendee"
     label = "Attendee ID"
+    relationshipName = "Attendee"
     createable = true
     updateable = false
     queryable = true
@@ -10,9 +10,9 @@ type salesforce.ServiceAppointmentAttendee {
   salesforce.Email Email {
     apiName = "ServiceAppointmentAttendee.Email"
     label = "Email"
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Unknown HasAttended {
@@ -21,9 +21,9 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Lookup ServiceAppointmentId {
     apiName = "ServiceAppointmentAttendee.ServiceAppointmentId"
-    relationshipName = "ServiceAppointment"
-    _required = true
     label = "Service Appointment ID"
+    _required = true
+    relationshipName = "ServiceAppointment"
     createable = true
     updateable = false
     queryable = true
@@ -40,8 +40,8 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Lookup OwnerId {
     apiName = "ServiceAppointmentAttendee.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ServiceAppointmentAttendee.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -74,8 +74,8 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Lookup CreatedById {
     apiName = "ServiceAppointmentAttendee.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -91,8 +91,8 @@ type salesforce.ServiceAppointmentAttendee {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ServiceAppointmentAttendee.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

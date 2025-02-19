@@ -8,59 +8,59 @@ type salesforce.WaitlistParticipant {
   }
   salesforce.LongTextArea Description {
     apiName = "WaitlistParticipant.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ParticipantId {
     apiName = "WaitlistParticipant.ParticipantId"
-    relationshipName = "Participant"
-    _required = true
     label = "Participant ID"
+    _required = true
+    relationshipName = "Participant"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ServiceAppointmentId {
     apiName = "WaitlistParticipant.ServiceAppointmentId"
-    relationshipName = "ServiceAppointment"
     label = "Service Appointment ID"
+    relationshipName = "ServiceAppointment"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "WaitlistParticipant.ServiceResourceId"
-    relationshipName = "ServiceResource"
     label = "Resource ID"
+    relationshipName = "ServiceResource"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "WaitlistParticipant.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail WaitlistId {
     apiName = "WaitlistParticipant.WaitlistId"
-    relationshipName = "Waitlist"
-    _required = true
     label = "Waitlist ID"
+    _required = true
+    relationshipName = "Waitlist"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup WorkTypeId {
     apiName = "WaitlistParticipant.WorkTypeId"
-    relationshipName = "WorkType"
     label = "Work Type ID"
+    relationshipName = "WorkType"
     createable = true
     updateable = true
     queryable = true
@@ -73,8 +73,8 @@ type salesforce.WaitlistParticipant {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WaitlistParticipant.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -98,8 +98,8 @@ type salesforce.WaitlistParticipant {
   }
   salesforce.Lookup CreatedById {
     apiName = "WaitlistParticipant.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.WaitlistParticipant {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WaitlistParticipant.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

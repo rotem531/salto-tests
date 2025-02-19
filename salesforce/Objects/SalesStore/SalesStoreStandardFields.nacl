@@ -1,8 +1,8 @@
 type salesforce.SalesStore {
   salesforce.LongTextArea Description {
     apiName = "SalesStore.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = false
     updateable = false
     queryable = true
@@ -10,9 +10,9 @@ type salesforce.SalesStore {
   }
   salesforce.Lookup LocationId {
     apiName = "SalesStore.LocationId"
-    relationshipName = "Location"
-    _required = true
     label = "Location ID"
+    _required = true
+    relationshipName = "Location"
     createable = false
     updateable = false
     queryable = true
@@ -20,13 +20,13 @@ type salesforce.SalesStore {
   }
   salesforce.Text Name {
     apiName = "SalesStore.Name"
-    length = 255
-    _required = true
     label = "__MISSING LABEL__ PropertyFile - val Name not found in section udd_SalesStore"
-    createable = false
-    updateable = false
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -38,12 +38,12 @@ type salesforce.SalesStore {
   }
   salesforce.Text ImplementorType {
     apiName = "SalesStore.ImplementorType"
-    length = 255
     label = "Implementor Type"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

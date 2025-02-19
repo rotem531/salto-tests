@@ -23,18 +23,18 @@ type salesforce.AssociatedLocation {
   }
   salesforce.Lookup LocationId {
     apiName = "AssociatedLocation.LocationId"
-    relationshipName = "Location"
-    _required = true
     label = "Location ID"
+    _required = true
+    relationshipName = "Location"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail ParentRecordId {
     apiName = "AssociatedLocation.ParentRecordId"
-    relationshipName = "ParentRecord"
-    _required = true
     label = "Account Name ID"
+    _required = true
+    relationshipName = "ParentRecord"
     createable = true
     updateable = false
     queryable = true
@@ -54,8 +54,8 @@ type salesforce.AssociatedLocation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssociatedLocation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -71,8 +71,8 @@ type salesforce.AssociatedLocation {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssociatedLocation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -88,8 +88,8 @@ type salesforce.AssociatedLocation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssociatedLocation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

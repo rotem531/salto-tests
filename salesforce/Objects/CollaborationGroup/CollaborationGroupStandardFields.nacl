@@ -7,19 +7,19 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Text Name {
     apiName = "CollaborationGroup.Name"
-    length = 40
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 40
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup RecordTypeId {
     apiName = "CollaborationGroup.RecordTypeId"
-    relationshipName = "RecordType"
     label = "Record Type ID"
+    relationshipName = "RecordType"
     createable = true
     updateable = true
     queryable = true
@@ -28,18 +28,18 @@ type salesforce.CollaborationGroup {
   salesforce.Number MemberCount {
     apiName = "CollaborationGroup.MemberCount"
     label = "Member Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "CollaborationGroup.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -47,17 +47,17 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Picklist CollaborationType {
     apiName = "CollaborationGroup.CollaborationType"
-    restricted = true
-    _required = true
     label = "Access Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "CollaborationGroup.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
@@ -72,8 +72,8 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -89,8 +89,8 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -130,8 +130,8 @@ type salesforce.CollaborationGroup {
   }
   salesforce.DateTime LastFeedModifiedDate {
     apiName = "CollaborationGroup.LastFeedModifiedDate"
-    _required = true
     label = "Last Feed Modified Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -139,26 +139,26 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Text InformationTitle {
     apiName = "CollaborationGroup.InformationTitle"
-    length = 30
     label = "Information Title"
-    createable = true
-    updateable = true
+    length = 30
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Html InformationBody {
     apiName = "CollaborationGroup.InformationBody"
-    length = 4000
     label = "Information"
+    length = 4000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox HasPrivateFieldsAccess {
     apiName = "CollaborationGroup.HasPrivateFieldsAccess"
-    defaultValue = false
     label = "Has Private Fields Access"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -166,40 +166,40 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Checkbox CanHaveGuests {
     apiName = "CollaborationGroup.CanHaveGuests"
-    defaultValue = false
     label = "Allow customers"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup NetworkId {
     apiName = "CollaborationGroup.NetworkId"
-    relationshipName = "Network"
     label = "Network ID"
+    relationshipName = "Network"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "CollaborationGroup.IsArchived"
-    defaultValue = false
     label = "Archive"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsAutoArchiveDisabled {
     apiName = "CollaborationGroup.IsAutoArchiveDisabled"
-    defaultValue = false
     label = "Disable automatic archiving"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup AnnouncementId {
     apiName = "CollaborationGroup.AnnouncementId"
-    relationshipName = "Announcement"
     label = "Announcement ID"
+    relationshipName = "Announcement"
     createable = true
     updateable = true
     queryable = true
@@ -207,9 +207,9 @@ type salesforce.CollaborationGroup {
   salesforce.Email GroupEmail {
     apiName = "CollaborationGroup.GroupEmail"
     label = "Group Email"
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -223,8 +223,8 @@ type salesforce.CollaborationGroup {
   }
   salesforce.Checkbox IsBroadcast {
     apiName = "CollaborationGroup.IsBroadcast"
-    defaultValue = false
     label = "Broadcast Only"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true

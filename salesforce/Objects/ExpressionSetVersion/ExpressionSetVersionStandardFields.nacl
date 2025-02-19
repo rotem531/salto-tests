@@ -1,23 +1,23 @@
 type salesforce.ExpressionSetVersion {
   salesforce.Text ApiName {
     apiName = "ExpressionSetVersion.ApiName"
-    length = 80
-    _required = true
     label = "API Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 80
     unique = true
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "ExpressionSetVersion.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime EndDateTime {
@@ -29,33 +29,33 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.MasterDetail ExpressionSetId {
     apiName = "ExpressionSetVersion.ExpressionSetId"
-    relationshipName = "ExpressionSet"
-    _required = true
     label = "Expression Set ID"
+    _required = true
+    relationshipName = "ExpressionSet"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "ExpressionSetVersion.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsLoopingEnabled {
     apiName = "ExpressionSetVersion.IsLoopingEnabled"
-    defaultValue = false
     label = "Looping Enabled"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea LatestSimulationResult {
     apiName = "ExpressionSetVersion.LatestSimulationResult"
-    length = 131072
     label = "Latest Simulation Result"
+    length = 131072
     createable = true
     updateable = true
     queryable = true
@@ -83,29 +83,29 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Text Name {
     apiName = "ExpressionSetVersion.Name"
-    length = 255
-    _required = true
     label = "Version Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number Rank {
     apiName = "ExpressionSetVersion.Rank"
     label = "Rank"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Checkbox ShouldShowExplExternally {
     apiName = "ExpressionSetVersion.ShouldShowExplExternally"
-    defaultValue = false
     label = "Show Explanation Externally"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -119,13 +119,13 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Number VersionNumber {
     apiName = "ExpressionSetVersion.VersionNumber"
-    _required = true
     label = "Version Number"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -136,8 +136,8 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ExpressionSetVersion.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -153,8 +153,8 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Lookup CreatedById {
     apiName = "ExpressionSetVersion.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -170,8 +170,8 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ExpressionSetVersion.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -187,9 +187,9 @@ type salesforce.ExpressionSetVersion {
   }
   salesforce.Lookup ExpressionSetDefinitionVerId {
     apiName = "ExpressionSetVersion.ExpressionSetDefinitionVerId"
-    relationshipName = "ExpressionSetDefinitionVer"
-    _required = true
     label = "ExpressionSetDefinitionVersion ID"
+    _required = true
+    relationshipName = "ExpressionSetDefinitionVer"
     createable = true
     updateable = true
     queryable = true

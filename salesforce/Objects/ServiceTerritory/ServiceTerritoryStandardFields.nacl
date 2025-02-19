@@ -9,44 +9,44 @@ type salesforce.ServiceTerritory {
   }
   salesforce.LongTextArea Description {
     apiName = "ServiceTerritory.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "ServiceTerritory.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ServiceTerritory.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OperatingHoursId {
     apiName = "ServiceTerritory.OperatingHoursId"
-    relationshipName = "OperatingHours"
-    _required = true
     label = "Operating Hour ID"
+    _required = true
+    relationshipName = "OperatingHours"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ServiceTerritory.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -54,8 +54,8 @@ type salesforce.ServiceTerritory {
   }
   salesforce.Hierarchy ParentTerritoryId {
     apiName = "ServiceTerritory.ParentTerritoryId"
-    relationshipName = "ParentTerritory"
     label = "Parent Territory ID"
+    relationshipName = "ParentTerritory"
     createable = true
     updateable = true
     queryable = true
@@ -73,16 +73,16 @@ type salesforce.ServiceTerritory {
   }
   salesforce.Picklist ServiceAppointmentLimitType {
     apiName = "ServiceTerritory.ServiceAppointmentLimitType"
-    restricted = true
     label = "Service Appointment Limit Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup TopLevelTerritoryId {
     apiName = "ServiceTerritory.TopLevelTerritoryId"
-    relationshipName = "TopLevelTerritory"
     label = "Top-Level Territory ID"
+    relationshipName = "TopLevelTerritory"
     createable = false
     updateable = false
     queryable = true
@@ -91,11 +91,11 @@ type salesforce.ServiceTerritory {
   salesforce.Number TypicalInTerritoryTravelTime {
     apiName = "ServiceTerritory.TypicalInTerritoryTravelTime"
     label = "Typical In-Territory Travel Time (Minutes)"
-    precision = 18
     scale = 2
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -106,8 +106,8 @@ type salesforce.ServiceTerritory {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ServiceTerritory.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -123,8 +123,8 @@ type salesforce.ServiceTerritory {
   }
   salesforce.Lookup CreatedById {
     apiName = "ServiceTerritory.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -140,8 +140,8 @@ type salesforce.ServiceTerritory {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ServiceTerritory.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

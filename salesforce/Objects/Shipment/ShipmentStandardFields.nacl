@@ -13,8 +13,8 @@ type salesforce.Shipment {
   }
   salesforce.Lookup DestinationLocationId {
     apiName = "Shipment.DestinationLocationId"
-    relationshipName = "DestinationLocation"
     label = "Destination Location ID"
+    relationshipName = "DestinationLocation"
     createable = true
     updateable = true
     queryable = true
@@ -29,8 +29,8 @@ type salesforce.Shipment {
   }
   salesforce.Lookup OwnerId {
     apiName = "Shipment.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -54,19 +54,19 @@ type salesforce.Shipment {
   }
   salesforce.Text ShipToName {
     apiName = "Shipment.ShipToName"
-    length = 255
-    _required = true
     label = "Ship To Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup SourceLocationId {
     apiName = "Shipment.SourceLocationId"
-    relationshipName = "SourceLocation"
     label = "Source Location ID"
+    relationshipName = "SourceLocation"
     createable = true
     updateable = true
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.Shipment {
   salesforce.Summary TotalItemsQuantity {
     apiName = "Shipment.TotalItemsQuantity"
     label = "Total Items Quantity"
-    precision = 18
     scale = 2
+    precision = 18
     createable = false
     updateable = false
     queryable = true
@@ -101,8 +101,8 @@ type salesforce.Shipment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Shipment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -126,8 +126,8 @@ type salesforce.Shipment {
   }
   salesforce.Lookup CreatedById {
     apiName = "Shipment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -143,8 +143,8 @@ type salesforce.Shipment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Shipment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,62 +1,62 @@
 type salesforce.InventoryItemReservation {
   salesforce.Text ErrorCode {
     apiName = "InventoryItemReservation.ErrorCode"
-    length = 255
     label = "Error Code"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea ErrorMessage {
     apiName = "InventoryItemReservation.ErrorMessage"
-    length = 2000
     label = "Error Message"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail InventoryReservationId {
     apiName = "InventoryItemReservation.InventoryReservationId"
-    relationshipName = "InventoryReservation"
-    _required = true
     label = "Inventory Reservation ID"
+    _required = true
+    relationshipName = "InventoryReservation"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ItemReservationSourceId {
     apiName = "InventoryItemReservation.ItemReservationSourceId"
-    relationshipName = "ItemReservationSource"
     label = "Item Reservation Source ID"
+    relationshipName = "ItemReservationSource"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ProductId {
     apiName = "InventoryItemReservation.ProductId"
-    relationshipName = "Product"
     label = "Product ID"
+    relationshipName = "Product"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Number Quantity {
     apiName = "InventoryItemReservation.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 18
+    _required = true
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Lookup ReservedAtLocationId {
     apiName = "InventoryItemReservation.ReservedAtLocationId"
-    relationshipName = "ReservedAtLocation"
     label = "Reserved At Location ID"
+    relationshipName = "ReservedAtLocation"
     createable = true
     updateable = true
     queryable = true
@@ -69,8 +69,8 @@ type salesforce.InventoryItemReservation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "InventoryItemReservation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.InventoryItemReservation {
   }
   salesforce.Lookup CreatedById {
     apiName = "InventoryItemReservation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -111,8 +111,8 @@ type salesforce.InventoryItemReservation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "InventoryItemReservation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -128,12 +128,12 @@ type salesforce.InventoryItemReservation {
   }
   salesforce.Text StockKeepingUnit {
     apiName = "InventoryItemReservation.StockKeepingUnit"
-    length = 255
     label = "Stock Keeping Unit"
-    createable = true
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
 }

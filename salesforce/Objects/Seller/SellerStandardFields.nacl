@@ -15,19 +15,19 @@ type salesforce.Seller {
   }
   salesforce.Text Name {
     apiName = "Seller.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Seller.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -35,8 +35,8 @@ type salesforce.Seller {
   }
   salesforce.Lookup PartyId {
     apiName = "Seller.PartyId"
-    relationshipName = "Party"
     label = "Individual ID"
+    relationshipName = "Party"
     createable = true
     updateable = true
     queryable = true
@@ -44,25 +44,25 @@ type salesforce.Seller {
   salesforce.Number SalesAmount {
     apiName = "Seller.SalesAmount"
     label = "Sales Amount"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist SellerTier {
     apiName = "Seller.SellerTier"
-    restricted = true
     label = "Seller Tier"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist SellerType {
     apiName = "Seller.SellerType"
-    restricted = true
     label = "Seller Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -75,8 +75,8 @@ type salesforce.Seller {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Seller.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -92,8 +92,8 @@ type salesforce.Seller {
   }
   salesforce.Lookup CreatedById {
     apiName = "Seller.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -109,8 +109,8 @@ type salesforce.Seller {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Seller.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

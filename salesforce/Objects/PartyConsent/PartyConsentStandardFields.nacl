@@ -1,25 +1,25 @@
 type salesforce.PartyConsent {
   salesforce.Picklist Action {
     apiName = "PartyConsent.Action"
-    restricted = true
-    _required = true
     label = "Action"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup BusinessBrandId {
     apiName = "PartyConsent.BusinessBrandId"
-    relationshipName = "BusinessBrand"
     label = "Business Brand ID"
+    relationshipName = "BusinessBrand"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist CaptureContactPointType {
     apiName = "PartyConsent.CaptureContactPointType"
-    restricted = true
     label = "Consent Captured Contact Point Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -33,18 +33,18 @@ type salesforce.PartyConsent {
   }
   salesforce.Text CaptureSource {
     apiName = "PartyConsent.CaptureSource"
-    length = 255
     label = "Consent Captured Source"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup DataUsePurposeId {
     apiName = "PartyConsent.DataUsePurposeId"
-    relationshipName = "DataUsePurpose"
     label = "Data Use Purpose ID"
+    relationshipName = "DataUsePurpose"
     createable = true
     updateable = true
     queryable = true
@@ -63,19 +63,19 @@ type salesforce.PartyConsent {
   }
   salesforce.Text Name {
     apiName = "PartyConsent.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "PartyConsent.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -83,26 +83,26 @@ type salesforce.PartyConsent {
   }
   salesforce.Lookup PartyId {
     apiName = "PartyConsent.PartyId"
-    relationshipName = "Party"
-    _required = true
     label = "Individual ID"
+    _required = true
+    relationshipName = "Party"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup PartyRoleId {
     apiName = "PartyConsent.PartyRoleId"
-    relationshipName = "PartyRole"
     label = "Party Role ID"
+    relationshipName = "PartyRole"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist PrivacyConsentStatus {
     apiName = "PartyConsent.PrivacyConsentStatus"
-    restricted = true
-    _required = true
     label = "Privacy Consent Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.PartyConsent {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PartyConsent.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -132,8 +132,8 @@ type salesforce.PartyConsent {
   }
   salesforce.Lookup CreatedById {
     apiName = "PartyConsent.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -149,8 +149,8 @@ type salesforce.PartyConsent {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PartyConsent.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,18 +1,18 @@
 type salesforce.ProductAttributeSetProduct {
   salesforce.Lookup ProductAttributeSetId {
     apiName = "ProductAttributeSetProduct.ProductAttributeSetId"
-    relationshipName = "ProductAttributeSet"
-    _required = true
     label = "Product Attribute Set ID"
+    _required = true
+    relationshipName = "ProductAttributeSet"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ProductId {
     apiName = "ProductAttributeSetProduct.ProductId"
-    relationshipName = "Product"
-    _required = true
     label = "Product ID"
+    _required = true
+    relationshipName = "Product"
     createable = true
     updateable = true
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.ProductAttributeSetProduct {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductAttributeSetProduct.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.ProductAttributeSetProduct {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductAttributeSetProduct.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ProductAttributeSetProduct {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductAttributeSetProduct.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

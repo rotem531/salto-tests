@@ -2,49 +2,49 @@ type salesforce.ContentVersion {
   salesforce.Number ContentSize {
     apiName = "ContentVersion.ContentSize"
     label = "Size"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "ContentVersion.Description"
-    length = 1000
     label = "Description"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text FileExtension {
     apiName = "ContentVersion.FileExtension"
-    length = 40
     label = "File Extension"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text FileType {
     apiName = "ContentVersion.FileType"
-    length = 20
-    _required = true
     label = "File Type"
-    createable = false
-    updateable = false
+    _required = true
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsAssetEnabled {
     apiName = "ContentVersion.IsAssetEnabled"
-    defaultValue = false
     label = "Asset File Enabled"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
@@ -55,8 +55,8 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup OwnerId {
     apiName = "ContentVersion.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -64,39 +64,39 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist SharingOption {
     apiName = "ContentVersion.SharingOption"
-    restricted = true
-    _required = true
     label = "Prevent others from sharing and unsharing"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist SharingPrivacy {
     apiName = "ContentVersion.SharingPrivacy"
-    restricted = true
-    _required = true
     label = "File Privacy on Records"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea TagCsv {
     apiName = "ContentVersion.TagCsv"
-    length = 2000
     label = "Tags"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Title {
     apiName = "ContentVersion.Title"
-    length = 255
-    _required = true
     label = "Title"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -107,9 +107,9 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup ContentDocumentId {
     apiName = "ContentVersion.ContentDocumentId"
-    relationshipName = "ContentDocument"
-    _required = true
     label = "ContentDocument ID"
+    _required = true
+    relationshipName = "ContentDocument"
     createable = true
     updateable = false
     queryable = true
@@ -131,58 +131,58 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup ContentBodyId {
     apiName = "ContentVersion.ContentBodyId"
-    relationshipName = "ContentBody"
     label = "Content Body ID"
+    relationshipName = "ContentBody"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text VersionNumber {
     apiName = "ContentVersion.VersionNumber"
-    length = 20
     label = "Version Number"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text ReasonForChange {
     apiName = "ContentVersion.ReasonForChange"
-    length = 1000
     label = "Reason For Change"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text PathOnClient {
     apiName = "ContentVersion.PathOnClient"
-    length = 500
     label = "Path On Client"
-    createable = true
-    updateable = false
+    length = 500
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Number RatingCount {
     apiName = "ContentVersion.RatingCount"
     label = "Rating Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContentVersion.IsDeleted"
-    defaultValue = false
     label = "Is Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -197,8 +197,8 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup ContentModifiedById {
     apiName = "ContentVersion.ContentModifiedById"
-    relationshipName = "ContentModifiedBy"
     label = "User ID"
+    relationshipName = "ContentModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -207,33 +207,33 @@ type salesforce.ContentVersion {
   salesforce.Number PositiveRatingCount {
     apiName = "ContentVersion.PositiveRatingCount"
     label = "Positive Rating Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number NegativeRatingCount {
     apiName = "ContentVersion.NegativeRatingCount"
     label = "Negative Rating Count"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number FeaturedContentBoost {
     apiName = "ContentVersion.FeaturedContentBoost"
     label = "Featured Content Boost"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -247,8 +247,8 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContentVersion.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -264,8 +264,8 @@ type salesforce.ContentVersion {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContentVersion.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -289,9 +289,9 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist PublishStatus {
     apiName = "ContentVersion.PublishStatus"
-    restricted = true
-    _required = true
     label = "Publish Status"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -299,27 +299,27 @@ type salesforce.ContentVersion {
   }
   salesforce.Text VersionData {
     apiName = "ContentVersion.VersionData"
-    length = 0
     label = "Version Data"
-    createable = true
-    updateable = true
+    length = 0
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup FirstPublishLocationId {
     apiName = "ContentVersion.FirstPublishLocationId"
-    relationshipName = "FirstPublishLocation"
     label = "First Publish Location ID"
+    relationshipName = "FirstPublishLocation"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Origin {
     apiName = "ContentVersion.Origin"
-    restricted = true
-    _required = true
     label = "Content Origin"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -333,79 +333,79 @@ type salesforce.ContentVersion {
   }
   salesforce.Picklist ContentLocation {
     apiName = "ContentVersion.ContentLocation"
-    restricted = true
-    _required = true
     label = "Content Location"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text TextPreview {
     apiName = "ContentVersion.TextPreview"
-    length = 255
     label = "Text Preview"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text ExternalDocumentInfo1 {
     apiName = "ContentVersion.ExternalDocumentInfo1"
-    length = 1000
     label = "External Document Info1"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text ExternalDocumentInfo2 {
     apiName = "ContentVersion.ExternalDocumentInfo2"
-    length = 1000
     label = "External Document Info2"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ExternalDataSourceId {
     apiName = "ContentVersion.ExternalDataSourceId"
-    relationshipName = "ExternalDataSource"
     label = "External Data Source ID"
+    relationshipName = "ExternalDataSource"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Checksum {
     apiName = "ContentVersion.Checksum"
-    length = 50
     label = "Checksum"
-    createable = false
-    updateable = false
+    length = 50
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsMajorVersion {
     apiName = "ContentVersion.IsMajorVersion"
-    defaultValue = false
     label = "Major Version"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text VersionDataUrl {
     apiName = "ContentVersion.VersionDataUrl"
-    length = 255
     label = "Version Data URL"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

@@ -7,8 +7,8 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactCleanInfo.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -16,13 +16,13 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Text Name {
     apiName = "ContactCleanInfo.Name"
-    length = 255
-    _required = true
     label = "Contact Clean Info Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -35,8 +35,8 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactCleanInfo.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactCleanInfo.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -69,9 +69,9 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Lookup ContactId {
     apiName = "ContactCleanInfo.ContactId"
-    relationshipName = "Contact"
-    _required = true
     label = "Contact ID"
+    _required = true
+    relationshipName = "Contact"
     createable = false
     updateable = false
     queryable = true
@@ -79,8 +79,8 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.DateTime LastMatchedDate {
     apiName = "ContactCleanInfo.LastMatchedDate"
-    _required = true
     label = "Last Matched Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -96,8 +96,8 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Lookup LastStatusChangedById {
     apiName = "ContactCleanInfo.LastStatusChangedById"
-    relationshipName = "LastStatusChangedBy"
     label = "User ID"
+    relationshipName = "LastStatusChangedBy"
     createable = false
     updateable = false
     queryable = true
@@ -105,40 +105,40 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Checkbox IsInactive {
     apiName = "ContactCleanInfo.IsInactive"
-    defaultValue = false
     label = "Contact Status in Salesforce"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text FirstName {
     apiName = "ContactCleanInfo.FirstName"
-    length = 255
     label = "First Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LastName {
     apiName = "ContactCleanInfo.LastName"
-    length = 255
     label = "Last Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Email Email {
     apiName = "ContactCleanInfo.Email"
     label = "Email"
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -160,19 +160,19 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Text Title {
     apiName = "ContactCleanInfo.Title"
-    length = 128
     label = "Title"
-    createable = false
-    updateable = false
+    length = 128
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist ContactStatusDataDotCom {
     apiName = "ContactCleanInfo.ContactStatusDataDotCom"
-    restricted = true
     label = "Contact Status per Data.com"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -362,12 +362,12 @@ type salesforce.ContactCleanInfo {
   }
   salesforce.Text DataDotComId {
     apiName = "ContactCleanInfo.DataDotComId"
-    length = 20
     label = "Data.com ID"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

@@ -1,18 +1,18 @@
 type salesforce.ProductConsumptionSchedule {
   salesforce.Lookup ConsumptionScheduleId {
     apiName = "ProductConsumptionSchedule.ConsumptionScheduleId"
-    relationshipName = "ConsumptionSchedule"
-    _required = true
     label = "Consumption Schedule ID"
+    _required = true
+    relationshipName = "ConsumptionSchedule"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ProductId {
     apiName = "ProductConsumptionSchedule.ProductId"
-    relationshipName = "Product"
-    _required = true
     label = "Product ID"
+    _required = true
+    relationshipName = "Product"
     createable = true
     updateable = true
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.ProductConsumptionSchedule {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductConsumptionSchedule.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -42,8 +42,8 @@ type salesforce.ProductConsumptionSchedule {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductConsumptionSchedule.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.ProductConsumptionSchedule {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductConsumptionSchedule.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

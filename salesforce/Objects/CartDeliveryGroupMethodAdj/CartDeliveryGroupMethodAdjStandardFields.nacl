@@ -1,55 +1,55 @@
 type salesforce.CartDeliveryGroupMethodAdj {
   salesforce.Currency AdjustmentAmount {
     apiName = "CartDeliveryGroupMethodAdj.AdjustmentAmount"
-    _required = true
     label = "Adjustment Amount"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup AdjustmentBasisReferenceId {
     apiName = "CartDeliveryGroupMethodAdj.AdjustmentBasisReferenceId"
-    relationshipName = "AdjustmentBasisReference"
     label = "Coupon ID"
+    relationshipName = "AdjustmentBasisReference"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentType {
     apiName = "CartDeliveryGroupMethodAdj.AdjustmentType"
-    restricted = true
     label = "Adjustment Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Number AdjustmentValue {
     apiName = "CartDeliveryGroupMethodAdj.AdjustmentValue"
-    _required = true
     label = "Adjustment Value"
-    precision = 18
+    _required = true
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.MasterDetail CartDeliveryGroupMethodId {
     apiName = "CartDeliveryGroupMethodAdj.CartDeliveryGroupMethodId"
-    relationshipName = "CartDeliveryGroupMethod"
-    _required = true
     label = "Cart Delivery Group Method ID"
+    _required = true
+    relationshipName = "CartDeliveryGroupMethod"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup PriceAdjustmentCauseId {
     apiName = "CartDeliveryGroupMethodAdj.PriceAdjustmentCauseId"
-    relationshipName = "PriceAdjustmentCause"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "PriceAdjustmentCause"
     createable = true
     updateable = true
     queryable = true
@@ -57,11 +57,11 @@ type salesforce.CartDeliveryGroupMethodAdj {
   salesforce.Number Priority {
     apiName = "CartDeliveryGroupMethodAdj.Priority"
     label = "Priority"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -72,8 +72,8 @@ type salesforce.CartDeliveryGroupMethodAdj {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CartDeliveryGroupMethodAdj.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -81,13 +81,13 @@ type salesforce.CartDeliveryGroupMethodAdj {
   }
   salesforce.Text Name {
     apiName = "CartDeliveryGroupMethodAdj.Name"
-    length = 255
-    _required = true
     label = "Cart Delivery Group Method AdjustmentName"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -100,8 +100,8 @@ type salesforce.CartDeliveryGroupMethodAdj {
   }
   salesforce.Lookup CreatedById {
     apiName = "CartDeliveryGroupMethodAdj.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -117,8 +117,8 @@ type salesforce.CartDeliveryGroupMethodAdj {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CartDeliveryGroupMethodAdj.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,18 +1,18 @@
 type salesforce.SkillRequirement {
   salesforce.MasterDetail RelatedRecordId {
     apiName = "SkillRequirement.RelatedRecordId"
-    relationshipName = "RelatedRecord"
-    _required = true
     label = "Required For ID"
+    _required = true
+    relationshipName = "RelatedRecord"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup SkillId {
     apiName = "SkillRequirement.SkillId"
-    relationshipName = "Skill"
-    _required = true
     label = "Skill ID"
+    _required = true
+    relationshipName = "Skill"
     createable = true
     updateable = true
     queryable = true
@@ -20,11 +20,11 @@ type salesforce.SkillRequirement {
   salesforce.Number SkillLevel {
     apiName = "SkillRequirement.SkillLevel"
     label = "Skill Level"
-    precision = 4
     scale = 2
+    precision = 4
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -35,8 +35,8 @@ type salesforce.SkillRequirement {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "SkillRequirement.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.SkillRequirement {
   }
   salesforce.Lookup CreatedById {
     apiName = "SkillRequirement.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.SkillRequirement {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SkillRequirement.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -7,8 +7,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Lookup OwnerId {
     apiName = "PrivacyJobSession.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = false
     updateable = false
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PrivacyJobSession.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -41,8 +41,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Lookup CreatedById {
     apiName = "PrivacyJobSession.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -58,8 +58,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PrivacyJobSession.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -75,8 +75,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Picklist JobStatus {
     apiName = "PrivacyJobSession.JobStatus"
-    restricted = true
     label = "Job Status"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -108,8 +108,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.LongTextArea SerializedPolicy {
     apiName = "PrivacyJobSession.SerializedPolicy"
-    length = 131072
     label = "Serialized Policy"
+    length = 131072
     createable = false
     updateable = false
     queryable = true
@@ -117,8 +117,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.LongTextArea FailureLog {
     apiName = "PrivacyJobSession.FailureLog"
-    length = 131072
     label = "Failure Log"
+    length = 131072
     createable = false
     updateable = false
     queryable = true
@@ -126,19 +126,19 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Text CurrentObject {
     apiName = "PrivacyJobSession.CurrentObject"
-    length = 128
     label = "Current Object"
-    createable = false
-    updateable = false
+    length = 128
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup PrivacyPolicyDefinitionId {
     apiName = "PrivacyJobSession.PrivacyPolicyDefinitionId"
-    relationshipName = "PrivacyPolicyDefinition"
     label = "Privacy Policy Definition ID"
+    relationshipName = "PrivacyPolicyDefinition"
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +154,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Picklist JobStartType {
     apiName = "PrivacyJobSession.JobStartType"
-    restricted = true
     label = "Job Start Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -211,30 +211,30 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Text PolicyName {
     apiName = "PrivacyJobSession.PolicyName"
-    length = 255
     label = "Policy Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text PolicyDescription {
     apiName = "PrivacyJobSession.PolicyDescription"
-    length = 255
     label = "Policy Description"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist PolicyType {
     apiName = "PrivacyJobSession.PolicyType"
-    restricted = true
     label = "Policy Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -242,8 +242,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Lookup PrivacyRtbfRequestId {
     apiName = "PrivacyJobSession.PrivacyRtbfRequestId"
-    relationshipName = "PrivacyRtbfRequest"
     label = "Privacy RTBF Request ID"
+    relationshipName = "PrivacyRtbfRequest"
     createable = false
     updateable = false
     queryable = true
@@ -251,8 +251,8 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Picklist JobManagementType {
     apiName = "PrivacyJobSession.JobManagementType"
-    restricted = true
     label = "Job Management Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -260,19 +260,19 @@ type salesforce.PrivacyJobSession {
   }
   salesforce.Text JobPolicyName {
     apiName = "PrivacyJobSession.JobPolicyName"
-    length = 255
     label = "Job Policy Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsPreview {
     apiName = "PrivacyJobSession.IsPreview"
-    defaultValue = false
     label = "Preview"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

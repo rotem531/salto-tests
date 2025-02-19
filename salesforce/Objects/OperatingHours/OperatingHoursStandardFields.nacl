@@ -1,27 +1,27 @@
 type salesforce.OperatingHours {
   salesforce.LongTextArea Description {
     apiName = "OperatingHours.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "OperatingHours.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "OperatingHours.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -29,9 +29,9 @@ type salesforce.OperatingHours {
   }
   salesforce.Picklist TimeZone {
     apiName = "OperatingHours.TimeZone"
-    restricted = true
-    _required = true
     label = "Time Zone"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.OperatingHours {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OperatingHours.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -61,8 +61,8 @@ type salesforce.OperatingHours {
   }
   salesforce.Lookup CreatedById {
     apiName = "OperatingHours.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.OperatingHours {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OperatingHours.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

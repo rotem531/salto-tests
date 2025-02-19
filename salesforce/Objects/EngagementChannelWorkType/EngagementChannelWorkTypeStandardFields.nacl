@@ -8,17 +8,17 @@ type salesforce.EngagementChannelWorkType {
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "EngagementChannelWorkType.EngagementChannelTypeId"
-    relationshipName = "EngagementChannelType"
     label = "Engagement Channel Type ID"
+    relationshipName = "EngagementChannelType"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.MasterDetail WorkTypeId {
     apiName = "EngagementChannelWorkType.WorkTypeId"
-    relationshipName = "WorkType"
-    _required = true
     label = "Work Type ID"
+    _required = true
+    relationshipName = "WorkType"
     createable = true
     updateable = false
     queryable = true
@@ -31,8 +31,8 @@ type salesforce.EngagementChannelWorkType {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "EngagementChannelWorkType.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -56,8 +56,8 @@ type salesforce.EngagementChannelWorkType {
   }
   salesforce.Lookup CreatedById {
     apiName = "EngagementChannelWorkType.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -73,8 +73,8 @@ type salesforce.EngagementChannelWorkType {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "EngagementChannelWorkType.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

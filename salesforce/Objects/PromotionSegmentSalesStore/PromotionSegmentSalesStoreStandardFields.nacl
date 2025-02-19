@@ -1,18 +1,18 @@
 type salesforce.PromotionSegmentSalesStore {
   salesforce.MasterDetail PromotionSegmentId {
     apiName = "PromotionSegmentSalesStore.PromotionSegmentId"
-    relationshipName = "PromotionSegment"
-    _required = true
     label = "Promotion Segment ID"
+    _required = true
+    relationshipName = "PromotionSegment"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup SalesStoreId {
     apiName = "PromotionSegmentSalesStore.SalesStoreId"
-    relationshipName = "SalesStore"
-    _required = true
     label = "Sales Store ID"
+    _required = true
+    relationshipName = "SalesStore"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.PromotionSegmentSalesStore {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionSegmentSalesStore.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.PromotionSegmentSalesStore {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionSegmentSalesStore.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.PromotionSegmentSalesStore {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionSegmentSalesStore.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

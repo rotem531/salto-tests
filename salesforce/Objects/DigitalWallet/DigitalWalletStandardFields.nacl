@@ -1,8 +1,8 @@
 type salesforce.DigitalWallet {
   salesforce.Lookup AccountId {
     apiName = "DigitalWallet.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
@@ -10,9 +10,9 @@ type salesforce.DigitalWallet {
   salesforce.Email AuditEmail {
     apiName = "DigitalWallet.AuditEmail"
     label = "Audit Email"
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Unknown BillingName {
@@ -21,136 +21,136 @@ type salesforce.DigitalWallet {
   }
   salesforce.LongTextArea Comments {
     apiName = "DigitalWallet.Comments"
-    length = 1000
     label = "Comments"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text CompanyName {
     apiName = "DigitalWallet.CompanyName"
-    length = 255
     label = "Company Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Customer {
     apiName = "DigitalWallet.Customer"
-    length = 255
     label = "Customer ID"
-    createable = true
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Email Email {
     apiName = "DigitalWallet.Email"
     label = "Registered Email"
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Text GatewayToken {
     apiName = "DigitalWallet.GatewayToken"
-    length = 255
     label = "Gateway Token"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea GatewayTokenDetails {
     apiName = "DigitalWallet.GatewayTokenDetails"
-    length = 1000
     label = "Gateway Token Details"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.EncryptedText GatewayTokenEncrypted {
     apiName = "DigitalWallet.GatewayTokenEncrypted"
-    length = 1000
     label = "Gateway Token Encrypted"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text IpAddress {
     apiName = "DigitalWallet.IpAddress"
-    length = 39
     label = "IP Address"
-    createable = true
-    updateable = true
+    length = 39
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox IsAutoPayEnabled {
     apiName = "DigitalWallet.IsAutoPayEnabled"
-    defaultValue = false
     label = "Auto Pay"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text MacAddress {
     apiName = "DigitalWallet.MacAddress"
-    length = 32
     label = "MAC Address"
-    createable = true
-    updateable = true
+    length = 32
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text NickName {
     apiName = "DigitalWallet.NickName"
-    length = 255
     label = "Nickname"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup PaymentGatewayId {
     apiName = "DigitalWallet.PaymentGatewayId"
-    relationshipName = "PaymentGateway"
     label = "Payment Gateway ID"
+    relationshipName = "PaymentGateway"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text PaymentMethodDetails {
     apiName = "DigitalWallet.PaymentMethodDetails"
-    length = 255
     label = "Payment Method Details"
-    createable = true
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Text PaymentMethodSubType {
     apiName = "DigitalWallet.PaymentMethodSubType"
-    length = 255
     label = "Payment Method Sub Type"
-    createable = true
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Picklist PaymentMethodType {
     apiName = "DigitalWallet.PaymentMethodType"
-    restricted = true
     label = "Payment Method Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -164,18 +164,18 @@ type salesforce.DigitalWallet {
   }
   salesforce.Picklist ProcessingMode {
     apiName = "DigitalWallet.ProcessingMode"
-    restricted = true
-    _required = true
     label = "Processing Mode"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "DigitalWallet.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -188,8 +188,8 @@ type salesforce.DigitalWallet {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DigitalWallet.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -213,8 +213,8 @@ type salesforce.DigitalWallet {
   }
   salesforce.Lookup CreatedById {
     apiName = "DigitalWallet.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -230,8 +230,8 @@ type salesforce.DigitalWallet {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DigitalWallet.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

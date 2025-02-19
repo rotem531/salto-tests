@@ -1,62 +1,62 @@
 type salesforce.ProcessException {
   salesforce.Lookup AttachedToId {
     apiName = "ProcessException.AttachedToId"
-    relationshipName = "AttachedTo"
-    _required = true
     label = "Attached To ID"
+    _required = true
+    relationshipName = "AttachedTo"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup CaseId {
     apiName = "ProcessException.CaseId"
-    relationshipName = "Case"
     label = "Case ID"
+    relationshipName = "Case"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Category {
     apiName = "ProcessException.Category"
-    restricted = false
     label = "Category"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ProcessException.Description"
-    length = 2000
     label = "Description"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text ExternalReference {
     apiName = "ProcessException.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Message {
     apiName = "ProcessException.Message"
-    length = 255
-    _required = true
     label = "Message"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ProcessException.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -64,25 +64,25 @@ type salesforce.ProcessException {
   }
   salesforce.Picklist Priority {
     apiName = "ProcessException.Priority"
-    restricted = false
     label = "Priority"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Severity {
     apiName = "ProcessException.Severity"
-    restricted = false
     label = "Severity"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "ProcessException.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -95,8 +95,8 @@ type salesforce.ProcessException {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProcessException.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -120,8 +120,8 @@ type salesforce.ProcessException {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProcessException.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.ProcessException {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProcessException.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -154,9 +154,9 @@ type salesforce.ProcessException {
   }
   salesforce.Picklist StatusCategory {
     apiName = "ProcessException.StatusCategory"
-    restricted = true
-    _required = true
     label = "Status Category"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -164,8 +164,8 @@ type salesforce.ProcessException {
   }
   salesforce.Picklist SeverityCategory {
     apiName = "ProcessException.SeverityCategory"
-    restricted = true
     label = "Severity Category"
+    restricted = true
     createable = false
     updateable = false
     queryable = true

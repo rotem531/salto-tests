@@ -1,18 +1,18 @@
 type salesforce.WaitlistWorkType {
   salesforce.MasterDetail WaitlistId {
     apiName = "WaitlistWorkType.WaitlistId"
-    relationshipName = "Waitlist"
-    _required = true
     label = "Waitlist ID"
+    _required = true
+    relationshipName = "Waitlist"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail WorkTypeId {
     apiName = "WaitlistWorkType.WorkTypeId"
-    relationshipName = "WorkType"
-    _required = true
     label = "Work Type ID"
+    _required = true
+    relationshipName = "WorkType"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.WaitlistWorkType {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WaitlistWorkType.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.WaitlistWorkType {
   }
   salesforce.Lookup CreatedById {
     apiName = "WaitlistWorkType.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.WaitlistWorkType {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WaitlistWorkType.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

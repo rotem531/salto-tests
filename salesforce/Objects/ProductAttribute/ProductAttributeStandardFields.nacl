@@ -1,9 +1,9 @@
 type salesforce.ProductAttribute {
   salesforce.Lookup ProductId {
     apiName = "ProductAttribute.ProductId"
-    relationshipName = "Product"
-    _required = true
     label = "Product ID"
+    _required = true
+    relationshipName = "Product"
     createable = true
     updateable = false
     queryable = true
@@ -11,17 +11,17 @@ type salesforce.ProductAttribute {
   salesforce.Number Sequence {
     apiName = "ProductAttribute.Sequence"
     label = "Sequence"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Lookup VariantParentId {
     apiName = "ProductAttribute.VariantParentId"
-    relationshipName = "VariantParent"
     label = "Product ID"
+    relationshipName = "VariantParent"
     createable = true
     updateable = true
     queryable = true
@@ -34,8 +34,8 @@ type salesforce.ProductAttribute {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ProductAttribute.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -59,8 +59,8 @@ type salesforce.ProductAttribute {
   }
   salesforce.Lookup CreatedById {
     apiName = "ProductAttribute.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -76,8 +76,8 @@ type salesforce.ProductAttribute {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ProductAttribute.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

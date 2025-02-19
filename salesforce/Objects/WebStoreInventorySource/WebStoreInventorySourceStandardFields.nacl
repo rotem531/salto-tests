@@ -3,18 +3,18 @@ type salesforce.WebStoreInventorySource {
     apiName = "WebStoreInventorySource.InventoryCacheTtl"
     inlineHelpText = "The Inventory Cache Time To Live must be between 300 and 14,400. The default for a new store is 1,440."
     label = "Inventory Cache Time To Live (Seconds)."
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist InventoryDimension {
     apiName = "WebStoreInventorySource.InventoryDimension"
     inlineHelpText = "The inventory stock level used to determine product availability. The default for a new store is Available to Order."
-    restricted = true
     label = "Inventory Dimension"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -25,21 +25,21 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Text LocationSourceExtRef {
     apiName = "WebStoreInventorySource.LocationSourceExtRef"
-    length = 255
     label = "Location Source External Reference"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LocationSourceId {
     apiName = "WebStoreInventorySource.LocationSourceId"
     inlineHelpText = "The default location or location group for inventory reservations."
-    relationshipName = "LocationSource"
-    _required = true
     label = "Location Source ID"
+    _required = true
+    relationshipName = "LocationSource"
     createable = true
     updateable = true
     queryable = true
@@ -47,20 +47,20 @@ type salesforce.WebStoreInventorySource {
   salesforce.Number ReservationDurationInSeconds {
     apiName = "WebStoreInventorySource.ReservationDurationInSeconds"
     inlineHelpText = "The reservation time limit must be between 300 and 14,400. The default for a new store is 900."
-    _required = true
     label = "Reservation Duration (Seconds)"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.MasterDetail WebStoreId {
     apiName = "WebStoreInventorySource.WebStoreId"
-    relationshipName = "WebStore"
-    _required = true
     label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
     createable = true
     updateable = false
     queryable = true
@@ -73,8 +73,8 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebStoreInventorySource.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -98,8 +98,8 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebStoreInventorySource.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebStoreInventorySource.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -132,8 +132,8 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Checkbox IsDefault {
     apiName = "WebStoreInventorySource.IsDefault"
-    defaultValue = false
     label = "Default"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -141,8 +141,8 @@ type salesforce.WebStoreInventorySource {
   }
   salesforce.Checkbox IsBopisEnabled {
     apiName = "WebStoreInventorySource.IsBopisEnabled"
-    defaultValue = false
     label = "BOPIS Enabled"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

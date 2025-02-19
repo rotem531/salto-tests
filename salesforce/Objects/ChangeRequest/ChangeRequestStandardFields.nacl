@@ -1,8 +1,8 @@
 type salesforce.ChangeRequest {
   salesforce.LongTextArea BusinessJustification {
     apiName = "ChangeRequest.BusinessJustification"
-    length = 32000
     label = "Business Justification"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -23,16 +23,16 @@ type salesforce.ChangeRequest {
   }
   salesforce.Picklist ChangeType {
     apiName = "ChangeRequest.ChangeType"
-    restricted = true
     label = "Type of Change"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "ChangeRequest.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -60,17 +60,17 @@ type salesforce.ChangeRequest {
   }
   salesforce.LongTextArea FinalReviewNotes {
     apiName = "ChangeRequest.FinalReviewNotes"
-    length = 32000
     label = "Final Review Notes"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Impact {
     apiName = "ChangeRequest.Impact"
-    restricted = false
-    _required = true
     label = "Impact"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -78,8 +78,8 @@ type salesforce.ChangeRequest {
   }
   salesforce.Lookup OwnerId {
     apiName = "ChangeRequest.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -87,42 +87,42 @@ type salesforce.ChangeRequest {
   }
   salesforce.Picklist Priority {
     apiName = "ChangeRequest.Priority"
-    restricted = false
-    _required = true
     label = "Priority"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea RemediationPlan {
     apiName = "ChangeRequest.RemediationPlan"
-    length = 32000
     label = "Remediation Plan"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ReviewerId {
     apiName = "ChangeRequest.ReviewerId"
-    relationshipName = "Reviewer"
     label = "User ID"
+    relationshipName = "Reviewer"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea RiskImpactAnalysis {
     apiName = "ChangeRequest.RiskImpactAnalysis"
-    length = 32000
     label = "Impact Analysis"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RiskLevel {
     apiName = "ChangeRequest.RiskLevel"
-    restricted = false
-    _required = true
     label = "Risk Level"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -130,17 +130,17 @@ type salesforce.ChangeRequest {
   }
   salesforce.Picklist Status {
     apiName = "ChangeRequest.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist StatusCode {
     apiName = "ChangeRequest.StatusCode"
-    restricted = true
     label = "Status Code"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -148,13 +148,13 @@ type salesforce.ChangeRequest {
   }
   salesforce.Text Subject {
     apiName = "ChangeRequest.Subject"
-    length = 255
-    _required = true
     label = "Subject"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -165,8 +165,8 @@ type salesforce.ChangeRequest {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ChangeRequest.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -190,8 +190,8 @@ type salesforce.ChangeRequest {
   }
   salesforce.Lookup CreatedById {
     apiName = "ChangeRequest.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -207,8 +207,8 @@ type salesforce.ChangeRequest {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ChangeRequest.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

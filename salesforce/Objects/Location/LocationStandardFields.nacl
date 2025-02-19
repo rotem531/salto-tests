@@ -30,71 +30,71 @@ type salesforce.Location {
   salesforce.Number DefaultProcessingTime {
     apiName = "Location.DefaultProcessingTime"
     label = "Default Processing Time"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist DefaultProcessingTimeUnit {
     apiName = "Location.DefaultProcessingTimeUnit"
-    restricted = true
     label = "Default Processing Time Unit"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "Location.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text DrivingDirections {
     apiName = "Location.DrivingDirections"
-    length = 1000
     label = "Driving Directions"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text ExternalReference {
     apiName = "Location.ExternalReference"
-    length = 255
     label = "External Reference"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup FulfillingBusinessHoursId {
     apiName = "Location.FulfillingBusinessHoursId"
-    relationshipName = "FulfillingBusinessHours"
     label = "Business Hours ID"
+    relationshipName = "FulfillingBusinessHours"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsInventoryLocation {
     apiName = "Location.IsInventoryLocation"
-    defaultValue = false
     label = "Inventory Location"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsMobile {
     apiName = "Location.IsMobile"
-    defaultValue = false
     label = "Mobile Location"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -111,39 +111,39 @@ type salesforce.Location {
   salesforce.Number LocationLevel {
     apiName = "Location.LocationLevel"
     label = "Location Level"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist LocationType {
     apiName = "Location.LocationType"
-    _required = true
     label = "Location Type"
+    _required = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup LogoId {
     apiName = "Location.LogoId"
-    relationshipName = "Logo"
     label = "Asset File ID"
+    relationshipName = "Logo"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Location.Name"
-    length = 255
-    _required = true
     label = "Location Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Date OpenDate {
@@ -155,8 +155,8 @@ type salesforce.Location {
   }
   salesforce.Lookup OwnerId {
     apiName = "Location.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -164,8 +164,8 @@ type salesforce.Location {
   }
   salesforce.Hierarchy ParentLocationId {
     apiName = "Location.ParentLocationId"
-    relationshipName = "ParentLocation"
     label = "Parent Location ID"
+    relationshipName = "ParentLocation"
     createable = true
     updateable = true
     queryable = true
@@ -193,8 +193,8 @@ type salesforce.Location {
   }
   salesforce.Lookup RootLocationId {
     apiName = "Location.RootLocationId"
-    relationshipName = "RootLocation"
     label = "Root Location ID"
+    relationshipName = "RootLocation"
     createable = false
     updateable = false
     queryable = true
@@ -202,24 +202,24 @@ type salesforce.Location {
   }
   salesforce.Checkbox ShouldSyncWithOci {
     apiName = "Location.ShouldSyncWithOci"
-    defaultValue = false
     label = "Sync with OCI"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist TimeZone {
     apiName = "Location.TimeZone"
-    restricted = true
     label = "Time Zone"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup VisitorAddressId {
     apiName = "Location.VisitorAddressId"
-    relationshipName = "VisitorAddress"
     label = "Address ID"
+    relationshipName = "VisitorAddress"
     createable = true
     updateable = true
     queryable = true
@@ -232,8 +232,8 @@ type salesforce.Location {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Location.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -249,8 +249,8 @@ type salesforce.Location {
   }
   salesforce.Lookup CreatedById {
     apiName = "Location.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -266,8 +266,8 @@ type salesforce.Location {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Location.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

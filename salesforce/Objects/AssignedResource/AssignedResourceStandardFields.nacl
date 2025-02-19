@@ -9,8 +9,8 @@ type salesforce.AssignedResource {
   }
   salesforce.Lookup EventId {
     apiName = "AssignedResource.EventId"
-    relationshipName = "Event"
     label = "Activity ID"
+    relationshipName = "Event"
     createable = false
     updateable = false
     queryable = true
@@ -18,8 +18,8 @@ type salesforce.AssignedResource {
   }
   salesforce.Checkbox IsRequiredResource {
     apiName = "AssignedResource.IsRequiredResource"
-    defaultValue = false
     label = "Required Resource"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -33,18 +33,18 @@ type salesforce.AssignedResource {
   }
   salesforce.MasterDetail ServiceAppointmentId {
     apiName = "AssignedResource.ServiceAppointmentId"
-    relationshipName = "ServiceAppointment"
-    _required = true
     label = "Service Appointment ID"
+    _required = true
+    relationshipName = "ServiceAppointment"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ServiceResourceId {
     apiName = "AssignedResource.ServiceResourceId"
-    relationshipName = "ServiceResource"
-    _required = true
     label = "Service Resource ID"
+    _required = true
+    relationshipName = "ServiceResource"
     createable = true
     updateable = true
     queryable = true
@@ -57,8 +57,8 @@ type salesforce.AssignedResource {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssignedResource.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -74,8 +74,8 @@ type salesforce.AssignedResource {
   }
   salesforce.Lookup CreatedById {
     apiName = "AssignedResource.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -91,8 +91,8 @@ type salesforce.AssignedResource {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssignedResource.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

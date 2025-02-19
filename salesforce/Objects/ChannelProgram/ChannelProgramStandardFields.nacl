@@ -1,8 +1,8 @@
 type salesforce.ChannelProgram {
   salesforce.Picklist Category {
     apiName = "ChannelProgram.Category"
-    restricted = false
     label = "Category"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -16,27 +16,27 @@ type salesforce.ChannelProgram {
   }
   salesforce.Checkbox IsActive {
     apiName = "ChannelProgram.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ChannelProgram.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ChannelProgram.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.ChannelProgram {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ChannelProgram.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.ChannelProgram {
   }
   salesforce.Lookup CreatedById {
     apiName = "ChannelProgram.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.ChannelProgram {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ChannelProgram.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

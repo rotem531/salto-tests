@@ -1,12 +1,12 @@
 type salesforce.LegalEntity {
   salesforce.Text CompanyName {
     apiName = "LegalEntity.CompanyName"
-    length = 255
     label = "Company Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.TextArea Description {
@@ -26,19 +26,19 @@ type salesforce.LegalEntity {
   }
   salesforce.Text Name {
     apiName = "LegalEntity.Name"
-    length = 255
-    _required = true
     label = "Legal Entity Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "LegalEntity.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -46,8 +46,8 @@ type salesforce.LegalEntity {
   }
   salesforce.Picklist Status {
     apiName = "LegalEntity.Status"
-    restricted = true
     label = "Status"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.LegalEntity {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "LegalEntity.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.LegalEntity {
   }
   salesforce.Lookup CreatedById {
     apiName = "LegalEntity.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -94,8 +94,8 @@ type salesforce.LegalEntity {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "LegalEntity.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

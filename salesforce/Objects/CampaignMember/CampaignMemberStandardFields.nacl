@@ -1,58 +1,58 @@
 type salesforce.CampaignMember {
   salesforce.Lookup CampaignId {
     apiName = "CampaignMember.CampaignId"
-    relationshipName = "Campaign"
-    _required = true
     label = "Campaign ID"
+    _required = true
+    relationshipName = "Campaign"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text City {
     apiName = "CampaignMember.City"
-    length = 40
     label = "City"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text CompanyOrAccount {
     apiName = "CampaignMember.CompanyOrAccount"
-    length = 255
     label = "Company (Account)"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "CampaignMember.ContactId"
-    relationshipName = "Contact"
     label = "Contact ID"
+    relationshipName = "Contact"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text Country {
     apiName = "CampaignMember.Country"
-    length = 80
     label = "Country"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "CampaignMember.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Checkbox DoNotCall {
     apiName = "CampaignMember.DoNotCall"
-    defaultValue = false
     label = "Do Not Call"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -70,9 +70,9 @@ type salesforce.CampaignMember {
   salesforce.Email Email {
     apiName = "CampaignMember.Email"
     label = "Email"
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
@@ -86,12 +86,12 @@ type salesforce.CampaignMember {
   }
   salesforce.Text FirstName {
     apiName = "CampaignMember.FirstName"
-    length = 40
     label = "First Name"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -105,8 +105,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Checkbox HasOptedOutOfEmail {
     apiName = "CampaignMember.HasOptedOutOfEmail"
-    defaultValue = false
     label = "Email Opt Out"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -114,8 +114,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Checkbox HasOptedOutOfFax {
     apiName = "CampaignMember.HasOptedOutOfFax"
-    defaultValue = false
     label = "Fax Opt Out"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -123,8 +123,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Checkbox HasResponded {
     apiName = "CampaignMember.HasResponded"
-    defaultValue = false
     label = "Responded"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -132,27 +132,27 @@ type salesforce.CampaignMember {
   }
   salesforce.Text LastName {
     apiName = "CampaignMember.LastName"
-    length = 80
     label = "Last Name"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LeadId {
     apiName = "CampaignMember.LeadId"
-    relationshipName = "Lead"
     label = "Lead ID"
+    relationshipName = "Lead"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist LeadSource {
     apiName = "CampaignMember.LeadSource"
-    restricted = false
     label = "Lead Source"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -177,19 +177,19 @@ type salesforce.CampaignMember {
   }
   salesforce.Text PostalCode {
     apiName = "CampaignMember.PostalCode"
-    length = 20
     label = "Zip/Postal Code"
-    createable = false
-    updateable = false
+    length = 20
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Salutation {
     apiName = "CampaignMember.Salutation"
-    restricted = false
     label = "Salutation"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -198,19 +198,19 @@ type salesforce.CampaignMember {
   }
   salesforce.Text State {
     apiName = "CampaignMember.State"
-    length = 80
     label = "State/Province"
-    createable = false
-    updateable = false
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "CampaignMember.Status"
-    restricted = false
     label = "Status"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -218,23 +218,23 @@ type salesforce.CampaignMember {
   }
   salesforce.Text Street {
     apiName = "CampaignMember.Street"
-    length = 255
     label = "Street"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Title {
     apiName = "CampaignMember.Title"
-    length = 128
     label = "Title"
-    createable = false
-    updateable = false
+    length = 128
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -246,8 +246,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CampaignMember.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -263,8 +263,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Lookup CreatedById {
     apiName = "CampaignMember.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -280,8 +280,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CampaignMember.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -297,23 +297,23 @@ type salesforce.CampaignMember {
   }
   salesforce.Text Name {
     apiName = "CampaignMember.Name"
-    length = 255
     label = "Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Type {
     apiName = "CampaignMember.Type"
-    length = 40
     label = "Type"
-    createable = false
-    updateable = false
+    length = 40
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -327,8 +327,8 @@ type salesforce.CampaignMember {
   }
   salesforce.Lookup LeadOrContactOwnerId {
     apiName = "CampaignMember.LeadOrContactOwnerId"
-    relationshipName = "LeadOrContactOwner"
     label = "Related Record Owner ID"
+    relationshipName = "LeadOrContactOwner"
     createable = false
     updateable = false
     queryable = true

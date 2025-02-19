@@ -1,12 +1,12 @@
 type salesforce.CreditMemoInvApplication {
   salesforce.Currency Amount {
     apiName = "CreditMemoInvApplication.Amount"
-    _required = true
     label = "Amount"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -21,8 +21,8 @@ type salesforce.CreditMemoInvApplication {
   salesforce.Lookup AssociatedLineId {
     apiName = "CreditMemoInvApplication.AssociatedLineId"
     inlineHelpText = "The application that this credit memo invoice application has unapplied."
-    relationshipName = "AssociatedLine"
     label = "Credit Memo Invoice Application ID"
+    relationshipName = "AssociatedLine"
     createable = false
     updateable = false
     queryable = true
@@ -30,9 +30,9 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Lookup CreditMemoId {
     apiName = "CreditMemoInvApplication.CreditMemoId"
-    relationshipName = "CreditMemo"
-    _required = true
     label = "Credit Memo ID"
+    _required = true
+    relationshipName = "CreditMemo"
     createable = false
     updateable = false
     queryable = true
@@ -48,12 +48,12 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Text Description {
     apiName = "CreditMemoInvApplication.Description"
-    length = 255
     label = "Description"
-    createable = false
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime EffectiveDate {
@@ -66,8 +66,8 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Picklist HasBeenUnapplied {
     apiName = "CreditMemoInvApplication.HasBeenUnapplied"
-    restricted = true
     label = "Has Been Unapplied"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -84,9 +84,9 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.MasterDetail InvoiceId {
     apiName = "CreditMemoInvApplication.InvoiceId"
-    relationshipName = "Invoice"
-    _required = true
     label = "Invoice ID"
+    _required = true
+    relationshipName = "Invoice"
     createable = false
     updateable = false
     queryable = true
@@ -94,9 +94,9 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Picklist Type {
     apiName = "CreditMemoInvApplication.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -118,8 +118,8 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CreditMemoInvApplication.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -143,8 +143,8 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Lookup CreatedById {
     apiName = "CreditMemoInvApplication.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -160,8 +160,8 @@ type salesforce.CreditMemoInvApplication {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CreditMemoInvApplication.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

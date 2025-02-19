@@ -1,8 +1,8 @@
 type salesforce.ReportAnomalyEventStore {
   salesforce.DateTime EventDate {
     apiName = "ReportAnomalyEventStore.EventDate"
-    _required = true
     label = "Event Date"
+    _required = true
     createable = false
     updateable = false
     queryable = true
@@ -10,42 +10,42 @@ type salesforce.ReportAnomalyEventStore {
   }
   salesforce.Text EventIdentifier {
     apiName = "ReportAnomalyEventStore.EventIdentifier"
-    length = 80
-    _required = true
     label = "Event ID"
-    createable = false
-    updateable = false
+    _required = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text Report {
     apiName = "ReportAnomalyEventStore.Report"
-    length = 18
     label = "Report ID"
-    createable = false
-    updateable = false
+    length = 18
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number Score {
     apiName = "ReportAnomalyEventStore.Score"
     label = "Score"
-    precision = 12
     scale = 6
+    precision = 12
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea SecurityEventData {
     apiName = "ReportAnomalyEventStore.SecurityEventData"
-    length = 10000
     label = "Event Data"
+    length = 10000
     createable = false
     updateable = false
     queryable = true
@@ -53,19 +53,19 @@ type salesforce.ReportAnomalyEventStore {
   }
   salesforce.Text SourceIp {
     apiName = "ReportAnomalyEventStore.SourceIp"
-    length = 255
     label = "Source IP Address"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea Summary {
     apiName = "ReportAnomalyEventStore.Summary"
-    length = 1000
     label = "Summary"
+    length = 1000
     createable = false
     updateable = false
     queryable = true
@@ -73,8 +73,8 @@ type salesforce.ReportAnomalyEventStore {
   }
   salesforce.Lookup UserId {
     apiName = "ReportAnomalyEventStore.UserId"
-    relationshipName = "User"
     label = "User ID"
+    relationshipName = "User"
     createable = false
     updateable = false
     queryable = true
@@ -120,41 +120,41 @@ type salesforce.ReportAnomalyEventStore {
   }
   salesforce.Text Username {
     apiName = "ReportAnomalyEventStore.Username"
-    length = 255
     label = "Username"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text SessionKey {
     apiName = "ReportAnomalyEventStore.SessionKey"
-    length = 24
     label = "Session Key"
-    createable = false
-    updateable = false
+    length = 24
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LoginKey {
     apiName = "ReportAnomalyEventStore.LoginKey"
-    length = 24
     label = "Login Key"
-    createable = false
-    updateable = false
+    length = 24
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup PolicyId {
     apiName = "ReportAnomalyEventStore.PolicyId"
-    relationshipName = "Policy"
     label = "Transaction Security Policy ID"
+    relationshipName = "Policy"
     createable = false
     updateable = false
     queryable = true
@@ -162,8 +162,8 @@ type salesforce.ReportAnomalyEventStore {
   }
   salesforce.Picklist PolicyOutcome {
     apiName = "ReportAnomalyEventStore.PolicyOutcome"
-    restricted = true
     label = "Policy Outcome"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -172,11 +172,11 @@ type salesforce.ReportAnomalyEventStore {
   salesforce.Number EvaluationTime {
     apiName = "ReportAnomalyEventStore.EvaluationTime"
     label = "Evaluation Time"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = false
     updateable = false
-    unique = false
     queryable = true
     _hidden_value = true
   }

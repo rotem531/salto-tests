@@ -1,12 +1,12 @@
 type salesforce.RefundLinePayment {
   salesforce.Currency Amount {
     apiName = "RefundLinePayment.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.DateTime AppliedDate {
@@ -18,24 +18,24 @@ type salesforce.RefundLinePayment {
   }
   salesforce.Lookup AssociatedAccountId {
     apiName = "RefundLinePayment.AssociatedAccountId"
-    relationshipName = "AssociatedAccount"
     label = "Account ID"
+    relationshipName = "AssociatedAccount"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup AssociatedRefundLinePaymentId {
     apiName = "RefundLinePayment.AssociatedRefundLinePaymentId"
-    relationshipName = "AssociatedRefundLinePayment"
     label = "Refund Line Payment ID"
+    relationshipName = "AssociatedRefundLinePayment"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Comments {
     apiName = "RefundLinePayment.Comments"
-    length = 1000
     label = "Comments"
+    length = 1000
     createable = true
     updateable = true
     queryable = true
@@ -64,9 +64,9 @@ type salesforce.RefundLinePayment {
   }
   salesforce.Picklist HasBeenUnapplied {
     apiName = "RefundLinePayment.HasBeenUnapplied"
-    restricted = true
-    _required = true
     label = "Has Been Unapplied"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -82,18 +82,18 @@ type salesforce.RefundLinePayment {
   salesforce.Currency PaymentBalance {
     apiName = "RefundLinePayment.PaymentBalance"
     label = "Payment Balance"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.MasterDetail PaymentId {
     apiName = "RefundLinePayment.PaymentId"
-    relationshipName = "Payment"
-    _required = true
     label = "Payment ID"
+    _required = true
+    relationshipName = "Payment"
     createable = true
     updateable = false
     queryable = true
@@ -101,27 +101,27 @@ type salesforce.RefundLinePayment {
   salesforce.Currency RefundBalance {
     apiName = "RefundLinePayment.RefundBalance"
     label = "Refund Balance"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup RefundId {
     apiName = "RefundLinePayment.RefundId"
-    relationshipName = "Refund"
-    _required = true
     label = "Refund ID"
+    _required = true
+    relationshipName = "Refund"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "RefundLinePayment.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -141,8 +141,8 @@ type salesforce.RefundLinePayment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "RefundLinePayment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -166,8 +166,8 @@ type salesforce.RefundLinePayment {
   }
   salesforce.Lookup CreatedById {
     apiName = "RefundLinePayment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -183,8 +183,8 @@ type salesforce.RefundLinePayment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "RefundLinePayment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

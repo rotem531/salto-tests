@@ -1,8 +1,8 @@
 type salesforce.AccountContactRole {
   salesforce.Picklist Role {
     apiName = "AccountContactRole.Role"
-    restricted = false
     label = "Role"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.AccountContactRole {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AccountContactRole.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.AccountContactRole {
   }
   salesforce.Lookup CreatedById {
     apiName = "AccountContactRole.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.AccountContactRole {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AccountContactRole.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,26 +67,26 @@ type salesforce.AccountContactRole {
   }
   salesforce.Lookup AccountId {
     apiName = "AccountContactRole.AccountId"
-    relationshipName = "Account"
-    _required = true
     label = "Account ID"
+    _required = true
+    relationshipName = "Account"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup ContactId {
     apiName = "AccountContactRole.ContactId"
-    relationshipName = "Contact"
-    _required = true
     label = "Contact ID"
+    _required = true
+    relationshipName = "Contact"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsPrimary {
     apiName = "AccountContactRole.IsPrimary"
-    defaultValue = false
     label = "Primary"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true

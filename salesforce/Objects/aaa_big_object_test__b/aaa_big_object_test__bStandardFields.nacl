@@ -7,8 +7,8 @@ type salesforce.aaa_big_object_test__b {
   }
   salesforce.Lookup CreatedById {
     apiName = "aaa_big_object_test__b.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,12 +1,12 @@
 type salesforce.FulfillmentOrderLineItem {
   salesforce.Text Description {
     apiName = "FulfillmentOrderLineItem.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime EndDate {
@@ -18,9 +18,9 @@ type salesforce.FulfillmentOrderLineItem {
   }
   salesforce.MasterDetail FulfillmentOrderId {
     apiName = "FulfillmentOrderLineItem.FulfillmentOrderId"
-    relationshipName = "FulfillmentOrder"
-    _required = true
     label = "Fulfillment Order ID"
+    _required = true
+    relationshipName = "FulfillmentOrder"
     createable = true
     updateable = false
     queryable = true
@@ -28,16 +28,16 @@ type salesforce.FulfillmentOrderLineItem {
   salesforce.Currency GrossUnitPrice {
     apiName = "FulfillmentOrderLineItem.GrossUnitPrice"
     label = "Gross Unit Price"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Checkbox IsReship {
     apiName = "FulfillmentOrderLineItem.IsReship"
-    defaultValue = false
     label = "Reship"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -49,56 +49,56 @@ type salesforce.FulfillmentOrderLineItem {
   }
   salesforce.Lookup OrderItemId {
     apiName = "FulfillmentOrderLineItem.OrderItemId"
-    relationshipName = "OrderItem"
     label = "Order Product ID"
+    relationshipName = "OrderItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Number OriginalQuantity {
     apiName = "FulfillmentOrderLineItem.OriginalQuantity"
-    _required = true
     label = "Quantity on the Original Order"
-    precision = 18
+    _required = true
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = false
-    unique = false
     queryable = true
   }
   salesforce.Lookup Product2Id {
     apiName = "FulfillmentOrderLineItem.Product2Id"
-    relationshipName = "Product2"
     label = "Product ID"
+    relationshipName = "Product2"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Number Quantity {
     apiName = "FulfillmentOrderLineItem.Quantity"
-    _required = true
     label = "Quantity"
-    precision = 18
+    _required = true
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Text QuantityUnitOfMeasure {
     apiName = "FulfillmentOrderLineItem.QuantityUnitOfMeasure"
-    length = 100
     label = "Quantity Unit Of Measure"
-    createable = true
-    updateable = false
+    length = 100
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Picklist RejectReason {
     apiName = "FulfillmentOrderLineItem.RejectReason"
-    restricted = true
     label = "Reject Reason"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -106,17 +106,17 @@ type salesforce.FulfillmentOrderLineItem {
   salesforce.Number RejectedQuantity {
     apiName = "FulfillmentOrderLineItem.RejectedQuantity"
     label = "Rejected Quantity"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Picklist ReshipReason {
     apiName = "FulfillmentOrderLineItem.ReshipReason"
-    restricted = false
     label = "Reship Reason"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -163,10 +163,10 @@ type salesforce.FulfillmentOrderLineItem {
   salesforce.Currency TotalLineAmount {
     apiName = "FulfillmentOrderLineItem.TotalLineAmount"
     label = "Line Subtotal"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   salesforce.Summary TotalLineAmountWithTax {
@@ -204,10 +204,10 @@ type salesforce.FulfillmentOrderLineItem {
   salesforce.Currency UnitPrice {
     apiName = "FulfillmentOrderLineItem.UnitPrice"
     label = "Unit Price"
-    createable = true
-    updateable = false
     scale = 2
     precision = 18
+    createable = true
+    updateable = false
     queryable = true
   }
   serviceid Id {
@@ -218,8 +218,8 @@ type salesforce.FulfillmentOrderLineItem {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "FulfillmentOrderLineItem.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -243,8 +243,8 @@ type salesforce.FulfillmentOrderLineItem {
   }
   salesforce.Lookup CreatedById {
     apiName = "FulfillmentOrderLineItem.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -260,8 +260,8 @@ type salesforce.FulfillmentOrderLineItem {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "FulfillmentOrderLineItem.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

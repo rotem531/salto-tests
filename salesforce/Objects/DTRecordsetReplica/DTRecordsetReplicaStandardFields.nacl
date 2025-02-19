@@ -7,8 +7,8 @@ type salesforce.DTRecordsetReplica {
   }
   salesforce.Lookup OwnerId {
     apiName = "DTRecordsetReplica.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -16,8 +16,8 @@ type salesforce.DTRecordsetReplica {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DTRecordsetReplica.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -33,8 +33,8 @@ type salesforce.DTRecordsetReplica {
   }
   salesforce.Lookup CreatedById {
     apiName = "DTRecordsetReplica.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.DTRecordsetReplica {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DTRecordsetReplica.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,49 +67,49 @@ type salesforce.DTRecordsetReplica {
   }
   salesforce.Text HashKey {
     apiName = "DTRecordsetReplica.HashKey"
-    length = 100
-    _required = true
     label = "Hash Key"
-    createable = true
-    updateable = true
+    _required = true
+    length = 100
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text DecisionTable {
     apiName = "DTRecordsetReplica.DecisionTable"
-    length = 40
-    _required = true
     label = "DecisionTable Id"
-    createable = true
-    updateable = true
+    _required = true
+    length = 40
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number LastRefreshDate {
     apiName = "DTRecordsetReplica.LastRefreshDate"
-    _required = true
     label = "Last Refresh Date"
-    precision = 18
+    _required = true
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.LongTextArea NonhashedInputFieldValue {
     apiName = "DTRecordsetReplica.NonhashedInputFieldValue"
-    length = 131000
     label = "Nonhashed Input Field Value"
+    length = 131000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea NonhashedOutputFieldValue {
     apiName = "DTRecordsetReplica.NonhashedOutputFieldValue"
-    length = 131000
     label = "Nonhashed Output Field Value"
+    length = 131000
     createable = true
     updateable = true
     queryable = true

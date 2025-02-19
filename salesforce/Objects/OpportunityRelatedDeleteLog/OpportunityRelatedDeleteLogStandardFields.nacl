@@ -7,8 +7,8 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityRelatedDeleteLog.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Lookup CreatedById {
     apiName = "OpportunityRelatedDeleteLog.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityRelatedDeleteLog.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,9 +66,9 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityRelatedDeleteLog.OpportunityId"
-    relationshipName = "Opportunity"
-    _required = true
     label = "Opportunity ID"
+    _required = true
+    relationshipName = "Opportunity"
     createable = false
     updateable = false
     queryable = true
@@ -76,19 +76,19 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Text Parent {
     apiName = "OpportunityRelatedDeleteLog.Parent"
-    length = 18
     label = "Parent"
-    createable = false
-    updateable = false
+    length = 18
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist FieldName {
     apiName = "OpportunityRelatedDeleteLog.FieldName"
-    restricted = true
     label = "Field Name"
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -96,8 +96,8 @@ type salesforce.OpportunityRelatedDeleteLog {
   }
   salesforce.Picklist DataType {
     apiName = "OpportunityRelatedDeleteLog.DataType"
-    restricted = true
     label = "Data Type"
+    restricted = true
     createable = false
     updateable = false
     queryable = true

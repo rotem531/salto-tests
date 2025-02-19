@@ -1,18 +1,18 @@
 type salesforce.LocationGroupAssignment {
   salesforce.MasterDetail LocationGroupId {
     apiName = "LocationGroupAssignment.LocationGroupId"
-    relationshipName = "LocationGroup"
-    _required = true
     label = "Location Group ID"
+    _required = true
+    relationshipName = "LocationGroup"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail LocationId {
     apiName = "LocationGroupAssignment.LocationId"
-    relationshipName = "Location"
-    _required = true
     label = "Location ID"
+    _required = true
+    relationshipName = "Location"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.LocationGroupAssignment {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "LocationGroupAssignment.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.LocationGroupAssignment {
   }
   salesforce.Lookup CreatedById {
     apiName = "LocationGroupAssignment.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.LocationGroupAssignment {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "LocationGroupAssignment.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -84,45 +84,45 @@ type salesforce.LocationGroupAssignment {
   }
   salesforce.Text LocationExternalReference {
     apiName = "LocationGroupAssignment.LocationExternalReference"
-    length = 255
     label = "External Reference"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LocationGroupExternalReference {
     apiName = "LocationGroupAssignment.LocationGroupExternalReference"
-    length = 255
     label = "External Reference"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LocationName {
     apiName = "LocationGroupAssignment.LocationName"
-    length = 255
     label = "Location Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text LocationGroupName {
     apiName = "LocationGroupAssignment.LocationGroupName"
-    length = 255
     label = "Location Group Number"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }

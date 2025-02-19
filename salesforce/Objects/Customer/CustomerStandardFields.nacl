@@ -1,27 +1,27 @@
 type salesforce.Customer {
   salesforce.Picklist CustomerStatusType {
     apiName = "Customer.CustomerStatusType"
-    restricted = true
     label = "Customer Status Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Customer.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Customer.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -29,8 +29,8 @@ type salesforce.Customer {
   }
   salesforce.Lookup PartyId {
     apiName = "Customer.PartyId"
-    relationshipName = "Party"
     label = "Individual ID"
+    relationshipName = "Party"
     createable = true
     updateable = true
     queryable = true
@@ -38,11 +38,11 @@ type salesforce.Customer {
   salesforce.Number TotalLifeTimeValue {
     apiName = "Customer.TotalLifeTimeValue"
     label = "Total Life Time Value"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   serviceid Id {
@@ -53,8 +53,8 @@ type salesforce.Customer {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Customer.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -70,8 +70,8 @@ type salesforce.Customer {
   }
   salesforce.Lookup CreatedById {
     apiName = "Customer.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -87,8 +87,8 @@ type salesforce.Customer {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Customer.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

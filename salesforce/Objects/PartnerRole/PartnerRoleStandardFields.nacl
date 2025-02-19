@@ -1,8 +1,8 @@
 type salesforce.PartnerRole {
   salesforce.Picklist ReverseRole {
     apiName = "PartnerRole.ReverseRole"
-    restricted = false
     label = "Reverse Role"
+    restricted = false
     createable = false
     updateable = false
     queryable = true
@@ -17,42 +17,42 @@ type salesforce.PartnerRole {
   }
   salesforce.Text MasterLabel {
     apiName = "PartnerRole.MasterLabel"
-    length = 255
     label = "Master Label"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text ApiName {
     apiName = "PartnerRole.ApiName"
-    length = 255
-    _required = true
     label = "Api Name"
-    createable = false
-    updateable = false
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number SortOrder {
     apiName = "PartnerRole.SortOrder"
     label = "Sort Order"
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "PartnerRole.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -68,8 +68,8 @@ type salesforce.PartnerRole {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PartnerRole.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,20 +1,20 @@
 type salesforce.AppointmentInvitation {
   salesforce.Lookup AppointmentTopicId {
     apiName = "AppointmentInvitation.AppointmentTopicId"
-    relationshipName = "AppointmentTopic"
     label = "Appointment Topic ID"
+    relationshipName = "AppointmentTopic"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text AppointmentTopicType {
     apiName = "AppointmentInvitation.AppointmentTopicType"
-    length = 50
     label = "Appointment Topic Type"
-    createable = false
-    updateable = false
+    length = 50
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -41,20 +41,20 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Lookup EngagementChannelTypeId {
     apiName = "AppointmentInvitation.EngagementChannelTypeId"
-    relationshipName = "EngagementChannelType"
     label = "Engagement Channel Type ID"
+    relationshipName = "EngagementChannelType"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text InvitationIdentifier {
     apiName = "AppointmentInvitation.InvitationIdentifier"
-    length = 36
     label = "Invitation Identifier"
-    createable = false
-    updateable = false
+    length = 36
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -67,16 +67,16 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Checkbox IsActive {
     apiName = "AppointmentInvitation.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "AppointmentInvitation.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -84,8 +84,8 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Lookup ServiceTerritoryId {
     apiName = "AppointmentInvitation.ServiceTerritoryId"
-    relationshipName = "ServiceTerritory"
     label = "Territory ID"
+    relationshipName = "ServiceTerritory"
     createable = true
     updateable = false
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AppointmentInvitation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -130,8 +130,8 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Lookup CreatedById {
     apiName = "AppointmentInvitation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -147,8 +147,8 @@ type salesforce.AppointmentInvitation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AppointmentInvitation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

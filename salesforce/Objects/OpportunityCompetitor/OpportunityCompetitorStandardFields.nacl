@@ -14,37 +14,37 @@ type salesforce.OpportunityCompetitor {
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityCompetitor.OpportunityId"
-    relationshipName = "Opportunity"
-    _required = true
     label = "Opportunity ID"
+    _required = true
+    relationshipName = "Opportunity"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text Strengths {
     apiName = "OpportunityCompetitor.Strengths"
-    length = 1000
     label = "Strengths"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text Weaknesses {
     apiName = "OpportunityCompetitor.Weaknesses"
-    length = 1000
     label = "Weaknesses"
-    createable = true
-    updateable = true
+    length = 1000
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OpportunityCompetitor.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -60,8 +60,8 @@ type salesforce.OpportunityCompetitor {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityCompetitor.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -85,8 +85,8 @@ type salesforce.OpportunityCompetitor {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityCompetitor.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

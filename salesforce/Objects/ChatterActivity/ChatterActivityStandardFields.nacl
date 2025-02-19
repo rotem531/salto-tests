@@ -23,61 +23,61 @@ type salesforce.ChatterActivity {
   }
   salesforce.Number PostCount {
     apiName = "ChatterActivity.PostCount"
-    _required = true
     label = "Post Count"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number CommentCount {
     apiName = "ChatterActivity.CommentCount"
-    _required = true
     label = "Comment Count"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number CommentReceivedCount {
     apiName = "ChatterActivity.CommentReceivedCount"
-    _required = true
     label = "Comment Received Count"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number LikeReceivedCount {
     apiName = "ChatterActivity.LikeReceivedCount"
-    _required = true
     label = "Like Received Count"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Number InfluenceRawRank {
     apiName = "ChatterActivity.InfluenceRawRank"
-    _required = true
     label = "Influence Raw Rank"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = false
     updateable = false
-    scale = 0
-    unique = false
     queryable = true
     _hidden_value = true
   }

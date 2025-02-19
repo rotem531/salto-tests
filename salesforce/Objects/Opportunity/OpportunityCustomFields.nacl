@@ -6,9 +6,9 @@ type salesforce.Opportunity {
     length = 100
     trackTrending = false
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
   salesforce.Picklist DeliveryInstallationStatus__c {
@@ -52,9 +52,9 @@ type salesforce.Opportunity {
     length = 100
     trackTrending = false
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
   salesforce.Text OrderNumber__c {
@@ -64,9 +64,9 @@ type salesforce.Opportunity {
     length = 8
     trackTrending = false
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
   salesforce.Text TrackingNumber__c {
@@ -76,9 +76,9 @@ type salesforce.Opportunity {
     length = 12
     trackTrending = false
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
 }

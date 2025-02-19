@@ -7,8 +7,8 @@ type salesforce.WebStoreNetwork {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebStoreNetwork.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -32,8 +32,8 @@ type salesforce.WebStoreNetwork {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebStoreNetwork.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -49,8 +49,8 @@ type salesforce.WebStoreNetwork {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebStoreNetwork.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -66,26 +66,26 @@ type salesforce.WebStoreNetwork {
   }
   salesforce.Lookup WebStoreId {
     apiName = "WebStoreNetwork.WebStoreId"
-    relationshipName = "WebStore"
-    _required = true
     label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup NetworkId {
     apiName = "WebStoreNetwork.NetworkId"
-    relationshipName = "Network"
-    _required = true
     label = "Network ID"
+    _required = true
+    relationshipName = "Network"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup SiteId {
     apiName = "WebStoreNetwork.SiteId"
-    relationshipName = "Site"
     label = "Site ID"
+    relationshipName = "Site"
     createable = false
     updateable = false
     queryable = true

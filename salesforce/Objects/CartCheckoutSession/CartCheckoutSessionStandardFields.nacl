@@ -7,8 +7,8 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CartCheckoutSession.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -16,13 +16,13 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Text Name {
     apiName = "CartCheckoutSession.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = false
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -35,8 +35,8 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Lookup CreatedById {
     apiName = "CartCheckoutSession.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CartCheckoutSession.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -69,9 +69,9 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Lookup WebCartId {
     apiName = "CartCheckoutSession.WebCartId"
-    relationshipName = "WebCart"
-    _required = true
     label = "Cart ID"
+    _required = true
+    relationshipName = "WebCart"
     createable = false
     updateable = false
     queryable = true
@@ -79,73 +79,73 @@ type salesforce.CartCheckoutSession {
   }
   salesforce.Text State {
     apiName = "CartCheckoutSession.State"
-    length = 30
-    _required = true
     label = "State"
-    createable = false
-    updateable = true
+    _required = true
+    length = 30
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Text NextState {
     apiName = "CartCheckoutSession.NextState"
-    length = 30
     label = "Next State"
-    createable = false
-    updateable = true
+    length = 30
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox IsProcessing {
     apiName = "CartCheckoutSession.IsProcessing"
-    defaultValue = false
     label = "Is Processing"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Lookup BackgroundOperationId {
     apiName = "CartCheckoutSession.BackgroundOperationId"
-    relationshipName = "BackgroundOperation"
     label = "Background Operation ID"
+    relationshipName = "BackgroundOperation"
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "CartCheckoutSession.IsArchived"
-    defaultValue = false
     label = "Is Archived"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Lookup OrderId {
     apiName = "CartCheckoutSession.OrderId"
-    relationshipName = "Order"
     label = "Order ID"
+    relationshipName = "Order"
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsError {
     apiName = "CartCheckoutSession.IsError"
-    defaultValue = false
     label = "Is Error"
+    defaultValue = false
     createable = false
     updateable = true
     queryable = true
   }
   salesforce.Text OrderReferenceNumber {
     apiName = "CartCheckoutSession.OrderReferenceNumber"
-    length = 36
     label = "Order Reference Number"
-    createable = false
-    updateable = true
+    length = 36
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = true
     queryable = true
   }
 }

@@ -1,52 +1,52 @@
 type salesforce.CalcMatrixColumnRange {
   salesforce.MasterDetail CalculationMatrixColumnId {
     apiName = "CalcMatrixColumnRange.CalculationMatrixColumnId"
-    relationshipName = "CalculationMatrixColumn"
-    _required = true
     label = "Decision Matrix Column ID"
+    _required = true
+    relationshipName = "CalculationMatrixColumn"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup CalculationMatrixVersionId {
     apiName = "CalcMatrixColumnRange.CalculationMatrixVersionId"
-    relationshipName = "CalculationMatrixVersion"
     label = "Decision Matrix Version ID"
+    relationshipName = "CalculationMatrixVersion"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CalcMatrixColumnRange.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number Occurrence {
     apiName = "CalcMatrixColumnRange.Occurrence"
-    _required = true
     label = "Occurrence"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text RangeStartValue {
     apiName = "CalcMatrixColumnRange.RangeStartValue"
-    length = 255
-    _required = true
     label = "Range Start Value"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   serviceid Id {
@@ -57,8 +57,8 @@ type salesforce.CalcMatrixColumnRange {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CalcMatrixColumnRange.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -74,8 +74,8 @@ type salesforce.CalcMatrixColumnRange {
   }
   salesforce.Lookup CreatedById {
     apiName = "CalcMatrixColumnRange.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -91,8 +91,8 @@ type salesforce.CalcMatrixColumnRange {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CalcMatrixColumnRange.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

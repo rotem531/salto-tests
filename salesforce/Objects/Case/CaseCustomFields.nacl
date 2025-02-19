@@ -6,9 +6,9 @@ type salesforce.Case {
     length = 12
     trackTrending = false
     unique = false
+    caseSensitive = false
     createable = true
     updateable = true
-    caseSensitive = false
     queryable = true
   }
   salesforce.Picklist PotentialLiability__c {

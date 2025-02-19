@@ -1,27 +1,27 @@
 type salesforce.PartnerFundAllocation {
   salesforce.Currency Amount {
     apiName = "PartnerFundAllocation.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup BudgetId {
     apiName = "PartnerFundAllocation.BudgetId"
-    relationshipName = "Budget"
-    _required = true
     label = "Partner Marketing Budget ID"
+    _required = true
+    relationshipName = "Budget"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ChannelPartnerId {
     apiName = "PartnerFundAllocation.ChannelPartnerId"
-    relationshipName = "ChannelPartner"
     label = "Channel Partner ID"
+    relationshipName = "ChannelPartner"
     createable = true
     updateable = true
     queryable = true
@@ -35,8 +35,8 @@ type salesforce.PartnerFundAllocation {
   }
   salesforce.Lookup OwnerId {
     apiName = "PartnerFundAllocation.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -44,42 +44,42 @@ type salesforce.PartnerFundAllocation {
   }
   salesforce.Text Title {
     apiName = "PartnerFundAllocation.Title"
-    length = 255
-    _required = true
     label = "Partner Fund Allocation Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Currency TotalApprovedFcs {
     apiName = "PartnerFundAllocation.TotalApprovedFcs"
     label = "Total Approved Fund Claims"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalApprovedFrs {
     apiName = "PartnerFundAllocation.TotalApprovedFrs"
     label = "Total Approved Fund Requests"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalReimbursedFcs {
     apiName = "PartnerFundAllocation.TotalReimbursedFcs"
     label = "Total Reimbursed Fund Claims"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -91,8 +91,8 @@ type salesforce.PartnerFundAllocation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PartnerFundAllocation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -108,8 +108,8 @@ type salesforce.PartnerFundAllocation {
   }
   salesforce.Lookup CreatedById {
     apiName = "PartnerFundAllocation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -125,8 +125,8 @@ type salesforce.PartnerFundAllocation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PartnerFundAllocation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

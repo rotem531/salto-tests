@@ -1,51 +1,51 @@
 type salesforce.CartDeliveryGroup {
   salesforce.MasterDetail CartId {
     apiName = "CartDeliveryGroup.CartId"
-    relationshipName = "Cart"
-    _required = true
     label = "Cart ID"
+    _required = true
+    relationshipName = "Cart"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text CompanyName {
     apiName = "CartDeliveryGroup.CompanyName"
-    length = 255
     label = "Name of the company"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text DeliverToFirstName {
     apiName = "CartDeliveryGroup.DeliverToFirstName"
-    length = 255
     label = "Deliver To First Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text DeliverToLastName {
     apiName = "CartDeliveryGroup.DeliverToLastName"
-    length = 255
     label = "Deliver To Last Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Text DeliverToName {
     apiName = "CartDeliveryGroup.DeliverToName"
-    length = 255
     label = "Deliver To Name"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime DesiredDeliveryDate {
@@ -58,36 +58,36 @@ type salesforce.CartDeliveryGroup {
   salesforce.Currency GrandTotalAmount {
     apiName = "CartDeliveryGroup.GrandTotalAmount"
     label = "Grand Total Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Checkbox IsDefault {
     apiName = "CartDeliveryGroup.IsDefault"
-    defaultValue = false
     label = "Is Default"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CartDeliveryGroup.Name"
-    length = 255
-    _required = true
     label = "Cart Delivery Group Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup SelectedDeliveryMethodId {
     apiName = "CartDeliveryGroup.SelectedDeliveryMethodId"
-    relationshipName = "SelectedDeliveryMethod"
     label = "Cart Delivery Group Method ID"
+    relationshipName = "SelectedDeliveryMethod"
     createable = true
     updateable = true
     queryable = true
@@ -101,8 +101,8 @@ type salesforce.CartDeliveryGroup {
   }
   salesforce.LongTextArea ShippingInstructions {
     apiName = "CartDeliveryGroup.ShippingInstructions"
-    length = 2000
     label = "Shipping Instructions"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
@@ -110,80 +110,80 @@ type salesforce.CartDeliveryGroup {
   salesforce.Currency TotalAdjustmentAmount {
     apiName = "CartDeliveryGroup.TotalAdjustmentAmount"
     label = "Total Adjustment Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalAdjustmentTaxAmount {
     apiName = "CartDeliveryGroup.TotalAdjustmentTaxAmount"
     label = "Total Adjustment Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalAmount {
     apiName = "CartDeliveryGroup.TotalAmount"
     label = "Total Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalChargeAmount {
     apiName = "CartDeliveryGroup.TotalChargeAmount"
     label = "Total Charge Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalChargeTaxAmount {
     apiName = "CartDeliveryGroup.TotalChargeTaxAmount"
     label = "Total Charge Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalProductAmount {
     apiName = "CartDeliveryGroup.TotalProductAmount"
     label = "Total Product Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalProductTaxAmount {
     apiName = "CartDeliveryGroup.TotalProductTaxAmount"
     label = "Total Product Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Currency TotalTaxAmount {
     apiName = "CartDeliveryGroup.TotalTaxAmount"
     label = "Total Tax Amount"
-    createable = false
-    updateable = false
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -195,8 +195,8 @@ type salesforce.CartDeliveryGroup {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CartDeliveryGroup.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -212,8 +212,8 @@ type salesforce.CartDeliveryGroup {
   }
   salesforce.Lookup CreatedById {
     apiName = "CartDeliveryGroup.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -229,8 +229,8 @@ type salesforce.CartDeliveryGroup {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CartDeliveryGroup.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

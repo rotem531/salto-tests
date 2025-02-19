@@ -1,8 +1,8 @@
 type salesforce.Order {
   salesforce.Lookup AccountId {
     apiName = "Order.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = true
     updateable = true
     queryable = true
@@ -13,8 +13,8 @@ type salesforce.Order {
   }
   salesforce.Lookup ActivatedById {
     apiName = "Order.ActivatedById"
-    relationshipName = "ActivatedBy"
     label = "Activated By ID"
+    relationshipName = "ActivatedBy"
     createable = false
     updateable = true
     queryable = true
@@ -28,8 +28,8 @@ type salesforce.Order {
   }
   salesforce.Lookup BillToContactId {
     apiName = "Order.BillToContactId"
-    relationshipName = "BillToContact"
     label = "Bill To Contact ID"
+    relationshipName = "BillToContact"
     createable = true
     updateable = true
     queryable = true
@@ -44,8 +44,8 @@ type salesforce.Order {
   }
   salesforce.Lookup CompanyAuthorizedById {
     apiName = "Order.CompanyAuthorizedById"
-    relationshipName = "CompanyAuthorizedBy"
     label = "Company Authorized By ID"
+    relationshipName = "CompanyAuthorizedBy"
     createable = true
     updateable = true
     queryable = true
@@ -63,8 +63,8 @@ type salesforce.Order {
   }
   salesforce.Lookup ContractId {
     apiName = "Order.ContractId"
-    relationshipName = "Contract"
     label = "Contract ID"
+    relationshipName = "Contract"
     createable = true
     updateable = true
     queryable = true
@@ -75,8 +75,8 @@ type salesforce.Order {
   }
   salesforce.Lookup CustomerAuthorizedById {
     apiName = "Order.CustomerAuthorizedById"
-    relationshipName = "CustomerAuthorizedBy"
     label = "Customer Authorized By ID"
+    relationshipName = "CustomerAuthorizedBy"
     createable = true
     updateable = true
     queryable = true
@@ -90,16 +90,16 @@ type salesforce.Order {
   }
   salesforce.LongTextArea Description {
     apiName = "Order.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Date EffectiveDate {
     apiName = "Order.EffectiveDate"
-    _required = true
     label = "Order Start Date"
+    _required = true
     createable = true
     updateable = true
     queryable = true
@@ -113,20 +113,20 @@ type salesforce.Order {
   }
   salesforce.Checkbox IsReductionOrder {
     apiName = "Order.IsReductionOrder"
-    defaultValue = false
     label = "Reduction Order"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Order.Name"
-    length = 80
     label = "Order Name"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
     _hidden_value = true
   }
@@ -136,26 +136,26 @@ type salesforce.Order {
   }
   salesforce.Text OrderReferenceNumber {
     apiName = "Order.OrderReferenceNumber"
-    length = 80
     label = "Order Reference Number"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OriginalOrderId {
     apiName = "Order.OriginalOrderId"
-    relationshipName = "OriginalOrder"
     label = "Order ID"
+    relationshipName = "OriginalOrder"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Order.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -170,26 +170,26 @@ type salesforce.Order {
   }
   salesforce.Text PoNumber {
     apiName = "Order.PoNumber"
-    length = 80
     label = "PO Number"
-    createable = true
-    updateable = true
+    length = 80
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup Pricebook2Id {
     apiName = "Order.Pricebook2Id"
-    relationshipName = "Pricebook2"
     label = "Price Book ID"
+    relationshipName = "Pricebook2"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup ShipToContactId {
     apiName = "Order.ShipToContactId"
-    relationshipName = "ShipToContact"
     label = "Ship To Contact ID"
+    relationshipName = "ShipToContact"
     createable = true
     updateable = true
     queryable = true
@@ -204,9 +204,9 @@ type salesforce.Order {
   }
   salesforce.Picklist Status {
     apiName = "Order.Status"
-    restricted = true
-    _required = true
     label = "Status"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -214,12 +214,12 @@ type salesforce.Order {
   }
   salesforce.Currency TotalAmount {
     apiName = "Order.TotalAmount"
-    _required = true
     label = "Order Amount"
-    createable = false
-    updateable = false
+    _required = true
     scale = 2
     precision = 18
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
@@ -238,9 +238,9 @@ type salesforce.Order {
   }
   salesforce.Picklist StatusCode {
     apiName = "Order.StatusCode"
-    restricted = true
-    _required = true
     label = "Status Category"
+    _required = true
+    restricted = true
     createable = false
     updateable = true
     queryable = true
@@ -263,8 +263,8 @@ type salesforce.Order {
   }
   salesforce.Lookup CreatedById {
     apiName = "Order.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -280,8 +280,8 @@ type salesforce.Order {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Order.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -289,8 +289,8 @@ type salesforce.Order {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Order.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true

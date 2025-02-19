@@ -7,8 +7,8 @@ type salesforce.ShippingRateArea {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ShippingRateArea.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -16,13 +16,13 @@ type salesforce.ShippingRateArea {
   }
   salesforce.Text Name {
     apiName = "ShippingRateArea.Name"
-    length = 255
-    _required = true
     label = "Shipping Zone Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.DateTime CreatedDate {
@@ -35,8 +35,8 @@ type salesforce.ShippingRateArea {
   }
   salesforce.Lookup CreatedById {
     apiName = "ShippingRateArea.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -52,8 +52,8 @@ type salesforce.ShippingRateArea {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ShippingRateArea.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -69,25 +69,25 @@ type salesforce.ShippingRateArea {
   }
   salesforce.Lookup ShippingRateGroupId {
     apiName = "ShippingRateArea.ShippingRateGroupId"
-    relationshipName = "ShippingRateGroup"
-    _required = true
     label = "Shipping Rate Group ID"
+    _required = true
+    relationshipName = "ShippingRateGroup"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.LongTextArea Countries {
     apiName = "ShippingRateArea.Countries"
-    length = 2000
     label = "Countries"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Regions {
     apiName = "ShippingRateArea.Regions"
-    length = 8000
     label = "Regions"
+    length = 8000
     createable = true
     updateable = true
     queryable = true

@@ -6,9 +6,9 @@ type salesforce.aaaa__b {
     length = 30
     _required = true
     unique = false
+    caseSensitive = false
     createable = true
     updateable = false
-    caseSensitive = false
     queryable = true
   }
 }

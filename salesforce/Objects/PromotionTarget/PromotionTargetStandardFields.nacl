@@ -2,26 +2,26 @@ type salesforce.PromotionTarget {
   salesforce.Currency AdjustmentAmount {
     apiName = "PromotionTarget.AdjustmentAmount"
     label = "Adjustment Amount"
-    createable = true
-    updateable = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Percent AdjustmentPercent {
     apiName = "PromotionTarget.AdjustmentPercent"
     label = "Adjustment Percent"
-    createable = true
-    updateable = true
     scale = 2
     precision = 5
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist AdjustmentType {
     apiName = "PromotionTarget.AdjustmentType"
-    restricted = true
-    _required = true
     label = "Adjustment Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -40,17 +40,17 @@ type salesforce.PromotionTarget {
   }
   salesforce.MasterDetail PromotionId {
     apiName = "PromotionTarget.PromotionId"
-    relationshipName = "Promotion"
-    _required = true
     label = "Promotion ID"
+    _required = true
+    relationshipName = "Promotion"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup PromotionTierId {
     apiName = "PromotionTarget.PromotionTierId"
-    relationshipName = "PromotionTier"
     label = "Promotion Tier ID"
+    relationshipName = "PromotionTier"
     createable = true
     updateable = true
     queryable = true
@@ -59,11 +59,11 @@ type salesforce.PromotionTarget {
     apiName = "PromotionTarget.RestrictionQuantity"
     inlineHelpText = "Enter how many products can receive this discount. Leave blank for an unlimited quantity. This field is mandatory if the Adjustment Type is Total Fixed Price."
     label = "Quantity Limit"
-    precision = 18
     scale = 0
+    precision = 18
+    unique = false
     createable = true
     updateable = true
-    unique = false
     queryable = true
   }
   salesforce.Unknown RestrictionType {
@@ -72,59 +72,59 @@ type salesforce.PromotionTarget {
   }
   salesforce.Lookup TargetId {
     apiName = "PromotionTarget.TargetId"
-    relationshipName = "Target"
     label = "Target ID"
+    relationshipName = "Target"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist TargetOperator {
     apiName = "PromotionTarget.TargetOperator"
-    restricted = true
-    _required = true
     label = "Target Operator"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text TargetProductCategoryName {
     apiName = "PromotionTarget.TargetProductCategoryName"
-    length = 200
     label = "Target Category Name"
-    createable = false
-    updateable = false
+    length = 200
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TargetProductName {
     apiName = "PromotionTarget.TargetProductName"
-    length = 255
     label = "Target Product Name"
-    createable = false
-    updateable = false
+    length = 255
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Text TargetProductSku {
     apiName = "PromotionTarget.TargetProductSku"
-    length = 180
     label = "Target Product SKU"
-    createable = false
-    updateable = false
+    length = 180
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist TargetType {
     apiName = "PromotionTarget.TargetType"
-    restricted = true
-    _required = true
     label = "Target Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.PromotionTarget {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "PromotionTarget.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -154,8 +154,8 @@ type salesforce.PromotionTarget {
   }
   salesforce.Lookup CreatedById {
     apiName = "PromotionTarget.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -171,8 +171,8 @@ type salesforce.PromotionTarget {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "PromotionTarget.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -188,20 +188,20 @@ type salesforce.PromotionTarget {
   }
   salesforce.Text TargetStandardShippingRateName {
     apiName = "PromotionTarget.TargetStandardShippingRateName"
-    length = 180
     label = "Target Standard Shipping Rate Name"
-    createable = false
-    updateable = false
+    length = 180
     unique = false
     caseSensitive = false
+    createable = false
+    updateable = false
     queryable = true
     _hidden_value = true
   }
   salesforce.Picklist TargetRuleCriteriaType {
     apiName = "PromotionTarget.TargetRuleCriteriaType"
-    restricted = true
-    _required = true
     label = "Target Rule Criteria Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true

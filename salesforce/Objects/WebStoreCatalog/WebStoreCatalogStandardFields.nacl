@@ -1,18 +1,18 @@
 type salesforce.WebStoreCatalog {
   salesforce.MasterDetail ProductCatalogId {
     apiName = "WebStoreCatalog.ProductCatalogId"
-    relationshipName = "ProductCatalog"
-    _required = true
     label = "Catalog ID"
+    _required = true
+    relationshipName = "ProductCatalog"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.MasterDetail SalesStoreId {
     apiName = "WebStoreCatalog.SalesStoreId"
-    relationshipName = "SalesStore"
-    _required = true
     label = "Store ID"
+    _required = true
+    relationshipName = "SalesStore"
     createable = true
     updateable = false
     queryable = true
@@ -25,8 +25,8 @@ type salesforce.WebStoreCatalog {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WebStoreCatalog.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -50,8 +50,8 @@ type salesforce.WebStoreCatalog {
   }
   salesforce.Lookup CreatedById {
     apiName = "WebStoreCatalog.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -67,8 +67,8 @@ type salesforce.WebStoreCatalog {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WebStoreCatalog.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

@@ -1,8 +1,8 @@
 type salesforce.QuickText {
   salesforce.Picklist Category {
     apiName = "QuickText.Category"
-    restricted = false
     label = "Category"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -10,8 +10,8 @@ type salesforce.QuickText {
   }
   salesforce.Picklist Channel {
     apiName = "QuickText.Channel"
-    restricted = false
     label = "Channel"
+    restricted = false
     visibleLines = 0
     createable = true
     updateable = true
@@ -20,35 +20,35 @@ type salesforce.QuickText {
   }
   salesforce.Checkbox IsInsertable {
     apiName = "QuickText.IsInsertable"
-    defaultValue = false
     label = "Include in selected channels"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Message {
     apiName = "QuickText.Message"
-    length = 4096
     label = "Message"
+    length = 4096
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "QuickText.Name"
-    length = 255
-    _required = true
     label = "Quick Text Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup OwnerId {
     apiName = "QuickText.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -62,8 +62,8 @@ type salesforce.QuickText {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "QuickText.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -79,8 +79,8 @@ type salesforce.QuickText {
   }
   salesforce.Lookup CreatedById {
     apiName = "QuickText.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -96,8 +96,8 @@ type salesforce.QuickText {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "QuickText.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -113,8 +113,8 @@ type salesforce.QuickText {
   }
   salesforce.Picklist SourceType {
     apiName = "QuickText.SourceType"
-    restricted = true
     label = "Source Entity Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true

@@ -8,38 +8,38 @@ type salesforce.Task {
   }
   salesforce.Text CallDisposition {
     apiName = "Task.CallDisposition"
-    length = 255
     label = "Call Result"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number CallDurationInSeconds {
     apiName = "Task.CallDurationInSeconds"
     label = "Call Duration"
+    scale = 0
     precision = 8
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text CallObject {
     apiName = "Task.CallObject"
-    length = 255
     label = "Call Object Identifier"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist CallType {
     apiName = "Task.CallType"
-    restricted = true
     label = "Call Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -54,8 +54,8 @@ type salesforce.Task {
   }
   salesforce.LongTextArea Description {
     apiName = "Task.Description"
-    length = 32000
     label = "Description"
+    length = 32000
     createable = true
     updateable = true
     queryable = true
@@ -66,16 +66,16 @@ type salesforce.Task {
   }
   salesforce.Checkbox IsRecurrence {
     apiName = "Task.IsRecurrence"
-    defaultValue = false
     label = "Create Recurring Series of Tasks"
+    defaultValue = false
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Checkbox IsReminderSet {
     apiName = "Task.IsReminderSet"
-    defaultValue = false
     label = "Reminder Set"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
@@ -86,8 +86,8 @@ type salesforce.Task {
   }
   salesforce.Lookup OwnerId {
     apiName = "Task.OwnerId"
-    relationshipName = "Owner"
     label = "Assigned To ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -99,9 +99,9 @@ type salesforce.Task {
   }
   salesforce.Picklist Priority {
     apiName = "Task.Priority"
-    restricted = false
-    _required = true
     label = "Priority"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -110,26 +110,26 @@ type salesforce.Task {
   salesforce.Number RecurrenceInterval {
     apiName = "Task.RecurrenceInterval"
     label = "Recurrence Interval"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist RecurrenceRegeneratedType {
     apiName = "Task.RecurrenceRegeneratedType"
-    restricted = true
     label = "Repeat This Task"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist Status {
     apiName = "Task.Status"
-    restricted = false
-    _required = true
     label = "Status"
+    _required = true
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -137,8 +137,8 @@ type salesforce.Task {
   }
   salesforce.Picklist Subject {
     apiName = "Task.Subject"
-    restricted = false
     label = "Subject"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -146,8 +146,8 @@ type salesforce.Task {
   }
   salesforce.Picklist TaskSubtype {
     apiName = "Task.TaskSubtype"
-    restricted = true
     label = "Task Subtype"
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -158,16 +158,16 @@ type salesforce.Task {
   }
   salesforce.Lookup WhatId {
     apiName = "Task.WhatId"
-    relationshipName = "What"
     label = "Related To ID"
+    relationshipName = "What"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Lookup WhoId {
     apiName = "Task.WhoId"
-    relationshipName = "Who"
     label = "Name ID"
+    relationshipName = "Who"
     createable = true
     updateable = true
     queryable = true
@@ -180,8 +180,8 @@ type salesforce.Task {
   }
   salesforce.Checkbox IsHighPriority {
     apiName = "Task.IsHighPriority"
-    defaultValue = false
     label = "High Priority"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -189,8 +189,8 @@ type salesforce.Task {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Task.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -198,8 +198,8 @@ type salesforce.Task {
   }
   salesforce.Lookup AccountId {
     apiName = "Task.AccountId"
-    relationshipName = "Account"
     label = "Account ID"
+    relationshipName = "Account"
     createable = false
     updateable = false
     queryable = true
@@ -207,8 +207,8 @@ type salesforce.Task {
   }
   salesforce.Checkbox IsClosed {
     apiName = "Task.IsClosed"
-    defaultValue = false
     label = "Closed"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -224,8 +224,8 @@ type salesforce.Task {
   }
   salesforce.Lookup CreatedById {
     apiName = "Task.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -241,8 +241,8 @@ type salesforce.Task {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Task.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -258,8 +258,8 @@ type salesforce.Task {
   }
   salesforce.Checkbox IsArchived {
     apiName = "Task.IsArchived"
-    defaultValue = false
     label = "Archived"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -296,16 +296,16 @@ type salesforce.Task {
   }
   salesforce.Picklist RecurrenceTimeZoneSidKey {
     apiName = "Task.RecurrenceTimeZoneSidKey"
-    restricted = true
     label = "Recurrence Time Zone"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RecurrenceType {
     apiName = "Task.RecurrenceType"
-    restricted = true
     label = "Recurrence Type"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -313,35 +313,35 @@ type salesforce.Task {
   salesforce.Number RecurrenceDayOfWeekMask {
     apiName = "Task.RecurrenceDayOfWeekMask"
     label = "Recurrence Day of Week Mask"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number RecurrenceDayOfMonth {
     apiName = "Task.RecurrenceDayOfMonth"
     label = "Recurrence Day of Month"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Picklist RecurrenceInstance {
     apiName = "Task.RecurrenceInstance"
-    restricted = true
     label = "Recurrence Instance"
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist RecurrenceMonthOfYear {
     apiName = "Task.RecurrenceMonthOfYear"
-    restricted = true
     label = "Recurrence Month of Year"
+    restricted = true
     createable = true
     updateable = true
     queryable = true

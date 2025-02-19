@@ -1,45 +1,45 @@
 type salesforce.ShippingCarrierMethod {
   salesforce.Text ExternalReference {
     apiName = "ShippingCarrierMethod.ExternalReference"
-    length = 255
-    _required = true
     label = "External Reference"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Number MaxTransitTime {
     apiName = "ShippingCarrierMethod.MaxTransitTime"
-    _required = true
     label = "Maximum Transit Time"
+    _required = true
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Number MinTransitTime {
     apiName = "ShippingCarrierMethod.MinTransitTime"
     label = "Minimum Transit Time"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text Name {
     apiName = "ShippingCarrierMethod.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Unknown ShippingAreaType {
@@ -48,17 +48,17 @@ type salesforce.ShippingCarrierMethod {
   }
   salesforce.Lookup ShippingCarrierId {
     apiName = "ShippingCarrierMethod.ShippingCarrierId"
-    relationshipName = "ShippingCarrier"
     label = "Shipping Carrier ID"
+    relationshipName = "ShippingCarrier"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Picklist TransitTimeUnit {
     apiName = "ShippingCarrierMethod.TransitTimeUnit"
-    restricted = true
-    _required = true
     label = "Transit Time Unit"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -71,8 +71,8 @@ type salesforce.ShippingCarrierMethod {
   }
   salesforce.Lookup OwnerId {
     apiName = "ShippingCarrierMethod.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -80,8 +80,8 @@ type salesforce.ShippingCarrierMethod {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ShippingCarrierMethod.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -97,8 +97,8 @@ type salesforce.ShippingCarrierMethod {
   }
   salesforce.Lookup CreatedById {
     apiName = "ShippingCarrierMethod.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -114,8 +114,8 @@ type salesforce.ShippingCarrierMethod {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ShippingCarrierMethod.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

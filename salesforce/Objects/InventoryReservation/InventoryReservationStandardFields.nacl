@@ -1,42 +1,42 @@
 type salesforce.InventoryReservation {
   salesforce.Text ErrorCode {
     apiName = "InventoryReservation.ErrorCode"
-    length = 255
     label = "Error Code"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.LongTextArea ErrorMessage {
     apiName = "InventoryReservation.ErrorMessage"
-    length = 2000
     label = "Error Message"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsAsyncOperationInProgress {
     apiName = "InventoryReservation.IsAsyncOperationInProgress"
-    defaultValue = false
     label = "Async Operation in Progress"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Checkbox IsSuccess {
     apiName = "InventoryReservation.IsSuccess"
-    defaultValue = false
     label = "Latest Operation Succeeded"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.DateTime ReservationDate {
     apiName = "InventoryReservation.ReservationDate"
-    _required = true
     label = "Reservation Date"
+    _required = true
     createable = true
     updateable = true
     queryable = true
@@ -44,27 +44,27 @@ type salesforce.InventoryReservation {
   salesforce.Number ReservationDurationInSeconds {
     apiName = "InventoryReservation.ReservationDurationInSeconds"
     label = "Reservation Duration in Seconds"
+    scale = 0
     precision = 9
+    unique = false
     createable = true
     updateable = true
-    scale = 0
-    unique = false
     queryable = true
   }
   salesforce.Text ReservationIdentifier {
     apiName = "InventoryReservation.ReservationIdentifier"
-    length = 255
     label = "Reservation Identifier"
-    createable = true
-    updateable = true
+    length = 255
     unique = true
     caseSensitive = true
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup ReservationSourceId {
     apiName = "InventoryReservation.ReservationSourceId"
-    relationshipName = "ReservationSource"
     label = "Reservation Source ID"
+    relationshipName = "ReservationSource"
     createable = true
     updateable = true
     queryable = true
@@ -77,8 +77,8 @@ type salesforce.InventoryReservation {
   }
   salesforce.Lookup OwnerId {
     apiName = "InventoryReservation.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -86,8 +86,8 @@ type salesforce.InventoryReservation {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "InventoryReservation.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -111,8 +111,8 @@ type salesforce.InventoryReservation {
   }
   salesforce.Lookup CreatedById {
     apiName = "InventoryReservation.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -128,8 +128,8 @@ type salesforce.InventoryReservation {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "InventoryReservation.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true

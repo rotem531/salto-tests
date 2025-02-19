@@ -1,47 +1,47 @@
 type salesforce.DataMaskCustomValueLibrary {
   salesforce.Picklist ContentType {
     apiName = "DataMaskCustomValueLibrary.ContentType"
-    restricted = true
-    _required = true
     label = "Content Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Description {
     apiName = "DataMaskCustomValueLibrary.Description"
-    length = 255
     label = "Description"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Checkbox IsActive {
     apiName = "DataMaskCustomValueLibrary.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "DataMaskCustomValueLibrary.Name"
-    length = 255
-    _required = true
     label = "Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "DataMaskCustomValueLibrary.Type"
-    restricted = true
-    _required = true
     label = "Type"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -55,8 +55,8 @@ type salesforce.DataMaskCustomValueLibrary {
   }
   salesforce.Lookup OwnerId {
     apiName = "DataMaskCustomValueLibrary.OwnerId"
-    relationshipName = "Owner"
     label = "Owner ID"
+    relationshipName = "Owner"
     createable = true
     updateable = true
     queryable = true
@@ -64,8 +64,8 @@ type salesforce.DataMaskCustomValueLibrary {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DataMaskCustomValueLibrary.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -81,8 +81,8 @@ type salesforce.DataMaskCustomValueLibrary {
   }
   salesforce.Lookup CreatedById {
     apiName = "DataMaskCustomValueLibrary.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -98,8 +98,8 @@ type salesforce.DataMaskCustomValueLibrary {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DataMaskCustomValueLibrary.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -115,8 +115,8 @@ type salesforce.DataMaskCustomValueLibrary {
   }
   salesforce.LongTextArea Values {
     apiName = "DataMaskCustomValueLibrary.Values"
-    length = 131072
     label = "Values"
+    length = 131072
     createable = true
     updateable = true
     queryable = true

@@ -1,18 +1,18 @@
 type salesforce.CartTax {
   salesforce.Currency Amount {
     apiName = "CartTax.Amount"
-    _required = true
     label = "Amount"
-    createable = true
-    updateable = true
+    _required = true
     scale = 2
     precision = 18
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Lookup CartId {
     apiName = "CartTax.CartId"
-    relationshipName = "Cart"
     label = "Cart ID"
+    relationshipName = "Cart"
     createable = false
     updateable = false
     queryable = true
@@ -20,44 +20,44 @@ type salesforce.CartTax {
   }
   salesforce.MasterDetail CartItemId {
     apiName = "CartTax.CartItemId"
-    relationshipName = "CartItem"
-    _required = true
     label = "Cart Item ID"
+    _required = true
+    relationshipName = "CartItem"
     createable = true
     updateable = false
     queryable = true
   }
   salesforce.Lookup CartItemPriceAdjustmentId {
     apiName = "CartTax.CartItemPriceAdjustmentId"
-    relationshipName = "CartItemPriceAdjustment"
     label = "Cart Item Price Adjustment ID"
+    relationshipName = "CartItemPriceAdjustment"
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.LongTextArea Description {
     apiName = "CartTax.Description"
-    length = 2000
     label = "Description"
+    length = 2000
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "CartTax.Name"
-    length = 255
-    _required = true
     label = "Cart Tax Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Date TaxCalculationDate {
     apiName = "CartTax.TaxCalculationDate"
-    _required = true
     label = "Tax Calculation Date"
+    _required = true
     createable = true
     updateable = true
     queryable = true
@@ -65,17 +65,17 @@ type salesforce.CartTax {
   salesforce.Percent TaxRate {
     apiName = "CartTax.TaxRate"
     label = "Tax Rate"
-    createable = true
-    updateable = true
     scale = 2
     precision = 5
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist TaxType {
     apiName = "CartTax.TaxType"
-    restricted = true
-    _required = true
     label = "Tax Type"
+    _required = true
+    restricted = true
     createable = true
     updateable = true
     queryable = true
@@ -88,8 +88,8 @@ type salesforce.CartTax {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CartTax.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -105,8 +105,8 @@ type salesforce.CartTax {
   }
   salesforce.Lookup CreatedById {
     apiName = "CartTax.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -122,8 +122,8 @@ type salesforce.CartTax {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CartTax.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -139,8 +139,8 @@ type salesforce.CartTax {
   }
   salesforce.Picklist AdjustmentTargetType {
     apiName = "CartTax.AdjustmentTargetType"
-    restricted = true
     label = "Target Type for the Adjustment"
+    restricted = true
     createable = false
     updateable = false
     queryable = true

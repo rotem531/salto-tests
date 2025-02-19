@@ -1,8 +1,8 @@
 type salesforce.Product2 {
   salesforce.LongTextArea Description {
     apiName = "Product2.Description"
-    length = 4000
     label = "Product Description"
+    length = 4000
     createable = true
     updateable = true
     queryable = true
@@ -23,18 +23,18 @@ type salesforce.Product2 {
   }
   salesforce.Text ExternalId {
     apiName = "Product2.ExternalId"
-    length = 255
     label = "External ID"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Family {
     apiName = "Product2.Family"
-    restricted = false
     label = "Product Family"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -42,28 +42,28 @@ type salesforce.Product2 {
   }
   salesforce.Checkbox IsActive {
     apiName = "Product2.IsActive"
-    defaultValue = false
     label = "Active"
+    defaultValue = false
     createable = true
     updateable = true
     queryable = true
   }
   salesforce.Text Name {
     apiName = "Product2.Name"
-    length = 255
-    _required = true
     label = "Product Name"
-    createable = true
-    updateable = true
+    _required = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist ProductClass {
     apiName = "Product2.ProductClass"
-    restricted = true
-    _required = true
     label = "Product Class"
+    _required = true
+    restricted = true
     createable = false
     updateable = false
     queryable = true
@@ -71,18 +71,18 @@ type salesforce.Product2 {
   }
   salesforce.Text ProductCode {
     apiName = "Product2.ProductCode"
-    length = 255
     label = "Product Code"
-    createable = true
-    updateable = true
+    length = 255
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist QuantityUnitOfMeasure {
     apiName = "Product2.QuantityUnitOfMeasure"
-    restricted = false
     label = "Quantity Unit Of Measure"
+    restricted = false
     createable = true
     updateable = true
     queryable = true
@@ -97,18 +97,18 @@ type salesforce.Product2 {
   }
   salesforce.Text StockKeepingUnit {
     apiName = "Product2.StockKeepingUnit"
-    length = 180
     label = "Product SKU"
-    createable = true
-    updateable = true
+    length = 180
     unique = false
     caseSensitive = false
+    createable = true
+    updateable = true
     queryable = true
   }
   salesforce.Picklist Type {
     apiName = "Product2.Type"
-    restricted = true
     label = "Product Type"
+    restricted = true
     createable = true
     updateable = false
     queryable = true
@@ -129,8 +129,8 @@ type salesforce.Product2 {
   }
   salesforce.Lookup CreatedById {
     apiName = "Product2.CreatedById"
-    relationshipName = "CreatedBy"
     label = "Created By ID"
+    relationshipName = "CreatedBy"
     createable = false
     updateable = false
     queryable = true
@@ -146,8 +146,8 @@ type salesforce.Product2 {
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Product2.LastModifiedById"
-    relationshipName = "LastModifiedBy"
     label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
     createable = false
     updateable = false
     queryable = true
@@ -163,8 +163,8 @@ type salesforce.Product2 {
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Product2.IsDeleted"
-    defaultValue = false
     label = "Deleted"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
@@ -172,8 +172,8 @@ type salesforce.Product2 {
   }
   salesforce.Checkbox IsArchived {
     apiName = "Product2.IsArchived"
-    defaultValue = false
     label = "Archived"
+    defaultValue = false
     createable = false
     updateable = false
     queryable = true
