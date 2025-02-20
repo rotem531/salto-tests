@@ -1,0 +1,36 @@
+salesforce.GlobalValueSet another_picklist {
+  fullName = "another_picklist"
+  customValue = {
+    values = {
+      tent = {
+        fullName = "tent"
+        default = false
+        label = "tent"
+      }
+      home = {
+        fullName = "home"
+        default = false
+        label = "home"
+      }
+      big_camel@s = {
+        fullName = "big camel"
+        default = false
+        label = "big camel"
+      }
+      door = {
+        fullName = "door"
+        default = false
+        label = "door"
+      }
+    }
+    order = [
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent,
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home,
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s,
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door,
+    ]
+  }
+  masterLabel = "another picklist"
+  sorted = false
+  _alias = "another_picklist"
+}

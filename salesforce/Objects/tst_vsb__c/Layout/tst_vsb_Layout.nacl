@@ -36,6 +36,10 @@ salesforce.Layout tst_vsb__c_tst_vsb_Layout@uuubus {
               behavior = "Edit"
               field = salesforce.tst_vsb__c.field.test2_picklist__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.tst_vsb__c.field.diff_picklist_field__c
+            },
           ]
         },
         {
