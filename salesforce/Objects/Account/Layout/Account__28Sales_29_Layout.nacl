@@ -51,6 +51,14 @@ salesforce.Layout Account_Account__28Sales_29_Layout@bspps {
               behavior = "Edit"
               field = salesforce.Account.field.test_text__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.picklist_field1__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Account.field.picklist_field2__c
+            },
           ]
         },
         {

@@ -160,6 +160,65 @@ type salesforce.Account {
     updateable = true
     queryable = true
   }
+  salesforce.Picklist picklist_field1__c {
+    apiName = "Account.picklist_field1__c"
+    label = "picklist field1"
+    valueSetName = salesforce.GlobalValueSet.instance.another_picklist
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist picklist_field2__c {
+    apiName = "Account.picklist_field2__c"
+    label = "picklist field2"
+    valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
+    restricted = true
+    fieldDependency = {
+      controllingField = "picklist_field1__c"
+      valueSettings = [
+        {
+          valueName = "a"
+          controllingFieldValue = [
+            "tent",
+          ]
+        },
+        {
+          valueName = "b"
+          controllingFieldValue = [
+            "home",
+          ]
+        },
+        {
+          valueName = "f"
+          controllingFieldValue = [
+            "home",
+          ]
+        },
+        {
+          valueName = "c"
+          controllingFieldValue = [
+            "big camel",
+          ]
+        },
+        {
+          valueName = "e"
+          controllingFieldValue = [
+            "big camel",
+          ]
+        },
+        {
+          valueName = "d"
+          controllingFieldValue = [
+            "door",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Text test_text__c {
     apiName = "Account.test_text__c"
     externalId = false

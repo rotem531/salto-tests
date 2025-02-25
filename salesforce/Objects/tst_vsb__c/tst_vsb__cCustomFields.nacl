@@ -6,34 +6,34 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.another_picklist
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      controllingField = "test_picklist__c"
       valueSettings = [
         {
-          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent
+          valueName = "tent"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f,
+            "a",
+            "f",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home
+          valueName = "home"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.b,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f,
+            "b",
+            "f",
           ]
         },
         {
           valueName = "big camel"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e,
+            "c",
+            "e",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door
+          valueName = "door"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e,
+            "d",
+            "e",
           ]
         },
       ]
@@ -81,38 +81,38 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      controllingField = "test_picklist__c"
       valueSettings = [
         {
-          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a
+          valueName = "a"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a,
+            "a",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c
+          valueName = "c"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.b,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c,
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d,
+            "b",
+            "c",
+            "d",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d
+          valueName = "d"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d,
+            "d",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e
+          valueName = "e"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e,
+            "e",
           ]
         },
         {
-          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f
+          valueName = "f"
           controllingFieldValue = [
-            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f,
+            "f",
           ]
         },
       ]
