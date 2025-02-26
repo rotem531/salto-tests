@@ -175,42 +175,42 @@ type salesforce.Account {
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     fieldDependency = {
-      controllingField = "picklist_field1__c"
+      controllingField = salesforce.Account.field.picklist_field1__c
       valueSettings = [
         {
-          valueName = "a"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a.fullName
           controllingFieldValue = [
-            "tent",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent.fullName,
           ]
         },
         {
-          valueName = "b"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.b.fullName
           controllingFieldValue = [
-            "home",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home.fullName,
           ]
         },
         {
-          valueName = "f"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f.fullName
           controllingFieldValue = [
-            "home",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home.fullName,
           ]
         },
         {
-          valueName = "c"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c.fullName
           controllingFieldValue = [
-            "big camel",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s.fullName,
           ]
         },
         {
-          valueName = "e"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e.fullName
           controllingFieldValue = [
-            "big camel",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s.fullName,
           ]
         },
         {
-          valueName = "d"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d.fullName
           controllingFieldValue = [
-            "door",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door.fullName,
           ]
         },
       ]
