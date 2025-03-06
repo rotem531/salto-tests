@@ -9,13 +9,6 @@ type salesforce.tst_vsb__c {
       controllingField = "test_picklist__c"
       valueSettings = [
         {
-          valueName = "tent"
-          controllingFieldValue = [
-            "a",
-            "f",
-          ]
-        },
-        {
           valueName = "home"
           controllingFieldValue = [
             "b",
@@ -70,6 +63,66 @@ type salesforce.tst_vsb__c {
     scale = 0
     trackTrending = false
     unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist tamir__c {
+    apiName = "tst_vsb__c.tamir__c"
+    label = "tamir"
+    trackTrending = false
+    valueSet = {
+      values = {
+        ahat = {
+          fullName = "ahat"
+          default = false
+          label = "ahat"
+        }
+        shteim = {
+          fullName = "shteim"
+          default = false
+          label = "shteim"
+        }
+        shalosh = {
+          fullName = "shalosh"
+          default = false
+          label = "shalosh"
+        }
+      }
+      order = [
+        salesforce.tst_vsb__c.field.tamir__c.valueSet.values.ahat,
+        salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shteim,
+        salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shalosh,
+      ]
+    }
+    sorted = false
+    restricted = true
+    fieldDependency = {
+      controllingField = "diff_picklist_field__c"
+      valueSettings = [
+        {
+          valueName = "ahat"
+          controllingFieldValue = [
+            "tent",
+            "home",
+          ]
+        },
+        {
+          valueName = "shteim"
+          controllingFieldValue = [
+            "tent",
+            "big camel",
+          ]
+        },
+        {
+          valueName = "shalosh"
+          controllingFieldValue = [
+            "tent",
+            "door",
+          ]
+        },
+      ]
+    }
     createable = true
     updateable = true
     queryable = true

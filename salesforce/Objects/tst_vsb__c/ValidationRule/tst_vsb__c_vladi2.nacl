@@ -7,13 +7,5 @@ salesforce.ValidationRule tst_vsb__c_vladi2 {
   _parent = [
     salesforce.tst_vsb__c,
   ]
-  _generated_dependencies = [
-    {
-      reference = salesforce.CMT2__mdt
-    },
-    {
-      reference = salesforce.CMT2__mdt.instance.CMT2_rec2@v
-    },
-  ]
   _alias = "tst_vsb__c.vladi2"
 }

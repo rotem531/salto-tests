@@ -18,8 +18,21 @@ salesforce.RecordType tst_vsb__c_recordType2 {
           fullName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home.fullName
           default = false
         },
+      ]
+    },
+    {
+      picklist = salesforce.tst_vsb__c.field.tamir__c
+      values = [
         {
-          fullName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent.fullName
+          fullName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.ahat.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shalosh.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shteim.fullName
           default = false
         },
       ]

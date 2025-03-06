@@ -2,11 +2,6 @@ salesforce.GlobalValueSet another_picklist {
   fullName = "another_picklist"
   customValue = {
     values = {
-      tent = {
-        fullName = "tent"
-        default = false
-        label = "tent"
-      }
       home = {
         fullName = "home"
         default = false
@@ -22,12 +17,24 @@ salesforce.GlobalValueSet another_picklist {
         default = false
         label = "door"
       }
+      tent = {
+        fullName = "tent"
+        default = false
+        label = "tent"
+      }
+      disable = {
+        fullName = "disable"
+        default = false
+        isActive = false
+        label = "disable"
+      }
     }
     order = [
-      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent,
       salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home,
       salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s,
       salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door,
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent,
+      salesforce.GlobalValueSet.instance.another_picklist.customValue.values.disable,
     ]
   }
   masterLabel = "another picklist"

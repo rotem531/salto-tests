@@ -1,9 +1,17 @@
 salesforce {
   fetch = {
+    optionalFeatures={
+      picklistsAsMaps=true
+    }
     metadata = {
       include = [
         {
-          metadataType = ".*"
+          metadataType = "CustomObject"
+          namespace = ""
+          name = "tst_vsb__c"
+        },
+        {
+          metadataType = "GlobalValueSet"
           namespace = ""
           name = ".*"
         },
