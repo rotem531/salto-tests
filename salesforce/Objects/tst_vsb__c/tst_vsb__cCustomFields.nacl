@@ -9,24 +9,24 @@ type salesforce.tst_vsb__c {
       controllingField = "test_picklist__c"
       valueSettings = [
         {
-          valueName = "home"
+          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home.fullName
           controllingFieldValue = [
-            "b",
-            "f",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.b.fullName,
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f.fullName,
           ]
         },
         {
-          valueName = "big camel"
+          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s.fullName
           controllingFieldValue = [
-            "c",
-            "e",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c.fullName,
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e.fullName,
           ]
         },
         {
-          valueName = "door"
+          valueName = salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door.fullName
           controllingFieldValue = [
-            "d",
-            "e",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d.fullName,
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e.fullName,
           ]
         },
       ]
@@ -101,24 +101,24 @@ type salesforce.tst_vsb__c {
       controllingField = "diff_picklist_field__c"
       valueSettings = [
         {
-          valueName = "ahat"
+          valueName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.ahat.fullName
           controllingFieldValue = [
-            "tent",
-            "home",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent.fullName,
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.home.fullName,
           ]
         },
         {
-          valueName = "shteim"
+          valueName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shteim.fullName
           controllingFieldValue = [
-            "tent",
-            "big camel",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent.fullName,
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.big_camel@s.fullName,
           ]
         },
         {
-          valueName = "shalosh"
+          valueName = salesforce.tst_vsb__c.field.tamir__c.valueSet.values.shalosh.fullName
           controllingFieldValue = [
-            "tent",
-            "door",
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.tent.fullName,
+            salesforce.GlobalValueSet.instance.another_picklist.customValue.values.door.fullName,
           ]
         },
       ]
@@ -137,35 +137,35 @@ type salesforce.tst_vsb__c {
       controllingField = "test_picklist__c"
       valueSettings = [
         {
-          valueName = "a"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a.fullName
           controllingFieldValue = [
-            "a",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.a.fullName,
           ]
         },
         {
-          valueName = "c"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c.fullName
           controllingFieldValue = [
-            "b",
-            "c",
-            "d",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.b.fullName,
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.c.fullName,
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d.fullName,
           ]
         },
         {
-          valueName = "d"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d.fullName
           controllingFieldValue = [
-            "d",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.d.fullName,
           ]
         },
         {
-          valueName = "e"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e.fullName
           controllingFieldValue = [
-            "e",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.e.fullName,
           ]
         },
         {
-          valueName = "f"
+          valueName = salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f.fullName
           controllingFieldValue = [
-            "f",
+            salesforce.GlobalValueSet.instance.test_picklist_value_set.customValue.values.f.fullName,
           ]
         },
       ]
