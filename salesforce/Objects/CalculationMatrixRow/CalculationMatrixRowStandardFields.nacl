@@ -1,0 +1,128 @@
+type salesforce.CalculationMatrixRow {
+  salesforce.MasterDetail CalculationMatrixVersionId {
+    apiName = "CalculationMatrixRow.CalculationMatrixVersionId"
+    label = "Decision Matrix Version ID"
+    _required = true
+    relationshipName = "CalculationMatrixVersion"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "CalculationMatrixRow.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea InputData {
+    apiName = "CalculationMatrixRow.InputData"
+    label = "Input Data"
+    length = 131072
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "CalculationMatrixRow.Name"
+    label = "HashKey"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Namespace {
+    apiName = "CalculationMatrixRow.Namespace"
+    label = "Namespace"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea OutputData {
+    apiName = "CalculationMatrixRow.OutputData"
+    label = "Output Data"
+    length = 131072
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "CalculationMatrixRow.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CalculationMatrixRow.Id"
+    label = "Decision Matrix Row ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CalculationMatrixRow.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CalculationMatrixRow.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CalculationMatrixRow.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CalculationMatrixRow.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CalculationMatrixRow.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CalculationMatrixRow.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsVersionEnabled {
+    apiName = "CalculationMatrixRow.IsVersionEnabled"
+    label = "Version Enabled"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

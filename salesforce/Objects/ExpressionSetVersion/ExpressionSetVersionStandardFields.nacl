@@ -1,0 +1,197 @@
+type salesforce.ExpressionSetVersion {
+  salesforce.Text ApiName {
+    apiName = "ExpressionSetVersion.ApiName"
+    label = "API Name"
+    _required = true
+    length = 80
+    unique = true
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "ExpressionSetVersion.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "ExpressionSetVersion.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail ExpressionSetId {
+    apiName = "ExpressionSetVersion.ExpressionSetId"
+    label = "Expression Set ID"
+    _required = true
+    relationshipName = "ExpressionSet"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "ExpressionSetVersion.IsActive"
+    label = "Active"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsLoopingEnabled {
+    apiName = "ExpressionSetVersion.IsLoopingEnabled"
+    label = "Looping Enabled"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea LatestSimulationResult {
+    apiName = "ExpressionSetVersion.LatestSimulationResult"
+    label = "Latest Simulation Result"
+    length = 131072
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopEndVariableName {
+    apiName = "ExpressionSetVersion.LoopEndVariableName"
+    label = "Loop End Variable Name"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopIncrementVariableName {
+    apiName = "ExpressionSetVersion.LoopIncrementVariableName"
+    label = "Loop Increment Variable Name"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopStartVariableName {
+    apiName = "ExpressionSetVersion.LoopStartVariableName"
+    label = "Loop Start Variable Name"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "ExpressionSetVersion.Name"
+    label = "Version Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Rank {
+    apiName = "ExpressionSetVersion.Rank"
+    label = "Rank"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox ShouldShowExplExternally {
+    apiName = "ExpressionSetVersion.ShouldShowExplExternally"
+    label = "Show Explanation Externally"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "ExpressionSetVersion.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number VersionNumber {
+    apiName = "ExpressionSetVersion.VersionNumber"
+    label = "Version Number"
+    _required = true
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ExpressionSetVersion.Id"
+    label = "Expression Set Version ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ExpressionSetVersion.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ExpressionSetVersion.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ExpressionSetVersion.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ExpressionSetVersion.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ExpressionSetVersion.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ExpressionSetVersion.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ExpressionSetDefinitionVerId {
+    apiName = "ExpressionSetVersion.ExpressionSetDefinitionVerId"
+    label = "ExpressionSetDefinitionVersion ID"
+    _required = true
+    relationshipName = "ExpressionSetDefinitionVer"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

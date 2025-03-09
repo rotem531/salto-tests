@@ -1,0 +1,14 @@
+type salesforce.another_big__b {
+  salesforce.Text testa__c {
+    apiName = "another_big__b.testa__c"
+    externalId = false
+    label = "testa"
+    length = 90
+    _required = true
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

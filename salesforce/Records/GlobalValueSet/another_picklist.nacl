@@ -1,0 +1,34 @@
+salesforce.GlobalValueSet another_picklist {
+  fullName = "another_picklist"
+  customValue = [
+    {
+      fullName = "home"
+      default = false
+      label = "home"
+    },
+    {
+      fullName = "big camel"
+      default = false
+      label = "big camel"
+    },
+    {
+      fullName = "door"
+      default = false
+      label = "door"
+    },
+    {
+      fullName = "tent"
+      default = false
+      label = "tent"
+    },
+    {
+      fullName = "disable"
+      default = false
+      isActive = false
+      label = "disable"
+    },
+  ]
+  masterLabel = "another picklist"
+  sorted = false
+  _alias = "another_picklist"
+}

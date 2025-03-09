@@ -1,0 +1,104 @@
+type salesforce.CaseRelatedIssue {
+  salesforce.MasterDetail CaseId {
+    apiName = "CaseRelatedIssue.CaseId"
+    label = "Case ID"
+    _required = true
+    relationshipName = "Case"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CaseRelatedIssue.Name"
+    label = "Case Related Issue Number"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RelatedEntityType {
+    apiName = "CaseRelatedIssue.RelatedEntityType"
+    label = "Related Issue Type"
+    _required = true
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedIssueId {
+    apiName = "CaseRelatedIssue.RelatedIssueId"
+    label = "Related Issue ID"
+    _required = true
+    relationshipName = "RelatedIssue"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist RelationshipType {
+    apiName = "CaseRelatedIssue.RelationshipType"
+    label = "Relationship Type"
+    _required = true
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CaseRelatedIssue.Id"
+    label = "Case Related Issue ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CaseRelatedIssue.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CaseRelatedIssue.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CaseRelatedIssue.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CaseRelatedIssue.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CaseRelatedIssue.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CaseRelatedIssue.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

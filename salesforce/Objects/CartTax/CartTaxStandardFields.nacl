@@ -1,0 +1,149 @@
+type salesforce.CartTax {
+  salesforce.Currency Amount {
+    apiName = "CartTax.Amount"
+    label = "Amount"
+    _required = true
+    scale = 2
+    precision = 18
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup CartId {
+    apiName = "CartTax.CartId"
+    label = "Cart ID"
+    relationshipName = "Cart"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail CartItemId {
+    apiName = "CartTax.CartItemId"
+    label = "Cart Item ID"
+    _required = true
+    relationshipName = "CartItem"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Lookup CartItemPriceAdjustmentId {
+    apiName = "CartTax.CartItemPriceAdjustmentId"
+    label = "Cart Item Price Adjustment ID"
+    relationshipName = "CartItemPriceAdjustment"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "CartTax.Description"
+    label = "Description"
+    length = 2000
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "CartTax.Name"
+    label = "Cart Tax Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date TaxCalculationDate {
+    apiName = "CartTax.TaxCalculationDate"
+    label = "Tax Calculation Date"
+    _required = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Percent TaxRate {
+    apiName = "CartTax.TaxRate"
+    label = "Tax Rate"
+    scale = 2
+    precision = 5
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist TaxType {
+    apiName = "CartTax.TaxType"
+    label = "Tax Type"
+    _required = true
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CartTax.Id"
+    label = "Cart Tax ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CartTax.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CartTax.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CartTax.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CartTax.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CartTax.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CartTax.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AdjustmentTargetType {
+    apiName = "CartTax.AdjustmentTargetType"
+    label = "Target Type for the Adjustment"
+    restricted = true
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

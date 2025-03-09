@@ -1,0 +1,173 @@
+type salesforce.CalculationProcedureVariable {
+  salesforce.Text ApiName {
+    apiName = "CalculationProcedureVariable.ApiName"
+    label = "API Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text CalculationMatrixName {
+    apiName = "CalculationProcedureVariable.CalculationMatrixName"
+    label = "Decision Matrix Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.MasterDetail CalculationProcedureVersionId {
+    apiName = "CalculationProcedureVariable.CalculationProcedureVersionId"
+    label = "Calculation Procedure Version ID"
+    _required = true
+    relationshipName = "CalculationProcedureVersion"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.Picklist DataType {
+    apiName = "CalculationProcedureVariable.DataType"
+    label = "Data Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text DefaultValue {
+    apiName = "CalculationProcedureVariable.DefaultValue"
+    label = "Default Value"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text DisplayName {
+    apiName = "CalculationProcedureVariable.DisplayName"
+    label = "Display Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsEditable {
+    apiName = "CalculationProcedureVariable.IsEditable"
+    label = "Editable"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsUserDefined {
+    apiName = "CalculationProcedureVariable.IsUserDefined"
+    label = "User Defined"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "CalculationProcedureVariable.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Namespace {
+    apiName = "CalculationProcedureVariable.Namespace"
+    label = "Namespace"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Precision {
+    apiName = "CalculationProcedureVariable.Precision"
+    label = "Precision"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number UiDisplayOrder {
+    apiName = "CalculationProcedureVariable.UiDisplayOrder"
+    label = "UI Display Order"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CalculationProcedureVariable.Id"
+    label = "Calculation Procedure Variable ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CalculationProcedureVariable.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CalculationProcedureVariable.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CalculationProcedureVariable.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CalculationProcedureVariable.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CalculationProcedureVariable.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CalculationProcedureVariable.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

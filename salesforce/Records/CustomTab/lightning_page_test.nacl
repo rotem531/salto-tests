@@ -1,0 +1,13 @@
+salesforce.CustomTab lightning_page_test {
+  fullName = "lightning_page_test"
+  description = "Created by Lightning App Builder"
+  flexiPage = "lightning_page_test"
+  label = "lightning page test"
+  motif = "Custom1: Heart"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.lightning_page_test
+    },
+  ]
+  _alias = "lightning page test"
+}

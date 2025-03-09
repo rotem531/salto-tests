@@ -1,0 +1,186 @@
+type salesforce.CalculationProcedureVersion {
+  salesforce.MasterDetail CalculationProcedureId {
+    apiName = "CalculationProcedureVersion.CalculationProcedureId"
+    label = "Calculation Procedure ID"
+    _required = true
+    relationshipName = "CalculationProcedure"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.LongTextArea Constants {
+    apiName = "CalculationProcedureVersion.Constants"
+    label = "Constants"
+    length = 131072
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Description {
+    apiName = "CalculationProcedureVersion.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "CalculationProcedureVersion.EndDateTime"
+    label = "End Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsEnabled {
+    apiName = "CalculationProcedureVersion.IsEnabled"
+    label = "Enabled"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox IsLoopingEnabled {
+    apiName = "CalculationProcedureVersion.IsLoopingEnabled"
+    label = "Looping Enabled"
+    defaultValue = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea LastSimulatedVariablesInput {
+    apiName = "CalculationProcedureVersion.LastSimulatedVariablesInput"
+    label = "Last Simulated Variables Input"
+    length = 131072
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopEnd {
+    apiName = "CalculationProcedureVersion.LoopEnd"
+    label = "Loop End"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopIncrement {
+    apiName = "CalculationProcedureVersion.LoopIncrement"
+    label = "Loop Increment"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.TextArea LoopStart {
+    apiName = "CalculationProcedureVersion.LoopStart"
+    label = "Loop Start"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Name {
+    apiName = "CalculationProcedureVersion.Name"
+    label = "Version Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Namespace {
+    apiName = "CalculationProcedureVersion.Namespace"
+    label = "Namespace"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number Rank {
+    apiName = "CalculationProcedureVersion.Rank"
+    label = "Rank"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "CalculationProcedureVersion.StartDateTime"
+    label = "Start Date Time"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number VersionNumber {
+    apiName = "CalculationProcedureVersion.VersionNumber"
+    label = "Version Number"
+    scale = 0
+    precision = 9
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CalculationProcedureVersion.Id"
+    label = "Calculation Procedure Version ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CalculationProcedureVersion.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CalculationProcedureVersion.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CalculationProcedureVersion.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CalculationProcedureVersion.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CalculationProcedureVersion.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CalculationProcedureVersion.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

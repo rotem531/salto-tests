@@ -1,0 +1,77 @@
+type salesforce.ProductConsumptionSchedule {
+  salesforce.Lookup ConsumptionScheduleId {
+    apiName = "ProductConsumptionSchedule.ConsumptionScheduleId"
+    label = "Consumption Schedule ID"
+    _required = true
+    relationshipName = "ConsumptionSchedule"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup ProductId {
+    apiName = "ProductConsumptionSchedule.ProductId"
+    label = "Product ID"
+    _required = true
+    relationshipName = "Product"
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "ProductConsumptionSchedule.Id"
+    label = "Product Consumption Schedule ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductConsumptionSchedule.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductConsumptionSchedule.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductConsumptionSchedule.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductConsumptionSchedule.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductConsumptionSchedule.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductConsumptionSchedule.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

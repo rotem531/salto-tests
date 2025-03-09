@@ -1,0 +1,17 @@
+salesforce.WorkflowAlert tst_vsb__c_test_email_alert@uuuvuu {
+  fullName = "tst_vsb__c.test_email_alert"
+  description = "test email alert"
+  protected = false
+  recipients = [
+    {
+      recipient = "sf-dev2@sf.sf"
+      type = "user"
+    },
+  ]
+  senderType = "CurrentUser"
+  template = salesforce.EmailTemplate.instance.unfiled_public_SalesNewCustomerEmail@zcd
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _alias = "tst_vsb__c.test_email_alert"
+}

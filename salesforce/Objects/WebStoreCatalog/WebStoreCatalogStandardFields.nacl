@@ -1,0 +1,85 @@
+type salesforce.WebStoreCatalog {
+  salesforce.MasterDetail ProductCatalogId {
+    apiName = "WebStoreCatalog.ProductCatalogId"
+    label = "Catalog ID"
+    _required = true
+    relationshipName = "ProductCatalog"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  salesforce.MasterDetail SalesStoreId {
+    apiName = "WebStoreCatalog.SalesStoreId"
+    label = "Store ID"
+    _required = true
+    relationshipName = "SalesStore"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "WebStoreCatalog.Id"
+    label = "Store Catalog ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WebStoreCatalog.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WebStoreCatalog.Name"
+    label = "Store Catalog Name"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WebStoreCatalog.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WebStoreCatalog.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WebStoreCatalog.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WebStoreCatalog.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WebStoreCatalog.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

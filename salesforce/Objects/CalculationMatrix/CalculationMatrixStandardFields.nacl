@@ -1,0 +1,168 @@
+type salesforce.CalculationMatrix {
+  salesforce.Picklist DecisionMatrixType {
+    apiName = "CalculationMatrix.DecisionMatrixType"
+    label = "Decision Matrix Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "CalculationMatrix.Description"
+    label = "Description"
+    length = 32768
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text GroupKey {
+    apiName = "CalculationMatrix.GroupKey"
+    label = "Group Key"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.LongTextArea MigrationStatus {
+    apiName = "CalculationMatrix.MigrationStatus"
+    label = "Migration Status"
+    length = 32000
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "CalculationMatrix.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text Namespace {
+    apiName = "CalculationMatrix.Namespace"
+    label = "Namespace"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CalculationMatrix.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    createable = true
+    updateable = true
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text SubGroupKey {
+    apiName = "CalculationMatrix.SubGroupKey"
+    label = "Sub Group Key"
+    length = 255
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Type {
+    apiName = "CalculationMatrix.Type"
+    label = "Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text UniqueName {
+    apiName = "CalculationMatrix.UniqueName"
+    label = "Unique Name"
+    length = 80
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "CalculationMatrix.UsageType"
+    label = "Usage Type"
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  serviceid Id {
+    apiName = "CalculationMatrix.Id"
+    label = "Decision Matrix ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CalculationMatrix.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CalculationMatrix.CreatedDate"
+    label = "Created Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CalculationMatrix.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CalculationMatrix.LastModifiedDate"
+    label = "Last Modified Date"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CalculationMatrix.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CalculationMatrix.SystemModstamp"
+    label = "System Modstamp"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup DecisionMatrixDefinitionId {
+    apiName = "CalculationMatrix.DecisionMatrixDefinitionId"
+    label = "Decision Matrix Definition ID"
+    relationshipName = "DecisionMatrixDefinition"
+    createable = true
+    updateable = false
+    queryable = true
+  }
+}

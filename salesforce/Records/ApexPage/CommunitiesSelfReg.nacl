@@ -1,0 +1,22 @@
+salesforce.ApexPage CommunitiesSelfReg {
+  apiVersion = 63
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default experiences self registration page"
+  label = "CommunitiesSelfReg"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = salesforce.InstalledPackage.instance.sf_com_apps
+    },
+  ]
+  fullName = "CommunitiesSelfReg"
+  content = file("salesforce/Records/ApexPage/CommunitiesSelfReg.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.CommunitiesSelfRegController
+    },
+  ]
+  _alias = "CommunitiesSelfReg"
+}

@@ -1,0 +1,19 @@
+salesforce.ApexTrigger test_trigger {
+  apiVersion = 63
+  status = "Active"
+  fullName = "test_trigger"
+  content = file("salesforce/Records/ApexTrigger/test_trigger.trigger")
+  triggerTypes = [
+    "UsageBeforeInsert",
+    "UsageBeforeUpdate",
+  ]
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Account
+    },
+  ]
+  _alias = "test_trigger"
+}
