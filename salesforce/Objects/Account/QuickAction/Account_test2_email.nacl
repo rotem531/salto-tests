@@ -1,7 +1,5 @@
-salesforce.QuickAction Account_test_email@vu {
-  fullName = "Account.test_email"
-  description = "desc"
-  label = "test email"
+salesforce.QuickAction Account_test2_email@vu {
+  fullName = "Account.test2_email"
   optionsCreateFeedItem = true
   quickActionLayout = {
     layoutSectionStyle = "TwoColumnsLeftToRight"
@@ -54,11 +52,12 @@ salesforce.QuickAction Account_test_email@vu {
       },
     ]
   }
+  standardLabel = "SendEmail"
   targetObject = "OutgoingEmail"
   targetParentField = "RelatedTo"
   type = "SendEmail"
   _parent = [
     salesforce.Account,
   ]
-  _alias = "test email"
+  _alias = "Account.test2_email"
 }
