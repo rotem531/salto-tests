@@ -1,0 +1,21 @@
+type salesforce.MessagingKeyword {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string keyword {
+  }
+  string language {
+  }
+  metadataType = "MessagingKeyword"
+}

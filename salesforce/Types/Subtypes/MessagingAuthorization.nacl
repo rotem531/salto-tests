@@ -1,0 +1,25 @@
+type salesforce.MessagingAuthorization {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string authIdentifier {
+  }
+  string authProviderName {
+  }
+  boolean enabled {
+  }
+  string publicKeyCertificateSetName {
+  }
+  metadataType = "MessagingAuthorization"
+}

@@ -1,0 +1,22 @@
+type salesforce.PublicKeyCertificateSetKey {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string publicKeyCertificate {
+    foreignKeyDomain = [
+      salesforce.PublicKeyCertificate,
+    ]
+  }
+  metadataType = "PublicKeyCertificateSetKey"
+}

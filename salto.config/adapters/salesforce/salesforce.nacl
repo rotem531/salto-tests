@@ -1,5 +1,8 @@
 salesforce {
   fetch = {
+    optionalFeatures={
+      hideTypesFolder=false
+    }
     metadata = {
       include = [
         {

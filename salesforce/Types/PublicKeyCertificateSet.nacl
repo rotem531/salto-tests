@@ -1,0 +1,61 @@
+type salesforce.PublicKeyCertificateSet {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string description {
+  }
+  string jwksEndPoint {
+  }
+  string jwtIssuer {
+  }
+  string masterLabel {
+  }
+  salesforce.PublicKeyCertificateSetKey publicKeyCertificateSetKeys {
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "JWKS",
+        "JWKS_URL",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "PublicKeyCertificateSet"
+  dirName = "PublicKeyCertificateSet"
+  metadataType = "PublicKeyCertificateSet"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

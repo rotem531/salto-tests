@@ -1,0 +1,226 @@
+type salesforce.LightningPage {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+  }
+  string description {
+  }
+  salesforce.FlexiPageEvent events {
+  }
+  "List<salesforce.LightningPageRegion>" flexiPageRegions {
+  }
+  string masterLabel {
+  }
+  string parentFlexiPage {
+    foreignKeyDomain = [
+      salesforce.LightningPage,
+    ]
+  }
+  salesforce.PlatformActionList platformActionlist {
+  }
+  salesforce.QuickActionList quickActionList {
+  }
+  string sobjectType {
+    foreignKeyDomain = [
+      "CustomObject",
+      "PlatformSchemaDefinition",
+    ]
+  }
+  salesforce.LightningPageTemplateInstance template {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "clients:defaultMailAppTemplate",
+        "contentpage:defaultEmailContentPageTemplate",
+        "contentpage:defaultEmailTemplatePageTemplate",
+        "contentpage:defaultLandingPageTemplate",
+        "embeddedService:embeddedServicePageTemplateDefault",
+        "flexipage:appHomeTemplateHeaderThreeColumns",
+        "flexipage:appHomeTemplateHeaderTwoColumns",
+        "flexipage:appHomeTemplateHeaderTwoColumnsEqualWidth",
+        "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar",
+        "flexipage:appHomeTemplateThreeColumns",
+        "flexipage:appHomeTemplateTwoColumns",
+        "flexipage:appHomeTemplateTwoColumnsStacked",
+        "flexipage:defaultAppHomeTemplate",
+        "flexipage:defaultCardHomeTemplate",
+        "flexipage:defaultObjectHomeTemplate",
+        "flexipage:defaultSlackAppHomeTemplate",
+        "flexipage:defaultSlackMessageTemplate",
+        "flexipage:defaultSlackModalTemplate",
+        "flexipage:defaultSlackNotificationTemplate",
+        "flexipage:objectHomeTemplateThreeColumns",
+        "flexipage:objectHomeTemplateTwoColumns",
+        "flexipage:objectHomeTemplateTwoColumnsStacked",
+        "flexipage:recordHomeLeftSidebarTemplateDesktop",
+        "flexipage:recordHomePinnedHeaderLeftSidebarTemplateDesktop",
+        "flexipage:recordHomePinnedHeaderLeftSidebarTwoColTemplateDesktop",
+        "flexipage:recordHomePinnedHeaderTemplateDesktop",
+        "flexipage:recordHomePinnedLeftRightSidebarsTemplateDesktop",
+        "flexipage:recordHomePinnedLeftSidebarCollapsibleRegionsTemplateDesktop",
+        "flexipage:recordHomePinnedLeftSidebarTemplateDesktop",
+        "flexipage:recordHomePinnedLeftSidebarTwoColTemplateDesktop",
+        "flexipage:recordHomePinnedRightSidebarTemplateDesktop",
+        "flexipage:recordHomeSimpleViewTemplate",
+        "flexipage:recordHomeSingleColNoHeaderTemplateDesktop",
+        "flexipage:recordHomeSingleColTemplateDesktop",
+        "flexipage:recordHomeTemplateDesktop",
+        "flexipage:recordHomeThreeColHeaderTemplateDesktop",
+        "flexipage:recordHomeThreeColTemplateDesktop",
+        "flexipage:recordHomeTwoColEqualHeaderTemplateDesktop",
+        "flexipage:recordHomeWithSubheaderLeftSidebarTemplateDesktop",
+        "flexipage:recordHomeWithSubheaderTemplateDesktop",
+        "flexipage:recordPrintableViewTemplate",
+        "flowsapp:homePageTemplateHeaderTwoColumnLeftSidebar",
+        "force:applicationLayoutTemplateDesktop",
+        "force:recordPreviewTemplateDesktop",
+        "forceCommunity:defaultCommAppPageTemplate",
+        "home:desktopTemplate",
+        "home:desktopTemplateHeaderThreeColumns",
+        "industries_common:homeTemplateOneRegion",
+        "mobileBuilder:defaultMobileAppPageTemplate",
+        "omni:defaultOmniSupervisorPageTemplate",
+        "one:utilityBarTemplateDesktop",
+        "opencti:defaultVoiceExtensionTemplate",
+        "runtime_cdp:cdpRecordHomeTemplateDesktop",
+        "runtime_commerce_oci:homeTemplateOneRegion",
+        "runtime_marketing_home:marketingHomeTemplate",
+        "runtime_platform_datadetect:homeTemplateOneRegion",
+        "runtime_platform_datamask:homeTemplateOneRegion",
+        "runtime_platform_privacycenter:homeTemplateOneRegion",
+        "runtime_platform_unified_policy:homeTemplateOneRegion",
+        "runtime_revenue_configurator:configuratorAppTemplateOneRegion",
+        "runtime_revenue_configurator:configuratorAppTemplateTwoColumns",
+        "runtime_sales_easy:easyHomeDesktopTemplate",
+        "runtime_sales_forecasting:defaultForecastingPageTemplate",
+        "runtime_sales_seller_home:sellerHomeDesktopTemplate",
+        "runtime_service_fieldservice:headerBodyFooterDocumentTemplate",
+        "runtime_slack_block:message",
+        "runtime_slack_block:modal",
+        "salesforceIdentity:loginBody",
+        "salesforceIdentity:loginBody2",
+        "siteforce:alumniSelfServiceBody",
+        "siteforce:applicantPortalBody",
+        "siteforce:automotiveLayoutStarter",
+        "siteforce:b2bBody",
+        "siteforce:cptBody",
+        "siteforce:digitallendingBody",
+        "siteforce:dynamicLayout",
+        "siteforce:employeeSelfServiceBody",
+        "siteforce:eucpLayoutStarter",
+        "siteforce:helpCenterBody",
+        "siteforce:insuranceBody",
+        "siteforce:loyaltyBody",
+        "siteforce:lpiLayoutStarter",
+        "siteforce:mfgLayoutStarter",
+        "siteforce:mortgageBody",
+        "siteforce:napiliBody",
+        "siteforce:oneColumnLayout",
+        "siteforce:prmBody",
+        "siteforce:serviceBody",
+        "siteforce:sldsOneColLayout",
+        "siteforce:sldsThreeCol336Layout",
+        "siteforce:sldsThreeCol363Layout",
+        "siteforce:sldsThreeCol444Layout",
+        "siteforce:sldsThreeCol633Layout",
+        "siteforce:sldsTwoCol48Layout",
+        "siteforce:sldsTwoCol66Layout",
+        "siteforce:sldsTwoCol84Layout",
+        "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+        "siteforce:starterBody",
+        "siteforce:themeLayoutStarter",
+        "siteforce:twoCol74Layout",
+        "siteforce:twoColumnLayout",
+      ]
+    }
+    foreignKeyDomain = [
+      salesforce.AuraDefinitionBundle,
+    ]
+  }
+  string type {
+    _restriction = {
+      enforce_value = false
+      values = [
+        "AppPage",
+        "ApplicationLayout",
+        "CardPage",
+        "CdpRecordPage",
+        "CommAppPage",
+        "CommCheckoutPage",
+        "CommContractDetailViewPage",
+        "CommContractDocumentsPage",
+        "CommElectronicSignaturePage",
+        "CommFlowPage",
+        "CommForgotPasswordPage",
+        "CommGlobalSearchResultPage",
+        "CommLoginPage",
+        "CommNoSearchResultsPage",
+        "CommObjectPage",
+        "CommOrderConfirmationPage",
+        "CommQuickActionCreatePage",
+        "CommRecordPage",
+        "CommRelatedListPage",
+        "CommSearchResultPage",
+        "CommSelfRegisterPage",
+        "CommThemeLayoutPage",
+        "ConfiguratorAppPage",
+        "EasyHomePage",
+        "EmailContentPage",
+        "EmailTemplatePage",
+        "EmbeddedServicePage",
+        "ForecastingPage",
+        "HomePage",
+        "LandingPage",
+        "MailAppAppPage",
+        "MobileAppPage",
+        "ObjectPage",
+        "OmniSupervisorPage",
+        "RecordPage",
+        "RecordPreview",
+        "ServiceDocument",
+        "SlackAppHome",
+        "SlackMessage",
+        "SlackModal",
+        "SlackNotification",
+        "UtilityBar",
+        "VoiceExtension",
+      ]
+    }
+  }
+  string internalId {
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = "flexipage"
+  dirName = "flexipages"
+  metadataType = "FlexiPage"
+  _important_values = [
+    {
+      value = "fullName"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "masterLabel"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}

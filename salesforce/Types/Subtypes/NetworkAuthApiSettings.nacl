@@ -1,0 +1,76 @@
+type salesforce.NetworkAuthApiSettings {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  boolean doesForgotPasswordRequireAuth {
+  }
+  boolean doesPasswordLoginRequireAuth {
+  }
+  boolean doesPwdlessLoginRequireAuth {
+  }
+  boolean doesRegistrationRequireAuth {
+  }
+  salesforce.NetworkEmailTmplAllowlist emailTmplsAllowlist {
+  }
+  string headlessDiscoveryExecutionUser {
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string headlessDiscoveryHandler {
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  boolean isFirstPartyAppsAllowed {
+  }
+  boolean isForgotPwdAllowed {
+  }
+  boolean isForgotPwdEmailTemplateAllowlistingEnabled {
+  }
+  boolean isHeadlessUserRegistrationAllowed {
+  }
+  boolean isPwdlessLoginAllowed {
+  }
+  boolean isRecaptchaRequiredForgotPwd {
+  }
+  boolean isRecaptchaRequiredPwdlessLogin {
+  }
+  boolean isRecaptchaRequiredRgstr {
+  }
+  boolean isUniversalClientRgstrAllowed {
+  }
+  number maxPasswordResetAttempts {
+  }
+  number recaptchaScoreThreshold {
+  }
+  string recaptchaSecretKey {
+  }
+  string registrationExecutionUser {
+    foreignKeyDomain = [
+      salesforce.User,
+    ]
+  }
+  string registrationHandler {
+    foreignKeyDomain = [
+      salesforce.ApexClass,
+    ]
+  }
+  string registrationUserDefaultProfile {
+    foreignKeyDomain = [
+      "Profile",
+    ]
+  }
+  metadataType = "NetworkAuthApiSettings"
+}
