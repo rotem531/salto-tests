@@ -1,22 +1,53 @@
-type salesforce.EncryptedTextLength is number {
-  _restriction = {
-    min = 1
-    max = 175
-    enforce_value = false
-  }
-}
 type salesforce.FieldDependency {
   string controllingField {
   }
   "List<salesforce.ValueSettings>" valueSettings {
   }
 }
-type salesforce.LongTextAreaVisibleLines is number {
+type salesforce.summaryOperation is string {
   _restriction = {
-    min = 2
-    max = 50
-    enforce_value = false
+    values = [
+      "count",
+      "min",
+      "max",
+      "sum",
+    ]
   }
+}
+type salesforce.summaryFilterItems {
+  string field {
+  }
+  salesforce.rollupSummaryFilterOperation operation {
+  }
+  string value {
+  }
+  string valueField {
+  }
+}
+type salesforce.rollupSummaryFilterOperation is string {
+  _restriction = {
+    values = [
+      "equals",
+      "notEqual",
+      "lessThan",
+      "greaterThan",
+      "lessOrEqual",
+      "greaterOrEqual",
+      "contains",
+      "notContain",
+      "startsWith",
+      "includes",
+      "excludes",
+      "within",
+    ]
+  }
+}
+type salesforce.ValueSettings {
+  string valueName {
+  }
+  "List<string>" controllingFieldValue {
+  }
+  apiName = "ValueSettings"
 }
 type salesforce.LookupFilter {
   boolean active {
@@ -32,65 +63,6 @@ type salesforce.LookupFilter {
   "List<salesforce.FilterItem>" filterItems {
   }
   apiName = "LookupFilter"
-}
-type salesforce.MultiPicklistVisibleLines is number {
-  _restriction = {
-    min = 3
-    max = 10
-    enforce_value = false
-  }
-}
-type salesforce.RelationshipOrder is number {
-  _restriction = {
-    min = 0
-    max = 1
-    enforce_value = false
-  }
-}
-type salesforce.RichTextAreaVisibleLines is number {
-  _restriction = {
-    min = 10
-    max = 50
-    enforce_value = false
-  }
-}
-type salesforce.TextAreaLength is number {
-  _restriction = {
-    min = 1
-    max = 131072
-    enforce_value = false
-  }
-}
-type salesforce.TextLength is number {
-  _restriction = {
-    min = 1
-    max = 255
-    enforce_value = false
-  }
-}
-type salesforce.ValueSettings {
-  string valueName {
-  }
-  "List<string>" controllingFieldValue {
-  }
-  apiName = "ValueSettings"
-}
-type salesforce.businessStatus is string {
-  _restriction = {
-    values = [
-      "Active",
-      "DeprecateCandidate",
-      "Hidden",
-    ]
-  }
-}
-type salesforce.formulaTreatBlanksAs is string {
-  _restriction = {
-    values = [
-      "BlankAsBlank",
-      "BlankAsZero",
-    ]
-  }
 }
 type salesforce.maskChar is string {
   _restriction = {
@@ -112,21 +84,12 @@ type salesforce.maskType is string {
     ]
   }
 }
-type salesforce.rollupSummaryFilterOperation is string {
+type salesforce.businessStatus is string {
   _restriction = {
     values = [
-      "equals",
-      "notEqual",
-      "lessThan",
-      "greaterThan",
-      "lessOrEqual",
-      "greaterOrEqual",
-      "contains",
-      "notContain",
-      "startsWith",
-      "includes",
-      "excludes",
-      "within",
+      "Active",
+      "DeprecateCandidate",
+      "Hidden",
     ]
   }
 }
@@ -141,26 +104,6 @@ type salesforce.securityClassification is string {
     ]
   }
 }
-type salesforce.summaryFilterItems {
-  string field {
-  }
-  salesforce.rollupSummaryFilterOperation operation {
-  }
-  string value {
-  }
-  string valueField {
-  }
-}
-type salesforce.summaryOperation is string {
-  _restriction = {
-    values = [
-      "count",
-      "min",
-      "max",
-      "sum",
-    ]
-  }
-}
 type salesforce.valueSet {
   string fullName {
   }
@@ -171,5 +114,62 @@ type salesforce.valueSet {
   boolean isActive {
   }
   string color {
+  }
+}
+type salesforce.formulaTreatBlanksAs is string {
+  _restriction = {
+    values = [
+      "BlankAsBlank",
+      "BlankAsZero",
+    ]
+  }
+}
+type salesforce.TextLength is number {
+  _restriction = {
+    min = 1
+    max = 255
+    enforce_value = false
+  }
+}
+type salesforce.TextAreaLength is number {
+  _restriction = {
+    min = 1
+    max = 131072
+    enforce_value = false
+  }
+}
+type salesforce.EncryptedTextLength is number {
+  _restriction = {
+    min = 1
+    max = 175
+    enforce_value = false
+  }
+}
+type salesforce.LongTextAreaVisibleLines is number {
+  _restriction = {
+    min = 2
+    max = 50
+    enforce_value = false
+  }
+}
+type salesforce.MultiPicklistVisibleLines is number {
+  _restriction = {
+    min = 3
+    max = 10
+    enforce_value = false
+  }
+}
+type salesforce.RichTextAreaVisibleLines is number {
+  _restriction = {
+    min = 10
+    max = 50
+    enforce_value = false
+  }
+}
+type salesforce.RelationshipOrder is number {
+  _restriction = {
+    min = 0
+    max = 1
+    enforce_value = false
   }
 }
