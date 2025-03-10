@@ -13,6 +13,8 @@ salesforce.EmailAdministrationSettings {
   enableListEmailLogActivities = true
   enableResendBouncedEmails = false
   enableRestrictTlsToDomains = false
+  enableSendViaExchangePref = false
+  enableSendViaGmailPref = false
   enableUseOrgFootersForExtTrans = false
   enableVerifyEmailDomainByDkim = false
   sendEmailsEvenWhenAutomationUpdatesSameRecord = false

@@ -1229,6 +1229,13 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
+  salesforce.Checkbox UserPreferencesNativeEmailClient {
+    apiName = "User.UserPreferencesNativeEmailClient"
+    label = "NativeEmailClient"
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Checkbox UserPreferencesBRELookupTableWelcomeMat {
     apiName = "User.UserPreferencesBRELookupTableWelcomeMat"
     label = "BRELookupTableWelcomeMat"
