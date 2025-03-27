@@ -54,7 +54,7 @@ type salesforce.tst_obj__c {
     sorted = false
     restricted = true
     fieldDependency = {
-      controllingField = "picklist_field1__c"
+      controllingField = salesforce.tst_obj__c.field.picklist_field1__c
       valueSettings = [
         {
           valueName = "big camel"
