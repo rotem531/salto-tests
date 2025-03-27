@@ -3186,12 +3186,6 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "America/Asuncion"
-        default = false
-        label = "(GMT-03:00) Paraguay Summer Time (America/Asuncion)"
-        isActive = true
-      },
-      {
         fullName = "America/Bahia"
         default = false
         label = "(GMT-03:00) Brasilia Standard Time (America/Bahia)"
@@ -3357,6 +3351,12 @@ settings salesforce.Organization {
         fullName = "America/Aruba"
         default = false
         label = "(GMT-04:00) Atlantic Standard Time (America/Aruba)"
+        isActive = true
+      },
+      {
+        fullName = "America/Asuncion"
+        default = false
+        label = "(GMT-04:00) Paraguay Standard Time (America/Asuncion)"
         isActive = true
       },
       {

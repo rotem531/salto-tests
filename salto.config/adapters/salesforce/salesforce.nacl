@@ -10,17 +10,32 @@ salesforce {
           namespace = ""
           name = ".*"
         },
+        // {
+        //   metadataType = "Report"
+        //   namespace = ""
+        //   name = ".*"
+        // },
+        // {
+        //   metadataType = "ReportType"
+        //   namespace = ""
+        //   name = ".*"
+        // },
+        // {
+        //   metadataType = "ReportFolder"
+        //   namespace = ""
+        //   name = ".*"
+        // },
       ]
       exclude = [
-        {
-          metadataType = "Report"
-        },
-        {
-          metadataType = "ReportType"
-        },
-        {
-          metadataType = "ReportFolder"
-        },
+        // {
+        //   metadataType = "Report"
+        // },
+        // {
+        //   metadataType = "ReportType"
+        // },
+        // {
+        //   metadataType = "ReportFolder"
+        // },
         {
           metadataType = "Dashboard"
         },

@@ -1,0 +1,56 @@
+salesforce.Report unfiled_public_flow_orchestration_log_ootb_report_two_four_eight@zcduuuuuuu {
+  columns = [
+    {
+      field = "FlowOrchestrationLog$OrchestrationInstance"
+    },
+    {
+      field = "FlowOrchestrationLog$StageName"
+    },
+    {
+      field = "FlowOrchestrationLog$StepName"
+    },
+    {
+      field = "FlowOrchestrationLog$Kind"
+    },
+    {
+      field = "FlowOrchestrationLog$Timestamp"
+    },
+    {
+      field = "FlowOrchestrationLog$Assignee"
+    },
+    {
+      field = "FlowOrchestrationLog$AssigneeType"
+    },
+    {
+      field = "FlowOrchestrationLog$Actor"
+    },
+    {
+      field = "FlowOrchestrationLog$Duration"
+    },
+    {
+      field = "FlowOrchestrationLog$Comments"
+    },
+  ]
+  description = "What orchestration run logs were created and what happened in their associated orchestration runs?"
+  format = "Tabular"
+  name = "Sample Report: Orchestration Run Logs"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "flow_orchestration_log_ootb_crt_two_four_eight__c"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "FlowOrchestrationLog$Timestamp"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "FlowOrchestrationLog$Timestamp"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/flow_orchestration_log_ootb_report_two_four_eight"
+  _alias = "unfiled$public/flow_orchestration_log_ootb_report_two_four_eight"
+}

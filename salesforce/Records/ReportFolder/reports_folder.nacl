@@ -1,0 +1,10 @@
+salesforce.ReportFolder reports_folder {
+  folderShares = {
+    accessLevel = "Manage"
+    sharedTo = "sf-dev2@sf.sf"
+    sharedToType = "User"
+  }
+  name = "reports folder"
+  fullName = "reports_folder"
+  _alias = "reports_folder"
+}

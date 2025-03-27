@@ -4,6 +4,27 @@ salesforce.RecordType tst_vsb__c_recordType1 {
   label = "recordType1"
   picklistValues = [
     {
+      picklist = salesforce.tst_vsb__c.field.controlled_by_value_set_field__c
+      values = [
+        {
+          fullName = "big camel"
+          default = false
+        },
+        {
+          fullName = "door"
+          default = false
+        },
+        {
+          fullName = "home"
+          default = false
+        },
+        {
+          fullName = "tent"
+          default = false
+        },
+      ]
+    },
+    {
       picklist = salesforce.tst_vsb__c.field.diff_picklist_field__c
       values = [
         {
@@ -120,6 +141,19 @@ salesforce.RecordType tst_vsb__c_recordType1 {
         },
         {
           fullName = "f"
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.tst_vsb__c.field.value_set_field__c
+      values = [
+        {
+          fullName = "cohen"
+          default = false
+        },
+        {
+          fullName = "rotem"
           default = false
         },
       ]

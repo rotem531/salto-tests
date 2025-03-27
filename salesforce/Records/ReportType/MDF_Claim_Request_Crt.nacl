@@ -1,0 +1,150 @@
+salesforce.ReportType MDF_Claim_Request_Crt {
+  baseObject = "PartnerFundRequest"
+  category = "other"
+  deployed = true
+  description = "Report on market development fund requests and fund claims from partners."
+  join = {
+    outerJoin = false
+    relationship = "PartnerFundClaims"
+  }
+  label = "Partner Fund Requests and Partner Fund C"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Id
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = true
+          field = "Name"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.CreatedDate
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.LastModifiedDate
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Allocation"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "ChannelPartner"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Campaign"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Budget"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Activity
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Description
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.RequestedAmount
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.DesiredOutcome
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Amount
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Status
+          table = "PartnerFundRequest"
+        },
+      ]
+      masterLabel = "Partner Fund Requests"
+    },
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "Id"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = true
+          field = "Name"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedDate"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedDate"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "Description"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "Amount"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+        {
+          checkedByDefault = false
+          field = "Status"
+          table = "PartnerFundRequest.PartnerFundClaims"
+        },
+      ]
+      masterLabel = "Partner Fund Claims"
+    },
+  ]
+  fullName = "MDF_Claim_Request_Crt"
+  _alias = "Partner Fund Requests and Partner Fund C"
+}

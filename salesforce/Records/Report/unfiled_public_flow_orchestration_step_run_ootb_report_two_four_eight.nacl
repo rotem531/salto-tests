@@ -1,0 +1,59 @@
+salesforce.Report unfiled_public_flow_orchestration_step_run_ootb_report_two_four_eight@zcduuuuuuuu {
+  columns = [
+    {
+      field = "FlowOrchestrationStepInstance$Name"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Label"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$CreatedDate"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$CreatedBy"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$LastModifiedDate"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$LastModifiedBy"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Status"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$OrchestrationInstance"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$StageInstance"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Id"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$StepType"
+    },
+  ]
+  description = "What orchestration step runs have been created and what's the current status of each run?"
+  format = "Tabular"
+  name = "Sample Report: Orchestration Step Runs"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "flow_orchestration_step_run_ootb_crt_two_four_eight__c"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "FlowOrchestrationStepInstance$LastModifiedDate"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "FlowOrchestrationStepInstance$CreatedDate"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/flow_orchestration_step_run_ootb_report_two_four_eight"
+  _alias = "unfiled$public/flow_orchestration_step_run_ootb_report_two_four_eight"
+}

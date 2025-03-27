@@ -1,0 +1,14 @@
+salesforce.ReportType PRM_Program_Progress_sfdcSESv61 {
+  baseObject = ""
+  category = "other"
+  deployed = true
+  description = "Report on the progress of each program. The overall program progress isn’t captured in this report."
+  label = "Program Progress Summer '24 (Partners)"
+  sections = [
+    {
+      masterLabel = "Learning Item Assignments"
+    },
+  ]
+  fullName = "PRM_Program_Progress_sfdcSESv61"
+  _alias = "Program Progress Summer '24 (Partners)"
+}

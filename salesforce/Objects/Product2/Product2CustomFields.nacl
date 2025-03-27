@@ -165,7 +165,7 @@ type salesforce.Product2 {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__ConfigurationType__c"
+      controllingField = salesforce.Product2.field.SBQQ__ConfigurationType__c
       valueSettings = [
         {
           valueName = "Always"

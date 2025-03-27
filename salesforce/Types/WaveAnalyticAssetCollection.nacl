@@ -30,7 +30,7 @@ type salesforce.WaveAnalyticAssetCollection {
   }
   string folder {
     foreignKeyDomain = [
-      "ReportFolder",
+      salesforce.ReportFolder,
     ]
   }
   salesforce.WaveAnalyticAssetCollectionItem items {

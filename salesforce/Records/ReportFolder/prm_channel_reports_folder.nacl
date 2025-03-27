@@ -1,0 +1,10 @@
+salesforce.ReportFolder prm_channel_reports_folder {
+  folderShares = {
+    accessLevel = "Manage"
+    sharedTo = "sf-dev2@sf.sf"
+    sharedToType = "User"
+  }
+  name = "PRM Reports"
+  fullName = "prm_channel_reports_folder"
+  _alias = "prm_channel_reports_folder"
+}

@@ -44,6 +44,14 @@ salesforce.Layout tst_vsb__c_tst_vsb_Layout@uuubus {
               behavior = "Edit"
               field = salesforce.tst_vsb__c.field.tamir__c
             },
+            {
+              behavior = "Edit"
+              field = salesforce.tst_vsb__c.field.value_set_field__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.tst_vsb__c.field.controlled_by_value_set_field__c
+            },
           ]
         },
         {

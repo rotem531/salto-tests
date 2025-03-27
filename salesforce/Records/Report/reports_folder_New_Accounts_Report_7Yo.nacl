@@ -1,0 +1,48 @@
+salesforce.Report reports_folder_New_Accounts_Report_7Yo@uduuu {
+  columns = [
+    {
+      field = "DUE_DATE"
+    },
+    {
+      field = "USERS.NAME"
+    },
+    {
+      field = "ACCOUNT.NAME"
+    },
+    {
+      field = "ADDRESS1_STATE"
+    },
+    {
+      field = "TYPE"
+    },
+    {
+      field = "RATING"
+    },
+    {
+      field = "LAST_UPDATE"
+    },
+  ]
+  format = "Tabular"
+  name = "New Accounts Report"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "AccountList"
+  scope = "user"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "CREATED_DATE"
+    interval = "INTERVAL_CUSTOM"
+    startDate = "2024-12-05"
+  }
+  fullName = "reports_folder/New_Accounts_Report_7Yo"
+  _parent = [
+    salesforce.ReportFolder.instance.reports_folder,
+  ]
+  _alias = "reports_folder/New_Accounts_Report_7Yo"
+}

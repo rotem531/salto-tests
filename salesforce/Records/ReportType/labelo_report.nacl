@@ -1,0 +1,101 @@
+salesforce.ReportType labelo_report {
+  baseObject = "tst_vsb__c"
+  category = "opportunities"
+  deployed = false
+  description = "labelo report desc"
+  label = "labelo report"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.Id
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = "Owner"
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = true
+          field = salesforce.tst_vsb__c.field.Name
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = "RecordType"
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.CreatedDate
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.LastModifiedDate
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.num_num__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.test_picklist_field__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.formula_field__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.test_picklist__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.test2_picklist__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.diff_picklist_field__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.tamir__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.value_set_field__c
+          table = "tst_vsb__c"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.tst_vsb__c.field.controlled_by_value_set_field__c
+          table = "tst_vsb__c"
+        },
+      ]
+      masterLabel = "tst_vsbs"
+    },
+  ]
+  fullName = "labelo_report"
+  _alias = "labelo report"
+}

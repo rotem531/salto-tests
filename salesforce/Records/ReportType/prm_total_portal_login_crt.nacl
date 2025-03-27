@@ -1,0 +1,489 @@
+salesforce.ReportType prm_total_portal_login_crt {
+  baseObject = "Network"
+  category = "other"
+  deployed = true
+  description = "Report on the login history of your Experience Cloud site users."
+  join = {
+    join = {
+      outerJoin = false
+      relationship = "LoginHistory"
+    }
+    outerJoin = false
+    relationship = "NetworkMembers"
+  }
+  label = "Login History for Experience Cloud Site"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "Id"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedDate"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedDate"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "Network"
+        },
+        {
+          checkedByDefault = true
+          field = "Name"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "Description"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "Status"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "Site"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "PicassoSite"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "MembershipAccess"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "UserVisibility"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "EmailSenderName"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "EmailSenderAddress"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "NewSenderAddress"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "EmailFooterText"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "SelfRegProfile"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "LogoutUrl"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "FirstActivationDate"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "MaxFileSizeKb"
+          table = "Network"
+        },
+        {
+          checkedByDefault = false
+          field = "AllowedExtensions"
+          table = "Network"
+        },
+      ]
+      masterLabel = "Networks"
+    },
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "Id"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Username"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Name"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "FirstName"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "LastName"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "CompanyName"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Division"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Department"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Title"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Address"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Street"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "City"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "State"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "PostalCode"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Country"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Latitude"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Longitude"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "GeocodeAccuracy"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Email"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "SenderEmail"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "SenderName"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Signature"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "StayInTouchSubject"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "StayInTouchSignature"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "StayInTouchNote"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Phone"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Fax"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "MobilePhone"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Alias"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "CommunityNickname"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "IsActive"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "IsSystemControlled"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "TimeZoneSidKey"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "LocaleSidKey"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ReceivesInfoEmails"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ReceivesAdminInfoEmails"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "EmailEncodingKey"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "UserType"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "UserSubtype"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "StartDay"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "EndDay"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "LanguageLocaleKey"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "EmployeeNumber"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "PasswordExpirationDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "WirelessTrialExpirationDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ForecastEnabled"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Extension"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "FederationIdentifier"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "AboutMe"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "DigestFrequency"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "DefaultGroupNotificationFrequency"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "JigsawImportLimitOverride"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ChatterAdoptionStage"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ChatterAdoptionStageModifiedDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "IsProfilePhotoActive"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "GlobalIdentity"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "LastChatterActivityDate"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "ReputationPoints"
+          table = "Network.NetworkMembers"
+        },
+        {
+          checkedByDefault = false
+          field = "Member"
+          table = "Network.NetworkMembers"
+        },
+      ]
+      masterLabel = "Network Members"
+    },
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = "LoginTime"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "LoginGeo"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "TlsProtocol"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "CipherSuite"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "Status"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "RemoteIdentifier"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "AuthMethodReference"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "LoginSubType"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+        {
+          checkedByDefault = false
+          field = "ForwardedForIp"
+          table = "Network.NetworkMembers.LoginHistory"
+        },
+      ]
+      masterLabel = "Login History"
+    },
+  ]
+  fullName = "prm_total_portal_login_crt"
+  _alias = "Login History for Experience Cloud Site"
+}

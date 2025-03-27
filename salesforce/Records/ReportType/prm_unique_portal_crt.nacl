@@ -1,0 +1,391 @@
+salesforce.ReportType prm_unique_portal_crt {
+  baseObject = "User"
+  category = "other"
+  deployed = true
+  description = "Report on user data, such as name, address, email, last login, and more."
+  label = "User Details"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Id
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Username
+          table = "User"
+        },
+        {
+          checkedByDefault = true
+          field = salesforce.User.field.Name
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "FirstName"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "LastName"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.CompanyName
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Division
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Department
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Title
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Address
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Street"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "City"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "State"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "PostalCode"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Country"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Latitude"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Longitude"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "GeocodeAccuracy"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Email
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.SenderEmail
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.SenderName
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Signature
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.StayInTouchSubject
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.StayInTouchSignature
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.StayInTouchNote
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Phone
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Fax
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.MobilePhone
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Alias
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.CommunityNickname
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.IsActive
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.IsSystemControlled
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.TimeZoneSidKey
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "UserRole"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.LocaleSidKey
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.ReceivesInfoEmails
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.ReceivesAdminInfoEmails
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.EmailEncodingKey
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Profile"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.UserType
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.UserSubtype
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.StartDay
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.EndDay
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.LanguageLocaleKey
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.EmployeeNumber
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Manager"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.LastLoginDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.LastPasswordChangeDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.CreatedDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.LastModifiedDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.PasswordExpirationDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.NumberOfFailedLogins
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.SuAccessExpirationDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "SuOrgAdminExpirationDate"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.OfflineTrialExpirationDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "WirelessTrialExpirationDate"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.OfflinePdaTrialExpirationDate
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.ForecastEnabled
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Contact"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Account"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "CallCenter"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.Extension
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.FederationIdentifier
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.AboutMe
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "CurrentStatus"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.DigestFrequency
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.DefaultGroupNotificationFrequency
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.JigsawImportLimitOverride
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "ChatterAdoptionStage"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "ChatterAdoptionStageModifiedDate"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.User.field.IsProfilePhotoActive
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "Individual"
+          table = "User"
+        },
+        {
+          checkedByDefault = false
+          field = "GlobalIdentity"
+          table = "User"
+        },
+      ]
+      masterLabel = "Users"
+    },
+  ]
+  fullName = "prm_unique_portal_crt"
+  _alias = "User Details"
+}

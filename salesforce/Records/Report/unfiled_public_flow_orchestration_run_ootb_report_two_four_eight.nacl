@@ -1,0 +1,50 @@
+salesforce.Report unfiled_public_flow_orchestration_run_ootb_report_two_four_eight@zcduuuuuuu {
+  columns = [
+    {
+      field = "FlowOrchestrationInstance$Name"
+    },
+    {
+      field = "FlowOrchestrationInstance$CreatedDate"
+    },
+    {
+      field = "FlowOrchestrationInstance$CreatedBy"
+    },
+    {
+      field = "FlowOrchestrationInstance$LastModifiedDate"
+    },
+    {
+      field = "FlowOrchestrationInstance$LastModifiedBy"
+    },
+    {
+      field = "FlowOrchestrationInstance$Status"
+    },
+    {
+      field = "FlowOrchestrationInstance$FlowDefinition"
+    },
+    {
+      field = "FlowOrchestrationInstance$Id"
+    },
+  ]
+  description = "What orchestration runs have been created and what's the current status of each run?"
+  format = "Tabular"
+  name = "Sample Report: Orchestration Runs"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "flow_orchestration_run_ootb_crt_two_four_eight__c"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "FlowOrchestrationInstance$Name"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "FlowOrchestrationInstance$CreatedDate"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/flow_orchestration_run_ootb_report_two_four_eight"
+  _alias = "unfiled$public/flow_orchestration_run_ootb_report_two_four_eight"
+}

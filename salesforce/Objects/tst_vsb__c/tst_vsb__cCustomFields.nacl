@@ -1,4 +1,44 @@
 type salesforce.tst_vsb__c {
+  salesforce.Picklist controlled_by_value_set_field__c {
+    apiName = "tst_vsb__c.controlled_by_value_set_field__c"
+    description = "desci"
+    label = "controlled by value set field"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.another_picklist
+    restricted = true
+    fieldDependency = {
+      controllingField = salesforce.tst_vsb__c.field.value_set_field__c
+      valueSettings = [
+        {
+          valueName = "home"
+          controllingFieldValue = [
+            "rotem",
+          ]
+        },
+        {
+          valueName = "tent"
+          controllingFieldValue = [
+            "rotem",
+          ]
+        },
+        {
+          valueName = "big camel"
+          controllingFieldValue = [
+            "cohen",
+          ]
+        },
+        {
+          valueName = "door"
+          controllingFieldValue = [
+            "cohen",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
   salesforce.Picklist diff_picklist_field__c {
     apiName = "tst_vsb__c.diff_picklist_field__c"
     label = "diff picklist field"
@@ -6,7 +46,7 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.another_picklist
     restricted = true
     fieldDependency = {
-      controllingField = "test_picklist__c"
+      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
       valueSettings = [
         {
           valueName = "home"
@@ -91,7 +131,7 @@ type salesforce.tst_vsb__c {
     sorted = false
     restricted = true
     fieldDependency = {
-      controllingField = "diff_picklist_field__c"
+      controllingField = salesforce.tst_vsb__c.field.diff_picklist_field__c
       valueSettings = [
         {
           valueName = "ahat"
@@ -127,7 +167,7 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     fieldDependency = {
-      controllingField = "test_picklist__c"
+      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
       valueSettings = [
         {
           valueName = "a"
@@ -182,6 +222,28 @@ type salesforce.tst_vsb__c {
     label = "test picklist field"
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist value_set_field__c {
+    apiName = "tst_vsb__c.value_set_field__c"
+    label = "value set field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "rotem"
+        default = false
+        label = "rotem"
+      },
+      {
+        fullName = "cohen"
+        default = false
+        label = "cohen"
+      },
+    ]
+    sorted = false
     restricted = true
     createable = true
     updateable = true

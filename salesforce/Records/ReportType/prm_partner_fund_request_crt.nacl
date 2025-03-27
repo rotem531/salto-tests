@@ -1,0 +1,96 @@
+salesforce.ReportType prm_partner_fund_request_crt {
+  baseObject = "PartnerFundRequest"
+  category = "other"
+  deployed = true
+  description = "Report on market development fund requests from partners."
+  label = "Partner Fund Requests"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Id
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = true
+          field = "Name"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.CreatedDate
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.LastModifiedDate
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Allocation"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "ChannelPartner"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Campaign"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = "Budget"
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Activity
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Description
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.RequestedAmount
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.DesiredOutcome
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Amount
+          table = "PartnerFundRequest"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerFundRequest.field.Status
+          table = "PartnerFundRequest"
+        },
+      ]
+      masterLabel = "Partner Fund Requests"
+    },
+  ]
+  fullName = "prm_partner_fund_request_crt"
+  _alias = "Partner Fund Requests"
+}

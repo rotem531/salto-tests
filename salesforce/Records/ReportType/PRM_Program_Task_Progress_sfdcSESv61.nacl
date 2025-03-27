@@ -1,0 +1,14 @@
+salesforce.ReportType PRM_Program_Task_Progress_sfdcSESv61 {
+  baseObject = ""
+  category = "other"
+  deployed = true
+  description = "Report on program items like exercises, milestones, and outcome progress. Overall program progress isn’t captured in this report."
+  label = "Program Item Progress Summer '24 (Partners)"
+  sections = [
+    {
+      masterLabel = "Enablement Program Task Progresses"
+    },
+  ]
+  fullName = "PRM_Program_Task_Progress_sfdcSESv61"
+  _alias = "Program Item Progress Summer '24 (Partners)"
+}

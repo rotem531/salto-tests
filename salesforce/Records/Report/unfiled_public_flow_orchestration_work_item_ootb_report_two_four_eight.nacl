@@ -1,0 +1,62 @@
+salesforce.Report unfiled_public_flow_orchestration_work_item_ootb_report_two_four_eight@zcduuuuuuuu {
+  columns = [
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$Name"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$CreatedDate"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$CreatedBy"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$LastModifiedDate"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$LastModifiedBy"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$Assignee.User"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$Assignee.Group"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$Status"
+    },
+    {
+      field = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$Id"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Name"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Label"
+    },
+    {
+      field = "FlowOrchestrationStepInstance$Status"
+    },
+  ]
+  description = "What orchestration work items were created and what's the current status of each work item?"
+  format = "Tabular"
+  name = "Sample Report: Orchestration Work Items"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "flow_orchestration_work_item_ootb_crt_two_four_eight__c"
+  scope = "organization"
+  showDetails = true
+  showGrandTotal = true
+  showSubTotals = true
+  sortColumn = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$LastModifiedDate"
+  sortOrder = "Desc"
+  timeFrameFilter = {
+    dateColumn = "FlowOrchestrationStepInstance.FlowOrchestrationWorkItems$CreatedDate"
+    interval = "INTERVAL_CURRENT"
+  }
+  fullName = "unfiled$public/flow_orchestration_work_item_ootb_report_two_four_eight"
+  _alias = "unfiled$public/flow_orchestration_work_item_ootb_report_two_four_eight"
+}

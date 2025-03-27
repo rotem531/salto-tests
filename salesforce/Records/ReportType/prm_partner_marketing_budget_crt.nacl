@@ -1,0 +1,86 @@
+salesforce.ReportType prm_partner_marketing_budget_crt {
+  baseObject = "PartnerMarketingBudget"
+  category = "other"
+  deployed = true
+  description = "Report on your partner marketing budgets, including budget amounts per partner account, and date when the budget is no longer available."
+  label = "Partner Marketing Budgets"
+  sections = [
+    {
+      columns = [
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.Id
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = true
+          field = "Name"
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.CreatedDate
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = "CreatedBy"
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.LastModifiedDate
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = "LastModifiedBy"
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.Description
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.Amount
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.Type
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.StartDate
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.EndDate
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = salesforce.PartnerMarketingBudget.field.IsIgnoreValidation
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = "ParentMdfBudget"
+          table = "PartnerMarketingBudget"
+        },
+        {
+          checkedByDefault = false
+          field = "ChannelPartner"
+          table = "PartnerMarketingBudget"
+        },
+      ]
+      masterLabel = "Partner Marketing Budgets"
+    },
+  ]
+  fullName = "prm_partner_marketing_budget_crt"
+  _alias = "Partner Marketing Budgets"
+}

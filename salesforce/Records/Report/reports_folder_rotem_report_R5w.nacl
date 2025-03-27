@@ -1,0 +1,86 @@
+salesforce.Report reports_folder_rotem_report_R5w@uduu {
+  chart = {
+    backgroundColor1 = "#FFFFFF"
+    backgroundColor2 = "#FFFFFF"
+    backgroundFadeDir = "Diagonal"
+    chartSummaries = [
+      {
+        axisBinding = "y"
+        column = "RowCount"
+      },
+    ]
+    chartType = "HorizontalBarStacked"
+    enableHoverLabels = false
+    expandOthers = true
+    groupingColumn = "FlowInterviewLog$FlowDeveloperName"
+    legendPosition = "Right"
+    location = "CHART_BOTTOM"
+    secondaryGroupingColumn = "FlowInterviewLog$InterviewStatus"
+    showAxisLabels = true
+    showPercentage = false
+    showTotal = false
+    showValues = false
+    size = "Medium"
+    summaryAxisRange = "Auto"
+    textColor = "#000000"
+    textSize = 12
+    titleColor = "#000000"
+    titleSize = 18
+  }
+  columns = [
+    {
+      field = "FlowInterviewLog.FlowInterviewLogs$LogEntryType"
+    },
+    {
+      field = "FlowInterviewLog.FlowInterviewLogs$ElementApiName"
+    },
+    {
+      aggregateTypes = [
+        "Sum",
+        "Average",
+      ]
+      field = "FlowInterviewLog.FlowInterviewLogs$ElementDurationInMinutes"
+    },
+    {
+      field = "FlowInterviewLog$InterviewStartTimestamp"
+    },
+    {
+      field = "FlowInterviewLog$CreatedBy"
+    },
+  ]
+  description = "rotem"
+  format = "Summary"
+  groupingsDown = [
+    {
+      dateGranularity = "Day"
+      field = "FlowInterviewLog$FlowDeveloperName"
+      sortOrder = "Asc"
+    },
+    {
+      dateGranularity = "Day"
+      field = "FlowInterviewLog$InterviewStatus"
+      sortOrder = "Asc"
+    },
+  ]
+  name = "rotem report"
+  params = [
+    {
+      name = "co"
+      value = "1"
+    },
+  ]
+  reportType = "screen_flows_prebuilt_crt__c"
+  scope = "organization"
+  showDetails = false
+  showGrandTotal = true
+  showSubTotals = true
+  timeFrameFilter = {
+    dateColumn = "FlowInterviewLog$CreatedDate"
+    interval = "INTERVAL_LAST7"
+  }
+  fullName = "reports_folder/rotem_report_R5w"
+  _parent = [
+    salesforce.ReportFolder.instance.reports_folder,
+  ]
+  _alias = "reports_folder/rotem_report_R5w"
+}
