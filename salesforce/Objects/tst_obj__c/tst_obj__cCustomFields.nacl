@@ -1,0 +1,78 @@
+type salesforce.tst_obj__c {
+  salesforce.Text my_first_field__c {
+    apiName = "tst_obj__c.my_first_field__c"
+    description = "desc"
+    externalId = false
+    label = "my first field"
+    length = 32
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist picklist_field1__c {
+    apiName = "tst_obj__c.picklist_field1__c"
+    label = "picklist field1"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "ten"
+        default = false
+        label = "ten"
+      },
+      {
+        fullName = "home"
+        default = false
+        label = "home"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist picklist_field2__c {
+    apiName = "tst_obj__c.picklist_field2__c"
+    description = "desca"
+    label = "picklist field2"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "big camel"
+        default = false
+        label = "big camel"
+      },
+      {
+        fullName = "door"
+        default = false
+        label = "door"
+      },
+    ]
+    sorted = false
+    restricted = true
+    fieldDependency = {
+      controllingField = "picklist_field1__c"
+      valueSettings = [
+        {
+          valueName = "big camel"
+          controllingFieldValue = [
+            "ten",
+            "home",
+          ]
+        },
+        {
+          valueName = "door"
+          controllingFieldValue = [
+            "home",
+          ]
+        },
+      ]
+    }
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}
