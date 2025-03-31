@@ -47,7 +47,7 @@ salesforce.Report unfiled_public_flow_orchestration_step_run_ootb_report_two_fou
   scope = "organization"
   showDetails = true
   showGrandTotal = true
-  showSubTotals = true
+  showSubTotals = false
   sortColumn = "FlowOrchestrationStepInstance$LastModifiedDate"
   sortOrder = "Desc"
   timeFrameFilter = {
