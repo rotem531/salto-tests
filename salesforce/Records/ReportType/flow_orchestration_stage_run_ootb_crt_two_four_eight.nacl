@@ -10,17 +10,17 @@ salesforce.ReportType flow_orchestration_stage_run_ootb_crt_two_four_eight {
       columns = [
         {
           checkedByDefault = true
-          field = salesforce.FlowOrchestrationStageInstance.field.Name
+          field = "Name"
           table = "FlowOrchestrationStageInstance"
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStageInstance.field.Label
+          field = "Label"
           table = "FlowOrchestrationStageInstance"
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStageInstance.field.CreatedDate
+          field = "CreatedDate"
           table = "FlowOrchestrationStageInstance"
         },
         {
@@ -30,7 +30,7 @@ salesforce.ReportType flow_orchestration_stage_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStageInstance.field.LastModifiedDate
+          field = "LastModifiedDate"
           table = "FlowOrchestrationStageInstance"
         },
         {
@@ -40,7 +40,7 @@ salesforce.ReportType flow_orchestration_stage_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStageInstance.field.Status
+          field = "Status"
           table = "FlowOrchestrationStageInstance"
         },
         {
@@ -50,7 +50,7 @@ salesforce.ReportType flow_orchestration_stage_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStageInstance.field.Id
+          field = "Id"
           table = "FlowOrchestrationStageInstance"
         },
       ]

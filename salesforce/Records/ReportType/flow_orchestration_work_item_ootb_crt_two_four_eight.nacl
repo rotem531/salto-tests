@@ -67,19 +67,19 @@ salesforce.ReportType flow_orchestration_work_item_ootb_crt_two_four_eight {
         {
           checkedByDefault = true
           displayNameOverride = "Orchestration Step Run: Name"
-          field = salesforce.FlowOrchestrationStepInstance.field.Name
+          field = "Name"
           table = "FlowOrchestrationStepInstance"
         },
         {
           checkedByDefault = false
           displayNameOverride = "Orchestration Step Run: Label"
-          field = salesforce.FlowOrchestrationStepInstance.field.Label
+          field = "Label"
           table = "FlowOrchestrationStepInstance"
         },
         {
           checkedByDefault = false
           displayNameOverride = "Orchestration Step Run: Status"
-          field = salesforce.FlowOrchestrationStepInstance.field.Status
+          field = "Status"
           table = "FlowOrchestrationStepInstance"
         },
       ]

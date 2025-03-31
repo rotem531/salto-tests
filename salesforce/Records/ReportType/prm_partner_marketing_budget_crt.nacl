@@ -9,7 +9,7 @@ salesforce.ReportType prm_partner_marketing_budget_crt {
       columns = [
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.Id
+          field = "Id"
           table = "PartnerMarketingBudget"
         },
         {
@@ -19,7 +19,7 @@ salesforce.ReportType prm_partner_marketing_budget_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.CreatedDate
+          field = "CreatedDate"
           table = "PartnerMarketingBudget"
         },
         {
@@ -29,7 +29,7 @@ salesforce.ReportType prm_partner_marketing_budget_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.LastModifiedDate
+          field = "LastModifiedDate"
           table = "PartnerMarketingBudget"
         },
         {
@@ -39,32 +39,32 @@ salesforce.ReportType prm_partner_marketing_budget_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.Description
+          field = "Description"
           table = "PartnerMarketingBudget"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.Amount
+          field = "Amount"
           table = "PartnerMarketingBudget"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.Type
+          field = "Type"
           table = "PartnerMarketingBudget"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.StartDate
+          field = "StartDate"
           table = "PartnerMarketingBudget"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.EndDate
+          field = "EndDate"
           table = "PartnerMarketingBudget"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerMarketingBudget.field.IsIgnoreValidation
+          field = "IsIgnoreValidation"
           table = "PartnerMarketingBudget"
         },
         {

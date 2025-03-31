@@ -10,17 +10,17 @@ salesforce.ReportType flow_orchestration_step_run_ootb_crt_two_four_eight {
       columns = [
         {
           checkedByDefault = true
-          field = salesforce.FlowOrchestrationStepInstance.field.Name
+          field = "Name"
           table = "FlowOrchestrationStepInstance"
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.Label
+          field = "Label"
           table = "FlowOrchestrationStepInstance"
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.CreatedDate
+          field = "CreatedDate"
           table = "FlowOrchestrationStepInstance"
         },
         {
@@ -30,7 +30,7 @@ salesforce.ReportType flow_orchestration_step_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.LastModifiedDate
+          field = "LastModifiedDate"
           table = "FlowOrchestrationStepInstance"
         },
         {
@@ -40,7 +40,7 @@ salesforce.ReportType flow_orchestration_step_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.Status
+          field = "Status"
           table = "FlowOrchestrationStepInstance"
         },
         {
@@ -55,12 +55,12 @@ salesforce.ReportType flow_orchestration_step_run_ootb_crt_two_four_eight {
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.Id
+          field = "Id"
           table = "FlowOrchestrationStepInstance"
         },
         {
           checkedByDefault = false
-          field = salesforce.FlowOrchestrationStepInstance.field.StepType
+          field = "StepType"
           table = "FlowOrchestrationStepInstance"
         },
       ]

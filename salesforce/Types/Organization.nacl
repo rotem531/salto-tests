@@ -2358,9 +2358,33 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Asia/Beirut"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Asia/Beirut)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Famagusta"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Asia/Famagusta)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Jerusalem"
+        default = false
+        label = "(GMT+03:00) Israel Daylight Time (Asia/Jerusalem)"
+        isActive = true
+      },
+      {
         fullName = "Asia/Kuwait"
         default = false
         label = "(GMT+03:00) Arabian Standard Time (Asia/Kuwait)"
+        isActive = true
+      },
+      {
+        fullName = "Asia/Nicosia"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Asia/Nicosia)"
         isActive = true
       },
       {
@@ -2376,15 +2400,51 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Europe/Athens"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Athens)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Bucharest"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Bucharest)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Chisinau"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Chisinau)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Helsinki"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Helsinki)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Istanbul"
         default = false
         label = "(GMT+03:00) Eastern European Standard Time (Europe/Istanbul)"
         isActive = true
       },
       {
+        fullName = "Europe/Kiev"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Kyiv)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Kirov"
         default = false
         label = "(GMT+03:00) Moscow Standard Time (Europe/Kirov)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Mariehamn"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Mariehamn)"
         isActive = true
       },
       {
@@ -2400,9 +2460,45 @@ settings salesforce.Organization {
         isActive = true
       },
       {
+        fullName = "Europe/Riga"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Riga)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Sofia"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Sofia)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Tallinn"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Tallinn)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Uzhgorod"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Uzhgorod)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Vilnius"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Vilnius)"
+        isActive = true
+      },
+      {
         fullName = "Europe/Volgograd"
         default = false
         label = "(GMT+03:00) Volgograd Standard Time (Europe/Volgograd)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Zaporozhye"
+        default = false
+        label = "(GMT+03:00) Eastern European Summer Time (Europe/Zaporozhye)"
         isActive = true
       },
       {
@@ -2439,6 +2535,12 @@ settings salesforce.Organization {
         fullName = "Africa/Cairo"
         default = false
         label = "(GMT+02:00) Eastern European Standard Time (Africa/Cairo)"
+        isActive = true
+      },
+      {
+        fullName = "Africa/Ceuta"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Africa/Ceuta)"
         isActive = true
       },
       {
@@ -2520,15 +2622,15 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Asia/Beirut"
+        fullName = "Antarctica/Troll"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Asia/Beirut)"
+        label = "(GMT+02:00) Central European Summer Time (Antarctica/Troll)"
         isActive = true
       },
       {
-        fullName = "Asia/Famagusta"
+        fullName = "Arctic/Longyearbyen"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Asia/Famagusta)"
+        label = "(GMT+02:00) Central European Summer Time (Arctic/Longyearbyen)"
         isActive = true
       },
       {
@@ -2544,39 +2646,63 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Asia/Jerusalem"
+        fullName = "Europe/Amsterdam"
         default = false
-        label = "(GMT+02:00) Israel Standard Time (Asia/Jerusalem)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Amsterdam)"
         isActive = true
       },
       {
-        fullName = "Asia/Nicosia"
+        fullName = "Europe/Andorra"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Asia/Nicosia)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Andorra)"
         isActive = true
       },
       {
-        fullName = "Europe/Athens"
+        fullName = "Europe/Belgrade"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Athens)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Belgrade)"
         isActive = true
       },
       {
-        fullName = "Europe/Bucharest"
+        fullName = "Europe/Berlin"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Bucharest)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Berlin)"
         isActive = true
       },
       {
-        fullName = "Europe/Chisinau"
+        fullName = "Europe/Bratislava"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Chisinau)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Bratislava)"
         isActive = true
       },
       {
-        fullName = "Europe/Helsinki"
+        fullName = "Europe/Brussels"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Helsinki)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Brussels)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Budapest"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Budapest)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Busingen"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Busingen)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Copenhagen"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Copenhagen)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Gibraltar"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Gibraltar)"
         isActive = true
       },
       {
@@ -2586,51 +2712,129 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Europe/Kiev"
+        fullName = "Europe/Ljubljana"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Kyiv)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Ljubljana)"
         isActive = true
       },
       {
-        fullName = "Europe/Mariehamn"
+        fullName = "Europe/Luxembourg"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Mariehamn)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Luxembourg)"
         isActive = true
       },
       {
-        fullName = "Europe/Riga"
+        fullName = "Europe/Madrid"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Riga)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Madrid)"
         isActive = true
       },
       {
-        fullName = "Europe/Sofia"
+        fullName = "Europe/Malta"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Sofia)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Malta)"
         isActive = true
       },
       {
-        fullName = "Europe/Tallinn"
+        fullName = "Europe/Monaco"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Tallinn)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Monaco)"
         isActive = true
       },
       {
-        fullName = "Europe/Uzhgorod"
+        fullName = "Europe/Oslo"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Uzhgorod)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Oslo)"
         isActive = true
       },
       {
-        fullName = "Europe/Vilnius"
+        fullName = "Europe/Paris"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Vilnius)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Paris)"
         isActive = true
       },
       {
-        fullName = "Europe/Zaporozhye"
+        fullName = "Europe/Podgorica"
         default = false
-        label = "(GMT+02:00) Eastern European Standard Time (Europe/Zaporozhye)"
+        label = "(GMT+02:00) Central European Summer Time (Europe/Podgorica)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Prague"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Prague)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Rome"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Rome)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/San_Marino"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/San_Marino)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Sarajevo"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Sarajevo)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Skopje"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Skopje)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Stockholm"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Stockholm)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Tirane"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Tirane)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Vaduz"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Vaduz)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Vatican"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Vatican)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Vienna"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Vienna)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Warsaw"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Warsaw)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Zagreb"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Zagreb)"
+        isActive = true
+      },
+      {
+        fullName = "Europe/Zurich"
+        default = false
+        label = "(GMT+02:00) Central European Summer Time (Europe/Zurich)"
         isActive = true
       },
       {
@@ -2649,12 +2853,6 @@ settings salesforce.Organization {
         fullName = "Africa/Brazzaville"
         default = false
         label = "(GMT+01:00) West Africa Standard Time (Africa/Brazzaville)"
-        isActive = true
-      },
-      {
-        fullName = "Africa/Ceuta"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Africa/Ceuta)"
         isActive = true
       },
       {
@@ -2718,195 +2916,57 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Arctic/Longyearbyen"
+        fullName = "Atlantic/Canary"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Arctic/Longyearbyen)"
+        label = "(GMT+01:00) Western European Summer Time (Atlantic/Canary)"
         isActive = true
       },
       {
-        fullName = "Europe/Amsterdam"
+        fullName = "Atlantic/Faeroe"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Amsterdam)"
+        label = "(GMT+01:00) Western European Summer Time (Atlantic/Faeroe)"
         isActive = true
       },
       {
-        fullName = "Europe/Andorra"
+        fullName = "Atlantic/Madeira"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Andorra)"
+        label = "(GMT+01:00) Western European Summer Time (Atlantic/Madeira)"
         isActive = true
       },
       {
-        fullName = "Europe/Belgrade"
+        fullName = "Europe/Dublin"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Belgrade)"
+        label = "(GMT+01:00) Irish Standard Time (Europe/Dublin)"
         isActive = true
       },
       {
-        fullName = "Europe/Berlin"
+        fullName = "Europe/Guernsey"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Berlin)"
+        label = "(GMT+01:00) British Summer Time (Europe/Guernsey)"
         isActive = true
       },
       {
-        fullName = "Europe/Bratislava"
+        fullName = "Europe/Isle_of_Man"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Bratislava)"
+        label = "(GMT+01:00) British Summer Time (Europe/Isle_of_Man)"
         isActive = true
       },
       {
-        fullName = "Europe/Brussels"
+        fullName = "Europe/Jersey"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Brussels)"
+        label = "(GMT+01:00) British Summer Time (Europe/Jersey)"
         isActive = true
       },
       {
-        fullName = "Europe/Budapest"
+        fullName = "Europe/Lisbon"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Budapest)"
+        label = "(GMT+01:00) Western European Summer Time (Europe/Lisbon)"
         isActive = true
       },
       {
-        fullName = "Europe/Busingen"
+        fullName = "Europe/London"
         default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Busingen)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Copenhagen"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Copenhagen)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Gibraltar"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Gibraltar)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Ljubljana"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Ljubljana)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Luxembourg"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Luxembourg)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Madrid"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Madrid)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Malta"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Malta)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Monaco"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Monaco)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Oslo"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Oslo)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Paris"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Paris)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Podgorica"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Podgorica)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Prague"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Prague)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Rome"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Rome)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/San_Marino"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/San_Marino)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Sarajevo"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Sarajevo)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Skopje"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Skopje)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Stockholm"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Stockholm)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Tirane"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Tirane)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Vaduz"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Vaduz)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Vatican"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Vatican)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Vienna"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Vienna)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Warsaw"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Warsaw)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Zagreb"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Zagreb)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Zurich"
-        default = false
-        label = "(GMT+01:00) Central European Standard Time (Europe/Zurich)"
+        label = "(GMT+01:00) British Summer Time (Europe/London)"
         isActive = true
       },
       {
@@ -3006,27 +3066,9 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Antarctica/Troll"
+        fullName = "Atlantic/Azores"
         default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Antarctica/Troll)"
-        isActive = true
-      },
-      {
-        fullName = "Atlantic/Canary"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Atlantic/Canary)"
-        isActive = true
-      },
-      {
-        fullName = "Atlantic/Faeroe"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Atlantic/Faeroe)"
-        isActive = true
-      },
-      {
-        fullName = "Atlantic/Madeira"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Atlantic/Madeira)"
+        label = "(GMT+00:00) Azores Summer Time (Atlantic/Azores)"
         isActive = true
       },
       {
@@ -3042,63 +3084,27 @@ settings salesforce.Organization {
         isActive = true
       },
       {
-        fullName = "Europe/Dublin"
-        default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/Dublin)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Guernsey"
-        default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/Guernsey)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Isle_of_Man"
-        default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/Isle_of_Man)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Jersey"
-        default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/Jersey)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/Lisbon"
-        default = false
-        label = "(GMT+00:00) Western European Standard Time (Europe/Lisbon)"
-        isActive = true
-      },
-      {
-        fullName = "Europe/London"
-        default = false
-        label = "(GMT+00:00) Greenwich Mean Time (Europe/London)"
-        isActive = true
-      },
-      {
         fullName = "GMT"
         default = false
         label = "(GMT+00:00) Greenwich Mean Time (GMT)"
         isActive = true
       },
       {
-        fullName = "Atlantic/Azores"
+        fullName = "America/Godthab"
         default = false
-        label = "(GMT-01:00) Azores Standard Time (Atlantic/Azores)"
+        label = "(GMT-01:00) West Greenland Summer Time (America/Godthab)"
+        isActive = true
+      },
+      {
+        fullName = "America/Scoresbysund"
+        default = false
+        label = "(GMT-01:00) East Greenland Summer Time (America/Scoresbysund)"
         isActive = true
       },
       {
         fullName = "Atlantic/Cape_Verde"
         default = false
         label = "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)"
-        isActive = true
-      },
-      {
-        fullName = "America/Godthab"
-        default = false
-        label = "(GMT-02:00) West Greenland Standard Time (America/Godthab)"
         isActive = true
       },
       {
@@ -3111,12 +3117,6 @@ settings salesforce.Organization {
         fullName = "America/Noronha"
         default = false
         label = "(GMT-02:00) Fernando de Noronha Standard Time (America/Noronha)"
-        isActive = true
-      },
-      {
-        fullName = "America/Scoresbysund"
-        default = false
-        label = "(GMT-02:00) East Greenland Standard Time (America/Scoresbysund)"
         isActive = true
       },
       {

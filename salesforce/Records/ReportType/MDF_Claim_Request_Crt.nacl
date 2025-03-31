@@ -13,7 +13,7 @@ salesforce.ReportType MDF_Claim_Request_Crt {
       columns = [
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.Id
+          field = "Id"
           table = "PartnerFundRequest"
         },
         {
@@ -23,7 +23,7 @@ salesforce.ReportType MDF_Claim_Request_Crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.CreatedDate
+          field = "CreatedDate"
           table = "PartnerFundRequest"
         },
         {
@@ -33,7 +33,7 @@ salesforce.ReportType MDF_Claim_Request_Crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.LastModifiedDate
+          field = "LastModifiedDate"
           table = "PartnerFundRequest"
         },
         {
@@ -63,32 +63,32 @@ salesforce.ReportType MDF_Claim_Request_Crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.Activity
+          field = "Activity"
           table = "PartnerFundRequest"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.Description
+          field = "Description"
           table = "PartnerFundRequest"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.RequestedAmount
+          field = "RequestedAmount"
           table = "PartnerFundRequest"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.DesiredOutcome
+          field = "DesiredOutcome"
           table = "PartnerFundRequest"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.Amount
+          field = "Amount"
           table = "PartnerFundRequest"
         },
         {
           checkedByDefault = false
-          field = salesforce.PartnerFundRequest.field.Status
+          field = "Status"
           table = "PartnerFundRequest"
         },
       ]

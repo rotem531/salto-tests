@@ -46,7 +46,7 @@ salesforce.Report unfiled_public_flow_orchestration_work_item_ootb_report_two_fo
       value = "1"
     },
   ]
-  reportType = "flow_orchestration_work_item_ootb_crt_two_four_eight__c"
+  reportType = salesforce.ReportType.instance.flow_orchestration_work_item_ootb_crt_two_four_eight
   scope = "organization"
   showDetails = true
   showGrandTotal = true

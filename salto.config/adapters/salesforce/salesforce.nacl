@@ -5,26 +5,26 @@ salesforce {
     }
     metadata = {
       include = [
+        // {
+        //   metadataType = ".*"
+        //   namespace = ""
+        //   name = ".*"
+        // },
         {
-          metadataType = ".*"
+          metadataType = "Report"
           namespace = ""
           name = ".*"
         },
-        // {
-        //   metadataType = "Report"
-        //   namespace = ""
-        //   name = ".*"
-        // },
-        // {
-        //   metadataType = "ReportType"
-        //   namespace = ""
-        //   name = ".*"
-        // },
-        // {
-        //   metadataType = "ReportFolder"
-        //   namespace = ""
-        //   name = ".*"
-        // },
+        {
+          metadataType = "ReportType"
+          namespace = ""
+          name = ".*"
+        },
+        {
+          metadataType = "ReportFolder"
+          namespace = ""
+          name = ".*"
+        },
       ]
       exclude = [
         // {

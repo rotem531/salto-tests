@@ -9,17 +9,17 @@ salesforce.ReportType prm_unique_portal_crt {
       columns = [
         {
           checkedByDefault = false
-          field = salesforce.User.field.Id
+          field = "Id"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Username
+          field = "Username"
           table = "User"
         },
         {
           checkedByDefault = true
-          field = salesforce.User.field.Name
+          field = "Name"
           table = "User"
         },
         {
@@ -34,27 +34,27 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.CompanyName
+          field = "CompanyName"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Division
+          field = "Division"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Department
+          field = "Department"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Title
+          field = "Title"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Address
+          field = "Address"
           table = "User"
         },
         {
@@ -99,77 +99,77 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Email
+          field = "Email"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.SenderEmail
+          field = "SenderEmail"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.SenderName
+          field = "SenderName"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Signature
+          field = "Signature"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.StayInTouchSubject
+          field = "StayInTouchSubject"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.StayInTouchSignature
+          field = "StayInTouchSignature"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.StayInTouchNote
+          field = "StayInTouchNote"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Phone
+          field = "Phone"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Fax
+          field = "Fax"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.MobilePhone
+          field = "MobilePhone"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Alias
+          field = "Alias"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.CommunityNickname
+          field = "CommunityNickname"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.IsActive
+          field = "IsActive"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.IsSystemControlled
+          field = "IsSystemControlled"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.TimeZoneSidKey
+          field = "TimeZoneSidKey"
           table = "User"
         },
         {
@@ -179,22 +179,22 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.LocaleSidKey
+          field = "LocaleSidKey"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.ReceivesInfoEmails
+          field = "ReceivesInfoEmails"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.ReceivesAdminInfoEmails
+          field = "ReceivesAdminInfoEmails"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.EmailEncodingKey
+          field = "EmailEncodingKey"
           table = "User"
         },
         {
@@ -204,32 +204,32 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.UserType
+          field = "UserType"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.UserSubtype
+          field = "UserSubtype"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.StartDay
+          field = "StartDay"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.EndDay
+          field = "EndDay"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.LanguageLocaleKey
+          field = "LanguageLocaleKey"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.EmployeeNumber
+          field = "EmployeeNumber"
           table = "User"
         },
         {
@@ -239,17 +239,17 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.LastLoginDate
+          field = "LastLoginDate"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.LastPasswordChangeDate
+          field = "LastPasswordChangeDate"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.CreatedDate
+          field = "CreatedDate"
           table = "User"
         },
         {
@@ -259,7 +259,7 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.LastModifiedDate
+          field = "LastModifiedDate"
           table = "User"
         },
         {
@@ -269,17 +269,17 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.PasswordExpirationDate
+          field = "PasswordExpirationDate"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.NumberOfFailedLogins
+          field = "NumberOfFailedLogins"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.SuAccessExpirationDate
+          field = "SuAccessExpirationDate"
           table = "User"
         },
         {
@@ -289,7 +289,7 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.OfflineTrialExpirationDate
+          field = "OfflineTrialExpirationDate"
           table = "User"
         },
         {
@@ -299,12 +299,12 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.OfflinePdaTrialExpirationDate
+          field = "OfflinePdaTrialExpirationDate"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.ForecastEnabled
+          field = "ForecastEnabled"
           table = "User"
         },
         {
@@ -324,17 +324,17 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.Extension
+          field = "Extension"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.FederationIdentifier
+          field = "FederationIdentifier"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.AboutMe
+          field = "AboutMe"
           table = "User"
         },
         {
@@ -344,17 +344,17 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.DigestFrequency
+          field = "DigestFrequency"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.DefaultGroupNotificationFrequency
+          field = "DefaultGroupNotificationFrequency"
           table = "User"
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.JigsawImportLimitOverride
+          field = "JigsawImportLimitOverride"
           table = "User"
         },
         {
@@ -369,7 +369,7 @@ salesforce.ReportType prm_unique_portal_crt {
         },
         {
           checkedByDefault = false
-          field = salesforce.User.field.IsProfilePhotoActive
+          field = "IsProfilePhotoActive"
           table = "User"
         },
         {
