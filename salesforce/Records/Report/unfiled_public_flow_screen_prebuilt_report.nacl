@@ -69,7 +69,7 @@ salesforce.Report unfiled_public_flow_screen_prebuilt_report@zcduuu {
       value = "1"
     },
   ]
-  reportType = "screen_flows_prebuilt_crt__c"
+  reportType = salesforce.ReportType.instance.screen_flows_prebuilt_crt
   scope = "organization"
   showDetails = false
   showGrandTotal = true

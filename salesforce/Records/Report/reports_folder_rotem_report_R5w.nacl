@@ -69,7 +69,7 @@ salesforce.Report reports_folder_rotem_report_R5w@uduu {
       value = "1"
     },
   ]
-  reportType = "screen_flows_prebuilt_crt__c"
+  reportType = salesforce.ReportType.instance.screen_flows_prebuilt_crt
   scope = "organization"
   showDetails = false
   showGrandTotal = true
