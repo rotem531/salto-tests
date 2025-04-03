@@ -1,0 +1,14 @@
+salesforce.ApexClass SBQQ__CustomLookupController {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__CustomLookupController"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__CustomLookupController.cls")
+  _alias = "SBQQ__CustomLookupController"
+}

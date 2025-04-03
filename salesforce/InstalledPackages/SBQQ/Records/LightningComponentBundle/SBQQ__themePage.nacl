@@ -1,0 +1,32 @@
+salesforce.LightningComponentBundle SBQQ__themePage {
+  fullName = "SBQQ__themePage"
+  lwcResources = {
+    lwcResource = {
+      themePage_css@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.css"
+      }
+      schemaUtils_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/schemaUtils.js"
+      }
+      labels_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/labels.js"
+      }
+      less_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/less.js"
+      }
+      themePage_js@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.js"
+      }
+      themePage_html@v = {
+        source = "(hidden)"
+        filePath = "lwc/themePage/themePage.html"
+      }
+    }
+  }
+  _alias = "SBQQ__themePage"
+}

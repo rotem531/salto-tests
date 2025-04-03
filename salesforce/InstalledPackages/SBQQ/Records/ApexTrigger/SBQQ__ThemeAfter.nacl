@@ -1,0 +1,20 @@
+salesforce.ApexTrigger SBQQ__ThemeAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ThemeAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterDelete",
+  ]
+  _parent = [
+    salesforce.SBQQ__Theme__c,
+  ]
+  _alias = "SBQQ__ThemeAfter"
+}

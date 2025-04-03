@@ -1,0 +1,21 @@
+salesforce.ApexTrigger SBQQ__LocalizationAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__LocalizationAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterInsert",
+    "UsageAfterUpdate",
+  ]
+  _parent = [
+    salesforce.SBQQ__Localization__c,
+  ]
+  _alias = "SBQQ__LocalizationAfter"
+}

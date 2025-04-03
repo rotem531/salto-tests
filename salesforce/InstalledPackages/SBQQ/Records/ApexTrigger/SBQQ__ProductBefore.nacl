@@ -1,0 +1,19 @@
+salesforce.ApexTrigger SBQQ__ProductBefore {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ProductBefore"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageBeforeDelete",
+    "UsageBeforeInsert",
+    "UsageBeforeUpdate",
+  ]
+  _alias = "SBQQ__ProductBefore"
+}

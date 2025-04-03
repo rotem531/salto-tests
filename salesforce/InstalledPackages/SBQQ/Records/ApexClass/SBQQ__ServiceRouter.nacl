@@ -1,0 +1,14 @@
+salesforce.ApexClass SBQQ__ServiceRouter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ServiceRouter"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__ServiceRouter.cls")
+  _alias = "SBQQ__ServiceRouter"
+}

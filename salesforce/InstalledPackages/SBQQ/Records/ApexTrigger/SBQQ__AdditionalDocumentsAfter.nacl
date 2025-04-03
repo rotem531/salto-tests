@@ -1,0 +1,20 @@
+salesforce.ApexTrigger SBQQ__AdditionalDocumentsAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__AdditionalDocumentsAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterDelete",
+  ]
+  _parent = [
+    salesforce.SBQQ__RelatedContent__c,
+  ]
+  _alias = "SBQQ__AdditionalDocumentsAfter"
+}

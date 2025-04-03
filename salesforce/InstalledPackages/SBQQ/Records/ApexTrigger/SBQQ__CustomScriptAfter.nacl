@@ -1,0 +1,21 @@
+salesforce.ApexTrigger SBQQ__CustomScriptAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__CustomScriptAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterInsert",
+    "UsageAfterUpdate",
+  ]
+  _parent = [
+    salesforce.SBQQ__CustomScript__c,
+  ]
+  _alias = "SBQQ__CustomScriptAfter"
+}

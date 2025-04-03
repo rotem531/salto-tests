@@ -1,0 +1,21 @@
+salesforce.ApexTrigger SBQQ__CustomScriptBefore {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__CustomScriptBefore"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageBeforeInsert",
+    "UsageBeforeUpdate",
+  ]
+  _parent = [
+    salesforce.SBQQ__CustomScript__c,
+  ]
+  _alias = "SBQQ__CustomScriptBefore"
+}

@@ -1,0 +1,23 @@
+salesforce.ApexTrigger SBQQ__PriceRuleAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__PriceRuleAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterDelete",
+    "UsageAfterInsert",
+    "UsageAfterUpdate",
+    "UsageAfterUndelete",
+  ]
+  _parent = [
+    salesforce.SBQQ__PriceRule__c,
+  ]
+  _alias = "SBQQ__PriceRuleAfter"
+}

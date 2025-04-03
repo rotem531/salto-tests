@@ -1,0 +1,16 @@
+salesforce.SBQQ__ProductRule__c a0qd2000000NmwnAAC {
+  SBQQ__Active__c = false
+  SBQQ__AdvancedCondition__c = "(${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eAbEAI } AND ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eCDEAY }) OR ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eDpEAI }"
+  SBQQ__ConditionsMet__c = "SBQQ__ConditionsMet__c"
+  SBQQ__ErrorMessage__c = "dfd"
+  SBQQ__EvaluationEvent__c = "SBQQ__EvaluationEvent__c"
+  SBQQ__LookupMessageField__c = "SBQQ__LookupMessageField__c"
+  SBQQ__LookupObject__c = "SBQQ__LookupObject__c"
+  SBQQ__LookupProductField__c = "SBQQ__LookupProductField__c"
+  SBQQ__LookupRequiredField__c = "SBQQ__LookupRequiredField__c"
+  SBQQ__LookupTypeField__c = "SBQQ__LookupTypeField__c"
+  SBQQ__Scope__c = "SBQQ__Scope__c"
+  SBQQ__Type__c = "SBQQ__Type__c"
+  Name = "test product rule"
+  _alias = "test product rule"
+}

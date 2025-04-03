@@ -1,0 +1,22 @@
+salesforce.ApexTrigger SBQQ__OrderProductTrigger {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__OrderProductTrigger"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageBeforeDelete",
+    "UsageAfterDelete",
+    "UsageBeforeInsert",
+    "UsageAfterInsert",
+    "UsageBeforeUpdate",
+    "UsageAfterUpdate",
+  ]
+  _alias = "SBQQ__OrderProductTrigger"
+}

@@ -1,0 +1,23 @@
+salesforce.ApexTrigger SBQQ__ProductFeatureAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ProductFeatureAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterDelete",
+    "UsageAfterInsert",
+    "UsageAfterUpdate",
+    "UsageAfterUndelete",
+  ]
+  _parent = [
+    salesforce.SBQQ__ProductFeature__c,
+  ]
+  _alias = "SBQQ__ProductFeatureAfter"
+}

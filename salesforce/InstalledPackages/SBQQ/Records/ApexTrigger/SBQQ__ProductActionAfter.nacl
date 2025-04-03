@@ -1,0 +1,23 @@
+salesforce.ApexTrigger SBQQ__ProductActionAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ProductActionAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterDelete",
+    "UsageAfterInsert",
+    "UsageAfterUpdate",
+    "UsageAfterUndelete",
+  ]
+  _parent = [
+    salesforce.SBQQ__ProductAction__c,
+  ]
+  _alias = "SBQQ__ProductActionAfter"
+}

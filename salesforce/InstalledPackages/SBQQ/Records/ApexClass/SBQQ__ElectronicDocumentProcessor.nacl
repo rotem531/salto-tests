@@ -1,0 +1,14 @@
+salesforce.ApexClass SBQQ__ElectronicDocumentProcessor {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ElectronicDocumentProcessor"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__ElectronicDocumentProcessor.cls")
+  _alias = "SBQQ__ElectronicDocumentProcessor"
+}

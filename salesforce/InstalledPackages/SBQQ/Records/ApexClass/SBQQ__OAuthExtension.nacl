@@ -1,0 +1,14 @@
+salesforce.ApexClass SBQQ__OAuthExtension {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__OAuthExtension"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/ApexClass/SBQQ__OAuthExtension.cls")
+  _alias = "SBQQ__OAuthExtension"
+}

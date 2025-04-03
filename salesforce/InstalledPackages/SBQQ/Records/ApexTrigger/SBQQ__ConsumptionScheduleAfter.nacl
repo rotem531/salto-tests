@@ -1,0 +1,17 @@
+salesforce.ApexTrigger SBQQ__ConsumptionScheduleAfter {
+  apiVersion = 57
+  packageVersions = [
+    {
+      majorNumber = 254
+      minorNumber = 1
+      namespace = salesforce.InstalledPackage.instance.SBQQ
+    },
+  ]
+  status = "Active"
+  fullName = "SBQQ__ConsumptionScheduleAfter"
+  content = "(hidden)"
+  triggerTypes = [
+    "UsageAfterUpdate",
+  ]
+  _alias = "SBQQ__ConsumptionScheduleAfter"
+}
