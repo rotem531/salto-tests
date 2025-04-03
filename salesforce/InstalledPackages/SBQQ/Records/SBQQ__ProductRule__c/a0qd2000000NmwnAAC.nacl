@@ -1,7 +1,7 @@
 salesforce.SBQQ__ProductRule__c a0qd2000000NmwnAAC {
   SBQQ__Active__c = false
   SBQQ__ConditionsMet__c = "Custom"
-  SBQQ__AdvancedCondition__c = "(${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eAbEAI } OR ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eCDEAY }) AND ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eQjEAI }"
+  SBQQ__AdvancedCondition__c = "(${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eAbEAI } OR ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eCDEAY }) AND ${ salesforce.SBQQ__ErrorCondition__c.instance.a0Jd20000003eQjEAIX }"
   SBQQ__ErrorMessage__c = "dfd"
   SBQQ__EvaluationEvent__c = "SBQQ__EvaluationEvent__c"
   SBQQ__LookupMessageField__c = "SBQQ__LookupMessageField__c"
