@@ -1,0 +1,12 @@
+salesforce.Document SBQQ__SteelBrick_CPQ_Template_Resources_SBQQ__Template_Top_html@uuuuuduuuv {
+  description = "Top portion of the default quote template"
+  internalUseOnly = false
+  name = "Template Top"
+  public = false
+  fullName = "SBQQ__SteelBrick_CPQ_Template_Resources/SBQQ__Template_Top.html"
+  content = file("salesforce/InstalledPackages/SBQQ/Records/Document/SBQQ__SteelBrick_CPQ_Template_Resources/SBQQ__Template_Top.html")
+  _parent = [
+    salesforce.DocumentFolder.instance.SBQQ__SteelBrick_CPQ_Template_Resources,
+  ]
+  _alias = "SBQQ__SteelBrick_CPQ_Template_Resources/SBQQ__Template_Top.html"
+}

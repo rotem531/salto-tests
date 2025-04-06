@@ -2,11 +2,11 @@ salesforce {
   fetch = {
     metadata = {
       include = [
-      //   {
-      //     metadataType = ".*"
-      //     namespace = ""
-      //     name = ".*"
-      //   },
+        // {
+        //   metadataType = ".*"
+        //   namespace = ""
+        //   name = ".*"
+        // },
         {
           metadataType = ".*"
           namespace = "SBQQ"
@@ -15,6 +15,16 @@ salesforce {
         {
           metadataType = ".*"
           namespace = "sbaa"
+          name = ".*"
+        },
+        {
+          metadataType = "Document"
+          namespace = ""
+          name = ".*"
+        },
+        {
+          metadataType = "DocumentFolder"
+          namespace = ""
           name = ".*"
         },
       ]
@@ -34,12 +44,12 @@ salesforce {
         {
           metadataType = "DashboardFolder"
         },
-        {
-          metadataType = "Document"
-        },
-        {
-          metadataType = "DocumentFolder"
-        },
+        // {
+        //   metadataType = "Document"
+        // },
+        // {
+        //   metadataType = "DocumentFolder"
+        // },
         {
           metadataType = "Profile"
         },
