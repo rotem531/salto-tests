@@ -1,8 +1,8 @@
 salesforce.PricebookEntry "01ud2000001hHcvAAE" {
   IsActive = true
-  Pricebook2Id = salesforce.Pricebook2.instance.missing_01sd2000004HO8TAAW
-  Product2Id = salesforce.Product2.instance.missing_01td2000006tK13AAE
+  Pricebook2Id = salesforce.Pricebook2.instance.01sd2000004HO8TAAW
+  Product2Id = salesforce.Product2.instance.01td2000006tK13AAE
   UnitPrice = 25
   UseStandardPrice = false
-  _alias = "new prod"
+  _alias = "not another standard pricebook new prod"
 }
