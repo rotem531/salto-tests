@@ -25,9 +25,6 @@ type salesforce.SBQQ__ProductOption__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__AppliedImmediately__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__AppliedImmediately__c"
@@ -37,9 +34,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience."
     label = "Apply Immediately"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Bundled__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Bundled__c"
@@ -49,9 +43,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Select the checkbox to indicate that the related product is bundled with the main product. Bundled options have fixed quantity and zero price as price is included in the main product. Leave this unchecked if the price should be added to the option."
     label = "Bundled"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__ComponentCodePosition__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ComponentCodePosition__c"
@@ -64,9 +55,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ComponentCode__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ComponentCode__c"
@@ -79,9 +67,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__ComponentDescriptionPosition__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ComponentDescriptionPosition__c"
@@ -94,9 +79,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ComponentDescription__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ComponentDescription__c"
@@ -109,9 +91,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ConfiguredSKU__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ConfiguredSKU__c"
@@ -121,14 +100,11 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Product SKU of the bundle that is being configured with this option. If you create the option from the product detail page, this should already be populated."
     label = "Configured SKU"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Options"
     relationshipName = "Options"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DefaultPricingTable__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__DefaultPricingTable__c"
@@ -150,9 +126,6 @@ type salesforce.SBQQ__ProductOption__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__DiscountAmount__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__DiscountAmount__c"
@@ -163,9 +136,6 @@ type salesforce.SBQQ__ProductOption__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountSchedule__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__DiscountSchedule__c"
@@ -180,9 +150,6 @@ type salesforce.SBQQ__ProductOption__c {
     relationshipLabel = "Product Options"
     relationshipName = "ProductOptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Discount__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Discount__c"
@@ -193,9 +160,6 @@ type salesforce.SBQQ__ProductOption__c {
     precision = 9
     scale = 4
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__DiscountedByPackage__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__DiscountedByPackage__c"
@@ -205,9 +169,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Check to automatically apply additional discount from parent package to this component. Only percentage-based discount can be applied."
     label = "Discounted By Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__ExistingQuantity__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__ExistingQuantity__c"
@@ -220,9 +181,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Feature__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Feature__c"
@@ -248,9 +206,6 @@ type salesforce.SBQQ__ProductOption__c {
     relationshipLabel = "Product Options"
     relationshipName = "ProductOptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__MaxQuantity__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__MaxQuantity__c"
@@ -263,9 +218,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__MinQuantity__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__MinQuantity__c"
@@ -278,9 +230,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Number__c"
@@ -294,9 +243,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OptionalSKU__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__OptionalSKU__c"
@@ -306,14 +252,11 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Enter or lookup the product SKU that should be added when this product is selected."
     label = "Optional SKU"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Optional For"
     relationshipName = "OptionalFor"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__PriceEditable__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__PriceEditable__c"
@@ -326,9 +269,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -347,9 +287,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -369,9 +306,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -391,9 +325,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -412,9 +343,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -434,9 +362,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -456,9 +381,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -478,9 +400,6 @@ type salesforce.SBQQ__ProductOption__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -496,9 +415,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Check to allow quantity to be edited even though it's specified on the option."
     label = "Quantity Editable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Quantity__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Quantity__c"
@@ -511,9 +427,6 @@ type salesforce.SBQQ__ProductOption__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__QuoteLineVisibility__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__QuoteLineVisibility__c"
@@ -546,9 +459,6 @@ type salesforce.SBQQ__ProductOption__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RenewalProductOption__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__RenewalProductOption__c"
@@ -563,9 +473,6 @@ type salesforce.SBQQ__ProductOption__c {
     relationshipLabel = "Product Options"
     relationshipName = "ProductOptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Required__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Required__c"
@@ -575,9 +482,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Select the checkbox if this product is required on the bundle."
     label = "Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Selected__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Selected__c"
@@ -587,9 +491,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Select the checkbox if this product option should be automatically selected by default."
     label = "Selected"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionScope__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__SubscriptionScope__c"
@@ -622,9 +523,6 @@ type salesforce.SBQQ__ProductOption__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__System__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__System__c"
@@ -634,9 +532,6 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Select the checkbox to indicate this option is managed by the system which makes it unavailable for user selection."
     label = "System"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__Type__c"
@@ -664,9 +559,6 @@ type salesforce.SBQQ__ProductOption__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__UnitPrice__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__UnitPrice__c"
@@ -677,9 +569,6 @@ type salesforce.SBQQ__ProductOption__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__UpliftedByPackage__c {
     apiName = "SBQQ__ProductOption__c.SBQQ__UpliftedByPackage__c"
@@ -689,8 +578,5 @@ type salesforce.SBQQ__ProductOption__c {
     inlineHelpText = "Check to automatically apply uplift from parent package to this component. Only applies to components that are multi-segmented products."
     label = "Uplifted By Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

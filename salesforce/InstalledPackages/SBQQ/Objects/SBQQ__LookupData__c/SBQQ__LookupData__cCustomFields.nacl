@@ -8,18 +8,12 @@ type salesforce.SBQQ__LookupData__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__Message__c {
     apiName = "SBQQ__LookupData__c.SBQQ__Message__c"
     deprecated = false
     label = "Message"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__LookupData__c.SBQQ__Product__c"
@@ -29,14 +23,11 @@ type salesforce.SBQQ__LookupData__c {
     inlineHelpText = "For use with Product Selection Rules, represents the Product to which the Product Action applies."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Lookup Data"
     relationshipName = "LookupData"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Required__c {
     apiName = "SBQQ__LookupData__c.SBQQ__Required__c"
@@ -46,9 +37,6 @@ type salesforce.SBQQ__LookupData__c {
     inlineHelpText = "For Product Selection Rules, indicates that the action is required."
     label = "Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__LookupData__c.SBQQ__Type__c"
@@ -121,9 +109,6 @@ type salesforce.SBQQ__LookupData__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Value__c {
     apiName = "SBQQ__LookupData__c.SBQQ__Value__c"
@@ -134,8 +119,5 @@ type salesforce.SBQQ__LookupData__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

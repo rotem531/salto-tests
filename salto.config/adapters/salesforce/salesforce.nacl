@@ -2,11 +2,11 @@ salesforce {
   fetch = {
     metadata = {
       include = [
-        // {
-        //   metadataType = ".*"
-        //   namespace = ""
-        //   name = ".*"
-        // },
+        {
+          metadataType = ".*"
+          namespace = ".*"
+          name = ".*"
+        },
         {
           metadataType = ".*"
           namespace = "SBQQ"
@@ -17,16 +17,16 @@ salesforce {
           namespace = "sbaa"
           name = ".*"
         },
-        {
-          metadataType = "Document"
-          namespace = ""
-          name = ".*"
-        },
-        {
-          metadataType = "DocumentFolder"
-          namespace = ""
-          name = ".*"
-        },
+        // {
+        //   metadataType = "Document.*"
+        //   namespace = ".*"
+        //   name = ".*"
+        // },
+        // {
+        //   metadataType = "DocumentFolder"
+        //   namespace = "SBQQ"
+        //   name = ".*"
+        // },
       ]
       exclude = [
         {

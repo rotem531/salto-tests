@@ -9,6 +9,12 @@ salesforce.ValidationRule SBQQ__Dimension__c_SBQQ__Cannot_Create_PriceDimension_
   ]
   _generated_dependencies = [
     {
+      reference = salesforce.Product2
+    },
+    {
+      reference = salesforce.Product2.field.SBQQ__SubscriptionType__c
+    },
+    {
       reference = salesforce.SBQQ__Dimension__c.field.SBQQ__Product__c
     },
   ]

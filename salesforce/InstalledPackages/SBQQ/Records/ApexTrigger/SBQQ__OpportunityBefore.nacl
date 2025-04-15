@@ -15,5 +15,8 @@ salesforce.ApexTrigger SBQQ__OpportunityBefore {
     "UsageBeforeInsert",
     "UsageBeforeUpdate",
   ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
   _alias = "SBQQ__OpportunityBefore"
 }

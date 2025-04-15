@@ -55,7 +55,7 @@ type salesforce.SBQQ__PriceAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__TargetObject__c"
+      controllingField = salesforce.SBQQ__PriceAction__c.field.SBQQ__TargetObject__c
       valueSettings = [
         {
           valueName = "Unit Price"
@@ -123,9 +123,6 @@ type salesforce.SBQQ__PriceAction__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Formula__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__Formula__c"
@@ -136,9 +133,6 @@ type salesforce.SBQQ__PriceAction__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Order__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__Order__c"
@@ -151,9 +145,6 @@ type salesforce.SBQQ__PriceAction__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__ParentRuleIsActive__c"
@@ -162,9 +153,6 @@ type salesforce.SBQQ__PriceAction__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "ParentRuleIsActive"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -181,9 +169,6 @@ type salesforce.SBQQ__PriceAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -198,9 +183,6 @@ type salesforce.SBQQ__PriceAction__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "RuleTargetsCalculator"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -223,9 +205,6 @@ type salesforce.SBQQ__PriceAction__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__SourceLookupField__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__SourceLookupField__c"
@@ -243,9 +222,6 @@ type salesforce.SBQQ__PriceAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__SourceVariable__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__SourceVariable__c"
@@ -260,9 +236,6 @@ type salesforce.SBQQ__PriceAction__c {
     relationshipLabel = "Price Actions (Source)"
     relationshipName = "SourcePriceActions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetObject__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__TargetObject__c"
@@ -294,9 +267,6 @@ type salesforce.SBQQ__PriceAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ValueField__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__ValueField__c"
@@ -309,9 +279,6 @@ type salesforce.SBQQ__PriceAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Value__c {
     apiName = "SBQQ__PriceAction__c.SBQQ__Value__c"
@@ -324,8 +291,5 @@ type salesforce.SBQQ__PriceAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

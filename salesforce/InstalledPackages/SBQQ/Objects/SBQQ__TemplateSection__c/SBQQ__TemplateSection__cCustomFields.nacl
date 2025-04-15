@@ -7,9 +7,6 @@ type salesforce.SBQQ__TemplateSection__c {
     inlineHelpText = "Select the checkbox to apply document language formatting. Only applies to sections pointing to template content of type \"HTML\"."
     label = "Apply Document Language Formatting"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BorderColor__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__BorderColor__c"
@@ -22,9 +19,6 @@ type salesforce.SBQQ__TemplateSection__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BottomMargin__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__BottomMargin__c"
@@ -39,9 +33,6 @@ type salesforce.SBQQ__TemplateSection__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ColumnHeaderHidden__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__ColumnHeaderHidden__c"
@@ -51,9 +42,6 @@ type salesforce.SBQQ__TemplateSection__c {
     inlineHelpText = "Select the checkbox to hide the column header. Only applies to sections pointing to template content of type \"Line Items\"."
     label = "Hide Column Header"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConditionalPrintField__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__ConditionalPrintField__c"
@@ -76,9 +64,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Content__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__Content__c"
@@ -93,9 +78,6 @@ type salesforce.SBQQ__TemplateSection__c {
     relationshipLabel = "Template Sections"
     relationshipName = "TemplateSections"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DisplayOrder__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__DisplayOrder__c"
@@ -108,9 +90,6 @@ type salesforce.SBQQ__TemplateSection__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FilterField__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__FilterField__c"
@@ -128,9 +107,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FilterOperator__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__FilterOperator__c"
@@ -188,9 +164,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FilterValue__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__FilterValue__c"
@@ -203,9 +176,6 @@ type salesforce.SBQQ__TemplateSection__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__GroupField__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__GroupField__c"
@@ -228,9 +198,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__KeepTogether__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__KeepTogether__c"
@@ -253,9 +220,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__KeepWithNext__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__KeepWithNext__c"
@@ -278,9 +242,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__KeepWithPrevious__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__KeepWithPrevious__c"
@@ -303,9 +264,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PageBreak__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__PageBreak__c"
@@ -333,9 +291,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__QuoteTotalsPrinted__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__QuoteTotalsPrinted__c"
@@ -345,9 +300,6 @@ type salesforce.SBQQ__TemplateSection__c {
     inlineHelpText = "Select the checkbox to print quote totals after this section. Only applicable to Line Items sections."
     label = "Print Quote Totals"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__RollUpField__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__RollUpField__c"
@@ -365,9 +317,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SummaryDisplay__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__SummaryDisplay__c"
@@ -390,9 +339,6 @@ type salesforce.SBQQ__TemplateSection__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Template__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__Template__c"
@@ -409,9 +355,6 @@ type salesforce.SBQQ__TemplateSection__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Number SBQQ__TopMargin__c {
     apiName = "SBQQ__TemplateSection__c.SBQQ__TopMargin__c"
@@ -426,8 +369,5 @@ type salesforce.SBQQ__TemplateSection__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

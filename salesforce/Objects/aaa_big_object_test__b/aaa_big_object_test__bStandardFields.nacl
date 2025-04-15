@@ -1,0 +1,24 @@
+type salesforce.aaa_big_object_test__b {
+  serviceid Id {
+    apiName = "aaa_big_object_test__b.Id"
+    label = "ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "aaa_big_object_test__b.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "aaa_big_object_test__b.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "aaa_big_object_test__b.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

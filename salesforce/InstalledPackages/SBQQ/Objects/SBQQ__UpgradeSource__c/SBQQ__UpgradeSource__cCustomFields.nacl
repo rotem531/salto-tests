@@ -7,14 +7,11 @@ type salesforce.SBQQ__UpgradeSource__c {
     inlineHelpText = "Specify product to upgrade from."
     label = "Source Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Available Upgrade Sources"
     relationshipName = "AvailableUpgradeSources"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__UpgradeConversionRate__c {
     apiName = "SBQQ__UpgradeSource__c.SBQQ__UpgradeConversionRate__c"
@@ -27,9 +24,6 @@ type salesforce.SBQQ__UpgradeSource__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__UpgradeProduct__c {
     apiName = "SBQQ__UpgradeSource__c.SBQQ__UpgradeProduct__c"
@@ -39,13 +33,10 @@ type salesforce.SBQQ__UpgradeSource__c {
     inlineHelpText = "Specify the product to upgrade to."
     label = "Upgrade Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Upgrade Sources"
     relationshipName = "UpgradeSources"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

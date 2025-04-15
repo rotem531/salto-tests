@@ -8,9 +8,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   "List<salesforce.Text>" SBQQ__ConsumptionRateFields__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__ConsumptionRateFields__c"
@@ -21,9 +18,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   "List<salesforce.Text>" SBQQ__ConsumptionScheduleFields__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__ConsumptionScheduleFields__c"
@@ -34,9 +28,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   "List<salesforce.Text>" SBQQ__GroupFields__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__GroupFields__c"
@@ -47,9 +38,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   "List<salesforce.Text>" SBQQ__QuoteFields__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__QuoteFields__c"
@@ -60,9 +48,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   "List<salesforce.Text>" SBQQ__QuoteLineFields__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__QuoteLineFields__c"
@@ -73,9 +58,6 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__TranspiledCode__c {
     apiName = "SBQQ__CustomScript__c.SBQQ__TranspiledCode__c"
@@ -85,8 +67,5 @@ type salesforce.SBQQ__CustomScript__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

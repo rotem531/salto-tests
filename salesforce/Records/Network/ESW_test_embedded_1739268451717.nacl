@@ -1,0 +1,62 @@
+salesforce.Network ESW_test_embedded_1739268451717 {
+  fullName = "ESW_test_embedded_1739268451717"
+  allowInternalUserLogin = false
+  allowMembersToFlag = false
+  changePasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityChangePasswordEmailTemplate@zcd
+  communityRoles = {
+  }
+  description = "Site for Messaging for Web deployment: test_embedded."
+  disableReputationRecordConversations = true
+  emailSenderAddress = "rotem.cohen@salto.io"
+  emailSenderName = "ESW_test_embedded_1739268451717"
+  embeddedLoginEnabled = false
+  enableApexCDNCaching = true
+  enableCustomVFErrorPageOverrides = false
+  enableDirectMessages = true
+  enableExpFriendlyUrlsAsDefault = false
+  enableExperienceBundleBasedSnaOverrideEnabled = true
+  enableGuestChatter = false
+  enableGuestFileAccess = false
+  enableGuestMemberVisibility = false
+  enableImageOptimizationCDN = false
+  enableInvitation = false
+  enableKnowledgeable = false
+  enableLWRExperienceConnectedApp = false
+  enableMemberVisibility = false
+  enableNicknameDisplay = true
+  enablePrivateMessages = false
+  enableReputation = false
+  enableShowAllNetworkSettings = false
+  enableSiteAsContainer = true
+  enableTalkingAboutStats = true
+  enableTopicAssignmentRules = true
+  enableTopicSuggestions = false
+  enableUpDownVote = false
+  forgotPasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityForgotPasswordEmailTemplate@zcd
+  gatherCustomerSentimentData = false
+  headlessForgotPasswordTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityHeadlessForgotPasswordTemplate@zcd
+  headlessRegistrationTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityHeadlessRegistrationTemplate@zcd
+  networkMemberGroups = {
+    profile = "admin"
+  }
+  networkPageOverrides = {
+    changePasswordPageOverrideSetting = "Standard"
+    forgotPasswordPageOverrideSetting = "Designer"
+    homePageOverrideSetting = "Designer"
+    loginPageOverrideSetting = "Designer"
+    selfRegProfilePageOverrideSetting = "Designer"
+  }
+  picassoSite = "ESW_test_embedded_17392684517171"
+  selfRegistration = false
+  sendWelcomeEmail = false
+  site = salesforce.CustomSite.instance.ESW_test_embedded_1739268451717
+  siteArchiveStatus = "NotArchived"
+  status = "Live"
+  tabs = {
+    defaultTab = "home"
+    standardTab = "Chatter"
+  }
+  urlPathPrefix = "ESWtestembedded1739268451717vforcesite"
+  welcomeTemplate = salesforce.EmailTemplate.instance.unfiled_public_CommunityWelcomeEmailTemplate@zcd
+  _alias = "ESW_test_embedded_1739268451717"
+}

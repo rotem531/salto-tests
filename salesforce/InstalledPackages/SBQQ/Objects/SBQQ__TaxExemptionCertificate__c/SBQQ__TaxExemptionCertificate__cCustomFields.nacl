@@ -4,7 +4,7 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     deprecated = false
     label = "Account"
     referenceTo = [
-      "Account",
+      salesforce.Account,
     ]
     relationshipLabel = "Tax Exemption Certificates"
     relationshipName = "Tax_Exemption_Certificates"
@@ -12,9 +12,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Active__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Active__c"
@@ -24,9 +21,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     inlineHelpText = "An Active Certificate will make set the ‘Tax Exempt?’ field on the Active to true"
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__CertificateNumber__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__CertificateNumber__c"
@@ -37,9 +31,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Country__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Country__c"
@@ -52,9 +43,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__County__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__County__c"
@@ -65,18 +53,12 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__DateIssued__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__DateIssued__c"
     deprecated = false
     label = "Date Issued"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Default__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Default__c"
@@ -86,9 +68,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     inlineHelpText = "A certificate can be marked as default only if it is active"
     label = "Default"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ExemptCompanyName__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__ExemptCompanyName__c"
@@ -101,18 +80,12 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__ExpirationDate__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__ExpirationDate__c"
     deprecated = false
     label = "Expiration Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__IssuingAuthority__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__IssuingAuthority__c"
@@ -125,18 +98,12 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__Notes__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Notes__c"
     deprecated = false
     label = "Notes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__PostalCode__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__PostalCode__c"
@@ -147,9 +114,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__State__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__State__c"
@@ -160,9 +124,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__StreetAddress_2__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__StreetAddress_2__c"
@@ -173,9 +134,6 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__StreetAddress__c {
     apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__StreetAddress__c"
@@ -186,8 +144,5 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

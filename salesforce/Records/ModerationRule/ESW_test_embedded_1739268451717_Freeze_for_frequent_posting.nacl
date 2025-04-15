@@ -1,0 +1,23 @@
+salesforce.ModerationRule ESW_test_embedded_1739268451717_Freeze_for_frequent_posting@uuuvuuu {
+  fullName = "ESW_test_embedded_1739268451717.Freeze_for_frequent_posting"
+  action = "FreezeAndNotify"
+  actionLimit = 10
+  active = false
+  description = "Freezes members who post or comment more frequently than is allowed"
+  entitiesAndFields = [
+    {
+      entityName = "FeedItem"
+    },
+    {
+      entityName = "FeedComment"
+    },
+    {
+      entityName = "FeedPollChoice"
+    },
+  ]
+  masterLabel = "Freeze members whose posts or comments exceed the allowed rate"
+  timePeriod = "Short"
+  type = "Rate"
+  userCriteria = "ESW_test_embedded_1739268451717.Partner_and_Customer_members"
+  _alias = "ESW_test_embedded_1739268451717.Freeze_for_frequent_posting"
+}

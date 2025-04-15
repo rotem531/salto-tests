@@ -256,7 +256,7 @@ type salesforce.SBQQ__CustomAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__Location__c"
+      controllingField = salesforce.SBQQ__CustomAction__c.field.SBQQ__Location__c
       valueSettings = [
         {
           valueName = "View"
@@ -559,9 +559,6 @@ type salesforce.SBQQ__CustomAction__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Active__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Active__c"
@@ -571,9 +568,6 @@ type salesforce.SBQQ__CustomAction__c {
     inlineHelpText = "Select the checkbox to make this action available for use."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__BrandButton__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__BrandButton__c"
@@ -583,9 +577,6 @@ type salesforce.SBQQ__CustomAction__c {
     inlineHelpText = "Indicates this Custom Action is a Brand Button. Affects styling of un-nested Actions only."
     label = "Brand Button"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Class__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Class__c"
@@ -598,9 +589,6 @@ type salesforce.SBQQ__CustomAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConditionsMet__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__ConditionsMet__c"
@@ -623,9 +611,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Default__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Default__c"
@@ -635,9 +620,6 @@ type salesforce.SBQQ__CustomAction__c {
     inlineHelpText = "Select checkbox to set action as the default overriding action."
     label = "Default"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__Description__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Description__c"
@@ -646,9 +628,6 @@ type salesforce.SBQQ__CustomAction__c {
     inlineHelpText = "Enter the value for what you want to appear when a user hovers over the Custom Action button."
     label = "Description"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DisplayOrder__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__DisplayOrder__c"
@@ -662,9 +641,6 @@ type salesforce.SBQQ__CustomAction__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__EventHandlerName__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__EventHandlerName__c"
@@ -677,9 +653,6 @@ type salesforce.SBQQ__CustomAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__IconClass__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__IconClass__c"
@@ -692,9 +665,6 @@ type salesforce.SBQQ__CustomAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Icon__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Icon__c"
@@ -1572,9 +1542,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Label__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Label__c"
@@ -1827,9 +1794,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Location__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Location__c"
@@ -1898,7 +1862,7 @@ type salesforce.SBQQ__CustomAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__Page__c"
+      controllingField = salesforce.SBQQ__CustomAction__c.field.SBQQ__Page__c
       valueSettings = [
         {
           valueName = "Configurator"
@@ -1968,9 +1932,6 @@ type salesforce.SBQQ__CustomAction__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__PageHandlerName__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__PageHandlerName__c"
@@ -1983,9 +1944,6 @@ type salesforce.SBQQ__CustomAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Page__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Page__c"
@@ -2038,9 +1996,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ParentCustomAction__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__ParentCustomAction__c"
@@ -2066,9 +2021,6 @@ type salesforce.SBQQ__CustomAction__c {
     relationshipLabel = "Custom Actions"
     relationshipName = "Custom_Actions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__ReturnURL__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__ReturnURL__c"
@@ -2079,9 +2031,6 @@ type salesforce.SBQQ__CustomAction__c {
     length = 2000
     trackTrending = false
     visibleLines = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetObject__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__TargetObject__c"
@@ -2114,9 +2063,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__Type__c"
@@ -2144,9 +2090,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__URLTarget__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__URLTarget__c"
@@ -2169,9 +2112,6 @@ type salesforce.SBQQ__CustomAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__URL__c {
     apiName = "SBQQ__CustomAction__c.SBQQ__URL__c"
@@ -2182,8 +2122,5 @@ type salesforce.SBQQ__CustomAction__c {
     length = 2000
     trackTrending = false
     visibleLines = 2
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

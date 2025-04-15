@@ -14,5 +14,8 @@ salesforce.ApexTrigger SBQQ__AccountBefore {
     "UsageBeforeInsert",
     "UsageBeforeUpdate",
   ]
+  _parent = [
+    salesforce.Account,
+  ]
   _alias = "SBQQ__AccountBefore"
 }

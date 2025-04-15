@@ -12,9 +12,6 @@ type salesforce.SBQQ__FavoriteShare__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Lookup SBQQ__User__c {
     apiName = "SBQQ__FavoriteShare__c.SBQQ__User__c"
@@ -22,12 +19,9 @@ type salesforce.SBQQ__FavoriteShare__c {
     deprecated = false
     label = "User"
     referenceTo = [
-      "User",
+      salesforce.User,
     ]
     relationshipName = "FavoriteShares"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

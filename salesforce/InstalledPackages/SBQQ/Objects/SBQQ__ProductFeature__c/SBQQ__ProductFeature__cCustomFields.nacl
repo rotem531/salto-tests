@@ -20,9 +20,6 @@ type salesforce.SBQQ__ProductFeature__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConfigurationFieldSet__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__ConfigurationFieldSet__c"
@@ -40,9 +37,6 @@ type salesforce.SBQQ__ProductFeature__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ConfiguredSKU__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__ConfiguredSKU__c"
@@ -52,14 +46,11 @@ type salesforce.SBQQ__ProductFeature__c {
     inlineHelpText = "The product bundle that includes this feature. If you created the feature from the product detail page, this should already be populated."
     label = "Configured SKU"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Features"
     relationshipName = "Features"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountSchedule__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__DiscountSchedule__c"
@@ -74,9 +65,6 @@ type salesforce.SBQQ__ProductFeature__c {
     relationshipLabel = "Product Features"
     relationshipName = "ProductFeatures"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DynamicProductFilterFieldSet__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__DynamicProductFilterFieldSet__c"
@@ -94,9 +82,6 @@ type salesforce.SBQQ__ProductFeature__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DynamicProductLookupFieldSet__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__DynamicProductLookupFieldSet__c"
@@ -114,9 +99,6 @@ type salesforce.SBQQ__ProductFeature__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__MaxOptionCount__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__MaxOptionCount__c"
@@ -129,9 +111,6 @@ type salesforce.SBQQ__ProductFeature__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__MinOptionCount__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__MinOptionCount__c"
@@ -146,9 +125,6 @@ type salesforce.SBQQ__ProductFeature__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__Number__c"
@@ -162,9 +138,6 @@ type salesforce.SBQQ__ProductFeature__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__OptionSelectionMethod__c {
     apiName = "SBQQ__ProductFeature__c.SBQQ__OptionSelectionMethod__c"
@@ -192,8 +165,5 @@ type salesforce.SBQQ__ProductFeature__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

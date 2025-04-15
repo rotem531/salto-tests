@@ -10,9 +10,6 @@ type salesforce.SBQQ__RelatedContent__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__DocumentName__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__DocumentName__c"
@@ -30,9 +27,6 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -52,9 +46,6 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Opportunity__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__Opportunity__c"
@@ -64,14 +55,11 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     inlineHelpText = "Opportunity related to this content."
     label = "Opportunity"
     referenceTo = [
-      "Opportunity",
+      salesforce.Opportunity,
     ]
     relationshipLabel = "Additional Documents"
     relationshipName = "Additional_Documents"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__Product__c"
@@ -81,14 +69,11 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     inlineHelpText = "Product related to this content."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Additional Documents"
     relationshipName = "Content"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteTemplate__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__QuoteTemplate__c"
@@ -103,9 +88,6 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     relationshipLabel = "Additional Documents"
     relationshipName = "ProductContent"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Quote__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__Quote__c"
@@ -119,9 +101,6 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     ]
     relationshipName = "RelatedContent"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Required__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__Required__c"
@@ -131,9 +110,6 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     inlineHelpText = "Select the checkbox if this content is required for the product. Users must include it when generating a quote document."
     label = "Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TemplateSection__c {
     apiName = "SBQQ__RelatedContent__c.SBQQ__TemplateSection__c"
@@ -148,8 +124,5 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     relationshipLabel = "Additional Documents"
     relationshipName = "RelatedContent"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

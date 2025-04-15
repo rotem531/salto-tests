@@ -10,9 +10,6 @@ type salesforce.SBQQ__TermCondition__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__TermCondition__c.SBQQ__Operator__c"
@@ -70,9 +67,6 @@ type salesforce.SBQQ__TermCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__QuoteTerm__c {
     apiName = "SBQQ__TermCondition__c.SBQQ__QuoteTerm__c"
@@ -89,9 +83,6 @@ type salesforce.SBQQ__TermCondition__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__TestedField__c {
     apiName = "SBQQ__TermCondition__c.SBQQ__TestedField__c"
@@ -124,9 +115,6 @@ type salesforce.SBQQ__TermCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TestedVariable__c {
     apiName = "SBQQ__TermCondition__c.SBQQ__TestedVariable__c"
@@ -141,9 +129,6 @@ type salesforce.SBQQ__TermCondition__c {
     relationshipLabel = "Term Conditions"
     relationshipName = "TermConditions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Value__c {
     apiName = "SBQQ__TermCondition__c.SBQQ__Value__c"
@@ -156,8 +141,5 @@ type salesforce.SBQQ__TermCondition__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

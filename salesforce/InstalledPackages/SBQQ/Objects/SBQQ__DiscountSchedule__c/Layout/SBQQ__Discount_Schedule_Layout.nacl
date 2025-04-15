@@ -199,7 +199,7 @@ salesforce.Layout SBQQ__DiscountSchedule__c_SBQQ__Discount_Schedule_Layout@uuuub
         "PRODUCT2.CUSTOMER_PRODUCT_ID",
         "PRODUCT2.DESCRIPTION",
       ]
-      relatedList = "Product2.SBQQ__DiscountSchedule__c"
+      relatedList = salesforce.Product2.field.SBQQ__DiscountSchedule__c
     },
     {
       fields = [
@@ -207,7 +207,7 @@ salesforce.Layout SBQQ__DiscountSchedule__c_SBQQ__Discount_Schedule_Layout@uuuub
         "PRODUCT2.CUSTOMER_PRODUCT_ID",
         "PRODUCT2.DESCRIPTION",
       ]
-      relatedList = "Product2.SBQQ__TermDiscountSchedule__c"
+      relatedList = salesforce.Product2.field.SBQQ__TermDiscountSchedule__c
     },
     {
       excludeButtons = [

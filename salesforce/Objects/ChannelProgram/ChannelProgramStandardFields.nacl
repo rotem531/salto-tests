@@ -1,0 +1,69 @@
+type salesforce.ChannelProgram {
+  salesforce.Picklist Category {
+    apiName = "ChannelProgram.Category"
+    label = "Category"
+    restricted = false
+  }
+  salesforce.TextArea Description {
+    apiName = "ChannelProgram.Description"
+    label = "Description"
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "ChannelProgram.IsActive"
+    label = "Active"
+    defaultValue = false
+  }
+  salesforce.Text Name {
+    apiName = "ChannelProgram.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ChannelProgram.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ChannelProgram.Id"
+    label = "Channel Program ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ChannelProgram.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ChannelProgram.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ChannelProgram.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ChannelProgram.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ChannelProgram.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ChannelProgram.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

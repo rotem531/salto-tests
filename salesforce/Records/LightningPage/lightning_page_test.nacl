@@ -1,0 +1,48 @@
+salesforce.LightningPage lightning_page_test {
+  flexiPageRegions = [
+    {
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "cacheAge"
+                value = "1440"
+              },
+              {
+                name = "label"
+              },
+              {
+                name = "reportName"
+                value = "rotem_report_R5w"
+              },
+              {
+                name = "showRefreshButton"
+                value = "true"
+              },
+            ]
+            componentName = "flexipage:reportChart"
+            identifier = "flexipage_reportChart"
+          }
+        },
+      ]
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "lightning page test"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar"
+  }
+  type = "AppPage"
+  fullName = "lightning_page_test"
+  _alias = "lightning_page_test"
+}

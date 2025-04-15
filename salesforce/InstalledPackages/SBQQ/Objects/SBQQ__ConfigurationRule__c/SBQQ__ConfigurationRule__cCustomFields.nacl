@@ -7,9 +7,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     inlineHelpText = "Indicates whether this rule should be used in validating configurations."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__AscendingNestedLevel__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__AscendingNestedLevel__c"
@@ -27,9 +24,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DescendingActionNesting__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__DescendingActionNesting__c"
@@ -47,9 +41,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DescendingNestedLevel__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__DescendingNestedLevel__c"
@@ -67,9 +58,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ProductFeature__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__ProductFeature__c"
@@ -95,9 +83,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     relationshipLabel = "Configuration Rules"
     relationshipName = "Configuration_Rules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__ProductRule__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__ProductRule__c"
@@ -125,9 +110,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__Product__c"
@@ -137,14 +119,11 @@ type salesforce.SBQQ__ConfigurationRule__c {
     inlineHelpText = "Select the configured product you want this rule to validate."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Configuration Rules"
     relationshipName = "ConfigurationRules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__RuleEvaluationEvent__c {
     apiName = "SBQQ__ConfigurationRule__c.SBQQ__RuleEvaluationEvent__c"
@@ -157,9 +136,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -178,9 +154,6 @@ type salesforce.SBQQ__ConfigurationRule__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {

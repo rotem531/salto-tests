@@ -1,0 +1,93 @@
+type salesforce.CartDeliveryGroupMethodAdj {
+  salesforce.Currency AdjustmentAmount {
+    apiName = "CartDeliveryGroupMethodAdj.AdjustmentAmount"
+    label = "Adjustment Amount"
+    _required = true
+    scale = 2
+    precision = 18
+  }
+  salesforce.Lookup AdjustmentBasisReferenceId {
+    apiName = "CartDeliveryGroupMethodAdj.AdjustmentBasisReferenceId"
+    label = "Coupon ID"
+    relationshipName = "AdjustmentBasisReference"
+  }
+  salesforce.Picklist AdjustmentType {
+    apiName = "CartDeliveryGroupMethodAdj.AdjustmentType"
+    label = "Adjustment Type"
+    restricted = true
+  }
+  salesforce.Number AdjustmentValue {
+    apiName = "CartDeliveryGroupMethodAdj.AdjustmentValue"
+    label = "Adjustment Value"
+    _required = true
+    scale = 0
+    precision = 18
+    unique = false
+  }
+  salesforce.MasterDetail CartDeliveryGroupMethodId {
+    apiName = "CartDeliveryGroupMethodAdj.CartDeliveryGroupMethodId"
+    label = "Cart Delivery Group Method ID"
+    _required = true
+    relationshipName = "CartDeliveryGroupMethod"
+  }
+  salesforce.Lookup PriceAdjustmentCauseId {
+    apiName = "CartDeliveryGroupMethodAdj.PriceAdjustmentCauseId"
+    label = "Promotion ID"
+    _required = true
+    relationshipName = "PriceAdjustmentCause"
+  }
+  salesforce.Number Priority {
+    apiName = "CartDeliveryGroupMethodAdj.Priority"
+    label = "Priority"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  serviceid Id {
+    apiName = "CartDeliveryGroupMethodAdj.Id"
+    label = "Cart Delivery Group Method Adjustment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CartDeliveryGroupMethodAdj.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "CartDeliveryGroupMethodAdj.Name"
+    label = "Cart Delivery Group Method AdjustmentName"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CartDeliveryGroupMethodAdj.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CartDeliveryGroupMethodAdj.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CartDeliveryGroupMethodAdj.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CartDeliveryGroupMethodAdj.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CartDeliveryGroupMethodAdj.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

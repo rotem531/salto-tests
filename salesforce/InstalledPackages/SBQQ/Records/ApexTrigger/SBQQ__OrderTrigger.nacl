@@ -18,5 +18,8 @@ salesforce.ApexTrigger SBQQ__OrderTrigger {
     "UsageBeforeUpdate",
     "UsageAfterUpdate",
   ]
+  _parent = [
+    salesforce.Order,
+  ]
   _alias = "SBQQ__OrderTrigger"
 }

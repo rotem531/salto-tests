@@ -7,14 +7,11 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Customer account for this quote. Defaults to the account for the opportunity when creating a quote."
     label = "Account"
     referenceTo = [
-      "Account",
+      salesforce.Account,
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__AdditionalDiscountAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__AdditionalDiscountAmount__c"
@@ -27,9 +24,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -51,9 +45,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 18
     scale = 1
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -75,9 +66,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 18
     scale = 1
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -99,9 +87,6 @@ type salesforce.SBQQ__WebQuote__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BillingCity__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingCity__c"
@@ -114,9 +99,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BillingCountry__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingCountry__c"
@@ -129,9 +111,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BillingName__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingName__c"
@@ -144,9 +123,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BillingPostalCode__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingPostalCode__c"
@@ -159,9 +135,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__BillingState__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingState__c"
@@ -174,9 +147,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__BillingStreet__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__BillingStreet__c"
@@ -185,9 +155,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Street portion of the billing address for this quote."
     label = "Bill To Street"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary SBQQ__CustomerAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__CustomerAmount__c"
@@ -206,9 +173,6 @@ type salesforce.SBQQ__WebQuote__c {
     summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
     summaryOperation = "sum"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Percent SBQQ__CustomerDiscount__c {
@@ -220,9 +184,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaNumber SBQQ__DaysQuoteOpen__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__DaysQuoteOpen__c"
@@ -236,9 +197,6 @@ type salesforce.SBQQ__WebQuote__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -262,9 +220,6 @@ type salesforce.SBQQ__WebQuote__c {
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DeliveryMethod__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__DeliveryMethod__c"
@@ -287,9 +242,6 @@ type salesforce.SBQQ__WebQuote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__DistributorDiscount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__DistributorDiscount__c"
@@ -300,9 +252,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__DocumentId__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__DocumentId__c"
@@ -315,9 +264,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__EmailTemplateId__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__EmailTemplateId__c"
@@ -330,9 +276,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__EndDate__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__EndDate__c"
@@ -341,9 +284,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "End date for subscriptions in this group."
     label = "End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__ExpirationDate__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ExpirationDate__c"
@@ -352,9 +292,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Date after which the Quote is no longer valid."
     label = "Expires On"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__FirstSegmentTermEndDate__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__FirstSegmentTermEndDate__c"
@@ -363,9 +300,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Used with multi-segment Products to prorate first segment."
     label = "First Segment Term End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Introduction__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__Introduction__c"
@@ -376,9 +310,6 @@ type salesforce.SBQQ__WebQuote__c {
     length = 2000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary SBQQ__LineItemCount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__LineItemCount__c"
@@ -391,9 +322,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     scale = 0
     precision = 18
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Summary SBQQ__ListAmount__c {
@@ -413,9 +341,6 @@ type salesforce.SBQQ__WebQuote__c {
     summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
     summaryOperation = "sum"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Percent SBQQ__MarkupRate__c {
@@ -427,9 +352,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 8
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__MasterContract__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__MasterContract__c"
@@ -439,14 +361,11 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Master contract with which subscription products in this quote are to be co-terminated."
     label = "Master Contract"
     referenceTo = [
-      "Contract",
+      salesforce.Contract,
     ]
     relationshipLabel = "Co-Terminated Quotes"
     relationshipName = "CoTerminatedWebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary SBQQ__NetAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__NetAmount__c"
@@ -465,9 +384,6 @@ type salesforce.SBQQ__WebQuote__c {
     summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
     summaryOperation = "sum"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.LongTextArea SBQQ__Notes__c {
@@ -479,9 +395,6 @@ type salesforce.SBQQ__WebQuote__c {
     length = 2000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Opportunity__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__Opportunity__c"
@@ -491,14 +404,11 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Opportunity being quoted."
     label = "Opportunity"
     referenceTo = [
-      "Opportunity",
+      salesforce.Opportunity,
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OriginalQuote__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__OriginalQuote__c"
@@ -513,9 +423,6 @@ type salesforce.SBQQ__WebQuote__c {
     relationshipLabel = "WebAmend: Re-Quotes"
     relationshipName = "WebChangeOrders"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__PartnerDiscount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__PartnerDiscount__c"
@@ -526,9 +433,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PaymentTerms__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__PaymentTerms__c"
@@ -571,9 +475,6 @@ type salesforce.SBQQ__WebQuote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__PriceBook__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__PriceBook__c"
@@ -583,14 +484,11 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "The Price Book associated with this web quote."
     label = "Price Book"
     referenceTo = [
-      "Pricebook2",
+      salesforce.Pricebook2,
     ]
     relationshipLabel = "Web Quotes"
     relationshipName = "Web_Quotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__PricebookId__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__PricebookId__c"
@@ -603,9 +501,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__PrimaryContact__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__PrimaryContact__c"
@@ -615,14 +510,11 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Primary contact for the quote. This person's name will appear on the generated quote document."
     label = "Primary Contact"
     referenceTo = [
-      "Contact",
+      salesforce.Contact,
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__QuoteProcessId__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__QuoteProcessId__c"
@@ -635,9 +527,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__QuoteTemplateId__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__QuoteTemplateId__c"
@@ -650,9 +539,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary SBQQ__RegularAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__RegularAmount__c"
@@ -671,9 +557,6 @@ type salesforce.SBQQ__WebQuote__c {
     summaryForeignKey = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
     summaryOperation = "sum"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup SBQQ__SalesRep__c {
@@ -684,13 +567,10 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Sales rep responsible for this quote if different from the user who owns the Quote record."
     label = "Sales Rep"
     referenceTo = [
-      "User",
+      salesforce.User,
     ]
     relationshipName = "WebQuotes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__SelfServiced__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__SelfServiced__c"
@@ -700,9 +580,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Indicates whether this web quote is self service."
     label = "Self Serviced"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ShippingCity__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingCity__c"
@@ -715,9 +592,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ShippingCountry__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingCountry__c"
@@ -730,9 +604,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ShippingName__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingName__c"
@@ -745,9 +616,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ShippingPostalCode__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingPostalCode__c"
@@ -760,9 +628,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ShippingState__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingState__c"
@@ -775,9 +640,6 @@ type salesforce.SBQQ__WebQuote__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__ShippingStreet__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__ShippingStreet__c"
@@ -786,9 +648,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Street on the Ship To address for this quote."
     label = "Ship To Street"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SignatureStatus__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__SignatureStatus__c"
@@ -826,9 +685,6 @@ type salesforce.SBQQ__WebQuote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__StartDate__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__StartDate__c"
@@ -837,9 +693,6 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Start date for subscriptions in this quote."
     label = "Start Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Status__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__Status__c"
@@ -887,9 +740,6 @@ type salesforce.SBQQ__WebQuote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SubscriptionTerm__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__SubscriptionTerm__c"
@@ -902,9 +752,6 @@ type salesforce.SBQQ__WebQuote__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__TargetCustomerAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__TargetCustomerAmount__c"
@@ -915,9 +762,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__TotalCustomerDiscountAmount__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__TotalCustomerDiscountAmount__c"
@@ -930,9 +774,6 @@ type salesforce.SBQQ__WebQuote__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -974,9 +815,6 @@ type salesforce.SBQQ__WebQuote__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__WatermarkShown__c {
     apiName = "SBQQ__WebQuote__c.SBQQ__WatermarkShown__c"
@@ -986,8 +824,5 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Select the checkbox to display watermark in the Quote Document."
     label = "Watermark Shown"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

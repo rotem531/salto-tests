@@ -8,9 +8,6 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     precision = 14
     scale = 10
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__LowerBound__c {
     apiName = "SBQQ__PricingGuidanceTier__c.SBQQ__LowerBound__c"
@@ -23,9 +20,6 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__NormDiscount__c {
     apiName = "SBQQ__PricingGuidanceTier__c.SBQQ__NormDiscount__c"
@@ -36,9 +30,6 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     precision = 14
     scale = 10
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__PricingGuidance__c {
     apiName = "SBQQ__PricingGuidanceTier__c.SBQQ__PricingGuidance__c"
@@ -55,9 +46,6 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Percent SBQQ__TargetDiscount__c {
     apiName = "SBQQ__PricingGuidanceTier__c.SBQQ__TargetDiscount__c"
@@ -68,9 +56,6 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     precision = 14
     scale = 10
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__UpperBound__c {
     apiName = "SBQQ__PricingGuidanceTier__c.SBQQ__UpperBound__c"
@@ -83,8 +68,5 @@ type salesforce.SBQQ__PricingGuidanceTier__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

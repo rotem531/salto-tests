@@ -16,5 +16,8 @@ salesforce.ApexTrigger SBQQ__ProductAfter {
     "UsageAfterUpdate",
     "UsageAfterUndelete",
   ]
+  _parent = [
+    salesforce.Product2,
+  ]
   _alias = "SBQQ__ProductAfter"
 }

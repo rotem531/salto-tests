@@ -6,9 +6,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     inlineHelpText = "Description for this pricing guidance."
     label = "Description"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__Explanation__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__Explanation__c"
@@ -17,9 +14,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     inlineHelpText = "Provide sales reps with an explanation of this pricing guidance and recommendations for discounts to provide. They can view this explanation with the pricing guidance in the quote line editor."
     label = "Explanation"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__IncludePriorPurchases__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__IncludePriorPurchases__c"
@@ -29,9 +23,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     inlineHelpText = "When setting the pricing guidance tier for a quote line, include product quantities that were sold earlier"
     label = "Include Prior Purchases"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__IsActive__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__IsActive__c"
@@ -41,9 +32,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     inlineHelpText = "Enable this pricing guidance for use on associated product."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__Summary__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__Summary__c"
@@ -54,9 +42,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     length = 32768
     trackTrending = false
     visibleLines = 25
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__Type__c"
@@ -74,9 +59,6 @@ type salesforce.SBQQ__PricingGuidance__c {
     ]
     sorted = false
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Unit__c {
     apiName = "SBQQ__PricingGuidance__c.SBQQ__Unit__c"
@@ -94,8 +76,5 @@ type salesforce.SBQQ__PricingGuidance__c {
     ]
     sorted = false
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

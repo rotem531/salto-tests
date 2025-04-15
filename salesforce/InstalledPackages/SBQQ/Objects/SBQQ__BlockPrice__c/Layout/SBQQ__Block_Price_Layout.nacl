@@ -136,7 +136,7 @@ salesforce.Layout SBQQ__BlockPrice__c_SBQQ__Block_Price_Layout@uuuubuuss {
         "ListPrice",
         "TotalPrice",
       ]
-      relatedList = "OrderItem.SBQQ__BlockPrice__c"
+      relatedList = salesforce.OrderItem.field.SBQQ__BlockPrice__c
     },
   ]
   showEmailCheckbox = false

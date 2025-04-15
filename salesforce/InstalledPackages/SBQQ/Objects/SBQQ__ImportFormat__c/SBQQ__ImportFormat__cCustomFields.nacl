@@ -7,9 +7,6 @@ type salesforce.SBQQ__ImportFormat__c {
     inlineHelpText = "Select the checkbox to make the input format available for use."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ImportFormatName__c {
     apiName = "SBQQ__ImportFormat__c.SBQQ__ImportFormatName__c"
@@ -23,9 +20,6 @@ type salesforce.SBQQ__ImportFormat__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetObject__c {
     apiName = "SBQQ__ImportFormat__c.SBQQ__TargetObject__c"
@@ -43,9 +37,6 @@ type salesforce.SBQQ__ImportFormat__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Summary SBQQ__UniqueKeyCount__c {
     apiName = "SBQQ__ImportFormat__c.SBQQ__UniqueKeyCount__c"
@@ -65,9 +56,6 @@ type salesforce.SBQQ__ImportFormat__c {
     trackTrending = false
     scale = 0
     precision = 18
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

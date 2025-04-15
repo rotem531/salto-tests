@@ -15,5 +15,8 @@ salesforce.ApexTrigger SBQQ__ProductBefore {
     "UsageBeforeInsert",
     "UsageBeforeUpdate",
   ]
+  _parent = [
+    salesforce.Product2,
+  ]
   _alias = "SBQQ__ProductBefore"
 }

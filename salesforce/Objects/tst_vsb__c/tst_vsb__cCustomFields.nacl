@@ -1,0 +1,225 @@
+type salesforce.tst_vsb__c {
+  salesforce.Picklist controlled_by_value_set_field__c {
+    apiName = "tst_vsb__c.controlled_by_value_set_field__c"
+    description = "desc top"
+    label = "controlled by value set field"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.another_picklist
+    restricted = true
+    fieldDependency = {
+      controllingField = salesforce.tst_vsb__c.field.value_set_field__c
+      valueSettings = [
+        {
+          valueName = "home"
+          controllingFieldValue = [
+            "rotem",
+          ]
+        },
+        {
+          valueName = "tent"
+          controllingFieldValue = [
+            "rotem",
+          ]
+        },
+        {
+          valueName = "big camel"
+          controllingFieldValue = [
+            "cohen",
+          ]
+        },
+        {
+          valueName = "door"
+          controllingFieldValue = [
+            "cohen",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.Picklist diff_picklist_field__c {
+    apiName = "tst_vsb__c.diff_picklist_field__c"
+    label = "diff picklist field"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.another_picklist
+    restricted = true
+    fieldDependency = {
+      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      valueSettings = [
+        {
+          valueName = "home"
+          controllingFieldValue = [
+            "b",
+            "f",
+          ]
+        },
+        {
+          valueName = "big camel"
+          controllingFieldValue = [
+            "c",
+            "e",
+          ]
+        },
+        {
+          valueName = "door"
+          controllingFieldValue = [
+            "d",
+            "e",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.FormulaNumber formula_field__c {
+    apiName = "tst_vsb__c.formula_field__c"
+    externalId = false
+    formula = "num_num__c  + 8"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "formula field"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    unique = false
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.tst_vsb__c.field.num_num__c
+      },
+    ]
+  }
+  salesforce.Number num_num__c {
+    apiName = "tst_vsb__c.num_num__c"
+    externalId = false
+    label = "num num"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+  }
+  salesforce.Picklist tamir__c {
+    apiName = "tst_vsb__c.tamir__c"
+    label = "tamir"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "ahat"
+        default = false
+        label = "ahat"
+      },
+      {
+        fullName = "shteim"
+        default = false
+        label = "shteim"
+      },
+      {
+        fullName = "shalosh"
+        default = false
+        label = "shalosh"
+      },
+    ]
+    sorted = false
+    restricted = true
+    fieldDependency = {
+      controllingField = salesforce.tst_vsb__c.field.diff_picklist_field__c
+      valueSettings = [
+        {
+          valueName = "ahat"
+          controllingFieldValue = [
+            "tent",
+            "home",
+          ]
+        },
+        {
+          valueName = "shteim"
+          controllingFieldValue = [
+            "tent",
+            "big camel",
+          ]
+        },
+        {
+          valueName = "shalosh"
+          controllingFieldValue = [
+            "tent",
+            "door",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.Picklist test2_picklist__c {
+    apiName = "tst_vsb__c.test2_picklist__c"
+    label = "test2 picklist"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
+    restricted = true
+    fieldDependency = {
+      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      valueSettings = [
+        {
+          valueName = "a"
+          controllingFieldValue = [
+            "a",
+          ]
+        },
+        {
+          valueName = "c"
+          controllingFieldValue = [
+            "b",
+            "c",
+            "d",
+          ]
+        },
+        {
+          valueName = "d"
+          controllingFieldValue = [
+            "d",
+          ]
+        },
+        {
+          valueName = "e"
+          controllingFieldValue = [
+            "e",
+          ]
+        },
+        {
+          valueName = "f"
+          controllingFieldValue = [
+            "f",
+          ]
+        },
+      ]
+    }
+  }
+  salesforce.Picklist test_picklist__c {
+    apiName = "tst_vsb__c.test_picklist__c"
+    label = "test picklist"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
+    restricted = true
+  }
+  salesforce.Picklist test_picklist_field__c {
+    apiName = "tst_vsb__c.test_picklist_field__c"
+    label = "test picklist field"
+    trackTrending = false
+    valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
+    restricted = true
+  }
+  salesforce.Picklist value_set_field__c {
+    apiName = "tst_vsb__c.value_set_field__c"
+    label = "value set field"
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "rotem"
+        default = false
+        label = "rotem"
+      },
+      {
+        fullName = "cohen"
+        default = false
+        label = "cohen"
+      },
+    ]
+    sorted = false
+    restricted = true
+  }
+}

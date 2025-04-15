@@ -1,0 +1,63 @@
+salesforce.QuickAction Account_test2_email@vu {
+  fullName = "Account.test2_email"
+  optionsCreateFeedItem = true
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = "ValidatedFromAddress"
+            uiBehavior = "Required"
+          },
+          {
+            emptySpace = false
+            field = "ToAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "CcAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "BccAddress"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "Subject"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "HtmlBody"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "RelatedToId"
+            uiBehavior = "Edit"
+          },
+          {
+            emptySpace = false
+            field = "EmailTemplateId"
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  standardLabel = "SendEmail"
+  targetObject = "OutgoingEmail"
+  targetParentField = "RelatedTo"
+  type = "SendEmail"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.test2_email"
+}

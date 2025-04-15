@@ -1,0 +1,41 @@
+salesforce.LightningPage test_err {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "dashboardName"
+                value = "Program_Dashboard_sfdcSESv60"
+              },
+              {
+                name = "hideOnError"
+                value = "true"
+              },
+            ]
+            componentName = "desktopDashboards:embeddedDashboard"
+            identifier = "desktopDashboards_embeddedDashboard"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "test err"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar"
+  }
+  type = "AppPage"
+  fullName = "test_err"
+  _alias = "test_err"
+}

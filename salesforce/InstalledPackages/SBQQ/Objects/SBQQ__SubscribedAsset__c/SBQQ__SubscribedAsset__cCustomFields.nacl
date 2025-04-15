@@ -7,9 +7,6 @@ type salesforce.SBQQ__SubscribedAsset__c {
     inlineHelpText = "Indicates whether the subscribed asset record is active."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__AssetRootId__c {
     apiName = "SBQQ__SubscribedAsset__c.SBQQ__AssetRootId__c"
@@ -22,9 +19,6 @@ type salesforce.SBQQ__SubscribedAsset__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -40,14 +34,11 @@ type salesforce.SBQQ__SubscribedAsset__c {
     inlineHelpText = "Asset being covered by a subscription."
     label = "Asset"
     referenceTo = [
-      "Asset",
+      salesforce.Asset,
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ContractId__c {
     apiName = "SBQQ__SubscribedAsset__c.SBQQ__ContractId__c"
@@ -60,9 +51,6 @@ type salesforce.SBQQ__SubscribedAsset__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -85,9 +73,6 @@ type salesforce.SBQQ__SubscribedAsset__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.FormulaDate SBQQ__UsageEndDate__c {
     apiName = "SBQQ__SubscribedAsset__c.SBQQ__UsageEndDate__c"
@@ -96,9 +81,6 @@ type salesforce.SBQQ__SubscribedAsset__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "Asset Usage End Date"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {

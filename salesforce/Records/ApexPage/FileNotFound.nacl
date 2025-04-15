@@ -1,0 +1,25 @@
+salesforce.ApexPage FileNotFound {
+  apiVersion = 63
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Lightning Platform Page/Data Not Found page"
+  label = "FileNotFound"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = salesforce.InstalledPackage.instance.sf_com_apps
+    },
+  ]
+  fullName = "FileNotFound"
+  content = file("salesforce/Records/ApexPage/FileNotFound.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+  _alias = "FileNotFound"
+}

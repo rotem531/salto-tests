@@ -25,9 +25,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BottomMargin__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__BottomMargin__c"
@@ -41,9 +38,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ColumnHeadingField__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__ColumnHeadingField__c"
@@ -61,9 +55,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConditionalPrintField__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__ConditionalPrintField__c"
@@ -81,9 +72,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DisplayOrder__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__DisplayOrder__c"
@@ -97,9 +85,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__DynamicNumberScale__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__DynamicNumberScale__c"
@@ -109,9 +94,6 @@ type salesforce.SBQQ__LineColumn__c {
     inlineHelpText = "The decimal scale for numbers in the column are set based on the largest precision in the column."
     label = "Dynamic Number Scale"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FieldName__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__FieldName__c"
@@ -125,9 +107,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FontFamily__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__FontFamily__c"
@@ -240,9 +219,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__FontSize__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__FontSize__c"
@@ -255,9 +231,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 1
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FontWeight__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__FontWeight__c"
@@ -280,9 +253,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__HeadingTextColor__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__HeadingTextColor__c"
@@ -295,9 +265,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__HideOnComponents__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__HideOnComponents__c"
@@ -307,9 +274,6 @@ type salesforce.SBQQ__LineColumn__c {
     inlineHelpText = "Hides value in this column if line item is a Product Option."
     label = "Hide On Product Options"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__LeftMargin__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__LeftMargin__c"
@@ -323,9 +287,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__RightMargin__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__RightMargin__c"
@@ -339,9 +300,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__RollUp__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__RollUp__c"
@@ -351,9 +309,6 @@ type salesforce.SBQQ__LineColumn__c {
     inlineHelpText = "Indicates whether this field should be rolled up into master line. Only applicable if Roll-Up Field is specified on the template."
     label = "Roll Up"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Section__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__Section__c"
@@ -384,9 +339,6 @@ type salesforce.SBQQ__LineColumn__c {
     relationshipLabel = "Line Columns"
     relationshipName = "LineColumns"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__SeparateLine__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SeparateLine__c"
@@ -396,9 +348,6 @@ type salesforce.SBQQ__LineColumn__c {
     inlineHelpText = "Select the checkbox in order for this field to be printed on its own line. Use for long text fields such as product description."
     label = "Separate Line"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SubGroupSummaryLabel__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SubGroupSummaryLabel__c"
@@ -411,9 +360,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SummaryFontWeight__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryFontWeight__c"
@@ -436,9 +382,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SummaryFunction__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryFunction__c"
@@ -456,9 +399,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SummaryLabel__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryLabel__c"
@@ -471,9 +411,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SummaryLevel__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryLevel__c"
@@ -496,9 +433,6 @@ type salesforce.SBQQ__LineColumn__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SummaryShadingColor__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryShadingColor__c"
@@ -511,9 +445,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SummaryTextColor__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__SummaryTextColor__c"
@@ -526,9 +457,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Template__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__Template__c"
@@ -545,9 +473,6 @@ type salesforce.SBQQ__LineColumn__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Text SBQQ__TextColor__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__TextColor__c"
@@ -560,9 +485,6 @@ type salesforce.SBQQ__LineColumn__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__TopMargin__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__TopMargin__c"
@@ -576,9 +498,6 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__WidthDiscardedWhenHidden__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__WidthDiscardedWhenHidden__c"
@@ -588,9 +507,6 @@ type salesforce.SBQQ__LineColumn__c {
     inlineHelpText = "Select the checkbox for conditionally displayed column to replace another column(s). Leaving this box unselected will re-allocate width of this column when it's hidden to another column therefore keeping table width unchanged."
     label = "Discard Width When Hidden"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Width__c {
     apiName = "SBQQ__LineColumn__c.SBQQ__Width__c"
@@ -604,8 +520,5 @@ type salesforce.SBQQ__LineColumn__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

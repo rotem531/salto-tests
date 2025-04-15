@@ -13,5 +13,8 @@ salesforce.ApexTrigger SBQQ__ConsumptionScheduleAfter {
   triggerTypes = [
     "UsageAfterUpdate",
   ]
+  _parent = [
+    salesforce.ConsumptionSchedule,
+  ]
   _alias = "SBQQ__ConsumptionScheduleAfter"
 }

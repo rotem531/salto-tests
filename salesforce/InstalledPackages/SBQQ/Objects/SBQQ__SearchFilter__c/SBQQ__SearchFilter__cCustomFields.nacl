@@ -12,9 +12,6 @@ type salesforce.SBQQ__SearchFilter__c {
     relationshipLabel = "Search Filters"
     relationshipName = "SearchFilters"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DisplayOrder__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__DisplayOrder__c"
@@ -28,9 +25,6 @@ type salesforce.SBQQ__SearchFilter__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FilterSourceField__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__FilterSourceField__c"
@@ -54,7 +48,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__FilterSourceObject__c"
+      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__FilterSourceObject__c
       valueSettings = [
         {
           valueName = "Type"
@@ -70,9 +64,6 @@ type salesforce.SBQQ__SearchFilter__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FilterSourceObject__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__FilterSourceObject__c"
@@ -90,9 +81,6 @@ type salesforce.SBQQ__SearchFilter__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FilterValue__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__FilterValue__c"
@@ -105,9 +93,6 @@ type salesforce.SBQQ__SearchFilter__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__HiddenSourceField__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__HiddenSourceField__c"
@@ -126,7 +111,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__HiddenSourceObject__c"
+      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__HiddenSourceObject__c
       valueSettings = [
         {
           valueName = "Primary"
@@ -136,9 +121,6 @@ type salesforce.SBQQ__SearchFilter__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__HiddenSourceObject__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__HiddenSourceObject__c"
@@ -156,9 +138,6 @@ type salesforce.SBQQ__SearchFilter__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Hidden__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__Hidden__c"
@@ -168,9 +147,6 @@ type salesforce.SBQQ__SearchFilter__c {
     inlineHelpText = "Select the checkbox to mark this filter as hidden. Hidden filters do not display in the UI but contribute to search queries."
     label = "Hidden"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__Operator__c"
@@ -233,9 +209,6 @@ type salesforce.SBQQ__SearchFilter__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetField__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__TargetField__c"
@@ -279,7 +252,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = "SBQQ__TargetObject__c"
+      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__TargetObject__c
       valueSettings = [
         {
           valueName = "Name"
@@ -325,9 +298,6 @@ type salesforce.SBQQ__SearchFilter__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetObject__c {
     apiName = "SBQQ__SearchFilter__c.SBQQ__TargetObject__c"
@@ -355,8 +325,5 @@ type salesforce.SBQQ__SearchFilter__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -1,0 +1,37 @@
+salesforce.ApexPage SiteLogin {
+  apiVersion = 63
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default Salesforce Sites Login page"
+  label = "SiteLogin"
+  packageVersions = [
+    {
+      majorNumber = 1
+      minorNumber = 7
+      namespace = salesforce.InstalledPackage.instance.sf_com_apps
+    },
+  ]
+  fullName = "SiteLogin"
+  content = file("salesforce/Records/ApexPage/SiteLogin.page")
+  _generated_dependencies = [
+    {
+      reference = salesforce.ApexClass.instance.SiteLoginController
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SiteLogin
+    },
+    {
+      reference = salesforce.ApexComponent.instance.SitePoweredBy
+    },
+    {
+      reference = salesforce.ApexPage.instance.ForgotPassword
+    },
+    {
+      reference = salesforce.ApexPage.instance.SiteRegister
+    },
+    {
+      reference = salesforce.StaticResource.instance.SiteSamples
+    },
+  ]
+  _alias = "SiteLogin"
+}

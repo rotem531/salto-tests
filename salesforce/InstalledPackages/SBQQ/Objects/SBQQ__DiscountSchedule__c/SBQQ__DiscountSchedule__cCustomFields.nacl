@@ -7,14 +7,11 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Account that this discount schedule applies to. Only used in combination with Discount Schedule Override on Quote Line Editor UI."
     label = "Account"
     referenceTo = [
-      "Account",
+      salesforce.Account,
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "Discount_Schedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__AggregationScope__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__AggregationScope__c"
@@ -37,9 +34,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConstraintField__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__ConstraintField__c"
@@ -57,9 +51,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__CrossOrders__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__CrossOrders__c"
@@ -69,9 +60,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Select the checkbox if you want to extend volume discounts on total volume owned by customer (i.e. quantity quoted plus prior purchases)."
     label = "Cross Orders"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__CrossProducts__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__CrossProducts__c"
@@ -81,9 +69,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Select the checkbox to aggregate quantities of all products using this schedule for the purpose of volume discount calculation. Slab discounts cannot be used for Cross Product discounts."
     label = "Cross Products"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Description__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Description__c"
@@ -94,9 +79,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     length = 5000
     trackTrending = false
     visibleLines = 4
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DiscountUnit__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__DiscountUnit__c"
@@ -124,9 +106,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__ExcludedPricebookIds__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__ExcludedPricebookIds__c"
@@ -135,9 +114,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Enter a list of price book IDs separated by commas that should not be applied to this discount schedule."
     label = "Excluded Pricebook IDs"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__IncludeBundledProducts__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__IncludeBundledProducts__c"
@@ -147,9 +123,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "If checked, the Quantities of Bundled Product Options will be included in the Aggregation Scope"
     label = "Include Bundled Quantities"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OrderProduct__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__OrderProduct__c"
@@ -171,14 +144,11 @@ type salesforce.SBQQ__DiscountSchedule__c {
       isOptional = false
     }
     referenceTo = [
-      "OrderItem",
+      salesforce.OrderItem,
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Order__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Order__c"
@@ -188,14 +158,11 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Order that this discount schedule applies to."
     label = "Order"
     referenceTo = [
-      "Order",
+      salesforce.Order,
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OriginalDiscountSchedule__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__OriginalDiscountSchedule__c"
@@ -210,9 +177,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__OverrideBehavior__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__OverrideBehavior__c"
@@ -235,9 +199,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__PriceScale__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__PriceScale__c"
@@ -251,9 +212,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Pricebook__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Pricebook__c"
@@ -263,14 +221,11 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Price book that this discount schedule applies to. Only used in combination with Product lookup to assign product/price book specific schedule."
     label = "Price Book"
     referenceTo = [
-      "Pricebook2",
+      salesforce.Pricebook2,
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Product__c"
@@ -280,14 +235,11 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Product that this discount schedule applies to. Only used in combination with Price Book lookup to assign product/price book specific schedule."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__QuoteLineQuantityField__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__QuoteLineQuantityField__c"
@@ -305,9 +257,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteLine__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__QuoteLine__c"
@@ -322,9 +271,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     relationshipLabel = "Discount Schedules"
     relationshipName = "Discount_Schedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Quote__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Quote__c"
@@ -339,9 +285,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     relationshipLabel = "Discount Schedules"
     relationshipName = "Discount_Schedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__Type__c"
@@ -364,9 +307,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__UsePriceForAmount__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__UsePriceForAmount__c"
@@ -376,9 +316,6 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "If checked, the user defined Discount Schedule's Discount Unit will be set to Price."
     label = "Use Price For Amount"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__UserDefined__c {
     apiName = "SBQQ__DiscountSchedule__c.SBQQ__UserDefined__c"
@@ -388,8 +325,5 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Identifies whether this schedule was created by an end user or an admin."
     label = "User Defined"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

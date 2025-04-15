@@ -25,9 +25,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BillingTerm__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__BillingTerm__c"
@@ -40,9 +37,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Category__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__Category__c"
@@ -59,9 +53,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ConsumptionSchedule__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__ConsumptionSchedule__c"
@@ -69,14 +60,11 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     deprecated = false
     label = "Consumption Schedule"
     referenceTo = [
-      "ConsumptionSchedule",
+      salesforce.ConsumptionSchedule,
     ]
     relationshipLabel = "Quote Line Consumption Schedules"
     relationshipName = "QuoteLineConsumptionSchedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Description__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__Description__c"
@@ -85,9 +73,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     length = 32000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__MatchingAttribute__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__MatchingAttribute__c"
@@ -99,9 +84,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__QuoteLine__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__QuoteLine__c"
@@ -116,9 +98,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__RatingMethod__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__RatingMethod__c"
@@ -136,9 +115,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__Type__c"
@@ -161,9 +137,6 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__UnitOfMeasure__c {
     apiName = "SBQQ__QuoteLineConsumptionSchedule__c.SBQQ__UnitOfMeasure__c"
@@ -180,8 +153,5 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

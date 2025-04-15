@@ -13,9 +13,6 @@ type salesforce.SBQQ__ProcessInputValue__c {
     relationshipName = "Process_Input_Values"
     _required = true
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteId__c {
     apiName = "SBQQ__ProcessInputValue__c.SBQQ__QuoteId__c"
@@ -30,9 +27,6 @@ type salesforce.SBQQ__ProcessInputValue__c {
     relationshipName = "Process_Input_Values"
     _required = true
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__UserID__c {
     apiName = "SBQQ__ProcessInputValue__c.SBQQ__UserID__c"
@@ -42,13 +36,10 @@ type salesforce.SBQQ__ProcessInputValue__c {
     inlineHelpText = "This Process Input value belongs to the user."
     label = "UserID"
     referenceTo = [
-      "User",
+      salesforce.User,
     ]
     relationshipName = "Process_Input_Values"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__Value__c {
     apiName = "SBQQ__ProcessInputValue__c.SBQQ__Value__c"
@@ -57,8 +48,5 @@ type salesforce.SBQQ__ProcessInputValue__c {
     inlineHelpText = "This is the answer to the input process value."
     label = "Value"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

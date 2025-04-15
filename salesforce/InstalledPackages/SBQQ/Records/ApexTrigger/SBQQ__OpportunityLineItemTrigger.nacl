@@ -18,5 +18,8 @@ salesforce.ApexTrigger SBQQ__OpportunityLineItemTrigger {
     "UsageBeforeUpdate",
     "UsageAfterUpdate",
   ]
+  _parent = [
+    salesforce.OpportunityLineItem,
+  ]
   _alias = "SBQQ__OpportunityLineItemTrigger"
 }

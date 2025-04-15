@@ -7,9 +7,6 @@ type salesforce.SBQQ__PriceRule__c {
     inlineHelpText = "Indicates whether this rule is active or not."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__AdvancedCondition__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__AdvancedCondition__c"
@@ -18,9 +15,6 @@ type salesforce.SBQQ__PriceRule__c {
     inlineHelpText = "Can only be entered if the Conditions Met is Custom. Enter a combination of the Price Condition Index #s, AND, OR, and parenthesis (e.g. (123 AND 124) AND 125)."
     label = "Advanced Condition"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConditionsMet__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__ConditionsMet__c"
@@ -48,9 +42,6 @@ type salesforce.SBQQ__PriceRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ConfiguratorEvaluationEvent__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__ConfiguratorEvaluationEvent__c"
@@ -73,9 +64,6 @@ type salesforce.SBQQ__PriceRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MultiselectPicklist SBQQ__EvaluationEvent__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__EvaluationEvent__c"
@@ -109,9 +97,6 @@ type salesforce.SBQQ__PriceRule__c {
     sorted = false
     restricted = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__EvaluationOrder__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__EvaluationOrder__c"
@@ -124,9 +109,6 @@ type salesforce.SBQQ__PriceRule__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__LookupObject__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__LookupObject__c"
@@ -144,9 +126,6 @@ type salesforce.SBQQ__PriceRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__Product__c"
@@ -156,14 +135,11 @@ type salesforce.SBQQ__PriceRule__c {
     inlineHelpText = "Choose a product to associate to this rule."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Price Rules"
     relationshipName = "PriceRules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetObject__c {
     apiName = "SBQQ__PriceRule__c.SBQQ__TargetObject__c"
@@ -186,8 +162,5 @@ type salesforce.SBQQ__PriceRule__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

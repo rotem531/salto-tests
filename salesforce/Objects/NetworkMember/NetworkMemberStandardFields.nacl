@@ -1,0 +1,135 @@
+type salesforce.NetworkMember {
+  serviceid Id {
+    apiName = "NetworkMember.Id"
+    label = "Network Member ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "NetworkMember.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "NetworkMember.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "NetworkMember.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "NetworkMember.NetworkId"
+    label = "Network ID"
+    _required = true
+    relationshipName = "Network"
+    _hidden_value = true
+  }
+  salesforce.Lookup MemberId {
+    apiName = "NetworkMember.MemberId"
+    label = "User ID"
+    _required = true
+    relationshipName = "Member"
+    _hidden_value = true
+  }
+  salesforce.Picklist DigestFrequency {
+    apiName = "NetworkMember.DigestFrequency"
+    label = "Chatter Email Highlights Frequency"
+    _required = true
+    restricted = true
+  }
+  salesforce.Picklist DefaultGroupNotificationFrequency {
+    apiName = "NetworkMember.DefaultGroupNotificationFrequency"
+    label = "Default Notification Frequency when Joining Groups"
+    _required = true
+    restricted = true
+  }
+  salesforce.Checkbox PreferencesDisableAllFeedsEmail {
+    apiName = "NetworkMember.PreferencesDisableAllFeedsEmail"
+    label = "DisableAllFeedsEmail"
+  }
+  salesforce.Checkbox PreferencesDisableFollowersEmail {
+    apiName = "NetworkMember.PreferencesDisableFollowersEmail"
+    label = "DisableFollowersEmail"
+  }
+  salesforce.Checkbox PreferencesDisableProfilePostEmail {
+    apiName = "NetworkMember.PreferencesDisableProfilePostEmail"
+    label = "DisableProfilePostEmail"
+  }
+  salesforce.Checkbox PreferencesDisableChangeCommentEmail {
+    apiName = "NetworkMember.PreferencesDisableChangeCommentEmail"
+    label = "DisableChangeCommentEmail"
+  }
+  salesforce.Checkbox PreferencesDisableLaterCommentEmail {
+    apiName = "NetworkMember.PreferencesDisableLaterCommentEmail"
+    label = "DisableLaterCommentEmail"
+  }
+  salesforce.Checkbox PreferencesDisProfPostCommentEmail {
+    apiName = "NetworkMember.PreferencesDisProfPostCommentEmail"
+    label = "DisProfPostCommentEmail"
+  }
+  salesforce.Checkbox PreferencesDisableMentionsPostEmail {
+    apiName = "NetworkMember.PreferencesDisableMentionsPostEmail"
+    label = "DisableMentionsPostEmail"
+  }
+  salesforce.Checkbox PreferencesDisMentionsCommentEmail {
+    apiName = "NetworkMember.PreferencesDisMentionsCommentEmail"
+    label = "DisMentionsCommentEmail"
+  }
+  salesforce.Checkbox PreferencesDisableLikeEmail {
+    apiName = "NetworkMember.PreferencesDisableLikeEmail"
+    label = "DisableLikeEmail"
+  }
+  salesforce.Checkbox PreferencesDisCommentAfterLikeEmail {
+    apiName = "NetworkMember.PreferencesDisCommentAfterLikeEmail"
+    label = "DisCommentAfterLikeEmail"
+  }
+  salesforce.Checkbox PreferencesDisableBookmarkEmail {
+    apiName = "NetworkMember.PreferencesDisableBookmarkEmail"
+    label = "DisableBookmarkEmail"
+  }
+  salesforce.Checkbox PreferencesDisableSharePostEmail {
+    apiName = "NetworkMember.PreferencesDisableSharePostEmail"
+    label = "DisableSharePostEmail"
+  }
+  salesforce.Checkbox PreferencesDisableItemFlaggedEmail {
+    apiName = "NetworkMember.PreferencesDisableItemFlaggedEmail"
+    label = "DisableItemFlaggedEmail"
+  }
+  salesforce.Checkbox PreferencesDisableMessageEmail {
+    apiName = "NetworkMember.PreferencesDisableMessageEmail"
+    label = "DisableMessageEmail"
+  }
+  salesforce.Checkbox PreferencesDisableEndorsementEmail {
+    apiName = "NetworkMember.PreferencesDisableEndorsementEmail"
+    label = "DisableEndorsementEmail"
+  }
+  salesforce.Checkbox PreferencesDisablePendingReviewEmail {
+    apiName = "NetworkMember.PreferencesDisablePendingReviewEmail"
+    label = "DisablePendingReviewEmail"
+  }
+  salesforce.Checkbox PreferencesDisableDirectMessageEmail {
+    apiName = "NetworkMember.PreferencesDisableDirectMessageEmail"
+    label = "DisableDirectMessageEmail"
+  }
+  salesforce.Checkbox PreferencesDisableBestAnswerEmail {
+    apiName = "NetworkMember.PreferencesDisableBestAnswerEmail"
+    label = "DisableBestAnswerEmail"
+  }
+  salesforce.Number ReputationPoints {
+    apiName = "NetworkMember.ReputationPoints"
+    label = "Reputation Points"
+    _required = true
+    scale = 0
+    precision = 15
+    unique = false
+  }
+  salesforce.Date LastChatterActivityDate {
+    apiName = "NetworkMember.LastChatterActivityDate"
+    label = "Last Chatter Activity Date"
+    _hidden_value = true
+  }
+}

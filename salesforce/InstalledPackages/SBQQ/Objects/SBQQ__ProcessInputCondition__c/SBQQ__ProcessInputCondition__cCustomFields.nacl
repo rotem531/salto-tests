@@ -7,9 +7,6 @@ type salesforce.SBQQ__ProcessInputCondition__c {
     inlineHelpText = "Flag that indicates whether this rule is active or inactive."
     label = "Active"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__MasterProcessInput__c {
     apiName = "SBQQ__ProcessInputCondition__c.SBQQ__MasterProcessInput__c"
@@ -36,9 +33,6 @@ type salesforce.SBQQ__ProcessInputCondition__c {
     relationshipName = "DependentInputs"
     _required = true
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__ProcessInputCondition__c.SBQQ__Operator__c"
@@ -96,9 +90,6 @@ type salesforce.SBQQ__ProcessInputCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__ProcessInput__c {
     apiName = "SBQQ__ProcessInputCondition__c.SBQQ__ProcessInput__c"
@@ -115,9 +106,6 @@ type salesforce.SBQQ__ProcessInputCondition__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Text SBQQ__Value__c {
     apiName = "SBQQ__ProcessInputCondition__c.SBQQ__Value__c"
@@ -131,8 +119,5 @@ type salesforce.SBQQ__ProcessInputCondition__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

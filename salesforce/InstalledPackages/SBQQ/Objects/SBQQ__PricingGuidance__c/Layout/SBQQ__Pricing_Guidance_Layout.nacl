@@ -93,7 +93,7 @@ salesforce.Layout SBQQ__PricingGuidance__c_SBQQ__Pricing_Guidance_Layout@uuuubuu
         "PRODUCT2.CUSTOMER_PRODUCT_ID",
         "PRODUCT2.DESCRIPTION",
       ]
-      relatedList = "Product2.SBQQ__PricingGuidance__c"
+      relatedList = salesforce.Product2.field.SBQQ__PricingGuidance__c
     },
   ]
   showEmailCheckbox = false

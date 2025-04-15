@@ -7,14 +7,11 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "Account to which this Quote Line Group references."
     label = "Account"
     referenceTo = [
-      "Account",
+      salesforce.Account,
     ]
     relationshipLabel = "Quote Line Groups"
     relationshipName = "QuoteLineGroups"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__AdditionalDiscountRate__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__AdditionalDiscountRate__c"
@@ -25,9 +22,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__BillingFrequency__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__BillingFrequency__c"
@@ -38,9 +32,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingFrequency
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__CustomerTotal__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__CustomerTotal__c"
@@ -51,9 +42,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__Description__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Description__c"
@@ -64,9 +52,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     length = 32000
     trackTrending = false
     visibleLines = 15
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__EndDate__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__EndDate__c"
@@ -75,9 +60,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "End date for subscriptions in this group."
     label = "End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Favorite__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Favorite__c"
@@ -92,9 +74,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     relationshipLabel = "Quote Line Groups"
     relationshipName = "QuoteLineGroups"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ListTotal__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__ListTotal__c"
@@ -105,9 +84,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__MarkupRate__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__MarkupRate__c"
@@ -118,9 +94,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 8
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__NetTotal__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__NetTotal__c"
@@ -131,9 +104,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Number__c"
@@ -146,9 +116,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Optional__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Optional__c"
@@ -158,9 +125,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "Marks the entire group as optional."
     label = "Optional"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteProcess__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__QuoteProcess__c"
@@ -175,9 +139,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     relationshipLabel = "Quote Line Groups"
     relationshipName = "QuoteLineGroups"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Quote__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Quote__c"
@@ -194,9 +155,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Checkbox SBQQ__SeparateContract__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__SeparateContract__c"
@@ -206,9 +164,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "Select the checkbox to generate a separate contract for subscriptions in this group."
     label = "Separate Contract"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__SolutionGroup__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__SolutionGroup__c"
@@ -223,9 +178,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     relationshipLabel = "Quote Line Groups"
     relationshipName = "QuoteLineGroups"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Source__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__Source__c"
@@ -240,9 +192,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     relationshipLabel = "Quote Line Groups"
     relationshipName = "Clones"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__StartDate__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__StartDate__c"
@@ -251,9 +200,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "Start date for subscriptions in this group."
     label = "Start Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SubscriptionTerm__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__SubscriptionTerm__c"
@@ -266,9 +212,6 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__TargetCustomerAmount__c {
     apiName = "SBQQ__QuoteLineGroup__c.SBQQ__TargetCustomerAmount__c"
@@ -279,8 +222,5 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -9,9 +9,6 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     ]
     relationshipName = "Attribute_Sets"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ConfiguredSKU__c {
     apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ConfiguredSKU__c"
@@ -23,9 +20,6 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -43,9 +37,6 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -63,9 +54,6 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -83,9 +71,6 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     ]
     relationshipName = "Product_Option"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Sequence__c {
     apiName = "SBQQ__ProductAttributeSet__c.SBQQ__Sequence__c"
@@ -97,8 +82,5 @@ type salesforce.SBQQ__ProductAttributeSet__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -1,0 +1,64 @@
+type salesforce.WebStoreNetwork {
+  serviceid Id {
+    apiName = "WebStoreNetwork.Id"
+    label = "Store Site ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WebStoreNetwork.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WebStoreNetwork.Name"
+    label = "Store Site Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WebStoreNetwork.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WebStoreNetwork.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WebStoreNetwork.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WebStoreNetwork.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WebStoreNetwork.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Lookup WebStoreId {
+    apiName = "WebStoreNetwork.WebStoreId"
+    label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
+  }
+  salesforce.Lookup NetworkId {
+    apiName = "WebStoreNetwork.NetworkId"
+    label = "Network ID"
+    _required = true
+    relationshipName = "Network"
+  }
+  salesforce.Lookup SiteId {
+    apiName = "WebStoreNetwork.SiteId"
+    label = "Site ID"
+    relationshipName = "Site"
+    _hidden_value = true
+  }
+}

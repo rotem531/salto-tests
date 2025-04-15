@@ -8,9 +8,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__AdditionalDiscount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__AdditionalDiscount__c"
@@ -23,9 +20,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -50,9 +44,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BatchQuantity__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__BatchQuantity__c"
@@ -65,9 +56,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__BlockPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__BlockPrice__c"
@@ -82,9 +70,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Web Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Bundle__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Bundle__c"
@@ -94,9 +79,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Indicates this line item represents a package -- meaning it includes other line items in this quote."
     label = "Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BundledQuantity__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__BundledQuantity__c"
@@ -109,9 +91,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Bundled__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Bundled__c"
@@ -121,9 +100,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited."
     label = "Bundled"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ComponentCost__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentCost__c"
@@ -134,9 +110,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ComponentDiscountedByPackage__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentDiscountedByPackage__c"
@@ -146,9 +119,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Fixes additional discount for this component to the parent package discount."
     label = "Component Discounted By Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ComponentListTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentListTotal__c"
@@ -159,9 +129,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ComponentSubscriptionScope__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentSubscriptionScope__c"
@@ -194,9 +161,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ComponentTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentTotal__c"
@@ -207,9 +171,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ComponentUpliftedByPackage__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentUpliftedByPackage__c"
@@ -219,9 +180,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Fixes uplift for this component to the parent package uplift. Uplift only applies to multi-segmented products."
     label = "Component Uplifted By Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ComponentVisibility__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ComponentVisibility__c"
@@ -234,9 +192,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -253,9 +208,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 8
     scale = 3
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ConfigurationRequired__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ConfigurationRequired__c"
@@ -265,9 +217,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Select the checkbox if the quote line requires configuration. Can be used by custom code to request this product be re-configured."
     label = "Configuration Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ContractedPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ContractedPrice__c"
@@ -282,9 +231,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__CostEditable__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__CostEditable__c"
@@ -294,9 +240,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     inlineHelpText = "Specifies whether cost can be edited on this line item."
     label = "Cost Editable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Cost__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Cost__c"
@@ -311,9 +254,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Web Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__CustomerPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__CustomerPrice__c"
@@ -324,9 +264,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__CustomerTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__CustomerTotal__c"
@@ -338,9 +275,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -365,9 +299,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__Description__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Description__c"
@@ -378,9 +309,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     length = 32000
     trackTrending = false
     visibleLines = 15
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Dimension__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Dimension__c"
@@ -395,9 +323,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Web Quote Lines"
     relationshipName = "Web_Quote_Lines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DiscountScheduleType__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__DiscountScheduleType__c"
@@ -420,9 +345,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountSchedule__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__DiscountSchedule__c"
@@ -437,9 +359,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Web Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountTier__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__DiscountTier__c"
@@ -454,9 +373,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Discount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Discount__c"
@@ -467,9 +383,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 11
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__DistributorDiscount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__DistributorDiscount__c"
@@ -480,9 +393,6 @@ type salesforce.SBQQ__WebQuoteLine__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaDate SBQQ__EffectiveEndDate__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__EffectiveEndDate__c"
@@ -498,9 +408,6 @@ IF(ISBLANK(SBQQ__EndDate__c),
     inlineHelpText = "Effective end date for this subscription."
     label = "Effective End Date"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -531,9 +438,6 @@ CASE(SBQQ__PricingMethod__c,
     scale = 2
     trackTrending = false
     unique = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -567,9 +471,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     inlineHelpText = "Effective start date for this subscription."
     label = "Effective Start Date"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -587,9 +488,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     inlineHelpText = "Date the service represented by this line item will end (only applies if product is a subscription)."
     label = "End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Existing__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Existing__c"
@@ -599,9 +497,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     inlineHelpText = "Select the checkbox if the customer already owns this product. This is typically used for products with options during add-on quoting. The product is on the quote solely to drive the Configurator."
     label = "Existing"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__GrossProfit__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__GrossProfit__c"
@@ -612,9 +507,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Hidden__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Hidden__c"
@@ -624,9 +516,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     inlineHelpText = "Select the checkbox to hide this line item from generated PDF."
     label = "Hidden"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Incomplete__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Incomplete__c"
@@ -636,9 +525,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     inlineHelpText = "Select the checbox to apply internal application logic, which controls when rules, such as validation rules, trigger. Do NOT add to page layout or otherwise update."
     label = "Incomplete"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ListPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ListPrice__c"
@@ -649,9 +535,6 @@ IF(ISBLANK(SBQQ__StartDate__c),
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__ListTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ListTotal__c"
@@ -670,9 +553,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -713,9 +593,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__MarkupRate__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__MarkupRate__c"
@@ -726,9 +603,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 8
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__Markup__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Markup__c"
@@ -741,9 +615,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -766,9 +637,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__MinimumPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__MinimumPrice__c"
@@ -779,9 +647,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__NetPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__NetPrice__c"
@@ -792,9 +657,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__NetTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__NetTotal__c"
@@ -806,9 +668,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -830,9 +689,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to indicate if discounts are allowed on this line item."
     label = "Non Discountable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__NonPartnerDiscountable__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__NonPartnerDiscountable__c"
@@ -842,9 +698,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to make this line item non-discountable for partners."
     label = "Non Partner Discountable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Number__c"
@@ -857,9 +710,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__OptionDiscountAmount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__OptionDiscountAmount__c"
@@ -870,9 +720,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 12
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__OptionDiscount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__OptionDiscount__c"
@@ -883,9 +730,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__OptionLevel__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__OptionLevel__c"
@@ -898,9 +742,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__OptionType__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__OptionType__c"
@@ -923,9 +764,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Optional__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Optional__c"
@@ -935,9 +773,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to make this line optional. Optional line items don't contribute to quote totals and are not transferred to the Opportunity."
     label = "Optional"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__PackageCost__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PackageCost__c"
@@ -950,9 +785,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -977,9 +809,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1001,9 +830,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__PackageTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PackageTotal__c"
@@ -1016,9 +842,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1038,9 +861,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__PartnerPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PartnerPrice__c"
@@ -1051,9 +871,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__PartnerTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PartnerTotal__c"
@@ -1065,9 +882,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1089,9 +903,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to indicate that this line item's price is editable."
     label = "Price Editable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__PricingMethodEditable__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PricingMethodEditable__c"
@@ -1101,9 +912,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to specify that the pricing method can be edited on this line item."
     label = "Pricing Method Editable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PricingMethod__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PricingMethod__c"
@@ -1136,9 +944,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__PriorQuantity__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__PriorQuantity__c"
@@ -1151,9 +956,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ProductCode__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ProductCode__c"
@@ -1166,9 +968,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1187,9 +986,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1208,9 +1004,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1231,9 +1024,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Product__c"
@@ -1243,14 +1033,11 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Product quoted by this line item."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Web Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__ProrateMultiplier__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ProrateMultiplier__c"
@@ -1263,9 +1050,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 4
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ProratedListPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ProratedListPrice__c"
@@ -1276,9 +1060,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ProratedPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__ProratedPrice__c"
@@ -1289,9 +1070,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Quantity__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Quantity__c"
@@ -1304,9 +1082,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Quote__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Quote__c"
@@ -1323,9 +1098,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Currency SBQQ__RegularPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__RegularPrice__c"
@@ -1336,9 +1108,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__RegularTotal__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__RegularTotal__c"
@@ -1349,9 +1118,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1373,9 +1139,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Indicates this line item represents a product being renewed. This field should not be modified."
     label = "Renewal"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RenewedAsset__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__RenewedAsset__c"
@@ -1385,14 +1148,11 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Asset being renewed if this line item represents a product renewal."
     label = "Renewed Asset"
     referenceTo = [
-      "Asset",
+      salesforce.Asset,
     ]
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RenewedSubscription__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__RenewedSubscription__c"
@@ -1407,9 +1167,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Web Quote Lines"
     relationshipName = "RenewalWebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RequiredBy__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__RequiredBy__c"
@@ -1424,9 +1181,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SegmentIndex__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SegmentIndex__c"
@@ -1439,9 +1193,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SegmentKey__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SegmentKey__c"
@@ -1454,9 +1205,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SegmentLabel__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SegmentLabel__c"
@@ -1469,9 +1217,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Source__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Source__c"
@@ -1486,9 +1231,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Web Quote Lines (Source)"
     relationshipName = "WebClones"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SpecialPriceDescription__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SpecialPriceDescription__c"
@@ -1501,9 +1243,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SpecialPriceType__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SpecialPriceType__c"
@@ -1536,9 +1275,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__SpecialPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SpecialPrice__c"
@@ -1549,9 +1285,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__StartDate__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__StartDate__c"
@@ -1560,9 +1293,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "The date the subscription for which this product begins."
     label = "Start Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__SubscribedAssetIds__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscribedAssetIds__c"
@@ -1573,9 +1303,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     length = 19000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SubscriptionBase__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionBase__c"
@@ -1588,9 +1315,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionCategory__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionCategory__c"
@@ -1613,9 +1337,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__SubscriptionPercent__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionPercent__c"
@@ -1626,9 +1347,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 7
     scale = 3
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionPricing__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionPricing__c"
@@ -1651,9 +1369,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionScope__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionScope__c"
@@ -1676,9 +1391,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__SubscriptionTargetPrice__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionTargetPrice__c"
@@ -1689,9 +1401,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SubscriptionTerm__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__SubscriptionTerm__c"
@@ -1704,9 +1413,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Taxable__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Taxable__c"
@@ -1716,9 +1422,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Select the checkbox to indicate that the line item is taxable."
     label = "Taxable"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TermDiscountSchedule__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__TermDiscountSchedule__c"
@@ -1733,9 +1436,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Web Quote Lines (Term Discounted)"
     relationshipName = "TermDiscountedWebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TermDiscountTier__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__TermDiscountTier__c"
@@ -1750,9 +1450,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Web Quote Lines (Term Discounted)"
     relationshipName = "TermDiscountedWebQuoteLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__TermDiscount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__TermDiscount__c"
@@ -1763,9 +1460,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCurrency SBQQ__TotalDiscountAmount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__TotalDiscountAmount__c"
@@ -1778,9 +1472,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 18
     scale = 2
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1803,9 +1494,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 16
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__UpgradedAsset__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__UpgradedAsset__c"
@@ -1815,14 +1503,11 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Asset upgraded by this quote line. When the quote is contracted this asset's Usage End Date will be populated to indicate that it's retired."
     label = "Upgraded Asset"
     referenceTo = [
-      "Asset",
+      salesforce.Asset,
     ]
     relationshipLabel = "Web Quote Lines (Upgrade)"
     relationshipName = "UpgradeWebLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__UpgradedSubscription__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__UpgradedSubscription__c"
@@ -1837,9 +1522,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     relationshipLabel = "Web Quote Lines (Upgrade)"
     relationshipName = "UpgradeWebLines"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__UpliftAmount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__UpliftAmount__c"
@@ -1850,9 +1532,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 12
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Uplift__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__Uplift__c"
@@ -1864,9 +1543,6 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 4
     scale = 1
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__VolumeDiscount__c {
     apiName = "SBQQ__WebQuoteLine__c.SBQQ__VolumeDiscount__c"
@@ -1877,8 +1553,5 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

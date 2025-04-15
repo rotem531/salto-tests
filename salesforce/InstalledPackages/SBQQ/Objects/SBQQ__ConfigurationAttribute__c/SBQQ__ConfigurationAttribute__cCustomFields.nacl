@@ -7,9 +7,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Select the checkbox to immediately apply changes to this option. Use sparingly to avoid slow user experience."
     label = "Apply Immediately"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ApplyToProductOptions__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ApplyToProductOptions__c"
@@ -19,9 +16,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Select the checkbox to apply configuration attribute selection to product options."
     label = "Apply To Product Options"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__AutoSelect__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__AutoSelect__c"
@@ -31,9 +25,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Set the value of this attribute when adding a product from a Dynamic Feature using the value of the added product's matching field."
     label = "Auto-Select"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ColumnOrder__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ColumnOrder__c"
@@ -61,9 +52,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__DefaultField__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DefaultField__c"
@@ -76,9 +64,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DefaultObject__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DefaultObject__c"
@@ -101,9 +86,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DisplayOrder__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__DisplayOrder__c"
@@ -116,9 +98,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Feature__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Feature__c"
@@ -144,9 +123,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     relationshipLabel = "Configuration Attributes"
     relationshipName = "ConfigurationAttributes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__Global__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Global__c"
@@ -156,9 +132,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Indicates if this attribute has a global target field."
     label = "Global"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -175,9 +148,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     length = 5000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Hidden__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Hidden__c"
@@ -187,9 +157,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "If flagged as hidden, the Configuration Attribute will not appear on the Product Configurator Page."
     label = "Hidden"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Position__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Position__c"
@@ -212,9 +179,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Product__c"
@@ -224,14 +188,11 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Specify product on which you are creating the attribute."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Configuration Attributes"
     relationshipName = "ConfigurationAttributes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Required__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__Required__c"
@@ -241,9 +202,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     inlineHelpText = "Specify whether this attribute requires a value."
     label = "Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__ShownValues__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__ShownValues__c"
@@ -254,9 +212,6 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     length = 5000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TargetField__c {
     apiName = "SBQQ__ConfigurationAttribute__c.SBQQ__TargetField__c"
@@ -284,8 +239,5 @@ type salesforce.SBQQ__ConfigurationAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

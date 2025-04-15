@@ -8,9 +8,6 @@ type salesforce.SBQQ__DiscountTier__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Discount__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__Discount__c"
@@ -21,9 +18,6 @@ type salesforce.SBQQ__DiscountTier__c {
     precision = 14
     scale = 10
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__LowerBound__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__LowerBound__c"
@@ -36,9 +30,6 @@ type salesforce.SBQQ__DiscountTier__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__Number__c"
@@ -51,9 +42,6 @@ type salesforce.SBQQ__DiscountTier__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__Price__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__Price__c"
@@ -64,9 +52,6 @@ type salesforce.SBQQ__DiscountTier__c {
     precision = 18
     scale = 7
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Schedule__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__Schedule__c"
@@ -83,9 +68,6 @@ type salesforce.SBQQ__DiscountTier__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Number SBQQ__UpperBound__c {
     apiName = "SBQQ__DiscountTier__c.SBQQ__UpperBound__c"
@@ -98,8 +80,5 @@ type salesforce.SBQQ__DiscountTier__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -20,9 +20,6 @@ type salesforce.SBQQ__ProductAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FilterValue__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__FilterValue__c"
@@ -35,9 +32,6 @@ type salesforce.SBQQ__ProductAction__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__Operator__c"
@@ -70,9 +64,6 @@ type salesforce.SBQQ__ProductAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__ParentRuleIsActive__c"
@@ -81,9 +72,6 @@ type salesforce.SBQQ__ProductAction__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "ParentRuleIsActive"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -99,14 +87,11 @@ type salesforce.SBQQ__ProductAction__c {
     inlineHelpText = "Choose the product to be automatically selected on the quote. Note: The product rule Type must be set to \"Selection\"."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Product Actions"
     relationshipName = "ProductActions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Required__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__Required__c"
@@ -116,9 +101,6 @@ type salesforce.SBQQ__ProductAction__c {
     inlineHelpText = "Select if you want the product in the Product Lookup field to be selected on the quote."
     label = "Required"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Rule__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__Rule__c"
@@ -135,9 +117,6 @@ type salesforce.SBQQ__ProductAction__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__Type__c"
@@ -210,9 +189,6 @@ type salesforce.SBQQ__ProductAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ValueAttribute__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__ValueAttribute__c"
@@ -238,9 +214,6 @@ type salesforce.SBQQ__ProductAction__c {
     relationshipLabel = "Product Actions"
     relationshipName = "ProductActions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ValueField__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__ValueField__c"
@@ -258,9 +231,6 @@ type salesforce.SBQQ__ProductAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ValueObject__c {
     apiName = "SBQQ__ProductAction__c.SBQQ__ValueObject__c"
@@ -288,8 +258,5 @@ type salesforce.SBQQ__ProductAction__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

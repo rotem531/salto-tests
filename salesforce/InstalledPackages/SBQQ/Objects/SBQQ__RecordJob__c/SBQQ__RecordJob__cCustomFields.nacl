@@ -7,9 +7,6 @@ type salesforce.SBQQ__RecordJob__c {
     inlineHelpText = "If checked the user has been alerted of the record job's finished status."
     label = "Is Read"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__JobDetails__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__JobDetails__c"
@@ -20,9 +17,6 @@ type salesforce.SBQQ__RecordJob__c {
     length = 4000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__JobId__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__JobId__c"
@@ -34,9 +28,6 @@ type salesforce.SBQQ__RecordJob__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__JobStatus__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__JobStatus__c"
@@ -49,9 +40,6 @@ type salesforce.SBQQ__RecordJob__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__RecordId__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__RecordId__c"
@@ -63,9 +51,6 @@ type salesforce.SBQQ__RecordJob__c {
     length = 80
     trackTrending = false
     unique = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__RedirectUrl__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__RedirectUrl__c"
@@ -76,9 +61,6 @@ type salesforce.SBQQ__RecordJob__c {
     length = 2000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Stacktrace__c {
     apiName = "SBQQ__RecordJob__c.SBQQ__Stacktrace__c"
@@ -89,8 +71,5 @@ type salesforce.SBQQ__RecordJob__c {
     length = 4000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

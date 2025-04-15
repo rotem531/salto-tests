@@ -1,0 +1,13 @@
+salesforce.CustomTab test_err {
+  fullName = "test_err"
+  description = "Created by Lightning App Builder"
+  flexiPage = "test_err"
+  label = "test err"
+  motif = "Custom3: Sun"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.test_err
+    },
+  ]
+  _alias = "test err"
+}

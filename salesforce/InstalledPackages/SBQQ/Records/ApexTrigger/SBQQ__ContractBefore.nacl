@@ -15,5 +15,8 @@ salesforce.ApexTrigger SBQQ__ContractBefore {
     "UsageBeforeInsert",
     "UsageBeforeUpdate",
   ]
+  _parent = [
+    salesforce.Contract,
+  ]
   _alias = "SBQQ__ContractBefore"
 }

@@ -7,9 +7,6 @@ type salesforce.SBQQ__QuoteProcess__c {
     inlineHelpText = "Select the checkbox to default the quote process selector to this process in Line Editor. This only applies when quote process selector is rendered as a picklist."
     label = "Default"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__GuidedOnly__c {
     apiName = "SBQQ__QuoteProcess__c.SBQQ__GuidedOnly__c"
@@ -19,9 +16,6 @@ type salesforce.SBQQ__QuoteProcess__c {
     inlineHelpText = "Select the checkbox if you want quotes covered by this process forced into guided product selection; otherwise, this defaults to ad-hoc filtering."
     label = "Guided Only"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ProductAutoSelected__c {
     apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductAutoSelected__c"
@@ -31,9 +25,6 @@ type salesforce.SBQQ__QuoteProcess__c {
     inlineHelpText = "Select the checkbox to determine whether the product is auto selected if it's the only one returned by a search."
     label = "Auto Select Product?"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ProductConfigurationInitializer__c {
     apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductConfigurationInitializer__c"
@@ -46,9 +37,6 @@ type salesforce.SBQQ__QuoteProcess__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ProductSearchExecutor__c {
     apiName = "SBQQ__QuoteProcess__c.SBQQ__ProductSearchExecutor__c"
@@ -61,9 +49,6 @@ type salesforce.SBQQ__QuoteProcess__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SortOrder__c {
     apiName = "SBQQ__QuoteProcess__c.SBQQ__SortOrder__c"
@@ -76,8 +61,5 @@ type salesforce.SBQQ__QuoteProcess__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

@@ -15,9 +15,6 @@ type salesforce.SBQQ__PriceCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__FilterFormula__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__FilterFormula__c"
@@ -28,9 +25,6 @@ type salesforce.SBQQ__PriceCondition__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FilterType__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__FilterType__c"
@@ -58,9 +52,6 @@ type salesforce.SBQQ__PriceCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__FilterVariable__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__FilterVariable__c"
@@ -75,9 +66,6 @@ type salesforce.SBQQ__PriceCondition__c {
     relationshipLabel = "Filtered Price Conditions"
     relationshipName = "FilteredPriceConditions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Index__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__Index__c"
@@ -90,9 +78,6 @@ type salesforce.SBQQ__PriceCondition__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Object__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__Object__c"
@@ -130,9 +115,6 @@ type salesforce.SBQQ__PriceCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__Operator__c"
@@ -190,9 +172,6 @@ type salesforce.SBQQ__PriceCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__ParentRuleIsActive__c"
@@ -201,9 +180,6 @@ type salesforce.SBQQ__PriceCondition__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "ParentRuleIsActive"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -218,9 +194,6 @@ type salesforce.SBQQ__PriceCondition__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "RuleTargetsCalculator"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -243,9 +216,6 @@ type salesforce.SBQQ__PriceCondition__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__TestedFormula__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__TestedFormula__c"
@@ -256,9 +226,6 @@ type salesforce.SBQQ__PriceCondition__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TestedVariable__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__TestedVariable__c"
@@ -273,9 +240,6 @@ type salesforce.SBQQ__PriceCondition__c {
     relationshipLabel = "Price Conditions (Tested Variable)"
     relationshipName = "TestedPriceConditions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Value__c {
     apiName = "SBQQ__PriceCondition__c.SBQQ__Value__c"
@@ -288,8 +252,5 @@ type salesforce.SBQQ__PriceCondition__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

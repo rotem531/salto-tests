@@ -1,0 +1,96 @@
+type salesforce.AccountBrand {
+  salesforce.Lookup AccountId {
+    apiName = "AccountBrand.AccountId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Account"
+  }
+  salesforce.Text CompanyName {
+    apiName = "AccountBrand.CompanyName"
+    label = "Company Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Email Email {
+    apiName = "AccountBrand.Email"
+    label = "Email"
+    unique = false
+  }
+  salesforce.Lookup LogoId {
+    apiName = "AccountBrand.LogoId"
+    label = "Asset File ID"
+    relationshipName = "Logo"
+  }
+  salesforce.Text Name {
+    apiName = "AccountBrand.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "AccountBrand.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Phone Phone {
+    apiName = "AccountBrand.Phone"
+    label = "Phone"
+  }
+  salesforce.Url Website {
+    apiName = "AccountBrand.Website"
+    label = "Website"
+  }
+  serviceid Id {
+    apiName = "AccountBrand.Id"
+    label = "Account Brand Id"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "AccountBrand.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "AccountBrand.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "AccountBrand.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "AccountBrand.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "AccountBrand.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "AccountBrand.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Address Address {
+    apiName = "AccountBrand.Address"
+    label = "Address"
+    _hidden_value = true
+  }
+  salesforce.Url LogoUrl {
+    apiName = "AccountBrand.LogoUrl"
+    label = "Logo URL"
+    _hidden_value = true
+  }
+}

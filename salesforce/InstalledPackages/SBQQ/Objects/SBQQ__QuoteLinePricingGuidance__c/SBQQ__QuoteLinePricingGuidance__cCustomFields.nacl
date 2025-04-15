@@ -8,9 +8,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     length = 131072
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Floor__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__Floor__c"
@@ -21,9 +18,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__GuidanceUsed__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__GuidanceUsed__c"
@@ -33,9 +27,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     inlineHelpText = "A sales rep has accepted the target discount from this pricing guidance in the quote line editor."
     label = "Guidance Used"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -50,9 +41,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     description = "A sales rep has viewed this pricing guidance in the quote line editor."
     label = "Viewed"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Norm__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__Norm__c"
@@ -63,9 +51,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__QuoteLine__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__QuoteLine__c"
@@ -82,9 +67,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Lookup SBQQ__Quote__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__Quote__c"
@@ -99,9 +81,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     relationshipLabel = "Quote Line Pricing Guidance"
     relationshipName = "QuoteLinePricingGuidance"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Target__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SBQQ__Target__c"
@@ -112,8 +91,5 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

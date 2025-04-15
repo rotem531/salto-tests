@@ -1,0 +1,98 @@
+type salesforce.PartnerFundAllocation {
+  salesforce.Currency Amount {
+    apiName = "PartnerFundAllocation.Amount"
+    label = "Amount"
+    _required = true
+    scale = 2
+    precision = 18
+  }
+  salesforce.Lookup BudgetId {
+    apiName = "PartnerFundAllocation.BudgetId"
+    label = "Partner Marketing Budget ID"
+    _required = true
+    relationshipName = "Budget"
+  }
+  salesforce.Lookup ChannelPartnerId {
+    apiName = "PartnerFundAllocation.ChannelPartnerId"
+    label = "Channel Partner ID"
+    relationshipName = "ChannelPartner"
+  }
+  salesforce.TextArea Description {
+    apiName = "PartnerFundAllocation.Description"
+    label = "Description"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PartnerFundAllocation.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Text Title {
+    apiName = "PartnerFundAllocation.Title"
+    label = "Partner Fund Allocation Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Currency TotalApprovedFcs {
+    apiName = "PartnerFundAllocation.TotalApprovedFcs"
+    label = "Total Approved Fund Claims"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalApprovedFrs {
+    apiName = "PartnerFundAllocation.TotalApprovedFrs"
+    label = "Total Approved Fund Requests"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalReimbursedFcs {
+    apiName = "PartnerFundAllocation.TotalReimbursedFcs"
+    label = "Total Reimbursed Fund Claims"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "PartnerFundAllocation.Id"
+    label = "Partner Fund Allocation ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PartnerFundAllocation.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PartnerFundAllocation.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PartnerFundAllocation.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PartnerFundAllocation.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PartnerFundAllocation.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PartnerFundAllocation.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

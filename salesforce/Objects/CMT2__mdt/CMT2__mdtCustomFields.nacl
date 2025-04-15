@@ -1,0 +1,10 @@
+type salesforce.CMT2__mdt {
+  salesforce.Text test_text__c {
+    apiName = "CMT2__mdt.test_text__c"
+    externalId = false
+    fieldManageability = "DeveloperControlled"
+    label = "test text"
+    length = 32
+    unique = false
+  }
+}

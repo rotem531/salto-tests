@@ -14,5 +14,8 @@ salesforce.ApexTrigger SBQQ__ProductConsumptionScheduleBefore {
     "UsageBeforeInsert",
     "UsageBeforeUpdate",
   ]
+  _parent = [
+    salesforce.ProductConsumptionSchedule,
+  ]
   _alias = "SBQQ__ProductConsumptionScheduleBefore"
 }

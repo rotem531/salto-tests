@@ -20,9 +20,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ApplyToProductOptions__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__ApplyToProductOptions__c"
@@ -45,9 +42,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__AttributeSet__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__AttributeSet__c"
@@ -60,9 +54,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     relationshipLabel = "Attribute Items"
     relationshipName = "Product_Attributes"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Attribute__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__Attribute__c"
@@ -91,9 +82,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__AutoSelect__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__AutoSelect__c"
@@ -116,9 +104,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__HiddenValues__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__HiddenValues__c"
@@ -129,9 +114,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     length = 5000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Hidden__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__Hidden__c"
@@ -154,9 +136,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Required__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__Required__c"
@@ -179,9 +158,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Sequence__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__Sequence__c"
@@ -193,9 +169,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__ShownValues__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__ShownValues__c"
@@ -206,9 +179,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     length = 5000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__TargetField__c {
     apiName = "SBQQ__ProductAttribute__c.SBQQ__TargetField__c"
@@ -220,9 +190,6 @@ type salesforce.SBQQ__ProductAttribute__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {

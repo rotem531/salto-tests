@@ -11,9 +11,6 @@ type salesforce.SBQQ__FieldMetadata__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__ObjectName__c {
     apiName = "SBQQ__FieldMetadata__c.SBQQ__ObjectName__c"
@@ -27,8 +24,5 @@ type salesforce.SBQQ__FieldMetadata__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

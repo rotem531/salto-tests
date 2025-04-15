@@ -16,5 +16,8 @@ salesforce.ApexTrigger SBQQ__ProductConsumptionScheduleAfter {
     "UsageAfterUpdate",
     "UsageAfterUndelete",
   ]
+  _parent = [
+    salesforce.ProductConsumptionSchedule,
+  ]
   _alias = "SBQQ__ProductConsumptionScheduleAfter"
 }

@@ -10,9 +10,6 @@ type salesforce.SBQQ__Localization__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Description__c {
     apiName = "SBQQ__Localization__c.SBQQ__Description__c"
@@ -25,9 +22,6 @@ type salesforce.SBQQ__Localization__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Label__c {
     apiName = "SBQQ__Localization__c.SBQQ__Label__c"
@@ -40,9 +34,6 @@ type salesforce.SBQQ__Localization__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Language__c {
     apiName = "SBQQ__Localization__c.SBQQ__Language__c"
@@ -55,9 +46,6 @@ type salesforce.SBQQ__Localization__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__LineColumn__c {
     apiName = "SBQQ__Localization__c.SBQQ__LineColumn__c"
@@ -72,9 +60,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__LongTextArea__c {
     apiName = "SBQQ__Localization__c.SBQQ__LongTextArea__c"
@@ -85,9 +70,6 @@ type salesforce.SBQQ__Localization__c {
     length = 32768
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__PriceDimension__c {
     apiName = "SBQQ__Localization__c.SBQQ__PriceDimension__c"
@@ -102,9 +84,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ProductFeature__c {
     apiName = "SBQQ__Localization__c.SBQQ__ProductFeature__c"
@@ -119,9 +98,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ProductOption__c {
     apiName = "SBQQ__Localization__c.SBQQ__ProductOption__c"
@@ -136,9 +112,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__Localization__c.SBQQ__Product__c"
@@ -148,14 +121,11 @@ type salesforce.SBQQ__Localization__c {
     inlineHelpText = "The product related to this content."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteTemplate__c {
     apiName = "SBQQ__Localization__c.SBQQ__QuoteTemplate__c"
@@ -170,9 +140,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteTerm__c {
     apiName = "SBQQ__Localization__c.SBQQ__QuoteTerm__c"
@@ -187,9 +154,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__RichTextArea__c {
     apiName = "SBQQ__Localization__c.SBQQ__RichTextArea__c"
@@ -200,9 +164,6 @@ type salesforce.SBQQ__Localization__c {
     length = 32768
     trackTrending = false
     visibleLines = 25
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TemplateContent__c {
     apiName = "SBQQ__Localization__c.SBQQ__TemplateContent__c"
@@ -217,9 +178,6 @@ type salesforce.SBQQ__Localization__c {
     relationshipLabel = "Localizations"
     relationshipName = "Localizations"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.TextArea SBQQ__TextArea__c {
     apiName = "SBQQ__Localization__c.SBQQ__TextArea__c"
@@ -228,9 +186,6 @@ type salesforce.SBQQ__Localization__c {
     inlineHelpText = "This field stores translations for Text Area fields."
     label = "Text Area"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Text__c {
     apiName = "SBQQ__Localization__c.SBQQ__Text__c"
@@ -243,9 +198,6 @@ type salesforce.SBQQ__Localization__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__UserDefined__c {
     apiName = "SBQQ__Localization__c.SBQQ__UserDefined__c"
@@ -255,8 +207,5 @@ type salesforce.SBQQ__Localization__c {
     inlineHelpText = "To indicate whether this field is user-defined or not."
     label = "User Defined"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

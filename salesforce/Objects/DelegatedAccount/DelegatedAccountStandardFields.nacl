@@ -1,0 +1,77 @@
+type salesforce.DelegatedAccount {
+  salesforce.Lookup ManagedById {
+    apiName = "DelegatedAccount.ManagedById"
+    label = "User ID"
+    _required = true
+    relationshipName = "ManagedBy"
+  }
+  salesforce.Text Name {
+    apiName = "DelegatedAccount.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DelegatedAccount.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup TargetId {
+    apiName = "DelegatedAccount.TargetId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Target"
+  }
+  serviceid Id {
+    apiName = "DelegatedAccount.Id"
+    label = "External Managed Account ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DelegatedAccount.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DelegatedAccount.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DelegatedAccount.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DelegatedAccount.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DelegatedAccount.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DelegatedAccount.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Checkbox AccessManageUsers {
+    apiName = "DelegatedAccount.AccessManageUsers"
+    label = "Allows user to manage users in delegated accounts"
+  }
+  salesforce.Lookup ParentId {
+    apiName = "DelegatedAccount.ParentId"
+    label = "Account ID"
+    relationshipName = "Parent"
+    _hidden_value = true
+  }
+}

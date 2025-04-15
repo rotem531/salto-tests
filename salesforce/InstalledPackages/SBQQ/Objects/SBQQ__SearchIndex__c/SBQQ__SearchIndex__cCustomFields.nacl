@@ -10,9 +10,6 @@ type salesforce.SBQQ__SearchIndex__c {
     relationshipLabel = "Search Index"
     relationshipName = "Search_Index"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__Value__c {
     apiName = "SBQQ__SearchIndex__c.SBQQ__Value__c"
@@ -21,8 +18,5 @@ type salesforce.SBQQ__SearchIndex__c {
     length = 130000
     trackTrending = false
     visibleLines = 3
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

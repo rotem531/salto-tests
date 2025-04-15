@@ -1,0 +1,32 @@
+salesforce.WorkflowAlert Account_another_test_email@vuu {
+  fullName = "Account.another_test_email"
+  ccEmails = [
+    "rotem.cohen@salto.io",
+  ]
+  description = "another test email"
+  protected = false
+  recipients = [
+    {
+      recipient = "appa@als.com"
+      type = "user"
+    },
+    {
+      recipient = "insightssecurity@00dd2000004wtn4eac.com"
+      type = "user"
+    },
+    {
+      recipient = "integration@00dd2000004wtn4eac.com"
+      type = "user"
+    },
+    {
+      recipient = "sf-dev2@sf.sf"
+      type = "user"
+    },
+  ]
+  senderType = "CurrentUser"
+  template = salesforce.EmailTemplate.instance.unfiled_public_SalesforceSchedulerCancelApptEmailTemplate@zcd
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account.another_test_email"
+}

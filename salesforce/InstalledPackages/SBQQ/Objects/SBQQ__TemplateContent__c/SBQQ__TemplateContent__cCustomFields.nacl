@@ -6,9 +6,6 @@ type salesforce.SBQQ__TemplateContent__c {
     inlineHelpText = "URL to a VisualForce page that generates content when type is set to \"Custom\"."
     label = "Custom Source"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__FontFamily__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__FontFamily__c"
@@ -121,9 +118,6 @@ type salesforce.SBQQ__TemplateContent__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__FontSize__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__FontSize__c"
@@ -136,9 +130,6 @@ type salesforce.SBQQ__TemplateContent__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__Markup__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__Markup__c"
@@ -149,9 +140,6 @@ type salesforce.SBQQ__TemplateContent__c {
     length = 32000
     trackTrending = false
     visibleLines = 25
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.LongTextArea SBQQ__RawMarkup__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__RawMarkup__c"
@@ -162,9 +150,6 @@ type salesforce.SBQQ__TemplateContent__c {
     length = 32000
     trackTrending = false
     visibleLines = 5
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TableStyle__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__TableStyle__c"
@@ -192,9 +177,6 @@ type salesforce.SBQQ__TemplateContent__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__TextColor__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__TextColor__c"
@@ -207,9 +189,6 @@ type salesforce.SBQQ__TemplateContent__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__TemplateContent__c.SBQQ__Type__c"
@@ -242,8 +221,5 @@ type salesforce.SBQQ__TemplateContent__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

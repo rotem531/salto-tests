@@ -7,9 +7,6 @@ type salesforce.SBQQ__FieldSetMetadata__c {
     inlineHelpText = "If the user does not have a configuration."
     label = "Default"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FieldSetValidation__c {
     apiName = "SBQQ__FieldSetMetadata__c.SBQQ__FieldSetValidation__c"
@@ -20,9 +17,6 @@ type salesforce.SBQQ__FieldSetMetadata__c {
     length = 255
     trackTrending = false
     unique = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FieldSet__c {
     apiName = "SBQQ__FieldSetMetadata__c.SBQQ__FieldSet__c"
@@ -35,9 +29,6 @@ type salesforce.SBQQ__FieldSetMetadata__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ObjectType__c {
     apiName = "SBQQ__FieldSetMetadata__c.SBQQ__ObjectType__c"
@@ -55,8 +46,5 @@ type salesforce.SBQQ__FieldSetMetadata__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

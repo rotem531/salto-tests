@@ -1,0 +1,57 @@
+salesforce.LightningPage test_err2 {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "enableInlineEdit"
+                value = "true"
+              },
+              {
+                name = "entityName"
+                value = "ApiAnomalyEventStore"
+              },
+              {
+                name = "filterName"
+                value = "All"
+              },
+              {
+                name = "hideActionBar"
+                value = "false"
+              },
+              {
+                name = "hideSearchBar"
+                value = "false"
+              },
+              {
+                name = "pageSize"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:filterListCard"
+            identifier = "flexipage_filterListCard"
+          }
+        },
+      ]
+      name = "region1"
+      type = "Region"
+    },
+    {
+      name = "region2"
+      type = "Region"
+    },
+    {
+      name = "region3"
+      type = "Region"
+    },
+  ]
+  masterLabel = "test err2"
+  template = {
+    name = "flexipage:appHomeTemplateHeaderTwoColumnsLeftSidebar"
+  }
+  type = "AppPage"
+  fullName = "test_err2"
+  _alias = "test_err2"
+}

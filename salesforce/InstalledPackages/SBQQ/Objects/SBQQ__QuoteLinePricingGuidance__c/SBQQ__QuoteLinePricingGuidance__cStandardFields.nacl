@@ -9,9 +9,6 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.IsDeleted"
     label = "Deleted"
     defaultValue = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Text Name {
@@ -20,50 +17,32 @@ type salesforce.SBQQ__QuoteLinePricingGuidance__c {
     length = 80
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.CreatedDate"
     label = "Created Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.CreatedById"
     label = "Created By ID"
     relationshipName = "CreatedBy"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.LastModifiedDate"
     label = "Last Modified Date"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.LastModifiedById"
     label = "Last Modified By ID"
     relationshipName = "LastModifiedBy"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "SBQQ__QuoteLinePricingGuidance__c.SystemModstamp"
     label = "System Modstamp"
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
   }
 }

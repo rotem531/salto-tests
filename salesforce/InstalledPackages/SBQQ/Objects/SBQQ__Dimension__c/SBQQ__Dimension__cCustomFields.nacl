@@ -25,9 +25,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__DefaultQuantity__c {
     apiName = "SBQQ__Dimension__c.SBQQ__DefaultQuantity__c"
@@ -40,9 +37,6 @@ type salesforce.SBQQ__Dimension__c {
     scale = 5
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountSchedule__c {
     apiName = "SBQQ__Dimension__c.SBQQ__DiscountSchedule__c"
@@ -57,9 +51,6 @@ type salesforce.SBQQ__Dimension__c {
     relationshipLabel = "Price Dimensions"
     relationshipName = "Dimensions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__NonDiscountable__c {
     apiName = "SBQQ__Dimension__c.SBQQ__NonDiscountable__c"
@@ -87,9 +78,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__NonPartnerDiscountable__c {
     apiName = "SBQQ__Dimension__c.SBQQ__NonPartnerDiscountable__c"
@@ -117,9 +105,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__PriceBook__c {
     apiName = "SBQQ__Dimension__c.SBQQ__PriceBook__c"
@@ -129,14 +114,11 @@ type salesforce.SBQQ__Dimension__c {
     inlineHelpText = "Associates this dimension to a particular Price Book"
     label = "Price Book"
     referenceTo = [
-      "Pricebook2",
+      salesforce.Pricebook2,
     ]
     relationshipLabel = "Price Dimensions"
     relationshipName = "Price_Dimensions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PriceEditable__c {
     apiName = "SBQQ__Dimension__c.SBQQ__PriceEditable__c"
@@ -164,9 +146,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__Dimension__c.SBQQ__Product__c"
@@ -176,14 +155,11 @@ type salesforce.SBQQ__Dimension__c {
     inlineHelpText = "Select a Product to associate this Price Dimension with."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Price Dimensions"
     relationshipName = "Dimensions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__QuantityEditable__c {
     apiName = "SBQQ__Dimension__c.SBQQ__QuantityEditable__c"
@@ -211,9 +187,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__QuantityScale__c {
     apiName = "SBQQ__Dimension__c.SBQQ__QuantityScale__c"
@@ -226,9 +199,6 @@ type salesforce.SBQQ__Dimension__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Taxable__c {
     apiName = "SBQQ__Dimension__c.SBQQ__Taxable__c"
@@ -256,9 +226,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TermDiscountSchedule__c {
     apiName = "SBQQ__Dimension__c.SBQQ__TermDiscountSchedule__c"
@@ -273,9 +240,6 @@ type salesforce.SBQQ__Dimension__c {
     relationshipLabel = "Price Dimensions (Term Discount Schedule)"
     relationshipName = "TermDiscountedDimensions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Type__c {
     apiName = "SBQQ__Dimension__c.SBQQ__Type__c"
@@ -313,9 +277,6 @@ type salesforce.SBQQ__Dimension__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__UnitPrice__c {
     apiName = "SBQQ__Dimension__c.SBQQ__UnitPrice__c"
@@ -326,8 +287,5 @@ type salesforce.SBQQ__Dimension__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

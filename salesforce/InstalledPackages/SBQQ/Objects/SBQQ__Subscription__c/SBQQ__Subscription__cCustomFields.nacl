@@ -7,14 +7,11 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Account that owns this subscription. This relationship is used for volume discount calculations."
     label = "Account"
     referenceTo = [
-      "Account",
+      salesforce.Account,
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__AdditionalDiscountAmount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__AdditionalDiscountAmount__c"
@@ -25,9 +22,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__BillingFrequency__c {
     apiName = "SBQQ__Subscription__c.SBQQ__BillingFrequency__c"
@@ -38,9 +32,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingFrequency
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__BillingType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__BillingType__c"
@@ -51,9 +42,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__BillingType
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Bundle__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Bundle__c"
@@ -63,9 +51,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Indicates whether this line item represents a package; meaning, it includes other line items in this quote."
     label = "Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__BundledQuantity__c {
     apiName = "SBQQ__Subscription__c.SBQQ__BundledQuantity__c"
@@ -78,9 +63,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__Bundled__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Bundled__c"
@@ -90,9 +72,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Indicates the product on this line item is bundled (included) by another product in this quote. Bundled lines items have a zero price and do not allow price or quantity to be edited."
     label = "Bundled"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ChargeType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ChargeType__c"
@@ -103,9 +82,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__ChargeType
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ComponentDiscountedByPackage__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ComponentDiscountedByPackage__c"
@@ -115,9 +91,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Fixes additional discount for this component to the parent package discount."
     label = "Component Discounted By Package"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ComponentSubscriptionScope__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ComponentSubscriptionScope__c"
@@ -150,9 +123,6 @@ type salesforce.SBQQ__Subscription__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ContractNumber__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ContractNumber__c"
@@ -165,9 +135,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -183,14 +150,11 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Contract that governs this subscription."
     label = "Contract"
     referenceTo = [
-      "Contract",
+      salesforce.Contract,
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__CreditProductId__c {
     apiName = "SBQQ__Subscription__c.SBQQ__CreditProductId__c"
@@ -203,9 +167,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -222,9 +183,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__DimensionType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__DimensionType__c"
@@ -236,9 +194,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -259,9 +214,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__DiscountScheduleType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__DiscountScheduleType__c"
@@ -284,9 +236,6 @@ type salesforce.SBQQ__Subscription__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__DiscountSchedule__c {
     apiName = "SBQQ__Subscription__c.SBQQ__DiscountSchedule__c"
@@ -301,9 +250,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__Discount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Discount__c"
@@ -314,9 +260,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 11
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__DistributorDiscount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__DistributorDiscount__c"
@@ -327,9 +270,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__DynamicOptionId__c {
     apiName = "SBQQ__Subscription__c.SBQQ__DynamicOptionId__c"
@@ -342,9 +282,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaDate SBQQ__EndDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__EndDate__c"
@@ -355,9 +292,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "The last date this contract is valid."
     label = "End Date"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -376,9 +310,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Indicates if this subscription has at least one consumption schedule"
     label = "Has Consumption Schedules"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ListPrice__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ListPrice__c"
@@ -389,9 +320,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__MarkupAmount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__MarkupAmount__c"
@@ -402,9 +330,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__MarkupRate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__MarkupRate__c"
@@ -415,9 +340,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 8
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__NetPrice__c {
     apiName = "SBQQ__Subscription__c.SBQQ__NetPrice__c"
@@ -428,9 +350,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Number__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Number__c"
@@ -443,9 +362,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__OptionDiscountAmount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OptionDiscountAmount__c"
@@ -456,9 +372,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 12
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__OptionDiscount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OptionDiscount__c"
@@ -469,9 +382,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__OptionLevel__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OptionLevel__c"
@@ -484,9 +394,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__OptionType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OptionType__c"
@@ -514,9 +421,6 @@ type salesforce.SBQQ__Subscription__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OrderProduct__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OrderProduct__c"
@@ -526,14 +430,11 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "The order product where this subscription is generated from."
     label = "Order Product"
     referenceTo = [
-      "OrderItem",
+      salesforce.OrderItem,
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OriginalQuoteLine__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OriginalQuoteLine__c"
@@ -548,9 +449,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Quote Lines (Derived)"
     relationshipName = "OriginalQuoteLine"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__OriginalUnitCost__c {
     apiName = "SBQQ__Subscription__c.SBQQ__OriginalUnitCost__c"
@@ -561,9 +459,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__PackageProductCode__c {
     apiName = "SBQQ__Subscription__c.SBQQ__PackageProductCode__c"
@@ -576,9 +471,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Html SBQQ__PackageProductDescription__c {
     apiName = "SBQQ__Subscription__c.SBQQ__PackageProductDescription__c"
@@ -589,9 +481,6 @@ type salesforce.SBQQ__Subscription__c {
     length = 32000
     trackTrending = false
     visibleLines = 25
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__PartnerDiscount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__PartnerDiscount__c"
@@ -602,9 +491,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 5
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PricingMethod__c {
     apiName = "SBQQ__Subscription__c.SBQQ__PricingMethod__c"
@@ -642,9 +528,6 @@ type salesforce.SBQQ__Subscription__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ProductId__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ProductId__c"
@@ -657,9 +540,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -679,9 +559,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -702,9 +579,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__ProductSubscriptionType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ProductSubscriptionType__c"
@@ -715,9 +589,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Product__c"
@@ -727,14 +598,11 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Product used to sell this subscription."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__ProrateMultiplier__c {
     apiName = "SBQQ__Subscription__c.SBQQ__ProrateMultiplier__c"
@@ -747,9 +615,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 4
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Quantity__c {
     apiName = "SBQQ__Subscription__c.SBQQ__Quantity__c"
@@ -763,9 +628,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteLine__c {
     apiName = "SBQQ__Subscription__c.SBQQ__QuoteLine__c"
@@ -780,9 +642,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__RegularPrice__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RegularPrice__c"
@@ -793,9 +652,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__RenewalPrice__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RenewalPrice__c"
@@ -806,9 +662,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__RenewalProductId__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RenewalProductId__c"
@@ -821,9 +674,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -841,9 +691,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -861,9 +708,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -881,9 +725,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -902,9 +743,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__RenewalUpliftRate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RenewalUpliftRate__c"
@@ -915,9 +753,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 11
     scale = 3
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__RenewedDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RenewedDate__c"
@@ -926,9 +761,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Date this subscription was renewed. Blank means it has not been renewed."
     label = "Renewed Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__RequiredById__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RequiredById__c"
@@ -941,9 +773,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RequiredByProduct__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RequiredByProduct__c"
@@ -953,14 +782,11 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Parent Product of this subscription."
     label = "Parent Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Child Subscriptions"
     relationshipName = "ChildSubscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__RevisedSubscription__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RevisedSubscription__c"
@@ -974,9 +800,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions"
     relationshipName = "Revisions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__RootId__c {
     apiName = "SBQQ__Subscription__c.SBQQ__RootId__c"
@@ -989,9 +812,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__SegmentEndDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentEndDate__c"
@@ -1000,9 +820,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "For MDQ products, the End Date from the original segment's Quote Line."
     label = "Segment End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SegmentIndex__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentIndex__c"
@@ -1015,9 +832,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SegmentKey__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentKey__c"
@@ -1028,9 +842,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__SegmentLabel__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentLabel__c"
@@ -1043,9 +854,6 @@ type salesforce.SBQQ__Subscription__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__SegmentQuantity__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentQuantity__c"
@@ -1058,9 +866,6 @@ type salesforce.SBQQ__Subscription__c {
     scale = 2
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__SegmentStartDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentStartDate__c"
@@ -1069,9 +874,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "For MDQ products, the Start Date from the original segment's Quote Line."
     label = "Segment Start Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__SegmentUpliftAmount__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentUpliftAmount__c"
@@ -1082,9 +884,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 12
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Percent SBQQ__SegmentUplift__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SegmentUplift__c"
@@ -1095,9 +894,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 9
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__SpecialPrice__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SpecialPrice__c"
@@ -1108,9 +904,6 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaDate SBQQ__StartDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__StartDate__c"
@@ -1121,9 +914,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "The first date this subscription is in effect."
     label = "Start Date"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -1141,9 +931,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Matches the quote line end date by default. If blank, it will match the contract end date."
     label = "Subscription End Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionPricing__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionPricing__c"
@@ -1166,9 +953,6 @@ type salesforce.SBQQ__Subscription__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__SubscriptionStartDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionStartDate__c"
@@ -1177,9 +961,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Matches the quote line start date by default. If blank, it will match the contract start date."
     label = "Subscription Start Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__SubscriptionType__c {
     apiName = "SBQQ__Subscription__c.SBQQ__SubscriptionType__c"
@@ -1191,7 +972,7 @@ type salesforce.SBQQ__Subscription__c {
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
     fieldDependency = {
-      controllingField = "SBQQ__ProductSubscriptionType__c"
+      controllingField = salesforce.SBQQ__Subscription__c.field.SBQQ__ProductSubscriptionType__c
       valueSettings = [
         {
           valueName = "Renewable"
@@ -1215,9 +996,6 @@ type salesforce.SBQQ__Subscription__c {
         },
       ]
     }
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__TermDiscountSchedule__c {
     apiName = "SBQQ__Subscription__c.SBQQ__TermDiscountSchedule__c"
@@ -1232,9 +1010,6 @@ type salesforce.SBQQ__Subscription__c {
     relationshipLabel = "Subscriptions (Term Discouned)"
     relationshipName = "TermDiscountedSubscriptions"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Date SBQQ__TerminatedDate__c {
     apiName = "SBQQ__Subscription__c.SBQQ__TerminatedDate__c"
@@ -1243,9 +1018,6 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Date the subscription terminated. Automatically populated when covered asset is upgraded."
     label = "Terminated Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__UnitCost__c {
     apiName = "SBQQ__Subscription__c.SBQQ__UnitCost__c"
@@ -1256,8 +1028,5 @@ type salesforce.SBQQ__Subscription__c {
     precision = 14
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

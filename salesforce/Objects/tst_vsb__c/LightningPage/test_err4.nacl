@@ -1,0 +1,61 @@
+salesforce.LightningPage test_err4 {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "enableInlineEdit"
+                value = "true"
+              },
+              {
+                name = "entityName"
+                value = "ApiAnomalyEventStore"
+              },
+              {
+                name = "filterName"
+                value = "All"
+              },
+              {
+                name = "hideActionBar"
+                value = "false"
+              },
+              {
+                name = "hideSearchBar"
+                value = "false"
+              },
+              {
+                name = "pageSize"
+                value = "3"
+              },
+            ]
+            componentName = "flexipage:filterListCard"
+            identifier = "flexipage_filterListCard"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      name = "main"
+      type = "Region"
+    },
+  ]
+  masterLabel = "test err4"
+  sobjectType = "tst_vsb__c"
+  template = {
+    name = "flexipage:recordHomeSimpleViewTemplate"
+    properties = {
+      name = "enablePageActionConfig"
+      value = "false"
+    }
+  }
+  type = "RecordPage"
+  fullName = "test_err4"
+  _parent = [
+    salesforce.tst_vsb__c,
+  ]
+  _alias = "test_err4"
+}

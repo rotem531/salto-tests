@@ -14,9 +14,6 @@ type salesforce.SBQQ__CustomActionCondition__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__Field__c {
     apiName = "SBQQ__CustomActionCondition__c.SBQQ__Field__c"
@@ -34,9 +31,6 @@ type salesforce.SBQQ__CustomActionCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__FilterValue__c {
     apiName = "SBQQ__CustomActionCondition__c.SBQQ__FilterValue__c"
@@ -49,9 +43,6 @@ type salesforce.SBQQ__CustomActionCondition__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__CustomActionCondition__c.SBQQ__Operator__c"
@@ -109,9 +100,6 @@ type salesforce.SBQQ__CustomActionCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__ParentActionIsActive__c {
     apiName = "SBQQ__CustomActionCondition__c.SBQQ__ParentActionIsActive__c"
@@ -120,9 +108,6 @@ type salesforce.SBQQ__CustomActionCondition__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "ParentConditionIsActive"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -157,8 +142,5 @@ type salesforce.SBQQ__CustomActionCondition__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

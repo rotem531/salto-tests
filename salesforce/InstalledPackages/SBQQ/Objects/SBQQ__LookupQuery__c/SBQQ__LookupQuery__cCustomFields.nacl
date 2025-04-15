@@ -15,9 +15,6 @@ type salesforce.SBQQ__LookupQuery__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__MatchType__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__MatchType__c"
@@ -45,9 +42,6 @@ type salesforce.SBQQ__LookupQuery__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__Operator__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__Operator__c"
@@ -90,9 +84,6 @@ type salesforce.SBQQ__LookupQuery__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaCheckbox SBQQ__ParentRuleIsActive__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__ParentRuleIsActive__c"
@@ -101,9 +92,6 @@ type salesforce.SBQQ__LookupQuery__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "ParentRuleIsActive"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -139,9 +127,6 @@ type salesforce.SBQQ__LookupQuery__c {
     relationshipLabel = "Lookup Queries (Price Rule)"
     relationshipName = "PriceRuleLookupQueries"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__ProductRule__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__ProductRule__c"
@@ -156,9 +141,6 @@ type salesforce.SBQQ__LookupQuery__c {
     relationshipLabel = "Lookup Queries (Product Rule)"
     relationshipName = "ProductRuleLookupQueries"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__RuleLookupObject__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__RuleLookupObject__c"
@@ -169,9 +151,6 @@ type salesforce.SBQQ__LookupQuery__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -192,9 +171,6 @@ type salesforce.SBQQ__LookupQuery__c {
     formulaTreatBlanksAs = "BlankAsZero"
     label = "RuleTargetsCalculator"
     trackTrending = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -221,9 +197,6 @@ type salesforce.SBQQ__LookupQuery__c {
     relationshipLabel = "Lookup Queries"
     relationshipName = "LookupQueries"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TestedField__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__TestedField__c"
@@ -241,9 +214,6 @@ type salesforce.SBQQ__LookupQuery__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__TestedObject__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__TestedObject__c"
@@ -271,9 +241,6 @@ type salesforce.SBQQ__LookupQuery__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__TestedValue__c {
     apiName = "SBQQ__LookupQuery__c.SBQQ__TestedValue__c"
@@ -286,8 +253,5 @@ type salesforce.SBQQ__LookupQuery__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

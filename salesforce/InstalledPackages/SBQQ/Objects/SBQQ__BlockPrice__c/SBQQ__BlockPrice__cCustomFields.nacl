@@ -6,9 +6,6 @@ type salesforce.SBQQ__BlockPrice__c {
     inlineHelpText = "The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time."
     label = "Effective Date"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__LowerBound__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__LowerBound__c"
@@ -21,9 +18,6 @@ type salesforce.SBQQ__BlockPrice__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OrderProduct__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__OrderProduct__c"
@@ -33,14 +27,11 @@ type salesforce.SBQQ__BlockPrice__c {
     inlineHelpText = "The order product this Block Price applies to when the order product is created."
     label = "Order Product"
     referenceTo = [
-      "OrderItem",
+      salesforce.OrderItem,
     ]
     relationshipLabel = "Block Price Snapshots"
     relationshipName = "BlockPrice"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__OriginalBlockPrice__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__OriginalBlockPrice__c"
@@ -55,9 +46,6 @@ type salesforce.SBQQ__BlockPrice__c {
     relationshipLabel = "Block Prices"
     relationshipName = "SnapshotBlockPrices"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__PriceBook2__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__PriceBook2__c"
@@ -67,14 +55,11 @@ type salesforce.SBQQ__BlockPrice__c {
     inlineHelpText = "Select the Price Book that should receive block pricing when applicable."
     label = "Price Book"
     referenceTo = [
-      "Pricebook2",
+      salesforce.Pricebook2,
     ]
     relationshipLabel = "Block Prices"
     relationshipName = "BlockPrices"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__Price__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__Price__c"
@@ -85,9 +70,6 @@ type salesforce.SBQQ__BlockPrice__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Product__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__Product__c"
@@ -97,14 +79,11 @@ type salesforce.SBQQ__BlockPrice__c {
     inlineHelpText = "Select the product that should receive block pricing when applicable."
     label = "Product"
     referenceTo = [
-      "Product2",
+      salesforce.Product2,
     ]
     relationshipLabel = "Block Prices"
     relationshipName = "BlockPrices"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__QuoteLine__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__QuoteLine__c"
@@ -119,9 +98,6 @@ type salesforce.SBQQ__BlockPrice__c {
     relationshipLabel = "Block Prices"
     relationshipName = "BlockPrices"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__UpperBound__c {
     apiName = "SBQQ__BlockPrice__c.SBQQ__UpperBound__c"
@@ -134,8 +110,5 @@ type salesforce.SBQQ__BlockPrice__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
 }

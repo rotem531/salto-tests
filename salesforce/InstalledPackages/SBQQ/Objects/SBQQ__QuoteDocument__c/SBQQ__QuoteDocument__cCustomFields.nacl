@@ -10,9 +10,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__CustomerAmount__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__CustomerAmount__c"
@@ -23,9 +20,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__DocumentId__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__DocumentId__c"
@@ -38,9 +32,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Checkbox SBQQ__ElectronicSignature__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__ElectronicSignature__c"
@@ -50,9 +41,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     inlineHelpText = "Field for the document to be signed electronically."
     label = "Electronic Signature"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Key__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__Key__c"
@@ -65,9 +53,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     length = 40
     trackTrending = false
     unique = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__ListAmount__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__ListAmount__c"
@@ -78,9 +63,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Currency SBQQ__NetAmount__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__NetAmount__c"
@@ -91,9 +73,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     precision = 18
     scale = 2
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Lookup SBQQ__Opportunity__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__Opportunity__c"
@@ -103,14 +82,11 @@ type salesforce.SBQQ__QuoteDocument__c {
     inlineHelpText = "Choose the Opportunity that parents the Quote for this document."
     label = "Opportunity"
     referenceTo = [
-      "Opportunity",
+      salesforce.Opportunity,
     ]
     relationshipLabel = "Quote Documents"
     relationshipName = "R00N700000029COgEAM"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__OutputFormat__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__OutputFormat__c"
@@ -133,9 +109,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Picklist SBQQ__PaperSize__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__PaperSize__c"
@@ -146,9 +119,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__PaperSize
     restricted = true
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__PrimaryContactId__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__PrimaryContactId__c"
@@ -161,9 +131,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
@@ -184,9 +151,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     relationshipLabel = "Quote Documents"
     relationshipName = "Quote_Documents"
     trackTrending = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.MasterDetail SBQQ__Quote__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__Quote__c"
@@ -203,9 +167,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     reparentableMasterDetail = false
     trackTrending = false
     writeRequiresMasterRead = false
-    createable = true
-    updateable = false
-    queryable = true
   }
   salesforce.Picklist SBQQ__SignatureStatus__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__SignatureStatus__c"
@@ -243,9 +204,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     ]
     sorted = false
     restricted = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Text SBQQ__Template__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__Template__c"
@@ -258,9 +216,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.Number SBQQ__Version__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__Version__c"
@@ -275,9 +230,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     scale = 0
     trackTrending = false
     unique = false
-    createable = true
-    updateable = true
-    queryable = true
   }
   salesforce.FormulaText SBQQ__ViewRecordId__c {
     apiName = "SBQQ__QuoteDocument__c.SBQQ__ViewRecordId__c"
@@ -291,9 +243,6 @@ type salesforce.SBQQ__QuoteDocument__c {
     trackTrending = false
     unique = false
     caseSensitive = false
-    createable = false
-    updateable = false
-    queryable = true
     _hidden_value = true
     _generated_dependencies = [
       {
