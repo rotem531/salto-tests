@@ -85,7 +85,7 @@ type salesforce.Account {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.Account.field.SBQQ__ContractCoTermination__c
+      controllingField = "SBQQ__ContractCoTermination__c"
       valueSettings = [
         {
           valueName = "Add-on"
@@ -316,7 +316,7 @@ type salesforce.Account {
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.Account.field.picklist_field1__c
+      controllingField = "picklist_field1__c"
       valueSettings = [
         {
           valueName = "b"

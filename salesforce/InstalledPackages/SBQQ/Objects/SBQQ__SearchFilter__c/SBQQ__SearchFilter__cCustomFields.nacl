@@ -48,7 +48,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__FilterSourceObject__c
+      controllingField = "SBQQ__FilterSourceObject__c"
       valueSettings = [
         {
           valueName = "Type"
@@ -111,7 +111,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__HiddenSourceObject__c
+      controllingField = "SBQQ__HiddenSourceObject__c"
       valueSettings = [
         {
           valueName = "Primary"
@@ -252,7 +252,7 @@ type salesforce.SBQQ__SearchFilter__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__SearchFilter__c.field.SBQQ__TargetObject__c
+      controllingField = "SBQQ__TargetObject__c"
       valueSettings = [
         {
           valueName = "Name"

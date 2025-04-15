@@ -972,7 +972,7 @@ type salesforce.SBQQ__Subscription__c {
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.SBQQ__Subscription__c.field.SBQQ__ProductSubscriptionType__c
+      controllingField = "SBQQ__ProductSubscriptionType__c"
       valueSettings = [
         {
           valueName = "Renewable"

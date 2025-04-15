@@ -55,7 +55,7 @@ type salesforce.SBQQ__PriceAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__PriceAction__c.field.SBQQ__TargetObject__c
+      controllingField = "SBQQ__TargetObject__c"
       valueSettings = [
         {
           valueName = "Unit Price"

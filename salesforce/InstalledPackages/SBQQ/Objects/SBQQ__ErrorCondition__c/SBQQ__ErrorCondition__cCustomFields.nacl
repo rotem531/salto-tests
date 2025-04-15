@@ -219,7 +219,7 @@ type salesforce.SBQQ__ErrorCondition__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__ErrorCondition__c.field.SBQQ__TestedObject__c
+      controllingField = "SBQQ__TestedObject__c"
       valueSettings = [
         {
           valueName = "Group Line Items"

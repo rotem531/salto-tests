@@ -256,7 +256,7 @@ type salesforce.SBQQ__CustomAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__CustomAction__c.field.SBQQ__Location__c
+      controllingField = "SBQQ__Location__c"
       valueSettings = [
         {
           valueName = "View"
@@ -1862,7 +1862,7 @@ type salesforce.SBQQ__CustomAction__c {
     sorted = false
     restricted = false
     fieldDependency = {
-      controllingField = salesforce.SBQQ__CustomAction__c.field.SBQQ__Page__c
+      controllingField = "SBQQ__Page__c"
       valueSettings = [
         {
           valueName = "Configurator"

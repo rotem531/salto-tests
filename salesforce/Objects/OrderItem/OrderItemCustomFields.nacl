@@ -427,7 +427,7 @@ Term length of the subscription, which only applies if the product is a subscrip
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+      controllingField = "SBQQ__ProductSubscriptionType__c"
       valueSettings = [
         {
           valueName = "Renewable"

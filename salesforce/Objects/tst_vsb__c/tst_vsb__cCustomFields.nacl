@@ -7,7 +7,7 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.another_picklist
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.value_set_field__c
+      controllingField = "value_set_field__c"
       valueSettings = [
         {
           valueName = "home"
@@ -43,7 +43,7 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.another_picklist
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      controllingField = "test_picklist__c"
       valueSettings = [
         {
           valueName = "home"
@@ -119,7 +119,7 @@ type salesforce.tst_vsb__c {
     sorted = false
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.diff_picklist_field__c
+      controllingField = "diff_picklist_field__c"
       valueSettings = [
         {
           valueName = "ahat"
@@ -152,7 +152,7 @@ type salesforce.tst_vsb__c {
     valueSetName = salesforce.GlobalValueSet.instance.test_picklist_value_set
     restricted = true
     fieldDependency = {
-      controllingField = salesforce.tst_vsb__c.field.test_picklist__c
+      controllingField = "test_picklist__c"
       valueSettings = [
         {
           valueName = "a"
