@@ -44,12 +44,12 @@ salesforce {
         {
           metadataType = "DashboardFolder"
         },
-        // {
-        //   metadataType = "Document"
-        // },
-        // {
-        //   metadataType = "DocumentFolder"
-        // },
+        {
+          metadataType = "Document"
+        },
+        {
+          metadataType = "DocumentFolder"
+        },
         {
           metadataType = "Profile"
         },
@@ -152,6 +152,9 @@ salesforce {
     }
     data = {
       includeObjects = [
+        "Product2",
+        "Pricebook2",
+        "PricebookEntry",
         "SBQQ__.*",
         "sbaa__ApprovalChain__c",
         "sbaa__ApprovalCondition__c",
