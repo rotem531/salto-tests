@@ -5,4 +5,9 @@ salesforce.PricebookEntry "01ud2000000iIUpAAM" {
   UnitPrice = 25000
   UseStandardPrice = false
   _alias = "Standard GenWatt Diesel 200kW"
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000000iIV6AAM
+    },
+  ]
 }

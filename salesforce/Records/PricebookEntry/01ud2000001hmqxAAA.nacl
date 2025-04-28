@@ -5,4 +5,9 @@ salesforce.PricebookEntry "01ud2000001hmqxAAA" {
   UnitPrice = 18
   UseStandardPrice = false
   _alias = "test this one to delete"
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000001hnEbAAI
+    },
+  ]
 }
