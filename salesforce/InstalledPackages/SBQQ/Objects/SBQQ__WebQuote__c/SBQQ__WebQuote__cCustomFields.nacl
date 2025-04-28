@@ -7,7 +7,7 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Customer account for this quote. Defaults to the account for the opportunity when creating a quote."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
@@ -361,7 +361,7 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Master contract with which subscription products in this quote are to be co-terminated."
     label = "Master Contract"
     referenceTo = [
-      salesforce.Contract,
+      "Contract",
     ]
     relationshipLabel = "Co-Terminated Quotes"
     relationshipName = "CoTerminatedWebQuotes"
@@ -404,7 +404,7 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Opportunity being quoted."
     label = "Opportunity"
     referenceTo = [
-      salesforce.Opportunity,
+      "Opportunity",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
@@ -510,7 +510,7 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Primary contact for the quote. This person's name will appear on the generated quote document."
     label = "Primary Contact"
     referenceTo = [
-      salesforce.Contact,
+      "Contact",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "WebQuotes"
@@ -567,7 +567,7 @@ type salesforce.SBQQ__WebQuote__c {
     inlineHelpText = "Sales rep responsible for this quote if different from the user who owns the Quote record."
     label = "Sales Rep"
     referenceTo = [
-      salesforce.User,
+      "User",
     ]
     relationshipName = "WebQuotes"
     trackTrending = false

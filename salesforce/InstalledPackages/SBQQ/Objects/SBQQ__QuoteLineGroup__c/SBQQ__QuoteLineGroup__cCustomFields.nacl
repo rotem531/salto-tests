@@ -7,7 +7,7 @@ type salesforce.SBQQ__QuoteLineGroup__c {
     inlineHelpText = "Account to which this Quote Line Group references."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Quote Line Groups"
     relationshipName = "QuoteLineGroups"

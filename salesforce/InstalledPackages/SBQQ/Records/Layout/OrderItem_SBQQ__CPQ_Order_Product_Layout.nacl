@@ -1,0 +1,326 @@
+salesforce.Layout OrderItem_SBQQ__CPQ_Order_Product_Layout@buusss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Product Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "OrderItemNumber"
+            },
+            {
+              behavior = "Required"
+              field = "OrderId"
+            },
+            {
+              behavior = "Edit"
+              field = "Product2Id"
+            },
+            {
+              behavior = "Readonly"
+              field = "ProductCode"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__BlockPrice__c"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__TermDiscountSchedule__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__QuotedQuantity__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__Status__c"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "ServiceDate"
+            },
+            {
+              behavior = "Edit"
+              field = "EndDate"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__SubscriptionTerm__c"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__SubscriptionPricing__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__SubscriptionType__c"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__RequiredBy__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__SegmentIndex__c"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__DiscountSchedule__c"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "Description"
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Price Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "TotalPrice"
+            },
+            {
+              behavior = "Readonly"
+              field = "ListPrice"
+            },
+            {
+              behavior = "Readonly"
+              field = "SBQQ__QuotedListPrice__c"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "SBQQ__UnproratedNetPrice__c"
+            },
+            {
+              behavior = "Required"
+              field = "UnitPrice"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__OrderedQuantity__c"
+            },
+            {
+              behavior = "Required"
+              field = "Quantity"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Billing Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "SBQQ__BillingType__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__BillingFrequency__c"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "SBQQ__ChargeType__c"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Contracting Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "SBQQ__Activated__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__Contracted__c"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "SBQQ__RevisedOrderProduct__c"
+            },
+            {
+              behavior = "Edit"
+              field = "SBQQ__ContractAction__c"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Quote and Subscription Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "SBQQ__QuoteLine__c"
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "CreatedById"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = "LastModifiedById"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+  ]
+  multilineLayoutFields = [
+    "OrderId",
+    "UnitPrice",
+    "Quantity",
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Product2",
+        "SBQQ__OrderedQuantity__c",
+        "SBQQ__QuotedQuantity__c",
+        "UnitPrice",
+        "ListPrice",
+        "TotalPrice",
+        "SBQQ__QuoteLine__c",
+        "SBQQ__SubscriptionTerm__c",
+      ]
+      relatedList = "OrderItem.SBQQ__RequiredBy__c"
+    },
+    {
+      fields = [
+        "NAME",
+      ]
+      relatedList = salesforce.SBQQ__Subscription__c.field.SBQQ__OrderProduct__c
+    },
+    {
+      fields = [
+        "NAME",
+        "SBQQ__Description__c",
+        "UPDATEDBY_USER",
+      ]
+      relatedList = salesforce.SBQQ__PriceSchedule__c.field.SBQQ__OrderProduct__c
+    },
+    {
+      fields = [
+        "ASSET.NAME",
+        "ASSET.SERIAL_NUMBER",
+        "ASSET.INSTALL_DATE",
+        "ACCOUNT.NAME",
+        "CONTACT.NAME",
+        "PRODUCT2.NAME",
+      ]
+      relatedList = "Asset.SBQQ__OrderProduct__c"
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ListPrice",
+        "TotalPrice",
+      ]
+      relatedList = "OrderItem.SBQQ__RevisedOrderProduct__c"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h5000000V0Hw7"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "OrderItem-SBQQ__CPQ Order Product Layout"
+  _alias = "OrderItem-SBQQ__CPQ Order Product Layout"
+}

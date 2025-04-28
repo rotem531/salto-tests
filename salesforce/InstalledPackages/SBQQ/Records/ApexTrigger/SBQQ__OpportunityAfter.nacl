@@ -14,8 +14,5 @@ salesforce.ApexTrigger SBQQ__OpportunityAfter {
     "UsageAfterInsert",
     "UsageAfterUpdate",
   ]
-  _parent = [
-    salesforce.Opportunity,
-  ]
   _alias = "SBQQ__OpportunityAfter"
 }

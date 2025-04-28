@@ -5,7 +5,7 @@ type salesforce.SBQQ__AttributeValue__c {
     deprecated = false
     label = "Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Attribute Values"
     relationshipName = "AttributeValues"
@@ -43,7 +43,7 @@ type salesforce.SBQQ__AttributeValue__c {
     deprecated = false
     label = "Order Product"
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Attribute Values"
     relationshipName = "AttributeValues"

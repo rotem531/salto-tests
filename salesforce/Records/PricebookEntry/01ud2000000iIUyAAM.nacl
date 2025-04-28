@@ -4,5 +4,10 @@ salesforce.PricebookEntry "01ud2000000iIUyAAM" {
   Product2Id = salesforce.Product2.instance.01td2000003LprfAAC
   UnitPrice = 10000
   UseStandardPrice = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000000iIVFAA2
+    },
+  ]
   _alias = "Standard SLA: Bronze"
 }

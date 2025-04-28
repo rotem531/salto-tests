@@ -7,7 +7,7 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Account that this discount schedule applies to. Only used in combination with Discount Schedule Override on Quote Line Editor UI."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "Discount_Schedules"
@@ -144,7 +144,7 @@ type salesforce.SBQQ__DiscountSchedule__c {
       isOptional = false
     }
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"
@@ -158,7 +158,7 @@ type salesforce.SBQQ__DiscountSchedule__c {
     inlineHelpText = "Order that this discount schedule applies to."
     label = "Order"
     referenceTo = [
-      salesforce.Order,
+      "Order",
     ]
     relationshipLabel = "Discount Schedules"
     relationshipName = "DiscountSchedules"

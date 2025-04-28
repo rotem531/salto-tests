@@ -4,7 +4,7 @@ type salesforce.SBQQ__TaxExemptionCertificate__c {
     deprecated = false
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Tax Exemption Certificates"
     relationshipName = "Tax_Exemption_Certificates"

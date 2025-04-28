@@ -1,0 +1,28 @@
+salesforce.PricebookEntry.instance.01ud2000001hWLpAAM: salesforce.PricebookEntry "01ud2000001hWLpAAM" {
+  Id = "01ud2000001hWLpAAM"
+  Name = "new prod"
+  CreatedDate = "2025-04-16T07:23:55.000+0000"
+  CreatedById = "005d2000002i8vBAAQ"
+  LastModifiedDate = "2025-04-16T07:23:55.000+0000"
+  LastModifiedById = "005d2000002i8vBAAQ"
+  SystemModstamp = "2025-04-16T07:23:55.000+0000"
+  IsDeleted = false
+  IsArchived = false
+  IsActive = true
+  Pricebook2Id = salesforce.Pricebook2.instance.01sd2000001ywcXAAQ
+  Product2Id = salesforce.Product2.instance.01td2000006tK13AAE
+  UnitPrice = 10
+  UseStandardPrice = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000001hGIfAAM
+    },
+  ]
+  _service_url = "https://salto-dd-dev-ed.develop.lightning.force.com/lightning/r/PricebookEntry/01ud2000001hWLpAAM/view"
+  _created_by = "rotem cohen"
+  _created_at = "2025-04-16T07:23:55.000+0000"
+  _changed_by = "rotem cohen"
+  _changed_at = "2025-04-16T07:23:55.000+0000"
+  _alias = "Standard new prod"
+}
+

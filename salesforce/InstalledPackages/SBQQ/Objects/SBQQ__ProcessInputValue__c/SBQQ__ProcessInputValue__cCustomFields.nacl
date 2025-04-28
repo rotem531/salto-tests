@@ -36,7 +36,7 @@ type salesforce.SBQQ__ProcessInputValue__c {
     inlineHelpText = "This Process Input value belongs to the user."
     label = "UserID"
     referenceTo = [
-      salesforce.User,
+      "User",
     ]
     relationshipName = "Process_Input_Values"
     trackTrending = false

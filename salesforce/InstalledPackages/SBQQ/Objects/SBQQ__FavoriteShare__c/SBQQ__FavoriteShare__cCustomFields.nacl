@@ -19,7 +19,7 @@ type salesforce.SBQQ__FavoriteShare__c {
     deprecated = false
     label = "User"
     referenceTo = [
-      salesforce.User,
+      "User",
     ]
     relationshipName = "FavoriteShares"
     trackTrending = false

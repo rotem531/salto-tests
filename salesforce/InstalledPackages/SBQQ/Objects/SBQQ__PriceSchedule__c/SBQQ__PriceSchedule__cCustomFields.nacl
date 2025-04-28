@@ -7,7 +7,7 @@ type salesforce.SBQQ__PriceSchedule__c {
     inlineHelpText = "Account that this Price Schedule applies to. Only used in combination with Price Schedule Override on Quote Line Editor UI."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Price Schedules"
     relationshipName = "PriceSchedules"
@@ -144,7 +144,7 @@ type salesforce.SBQQ__PriceSchedule__c {
       isOptional = false
     }
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Price Schedules"
     relationshipName = "PriceSchedules"
@@ -158,7 +158,7 @@ type salesforce.SBQQ__PriceSchedule__c {
     inlineHelpText = "Order that this Price Schedule applies to."
     label = "Order"
     referenceTo = [
-      salesforce.Order,
+      "Order",
     ]
     relationshipLabel = "Price Schedules"
     relationshipName = "PriceSchedules"

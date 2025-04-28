@@ -1,0 +1,13 @@
+salesforce.PricebookEntry "01ud2000001hmqxAAA" {
+  IsActive = true
+  Pricebook2Id = salesforce.Pricebook2.instance.01sd2000004Hwq5AAC
+  Product2Id = salesforce.Product2.instance.01td2000006uvD3AAI
+  UnitPrice = 18
+  UseStandardPrice = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000001hnEbAAI
+    },
+  ]
+  _alias = "test this one to delete"
+}

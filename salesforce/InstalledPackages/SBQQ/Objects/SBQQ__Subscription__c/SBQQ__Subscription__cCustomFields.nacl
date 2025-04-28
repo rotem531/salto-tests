@@ -7,7 +7,7 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Account that owns this subscription. This relationship is used for volume discount calculations."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
@@ -150,7 +150,7 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "Contract that governs this subscription."
     label = "Contract"
     referenceTo = [
-      salesforce.Contract,
+      "Contract",
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
@@ -430,7 +430,7 @@ type salesforce.SBQQ__Subscription__c {
     inlineHelpText = "The order product where this subscription is generated from."
     label = "Order Product"
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"
@@ -972,7 +972,7 @@ type salesforce.SBQQ__Subscription__c {
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
     fieldDependency = {
-      controllingField = "SBQQ__ProductSubscriptionType__c"
+      controllingField = salesforce.SBQQ__Subscription__c.field.SBQQ__ProductSubscriptionType__c
       valueSettings = [
         {
           valueName = "Renewable"

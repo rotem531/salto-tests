@@ -27,7 +27,7 @@ type salesforce.SBQQ__BlockPrice__c {
     inlineHelpText = "The order product this Block Price applies to when the order product is created."
     label = "Order Product"
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Block Price Snapshots"
     relationshipName = "BlockPrice"

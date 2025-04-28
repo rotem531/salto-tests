@@ -6,7 +6,7 @@ type salesforce.SBQQ__ContractedPrice__c {
     inlineHelpText = "Account for which this price was negotiated."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Contracted Prices"
     relationshipName = "R00N70000001olI5EAI"
@@ -23,7 +23,7 @@ type salesforce.SBQQ__ContractedPrice__c {
     inlineHelpText = "Sales contract that governs this price."
     label = "Contract"
     referenceTo = [
-      salesforce.Contract,
+      "Contract",
     ]
     relationshipLabel = "Contracted Prices"
     relationshipName = "ContractedPrices"

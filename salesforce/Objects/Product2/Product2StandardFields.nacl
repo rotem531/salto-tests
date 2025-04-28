@@ -23,7 +23,6 @@ type salesforce.Product2 {
     apiName = "Product2.Family"
     label = "Product Family"
     restricted = false
-    valueSetName = salesforce.StandardValueSet.instance.Product2Family
   }
   salesforce.Checkbox IsActive {
     apiName = "Product2.IsActive"

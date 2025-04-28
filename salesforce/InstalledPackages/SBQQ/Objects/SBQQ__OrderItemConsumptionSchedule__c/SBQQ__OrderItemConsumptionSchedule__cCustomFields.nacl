@@ -60,7 +60,7 @@ type salesforce.SBQQ__OrderItemConsumptionSchedule__c {
     deprecated = false
     label = "Consumption Schedule"
     referenceTo = [
-      salesforce.ConsumptionSchedule,
+      "ConsumptionSchedule",
     ]
     relationshipLabel = "Order Product Consumption Schedules"
     relationshipName = "OrderItemConsumptionSchedules"
@@ -91,7 +91,7 @@ type salesforce.SBQQ__OrderItemConsumptionSchedule__c {
     deprecated = false
     label = "Order Item"
     referenceTo = [
-      salesforce.OrderItem,
+      "OrderItem",
     ]
     relationshipLabel = "Order Product Consumption Schedules"
     relationshipName = "OrderItems"

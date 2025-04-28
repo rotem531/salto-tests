@@ -55,7 +55,7 @@ IF(LEFT(SBQQ__ExternalId__c , 3)  = '069', HYPERLINK("/sfc/#version?selectedDocu
     inlineHelpText = "Opportunity related to this content."
     label = "Opportunity"
     referenceTo = [
-      salesforce.Opportunity,
+      "Opportunity",
     ]
     relationshipLabel = "Additional Documents"
     relationshipName = "Additional_Documents"

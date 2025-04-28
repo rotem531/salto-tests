@@ -34,7 +34,7 @@ type salesforce.SBQQ__SubscribedAsset__c {
     inlineHelpText = "Asset being covered by a subscription."
     label = "Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Subscriptions"
     relationshipName = "Subscriptions"

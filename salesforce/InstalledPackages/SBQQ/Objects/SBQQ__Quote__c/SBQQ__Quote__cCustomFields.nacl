@@ -7,7 +7,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "The customer account for this quote. Defaults to the account for the opportunity when creating a quote."
     label = "Account"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "Quotes"
@@ -290,7 +290,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Distributor for this quote. Defaulted from partner on opportunity with role of \"Distributor\"."
     label = "Distributor"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Distributor Quotes"
     relationshipName = "DistributorQuotes"
@@ -504,7 +504,7 @@ type salesforce.SBQQ__Quote__c {
       isOptional = true
     }
     referenceTo = [
-      salesforce.Contract,
+      "Contract",
     ]
     relationshipLabel = "Co-Terminated Quotes"
     relationshipName = "CoTerminatedQuotes"
@@ -529,7 +529,7 @@ type salesforce.SBQQ__Quote__c {
       isOptional = true
     }
     referenceTo = [
-      salesforce.Contract,
+      "Contract",
     ]
     relationshipLabel = "Co-Terminated Quotes (Master Evergreen Contract)"
     relationshipName = "CoTerminatedQuotesEvergreen"
@@ -572,7 +572,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Opportunity associated with this Quote."
     label = "Opportunity"
     referenceTo = [
-      salesforce.Opportunity,
+      "Opportunity",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "Quotes2"
@@ -672,7 +672,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Primary partner on this deal (if any). This field defaults to the partner marked as primary in the Partners related list on the opportunity."
     label = "Partner"
     referenceTo = [
-      salesforce.Account,
+      "Account",
     ]
     relationshipLabel = "Partner Quotes"
     relationshipName = "PartnerQuotes"
@@ -754,7 +754,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Primary contact for the quote. This person's name will appear on generated quote document."
     label = "Primary Contact"
     referenceTo = [
-      salesforce.Contact,
+      "Contact",
     ]
     relationshipLabel = "Quotes"
     relationshipName = "Quotes"
@@ -1111,7 +1111,7 @@ type salesforce.SBQQ__Quote__c {
     inlineHelpText = "Sales rep responsible for this quote if different from the user who owns the quote record."
     label = "Sales Rep"
     referenceTo = [
-      salesforce.User,
+      "User",
     ]
     relationshipName = "Quotes"
     trackTrending = false

@@ -2,11 +2,11 @@ salesforce {
   fetch = {
     metadata = {
       include = [
-        // {
-        //   metadataType = ".*"
-        //   namespace = ".*"
-        //   name = ".*"
-        // },
+        {
+          metadataType = ".*"
+          namespace = ".*"
+          name = "Pricebook2|PricebookEntry|Product2"
+        },
         {
           metadataType = ".*"
           namespace = "SBQQ"

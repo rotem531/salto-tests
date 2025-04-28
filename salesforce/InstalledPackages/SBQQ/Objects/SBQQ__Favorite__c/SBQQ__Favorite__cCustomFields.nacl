@@ -16,10 +16,5 @@ type salesforce.SBQQ__Favorite__c {
     unique = false
     caseSensitive = false
     _hidden_value = true
-    _generated_dependencies = [
-      {
-        reference = salesforce.User
-      },
-    ]
   }
 }

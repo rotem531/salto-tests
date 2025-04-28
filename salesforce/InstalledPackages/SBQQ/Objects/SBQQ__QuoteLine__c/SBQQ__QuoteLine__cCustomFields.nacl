@@ -1450,7 +1450,7 @@ IF(ISBLANK(SBQQ__SubscriptionTerm__c),
     inlineHelpText = "Asset being renewed if this line item represents product renewal."
     label = "Renewed Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Quote Lines"
     relationshipName = "Quote_Lines"
@@ -1721,7 +1721,7 @@ IF(ISBLANK(SBQQ__SubscriptionTerm__c),
     valueSetName = salesforce.GlobalValueSet.instance.SBQQ__SubscriptionType
     restricted = true
     fieldDependency = {
-      controllingField = "SBQQ__ProductSubscriptionType__c"
+      controllingField = salesforce.SBQQ__QuoteLine__c.field.SBQQ__ProductSubscriptionType__c
       valueSettings = [
         {
           valueName = "Renewable"
@@ -1917,7 +1917,7 @@ IF(SBQQ__Quantity__c == SBQQ__PriorQuantity__c, 0, (SBQQ__ProratedListPrice__c *
     inlineHelpText = "Asset being upgraded by this quote line. When the quote is contracted this asset will have its Usage End Date populated to indicate it's retired."
     label = "Upgraded Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Quote Lines (Upgrade)"
     relationshipName = "UpgradeLines"

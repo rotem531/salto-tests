@@ -82,7 +82,7 @@ type salesforce.SBQQ__QuoteDocument__c {
     inlineHelpText = "Choose the Opportunity that parents the Quote for this document."
     label = "Opportunity"
     referenceTo = [
-      salesforce.Opportunity,
+      "Opportunity",
     ]
     relationshipLabel = "Quote Documents"
     relationshipName = "R00N700000029COgEAM"

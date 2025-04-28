@@ -1,0 +1,13 @@
+salesforce.PricebookEntry "01ud2000001hbuzAAA" {
+  IsActive = true
+  Pricebook2Id = salesforce.Pricebook2.instance.01sd2000004HvxFAAS
+  Product2Id = salesforce.Product2.instance.01td2000006tK13AAE
+  UnitPrice = 10
+  UseStandardPrice = false
+  _generated_dependencies = [
+    {
+      reference = salesforce.PricebookEntry.instance.01ud2000001hGIfAAM
+    },
+  ]
+  _alias = "Standard new prod"
+}

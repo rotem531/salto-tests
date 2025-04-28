@@ -60,7 +60,7 @@ type salesforce.SBQQ__QuoteLineConsumptionSchedule__c {
     deprecated = false
     label = "Consumption Schedule"
     referenceTo = [
-      salesforce.ConsumptionSchedule,
+      "ConsumptionSchedule",
     ]
     relationshipLabel = "Quote Line Consumption Schedules"
     relationshipName = "QuoteLineConsumptionSchedules"

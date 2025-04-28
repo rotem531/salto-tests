@@ -1148,7 +1148,7 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Asset being renewed if this line item represents a product renewal."
     label = "Renewed Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Quote Lines"
     relationshipName = "WebQuoteLines"
@@ -1503,7 +1503,7 @@ IF(OR(SBQQ__Renewal__c, SBQQ__Bundled__c), 0,
     inlineHelpText = "Asset upgraded by this quote line. When the quote is contracted this asset's Usage End Date will be populated to indicate that it's retired."
     label = "Upgraded Asset"
     referenceTo = [
-      salesforce.Asset,
+      "Asset",
     ]
     relationshipLabel = "Web Quote Lines (Upgrade)"
     relationshipName = "UpgradeWebLines"

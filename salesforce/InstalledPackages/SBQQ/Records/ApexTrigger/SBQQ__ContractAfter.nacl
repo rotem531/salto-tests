@@ -15,8 +15,5 @@ salesforce.ApexTrigger SBQQ__ContractAfter {
     "UsageAfterInsert",
     "UsageAfterUpdate",
   ]
-  _parent = [
-    salesforce.Contract,
-  ]
   _alias = "SBQQ__ContractAfter"
 }
