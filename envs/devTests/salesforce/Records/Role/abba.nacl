@@ -1,0 +1,11 @@
+salesforce.Role abba {
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "abbasAndTheMamas2"
+  mayForecastManagerShare = false
+  name = "abba"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.CEO
+  fullName = "abba"
+  _alias = "abba"
+}

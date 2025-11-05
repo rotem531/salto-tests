@@ -1,0 +1,11 @@
+salesforce.Profile Cross_Org_Data_Proxy_User@s {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}

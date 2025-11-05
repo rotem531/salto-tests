@@ -1,0 +1,76 @@
+type salesforce.DataHarmonizedModelObjRef {
+  serviceid Id {
+    apiName = "DataHarmonizedModelObjRef.Id"
+    label = "Data Harmonized Model Obj Ref ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DataHarmonizedModelObjRef.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DataHarmonizedModelObjRef.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "DataHarmonizedModelObjRef.Name"
+    label = "Data Harmonized Model Obj Ref Title"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DataHarmonizedModelObjRef.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DataHarmonizedModelObjRef.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DataHarmonizedModelObjRef.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DataHarmonizedModelObjRef.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DataHarmonizedModelObjRef.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text DataCloudContentIdentifier {
+    apiName = "DataHarmonizedModelObjRef.DataCloudContentIdentifier"
+    label = "Data Cloud Content Identifier"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text ObjectDeveloperName {
+    apiName = "DataHarmonizedModelObjRef.ObjectDeveloperName"
+    label = "Data Harmonized Model Obj Ref Object Developer Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text FileType {
+    apiName = "DataHarmonizedModelObjRef.FileType"
+    label = "Data Harmonized Model Obj Ref File Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+}

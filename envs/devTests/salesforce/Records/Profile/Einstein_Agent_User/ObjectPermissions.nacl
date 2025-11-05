@@ -1,0 +1,14 @@
+salesforce.Profile Einstein_Agent_User@s {
+  objectPermissions = {
+    ServiceAppointmentAttendee = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = false
+      modifyAllRecords = false
+      object = "ServiceAppointmentAttendee"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+  }
+}
