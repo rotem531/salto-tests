@@ -1,0 +1,12 @@
+salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
+  userPermissions = {
+    EnableNotifications = {
+      enabled = true
+      name = "EnableNotifications"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+  }
+}

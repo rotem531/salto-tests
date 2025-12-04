@@ -1,0 +1,20 @@
+salesforce.Profile Einstein_Agent_User@s {
+  userPermissions = {
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ApiUserOnly = {
+      enabled = true
+      name = "ApiUserOnly"
+    }
+    DigitalAgentUser = {
+      enabled = true
+      name = "DigitalAgentUser"
+    }
+    RunFlow = {
+      enabled = true
+      name = "RunFlow"
+    }
+  }
+}

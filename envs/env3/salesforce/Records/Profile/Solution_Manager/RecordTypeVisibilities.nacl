@@ -1,0 +1,11 @@
+salesforce.Profile SolutionManager {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}
