@@ -154,7 +154,7 @@ type salesforce.IdentityResolution {
   }
   salesforce.Checkbox IsLimitedToSingleHousehold {
     apiName = "IdentityResolution.IsLimitedToSingleHousehold"
-    label = "__MISSING LABEL__ PropertyFile - val IsLimitedToSingleHousehold not found in section udd_IdentityResolution"
+    label = "Is Limited To Single Household"
     defaultValue = false
   }
 }

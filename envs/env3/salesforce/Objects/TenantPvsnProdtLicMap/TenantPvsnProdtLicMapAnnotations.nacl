@@ -1,4 +1,4 @@
-type salesforce.DataHarmonizedModelObjRef {
+type salesforce.TenantPvsnProdtLicMap {
   annotations {
     serviceid apiName {
     }
@@ -55,11 +55,11 @@ type salesforce.DataHarmonizedModelObjRef {
     hidden_string internalId {
     }
   }
-  apiName = "DataHarmonizedModelObjRef"
+  apiName = "TenantPvsnProdtLicMap"
   metadataType = "CustomObject"
-  label = "Data Harmonized Model Obj Ref"
+  label = "TenantPvsnProdtLicMap"
   description = ""
   enableFeeds = false
-  externalSharingModel = "Private"
-  _alias = "Data Harmonized Model Obj Ref"
+  externalSharingModel = "ControlledByParent"
+  _alias = "TenantPvsnProdtLicMap"
 }

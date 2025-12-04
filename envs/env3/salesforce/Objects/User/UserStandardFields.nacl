@@ -746,6 +746,10 @@ type salesforce.User {
     apiName = "User.UserPreferencesNativeEmailClient"
     label = "NativeEmailClient"
   }
+  salesforce.Checkbox UserPreferencesDismissReuseUpdateReminderModal {
+    apiName = "User.UserPreferencesDismissReuseUpdateReminderModal"
+    label = "DismissReuseUpdateReminderModal"
+  }
   salesforce.Checkbox UserPreferencesHideManagedEcaMobilePubModal {
     apiName = "User.UserPreferencesHideManagedEcaMobilePubModal"
     label = "HideManagedEcaMobilePubModal"
