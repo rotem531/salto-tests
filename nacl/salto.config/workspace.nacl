@@ -1,0 +1,12 @@
+workspace {
+  uid = "8ff40b74-d1a2-4203-9abd-c73f23635711"
+  state = {
+    provider = "s3"
+    options = {
+      s3 = {
+        bucket = "salto-staging-state-static-files"
+        prefix = "66f5b7cf-f3dc-4825-821c-97f7cd57e705"
+      }
+    }
+  }
+}
