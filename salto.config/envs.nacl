@@ -1,0 +1,10 @@
+envs {
+  envs = [
+    {
+      name = "nutanix-test"
+      accountToServiceName = {
+        salesforce = "salesforce"
+      }
+    },
+  ]
+}

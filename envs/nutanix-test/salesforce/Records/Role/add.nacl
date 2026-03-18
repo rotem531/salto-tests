@@ -1,0 +1,11 @@
+salesforce.Role add {
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "additor"
+  mayForecastManagerShare = false
+  name = "add"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.CEO
+  fullName = "add"
+  _alias = "add"
+}

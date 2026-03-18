@@ -1,0 +1,11 @@
+salesforce.Role useless {
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  description = "asda"
+  mayForecastManagerShare = false
+  name = "useless"
+  opportunityAccessLevel = "Edit"
+  parentRole = salesforce.Role.instance.CEO
+  fullName = "useless"
+  _alias = "useless"
+}
