@@ -1,0 +1,15 @@
+jira.Field Focus_Areas__focus_areas__c@suubuu {
+  name = "Focus Areas"
+  description = "Link focus areas to work items"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:focus-areas-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Focus Areas"
+  translatedDescription = "Link focus areas to work items"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:focus-areas"
+  contexts = [
+    jira.CustomFieldContext.instance.Focus_Areas__focus_areas__c_suubuu_Default_Configuration_Scheme_for_Focus_Areas@uuuuuumusssss,
+  ]
+  _alias = "Focus Areas"
+}

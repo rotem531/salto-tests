@@ -1,0 +1,37 @@
+jira.Board kanbancreatedByOssE2e9303241 {
+  name = "kanbancreatedByOssE2e9303241"
+  type = "kanban"
+  admins = {
+    users = [
+      {
+        id = "61d44bf59ee70a00685fa6b6"
+        displayName = "Testing salto"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.Test_Project@s
+  }
+  isPrivate = false
+  filterId = jira.Filter.instance.Filter_for_TP_board@s
+  columnConfig = {
+    columns = [
+      {
+        name = "Backlog"
+      },
+      {
+        name = "first"
+      },
+      {
+        name = "second"
+        statuses = [
+          jira.Status.instance.done,
+        ]
+        min = 2
+        max = 4
+      },
+    ]
+    constraintType = "issueCount"
+  }
+  subQuery = "fixVersion in unreleasedVersions()"
+}

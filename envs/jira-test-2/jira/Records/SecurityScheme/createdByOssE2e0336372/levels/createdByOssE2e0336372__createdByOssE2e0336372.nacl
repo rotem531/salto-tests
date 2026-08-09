@@ -1,0 +1,46 @@
+jira.SecurityLevel createdByOssE2e0336372__createdByOssE2e0336372 {
+  description = "createdByOssE2e0336372"
+  name = "createdByOssE2e0336372"
+  members = [
+    {
+      holder = {
+        type = "user"
+        parameter = {
+          id = "61d44bf59ee70a00685fa6b6"
+          displayName = "Testing salto"
+        }
+      }
+    },
+    {
+      holder = {
+        type = "projectLead"
+      }
+    },
+    {
+      holder = {
+        type = "assignee"
+      }
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.Administrators
+      }
+    },
+    {
+      holder = {
+        type = "groupCustomField"
+        parameter = jira.Field.instance.Epic_Status__gh_epic_status__c@suubbuu
+      }
+    },
+    {
+      holder = {
+        type = "group"
+        parameter = jira.Group.instance.system_administrators@b
+      }
+    },
+  ]
+  _parent = [
+    jira.SecurityScheme.instance.createdByOssE2e0336372,
+  ]
+}

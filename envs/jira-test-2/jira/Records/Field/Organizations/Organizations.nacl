@@ -1,0 +1,15 @@
+jira.Field Organizations__sd_customer_organizations__c@uubbuu {
+  name = "Organizations"
+  description = "Stores the organizations that are associated with a Service Desk customer portal requests. This custom field is created programmatically and required by Service Desk."
+  isLocked = true
+  searcherKey = "com.atlassian.servicedesk:sd-customer-organizations-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Organizations"
+  translatedDescription = "Stores the organizations that are associated with a Service Desk customer portal requests. This custom field is created programmatically and required by Service Desk."
+  type = "com.atlassian.servicedesk:sd-customer-organizations"
+  contexts = [
+    jira.CustomFieldContext.instance.Organizations__sd_customer_organizations__c_uubbuu_Default_Configuration_Scheme_for_Organizations@uuuuuumussss,
+  ]
+  _alias = "Organizations"
+}

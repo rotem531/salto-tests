@@ -1,0 +1,67 @@
+jira.Automation DUP {
+  name = "DUP"
+  state = "DISABLED"
+  description = "desc"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "712020:1d70a0f0-f922-491a-9936-2b97417e4d9f"
+    displayName = "Jira Adapter Dev"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "desc"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "OWNER_ONLY"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "81f2680de7619d924ad2e42544ed9ce1503fdd15ccbe28aa774acb92ed78b787"
+  }
+  isAgentic = false
+  _alias = "DUP"
+}

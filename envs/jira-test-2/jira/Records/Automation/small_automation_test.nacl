@@ -1,0 +1,59 @@
+jira.Automation small_automation_test@s {
+  name = "small automation test"
+  state = "DISABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "712020:1d70a0f0-f922-491a-9936-2b97417e4d9f"
+    displayName = "Jira Adapter Dev"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.comment"
+      value = {
+        comment = "hi"
+        publicComment = false
+        sendNotifications = true
+        addCommentOnce = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "OWNER_ONLY"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "ce80d9ba99b4f9cc0eb019bfffa7a1358f0b3a667f4e4fed704003e4e08c823d"
+  }
+  isAgentic = false
+  _alias = "small automation test"
+}

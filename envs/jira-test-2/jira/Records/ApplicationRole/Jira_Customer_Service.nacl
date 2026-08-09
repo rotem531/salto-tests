@@ -1,0 +1,17 @@
+jira.ApplicationRole Jira_Customer_Service@s {
+  key = "jira-customer-service"
+  groups = [
+    jira.Group.instance.jira_customer_service_users_salto_test_2@b,
+    jira.Group.instance.site_admins@b,
+  ]
+  name = "Jira Customer Service"
+  defaultGroups = [
+    jira.Group.instance.jira_customer_service_users_salto_test_2@b,
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 3
+  userCountDescription = "agents"
+  hasUnlimitedSeats = false
+  platform = false
+}

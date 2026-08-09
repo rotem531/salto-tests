@@ -1,0 +1,14 @@
+jira.Field test_field__textfield__c {
+  name = "test_field"
+  description = "is used for tests"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:textsearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "test_field"
+  translatedDescription = "is used for tests"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:textfield"
+  contexts = [
+    jira.CustomFieldContext.instance.test_field__textfield__c_Default_Configuration_Scheme_for_test_field@uuuuuussssu,
+  ]
+  _alias = "test_field"
+}

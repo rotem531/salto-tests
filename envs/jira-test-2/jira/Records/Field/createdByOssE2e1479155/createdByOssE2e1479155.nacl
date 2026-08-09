@@ -1,0 +1,42 @@
+jira.Field createdByOssE2e1479155__datepicker__c {
+  name = "createdByOssE2e1479155"
+  description = "Description of the scripted field"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:daterange"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "createdByOssE2e1479155"
+  translatedDescription = "Description of the scripted field"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:datepicker"
+  contexts = [
+    jira.CustomFieldContext.instance.createdByOssE2e1479155__datepicker__c_Default_Configuration_Scheme_for_createdByOssE2e1479155@uuuuussss,
+  ]
+  _alias = "createdByOssE2e1479155"
+}
+jira.Field createdByOssE2e1479155__cascadingselect__c {
+  name = "createdByOssE2e1479155"
+  description = "desc!"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "createdByOssE2e1479155"
+  translatedDescription = "desc!"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:cascadingselect"
+  contexts = [
+    jira.CustomFieldContext.instance.createdByOssE2e1479155__cascadingselect__c_Default_Configuration_Scheme_for_createdByOssE2e1479155@uuuuussss,
+  ]
+  _alias = "createdByOssE2e1479155"
+}
+jira.Field createdByOssE2e1479155__multiselect__c {
+  name = "createdByOssE2e1479155"
+  description = "desc!"
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "createdByOssE2e1479155"
+  translatedDescription = "desc!"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multiselect"
+  contexts = [
+    jira.CustomFieldContext.instance.createdByOssE2e1479155__multiselect__c_Default_Configuration_Scheme_for_createdByOssE2e1479155@uuuuussss,
+  ]
+  _alias = "createdByOssE2e1479155"
+}

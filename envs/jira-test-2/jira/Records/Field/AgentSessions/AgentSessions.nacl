@@ -1,0 +1,15 @@
+jira.Field AgentSessions__agent_sessions__c@uubuu {
+  name = "AgentSessions"
+  description = "Link agent sessions to work items"
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:agent-sessions-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Agent Sessions"
+  translatedDescription = "Link agent sessions to work items"
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:agent-sessions"
+  contexts = [
+    jira.CustomFieldContext.instance.AgentSessions__agent_sessions__c_uubuu_Default_Configuration_Scheme_for_AgentSessions@uuuuumussss,
+  ]
+  _alias = "AgentSessions"
+}

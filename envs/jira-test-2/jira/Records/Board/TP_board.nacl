@@ -1,0 +1,50 @@
+jira.Board TP_board@s {
+  name = "TP board"
+  type = "kanban"
+  admins = {
+    users = [
+      {
+        id = "61d44bf59ee70a00685fa6b6"
+        displayName = "Testing salto"
+      },
+    ]
+  }
+  location = {
+    projectId = jira.Project.instance.Test_Project@s
+  }
+  isPrivate = false
+  filterId = jira.Filter.instance.Filter_for_TP_board@s
+  columnConfig = {
+    columns = [
+      {
+        name = "Backlog"
+      },
+      {
+        name = "Backlog"
+        statuses = [
+          jira.Status.instance.backlog,
+        ]
+      },
+      {
+        name = "Selected for Development"
+        statuses = [
+          jira.Status.instance.selected_for_development@s,
+        ]
+      },
+      {
+        name = "In Progress"
+        statuses = [
+          jira.Status.instance.in_progress@s,
+        ]
+      },
+      {
+        name = "Done"
+        statuses = [
+          jira.Status.instance.done,
+        ]
+      },
+    ]
+    constraintType = "issueCount"
+  }
+  subQuery = "fixVersion in unreleasedVersions() OR fixVersion is EMPTY"
+}

@@ -1,0 +1,29 @@
+jira.NotificationScheme createdByOssE2e0958444 {
+  name = "createdByOssE2e0958444"
+  description = "createdByOssE2e0958444"
+  notificationSchemeEvents = [
+    {
+      notifications = [
+        {
+          type = "AllWatchers"
+        },
+        {
+          type = "ComponentLead"
+        },
+        {
+          type = "CurrentAssignee"
+        },
+        {
+          type = "CurrentUser"
+        },
+        {
+          type = "ProjectLead"
+        },
+        {
+          type = "Reporter"
+        },
+      ]
+      eventType = jira.IssueEvent.instance.Issue_Created@s
+    },
+  ]
+}

@@ -1,0 +1,10 @@
+jira.ScreenScheme TPD__Jira_Service_Management__Change_Management_Screen_Scheme@fsssfssss {
+  name = "TPD: Jira Service Management: Change Management Screen Scheme"
+  description = ""
+  screens = {
+    default = jira.Screen.instance.TPD__Jira_Service_Management__Change_Create_Issue_Screen@fsssfssss
+    edit = jira.Screen.instance.TPD__Jira_Service_Management__Change_View_Edit_Screen@fsssfssds
+    create = jira.Screen.instance.TPD__Jira_Service_Management__Change_Create_Issue_Screen@fsssfssss
+    view = jira.Screen.instance.TPD__Jira_Service_Management__Change_View_Edit_Screen@fsssfssds
+  }
+}

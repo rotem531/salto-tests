@@ -1,0 +1,25 @@
+jira.Screen createdByOssE2e0336372 {
+  name = "createdByOssE2e0336372"
+  description = "createdByOssE2e0336372"
+  tabs = {
+    tab2 = {
+      name = "tab2"
+      position = 0
+    }
+    tab3 = {
+      name = "tab3"
+      fields = [
+        jira.Field.instance.Created__datetime,
+        jira.Field.instance.Creator__user,
+      ]
+      position = 1
+    }
+    Field_Tab@s = {
+      name = "Field Tab"
+      fields = [
+        jira.Field.instance.Assignee__user,
+      ]
+      position = 2
+    }
+  }
+}

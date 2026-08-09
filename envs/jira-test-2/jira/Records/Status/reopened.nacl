@@ -1,0 +1,6 @@
+jira.Status reopened {
+  name = "Reopened"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  description = "This work item was once resolved, but the resolution was deemed incorrect. From here the work items are either reopened, or are closed."
+  _alias = "Reopened"
+}

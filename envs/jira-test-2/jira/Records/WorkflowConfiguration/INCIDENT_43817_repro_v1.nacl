@@ -1,0 +1,147 @@
+jira.WorkflowConfiguration INCIDENT_43817_repro_v1 {
+  scope = {
+    type = "GLOBAL"
+  }
+  name = "INCIDENT_43817_repro_v1"
+  description = "adda"
+  isEditable = true
+  startPointLayout = {
+    x = 943.75
+    y = -144.77735595703126
+  }
+  statuses = [
+    {
+      statusReference = jira.Status.instance.done
+      layout = {
+        x = 1222.3046875
+        y = 161.7214782714844
+      }
+      deprecated = false
+      name = "Done"
+    },
+    {
+      statusReference = jira.Status.instance.in_progress@s
+      layout = {
+        x = 1069.078125
+        y = -13.688677978515628
+      }
+      deprecated = false
+      name = "In Progress"
+    },
+    {
+      statusReference = jira.Status.instance.open
+      layout = {
+        x = 928.40625
+        y = 117.4
+      }
+      deprecated = false
+      name = "Open"
+    },
+  ]
+  transitions = {
+    Create__From__none__Initial@fffsff = {
+      type = "INITIAL"
+      toStatusReference = jira.Status.instance.open
+      links = [
+        {
+          toPort = 1
+        },
+      ]
+      name = "Create"
+      description = ""
+    }
+    Do_The_Thing__From__Open__Directed@ssfffsff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.in_progress@s
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.open
+          fromPort = 2
+          toPort = 6
+        },
+      ]
+      name = "Do The Thing"
+      description = ""
+      actions = [
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywzNywxNDIsNzUsMTA3LDMsNDksMTIsMTMyLDI1NSwyMDIsMjI2LDgzLDMsOTMsMTQ3LDEwMCwxODMsMTU1LDE5OSwxNzMsMzYsMjMxLDIwLDkwLDEyMiwxMSwyMCw2OSwxNDYsMTMxLDE2OSw5OSw1LDYzLDE1NCw2NiwyMzMsMTI3LDE3NSwyMjAsMjIwLDUyLDUxLDIyMyw3MiwyNTAsNDksMjQsMzIsMjMxLDMsOTIsMjE2LDEwOCwxMywyMDIsMTk3LDIsMTkzLDE4MSwxOTIsMTUxLDIwNywxOTcsMjMwLDEwMCw0OSw3MiwzNywxMjMsMTQ3LDI0NCwyMzMsMTMwLDIyMCwyMzYsMTA3LDE0MSwxMTEsMTUyLDI1MiwxODEsMTUyLDcxLDgzLDE3MSwzOSwyMzcsMjA0LDU1LDMsNzgsMzUsNjMsMjQ1LDI3LDkyLDY1LDYzLDE4NiwyMjksMjEyLDMsMTc1LDIxNCw2MSw0NSwyMywxOTUsMjMyLDE2NiwxMjksMjMxLDc2LDc0LDExNSwxMzIsODMsMjA4LDEwNSw5MSw4MiwxMDEsMTQ5LDIyMywxNDAsMTgxLDEyMCwxMzcsMjM5LDE1MywxNDcsMTEwLDEyMSwyMjIsMjM5LDYzLDk0LDE0LDIwMiwxNjEsNjgsMjQyLDQ1LDgwLDgzLDM3LDExMywyNTQsMTkxLDExOSw1NSw3OCw5Miw2NCw3NywxNjAsNTksMiw5NywzOSwyMTIsMjU0LDE0LDExNCw2MiwxMTUsMTc4LDYyLDU4LDEyMSw1NiwyNiwxOTIsMjIsMTE4LDEzOSwxNzQsMjI1LDE1NywyNDMsMTM3LDIzMywxMDQsMTAyLDIxOCwxMTUsNjIsNTIsMjE4LDI1MiwyNTQsMSw0MCwyMDIsOTAsMTMwLDI0NiwwLDAsMF19"
+            id = "2bec711c-7845-477d-96fb-e864f82a15ab"
+            disabled = "false"
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywzNywxNDIsMjA1LDc4LDE5NSw2NCwxMiwxMzIsOTUsMzcsMjE4LDE5LDcyLDEwMCwxNDksMTgyLDE2NCwxNjQsMjIwLDgwLDEyMyw0NiwxOCwxMzYsOTEsMzcsMjI4LDIxNiwyMjIsMTE4LDE5NywxMTgsMjksMjM3LDE1LDY5LDY2LDE4OCw1OSw3OCwxMjMsMTU2LDE1MywxMTEsMjM2LDI0OSw1MywyNCwzMiwyMzEsNjEsMTU2LDIxNyw2MCwyNywxNDgsMTc5LDUsMTMwLDE2OSwxOTIsMTgzLDIwNywxOTcsMjMwLDEwMCw0OSw3MiwzNywxMjMsMTQ1LDI0NCwyMjksMTMwLDkyLDIzNiw5MSwxNDEsMjM5LDE1MiwyNTIsODQsMjA0LDEzMSwxNjksMjEzLDE0NywxMTgsMTk4LDIxMywyMTYsMTExLDEyMCwxNDEsMTA5LDE4MywyOCwxNjgsMTI1LDI4LDg2LDIxMiwxNCwyNTMsMTY2LDExMSwyOSwxMTgsMTM5LDUsMTk0LDE5LDE3NCw5MywxNjcsNTIsNzEsMjQsMywxMDcsMTYxLDE2NCwyMDIsNDIsMTI3LDI0LDEwNywyNDEsMTgsNjMsNTAsMzksMTg5LDI0MiwxNzgsMjE5LDEyNSwxOTAsMjM4LDE0OSw2NywxMzcsMjI4LDIzMSw2NCw3NywxNDksMTk2LDI0OSwyNTAsMjM5LDEwMiw2NCwxNTIsNzgsMTYwLDQ2LDIwOCwxNDEsMTI5LDE3NiwyMSwxNTQsMTM1LDcsNTcsMzAsNTcsODksMzEsMTU3LDIyMCwyOSwxMiwyMjQsMjgsNTQsOTMsMTE1LDIyOSwyNywyMzEsMTksMjExLDE5MywyMjAsMTA3LDIwOSwyNDksNDgsMjI3LDIzMCwyMzksMzEsMTA4LDQwLDIwMiwxNjAsMjQ4LDAsMCwwXX0="
+            id = "e7d570f3-7d5d-4b89-aca3-c73d6acbdba3"
+            disabled = "false"
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywzNywxNDIsMjA1LDExMCwxOTQsNDgsMTYsMTMyLDk1LDM3LDI0Miw5LDE2NCwxOTgsMzQsMTA1LDcyLDE2MCw1NSw4NCwyMDYsODQsMTA2LDIxMywyNywxOCw5MCwxMjMsMjE1LDIwMCwxNzAsMjQxLDM0LDI1NSwxNDgsNzQsODUsMjIzLDE4OSwyNyw1NiwyMDYsMjA0LDU1LDE4NywyNDMsMTcxLDEwOCwxMjgsMTU2LDE1LDExMiwzMywyNDUsMTYyLDQ0LDk1LDUyLDMyLDkyLDExLDEyNCwyNTEsOTIsMTE2LDc4LDIxOCw2LDE3NCwxNjgsMTExLDE1NiwxOTAsOTIsMjI0LDE1NSwxMjYsMTc1LDI0MSwxOTUsMzgsMTI3LDQ1LDIzNCw3MywyMTMsMjM0LDgxLDU4LDE4NCw1MCwyMTksMTI2LDE1Niw5MiwxODcsMiwxNzksMTA1LDEzNSwyMDEsMTIsNDUsMTg0LDExMCwxMDYsMjE1LDEwMCwxOTgsNTMsMTQsMjUzLDUyLDExOCw3OCwxMDQsMTM4LDk2LDIsNzMsMTYxLDE2NCw3NCwzNCwxMjcsMjAwLDIxNCwyMjYsNTcsMTI2LDEwMiw3NCwxMTQsMTAxLDE4MywyMjMsMTU5LDIyMiwxNCwxOTQsODksMTQyLDIzMiwyMzEsNjQsNzYsMTQ1LDcyLDI0OSwyNTQsMjM5LDk3LDMyLDEzMywyLDIyNiwyLDYyLDI0LDgsMTc1LDE0MCwyNDMsMjQwLDE5MiwyMzEsNTEsMzcsMjM3LDE2MywyMjcsMTk3LDgxLDEyOSwxNTcsMTk1LDIzMCwxODUsMTg1LDI0MywxNDEsMjQzLDEzNywyNDAsMTY4LDE1MCw4MiwxMTYsNjIsMjA0LDE4NCwyNTAsMjUxLDcsMzIsMTg2LDM3LDExMiwyNDgsMCwwLDBdfQ=="
+            id = "fcee24ef-b8c2-499c-9532-7820079a7a1b"
+            disabled = "false"
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywzNywxNDIsNzUsMTA3LDMsNDksMTIsMTMyLDI1NSwyMDIsMjI2LDgzLDExLDg5LDE0NywyMzYsMTcxLDIxNywyMjIsNjYsMTE1LDc4LDE2MCwxNjUsMTgzLDY0LDgxLDM3LDEyMSw0OSwyNDUsMjE4LDE5MywxNDMsMzYsODAsMjUwLDIyMywxNzEsNzcsMTQyLDUxLDI0MywxNDEsNTIsMTkxLDEwLDI5LDE2NCwxMTYsMTI4LDE1MywyMTMsMTcxLDE5NCw0OCwxMDcsMzIsNTYsMTAzLDE4NCwyMTYsMTQ4LDExNywxMzgsMjYsOTMsNDAsMTY0LDE3NSwzMywyNTQsMjQsMjMsMTc0LDI1MCwxODksMjQ4LDE1LDE0MCwyNDYsMTU2LDIxMyw3NCwxNDksOTgsNzMsNTgsMzUsMTUyLDEyNiw4OCwxODMsMTA5LDIyMSw1NSw5OSw4NywxMTksMzUsMTA5LDEwNiwyNCw5NSwxODYsMTU0LDYsMTc5LDEwOSwxMzQsMTkwLDIyMSwzNCwxNCw2NiwxNzksMTM1LDExMSwxOTksODIsMjAwLDE3NywxNzYsMjAwLDI3LDk5LDIwMSw1NCwyNDgsMjA3LDE5Niw4MSwxNzQsMjM2LDI0NiwyNTEsMTc1LDIyNyw2NSw1NiwxMiwxNTgsMjM2LDE4LDEzNiw0MSwxNDYsNTYsMjIxLDI1NSw2MSwxNDAsOSwyMzAsMjUsMTk2LDUsMTIyLDQ4LDIyNCwyMjIsMiw0NSwxOTUsOTMsMTUyLDM4LDE0MiwyMTgsMTIyLDE5LDE1OCw3OCwxMCwxMTIsOSwxNzEsMTY2LDE4NiwyNDMsMTQ5LDE3NywxNDUsMjMzLDE2NCwxNTgsMTY1LDEwNCwxNzIsOTEsMTEyLDI0NSwyNDcsMTUsMywyNCwxNDYsNywyNDgsMCwwLDBdfQ=="
+            id = "3fec6a73-2cac-46d0-b828-ff15c4745266"
+            disabled = "false"
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw0NSwxNDIsNzcsMTA3LDE5NCw2NCwxNiwxMzQsMjU1LDc0LDIxNiw4Myw1LDE3OSw1MiwzOCwyNCwyMjcsMTczLDIxMiwxNzksNjYsNzUsMTExLDEzMCw3NiwxMDIsMTAyLDEwMSwyMzMsMTg2LDI3LDI0NiwxNjMsMTAsMjEwLDI1NSwyMjIsMTM3LDI0Niw1NCwyMzksMTk5LDUxLDUxLDExOSwxMzMsMTQsODIsMjE4LDE5NSwxMzMsMjEzLDg2LDk3LDE4NCwxMDQsMzIsMTUyLDUwLDI1MiwyMTYsMTQ4LDExNywxMzgsMjYsOTMsNDAsMTY0LDE3NSwzMywxMjYsMjcsMjMsMTc0LDI1MCwxNjMsMjQ4LDc5LDE0MCwxMTgsMjAyLDEwNiwxNjksNzQsMTc3LDM2LDc2LDEzNSwyMjcsNDMsMjQ3LDI1Myw4MCwxNTUsMTY2LDEwNSwyMzUsMTQsNTUsMTA5LDYxLDE0LDE3NiwxNzAsODcsMjM1LDE3Nyw5MywyMTEsMTY2LDE2MSwxNjEsNzEsMTA1LDE3OSwxMzUsMjA5LDE3NywwLDU3LDIyLDIyLDEyMSw5OSw0NCwyMTcsNiwyNTUsMTQ5LDU2LDIwMiwxNTAsMTgzLDIyMSwyMzgsMTE2LDIxNiw3NSwxNSwxMzEsMzksNTksNyw5OCwxMzgsMzYsNzgsMTQzLDEyMyw3OSwxMzEsMTY3LDEwMCwxNTcsNzYsNzUsNSwyNDQsMTA4LDEyOSwxMjMsMTUsNTIsMTkxLDIzOCwxOTQsMjQ5LDIwNCw4MSw5MSwxMTEsMTk0LDIwMyw4MSwxLDIwNiw5NywyMTMsODUsMjU1LDY4LDEwMSwxMDgsMTAwLDU4LDE3MCwxMzMsMTYwLDE5OCwxODYsMjUsODAsMTkxLDEyNywyMTksNDAsODYsMTEsMjUyLDAsMCwwXX0="
+            id = "6e37dee7-06ed-4e88-be70-9a792c98905d"
+            disabled = "false"
+          }
+        },
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMyw1MywxNDIsMjA1LDE3MCwyLDQ5LDEyLDEzMywyMjMsMTY1LDQzLDUsMTY3LDQ4LDk0LDE5NywyMjYsNzgsMTU2LDE4MSwyMywyMzgsMTk3LDE1NywzMiwxNTMsNTIsMjEzLDk4LDEwOSwxNjQsNjMsNDIsMTM2LDIzOSwxMTAsNzAsMTcsMTc4LDU3LDM5LDIyMywyMDEsMjAxLDY3LDk3LDEyOCwxNTYsNTUsMTEyLDM4LDE4MSw4NCwyMDAsMTAzLDEzLDIyLDQ2LDUsMTc0LDYyLDIzLDE1NywxNDcsMTk4LDE5MiwyMTMsMjM0LDI3LDE2NywxNDcsMTEsMTI0LDIxMSwxMjcsNTMsMjU0LDk5LDI0MiwxNTEsMTYyLDM4LDE3MCw4NiwxMTEsMzcsOTksMTIyLDIyNywxMDQsMjIyLDE4MiwxNDEsNjcsMTc4LDIwNSwxMDgsMTM4LDEyNSwyMTEsMTgzLDEzNCwxNTQsMTMzLDI0OSw0OSw1MCw3Miw1NiwxMDksMTMzLDE2Niw4LDEyNSwzMiw5LDE0OCw4NCw3MywyMjgsMTU3LDE3NiwyMiwyMDcsMTEzLDE1NSw0MSwyMDEsMTQ5LDg1LDIxNSwyMzcsMTI3LDU1LDE5NCwzMyw3MSwyMzUsMTM1LDEzMywxNTIsMzQsNDUsMjI5LDExOSwyMjMsMTk5LDEyOCwyMDAsMjI5LDQwLDI1Miw2OCwxMjksMjUzLDgwLDE2LDIxNCwxMDgsMTM1LDIxNSwzLDMxLDE0LDE0OCwxODAsMTQzLDE0Miw3MSwxODcsNDcsMTg0LDgzLDk5LDk3LDE1NywxNSwzLDE2MSwxNTgsNDcsMjUzLDIwNiw4MywyMTQsMjM3LDAsMCwwXX0="
+            id = "cb55beb6-121f-4e98-8519-761f498ec10c"
+            disabled = "false"
+          }
+        },
+      ]
+    }
+    Do_The_Thing2__From__In_Progress__Directed@ssfffssff = {
+      type = "DIRECTED"
+      toStatusReference = jira.Status.instance.done
+      links = [
+        {
+          fromStatusReference = jira.Status.instance.in_progress@s
+          fromPort = 3
+          toPort = 7
+        },
+      ]
+      name = "Do The Thing2"
+      description = ""
+      actions = [
+        {
+          ruleKey = "connect:remote-workflow-function"
+          parameters = {
+            appKey = "com.onresolve.jira.groovy.groovyrunner__script-postfunction"
+            config = "eyJjb21wcmVzc2VkIjpbMzEsMTM5LDgsMCwwLDAsMCwwLDAsMywzNywxNDIsMjA1LDEwLDE5NCw0OCwxNiwxMzIsMjIzLDM3LDM5LDUsMjcsMTM4LDIxMiw4NiwxODksMTM3LDYxLDQzLDQwLDIyMiwxMCwxNzgsMjA1LDM4LDM3LDE1MiwxMDIsMzcsNjMsNDIsMTM2LDIzOSwyMzgsODYsMTQzLDUxLDI0MywyMDUsMjM4LDE4OCwxMzMsMTE0LDE2LDIyNywxLDcwLDQ1LDE4Miw2NiwyMDksNDAsMSwyMjUsMTU4LDIyNCw5Nyw5OSwxNDYsNDksNzIsMjI5LDQwLDE2MywxMjQsODIsMTg0LDI1LDcxLDc5LDEyMSwyMDIsMjU0LDE3MiwxMzAsMTg5LDM5LDE3NywxNiw1Nyw5MSwyMjgsNzgsMjIzLDY0LDE4OSw5MCw4NywxMjUsOTcsMTUwLDg4LDIxLDIxLDE0OCwxMDEsMTc3LDEwNSw3NCw4NSwxNDgsMTM2LDIwMiw1Miw4OCwxNzMsMjM1LDg1LDIwNywxODAsMjQ2LDIwOCw1OSwyMDUsMTMzLDIwLDE3OCwxMDIsMjQ5LDIxMCw0MiwzOSw3NSwyNTQsMTgsMTE3LDIyNCw0MywxODcsMTgyLDE4OSwzMCwxNSwyMDQsNDEsMjQyLDEwNCwxNjcsMTI4LDc3LDE1MCwxNjgsMjI3LDIzOSwyMjMsMjIzLDEyOCwxMzYsMjM2LDEsMjU0LDksMTEyLDEyMywxOTQsMTA1LDE4MiwxNjMsOTcsMjA4LDY1LDkwLDExMSwxMDQsMjE0LDc3LDgwLDM5LDIzMCwyMDQsMjUsMjM1LDE2Niw4NCwxMjQsMTkwLDEyMiw2MCwxNjIsOTIsMjI5LDAsMCwwXX0="
+            id = "8086f71a-131e-4794-bb38-c544ebd76bb9"
+            disabled = "false"
+          }
+        },
+      ]
+    }
+  }
+}

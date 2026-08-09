@@ -1,0 +1,97 @@
+jira.Automation When_a_Focus_Area_status_update_is_created___send_an_email2_rotem_test@ssssssss_08594sssub {
+  name = "When a Focus Area status update is created → send an email2"
+  state = "DISABLED"
+  description = "When a Focus Area status update is created, this rule will send an email to specified addresses."
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "712020:38da96f3-a719-4d9f-8bb5-d53ff08774e0"
+    displayName = "Rotem Cohen"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:moved"
+    value = {
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_moved"
+      sourceProject = "-1999"
+      targetProject = "-1999"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "action.send-templated-email"
+      value = {
+        to = [
+          {
+            type = "REFERENCE"
+            value = "INITIATOR"
+            additional = "INITIATOR"
+          },
+        ]
+        convertLineBreaks = false
+        templateContextData = {
+          emailName = "Focus area status update posted"
+          subject = "{{focusAreaStatusUpdate.author.displayName}} created an update for {{focusArea.name}}"
+          bodyType = "HTML"
+          body = '''
+<div style="max-width: 720px; margin: 0 auto;">
+<img src="https://mercury-web.prod-east.frontend.public.atl-paas.net/assets/focus-logo-with-attribution.png" alt="Atlassian Focus" style="display: block; margin: 0 auto; width: 123.73px; height: 40px; padding-bottom: 10px;">
+<p><b>{{focusAreaStatusUpdate.author.displayName}}</b> updated a Focus Area in Atlassian Focus</p>
+<hr style="border: 1px solid lightgray; margin: 0 auto;">
+<h2><a style="text-decoration: none;" href="{{focusArea.url}}">{{focusArea.name}}</a></h2>
+<p>Owned by {{focusArea.owner.displayName}}</p>
+<hr style="border: 1px solid lightgray; margin: 0 auto;">
+{{#if(exists(focusAreaStatusUpdate.status.newStatus))}}
+<p>• <s>{{focusAreaStatusUpdate.status.previousStatus}}</s> -> <b>{{focusAreaStatusUpdate.status.newStatus}}</b></p>
+{{/}}
+{{#if(exists(focusAreaStatusUpdate.targetDate.newFormattedDate))}}
+<p>• <s>{{focusAreaStatusUpdate.targetDate.previousFormattedDate}}</s> -> <b>{{focusAreaStatusUpdate.targetDate.newFormattedDate}}</b></p>
+{{/}}
+<p>{{focusAreaStatusUpdate.summary.text}}</p>
+</div>
+'''
+          fromEmailAddress = "jira@salto-test-2.atlassian.net"
+        }
+        sendGroupedEmails = false
+        legacyConfig = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.rotem_test@b
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.QWE,
+    jira.AutomationLabel.instance.120659@,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "2af58cdb1e12020ecc6e9dc3df266c827a5061366b1deddb5d482732de20a668"
+  }
+  isAgentic = false
+  _alias = "When a Focus Area status update is created → send an email2"
+}

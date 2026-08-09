@@ -1,0 +1,421 @@
+jira.Automation createdByOssE2e7758151 {
+  name = "createdByOssE2e7758151"
+  state = "ENABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.manual.trigger.issue"
+    value = {
+      inputFromUsers = false
+      inputPrompts = [
+      ]
+      groups = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "parent"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION"
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Status__status
+            }
+            selectedFieldType = "status"
+            comparison = "ONE_OF"
+            compareFieldValue = {
+              type = "NAME"
+              multiValue = true
+              values = [
+                "Approved",
+              ]
+            }
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "CONDITION"
+          type = "jira.jql.condition"
+          conditions = [
+          ]
+          children = [
+          ]
+          rawValue = "${ jira.Field.instance.Priority__priority } = ${ jira.Priority.instance.Medium.name }"
+        },
+        {
+          component = "ACTION"
+          type = "jira.issue.create"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Summary__string
+                }
+                fieldType = "summary"
+                type = "SET"
+                rawValue = "value"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Description__string
+                }
+                fieldType = "description"
+                type = "SET"
+                rawValue = "descruotuib"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Project__project
+                }
+                fieldType = "project"
+                type = "SET"
+                value = {
+                  value = "current"
+                  type = "COPY"
+                }
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu
+                }
+                fieldType = "issuetype"
+                type = "SET"
+                value = {
+                  type = "COPY"
+                  value = "current"
+                }
+              },
+            ]
+            sendNotifications = false
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.create"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "value"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "description"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              value = "current"
+              type = "COPY"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.lookup.issues"
+      value = {
+        id = "_customsmartvalue_id_166080756221912123"
+        name = {
+          type = "FREE"
+          value = "lookupIssues"
+        }
+        type = "JQL"
+        query = {
+          type = "SMART"
+          value = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Test_Project@s.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "CONDITION"
+      type = "jira.condition.container.block"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+            {
+              component = "CONDITION"
+              type = "jira.user.condition"
+              value = {
+                conditions = [
+                  {
+                    field = jira.Field.instance.Reporter__user
+                    check = "USER_IS"
+                    criteria = [
+                      {
+                        type = "ID"
+                        value = {
+                          id = "61d44bf59ee70a00685fa6b6"
+                          displayName = "Testing salto"
+                        }
+                      },
+                    ]
+                  },
+                ]
+                operator = "OR"
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.outgoing.email"
+              value = {
+                fromName = ""
+                replyTo = ""
+                to = [
+                  {
+                    type = "COPY"
+                    value = jira.Field.instance.Assignee__user
+                  },
+                ]
+                cc = [
+                ]
+                bcc = [
+                ]
+                subject = "Test"
+                body = file("jira/Automation/createdByOssE2e7758151.components.3.children.0.children.0.value.html")
+                mimeType = "text/html"
+                convertLineBreaks = true
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+        {
+          component = "CONDITION_BLOCK"
+          type = "jira.condition.if.block"
+          value = {
+            conditionMatchType = "ALL"
+          }
+          conditions = [
+          ]
+          children = [
+            {
+              component = "ACTION"
+              type = "jira.issue.outgoing.email"
+              value = {
+                fromName = ""
+                replyTo = ""
+                to = [
+                  {
+                    type = "COPY"
+                    value = jira.Field.instance.Reporter__user
+                  },
+                ]
+                cc = [
+                ]
+                bcc = [
+                ]
+                subject = "Test1"
+                body = file("jira/Automation/createdByOssE2e7758151.components.3.children.1.children.0.value.html")
+                mimeType = "text/html"
+                convertLineBreaks = true
+              }
+              conditions = [
+              ]
+              children = [
+              ]
+            },
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Assignee__user
+            }
+            fieldType = "assignee"
+            type = "SET"
+            value = {
+              type = "CLEAR"
+              value = "clear"
+            }
+          },
+        ]
+        advancedFields = '''
+{
+"update": {
+"${ jira.Field.instance.Sprint__gh_sprint__c@uubuu }" : [
+{
+"remove": {
+"value":"Pre-ship containment"
+}
+}
+]
+}
+}
+'''
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.Summary__string }}}"
+          },
+        ]
+        sendNotifications = true
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "_customsmartvalue_id_1737961759306"
+        name = {
+          type = "FREE"
+          value = "smartA"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "{{issue.${ jira.Field.instance.Summary__string }}}}"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectTypeKey = "business"
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "cfa416b83468fba51b33c38a8abc32efaa58201739268475c7bbbdd66f7cda6b"
+  }
+  isAgentic = false
+  _alias = "createdByOssE2e7758151"
+}

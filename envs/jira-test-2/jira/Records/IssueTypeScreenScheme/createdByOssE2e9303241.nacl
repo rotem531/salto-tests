@@ -1,0 +1,14 @@
+jira.IssueTypeScreenScheme createdByOssE2e9303241 {
+  name = "createdByOssE2e9303241"
+  description = "createdByOssE2e9303241"
+  issueTypeMappings = [
+    {
+      issueTypeId = jira.IssueType.instance.Bug
+      screenSchemeId = jira.ScreenScheme.instance.Default_Screen_Scheme@s
+    },
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.Default_Screen_Scheme@s
+    },
+  ]
+}

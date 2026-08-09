@@ -1,0 +1,14 @@
+jira.Field Work_item_created_forms__proforma_forms_field_cftype__c@sssuubbbuu {
+  name = "Work item created forms"
+  description = "UUIDs of forms associated with this work item at creation"
+  isLocked = true
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Work item created forms"
+  translatedDescription = "UUIDs of forms associated with this work item at creation"
+  type = "com.atlassian.jira.plugins.proforma-managed-fields:proforma-forms-field-cftype"
+  contexts = [
+    jira.CustomFieldContext.instance.Work_item_created_forms__proforma_forms_field_cftype__c_sssuubbbuu_Default_Configuration_Scheme_for_Work_item_created_forms@uuuuuuuuuumusssssss,
+  ]
+  _alias = "Work item created forms"
+}

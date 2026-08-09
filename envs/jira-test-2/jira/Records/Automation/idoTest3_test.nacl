@@ -1,0 +1,216 @@
+jira.Automation idoTest3_test {
+  name = "idoTest3_test"
+  state = "DISABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.field.changed"
+    value = {
+      changeType = "VALUE_ADDED"
+      fields = [
+        {
+          value = jira.Field.instance.Components__array
+          type = "field"
+        },
+      ]
+      actions = [
+        "create",
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "parent"
+        jql = ""
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = false
+        similarityLimit = 40
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "CONDITION"
+          type = "jira.issue.condition"
+          value = {
+            selectedField = {
+              type = "ID"
+              value = jira.Field.instance.Status__status
+            }
+            selectedFieldType = "status"
+            comparison = "ONE_OF"
+            compareFieldValue = {
+              type = "NAME"
+              multiValue = true
+              values = [
+                "Approved",
+              ]
+            }
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+        {
+          component = "CONDITION"
+          type = "jira.jql.condition"
+          conditions = [
+          ]
+          children = [
+          ]
+          rawValue = "${ jira.Field.instance.Priority__priority } > ${ jira.Priority.instance.Medium.name }"
+        },
+        {
+          component = "ACTION"
+          type = "jira.issue.create"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Summary__string
+                }
+                fieldType = "summary"
+                type = "SET"
+                rawValue = "value"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Description__string
+                }
+                fieldType = "description"
+                type = "SET"
+                rawValue = "descruotuib"
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Project__project
+                }
+                fieldType = "project"
+                type = "SET"
+                value = {
+                  value = "current"
+                  type = "COPY"
+                }
+              },
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Issue_Type__issuetype@suu
+                }
+                fieldType = "issuetype"
+                type = "SET"
+                value = {
+                  type = "COPY"
+                  value = "current"
+                }
+              },
+            ]
+            sendNotifications = false
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.create"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "value"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "description"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              value = "current"
+              type = "COPY"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectTypeKey = "business"
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "1a618b44599b73b6cb6766b559d3fe00bee2313b0a07333780d9124f7d7c7546"
+  }
+  isAgentic = false
+  _alias = "idoTest3_test"
+}

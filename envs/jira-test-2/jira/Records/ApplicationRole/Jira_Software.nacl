@@ -1,0 +1,17 @@
+jira.ApplicationRole Jira_Software@s {
+  key = "jira-software"
+  groups = [
+    jira.Group.instance.jira_software_users_salto_test_2@b,
+    jira.Group.instance.site_admins@b,
+  ]
+  name = "Jira Software"
+  defaultGroups = [
+    jira.Group.instance.jira_software_users_salto_test_2@b,
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 10
+  userCountDescription = "users"
+  hasUnlimitedSeats = false
+  platform = false
+}

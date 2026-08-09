@@ -1,0 +1,89 @@
+jira.Automation When_a_change_request_is_created___then_attach_the_default_change_management_form@ssssss_08594sssssss {
+  name = "When a change request is created → then attach the default change management form"
+  state = "ENABLED"
+  canOtherRuleTrigger = true
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "61d44bf59ee70a00685fa6b6"
+      displayName = "Testing salto"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "CONDITION"
+      type = "jira.issue.condition"
+      value = {
+        selectedField = {
+          type = "NAME"
+          value = jira.Field.instance.Request_Type__vp_origin__c@suubuu.name
+        }
+        selectedFieldType = "com.atlassian.servicedesk:vp-origin"
+        comparison = "EQUALS"
+        compareFieldValue = {
+          type = "NAME"
+          value = "Request a change"
+          multiValue = false
+        }
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.proforma.form.add.action"
+      value = {
+        templateFormsConfig = {
+          projectId = jira.Project.instance.missing_10005
+          templateFormIds = [
+            1,
+          ]
+        }
+        formVisibility = "internal"
+        allowDuplicates = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.missing_10005
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.Change_management@s,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "SYSTEM"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 2
+    value = "4cee861a0925e01f310a0970381df843cb69028eb101a6e7a2e3a115b1bbe3de"
+  }
+  isAgentic = false
+  _alias = "When a change request is created → then attach the default change management form"
+}

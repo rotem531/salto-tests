@@ -1,0 +1,13 @@
+jira.ProjectComponent Support__Public_website@uus {
+  name = "Public website"
+  description = "Issues related to the public website. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  leadAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  _parent = [
+    jira.Project.instance.Support,
+  ]
+  _alias = "Support:Public website"
+}

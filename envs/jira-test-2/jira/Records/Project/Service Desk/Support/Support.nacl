@@ -1,0 +1,20 @@
+jira.Project Support {
+  key = "SUP"
+  description = ""
+  name = "Support"
+  projectTypeKey = "service_desk"
+  components = [
+    jira.ProjectComponent.instance.Support__Intranet,
+    jira.ProjectComponent.instance.Support__Jira,
+    jira.ProjectComponent.instance.Support__Public_website@uus,
+  ]
+  workflowScheme = jira.WorkflowScheme.instance.Jira_Service_Management_IT_Support_Workflow_Scheme_generated_for_Project_SUP@s
+  permissionScheme = jira.PermissionScheme.instance.Jira_Service_Management_Permission_Scheme_for_Project_SUP@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.SUP__Jira_Service_Management_Issue_Type_Screen_Scheme@fsssssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.SUP__Jira_Service_Management_Issue_Type_Scheme@fssssss
+  leadAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  assigneeType = "PROJECT_LEAD"
+}

@@ -1,0 +1,16 @@
+jira.Project Test_Project@s {
+  key = "TP"
+  description = ""
+  name = "Test Project"
+  projectTypeKey = "software"
+  workflowScheme = jira.WorkflowScheme.instance.TP__Software_Simplified_Workflow_Scheme@fssss
+  permissionScheme = jira.PermissionScheme.instance.TP_software_permission_scheme@s
+  notificationScheme = jira.NotificationScheme.instance.Default_Notification_Scheme@s
+  issueTypeScreenScheme = jira.IssueTypeScreenScheme.instance.TP__Kanban_Issue_Type_Screen_Scheme@fsssss
+  issueTypeScheme = jira.IssueTypeScheme.instance.TP__Kanban_Issue_Type_Scheme@fssss
+  leadAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  assigneeType = "UNASSIGNED"
+}

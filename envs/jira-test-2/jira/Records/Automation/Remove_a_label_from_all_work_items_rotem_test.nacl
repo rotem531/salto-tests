@@ -1,0 +1,163 @@
+jira.Automation Remove_a_label_from_all_work_items_rotem_test@ssssssub {
+  name = "Remove a label from all work items"
+  state = "ENABLED"
+  description = "Quickly clean up deprecated labels. When this rule is triggered, it will automatically remove a specific label from all tickets in the space."
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "712020:38da96f3-a719-4d9f-8bb5-d53ff08774e0"
+    displayName = "Rotem Cohen"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.manual.trigger.issue"
+    value = {
+      inputFromUsers = false
+      inputPrompts = [
+      ]
+      groups = [
+      ]
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.create.variable"
+      value = {
+        id = "label-to-remove-id"
+        name = {
+          type = "FREE"
+          value = "labelToRemove"
+        }
+        type = "SMART"
+        query = {
+          type = "SMART"
+          value = "my-label-to-remove"
+        }
+        lazy = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+    {
+      component = "BRANCH"
+      type = "jira.issue.related"
+      value = {
+        relatedType = "jql"
+        jql = "${ jira.Field.instance.Labels__array }={{labelToRemove}}"
+        linkTypes = [
+        ]
+        onlyUpdatedIssues = true
+        similarityLimit = 0
+        compareValue = 0
+      }
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ACTION"
+          type = "jira.issue.edit"
+          value = {
+            operations = [
+              {
+                field = {
+                  type = "ID"
+                  value = jira.Field.instance.Labels__array
+                }
+                fieldType = "labels"
+                type = "ADDREMOVE"
+                value = {
+                  REMOVE = [
+                    {
+                      type = "SMART"
+                      value = "{{labelToRemove}}"
+                    },
+                  ]
+                  ADD = [
+                    {
+                      type = "NAME"
+                      value = "content"
+                    },
+                  ]
+                }
+              },
+            ]
+            sendNotifications = false
+          }
+          conditions = [
+          ]
+          children = [
+          ]
+        },
+      ]
+    },
+    {
+      component = "ACTION"
+      type = "jira.issue.edit"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Labels__array
+            }
+            fieldType = "labels"
+            type = "ADDREMOVE"
+            value = {
+              REMOVE = [
+                {
+                  type = "SMART"
+                  value = "{{labelToRemove}}"
+                },
+              ]
+              ADD = [
+                {
+                  type = "NAME"
+                  value = "content"
+                },
+              ]
+            }
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.rotem_test@b
+    },
+  ]
+  labels = [
+    jira.AutomationLabel.instance.testLabel,
+    jira.AutomationLabel.instance.ASD,
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "faa4226b71fe3714a499fdbac6af69e02763917f63c762a3ba95e5479a1a48a8"
+  }
+  isAgentic = false
+  _alias = "Remove a label from all work items"
+}

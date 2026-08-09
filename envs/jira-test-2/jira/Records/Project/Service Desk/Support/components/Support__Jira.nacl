@@ -1,0 +1,13 @@
+jira.ProjectComponent Support__Jira {
+  name = "Jira"
+  description = "Issues related to Jira. Created by Jira Service Management."
+  assigneeType = "UNASSIGNED"
+  leadAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  _parent = [
+    jira.Project.instance.Support,
+  ]
+  _alias = "Support:Jira"
+}

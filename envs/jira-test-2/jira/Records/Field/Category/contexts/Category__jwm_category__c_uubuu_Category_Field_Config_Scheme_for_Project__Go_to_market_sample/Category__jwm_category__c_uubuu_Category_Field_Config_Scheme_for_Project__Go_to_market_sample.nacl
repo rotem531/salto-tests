@@ -1,0 +1,11 @@
+jira.CustomFieldContext Category__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project__Go_to_market_sample@uuuuumusssssfssss {
+  name = "Category Field Config Scheme for Project: Go to market sample"
+  description = "Category Field Options"
+  projectIds = [
+    jira.Project.instance.Go_to_market_sample@s,
+  ]
+  _parent = [
+    jira.Field.instance.Category__jwm_category__c@uubuu,
+  ]
+  _alias = "Category context in Category Field Config Scheme for Project: Go to market sample"
+}

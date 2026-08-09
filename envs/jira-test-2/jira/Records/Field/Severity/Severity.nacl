@@ -1,0 +1,14 @@
+jira.Field Severity__select__c {
+  name = "Severity"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Severity"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Severity__select__c_Default_Configuration_Scheme_for_Severity@uuuuussss,
+  ]
+  _alias = "Severity"
+}

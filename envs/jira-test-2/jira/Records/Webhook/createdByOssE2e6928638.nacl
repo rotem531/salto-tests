@@ -1,0 +1,19 @@
+jira.Webhook createdByOssE2e6928638 {
+  name = "createdByOssE2e6928638"
+  url = "https://example.com/rest/webhooks/createdByOssE2e6928638"
+  excludeBody = true
+  filters = {
+    issue_related_events_section = "${ jira.Field.instance.Status__status } = ${ jira.Status.instance.done.name }"
+  }
+  events = [
+    "option_watching_changed",
+    "user_created",
+    "jira:version_updated",
+    "worklog_updated",
+    "project_deleted",
+    "sprint_created",
+    "board_updated",
+  ]
+  enabled = true
+  isSigned = false
+}

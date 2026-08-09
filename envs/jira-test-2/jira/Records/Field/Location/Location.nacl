@@ -1,0 +1,10 @@
+jira.Field Location__location__c {
+  name = "Location"
+  description = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Location"
+  translatedDescription = "Adding both UUID and Location fields to a project, will enable JIRA Mobile Connect for that project."
+  type = "com.atlassian.jconnect.jconnect-plugin:location"
+  _alias = "Location"
+}

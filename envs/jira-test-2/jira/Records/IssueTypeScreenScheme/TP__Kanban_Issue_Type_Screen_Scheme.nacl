@@ -1,0 +1,14 @@
+jira.IssueTypeScreenScheme TP__Kanban_Issue_Type_Screen_Scheme@fsssss {
+  name = "TP: Kanban Issue Type Screen Scheme"
+  description = ""
+  issueTypeMappings = [
+    {
+      issueTypeId = jira.IssueType.instance.Bug
+      screenSchemeId = jira.ScreenScheme.instance.TP__Kanban_Bug_Screen_Scheme@fssss
+    },
+    {
+      issueTypeId = "default"
+      screenSchemeId = jira.ScreenScheme.instance.TP__Kanban_Default_Screen_Scheme@fssss
+    },
+  ]
+}

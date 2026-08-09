@@ -1,4 +1,10 @@
 envs {
   envs = [
+    {
+      name = "jira-test-2"
+      accountToServiceName = {
+        jira = "jira"
+      }
+    },
   ]
 }

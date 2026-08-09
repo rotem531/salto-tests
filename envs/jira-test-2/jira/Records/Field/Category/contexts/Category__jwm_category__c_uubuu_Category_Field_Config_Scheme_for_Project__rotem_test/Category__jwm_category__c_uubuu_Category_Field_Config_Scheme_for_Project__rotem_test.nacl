@@ -1,0 +1,11 @@
+jira.CustomFieldContext Category__jwm_category__c_uubuu_Category_Field_Config_Scheme_for_Project__rotem_test@uuuuumusssssfsb {
+  name = "Category Field Config Scheme for Project: rotem-test"
+  description = "Category Field Options"
+  projectIds = [
+    jira.Project.instance.rotem_test@b,
+  ]
+  _parent = [
+    jira.Field.instance.Category__jwm_category__c@uubuu,
+  ]
+  _alias = "Category context in Category Field Config Scheme for Project: rotem-test"
+}

@@ -1,0 +1,14 @@
+jira.Field Approver_groups__multigrouppicker__c@suuuu {
+  name = "Approver groups"
+  description = "Contains groups of users needed for approval. This custom field was created by Jira Service Management."
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Approver groups"
+  translatedDescription = "Contains groups of users needed for approval. This custom field was created by Jira Service Management."
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:multigrouppicker"
+  contexts = [
+    jira.CustomFieldContext.instance.Approver_groups__multigrouppicker__c_suuuu_Default_Configuration_Scheme_for_Approver_groups@uuuuumusssss,
+  ]
+  _alias = "Approver groups"
+}

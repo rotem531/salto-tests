@@ -1,0 +1,17 @@
+jira.ApplicationRole Jira_Service_Desk@s {
+  key = "jira-servicedesk"
+  groups = [
+    jira.Group.instance.jira_servicemanagement_users_salto_test_2@b,
+    jira.Group.instance.site_admins@b,
+  ]
+  name = "Jira Service Desk"
+  defaultGroups = [
+    jira.Group.instance.jira_servicemanagement_users_salto_test_2@b,
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 3
+  userCountDescription = "agents"
+  hasUnlimitedSeats = false
+  platform = false
+}

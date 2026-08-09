@@ -1,0 +1,38 @@
+jira.Filter createdByOssE2e1479155 {
+  name = "createdByOssE2e1479155"
+  owner = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  jql = "${ jira.Field.instance.Project__project } = ${ jira.Project.instance.Test_Project@s.key } ORDER BY ${ jira.Field.instance.Rank__gh_lexo_rank__c@uubbuu.name } ASC"
+  sharePermissions = [
+    {
+      type = "user"
+      user = {
+        id = "712020:1d70a0f0-f922-491a-9936-2b97417e4d9f"
+        displayName = "Jira Adapter Dev"
+      }
+    },
+    {
+      type = "project"
+      project = {
+        id = jira.Project.instance.Test_Project@s
+      }
+    },
+    {
+      type = "group"
+      group = {
+        name = jira.Group.instance.site_admins@b
+      }
+    },
+  ]
+  editPermissions = [
+    {
+      type = "user"
+      user = {
+        id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+        displayName = "Automation for Jira"
+      }
+    },
+  ]
+}

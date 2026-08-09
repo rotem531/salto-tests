@@ -1,0 +1,25 @@
+jira.SecurityLevel Default_Issue_Security_Scheme_for_JSM_s__Sensitive_Cases@uuuuumuus {
+  description = "Only the reporter and current assignee has access."
+  name = "Sensitive Cases"
+  members = [
+    {
+      holder = {
+        type = "reporter"
+      }
+    },
+    {
+      holder = {
+        type = "assignee"
+      }
+    },
+    {
+      holder = {
+        type = "projectRole"
+        parameter = jira.ProjectRole.instance.atlassian_addons_project_access@b
+      }
+    },
+  ]
+  _parent = [
+    jira.SecurityScheme.instance.Default_Issue_Security_Scheme_for_JSM@s,
+  ]
+}

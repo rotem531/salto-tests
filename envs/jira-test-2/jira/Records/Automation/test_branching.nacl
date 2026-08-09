@@ -1,0 +1,187 @@
+jira.Automation test_branching@s {
+  name = "test branching"
+  state = "ENABLED"
+  description = ""
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "61d44bf59ee70a00685fa6b6"
+    displayName = "Testing salto"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:created"
+    value = {
+      eventKey = "jira:issue_created"
+      issueEvent = "issue_created"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ORCHESTRATION"
+      type = "automation.orchestration.instruction.split-parallel"
+      conditions = [
+      ]
+      children = [
+        {
+          component = "ORCHESTRATION"
+          type = "automation.orchestration.split-parallel.child"
+          value = {
+            branchName = "Branch 1"
+          }
+          conditions = [
+          ]
+          children = [
+            {
+              component = "ORCHESTRATION"
+              type = "automation.orchestration.fragment"
+              value = {
+                inputProjections = [
+                ]
+                outputProjections = [
+                ]
+                name = "Group 11"
+                isOptional = false
+              }
+              conditions = [
+              ]
+              children = [
+                {
+                  component = "ACTION"
+                  type = "jira.issue.create"
+                  value = {
+                    operations = [
+                      {
+                        field = {
+                          type = "ID"
+                          value = jira.Field.instance.Summary__string
+                        }
+                        fieldType = "summary"
+                        type = "SET"
+                        rawValue = "test"
+                      },
+                      {
+                        field = {
+                          type = "ID"
+                          value = jira.Field.instance.Description__string
+                        }
+                        fieldType = "description"
+                        type = "SET"
+                      },
+                      {
+                        field = {
+                          type = "ID"
+                          value = jira.Field.instance.Project__project
+                        }
+                        fieldType = "project"
+                        type = "SET"
+                        value = {
+                          value = "current"
+                          type = "COPY"
+                        }
+                      },
+                      {
+                        field = {
+                          type = "ID"
+                          value = jira.Field.instance.Issue_Type__issuetype@suu
+                        }
+                        fieldType = "issuetype"
+                        type = "SET"
+                        value = {
+                          type = "COPY"
+                          value = "current"
+                        }
+                      },
+                    ]
+                    advancedFields = '''
+{
+   "fields": {
+      "Hardware Request Location": [
+          {{#issue.${ jira.Field.instance.Start_date__datepicker__c@suuuu }}}{"value":"{{value}}"}{{^last}},{{/}}{{/}}
+      ]
+   }
+}
+'''
+                    sendNotifications = false
+                  }
+                  conditions = [
+                  ]
+                  children = [
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+        {
+          component = "ORCHESTRATION"
+          type = "automation.orchestration.split-parallel.child"
+          value = {
+            branchName = "Branch 2"
+          }
+          conditions = [
+          ]
+          children = [
+            {
+              component = "ORCHESTRATION"
+              type = "automation.orchestration.fragment"
+              value = {
+                inputProjections = [
+                ]
+                outputProjections = [
+                ]
+                name = "Group 2"
+                isOptional = false
+              }
+              conditions = [
+              ]
+              children = [
+                {
+                  component = "ACTION"
+                  type = "jira.worklog.add"
+                  value = {
+                    timeSpent = "5m"
+                    dateStarted = {
+                      type = "SMART"
+                      value = "{{now}}"
+                    }
+                    description = ""
+                    adjustEstimate = "ADJUST_AUTOMATICALLY"
+                  }
+                  conditions = [
+                  ]
+                  children = [
+                  ]
+                },
+              ]
+            },
+          ]
+        },
+      ]
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 2
+    value = "bab479efda9c407edc4dc34bf86b30a0feb9750ab5bafdd98e9e77ba1b809fc6"
+  }
+  isAgentic = false
+  _alias = "test branching"
+}

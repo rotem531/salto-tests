@@ -1,0 +1,24 @@
+jira.Field Project__project {
+  name = "Project"
+  schema = {
+    type = "project"
+    system = "project"
+  }
+  description = ""
+  _alias = "Project"
+}
+jira.Field Project__atlas_project__c@uubuu {
+  name = "Project"
+  description = "Add a project to work items to track progress and share updates more easily."
+  isLocked = true
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:atlas-project-searcher"
+  areOptionsSupported = false
+  isOptionsCountOverLimit = false
+  translatedName = "Atlassian Project"
+  translatedDescription = "Add a project to work items to track progress and share updates more easily."
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:atlas-project"
+  contexts = [
+    jira.CustomFieldContext.instance.Project__atlas_project__c_uubuu_Default_Configuration_Scheme_for_Project@uuuuumussss,
+  ]
+  _alias = "Project"
+}

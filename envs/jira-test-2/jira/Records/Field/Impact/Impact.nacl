@@ -1,0 +1,14 @@
+jira.Field Impact__select__c {
+  name = "Impact"
+  description = ""
+  searcherKey = "com.atlassian.jira.plugin.system.customfieldtypes:multiselectsearcher"
+  areOptionsSupported = true
+  isOptionsCountOverLimit = false
+  translatedName = "Impact"
+  translatedDescription = ""
+  type = "com.atlassian.jira.plugin.system.customfieldtypes:select"
+  contexts = [
+    jira.CustomFieldContext.instance.Impact__select__c_Default_Configuration_Scheme_for_Impact@uuuuussss,
+  ]
+  _alias = "Impact"
+}

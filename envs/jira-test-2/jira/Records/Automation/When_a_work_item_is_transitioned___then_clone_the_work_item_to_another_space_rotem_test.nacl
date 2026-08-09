@@ -1,0 +1,108 @@
+jira.Automation When_a_work_item_is_transitioned___then_clone_the_work_item_to_another_space_rotem_test@ssssss_08594ssssssssub {
+  name = "When a work item is transitioned → then clone the work item to another space"
+  state = "DISABLED"
+  canOtherRuleTrigger = false
+  notifyOnError = "FIRSTERROR"
+  authorAccountId = {
+    id = "712020:38da96f3-a719-4d9f-8bb5-d53ff08774e0"
+    displayName = "Rotem Cohen"
+  }
+  actor = {
+    type = "ACCOUNT_ID"
+    value = {
+      id = "557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+      displayName = "Automation for Jira"
+    }
+  }
+  trigger = {
+    component = "TRIGGER"
+    type = "jira.issue.event.trigger:transitioned"
+    value = {
+      fromStatus = [
+      ]
+      toStatus = [
+      ]
+      eventKey = "jira:issue_updated"
+      issueEvent = "issue_generic"
+    }
+    conditions = [
+    ]
+    children = [
+    ]
+  }
+  components = [
+    {
+      component = "ACTION"
+      type = "jira.issue.clone"
+      value = {
+        operations = [
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Project__project
+            }
+            fieldType = "project"
+            type = "SET"
+            value = {
+              type = "ID"
+              value = jira.Project.instance.Test_Project@s
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Issue_Type__issuetype@suu
+            }
+            fieldType = "issuetype"
+            type = "SET"
+            value = {
+              type = "COPY"
+              value = "current"
+            }
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Summary__string
+            }
+            fieldType = "summary"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.Summary__string }}}"
+          },
+          {
+            field = {
+              type = "ID"
+              value = jira.Field.instance.Description__string
+            }
+            fieldType = "description"
+            type = "SET"
+            rawValue = "{{issue.${ jira.Field.instance.Description__string }}}"
+          },
+        ]
+        sendNotifications = false
+      }
+      conditions = [
+      ]
+      children = [
+      ]
+    },
+  ]
+  projects = [
+    {
+      projectId = jira.Project.instance.rotem_test@b
+    },
+  ]
+  labels = [
+  ]
+  writeAccessType = "UNRESTRICTED"
+  collaborators = [
+  ]
+  billingType = "NORMAL"
+  partitionId = "2b4dca46-929c-416e-be53-1a2fd2715576"
+  checksum = {
+    version = 3
+    value = "abe1f073049888509ae1b1dd50fc0e0f41870ae9be9b1604da053f63e7bc61a8"
+  }
+  isAgentic = false
+  _alias = "When a work item is transitioned → then clone the work item to another space"
+}

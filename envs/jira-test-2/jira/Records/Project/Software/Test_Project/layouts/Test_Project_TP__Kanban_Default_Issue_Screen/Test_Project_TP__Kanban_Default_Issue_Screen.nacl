@@ -1,0 +1,20 @@
+jira.IssueLayout Test_Project_TP__Kanban_Default_Issue_Screen@sufssss {
+  extraDefinerId = jira.Screen.instance.TP__Kanban_Default_Issue_Screen@fssss
+  issueLayoutConfig = {
+    items = [
+      {
+        type = "FIELD"
+        sectionType = "PRIMARY"
+        key = jira.Field.instance.Assignee__user
+        data = {
+          custom = false
+          global = true
+          required = false
+        }
+      },
+    ]
+  }
+  _parent = [
+    jira.Project.instance.Test_Project@s,
+  ]
+}
