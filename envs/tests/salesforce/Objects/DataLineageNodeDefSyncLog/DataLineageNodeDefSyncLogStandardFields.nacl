@@ -1,0 +1,38 @@
+type salesforce.DataLineageNodeDefSyncLog {
+  salesforce.Unknown DataSpace {
+    apiName = "DataLineageNodeDefSyncLog.DataSpace"
+  }
+  salesforce.Unknown DevName {
+    apiName = "DataLineageNodeDefSyncLog.DevName"
+  }
+  salesforce.Unknown LastFailureReason {
+    apiName = "DataLineageNodeDefSyncLog.LastFailureReason"
+  }
+  salesforce.Unknown Name {
+    apiName = "DataLineageNodeDefSyncLog.Name"
+  }
+  salesforce.Unknown ObjectType {
+    apiName = "DataLineageNodeDefSyncLog.ObjectType"
+  }
+  salesforce.Unknown OperationTime {
+    apiName = "DataLineageNodeDefSyncLog.OperationTime"
+  }
+  salesforce.Unknown OperationType {
+    apiName = "DataLineageNodeDefSyncLog.OperationType"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DataLineageNodeDefSyncLog.OwnerId"
+  }
+  salesforce.Unknown Payload {
+    apiName = "DataLineageNodeDefSyncLog.Payload"
+  }
+  salesforce.Unknown RecordIdentifier {
+    apiName = "DataLineageNodeDefSyncLog.RecordIdentifier"
+  }
+  salesforce.Unknown RetryCount {
+    apiName = "DataLineageNodeDefSyncLog.RetryCount"
+  }
+  salesforce.Unknown SyncStatus {
+    apiName = "DataLineageNodeDefSyncLog.SyncStatus"
+  }
+}

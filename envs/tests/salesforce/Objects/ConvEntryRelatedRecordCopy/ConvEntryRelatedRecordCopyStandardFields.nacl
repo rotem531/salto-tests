@@ -1,0 +1,17 @@
+type salesforce.ConvEntryRelatedRecordCopy {
+  salesforce.Lookup ConversationEntryCopyId {
+    apiName = "ConvEntryRelatedRecordCopy.ConversationEntryCopyId"
+  }
+  salesforce.Unknown Name {
+    apiName = "ConvEntryRelatedRecordCopy.Name"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ConvEntryRelatedRecordCopy.OwnerId"
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "ConvEntryRelatedRecordCopy.RelatedRecordId"
+  }
+  salesforce.Unknown RelatedRecordObject {
+    apiName = "ConvEntryRelatedRecordCopy.RelatedRecordObject"
+  }
+}
