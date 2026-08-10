@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CommSubscriptionChannelTypeId</fullName>
     <type>Lookup</type>
-    <required>true</required>
-    <relationshipName>CommSubscriptionChannelType</relationshipName>
+    <required>false</required>
     <inlineHelpText>The Communication Subscription Channel Type record associated with the Communication Subscription Consent.</inlineHelpText>
 </CustomField>
