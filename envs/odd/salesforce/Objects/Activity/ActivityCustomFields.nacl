@@ -1,0 +1,7 @@
+type salesforce.Activity {
+  salesforce.Checkbox wasCompletedByMe__c {
+    apiName = "Activity.wasCompletedByMe__c"
+    label = "Was Completed By Me"
+    defaultValue = false
+  }
+}
