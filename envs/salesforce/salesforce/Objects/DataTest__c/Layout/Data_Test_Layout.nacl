@@ -1,0 +1,90 @@
+salesforce.Layout DataTest__c_Data_Test_Layout@uubss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.DataTest__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataTest__c.field.Description__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.DataTest__c.field.Formula__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataTest__c.field.Parent__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataTest__c.field.Rescued__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.DataTest__c.field.Rescued2__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.DataTest__c.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.DataTest__c.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.DataTest__c.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "DataTest__c-Data Test Layout"
+  _parent = [
+    salesforce.DataTest__c,
+  ]
+  _alias = "DataTest__c-Data Test Layout"
+}

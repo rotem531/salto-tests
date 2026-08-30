@@ -1,0 +1,6 @@
+type salesforce.Event {
+  salesforce.Checkbox wasCompletedByMe__c {
+    apiName = "Event.wasCompletedByMe__c"
+    activityField = salesforce.Activity.field.wasCompletedByMe__c
+  }
+}

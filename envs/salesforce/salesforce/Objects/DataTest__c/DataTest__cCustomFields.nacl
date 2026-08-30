@@ -1,0 +1,72 @@
+type salesforce.DataTest__c {
+  salesforce.Text Description__c {
+    apiName = "DataTest__c.Description__c"
+    externalId = false
+    label = "Description"
+    length = 255
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.FormulaText Formula__c {
+    apiName = "DataTest__c.Formula__c"
+    externalId = false
+    formula = "\"F-\" & Name"
+    label = "Formula"
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+    _generated_dependencies = [
+      {
+        reference = salesforce.DataTest__c.field.Name
+      },
+    ]
+  }
+  salesforce.Text NowhereField__c {
+    apiName = "DataTest__c.NowhereField__c"
+    externalId = false
+    label = "NowhereField"
+    length = 255
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup Parent__c {
+    apiName = "DataTest__c.Parent__c"
+    deleteConstraint = "SetNull"
+    label = "Parent"
+    referenceTo = [
+      salesforce.DataTest__c,
+    ]
+    relationshipLabel = "Children"
+    relationshipName = "Children"
+    trackTrending = false
+  }
+  salesforce.Text Rescued2__c {
+    apiName = "DataTest__c.Rescued2__c"
+    externalId = false
+    label = "Rescued2"
+    length = 255
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Rescued__c {
+    apiName = "DataTest__c.Rescued__c"
+    externalId = false
+    label = "Rescued"
+    length = 255
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text SaasRescue__c {
+    apiName = "DataTest__c.SaasRescue__c"
+    externalId = false
+    label = "SaasRescue"
+    length = 255
+    trackTrending = false
+    unique = false
+    caseSensitive = false
+  }
+}

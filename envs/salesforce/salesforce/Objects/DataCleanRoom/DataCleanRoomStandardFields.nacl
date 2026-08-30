@@ -1,0 +1,66 @@
+type salesforce.DataCleanRoom {
+  salesforce.Text ApiKey {
+    apiName = "DataCleanRoom.ApiKey"
+    label = "API Key"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist DataCleanRoomStatus {
+    apiName = "DataCleanRoom.DataCleanRoomStatus"
+    label = "Status"
+    _required = true
+    restricted = true
+  }
+  salesforce.TextArea Description {
+    apiName = "DataCleanRoom.Description"
+    label = "Description"
+  }
+  salesforce.Text Name {
+    apiName = "DataCleanRoom.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "DataCleanRoom.Id"
+    label = "Clean Room ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DataCleanRoom.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DataCleanRoom.CreatedDate"
+    label = "Created On"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DataCleanRoom.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DataCleanRoom.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DataCleanRoom.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DataCleanRoom.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}
