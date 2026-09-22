@@ -1,0 +1,23 @@
+salesforce.Layout FeedItem_Feed_Item_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      style = "TwoColumnsTopToBottom"
+    },
+  ]
+  relatedLists = [
+    {
+      relatedList = "AssignedTopicsRelatedList"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FeedItem-Feed Item Layout"
+  _parent = [
+    salesforce.FeedItem,
+  ]
+  _alias = "FeedItem-Feed Item Layout"
+}

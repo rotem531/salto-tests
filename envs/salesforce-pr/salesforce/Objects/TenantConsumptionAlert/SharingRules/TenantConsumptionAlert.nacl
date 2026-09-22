@@ -1,0 +1,7 @@
+salesforce.SharingRules TenantConsumptionAlert {
+  fullName = "TenantConsumptionAlert"
+  _parent = [
+    salesforce.TenantConsumptionAlert,
+  ]
+  _alias = "TenantConsumptionAlert"
+}

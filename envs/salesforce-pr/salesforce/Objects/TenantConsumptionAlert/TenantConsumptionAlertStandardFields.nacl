@@ -1,0 +1,32 @@
+type salesforce.TenantConsumptionAlert {
+  salesforce.Unknown AlertScope {
+    apiName = "TenantConsumptionAlert.AlertScope"
+  }
+  salesforce.Unknown AlertStatus {
+    apiName = "TenantConsumptionAlert.AlertStatus"
+  }
+  salesforce.Unknown AlertSubScope1 {
+    apiName = "TenantConsumptionAlert.AlertSubScope1"
+  }
+  salesforce.Unknown AlertSubScope2 {
+    apiName = "TenantConsumptionAlert.AlertSubScope2"
+  }
+  salesforce.Unknown AlertTimestamp {
+    apiName = "TenantConsumptionAlert.AlertTimestamp"
+  }
+  salesforce.Unknown AlertType {
+    apiName = "TenantConsumptionAlert.AlertType"
+  }
+  salesforce.Unknown IsNotificationSent {
+    apiName = "TenantConsumptionAlert.IsNotificationSent"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "TenantConsumptionAlert.OwnerId"
+  }
+  salesforce.Unknown TriggerType {
+    apiName = "TenantConsumptionAlert.TriggerType"
+  }
+  salesforce.Unknown TriggerValue {
+    apiName = "TenantConsumptionAlert.TriggerValue"
+  }
+}
