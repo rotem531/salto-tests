@@ -1,0 +1,16 @@
+salesforce.ListView DataTest__c_All_Data_Tests {
+  fullName = "DataTest__c.All_Data_Tests"
+  columns = [
+    "NAME",
+    salesforce.DataTest__c.field.Description__c,
+    salesforce.DataTest__c.field.Rescued2__c,
+    salesforce.DataTest__c.field.Formula__c,
+    "CREATED_DATE",
+  ]
+  filterScope = "Everything"
+  label = "All Data Tests"
+  _parent = [
+    salesforce.DataTest__c,
+  ]
+  _alias = "All Data Tests"
+}
