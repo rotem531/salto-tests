@@ -324,4 +324,7 @@ type salesforce.Hx_O082__c {
   enableBulkApi = true
   enableSharing = true
   enableStreamingApi = true
+  topicsForObjects = {
+    enableTopics = false
+  }
 }
