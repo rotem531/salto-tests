@@ -1,0 +1,7 @@
+salesforce.SharingRules AIPredictionScore {
+  fullName = "AIPredictionScore"
+  _parent = [
+    salesforce.AIPredictionScore,
+  ]
+  _alias = "AIPredictionScore"
+}

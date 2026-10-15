@@ -1,0 +1,28 @@
+salesforce.CustomApplication standard__AIWorkbench {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "AIWorkbench"
+  navType = "Console"
+  tabs = [
+    "standard-WorkbenchHome",
+    "standard-TestSuite",
+  ]
+  uiType = "Lightning"
+  workspaceConfig = {
+    mappings = [
+      {
+        tab = "standard-TestSuite"
+      },
+      {
+        tab = "standard-WorkbenchHome"
+      },
+    ]
+  }
+  fullName = "standard__AIWorkbench"
+  _alias = "AIWorkbench (standard)"
+}

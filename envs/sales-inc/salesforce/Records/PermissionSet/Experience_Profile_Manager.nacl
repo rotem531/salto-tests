@@ -1,0 +1,53 @@
+salesforce.PermissionSet Experience_Profile_Manager {
+  hasActivationRequired = false
+  label = "Experience Profile Manager"
+  license = "Salesforce"
+  userPermissions = {
+    AccessCMC = {
+      enabled = true
+      name = "AccessCMC"
+    }
+    CreateCustomizeReports = {
+      enabled = true
+      name = "CreateCustomizeReports"
+    }
+    CreateReportInLightning = {
+      enabled = true
+      name = "CreateReportInLightning"
+    }
+    EnableCommunityAppLauncher = {
+      enabled = true
+      name = "EnableCommunityAppLauncher"
+    }
+    GovernNetworks = {
+      enabled = true
+      name = "GovernNetworks"
+    }
+    IsotopeLEX = {
+      enabled = true
+      name = "IsotopeLEX"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ManageNetworks = {
+      enabled = true
+      name = "ManageNetworks"
+    }
+    ModerateNetworkUsers = {
+      enabled = true
+      name = "ModerateNetworkUsers"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    SandboxTestingInCommunityApp = {
+      enabled = true
+      name = "SandboxTestingInCommunityApp"
+    }
+  }
+  fullName = "Experience_Profile_Manager"
+  _alias = "Experience Profile Manager"
+}

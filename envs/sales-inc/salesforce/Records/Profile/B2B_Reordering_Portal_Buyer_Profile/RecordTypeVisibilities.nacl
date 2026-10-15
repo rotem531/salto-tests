@@ -1,0 +1,11 @@
+salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+salesforce.Profile Salesforce_API_Only_System_Integrations@s {
+  recordTypeVisibilities = {
+    Idea = {
+      InternalIdeasIdeaRecordType = {
+        default = false
+        recordType = "Idea.InternalIdeasIdeaRecordType"
+        visible = false
+      }
+    }
+  }
+}

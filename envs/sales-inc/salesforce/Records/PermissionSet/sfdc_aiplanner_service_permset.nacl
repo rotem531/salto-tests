@@ -1,0 +1,24 @@
+salesforce.PermissionSet sfdc_aiplanner_service_permset {
+  hasActivationRequired = true
+  label = "sfdc.aiplanner.service.permset"
+  userPermissions = {
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+  }
+  fullName = "sfdc_aiplanner_service_permset"
+  _alias = "sfdc.aiplanner.service.permset"
+}

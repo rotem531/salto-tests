@@ -1,0 +1,15 @@
+salesforce.CspTrustedSite Slack {
+  canAccessCamera = false
+  canAccessMicrophone = false
+  context = "LightningOut"
+  endpointUrl = "*.slack.com"
+  isActive = true
+  isApplicableToConnectSrc = true
+  isApplicableToFontSrc = true
+  isApplicableToFrameSrc = true
+  isApplicableToImgSrc = true
+  isApplicableToMediaSrc = true
+  isApplicableToStyleSrc = true
+  fullName = "Slack"
+  _alias = "Slack"
+}

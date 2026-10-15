@@ -1,0 +1,68 @@
+salesforce.Layout SecurityDefenseActionEventStore_Security_Defense_Action_Event_Store_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Security Defense Action Event"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = "EntityIdentifier"
+            },
+            {
+              behavior = "Required"
+              field = "Status"
+            },
+            {
+              behavior = "Required"
+              field = "DetectedAt"
+            },
+            {
+              behavior = "Edit"
+              field = "ExecutedAt"
+            },
+            {
+              behavior = "Readonly"
+              field = "SecurityDefenseActionEventNumber"
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = "ActionName"
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "EntityIdentifier",
+      "Status",
+      "DetectedAt",
+      "ExecutedAt",
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SecurityDefenseActionEventStore-Security Defense Action Event Store Layout"
+  _alias = "SecurityDefenseActionEventStore-Security Defense Action Event Store Layout"
+}

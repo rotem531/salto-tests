@@ -1,0 +1,274 @@
+salesforce.Profile High_Volume_Customer_Portal_User@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Address = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Address"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Asset = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Asset"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Case = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Case"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contact"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Contract = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contract"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ContractLineItem = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = "ContractLineItem"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Entitlement = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Entitlement"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    EntitlementContact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "EntitlementContact"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Idea = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Idea"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Individual = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Individual"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Location = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Location"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Order = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Order"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Pricebook2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Pricebook2"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Product2"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ReturnOrder = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ReturnOrder"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ServiceAppointment = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ServiceAppointment"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ServiceContract = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = false
+      modifyAllRecords = false
+      object = "ServiceContract"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ServiceResource = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "ServiceResource"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    ServiceTerritory = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ServiceTerritory"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Shipment = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Shipment"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    SocialPersona = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "SocialPersona"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Solution = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Solution"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    UserExternalCredential = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "UserExternalCredential"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    WorkOrder = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "WorkOrder"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    WorkType = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "WorkType"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    WorkTypeGroup = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "WorkTypeGroup"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+  }
+}
