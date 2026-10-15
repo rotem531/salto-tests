@@ -7,17 +7,5 @@ salesforce.EmailTemplate Hx_Folder_01_Hx_Tpl_00001@f {
   subject = "Hx_Tpl_00001 for {!Hx_O001__c.Name}"
   type = "text"
   uiType = "Aloha"
-  content = file("salesforce/Records/EmailTemplate/Hx_Folder_01/Hx_Tpl_00001/Hx_Tpl_00001.email")
-  _parent = [
-    salesforce.EmailFolder.instance.Hx_Folder_01,
-  ]
-  _generated_dependencies = [
-    {
-      reference = salesforce.Hx_O001__c
-    },
-    {
-      reference = salesforce.Hx_O001__c.field.Hx_Total__c
-    },
-  ]
-  _alias = "Hx_Folder_01/Hx_Tpl_00001"
+  content = file("salesforce/Records/EmailTemplate/Hx_Folder_01/Hx_Tpl_00001.email")
 }
