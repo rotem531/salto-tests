@@ -1,0 +1,21 @@
+salesforce.WebLink Hx_O175__c_Hx_WL03 {
+  fullName = "Hx_O175__c.Hx_WL03"
+  availability = "online"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Hx Link 3"
+  openType = "newWindow"
+  hasMenubar = true
+  hasScrollbars = true
+  hasToolbar = true
+  isResizable = true
+  showsLocation = true
+  showsStatus = true
+  position = "none"
+  protected = false
+  url = "https://example.com/hx?id={!Hx_O175__c.Id}&n={!Hx_O175__c.Name}"
+  _parent = [
+    salesforce.Hx_O175__c,
+  ]
+}

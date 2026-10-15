@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O272__c_Hx_VR03 {
+  fullName = "Hx_O272__c.Hx_VR03"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -3 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 3 failed"
+  _parent = [
+    salesforce.Hx_O272__c,
+  ]
+}
