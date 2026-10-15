@@ -1,6 +1,0 @@
-public with sharing class Hx_Svc_04623 {
-    public static Integer run() {
-        Hx_Svc_04622.run();
-        return [SELECT COUNT() FROM Hx_O123__c WHERE Hx_Num01__c > 23];
-    }
-}
