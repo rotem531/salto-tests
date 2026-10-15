@@ -18,6 +18,8 @@ type salesforce.Hx_O003__c {
     }
     string visibility {
     }
+    salesforce.CustomField nameField {
+    }
     boolean enableActivities {
     }
     boolean enableBulkApi {
@@ -133,6 +135,10 @@ type salesforce.Hx_O003__c {
   label = "Hx Object 3"
   pluralLabel = "Hx Objects 3"
   deploymentStatus = "Deployed"
+  nameField = {
+    label = "Hx_O003__c Name"
+    type = "Text"
+  }
   sharingModel = "ControlledByParent"
   externalSharingModel = "ControlledByParent"
   enableActivities = true

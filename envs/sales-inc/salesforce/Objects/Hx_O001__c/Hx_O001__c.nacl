@@ -18,6 +18,8 @@ type salesforce.Hx_O001__c {
     }
     string visibility {
     }
+    salesforce.CustomField nameField {
+    }
     boolean enableActivities {
     }
     boolean enableBulkApi {
@@ -101,6 +103,10 @@ type salesforce.Hx_O001__c {
   label = "Hx Object 1"
   pluralLabel = "Hx Objects 1"
   deploymentStatus = "Deployed"
+  nameField = {
+    label = "Hx_O001__c Name"
+    type = "Text"
+  }
   sharingModel = "ReadWrite"
   externalSharingModel = "ReadWrite"
   enableActivities = true
