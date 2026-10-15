@@ -1,0 +1,27 @@
+type salesforce.Hx_Cfg01__mdt {
+  salesforce.Text Hx_Key__c {
+    apiName = "Hx_Cfg01__mdt.Hx_Key__c"
+    label = "Key"
+    length = 20
+    unique = false
+    externalId = false
+  }
+  salesforce.Number Hx_Val__c {
+    apiName = "Hx_Cfg01__mdt.Hx_Val__c"
+    label = "Val"
+    precision = 10
+    scale = 0
+    unique = false
+    externalId = false
+  }
+  salesforce.Checkbox Hx_On__c {
+    apiName = "Hx_Cfg01__mdt.Hx_On__c"
+    label = "On"
+    defaultValue = false
+  }
+  apiName = "Hx_Cfg01__mdt"
+  metadataType = "CustomMetadata"
+  label = "Hx_Cfg01"
+  pluralLabel = "Hx_Cfg01s"
+  visibility = "Public"
+}

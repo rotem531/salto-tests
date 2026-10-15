@@ -1,0 +1,17 @@
+salesforce.CustomApplication Hx_App_001 {
+  fullName = "Hx_App_001"
+  label = "Hx_App_001"
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  navType = "Standard"
+  uiType = "Lightning"
+  tabs = [
+    "Hx_O001__c",
+    "Hx_O002__c",
+    "Hx_O003__c",
+  ]
+}
