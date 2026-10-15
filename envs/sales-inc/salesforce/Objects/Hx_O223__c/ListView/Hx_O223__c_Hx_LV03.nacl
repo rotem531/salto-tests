@@ -1,0 +1,20 @@
+salesforce.ListView Hx_O223__c_Hx_LV03 {
+  fullName = "Hx_O223__c.Hx_LV03"
+  label = "Hx View 3"
+  filterScope = "Everything"
+  columns = [
+    "NAME",
+    "Hx_Num01__c",
+    "Hx_Txt01__c",
+  ]
+  filters = [
+    {
+      field = "Hx_Num01__c"
+      operation = "greaterThan"
+      value = "3"
+    },
+  ]
+  _parent = [
+    salesforce.Hx_O223__c,
+  ]
+}

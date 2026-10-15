@@ -1,0 +1,58 @@
+type salesforce.Hx_O038__c {
+  serviceid Id {
+    apiName = "Hx_O038__c.Id"
+    label = "Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Hx_O038__c.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Hx_O038__c.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Lookup RecordTypeId {
+    apiName = "Hx_O038__c.RecordTypeId"
+    label = "Record Type ID"
+    relationshipName = "RecordType"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Hx_O038__c.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Hx_O038__c.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Hx_O038__c.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Hx_O038__c.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Hx_O038__c.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Hx_O038__c.LastActivityDate"
+    label = "Last Activity Date"
+    _hidden_value = true
+  }
+}

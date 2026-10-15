@@ -1,0 +1,19 @@
+salesforce.ValidationRule Hx_O063__c_Hx_VR05 {
+  fullName = "Hx_O063__c.Hx_VR05"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -5 && Hx_Flag__c"
+  errorDisplayField = salesforce.Hx_O063__c.field.Hx_Num01__c
+  errorMessage = "Rule 5 failed"
+  _parent = [
+    salesforce.Hx_O063__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Hx_O063__c.field.Hx_Flag__c
+    },
+    {
+      reference = salesforce.Hx_O063__c.field.Hx_Num01__c
+    },
+  ]
+  _alias = "Hx_O063__c.Hx_VR05"
+}
