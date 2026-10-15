@@ -220,7 +220,7 @@ type salesforce.Hx_O001__c {
   salesforce.Picklist Hx_Pick01__c {
     apiName = "Hx_O001__c.Hx_Pick01__c"
     label = "Pick 1"
-    valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0069
+    valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0001
     restricted = true
   }
   salesforce.Picklist Hx_Pick02__c {
