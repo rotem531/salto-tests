@@ -1,0 +1,19 @@
+salesforce.ValidationRule Hx_O068__c_Hx_VR02 {
+  fullName = "Hx_O068__c.Hx_VR02"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -2 && Hx_Flag__c"
+  errorDisplayField = salesforce.Hx_O068__c.field.Hx_Num01__c
+  errorMessage = "Rule 2 failed"
+  _parent = [
+    salesforce.Hx_O068__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Hx_O068__c.field.Hx_Flag__c
+    },
+    {
+      reference = salesforce.Hx_O068__c.field.Hx_Num01__c
+    },
+  ]
+  _alias = "Hx_O068__c.Hx_VR02"
+}

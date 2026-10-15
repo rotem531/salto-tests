@@ -1,0 +1,19 @@
+salesforce.ValidationRule Hx_O008__c_Hx_VR04 {
+  fullName = "Hx_O008__c.Hx_VR04"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -4 && Hx_Flag__c"
+  errorDisplayField = salesforce.Hx_O008__c.field.Hx_Num01__c
+  errorMessage = "Rule 4 failed"
+  _parent = [
+    salesforce.Hx_O008__c,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.Hx_O008__c.field.Hx_Flag__c
+    },
+    {
+      reference = salesforce.Hx_O008__c.field.Hx_Num01__c
+    },
+  ]
+  _alias = "Hx_O008__c.Hx_VR04"
+}

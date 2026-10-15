@@ -1,0 +1,10 @@
+salesforce.Role Hx_Role_0300 {
+  fullName = "Hx_Role_0300"
+  name = "Hx_Role_0300"
+  caseAccessLevel = "Edit"
+  contactAccessLevel = "Edit"
+  opportunityAccessLevel = "Edit"
+  mayForecastManagerShare = false
+  parentRole = salesforce.Role.instance.Hx_Role_0100
+  _alias = "Hx_Role_0300"
+}
