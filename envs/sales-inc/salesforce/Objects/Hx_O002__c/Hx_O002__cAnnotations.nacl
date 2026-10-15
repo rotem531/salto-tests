@@ -201,4 +201,7 @@ type salesforce.Hx_O002__c {
   }
   visibility = "Public"
   _alias = "Hx Object 2"
+  topicsForObjects = {
+    enableTopics = false
+  }
 }
