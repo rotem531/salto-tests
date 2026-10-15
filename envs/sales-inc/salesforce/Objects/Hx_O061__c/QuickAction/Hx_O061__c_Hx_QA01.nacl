@@ -10,7 +10,7 @@ salesforce.QuickAction Hx_O061__c_Hx_QA01 {
         quickActionLayoutItems = [
           {
             emptySpace = false
-            field = "Hx_Num01__c"
+            field = salesforce.Hx_O061__c.field.Hx_Num01__c
             uiBehavior = "Edit"
           },
         ]
@@ -19,7 +19,7 @@ salesforce.QuickAction Hx_O061__c_Hx_QA01 {
         quickActionLayoutItems = [
           {
             emptySpace = false
-            field = "Hx_Txt01__c"
+            field = salesforce.Hx_O061__c.field.Hx_Txt01__c
             uiBehavior = "Edit"
           },
         ]
@@ -29,4 +29,5 @@ salesforce.QuickAction Hx_O061__c_Hx_QA01 {
   _parent = [
     salesforce.Hx_O061__c,
   ]
+  _alias = "Hx Update 1"
 }

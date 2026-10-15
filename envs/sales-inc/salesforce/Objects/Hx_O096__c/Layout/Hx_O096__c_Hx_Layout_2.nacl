@@ -33,10 +33,24 @@ salesforce.Layout Hx_O096__c_Hx_Layout_2@bs {
               behavior = "Edit"
               field = salesforce.Hx_O096__c.field.Hx_Account__c
             },
+            {
+              behavior = "Required"
+              field = salesforce.Hx_O096__c.field.Hx_Master__c
+            },
           ]
         },
       ]
       style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
     },
   ]
   showEmailCheckbox = false
@@ -47,4 +61,10 @@ salesforce.Layout Hx_O096__c_Hx_Layout_2@bs {
   _parent = [
     salesforce.Hx_O096__c,
   ]
+  _alias = "Hx_O096__c-Hx Layout 2"
+  miniLayout = {
+    fields = [
+      "Hx_Master__c",
+    ]
+  }
 }

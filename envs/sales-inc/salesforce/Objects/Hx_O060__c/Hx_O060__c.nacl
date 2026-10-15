@@ -44,7 +44,9 @@ type salesforce.Hx_O060__c {
   salesforce.Text Name {
     apiName = "Hx_O060__c.Name"
     label = "Hx_O060__c Name"
-    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
   }
   salesforce.Number Hx_Num01__c {
     apiName = "Hx_O060__c.Hx_Num01__c"
@@ -53,6 +55,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num02__c {
     apiName = "Hx_O060__c.Hx_Num02__c"
@@ -61,6 +64,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num03__c {
     apiName = "Hx_O060__c.Hx_Num03__c"
@@ -69,6 +73,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num04__c {
     apiName = "Hx_O060__c.Hx_Num04__c"
@@ -77,6 +82,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num05__c {
     apiName = "Hx_O060__c.Hx_Num05__c"
@@ -85,6 +91,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num06__c {
     apiName = "Hx_O060__c.Hx_Num06__c"
@@ -93,6 +100,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num07__c {
     apiName = "Hx_O060__c.Hx_Num07__c"
@@ -101,6 +109,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num08__c {
     apiName = "Hx_O060__c.Hx_Num08__c"
@@ -109,6 +118,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num09__c {
     apiName = "Hx_O060__c.Hx_Num09__c"
@@ -117,6 +127,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num10__c {
     apiName = "Hx_O060__c.Hx_Num10__c"
@@ -125,6 +136,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num11__c {
     apiName = "Hx_O060__c.Hx_Num11__c"
@@ -133,6 +145,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num12__c {
     apiName = "Hx_O060__c.Hx_Num12__c"
@@ -141,6 +154,7 @@ type salesforce.Hx_O060__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Text Hx_Txt01__c {
     apiName = "Hx_O060__c.Hx_Txt01__c"
@@ -148,6 +162,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt02__c {
     apiName = "Hx_O060__c.Hx_Txt02__c"
@@ -155,6 +171,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt03__c {
     apiName = "Hx_O060__c.Hx_Txt03__c"
@@ -162,6 +180,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt04__c {
     apiName = "Hx_O060__c.Hx_Txt04__c"
@@ -169,6 +189,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt05__c {
     apiName = "Hx_O060__c.Hx_Txt05__c"
@@ -176,6 +198,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt06__c {
     apiName = "Hx_O060__c.Hx_Txt06__c"
@@ -183,6 +207,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt07__c {
     apiName = "Hx_O060__c.Hx_Txt07__c"
@@ -190,6 +216,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt08__c {
     apiName = "Hx_O060__c.Hx_Txt08__c"
@@ -197,6 +225,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt09__c {
     apiName = "Hx_O060__c.Hx_Txt09__c"
@@ -204,6 +234,8 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Text Hx_Txt10__c {
     apiName = "Hx_O060__c.Hx_Txt10__c"
@@ -211,41 +243,49 @@ type salesforce.Hx_O060__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Checkbox Hx_Flag__c {
     apiName = "Hx_O060__c.Hx_Flag__c"
     label = "Flag"
     defaultValue = false
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick01__c {
     apiName = "Hx_O060__c.Hx_Pick01__c"
     label = "Pick 1"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0158
     restricted = true
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick02__c {
     apiName = "Hx_O060__c.Hx_Pick02__c"
     label = "Pick 2"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0146
     restricted = true
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick03__c {
     apiName = "Hx_O060__c.Hx_Pick03__c"
     label = "Pick 3"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0296
     restricted = true
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick04__c {
     apiName = "Hx_O060__c.Hx_Pick04__c"
     label = "Pick 4"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0079
     restricted = true
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick05__c {
     apiName = "Hx_O060__c.Hx_Pick05__c"
     label = "Pick 5"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0136
     restricted = true
+    trackTrending = false
   }
   salesforce.FormulaNumber Hx_Total__c {
     apiName = "Hx_O060__c.Hx_Total__c"
@@ -254,6 +294,17 @@ type salesforce.Hx_O060__c {
     formulaTreatBlanksAs = "BlankAsZero"
     precision = 18
     scale = 2
+    externalId = false
+    trackTrending = false
+    unique = false
+    _generated_dependencies = [
+      {
+        reference = salesforce.Hx_O060__c.field.Hx_Num01__c
+      },
+      {
+        reference = salesforce.Hx_O060__c.field.Hx_Num02__c
+      },
+    ]
   }
   salesforce.Lookup Hx_Account__c {
     apiName = "Hx_O060__c.Hx_Account__c"
@@ -264,6 +315,7 @@ type salesforce.Hx_O060__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Hx_O060_Accounts"
     relationshipLabel = "Hx_O060__c Records"
+    trackTrending = false
   }
   salesforce.Lookup Hx_Ref015__c {
     apiName = "Hx_O060__c.Hx_Ref015__c"
@@ -274,6 +326,7 @@ type salesforce.Hx_O060__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Ref_Hx_O060"
     relationshipLabel = "Hx_O060__c Refs"
+    trackTrending = false
   }
   salesforce.Lookup Hx_Ref030__c {
     apiName = "Hx_O060__c.Hx_Ref030__c"
@@ -284,6 +337,7 @@ type salesforce.Hx_O060__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Ref_Hx_O060"
     relationshipLabel = "Hx_O060__c Refs"
+    trackTrending = false
   }
   salesforce.Lookup Hx_Ref031__c {
     apiName = "Hx_O060__c.Hx_Ref031__c"
@@ -294,6 +348,7 @@ type salesforce.Hx_O060__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Ref_Hx_O060"
     relationshipLabel = "Hx_O060__c Refs"
+    trackTrending = false
   }
   salesforce.Lookup Hx_Ref052__c {
     apiName = "Hx_O060__c.Hx_Ref052__c"
@@ -304,6 +359,7 @@ type salesforce.Hx_O060__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Ref_Hx_O060"
     relationshipLabel = "Hx_O060__c Refs"
+    trackTrending = false
   }
   salesforce.MasterDetail Hx_Master__c {
     apiName = "Hx_O060__c.Hx_Master__c"
@@ -316,6 +372,7 @@ type salesforce.Hx_O060__c {
     relationshipOrder = 0
     reparentableMasterDetail = false
     writeRequiresMasterRead = false
+    trackTrending = false
   }
   apiName = "Hx_O060__c"
   metadataType = "CustomObject"
@@ -336,4 +393,7 @@ type salesforce.Hx_O060__c {
   enableBulkApi = true
   enableSharing = true
   enableStreamingApi = true
+  topicsForObjects = {
+    enableTopics = false
+  }
 }

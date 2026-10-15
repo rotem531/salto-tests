@@ -4,12 +4,12 @@ salesforce.FieldSet Hx_O054__c_Hx_FS03 {
   description = "generated"
   displayedFields = [
     {
-      field = "Hx_Num01__c"
+      field = salesforce.Hx_O054__c.field.Hx_Num01__c
       isFieldManaged = false
       isRequired = false
     },
     {
-      field = "Hx_Txt01__c"
+      field = salesforce.Hx_O054__c.field.Hx_Txt01__c
       isFieldManaged = false
       isRequired = false
     },
@@ -17,4 +17,5 @@ salesforce.FieldSet Hx_O054__c_Hx_FS03 {
   _parent = [
     salesforce.Hx_O054__c,
   ]
+  _alias = "Hx Set 3"
 }

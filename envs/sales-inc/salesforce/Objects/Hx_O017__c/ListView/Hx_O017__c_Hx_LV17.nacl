@@ -4,8 +4,8 @@ salesforce.ListView Hx_O017__c_Hx_LV17 {
   filterScope = "Everything"
   columns = [
     "NAME",
-    "Hx_Num01__c",
-    "Hx_Txt01__c",
+    salesforce.Hx_O017__c.field.Hx_Num01__c,
+    salesforce.Hx_O017__c.field.Hx_Txt01__c,
   ]
   filters = [
     {
@@ -17,4 +17,5 @@ salesforce.ListView Hx_O017__c_Hx_LV17 {
   _parent = [
     salesforce.Hx_O017__c,
   ]
+  _alias = "Hx View 17"
 }
