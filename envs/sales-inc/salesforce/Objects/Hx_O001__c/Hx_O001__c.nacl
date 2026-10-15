@@ -1,4 +1,44 @@
 type salesforce.Hx_O001__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    string pluralLabel {
+    }
+    string description {
+    }
+    string deploymentStatus {
+    }
+    string sharingModel {
+    }
+    string externalSharingModel {
+    }
+    string visibility {
+    }
+    boolean enableActivities {
+    }
+    boolean enableBulkApi {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableReports {
+    }
+    boolean enableSearch {
+    }
+    boolean enableSharing {
+    }
+    boolean enableStreamingApi {
+    }
+    hidden_string keyPrefix {
+    }
+    hidden_string internalId {
+    }
+  }
   salesforce.Text Name {
     apiName = "Hx_O001__c.Name"
     label = "Hx_O001__c Name"
