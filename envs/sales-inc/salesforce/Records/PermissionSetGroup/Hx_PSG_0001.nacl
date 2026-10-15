@@ -1,11 +1,11 @@
 salesforce.PermissionSetGroup Hx_PSG_0001 {
   fullName = "Hx_PSG_0001"
+  hasActivationRequired = false
   label = "Hx_PSG_0001"
   status = "Updated"
   permissionSets = [
-    salesforce.PermissionSet.instance.Hx_PS_0302,
-    salesforce.PermissionSet.instance.Hx_PS_0433,
-    salesforce.PermissionSet.instance.Hx_PS_0584,
-    salesforce.PermissionSet.instance.Hx_PS_0644,
+    salesforce.PermissionSet.instance.Hx_PS_0001,
+    salesforce.PermissionSet.instance.Hx_PS_0002,
   ]
+  _alias = "Hx_PSG_0001"
 }
