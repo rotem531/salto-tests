@@ -1,0 +1,21 @@
+salesforce.ListView Hx_O085__c_Hx_LV14 {
+  fullName = "Hx_O085__c.Hx_LV14"
+  label = "Hx View 14"
+  filterScope = "Everything"
+  columns = [
+    "NAME",
+    salesforce.Hx_O085__c.field.Hx_Num01__c,
+    salesforce.Hx_O085__c.field.Hx_Txt01__c,
+  ]
+  filters = [
+    {
+      field = "Hx_Num01__c"
+      operation = "greaterThan"
+      value = "14"
+    },
+  ]
+  _parent = [
+    salesforce.Hx_O085__c,
+  ]
+  _alias = "Hx View 14"
+}
