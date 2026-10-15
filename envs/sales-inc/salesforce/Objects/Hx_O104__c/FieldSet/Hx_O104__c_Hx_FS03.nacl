@@ -1,0 +1,20 @@
+salesforce.FieldSet Hx_O104__c_Hx_FS03 {
+  fullName = "Hx_O104__c.Hx_FS03"
+  label = "Hx Set 3"
+  description = "generated"
+  displayedFields = [
+    {
+      field = "Hx_Num01__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "Hx_Txt01__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  _parent = [
+    salesforce.Hx_O104__c,
+  ]
+}
