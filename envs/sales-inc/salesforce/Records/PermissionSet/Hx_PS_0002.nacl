@@ -52,14 +52,14 @@ salesforce.PermissionSet Hx_PS_0002 {
       name = "Hx_CP_0002"
     }
   }
-  tabSettings = {
-    Hx_O002__c = {
+  tabSettings = [
+    {
       tab = "Hx_O002__c"
       visibility = "Visible"
-    }
-    Hx_O003__c = {
+    },
+    {
       tab = "Hx_O003__c"
       visibility = "Visible"
-    }
-  }
+    },
+  ]
 }
