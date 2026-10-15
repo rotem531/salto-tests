@@ -32,5 +32,105 @@ salesforce.RecordType Hx_O002__c_Hx_RT01 {
         },
       ]
     },
+    {
+      picklist = salesforce.Hx_O002__c.field.Hx_Pick02__c
+      values = [
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0047.customValue.values.V1.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0047.customValue.values.V2.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0047.customValue.values.V3.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0047.customValue.values.V4.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0047.customValue.values.V5.fullName
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Hx_O002__c.field.Hx_Pick03__c
+      values = [
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0044.customValue.values.V1.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0044.customValue.values.V2.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0044.customValue.values.V3.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0044.customValue.values.V4.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0044.customValue.values.V5.fullName
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Hx_O002__c.field.Hx_Pick04__c
+      values = [
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0185.customValue.values.V1.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0185.customValue.values.V2.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0185.customValue.values.V3.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0185.customValue.values.V4.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0185.customValue.values.V5.fullName
+          default = false
+        },
+      ]
+    },
+    {
+      picklist = salesforce.Hx_O002__c.field.Hx_Pick05__c
+      values = [
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0087.customValue.values.V1.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0087.customValue.values.V2.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0087.customValue.values.V3.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0087.customValue.values.V4.fullName
+          default = false
+        },
+        {
+          fullName = salesforce.GlobalValueSet.instance.Hx_GVS_0087.customValue.values.V5.fullName
+          default = false
+        },
+      ]
+    },
   ]
 }
