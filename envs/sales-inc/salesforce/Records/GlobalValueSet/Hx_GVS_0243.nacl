@@ -1,0 +1,41 @@
+salesforce.GlobalValueSet Hx_GVS_0243 {
+  fullName = "Hx_GVS_0243"
+  masterLabel = "Hx_GVS_0243"
+  sorted = false
+  customValue = {
+    values = {
+      V1 = {
+        fullName = "V1"
+        default = false
+        label = "Value 1"
+      }
+      V2 = {
+        fullName = "V2"
+        default = false
+        label = "Value 2"
+      }
+      V3 = {
+        fullName = "V3"
+        default = false
+        label = "Value 3"
+      }
+      V4 = {
+        fullName = "V4"
+        default = false
+        label = "Value 4"
+      }
+      V5 = {
+        fullName = "V5"
+        default = false
+        label = "Value 5"
+      }
+    }
+    order = [
+      salesforce.GlobalValueSet.instance.Hx_GVS_0243.customValue.values.V1,
+      salesforce.GlobalValueSet.instance.Hx_GVS_0243.customValue.values.V2,
+      salesforce.GlobalValueSet.instance.Hx_GVS_0243.customValue.values.V3,
+      salesforce.GlobalValueSet.instance.Hx_GVS_0243.customValue.values.V4,
+      salesforce.GlobalValueSet.instance.Hx_GVS_0243.customValue.values.V5,
+    ]
+  }
+}
