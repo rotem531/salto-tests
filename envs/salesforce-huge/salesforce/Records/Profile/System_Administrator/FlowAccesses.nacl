@@ -1,0 +1,8 @@
+salesforce.Profile Admin {
+  flowAccesses = {
+    sfdc_default_ReportExport_Protection_Flow = {
+      enabled = false
+      flow = "sfdc_default_ReportExport_Protection_Flow"
+    }
+  }
+}

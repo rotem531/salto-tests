@@ -1,0 +1,8 @@
+salesforce.Profile Cross_Org_Data_Proxy_User@s {
+  flowAccesses = {
+    sfdc_default_ReportExport_Protection_Flow = {
+      enabled = false
+      flow = "sfdc_default_ReportExport_Protection_Flow"
+    }
+  }
+}

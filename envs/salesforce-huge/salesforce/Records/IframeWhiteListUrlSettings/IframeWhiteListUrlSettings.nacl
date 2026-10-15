@@ -1,0 +1,14 @@
+salesforce.IframeWhiteListUrlSettings IframeWhiteListUrlSettings {
+  iframeWhiteListUrls = [
+    {
+      context = "LightningOut"
+      url = "*.slack.com"
+    },
+    {
+      context = "LightningOut"
+      url = "*.slack-gov.com"
+    },
+  ]
+  fullName = "IframeWhiteListUrlSettings"
+  _alias = "IframeWhiteListUrlSettings"
+}

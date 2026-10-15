@@ -1,0 +1,8 @@
+salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
+  flowAccesses = {
+    sfdc_default_ReportExport_Protection_Flow = {
+      enabled = false
+      flow = "sfdc_default_ReportExport_Protection_Flow"
+    }
+  }
+}

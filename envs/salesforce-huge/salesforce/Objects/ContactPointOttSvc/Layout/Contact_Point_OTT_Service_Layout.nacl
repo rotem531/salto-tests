@@ -1,0 +1,118 @@
+salesforce.Layout ContactPointOttSvc_Contact_Point_OTT_Service_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.IsPrimary
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointOttSvc.field.UserIdentifier
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointOttSvc.field.EngagementChannelTypeId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.ContactPointOttSvc.field.ParentId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.PhoneNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.ChannelSenderCode
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.Country
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.IsVerified
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.PreferenceRank
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.ActiveFromDateTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.ProfileFirstCreatedDateTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.UserName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.BusinessPortfolioIdentifier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.UsageType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.IsUndeliverable
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.ActiveToDateTime
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.ContactPointOttSvc.field.ProfileLastUpdatedDateTime
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ContactPoint",
+        "DataUsePurpose",
+        "PrivacyConsentStatus",
+      ]
+      relatedList = "ContactPointConsents"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "ContactPointOttSvc-Contact Point OTT Service Layout"
+  _parent = [
+    salesforce.ContactPointOttSvc,
+  ]
+  _alias = "ContactPointOttSvc-Contact Point OTT Service Layout"
+}
