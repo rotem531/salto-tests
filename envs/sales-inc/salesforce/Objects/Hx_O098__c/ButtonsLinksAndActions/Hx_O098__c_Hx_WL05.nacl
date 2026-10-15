@@ -1,0 +1,23 @@
+salesforce.WebLink Hx_O098__c_Hx_WL05 {
+  fullName = "Hx_O098__c.Hx_WL05"
+  availability = "online"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  linkType = "url"
+  masterLabel = "Hx Link 5"
+  openType = "newWindow"
+  hasMenubar = true
+  hasScrollbars = true
+  hasToolbar = true
+  height = 600
+  isResizable = true
+  showsLocation = true
+  showsStatus = true
+  position = "none"
+  protected = false
+  url = "https://example.com/hx?id={!Hx_O098__c.Id}&n={!Hx_O098__c.Name}"
+  _parent = [
+    salesforce.Hx_O098__c,
+  ]
+  _alias = "Hx_O098__c.Hx_WL05"
+}

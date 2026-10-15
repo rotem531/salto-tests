@@ -1,0 +1,61 @@
+salesforce.Layout Hx_O092__c_Hx_Layout_2@bs {
+  fullName = "Hx_O092__c-Hx Layout 2"
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Hx_O092__c.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Hx_O092__c.field.Hx_Num01__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Hx_O092__c.field.Hx_Num02__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Hx_O092__c.field.Hx_Txt01__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Hx_O092__c.field.Hx_Flag__c
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Hx_O092__c.field.Hx_Account__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  _parent = [
+    salesforce.Hx_O092__c,
+  ]
+  _alias = "Hx_O092__c-Hx Layout 2"
+}

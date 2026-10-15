@@ -1,0 +1,21 @@
+salesforce.ListView Hx_O095__c_Hx_LV06 {
+  fullName = "Hx_O095__c.Hx_LV06"
+  label = "Hx View 6"
+  filterScope = "Everything"
+  columns = [
+    "NAME",
+    salesforce.Hx_O095__c.field.Hx_Num01__c,
+    salesforce.Hx_O095__c.field.Hx_Txt01__c,
+  ]
+  filters = [
+    {
+      field = "Hx_Num01__c"
+      operation = "greaterThan"
+      value = "6"
+    },
+  ]
+  _parent = [
+    salesforce.Hx_O095__c,
+  ]
+  _alias = "Hx View 6"
+}
