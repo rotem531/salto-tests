@@ -1,0 +1,33 @@
+salesforce.QuickAction Hx_O099__c_Hx_QA01 {
+  fullName = "Hx_O099__c.Hx_QA01"
+  label = "Hx Update 1"
+  optionsCreateFeedItem = false
+  type = "Update"
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Hx_O099__c.field.Hx_Num01__c
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Hx_O099__c.field.Hx_Txt01__c
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+    ]
+  }
+  _parent = [
+    salesforce.Hx_O099__c,
+  ]
+  _alias = "Hx Update 1"
+}

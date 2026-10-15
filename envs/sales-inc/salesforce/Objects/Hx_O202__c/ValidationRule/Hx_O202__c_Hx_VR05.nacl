@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O202__c_Hx_VR05 {
+  fullName = "Hx_O202__c.Hx_VR05"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -5 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 5 failed"
+  _parent = [
+    salesforce.Hx_O202__c,
+  ]
+}
