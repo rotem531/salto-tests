@@ -1,0 +1,17 @@
+salesforce.Queue Hx_Queue_0166 {
+  fullName = "Hx_Queue_0166"
+  name = "Hx_Queue_0166"
+  doesSendEmailToMembers = false
+  queueSobject = [
+    {
+      sobjectType = "Hx_O166__c"
+    },
+  ]
+  queueMembers = {
+    publicGroups = {
+      publicGroup = [
+        "Hx_Grp_0166",
+      ]
+    }
+  }
+}

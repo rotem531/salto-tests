@@ -1,15 +1,17 @@
 salesforce.Queue Hx_Queue_0001 {
   fullName = "Hx_Queue_0001"
   name = "Hx_Queue_0001"
-  doesIncludeBosses = false
   doesSendEmailToMembers = false
-  queueSobject = {
-    sobjectType = "Hx_O001__c"
-  }
+  queueSobject = [
+    {
+      sobjectType = "Hx_O001__c"
+    },
+  ]
   queueMembers = {
     publicGroups = {
-      publicGroup = salesforce.Group.instance.Hx_Grp_0001
+      publicGroup = [
+        "Hx_Grp_0001",
+      ]
     }
   }
-  _alias = "Hx_Queue_0001"
 }
