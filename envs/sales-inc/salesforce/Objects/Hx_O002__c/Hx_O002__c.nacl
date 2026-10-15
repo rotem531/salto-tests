@@ -1,0 +1,130 @@
+type salesforce.Hx_O002__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    string label {
+    }
+    string pluralLabel {
+    }
+    string description {
+    }
+    string deploymentStatus {
+    }
+    string sharingModel {
+    }
+    string externalSharingModel {
+    }
+    string visibility {
+    }
+    salesforce.CustomField nameField {
+    }
+    boolean enableActivities {
+    }
+    boolean enableBulkApi {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableReports {
+    }
+    boolean enableSearch {
+    }
+    boolean enableSharing {
+    }
+    boolean enableStreamingApi {
+    }
+    hidden_string keyPrefix {
+    }
+    hidden_string internalId {
+    }
+  }
+  salesforce.Text Name {
+    apiName = "Hx_O002__c.Name"
+    label = "Hx_O002__c Name"
+    _required = true
+  }
+  salesforce.Number Hx_Num01__c {
+    apiName = "Hx_O002__c.Hx_Num01__c"
+    label = "Num 1"
+    precision = 16
+    scale = 2
+    unique = false
+    externalId = false
+  }
+  salesforce.Number Hx_Num02__c {
+    apiName = "Hx_O002__c.Hx_Num02__c"
+    label = "Num 2"
+    precision = 16
+    scale = 2
+    unique = false
+    externalId = false
+  }
+  salesforce.Text Hx_Txt01__c {
+    apiName = "Hx_O002__c.Hx_Txt01__c"
+    label = "Txt 1"
+    length = 80
+    unique = false
+    externalId = false
+  }
+  salesforce.Checkbox Hx_Flag__c {
+    apiName = "Hx_O002__c.Hx_Flag__c"
+    label = "Flag"
+    defaultValue = false
+  }
+  salesforce.Picklist Hx_Pick01__c {
+    apiName = "Hx_O002__c.Hx_Pick01__c"
+    label = "Pick 1"
+    valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0001
+    restricted = true
+  }
+  salesforce.FormulaNumber Hx_Total__c {
+    apiName = "Hx_O002__c.Hx_Total__c"
+    label = "Total"
+    formula = "Hx_Num01__c * Hx_Num02__c"
+    formulaTreatBlanksAs = "BlankAsZero"
+    precision = 18
+    scale = 2
+  }
+  salesforce.Lookup Hx_Account__c {
+    apiName = "Hx_O002__c.Hx_Account__c"
+    label = "Account"
+    referenceTo = [
+      salesforce.Account,
+    ]
+    deleteConstraint = "SetNull"
+    relationshipName = "Hx_Hx_O002_Accounts"
+    relationshipLabel = "Hx_O002__c Records"
+  }
+  salesforce.Lookup Hx_Ref001__c {
+    apiName = "Hx_O002__c.Hx_Ref001__c"
+    label = "Ref 1"
+    referenceTo = [
+      salesforce.Hx_O001__c,
+    ]
+    deleteConstraint = "SetNull"
+    relationshipName = "Hx_Ref_Hx_O002"
+    relationshipLabel = "Hx_O002__c Refs"
+  }
+  apiName = "Hx_O002__c"
+  metadataType = "CustomObject"
+  label = "Hx Object 2"
+  pluralLabel = "Hx Objects 2"
+  deploymentStatus = "Deployed"
+  nameField = {
+    label = "Hx_O002__c Name"
+    type = "Text"
+  }
+  sharingModel = "ReadWrite"
+  externalSharingModel = "ReadWrite"
+  enableActivities = true
+  enableReports = true
+  enableSearch = true
+  enableFeeds = false
+  enableHistory = false
+  enableBulkApi = true
+  enableSharing = true
+  enableStreamingApi = true
+}
