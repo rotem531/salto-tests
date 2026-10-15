@@ -3,4 +3,14 @@ salesforce.Profile Partner_Community_Login_User@s {
   userLicense = "Partner Community Login"
   fullName = "Partner Community Login User"
   _alias = "Partner Community Login User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

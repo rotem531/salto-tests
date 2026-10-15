@@ -3,4 +3,14 @@ salesforce.Profile Minimum_Access___Salesforce@ssbs {
   userLicense = "Salesforce"
   fullName = "Minimum Access - Salesforce"
   _alias = "Minimum Access - Salesforce"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

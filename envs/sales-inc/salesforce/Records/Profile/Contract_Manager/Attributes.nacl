@@ -3,4 +3,14 @@ salesforce.Profile ContractManager {
   userLicense = "Salesforce"
   fullName = "ContractManager"
   _alias = "ContractManager"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

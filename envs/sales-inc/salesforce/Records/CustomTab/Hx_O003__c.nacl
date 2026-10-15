@@ -1,5 +1,9 @@
 salesforce.CustomTab Hx_O003__c {
   fullName = "Hx_O003__c"
   customObject = true
-  motif = "Custom4: Hx"
+  motif = "Custom4: Hexagon"
+  _parent = [
+    salesforce.Hx_O003__c,
+  ]
+  _alias = "Hx_O003__c"
 }

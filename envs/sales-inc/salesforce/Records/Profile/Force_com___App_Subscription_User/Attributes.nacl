@@ -3,4 +3,14 @@ salesforce.Profile Force_2Ecom___App_Subscription_User@psbsss {
   userLicense = "Force.com - App Subscription"
   fullName = "Force%2Ecom - App Subscription User"
   _alias = "Force%2Ecom - App Subscription User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

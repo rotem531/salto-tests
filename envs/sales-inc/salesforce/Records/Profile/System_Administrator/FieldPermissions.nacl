@@ -1075,5 +1075,35 @@ salesforce.Profile Admin {
       AdditionalInformation = "ReadWrite"
       IsActive = "ReadWrite"
     }
+    Hx_O001__c = {
+      Hx_Account__c = "ReadWrite"
+      Hx_Flag__c = "ReadWrite"
+      Hx_Num01__c = "ReadWrite"
+      Hx_Num02__c = "ReadWrite"
+      Hx_Pick01__c = "ReadWrite"
+      Hx_Total__c = "ReadOnly"
+      Hx_Txt01__c = "ReadWrite"
+    }
+    Hx_O002__c = {
+      Hx_Account__c = "ReadWrite"
+      Hx_Flag__c = "ReadWrite"
+      Hx_Num01__c = "ReadWrite"
+      Hx_Num02__c = "ReadWrite"
+      Hx_Pick01__c = "ReadWrite"
+      Hx_Ref001__c = "ReadWrite"
+      Hx_Total__c = "ReadOnly"
+      Hx_Txt01__c = "ReadWrite"
+    }
+    Hx_O003__c = {
+      Hx_Account__c = "ReadWrite"
+      Hx_Flag__c = "ReadWrite"
+      Hx_Num01__c = "ReadWrite"
+      Hx_Num02__c = "ReadWrite"
+      Hx_Pick01__c = "ReadWrite"
+      Hx_Ref001__c = "ReadWrite"
+      Hx_Ref002__c = "ReadWrite"
+      Hx_Total__c = "ReadOnly"
+      Hx_Txt01__c = "ReadWrite"
+    }
   }
 }

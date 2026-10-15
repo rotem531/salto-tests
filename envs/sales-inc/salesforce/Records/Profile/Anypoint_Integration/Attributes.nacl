@@ -3,4 +3,14 @@ salesforce.Profile Anypoint_Integration@s {
   userLicense = "Identity"
   fullName = "Anypoint Integration"
   _alias = "Anypoint Integration"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

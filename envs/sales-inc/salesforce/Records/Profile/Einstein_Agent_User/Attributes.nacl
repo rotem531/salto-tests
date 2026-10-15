@@ -3,4 +3,14 @@ salesforce.Profile Einstein_Agent_User@s {
   userLicense = "Einstein Agent"
   fullName = "Einstein Agent User"
   _alias = "Einstein Agent User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

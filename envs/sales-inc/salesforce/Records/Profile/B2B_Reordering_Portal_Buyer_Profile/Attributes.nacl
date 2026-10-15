@@ -3,4 +3,14 @@ salesforce.Profile B2B_Reordering_Portal_Buyer_Profile@s {
   userLicense = "External Apps Login"
   fullName = "B2B Reordering Portal Buyer Profile"
   _alias = "B2B Reordering Portal Buyer Profile"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

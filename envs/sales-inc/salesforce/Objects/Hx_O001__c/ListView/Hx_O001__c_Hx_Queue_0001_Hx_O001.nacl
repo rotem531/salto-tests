@@ -1,0 +1,13 @@
+salesforce.ListView Hx_O001__c_Hx_Queue_0001_Hx_O001 {
+  fullName = "Hx_O001__c.Hx_Queue_0001_Hx_O001"
+  filterScope = "Queue"
+  label = "Hx_Queue_0001"
+  queue = salesforce.Queue.instance.Hx_Queue_0001
+  sharedTo = {
+    allInternalUsers = ""
+  }
+  _parent = [
+    salesforce.Hx_O001__c,
+  ]
+  _alias = "Hx_Queue_0001"
+}

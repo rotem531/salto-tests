@@ -4,6 +4,7 @@ salesforce.Flow Hx_Flow_0001 {
   label = "Hx_Flow_0001"
   processType = "AutoLaunchedFlow"
   status = "Draft"
+  areMetricsLoggedToDataCloud = false
   interviewLabel = "Hx_Flow_0001 {!$Flow.CurrentDateTime}"
   start = {
     locationX = 50
@@ -20,12 +21,12 @@ salesforce.Flow Hx_Flow_0001 {
       locationY = 134
       assignNullValuesIfNoRecordsFound = false
       getFirstRecordOnly = true
-      object = "Hx_O001__c"
+      object = salesforce.Hx_O001__c
       storeOutputAutomatically = true
       filterLogic = "and"
       filters = [
         {
-          field = "Hx_Num01__c"
+          field = salesforce.Hx_O001__c.field.Hx_Num01__c
           operator = "GreaterThan"
           value = {
             numberValue = 1
@@ -34,4 +35,5 @@ salesforce.Flow Hx_Flow_0001 {
       ]
     },
   ]
+  _alias = "Hx_Flow_0001"
 }

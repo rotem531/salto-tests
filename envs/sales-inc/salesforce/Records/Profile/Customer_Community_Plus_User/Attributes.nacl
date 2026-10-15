@@ -3,4 +3,14 @@ salesforce.Profile Customer_Community_Plus_User@s {
   userLicense = "Customer Community Plus"
   fullName = "Customer Community Plus User"
   _alias = "Customer Community Plus User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

@@ -44,7 +44,9 @@ type salesforce.Hx_O002__c {
   salesforce.Text Name {
     apiName = "Hx_O002__c.Name"
     label = "Hx_O002__c Name"
-    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
   }
   salesforce.Number Hx_Num01__c {
     apiName = "Hx_O002__c.Hx_Num01__c"
@@ -53,6 +55,7 @@ type salesforce.Hx_O002__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Number Hx_Num02__c {
     apiName = "Hx_O002__c.Hx_Num02__c"
@@ -61,6 +64,7 @@ type salesforce.Hx_O002__c {
     scale = 2
     unique = false
     externalId = false
+    trackTrending = false
   }
   salesforce.Text Hx_Txt01__c {
     apiName = "Hx_O002__c.Hx_Txt01__c"
@@ -68,17 +72,21 @@ type salesforce.Hx_O002__c {
     length = 80
     unique = false
     externalId = false
+    trackTrending = false
+    caseSensitive = false
   }
   salesforce.Checkbox Hx_Flag__c {
     apiName = "Hx_O002__c.Hx_Flag__c"
     label = "Flag"
     defaultValue = false
+    trackTrending = false
   }
   salesforce.Picklist Hx_Pick01__c {
     apiName = "Hx_O002__c.Hx_Pick01__c"
     label = "Pick 1"
     valueSetName = salesforce.GlobalValueSet.instance.Hx_GVS_0001
     restricted = true
+    trackTrending = false
   }
   salesforce.FormulaNumber Hx_Total__c {
     apiName = "Hx_O002__c.Hx_Total__c"
@@ -87,6 +95,17 @@ type salesforce.Hx_O002__c {
     formulaTreatBlanksAs = "BlankAsZero"
     precision = 18
     scale = 2
+    externalId = false
+    trackTrending = false
+    unique = false
+    _generated_dependencies = [
+      {
+        reference = salesforce.Hx_O002__c.field.Hx_Num01__c
+      },
+      {
+        reference = salesforce.Hx_O002__c.field.Hx_Num02__c
+      },
+    ]
   }
   salesforce.Lookup Hx_Account__c {
     apiName = "Hx_O002__c.Hx_Account__c"
@@ -97,6 +116,7 @@ type salesforce.Hx_O002__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Hx_O002_Accounts"
     relationshipLabel = "Hx_O002__c Records"
+    trackTrending = false
   }
   salesforce.Lookup Hx_Ref001__c {
     apiName = "Hx_O002__c.Hx_Ref001__c"
@@ -107,6 +127,7 @@ type salesforce.Hx_O002__c {
     deleteConstraint = "SetNull"
     relationshipName = "Hx_Ref_Hx_O002"
     relationshipLabel = "Hx_O002__c Refs"
+    trackTrending = false
   }
   apiName = "Hx_O002__c"
   metadataType = "CustomObject"
@@ -127,4 +148,7 @@ type salesforce.Hx_O002__c {
   enableBulkApi = true
   enableSharing = true
   enableStreamingApi = true
+  topicsForObjects = {
+    enableTopics = false
+  }
 }

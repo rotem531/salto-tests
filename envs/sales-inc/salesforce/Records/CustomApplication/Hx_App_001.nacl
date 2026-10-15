@@ -1,5 +1,6 @@
 salesforce.CustomApplication Hx_App_001 {
   fullName = "Hx_App_001"
+  isOmniPinnedViewEnabled = false
   label = "Hx_App_001"
   formFactors = [
     "Large",
@@ -10,8 +11,9 @@ salesforce.CustomApplication Hx_App_001 {
   navType = "Standard"
   uiType = "Lightning"
   tabs = [
-    "Hx_O001__c",
-    "Hx_O002__c",
-    "Hx_O003__c",
+    salesforce.CustomTab.instance.Hx_O001__c,
+    salesforce.CustomTab.instance.Hx_O002__c,
+    salesforce.CustomTab.instance.Hx_O003__c,
   ]
+  _alias = "Hx_App_001"
 }

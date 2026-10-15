@@ -3,4 +3,14 @@ salesforce.Profile Authenticated_Website@s {
   userLicense = "Authenticated Website"
   fullName = "Authenticated Website"
   _alias = "Authenticated Website"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

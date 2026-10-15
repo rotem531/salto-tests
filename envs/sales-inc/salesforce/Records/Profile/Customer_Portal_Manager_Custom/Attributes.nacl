@@ -3,4 +3,14 @@ salesforce.Profile Customer_Portal_Manager_Custom@s {
   userLicense = "Customer Portal Manager Custom"
   fullName = "Customer Portal Manager Custom"
   _alias = "Customer Portal Manager Custom"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

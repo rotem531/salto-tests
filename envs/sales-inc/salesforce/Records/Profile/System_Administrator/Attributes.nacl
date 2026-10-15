@@ -3,4 +3,14 @@ salesforce.Profile Admin {
   userLicense = "Salesforce"
   fullName = "Admin"
   _alias = "Admin"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = true
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = true
+    }
+  }
 }

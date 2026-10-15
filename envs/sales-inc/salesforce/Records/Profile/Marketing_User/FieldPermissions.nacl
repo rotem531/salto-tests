@@ -1075,5 +1075,35 @@ salesforce.Profile MarketingProfile {
       AdditionalInformation = "ReadWrite"
       IsActive = "ReadWrite"
     }
+    Hx_O001__c = {
+      Hx_Account__c = "NoAccess"
+      Hx_Flag__c = "NoAccess"
+      Hx_Num01__c = "NoAccess"
+      Hx_Num02__c = "NoAccess"
+      Hx_Pick01__c = "NoAccess"
+      Hx_Total__c = "NoAccess"
+      Hx_Txt01__c = "NoAccess"
+    }
+    Hx_O002__c = {
+      Hx_Account__c = "NoAccess"
+      Hx_Flag__c = "NoAccess"
+      Hx_Num01__c = "NoAccess"
+      Hx_Num02__c = "NoAccess"
+      Hx_Pick01__c = "NoAccess"
+      Hx_Ref001__c = "NoAccess"
+      Hx_Total__c = "NoAccess"
+      Hx_Txt01__c = "NoAccess"
+    }
+    Hx_O003__c = {
+      Hx_Account__c = "NoAccess"
+      Hx_Flag__c = "NoAccess"
+      Hx_Num01__c = "NoAccess"
+      Hx_Num02__c = "NoAccess"
+      Hx_Pick01__c = "NoAccess"
+      Hx_Ref001__c = "NoAccess"
+      Hx_Ref002__c = "NoAccess"
+      Hx_Total__c = "NoAccess"
+      Hx_Txt01__c = "NoAccess"
+    }
   }
 }

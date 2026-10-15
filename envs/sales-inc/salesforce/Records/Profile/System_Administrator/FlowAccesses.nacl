@@ -4,5 +4,9 @@ salesforce.Profile Admin {
       enabled = false
       flow = "sfdc_default_ReportExport_Protection_Flow"
     }
+    Hx_Flow_0001 = {
+      enabled = false
+      flow = "Hx_Flow_0001"
+    }
   }
 }

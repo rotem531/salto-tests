@@ -3,4 +3,14 @@ salesforce.Profile Partner_App_Subscription_User@s {
   userLicense = "Partner App Subscription"
   fullName = "Partner App Subscription User"
   _alias = "Partner App Subscription User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

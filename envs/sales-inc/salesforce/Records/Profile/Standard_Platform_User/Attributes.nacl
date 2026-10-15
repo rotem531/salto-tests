@@ -3,4 +3,14 @@ salesforce.Profile StandardAul {
   userLicense = "Salesforce Platform"
   fullName = "StandardAul"
   _alias = "StandardAul"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

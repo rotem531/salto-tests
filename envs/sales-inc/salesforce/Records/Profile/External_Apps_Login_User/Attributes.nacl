@@ -3,4 +3,14 @@ salesforce.Profile External_Apps_Login_User@s {
   userLicense = "External Apps Login"
   fullName = "External Apps Login User"
   _alias = "External Apps Login User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }

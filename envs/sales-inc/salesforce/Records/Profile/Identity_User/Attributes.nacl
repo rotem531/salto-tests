@@ -3,4 +3,14 @@ salesforce.Profile Identity_User@s {
   userLicense = "Identity"
   fullName = "Identity User"
   _alias = "Identity User"
+  classAccesses = {
+    Hx_Svc_00001 = {
+      apexClass = "Hx_Svc_00001"
+      enabled = false
+    }
+    Hx_Svc_00002 = {
+      apexClass = "Hx_Svc_00002"
+      enabled = false
+    }
+  }
 }
