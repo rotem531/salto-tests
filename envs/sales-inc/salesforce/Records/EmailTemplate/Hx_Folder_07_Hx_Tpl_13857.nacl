@@ -1,0 +1,11 @@
+salesforce.EmailTemplate Hx_Folder_07_Hx_Tpl_13857@f {
+  fullName = "Hx_Folder_07/Hx_Tpl_13857"
+  available = true
+  encodingKey = "UTF-8"
+  name = "Hx_Tpl_13857"
+  style = "none"
+  subject = "Hx_Tpl_13857 for {!Hx_O057__c.Name}"
+  type = "text"
+  uiType = "Aloha"
+  content = file("salesforce/Records/EmailTemplate/Hx_Folder_07/Hx_Tpl_13857.email")
+}
