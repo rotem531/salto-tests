@@ -1,0 +1,422 @@
+salesforce.PermissionSet Hx_PS_0142 {
+  fullName = "Hx_PS_0142"
+  label = "Hx_PS_0142"
+  hasActivationRequired = false
+  objectPermissions = {
+    Hx_O011__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O011__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O012__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O012__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O035__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O035__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O056__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O056__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O109__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O109__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O110__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O110__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O111__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O111__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O116__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O116__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O117__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O117__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O155__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O155__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O158__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O158__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O159__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O159__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O197__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O197__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O198__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O198__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O209__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O209__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O210__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O210__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O269__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O269__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O270__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O270__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O287__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O287__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O292__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O292__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+    Hx_O296__c = {
+      allowCreate = true
+      allowDelete = false
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "Hx_O296__c"
+      viewAllFields = false
+      viewAllRecords = false
+    }
+  }
+  fieldPermissions = {
+    Hx_O011__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O012__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O035__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O056__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O109__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O110__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O111__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O116__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O117__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O155__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O158__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O159__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O197__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O198__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O209__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O210__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O269__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O270__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O287__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O292__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+    Hx_O296__c = {
+      Hx_Num02__c = "ReadWrite"
+      Hx_Txt01__c = "ReadOnly"
+      Hx_Account__c = "ReadWrite"
+    }
+  }
+  classAccesses = {
+    Hx_Svc_02707 = {
+      apexClass = "Hx_Svc_02707"
+      enabled = true
+    }
+    Hx_Svc_03027 = {
+      apexClass = "Hx_Svc_03027"
+      enabled = true
+    }
+    Hx_Svc_03051 = {
+      apexClass = "Hx_Svc_03051"
+      enabled = true
+    }
+    Hx_Svc_06616 = {
+      apexClass = "Hx_Svc_06616"
+      enabled = true
+    }
+    Hx_Svc_06873 = {
+      apexClass = "Hx_Svc_06873"
+      enabled = true
+    }
+    Hx_Svc_07048 = {
+      apexClass = "Hx_Svc_07048"
+      enabled = true
+    }
+    Hx_Svc_09104 = {
+      apexClass = "Hx_Svc_09104"
+      enabled = true
+    }
+    Hx_Svc_09821 = {
+      apexClass = "Hx_Svc_09821"
+      enabled = true
+    }
+    Hx_Svc_11208 = {
+      apexClass = "Hx_Svc_11208"
+      enabled = true
+    }
+    Hx_Svc_12173 = {
+      apexClass = "Hx_Svc_12173"
+      enabled = true
+    }
+    Hx_Svc_13404 = {
+      apexClass = "Hx_Svc_13404"
+      enabled = true
+    }
+    Hx_Svc_13937 = {
+      apexClass = "Hx_Svc_13937"
+      enabled = true
+    }
+    Hx_Svc_16886 = {
+      apexClass = "Hx_Svc_16886"
+      enabled = true
+    }
+    Hx_Svc_18904 = {
+      apexClass = "Hx_Svc_18904"
+      enabled = true
+    }
+    Hx_Svc_19280 = {
+      apexClass = "Hx_Svc_19280"
+      enabled = true
+    }
+    Hx_Svc_20250 = {
+      apexClass = "Hx_Svc_20250"
+      enabled = true
+    }
+    Hx_Svc_23153 = {
+      apexClass = "Hx_Svc_23153"
+      enabled = true
+    }
+    Hx_Svc_23982 = {
+      apexClass = "Hx_Svc_23982"
+      enabled = true
+    }
+    Hx_Svc_24726 = {
+      apexClass = "Hx_Svc_24726"
+      enabled = true
+    }
+    Hx_Svc_24845 = {
+      apexClass = "Hx_Svc_24845"
+      enabled = true
+    }
+  }
+  customPermissions = {
+    Hx_CP_0063 = {
+      enabled = true
+      name = "Hx_CP_0063"
+    }
+    Hx_CP_0295 = {
+      enabled = true
+      name = "Hx_CP_0295"
+    }
+    Hx_CP_0375 = {
+      enabled = true
+      name = "Hx_CP_0375"
+    }
+  }
+  tabSettings = [
+  ]
+}

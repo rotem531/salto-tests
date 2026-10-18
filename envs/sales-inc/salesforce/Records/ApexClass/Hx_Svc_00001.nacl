@@ -3,13 +3,4 @@ salesforce.ApexClass Hx_Svc_00001 {
   fullName = "Hx_Svc_00001"
   status = "Active"
   content = file("salesforce/Records/ApexClass/Hx_Svc_00001.cls")
-  _generated_dependencies = [
-    {
-      reference = salesforce.Hx_O001__c
-    },
-    {
-      reference = salesforce.Hx_O001__c.field.Hx_Num01__c
-    },
-  ]
-  _alias = "Hx_Svc_00001"
 }

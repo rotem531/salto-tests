@@ -1,0 +1,37 @@
+salesforce.Flow Hx_Flow_0775 {
+  fullName = "Hx_Flow_0775"
+  apiVersion = 62
+  label = "Hx_Flow_0775"
+  processType = "AutoLaunchedFlow"
+  status = "Draft"
+  interviewLabel = "Hx_Flow_0775 {!$Flow.CurrentDateTime}"
+  start = {
+    locationX = 50
+    locationY = 0
+    connector = {
+      targetReference = "Get_Records"
+    }
+  }
+  recordLookups = [
+    {
+      name = "Get_Records"
+      label = "Get Records"
+      locationX = 176
+      locationY = 134
+      assignNullValuesIfNoRecordsFound = false
+      getFirstRecordOnly = true
+      object = "Hx_O175__c"
+      storeOutputAutomatically = true
+      filterLogic = "and"
+      filters = [
+        {
+          field = "Hx_Num01__c"
+          operator = "GreaterThan"
+          value = {
+            numberValue = 75
+          }
+        },
+      ]
+    },
+  ]
+}
