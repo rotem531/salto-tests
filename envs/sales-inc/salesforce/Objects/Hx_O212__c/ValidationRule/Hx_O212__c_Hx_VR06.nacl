@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O212__c_Hx_VR06 {
+  fullName = "Hx_O212__c.Hx_VR06"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -6 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 6 failed"
+  _parent = [
+    salesforce.Hx_O212__c,
+  ]
+}
