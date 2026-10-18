@@ -1,0 +1,11 @@
+salesforce.PermissionSetGroup Hx_PSG_0196 {
+  fullName = "Hx_PSG_0196"
+  label = "Hx_PSG_0196"
+  status = "Updated"
+  permissionSets = [
+    salesforce.PermissionSet.instance.Hx_PS_0453,
+    salesforce.PermissionSet.instance.Hx_PS_0593,
+    salesforce.PermissionSet.instance.Hx_PS_0664,
+    salesforce.PermissionSet.instance.Hx_PS_0667,
+  ]
+}
