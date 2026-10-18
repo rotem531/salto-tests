@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O011__c_Hx_VR08 {
+  fullName = "Hx_O011__c.Hx_VR08"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -8 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 8 failed"
+  _parent = [
+    salesforce.Hx_O011__c,
+  ]
+}
