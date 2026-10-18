@@ -1,0 +1,6 @@
+public with sharing class Hx_Svc_09850 {
+    public static Integer run() {
+        Hx_Svc_09849.run();
+        return [SELECT COUNT() FROM Hx_O250__c WHERE Hx_Num01__c > 50];
+    }
+}
