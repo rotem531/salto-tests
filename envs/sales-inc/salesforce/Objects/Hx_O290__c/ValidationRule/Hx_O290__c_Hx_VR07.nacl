@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O290__c_Hx_VR07 {
+  fullName = "Hx_O290__c.Hx_VR07"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -7 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 7 failed"
+  _parent = [
+    salesforce.Hx_O290__c,
+  ]
+}
