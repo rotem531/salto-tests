@@ -1,0 +1,20 @@
+salesforce.ListView Hx_O059__c_Hx_LV73 {
+  fullName = "Hx_O059__c.Hx_LV73"
+  label = "Hx View 73"
+  filterScope = "Everything"
+  columns = [
+    "NAME",
+    "Hx_Num01__c",
+    "Hx_Txt01__c",
+  ]
+  filters = [
+    {
+      field = "Hx_Num01__c"
+      operation = "greaterThan"
+      value = "73"
+    },
+  ]
+  _parent = [
+    salesforce.Hx_O059__c,
+  ]
+}

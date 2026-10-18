@@ -1,0 +1,10 @@
+salesforce.ValidationRule Hx_O042__c_Hx_VR09 {
+  fullName = "Hx_O042__c.Hx_VR09"
+  active = true
+  errorConditionFormula = "Hx_Num01__c < -9 && Hx_Flag__c"
+  errorDisplayField = "Hx_Num01__c"
+  errorMessage = "Rule 9 failed"
+  _parent = [
+    salesforce.Hx_O042__c,
+  ]
+}
