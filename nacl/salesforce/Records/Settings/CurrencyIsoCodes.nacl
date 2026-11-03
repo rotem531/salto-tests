@@ -1,0 +1,22 @@
+salesforce.CurrencyIsoCodes {
+  valueSet = {
+    values = {
+      EUR = {
+        fullName = "EUR"
+        isActive = true
+        label = "Euro"
+        default = false
+      }
+      USD = {
+        fullName = "USD"
+        isActive = true
+        label = "U.S. Dollar"
+        default = true
+      }
+    }
+    order = [
+      salesforce.CurrencyIsoCodes.instance._config.valueSet.values.EUR,
+      salesforce.CurrencyIsoCodes.instance._config.valueSet.values.USD,
+    ]
+  }
+}
